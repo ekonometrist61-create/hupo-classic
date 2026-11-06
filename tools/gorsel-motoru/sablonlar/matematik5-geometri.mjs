@@ -1,4 +1,4 @@
-﻿import { gorselUret } from '../motor.mjs';
+import { gorselUret } from '../motor.mjs';
 // 5. sınıf Matematik — geometri şablonları (LLM yok; cevap ve çeldiriciler kodla hesaplanır).
 // Her üretici parametrelidir; kayıt (KAYIT) bunları rastgele parametrelerle çağırarak sınırsız çeşitlilik sağlar.
 export function kur({ R, sec, karistir, ekle, konum }) {
@@ -92,8 +92,14 @@ export function kur({ R, sec, karistir, ekle, konum }) {
       if (istenen === 'paralel' && sayilar('dik').length > 1) continue;
       const cift = (k) => k.replace('|', ' ile ');
       const dogruAnahtar = sayilar(istenen)[0];
-      const digerleri = Object.keys(il).filter((k) => k !== dogruAnahtar);
-      const cel = karistir(digerleri).slice(0, 3);
+      // Şıklar 4 doğrunun 4 çiftlik halkasıdır (her doğru tam iki şıkta geçer): doğru çift, üç ikililerin
+      // (k-l|m-n, k-m|l-n, k-n|l-m) ikisinden birinin dışarıda bırakıldığı halkanın kenarlarıdır. Böylece
+      // şıkların kendisi (hangi harf kaç kez geçiyor, hangi çiftin eşi var) cevabı ele vermez.
+      const ESLER = [['k|l', 'm|n'], ['k|m', 'l|n'], ['k|n', 'l|m']];
+      const kendi = ESLER.findIndex((e) => e.includes(dogruAnahtar));
+      const atilan = karistir(ESLER.filter((_, i) => i !== kendi))[0];
+      const cel = karistir(Object.keys(il).filter((k) => k !== dogruAnahtar && !atilan.includes(k)));
+      if (cel.length !== 3) continue;
       const tr = istenen === 'paralel' ? 'paraleldir' : 'birbirine diktir';
       ekle({ kod: 'MAT.5.3.4', konu: 'Geometrik Şekiller', alt_konu: istenen === 'paralel' ? 'Paralel doğrular' : 'Dik doğrular', zorluk: istenen === 'paralel' ? 2 : 3, spec,
         kok: `Yukarıdaki kareli zeminde k, l, m ve n doğruları verilmiştir. Bu doğrulardan hangi ikisi ${tr}?`,
@@ -113,15 +119,20 @@ export function kur({ R, sec, karistir, ekle, konum }) {
     const bolge = tur === 'ters' ? 2 : (R() < 0.5 ? 1 : 3);
     const dogru = tur === 'ters' ? theta : 180 - theta;
     const diger = tur === 'ters' ? 180 - theta : theta; // ters/komşu karıştırma sonucu
-    const spec = { tip_id: 'kesisen-dogrular', parametreler: { dogrular: ['d', 'e'], theta, olcekli: false,
+    const spec = { tip_id: 'a3-kesisen-dogrular', parametreler: { dogrular: ['d', 'e'], theta, olcekli: false,
       isaretler: [{ bolge: 0, goster: 'deger' }, { bolge, goster: 'sembol', sembol: '■' }] } };
-    const havuz = [30, 45, 60, 75, 105, 120, 135, 150].filter((v) => v !== dogru && v !== diger && v !== 90);
-    // 90° sabit çeldirici olmasın: her zaman yanlış olduğu için metin tek başına eler. İki çeldirici rastgele seçilir.
-    const cel = [diger, ...karistir(havuz).slice(0, 2)];
+    // Verilen açı (θ) yalnız şekilde yazılıdır; kökte ve şıklarda yalnız bütünler çift hâlinde bulunur:
+    // {θ, 180−θ} ve ikinci bir {φ, 180−φ}. Böylece şıklardan hangi ikilinin "asıl" olduğu anlaşılamaz (şekilsiz şans ≈ %25).
+    const ikinciler = [35, 40, 50, 55, 65, 70].filter((v) => v !== theta && v !== 180 - theta);
+    const phi = sec(ikinciler);
+    const cel = karistir([diger, phi, 180 - phi]);
+    const celGerekce = cel.map((v) => (v === diger
+      ? (tur === 'ters' ? 'Komşu açıyı bulup ters açıyla karıştırma.' : 'Komşu açıyı verilen açıya eşit sanma; komşu açılar bütünlerdir, ters açılar eşittir.')
+      : `${v}° değeri şekildeki açıdan ters ya da komşu açı ilişkisiyle elde edilmez.`));
     ekle({ kod: 'MAT.5.3.4', konu: 'Geometrik Şekiller', alt_konu: 'Kesişen iki doğrunun oluşturduğu açılar', zorluk: tur === 'ters' ? 1 : 2, spec, olcekli: false,
-      kok: `d ve e doğruları bir noktada kesişmiştir. Şekil ölçekli çizilmemiştir. Bu doğrular arasında kalan açılardan biri ${theta}°'dir. Buna göre ■ ile gösterilen açı kaç derecedir?`,
+      kok: 'd ve e doğruları bir noktada kesişmiştir. Şekil ölçekli çizilmemiştir. Buna göre ■ ile gösterilen açı kaç derecedir?',
       dogru: `${dogru}°`, celdirici: cel.map((v) => `${v}°`),
-      gerekce: [tur === 'ters' ? 'Komşu açıyı bulup ters açıyla karıştırma.' : 'Komşu açıyı verilen açıya eşit sanma; komşu açılar bütünlerdir, ters açılar eşittir.', 'Kesişen doğruları dik sanma; açı değeri verilenlerden hesaplanır.', `${cel[2]}° değeri verilen açıdan doğru bir ilişkiyle elde edilmez.`],
+      gerekce: celGerekce,
       ipucu: tur === 'ters' ? 'Ters açılar birbirine eşittir.' : 'Komşu açıların ölçüleri toplamı 180°’dir.',
       cozum: tur === 'ters' ? [`■ açısı ${theta}° olan açının ters açısıdır.`, 'Ters açıların ölçüleri eşittir.', `■ = ${theta}°`] : [`■ açısı ${theta}° olan açının komşusudur.`, `Komşu açıların ölçüleri toplamı 180° olduğundan ■ = 180° − ${theta}° = ${dogru}°.`],
       dogrulama: [{ yol: ['bolge_degerleri', bolge], beklenen: dogru }] });
@@ -129,6 +140,7 @@ export function kur({ R, sec, karistir, ekle, konum }) {
   
   // ---- T5: çokgen köşegenleri — şıklar ardışık pencere (T(n−k)…), tek bir n'ye işaret etmez ----
   function cokgenSorusu(n, tur) {
+    if (tur === 'kalan') return cokgenKalan(n);
     const bir = tur === 'bir_koseden';
     const harfler = 'ABCDEFGHIJKL'.slice(0, n).split('');
     const kosegenler = bir ? [...Array(n - 3)].map((_, k) => [0, k + 2]) : [];
@@ -148,6 +160,33 @@ export function kur({ R, sec, karistir, ekle, konum }) {
       dogrulama: [bir ? { yol: ['bir_koseden_kosegen'], beklenen: f(n) } : { yol: ['kosegen_sayisi'], beklenen: f(n) }] });
   }
   
+  // A köşesinden köşegenlerin bir kısmı çizilmiş; çizilebilecek ama çizilmemiş olanların sayısı sorulur.
+  // n ve çizilen sayısı yalnız şekilden okunur; şıklar ardışık 4 tam sayıdır (tek bir değere işaret etmez).
+  function cokgenKalan(n) {
+    const harfler = 'ABCDEFGHIJKL'.slice(0, n).split('');
+    const adaylar = [...Array(n - 3)].map((_, k) => k + 2);        // 0. köşeden çizilebilecek köşegenlerin uç indeksleri
+    const cizilen = 1 + Math.floor(R() * (n - 4));                   // 1 … n−4 köşegen çizilmiş, en az biri kalmış
+    const secili = karistir(adaylar).slice(0, cizilen).sort((x, y) => x - y);
+    const kosegenler = secili.map((j) => [0, j]);
+    const spec = { tip_id: 'cokgen', parametreler: { n, harfler, kosegenler, baslangic_aci: 90 + Math.floor(180 / n) } };
+    const dogru = n - 3 - cizilen;
+    const kp = konum();
+    const bas = dogru - kp;
+    if (bas < 1) throw new Error('pencere_cok_kucuk');
+    const degerler = [0, 1, 2, 3].map((i) => bas + i);
+    const gerekce = degerler.map((m) => {
+      if (m === dogru) return '';
+      if (m === n - 3) return `${m}, bir köşeden çizilebilecek tüm köşegenlerin sayısıdır; çizilmiş olanlar çıkarılmamıştır.`;
+      if (m === cizilen) return `${m}, şekilde çizilmiş köşegenlerin sayısıdır; sorulan çizilmemiş olanlardır.`;
+      return `${m}, köşegenler yanlış sayılarak (${m > dogru ? 'fazla' : 'eksik'}) bulunur.`;
+    });
+    ekle({ kod: 'MAT.5.3.6', konu: 'Geometrik Şekiller', alt_konu: 'Çokgenlerin köşegenleri', zorluk: 3, spec, sirali: degerler.map(String), dogru: String(dogru), gerekce,
+      kok: 'Yukarıdaki düzgün çokgenin A köşesinden bazı köşegenler çizilmiştir. Bu köşeden çizilebilecek, ancak henüz çizilmemiş kaç köşegen daha vardır?',
+      ipucu: 'Önce çokgenin kaç köşesi olduğunu say; bir köşeden kendisine ve iki komşusuna köşegen çizilemez.',
+      cozum: [`Çokgenin ${n} köşesi vardır; A köşesinden çizilebilecek köşegen sayısı ${n} − 3 = ${n - 3}.`, `Şekilde ${cizilen} köşegen çizilmiştir.`, `Çizilmemiş köşegen sayısı ${n - 3} − ${cizilen} = ${dogru}.`],
+      dogrulama: [{ yol: ['bir_koseden_kosegen'], beklenen: n - 3 }, { yol: ['cizilen_kosegenler', 'length'], beklenen: cizilen }] });
+  }
+
   return { cemberSorusu, sembolSorusu, aciSorusu, kareliSorusu, cokgenSorusu };
 }
 
@@ -163,5 +202,5 @@ export const KAYIT = [
   { id: 'mat5-kareli-dogru', ders: 'Matematik', sinif: 5, idOnek: 'MAT5-GEO', mufredat_surum: MUFREDAT, kodlar: ['MAT.5.3.4'], fabrika: kur,
     uret: (f, g) => f.kareliSorusu(g.sec(['paralel', 'dik'])) },
   { id: 'mat5-cokgen-kosegen', ders: 'Matematik', sinif: 5, idOnek: 'MAT5-GEO', mufredat_surum: MUFREDAT, kodlar: ['MAT.5.3.6'], fabrika: kur,
-    uret: (f, g) => f.cokgenSorusu(g.sec([6, 7, 8, 9, 10, 11, 12]), g.sec(['tum', 'bir_koseden'])) },
+    uret: (f, g) => { const tur = g.sec(['tum', 'bir_koseden', 'kalan', 'kalan']); f.cokgenSorusu(g.sec(tur === 'kalan' ? [6, 7, 8, 9, 10, 11, 12] : [5, 6, 7, 8, 9, 10, 11, 12]), tur); } },
 ];

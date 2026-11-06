@@ -1,0 +1,160 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (Sosyal Bilgiler 7. sınıf; program: TYMM)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "SB.7.1.1",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemini sorgulayabilme / a) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili merak ettiği / konuları tanımlar. / b) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili sorular sorar. / c) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili bilgi toplar. / ç) Dâhil o",
+                           "unite":  "BİRLİKTE YAŞAMAK",
+                           "konu":  "Gruplarda ve Sosyal Hayatta İletişimin Önemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.1.2",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik fikir üretebilme / a) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmenin önemini fark eder. / b) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik benzer girişimleri inceler. / c) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik yeni fikirler üretir",
+                           "unite":  "BİRLİKTE YAŞAMAK",
+                           "konu":  "Özel Gereksinimli Bireyler İçin Fırsat Eşitliği",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.1.3",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin çıkarım yapabilme / a) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin varsayımlarda bulunur. / b) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin örnekleri listeler. / c) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışl",
+                           "unite":  "BİRLİKTE YAŞAMAK | EVİMİZ DÜNYA",
+                           "konu":  "Küreselleşmenin İnsan ve Toplum Hayatına Etkisi | Millî Meseleler Karşısında Türk Toplumunun Tutum ve Davranışları",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.2.1",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi yorumlayabilme / a) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi inceler. / b) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi bağlamdan kopmadan dönüştürür. / c) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi nesnel, / doğru ve anlamı değiştirmeyecek şekilde yeni",
+                           "unite":  "BİRLİKTE YAŞAMAK | EVİMİZ DÜNYA",
+                           "konu":  "Küreselleşmenin İnsan ve Toplum Hayatına Etkisi | Millî Meseleler Karşısında Türk Toplumunun Tutum ve Davranışları",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.2.2",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Bölgesel ve küresel sorunların çözümünde ülkemizin rolünü özetleyebilme / a) Bölgesel ve küresel sorunların çözümünde ülkemizin rolüne ilişkin çözümleme yapar. / b) Bölgesel ve küresel sorunların çözümünde ülkemizin rolüne ilişkin sınıflandırma yapar. / c) Bölgesel ve küresel sorunların çözümünde ülkemizin rolünü yorumlar",
+                           "unite":  "EVİMİZ DÜNYA",
+                           "konu":  "Bölgesel ve Küresel Sorunların Çözümünde Ülkemizin Rolü",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.3.1",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikaları sorgulayabilme / a) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında / merak ettiği konuyu tanımlar. / b) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında ve / rilen kaynaklara dayanarak sorular sorar. / c) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağla",
+                           "unite":  "ORTAK MİRASIMIZ",
+                           "konu":  "Osmanlı Devleti’nin Cihan Devleti Hâline Gelmesini Sağlayan Politikalar",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.3.2",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yenilikleri neden ve sonuçlarıyla yorumlayabilme / a) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin nedenlerini inceler. / b) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin etkilediği unsurları inceler. / c) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uygula",
+                           "unite":  "ORTAK MİRASIMIZ",
+                           "konu":  "Osmanlı Devleti’nin Uygulamaya Koyduğu Yenilikler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.3.3",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Osmanlı kültür ve medeniyet unsurlarına ilişkin oluşturduğu ürünü paylaşabilme / a) Osmanlı kültür ve medeniyet unsurlarının temel özelliklerine ilişkin kanıtlara dayanarak çıkarım yapar. / b) Osmanlı kültür ve medeniyet unsurlarının temel özelliklerine ilişkin kanıtlardaki bilgilerden hareketle görüşünü yansıtan ürün oluşturur. / c) Osmanlı kültür ve medeniyet unsurlarının özelliklerine ilişkin g",
+                           "unite":  "ORTAK MİRASIMIZ | YAŞAYAN DEMOKRASİMİZ",
+                           "konu":  "Osmanlı Kültür ve Medeniyeti | Türkiye Cumhuriyeti’nin Nitelikleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.4.1",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Türkiye Cumhuriyeti’nin temel niteliklerini özetleyebilme / a) Türkiye Cumhuriyeti’nin temel niteliklerini çözümler. / b) Türkiye Cumhuriyeti’nin temel niteliklerini sınıflandırır. / c) Türkiye Cumhuriyeti’nin temel niteliklerini yorumlar",
+                           "unite":  "ORTAK MİRASIMIZ | YAŞAYAN DEMOKRASİMİZ",
+                           "konu":  "Osmanlı Kültür ve Medeniyeti | Türkiye Cumhuriyeti’nin Nitelikleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.4.2",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Türkiye Cumhuriyeti Devleti’nin yönetim yapısını çözümleyebilme / a) Türkiye Cumhuriyeti Devleti’nin yönetim yapısını belirler. / b) Türkiye Cumhuriyeti Devleti’nin yönetim yapısını oluşturan unsurlar arası ilişkileri belirler",
+                           "unite":  "YAŞAYAN DEMOKRASİMİZ",
+                           "konu":  "Türkiye Cumhuriyeti’nin Yönetim Yapısı",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.4.3",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Ülkemizdeki demokrasinin gelişimini, demokrasinin temel ilkeleri açısından yorumlayabilme / a) Demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasındaki ilişkiyi gör / sel/işitsel/dijital tarihî kaynaklardan inceler. / b) Demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasındaki ilişkiyi nes / nel, doğru anlamı değiştirmeyecek bir şekilde yeniden ifade eder",
+                           "unite":  "YAŞAYAN DEMOKRASİMİZ",
+                           "konu":  "Ülkemizde Demokrasinin Gelişimi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.4.4",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Demokrasinin uygulama sürecinde karşılaşılan sorunları özetleyebilme / a) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları çözümler. / b) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları sınıflandırır. / c) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları yorumlar",
+                           "unite":  "HAYATIMIZDAKİ EKONOMİ | YAŞAYAN DEMOKRASİMİZ",
+                           "konu":  "Demokrasinin Uygulanma Sürecinde Karşılaşılan Sorunlar | Millî Kalkınma Hamleleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.5.1",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Millî kalkınma hamlelerini neden ve sonuçlarıyla yorumlayabilme / a) Millî kalkınma hamlelerine neden olan unsurları inceler. / b) Millî kalkınma hamlelerinin etkilediği unsurları inceler. / c) Millî kalkınma hamlelerinin etkilerinin niteliğini sorgular. / ç) Millî kalkınma hamlelerinin neden ve sonuçlarını bağlamından kopmadan yeniden ifade eder",
+                           "unite":  "HAYATIMIZDAKİ EKONOMİ | YAŞAYAN DEMOKRASİMİZ",
+                           "konu":  "Demokrasinin Uygulanma Sürecinde Karşılaşılan Sorunlar | Millî Kalkınma Hamleleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.5.2",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Ekonomik gelişmişlik ile üretim, dağıtım ve tüketim döngüsü arasındaki ilişkiyi çözümleyebilme / a) Ekonomik gelişmişlik unsurları ile üretim, dağıtım ve tüketim döngüsünü belirler. / b) Ekonomik gelişmişlik unsurları ile üretim dağıtım ve tüketim arasındaki ilişkiyi belirler",
+                           "unite":  "HAYATIMIZDAKİ EKONOMİ | TEKNOLOJİ ve SOSYAL BİLİMLER",
+                           "konu":  "Bilimsel ve Teknolojik Gelişmelerin Gelecekteki Hayata Etkisi | Ekonomik Gelişmişlik ile Üretim, Dağıtım ve Tüketim Arasındaki Döngü",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.6.1",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Bilimsel ve teknolojik gelişmelerin gelecekteki toplum hayatına etkilerine ilişkin öngörüde bulunabilme / a) Bilimsel ve teknolojik gelişmelerin günümüzdeki toplumsal hayata etkilerine ilişkin kanıt, gözlem ve deneyimleri ilişkilendirir. / b) Bilimsel ve teknolojik gelişmelerin toplumsal hayata etkilerine ilişkin kanıt, gözlem ve deneyimleri ilişkilendirerek geleceğe yönelik çıkarımda bulunur",
+                           "unite":  "HAYATIMIZDAKİ EKONOMİ | TEKNOLOJİ ve SOSYAL BİLİMLER",
+                           "konu":  "Bilimsel ve Teknolojik Gelişmelerin Gelecekteki Hayata Etkisi | Ekonomik Gelişmişlik ile Üretim, Dağıtım ve Tüketim Arasındaki Döngü",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.6.2",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarına dair genelleme yapabilme / a) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarına dair bilgi toplar. / b) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarının ortak özelliklerini belirler. / c) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarının farklılıklarını belirler. / ç) Örnek metinler doğrultusunda s",
+                           "unite":  "TEKNOLOJİ VE SOSYAL BİLİMLER",
+                           "konu":  "Sosyal Bilimlerin Çalışma Alanları",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "SB.7.6.3",
+                           "sinif":  7,
+                           "ders":  "Sosyal Bilgiler",
+                           "metin":  "Toplumsal hayatta karşılaşabileceği bir probleme yönelik bilimsel sorgulama yapabilme / a) Toplumsal hayatta karşılaşabileceği bir problemi tanımlar. / b) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne dair kullanabileceği bir model geliştirir. / c) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne yönelik araştırmayı planlar ve gerçekleştirir. / ç) Toplumsal hayatta karşılaşa",
+                           "unite":  "TEKNOLOJİ VE SOSYAL BİLİMLER",
+                           "konu":  "Toplumsal Hayatta Karşılaşılabilecek Problemlere Çözüm Üretme",
+                           "program":  "TYMM"
+                       }
+                   ]
+}

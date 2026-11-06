@@ -1,0 +1,709 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (Türkçe 4. sınıf, MEB Yayınları varyantı; program: önceki program)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv satırlarından üretildi; kodlar kaynakta görülüyor.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "T.4.2.2",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Hazırlıksız konuşmalar yapar",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Anadolu Bacıları (Anadolu Kadınlar Birliği) | Arkadaşım 23 Nisan | Beştaş ve İki Ceviz Bileti | Bilim Nedir? | Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Diyor ki: | D",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.2.3",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Hazırlıklı konuşmalar yapar",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Anadolu Bacıları (Anadolu Kadınlar Birliği) | Arkadaşım 23 Nisan | Bilim Nedir? | Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Diyor ki: | Dünyanın İlk Alışveriş Merkezi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.2.6",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşmalarında yabancı dillerden alınmış, dilimize henüz yerleşmemiş kelimelerin Türkçelerini / kullanır",
+                           "unite":  "OKUMA KÜLTÜRÜ",
+                           "konu":  "Türkçe Konuş",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.3",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Şiir okur",
+                           "unite":  "DOĞA VE EVREN | ERDEMLER | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | ÇOCUK DÜNYASI",
+                           "konu":  "Gökyüzünde Bir Yarış / Nedir Bu Iklim Değisikliği? / (Serbest Okuma Metni) | Sağlığımı Korurum | Türkçe Konuş | Çanakkale | Çiftçi ve Oğulları / Iyi Dilekler Günü (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.2",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Vurgu, tonlama ve telaffuza dikkat ederek okur",
+                           "unite":  "DOĞA VE EVREN | ERDEMLER | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | ÇOCUK DÜNYASI",
+                           "konu":  "Gökyüzünde Bir Yarış / Nedir Bu Iklim Değisikliği? / (Serbest Okuma Metni) | Sağlığımı Korurum | Türkçe Konuş | Çanakkale | Çanakkale / Çanakkale Geçilmez Mustafa Kemal Yenilmez / (Serbest Okuma Metni",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.7",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Kelimelerin zıt anlamlılarını bulur",
+                           "unite":  "OKUMA KÜLTÜRÜ",
+                           "konu":  "Evimizdeki Kütüphane | Kitaplar Ne İşe Yarar? / Hikâyesi Olmayan Kitap / (Serbest Okuma Metni) | Türkçe Konuş",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.12",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Bağlamdan yararlanarak bilmediği kelime ve kelime gruplarının anlamını tahmin eder",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Anadolu Bacıları (Anadolu Kadınlar Birliği) | Arkadaşım 23 Nisan | Beştaş ve İki Ceviz Bileti | Bilim Nedir? | Diyor ki: | Dünyanın İlk Alışveriş Merkezi: Kapalıçarşı | Evimizde",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.16",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuduğu metnin konusunu belirler",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Arkadaşım 23 Nisan | Beştaş ve İki Ceviz Bileti | Evimizdeki Kütüphane | Gökyüzünde Bir Yarış / Nedir Bu Iklim Değisikliği? / (Serbest Okuma Metni) | Hasta Ziyareti | Mehmet Âki",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.17",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Metnin ana fikri/ana duygusunu belirler",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Arkadaşım 23 Nisan | Beştaş ve İki Ceviz Bileti | Evimizdeki Kütüphane | Gökyüzünde Bir Yarış / Nedir Bu Iklim Değisikliği? / (Serbest Okuma Metni) | Hasta Ziyareti | Mehmet Âki",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.18",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuduğu metinle ilgili soruları cevaplar",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Anadolu Bacıları (Anadolu Kadınlar Birliği) | Arkadaşım 23 Nisan | Beştaş ve İki Ceviz Bileti | Bilim Nedir? | Diyor ki: | Dünyanın İlk Alışveriş Merkezi: Kapalıçarşı | Evimizde",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.21",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuduğu metnin içeriğine uygun başlık belirler",
+                           "unite":  "DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | OKUMA KÜLTÜRÜ",
+                           "konu":  "Alo! Kayın Ağacı mı? | Dünyanın İlk Alışveriş Merkezi: Kapalıçarşı | Gökyüzünde Bir Yarış / Nedir Bu Iklim Değisikliği? / (Serbest Okuma Metni) | Türkçe Konuş | İyileştirici Güç: / Sevgi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.28",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Okudukları ile ilgili çıkarımlar yapar",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Beştaş ve İki Ceviz Bileti | Diyor ki: | Güneş Nasıl Çalışır? | Hacı İbrahim Efendi: Mehmetçige Dikilen Botlar / (Dinleme Metni) | Hayata Varım / (Dinleme Metni) | Mehmet Âkif Ersoy | Orman Dostları: ",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.1",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Şiir yazar",
+                           "unite":  "DOĞA VE EVREN | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | ÇOCUK DÜNYASI",
+                           "konu":  "Gökyüzünde Bir Yarış / Nedir Bu Iklim Değisikliği? / (Serbest Okuma Metni) | Güzel Anıları Biriktirmek / (Dinleme Metni) | Türkçe Konuş | Çanakkale",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.10",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Büyük harfleri ve noktalama işaretlerini uygun yerlerde kullanır",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | ÇOCUK DÜNYASI",
+                           "konu":  "Anadolu Bacıları (Anadolu Kadınlar Birliği) | Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Diyor ki: | Evimizdeki Kütüphane | Gözüm Arkada Kalmayacak | Güneş Nasıl Çalışır? | Hasta Ziyareti | ",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.1",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Noktalama işaretlerine dikkat ederek sesli ve sessiz okur",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Anadolu Bacıları (Anadolu Kadınlar Birliği) | Beştaş ve İki Ceviz Bileti | Bilim Nedir? | Diyor ki: | Dünyanın İlk Alışveriş Merkezi: Kapalıçarşı | Evimizdeki Kütüphane | Gelene",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.5",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Farklı yazı karakterleri ile yazılmış yazıları okur",
+                           "unite":  "OKUMA KÜLTÜRÜ",
+                           "konu":  "Evimizdeki Kütüphane | Kitaplar Ne İşe Yarar? / Hikâyesi Olmayan Kitap / (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.23",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Metin türlerini ayırt eder",
+                           "unite":  "OKUMA KÜLTÜRÜ",
+                           "konu":  "Evimizdeki Kütüphane",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.25",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Yönergeleri kavrar",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR",
+                           "konu":  "Evimizdeki Kütüphane | Hasta Ziyareti | Orman Dostları: Ağaçlandırma / (İzleme Metni) | Otomobil Uçar Gider / Robotları Ustası, El Cezerî / (Serbest Okuma Metni) | Tahinci Dede / Haydi Doğa Yürüyüşüne",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.36",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Bilgi kaynaklarının güvenilirliğini sorgular",
+                           "unite":  "OKUMA KÜLTÜRÜ",
+                           "konu":  "Evimizdeki Kütüphane",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.20",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Harflerin yapısal özelliklerine uygun metin yazar",
+                           "unite":  "MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Evimizdeki Kütüphane | Kitaplar Ne İşe Yarar? / Hikâyesi Olmayan Kitap / (Serbest Okuma Metni) | Mehmet Âkif Ersoy | Uçurtmalar Nasıl Uçar? (Serbest Okuma Metni) | Zamane Kedisi Fıldır: Yatıya Misafir",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.1",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Görselden/görsellerden hareketle dinleyeceği/izleyeceği metnin konusunu tahmin eder",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | MİLLÎ KÜLTÜRÜMÜZ | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR",
+                           "konu":  "Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloglan’ın Fasulyesi (Serbest Okuma Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloğlan’ın F",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.4",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediklerinde/izlediklerinde geçen, bilmediği kelimelerin anlamını tahmin eder",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloglan’ın Fasulyesi (Serbest Okuma Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloğlan’ın F",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.5",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediklerinin/izlediklerinin konusunu belirler",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR",
+                           "konu":  "Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Hacı İbrahim Efendi: Mehmetçige Dikilen Botlar / (Dinleme Metni) | Hayata Varım / (Dinleme Metni) | Maysa ile Bulut / (İzleme Metni) | Orman Dostla",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.6",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediklerinin/izlediklerinin ana fikrini/ana duygusunu belirler",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR",
+                           "konu":  "Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Hacı İbrahim Efendi: Mehmetçige Dikilen Botlar / (Dinleme Metni) | Hayata Varım / (Dinleme Metni) | Maysa ile Bulut / (İzleme Metni) | Orman Dostla",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.7",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediklerine/izlediklerine yönelik sorulara cevap verir",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloglan’ın Fasulyesi (Serbest Okuma Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloğlan’ın F",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.11",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediklerinin/izlediklerinin içeriğini değerlendirir",
+                           "unite":  "OKUMA KÜLTÜRÜ | ÇOCUK DÜNYASI",
+                           "konu":  "Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Güzel Anıları Biriktirmek / (Dinleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.12",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinleme stratejilerini uygular",
+                           "unite":  "ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloglan’ın Fasulyesi (Serbest Okuma Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloğlan’ın F",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.8",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Kelimelerin eş anlamlılarını bulur",
+                           "unite":  "ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | OKUMA KÜLTÜRÜ",
+                           "konu":  "Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni) | Dünyanın İlk Alışveriş Merkezi: Kapalıçarşı | Kitaplar Ne İşe Yarar? / Hikâyesi Olmayan Kitap / (Serbest Okuma Metni) | Çiftçi ve Oğulları / Iyi Di",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.32",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Kısa ve basit dijital metinlerdeki mesajı kavrar",
+                           "unite":  "OKUMA KÜLTÜRÜ",
+                           "konu":  "Dijital Tayfa: Yanlıs Haber Yagmuru (Izleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.2.5",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Sınıf içindeki tartışma ve konuşmalara katılır",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | ÇOCUK DÜNYASI",
+                           "konu":  "Beştaş ve İki Ceviz Bileti | Bilim Nedir? | Gökyüzünde Bir Yarış / Nedir Bu Iklim Değisikliği? / (Serbest Okuma Metni) | Hacı İbrahim Efendi: Mehmetçige Dikilen Botlar / (Dinleme Metni) | Hasta Ziyare",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.26",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Metindeki gerçek ve hayalî ögeleri ayırt eder",
+                           "unite":  "BİLİM VE TEKNOLOJİ | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ",
+                           "konu":  "Gözüm Arkada Kalmayacak | Kitaplar Ne İşe Yarar? / Hikâyesi Olmayan Kitap / (Serbest Okuma Metni) | Otomobil Uçar Gider | Zamane Kedisi Fıldır: Yatıya Misafir | İyileştirici Güç: / Sevgi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.29",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Görsellerle okuduğu metnin içeriğini ilişkilendirir",
+                           "unite":  "MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ",
+                           "konu":  "Anadolu Bacıları (Anadolu Kadınlar Birliği) | Dünyanın İlk Alışveriş Merkezi: Kapalıçarşı | Gözüm Arkada Kalmayacak | Kitaplar Ne İşe Yarar? / Hikâyesi Olmayan Kitap / (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.20",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuduğu metinlerdeki hikâye unsurlarını belirler",
+                           "unite":  "ERDEMLER | OKUMA KÜLTÜRÜ | SAĞLIK VE SPOR",
+                           "konu":  "Kitaplar Ne İşe Yarar? / Hikâyesi Olmayan Kitap / (Serbest Okuma Metni) | Tahinci Dede / Haydi Doğa Yürüyüşüne! (Serbest Okuma Metni) | İyileştirici Güç: / Sevgi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.3",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Hikâye edici metin yazar",
+                           "unite":  "ERDEMLER | OKUMA KÜLTÜRÜ",
+                           "konu":  "Hasta Ziyareti | Kitaplar Ne İşe Yarar? / Hikâyesi Olmayan Kitap / (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.7",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazdıklarının içeriğine uygun başlık belirler",
+                           "unite":  "DOĞA VE EVREN | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Arkadaşım 23 Nisan | Diyor ki: | Gökyüzünde Bir Yarış / Nedir Bu Iklim Değisikliği? / (Serbest Okuma Metni) | Güneş Nasıl Çalışır? | Güzel Anıları Biriktirmek / (Dinleme Metni) ",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.9",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Formları yönergelerine uygun doldurur",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | MİLLÎ MÜCADELE VE ATATÜRK | OKUMA KÜLTÜRÜ | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Güzel Anıları Biriktirmek / (Dinleme Metni) | Hacı İbrahim Efendi: Mehmetçige Dikilen Botlar / (Dinleme Metni) | Kitaplar Ne İşe Yarar? / Hikâyesi Olmayan Kitap / (Serbest Okuma",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.9",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Eş sesli kelimelerin anlamlarını ayırt eder",
+                           "unite":  "MİLLÎ MÜCADELE VE ATATÜRK",
+                           "konu":  "Gözüm Arkada Kalmayacak | Çanakkale",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.11",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Deyim ve atasözlerinin metnin anlamına katkısını kavrar",
+                           "unite":  "BİLİM VE TEKNOLOJİ | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK",
+                           "konu":  "Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloglan’ın Fasulyesi (Serbest Okuma Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloğlan’ın Fasulyesi (Serbest Okuma Metni) | Gözüm Arkada Kalmaya",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.15",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuduklarını ana hatlarıyla anlatır",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK",
+                           "konu":  "Alo! Kayın Ağacı mı? | Dünyanın İlk Alışveriş Merkezi: Kapalıçarşı | Gözüm Arkada Kalmayacak | Otomobil Uçar Gider",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.13",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazılarında eş sesli kelimeleri anlamlarına uygun kullanır",
+                           "unite":  "MİLLÎ MÜCADELE VE ATATÜRK",
+                           "konu":  "Gözüm Arkada Kalmayacak | Çanakkale / Çanakkale Geçilmez Mustafa Kemal Yenilmez / (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.31",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Metinler arasında karşılaştırma yapar",
+                           "unite":  "MİLLÎ MÜCADELE VE ATATÜRK",
+                           "konu":  "Mehmet Âkif Ersoy",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.3",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediği/izlediği metni ana hatlarıyla anlatır",
+                           "unite":  "DOĞA VE EVREN | MİLLÎ MÜCADELE VE ATATÜRK",
+                           "konu":  "Hacı İbrahim Efendi: Mehmetçige Dikilen Botlar / (Dinleme Metni) | Orman Dostları: Ağaçlandırma / (İzleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.10",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuduğu metindeki gerçek, mecaz ve terim anlamlı sözcükleri belirler",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | MİLLÎ MÜCADELE VE ATATÜRK | SAĞLIK VE SPOR",
+                           "konu":  "Bilim Nedir? | Gökyüzünde Bir Yarış / Nedir Bu Iklim Değisikliği? / (Serbest Okuma Metni) | Güneş Nasıl Çalışır? | Hacı İbrahim Efendi: Mehmetçige Dikilen Botlar / (Dinleme Metni) | Telaşa Kapılma, il",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.12",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazdıklarını paylaşır",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | MİLLÎ MÜCADELE VE ATATÜRK | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Dünyanın İlk Alışveriş Merkezi: Kapalıçarşı | Hacı İbrahim Efendi: Mehmetçige Dikilen Botlar / (Dinleme Metni) | Hasta Ziyareti | Hayata Varım / (Dinleme Metni) | Maysa ile Bulu",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.21",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazma stratejilerini uygular",
+                           "unite":  "MİLLÎ MÜCADELE VE ATATÜRK",
+                           "konu":  "Hacı İbrahim Efendi: Mehmetçige Dikilen Botlar / (Dinleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.2",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Bir işin işlem basamaklarına ilişkin yönergeler yazar",
+                           "unite":  "DOĞA VE EVREN | ERDEMLER | MİLLÎ MÜCADELE VE ATATÜRK | SAĞLIK VE SPOR",
+                           "konu":  "Maysa ile Bulut / (İzleme Metni) | Orman Dostları: Ağaçlandırma / (İzleme Metni) | Telaşa Kapılma, ilk Yardımı Hatırla! | Çanakkale | Çanakkale / Çanakkale Geçilmez Mustafa Kemal Yenilmez / (Serbest O",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.15",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "İmza atar",
+                           "unite":  "MİLLÎ MÜCADELE VE ATATÜRK",
+                           "konu":  "Çanakkale / Çanakkale Geçilmez Mustafa Kemal Yenilmez / (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.6",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuma stratejilerini uygular",
+                           "unite":  "ERDEMLER",
+                           "konu":  "İyileştirici Güç: / Sevgi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.8",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediklerine/izlediklerine farklı başlıklar önerir",
+                           "unite":  "BİLİM VE TEKNOLOJİ | ERDEMLER",
+                           "konu":  "Hayata Varım / (Dinleme Metni) | Maysa ile Bulut / (İzleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.10",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediği/izlediği hikâye edici metinleri canlandırır",
+                           "unite":  "ERDEMLER",
+                           "konu":  "Maysa ile Bulut / (İzleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.34",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Grafik, tablo ve çizelgelerle ilgili soruları cevaplar",
+                           "unite":  "BİLİM VE TEKNOLOJİ | ERDEMLER | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Arkadaşım 23 Nisan | Bilim Nedir? | Maysa ile Bulut / (İzleme Metni) | Olimpiyatların Arkasındaki Bilim | Sağlığımı Korurum | Telaşa Kapılma, ilk Yardımı Hatırla! | Uçurtmalar Nasıl Uçar? (Serbest Oku",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.19",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazılarında kelimeleri gerçek, mecaz ve terim anlamları ile kullanır",
+                           "unite":  "BİLİM VE TEKNOLOJİ | ERDEMLER",
+                           "konu":  "Bilim Nedir? | Maysa ile Bulut / (İzleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.27",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuduğu metindeki kahramanların özelliklerini karşılaştırır",
+                           "unite":  "ERDEMLER",
+                           "konu":  "Hasta Ziyareti",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.4",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Bilgilendirici metin yazar",
+                           "unite":  "DOĞA VE EVREN | ERDEMLER | MİLLÎ KÜLTÜRÜMÜZ | ÇOCUK DÜNYASI",
+                           "konu":  "Anadolu Bacıları (Anadolu Kadınlar Birliği) | Arkadaşım 23 Nisan | Güneş Nasıl Çalışır? | Hasta Ziyareti | Orman Dostları: Ağaçlandırma / (İzleme Metni) | Sağlığımı Korurum",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.8",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazdıklarında yabancı dillerden alınmış, dilimize henüz yerleşmemiş kelimelerin Türkçelerini / kullanır",
+                           "unite":  "BİLİM VE TEKNOLOJİ | MİLLÎ KÜLTÜRÜMÜZ",
+                           "konu":  "Bilim Nedir? | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloglan’ın Fasulyesi (Serbest Okuma Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloğlan’ın Fasulyesi (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.18",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazılarında bağlaçları kuralına uygun kullanır",
+                           "unite":  "BİLİM VE TEKNOLOJİ",
+                           "konu":  "Bilim Nedir? | Hayata Varım / (Dinleme Metni) | Olimpiyatların Arkasındaki Bilim",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.37",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuduğu metindeki olaylara ilişkin düşüncelerini ifade eder",
+                           "unite":  "BİLİM VE TEKNOLOJİ | MİLLÎ KÜLTÜRÜMÜZ",
+                           "konu":  "Olimpiyatların Arkasındaki Bilim | Zamane Kedisi Fıldır: Yatıya Misafir",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.9",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinledikleriyle/izledikleriyle ilgili görüşlerini ifade eder",
+                           "unite":  "BİLİM VE TEKNOLOJİ | SAĞLIK VE SPOR",
+                           "konu":  "Hayata Varım / (Dinleme Metni) | Çiğ Köfte Spor/Lahmacun Spor / (Dinleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.22",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Şekil, sembol ve işaretlerin anlamlarını kavrar",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | MİLLÎ KÜLTÜRÜMÜZ",
+                           "konu":  "Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloglan’ın Fasulyesi (Serbest Okuma Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloğlan’ın Fasulyesi (Serbest Okuma Metni) | Hayata Varım / (Dinl",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.14",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazdıklarını zenginleştirmek için çizim, grafik ve görseller kullanır",
+                           "unite":  "BİLİM VE TEKNOLOJİ | DOĞA VE EVREN | ÇOCUK DÜNYASI",
+                           "konu":  "Güzel Anıları Biriktirmek / (Dinleme Metni) | Hayata Varım / (Dinleme Metni) | Orman Dostları: Ağaçlandırma / (İzleme Metni) | Otomobil Uçar Gider / Robotları Ustası, El Cezerî / (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.2.4",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşma stratejilerini uygular",
+                           "unite":  "DOĞA VE EVREN",
+                           "konu":  "Alo! Kayın Ağacı mı? | Gökyüzünde Bir Yarış / Nedir Bu Iklim Değisikliği? / (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.5",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Hayalî ögeler barındıran kısa metin yazar",
+                           "unite":  "DOĞA VE EVREN | ÇOCUK DÜNYASI",
+                           "konu":  "Alo! Kayın Ağacı mı? | Diyor ki:",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.30",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Metindeki renkli, altı çizili, koyu ifadelerin önemli noktaları vurguladığını kavrar",
+                           "unite":  "DOĞA VE EVREN | SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Arkadaşım 23 Nisan | Güneş Nasıl Çalışır? | Tahinci Dede / Haydi Doğa Yürüyüşüne! (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.13",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşmacının sözlü olmayan mesajlarını kavrar",
+                           "unite":  "DOĞA VE EVREN",
+                           "konu":  "Orman Dostları: Ağaçlandırma / (İzleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.13",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Görsellerle ilgili soruları cevaplar",
+                           "unite":  "MİLLÎ KÜLTÜRÜMÜZ",
+                           "konu":  "Anadolu Bacıları (Anadolu Kadınlar Birliği)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.16",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Kısaltmaları ve kısaltmalara gelen ekleri doğru yazar",
+                           "unite":  "MİLLÎ KÜLTÜRÜMÜZ | ÇOCUK DÜNYASI",
+                           "konu":  "Dünyanın İlk Alışveriş Merkezi: Kapalıçarşı | Sağlığımı Korurum",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.24",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Hikâye edici ve bilgilendirici metinleri oluşturan ögeleri tanır",
+                           "unite":  "MİLLÎ KÜLTÜRÜMÜZ | ÇOCUK DÜNYASI",
+                           "konu":  "Güzel Anıları Biriktirmek / (Dinleme Metni) | Zamane Kedisi Fıldır: Yatıya Misafir",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.4",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Metinleri türün özelliklerine uygun biçimde okur",
+                           "unite":  "MİLLÎ KÜLTÜRÜMÜZ | ÇOCUK DÜNYASI",
+                           "konu":  "Arkadaşım 23 Nisan | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloglan’ın Fasulyesi (Serbest Okuma Metni) | Geleneksel Türk Okçuluğu / (Izleme Metni) / Keloğlan’ın Fasulyesi (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.14",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Görsellerden ve başlıktan hareketle okuyacağı metnin konusunu tahmin eder",
+                           "unite":  "ÇOCUK DÜNYASI",
+                           "konu":  "Diyor ki:",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.35",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Bilgi kaynaklarını etkili bir şekilde kullanır",
+                           "unite":  "SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Diyor ki: | Tahinci Dede / Haydi Doğa Yürüyüşüne! (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.22",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Pekiştirmeli sözcükleri doğru yazar",
+                           "unite":  "ÇOCUK DÜNYASI",
+                           "konu":  "Diyor ki: | Güzel Anıları Biriktirmek / (Dinleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.1.2",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediklerinde/izlediklerinde geçen olayların gelişimi ve sonucu hakkında tahminde bulunur",
+                           "unite":  "ÇOCUK DÜNYASI",
+                           "konu":  "Güzel Anıları Biriktirmek / (Dinleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.11",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazdıklarını düzenler",
+                           "unite":  "ÇOCUK DÜNYASI",
+                           "konu":  "Güzel Anıları Biriktirmek / (Dinleme Metni) | Uçurtmalar Nasıl Uçar? (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.33",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Medya metinlerini değerlendirir",
+                           "unite":  "SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Arkadaşım 23 Nisan | Tahinci Dede / Haydi Doğa Yürüyüşüne! (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.17",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Sayıları doğru yazar",
+                           "unite":  "ÇOCUK DÜNYASI",
+                           "konu":  "Arkadaşım 23 Nisan | Uçurtmalar Nasıl Uçar? (Serbest Okuma Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.2.1",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Kelimeleri anlamlarına uygun kullanır",
+                           "unite":  "SAĞLIK VE SPOR | ÇOCUK DÜNYASI",
+                           "konu":  "Sağlığımı Korurum | Çiğ Köfte Spor/Lahmacun Spor / (Dinleme Metni)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.3.19",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Metinle ilgili sorular sorar",
+                           "unite":  "SAĞLIK VE SPOR",
+                           "konu":  "Telaşa Kapılma, ilk Yardımı Hatırla!",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "T.4.4.6",
+                           "sinif":  4,
+                           "ders":  "Türkçe",
+                           "metin":  "Görselleri ilişkilendirerek bir olayı anlatır",
+                           "unite":  "SAĞLIK VE SPOR",
+                           "konu":  "Telaşa Kapılma, ilk Yardımı Hatırla!",
+                           "program":  "önceki program"
+                       }
+                   ]
+}

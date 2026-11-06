@@ -1,0 +1,277 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (Matematik 7. sınıf; program: TYMM)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "MAT.7.1.1",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Gerçek yaşam ya da matematiksel durumlarda doğal sayı, tam sayı ve rasyonel sayıları yorumlayabilme / a) Tam sayıları inceler. / b) Tam sayıları rasyonel sayılara genişletir ve mutlak değerle sayı doğrusunda / açıklar. / c) Sayı doğrusu üzerinde her rasyonel sayının bir noktaya karşılık geldiğini açıklar",
+                           "unite":  "SAYILAR VE NİCELİKLER (1)",
+                           "konu":  "Tam Sayılar / Rasyonel Sayılar ve Farklı Temsilleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.1.2",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Gerçek yaşam durumlarında rasyonel sayıların ondalık gösterimlerini yansıtabilme / a) Bölme işlemini kullanarak her rasyonel sayının bir ondalık gösterimi olduğunu inceler. / b) Rasyonel sayıların ondalık gösterimlerinden bazılarının devirli olduğuna dair çıkarım yapar. / c) Her rasyonel sayının devirli ya da devirsiz ondalık açılımları olduğunu değerlendirir",
+                           "unite":  "SAYILAR VE NİCELİKLER (1)",
+                           "konu":  "Rasyonel Sayılar ve Farklı Temsilleri | Rasyonel Sayılar ve Farklı Temsilleri / Rasyonel Sayılarda Karşılaştırma ve Sıralama",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.1.3",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Rasyonel sayıların karşılaştırma ve sıralama ilişkilerini yorumlayabilme",
+                           "unite":  "SAYILAR VE NİCELİKLER (1)",
+                           "konu":  "Rasyonel Sayılar ve Farklı Temsilleri / Rasyonel Sayılarda Karşılaştırma ve Sıralama | Rasyonel Sayılarda Karşılaştırma ve Sıralama",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.1.4",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Rasyonel sayılar ve işlemler içeren gerçek yaşam problemlerini çözebilme / a) Rasyonel sayılarla toplama, çıkarma, çarpma ve bölme işlemlerini içeren problemlerde sayı ve işlem bileşenlerini belirler. / b) Rasyonel sayılarla toplama, çıkarma, çarpma ve bölme işlemlerini içeren problemlerde istenenler ve seçilen işlemler arasındaki ilişkileri belirler. / c) Rasyonel sayılarla toplama, çıkarma, çarp",
+                           "unite":  "SAYILAR VE NİCELİKLER (1) | SAYILAR VE NİCELİKLER (1) / GEOMETRİK NİCELİKLER (1)",
+                           "konu":  "Rasyonel Sayılarla İşlemler ve Problem Çözme | Rasyonel Sayılarla İşlemler ve Problem Çözme / Cisimlerin Farklı Yönlerden Görünümleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.4.1",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Eş küplerle oluşturulan yapılar ile görünümleri arasındaki ilişkiyi çözümleyebilme",
+                           "unite":  "SAYILAR VE NİCELİKLER (1) / GEOMETRİK NİCELİKLER (1)",
+                           "konu":  "Rasyonel Sayılarla İşlemler ve Problem Çözme / Cisimlerin Farklı Yönlerden Görünümleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.4.2",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Dikdörtgenler prizmasının yüzey alanını yorumlayabilme",
+                           "unite":  "GEOMETRİK NİCELİKLER (1)",
+                           "konu":  "Dikdörtgenler Prizmasının Hacmi ve Yüzey Alanı",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.4.3",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Dikdörtgenler prizmasının hacmini eş nesneler aracılığıyla yorumlayabilme",
+                           "unite":  "GEOMETRİK NİCELİKLER (1)",
+                           "konu":  "Dikdörtgenler Prizmasının Hacmi ve Yüzey Alanı",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.4.4",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Dikdörtgenler prizmasının hacim bağıntısını değerlendirebilme",
+                           "unite":  "GEOMETRİK NİCELİKLER (1)",
+                           "konu":  "Dikdörtgenler Prizmasının Hacmi ve Yüzey Alanı | Dikdörtgenler Prizmasının Hacmi ve Yüzey Alanı / Hacim Ölçme Birimleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.4.5",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Hacim ölçme birimleri arasındaki ilişkileri değerlendirebilme",
+                           "unite":  "GEOMETRİK NİCELİKLER (1)",
+                           "konu":  "Dikdörtgenler Prizmasının Hacmi ve Yüzey Alanı / Hacim Ölçme Birimleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.4.6",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Günlük hayat durumlarında dikdörtgenler prizmaları ile modellenen cisimlerin yüzey alanı ve hacmine yönelik problem çözebilme / a) Dikdörtgenler prizmaları ile modellenen cisimlerin yüzey alanı ve hacmine yönelik problemde ilgili matematiksel bileşenleri (şekil, cisim, uzunluk, alan, yükseklik gibi) belirler. / b) Matematiksel bileşenler arasındaki ilişkileri belirler. / c) Problem bağlamındaki te",
+                           "unite":  "GEOMETRİK NİCELİKLER (1) | GEOMETRİK NİCELİKLER (1) / İSTATİSTİKSEL ARAŞTIRMA SÜRECİ",
+                           "konu":  "Dikdörtgenler Prizmasının Hacmi ve Yüzey Alanı | Dikdörtgenler Prizmasının Hacmi ve Yüzey Alanı / Kategorik ve Nicel (Sürekli) Veri Dağılımları",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.6.1",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Kategorik veya nicel (sürekli) veri ile çalışabilme ve veriye dayalı karar verebilme",
+                           "unite":  "GEOMETRİK NİCELİKLER (1) / İSTATİSTİKSEL ARAŞTIRMA SÜRECİ | İSTATİSTİKSEL ARAŞTIRMA SÜRECİ",
+                           "konu":  "Dikdörtgenler Prizmasının Hacmi ve Yüzey Alanı / Kategorik ve Nicel (Sürekli) Veri Dağılımları | Kategorik ve Nicel (Sürekli) Veri Dağılımları",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.6.2",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Başkaları tarafından oluşturulan kategorik veya nicel (sürekli) veriye dayalı istatistiksel sonuç veya yorumları tartışabilme / a) Başkaları tarafından oluşturulan kategorik veya nicel (sürekli) veriye dayalı istatistiksel sonuç veya yorumlara yönelik istatistiksel temellendirme yapar. / b) Başkaları tarafından oluşturulan kategorik veya nicel (sürekli) veriye dayalı istatistiksel sonuç veya yorum",
+                           "unite":  "İSTATİSTİKSEL ARAŞTIRMA SÜRECİ | İSTATİSTİKSEL ARAŞTIRMA SÜRECİ / DÖNÜŞÜM",
+                           "konu":  "Kategorik ve Nicel (Sürekli) Veri Dağılımları | Kategorik ve Nicel (Sürekli) Veri Dağılımları / Yansıma Dönüşümü",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.3.1",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Şekillerin yansıma dönüşümü altındaki görüntülerinin oluşturulmasına dair çıkarım yapabilme",
+                           "unite":  "DÖNÜŞÜM | İSTATİSTİKSEL ARAŞTIRMA SÜRECİ / DÖNÜŞÜM",
+                           "konu":  "Kategorik ve Nicel (Sürekli) Veri Dağılımları / Yansıma Dönüşümü | Yansıma Dönüşümü / Orta Dikme ve Açıortay İnşası",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.3.2",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Yansıma dönüşümündeki deneyimlerini orta dikme ve açıortay inşasına yansıtabilme",
+                           "unite":  "DÖNÜŞÜM",
+                           "konu":  "Yansıma Dönüşümü / Orta Dikme ve Açıortay İnşası",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.5.1",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Matematiksel araç ve teknolojiden yararlanarak üçgende kenarortayı, açıortayı ve yüksekliği çözümleyebilme",
+                           "unite":  "GEOMETRİK ŞEKİLLER",
+                           "konu":  "Üçgenlerde Kenarortay ve İnşası, Açıortay, Yükseklik",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.5.2",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Orta dikme inşasına yönelik deneyimlerini üçgende kenarortay inşasına yansıtabilme",
+                           "unite":  "GEOMETRİK ŞEKİLLER | GEOMETRİK ŞEKİLLER / SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Üçgenlerde Kenarortay ve İnşası, Açıortay, Yükseklik | Üçgenlerde Kenarortay ve İnşası, Açıortay, Yükseklik / Oran",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.1.5",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Gerçek yaşam durumları üzerinden oran ilişkileri hakkında muhakeme yapabilme",
+                           "unite":  "GEOMETRİK ŞEKİLLER / SAYILAR VE NİCELİKLER (2) | SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Oran / Orantılı Durumlar | Üçgenlerde Kenarortay ve İnşası, Açıortay, Yükseklik / Oran",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.1.6",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Gerçek yaşam durumları üzerinden orantılı durumları yorumlayabilme",
+                           "unite":  "SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Oran / Orantılı Durumlar",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.1.7",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Gerçek yaşam durumları üzerinden doğru orantılı durumlara ilişkin problemleri çözebilme / a) Doğru orantılı durumlara ilişkin problemlerde nicelikleri belirler. / b) Doğru orantılı durumlar arasındaki ilişkileri belirler. / c) Bu ilişkileri tablo ve grafik temsillerine dönüştürür. / ç) Dönüştürdüğü temsillerin problem bağlamındaki anlamını ifade eder. / d) Elde ettiği ve yorumladığı farklı temsill",
+                           "unite":  "SAYILAR VE NİCELİKLER (2) | SAYILAR VE NİCELİKLER (2) / VERİDEN OLASILIĞA",
+                           "konu":  "Doğru Orantılı Durumlara İlişkin Problem Çözme | Doğru Orantılı Durumlara İlişkin Problem Çözme / Teorik Olasılık",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.7.1",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Bir olayın ve tümleyeninin olasılığına ilişkin tümevarımsal akıl yürütebilme",
+                           "unite":  "SAYILAR VE NİCELİKLER (2) / VERİDEN OLASILIĞA",
+                           "konu":  "Doğru Orantılı Durumlara İlişkin Problem Çözme / Teorik Olasılık",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.7.2",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Aynı deneye ait olayların eşit olasılıklı olma durumlarını değerlendirebilme",
+                           "unite":  "SAYILAR VE NİCELİKLER (2) / VERİDEN OLASILIĞA | VERİDEN OLASILIĞA",
+                           "konu":  "Doğru Orantılı Durumlara İlişkin Problem Çözme / Teorik Olasılık | Teorik Olasılık",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.7.3",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Olayları ayrık olma ve ayrık olmama durumlarına göre sınıflandırabilme",
+                           "unite":  "VERİDEN OLASILIĞA",
+                           "konu":  "Teorik Olasılık",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.2.1",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Gerçek yaşam durumları ya da matematiksel durumlar üzerinden cebirsel ifadelerle toplama, çıkarma ve bir rasyonel sayıyla çarpma işlemlerini yorumlayabilme / a) Gerçek yaşam durumlarına ya da matematiksel durumlara karşılık gelen cebirsel ifadelerle işlemleri inceler. / b) Toplama ve çarpma işlemlerinin özelliklerini, cebirsel ifadelerde işlem yaparken kullanır. / c) Bu işlemler ve sonuçları arası",
+                           "unite":  "İŞLEMLERLE CEBİRSEL DÜŞÜNME / VE DEĞİŞİMLER",
+                           "konu":  "Cebirsel İfadelerle İşlemler | Cebirsel İfadelerle İşlemler / Denklem ve Eşitsizlikler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.2.2",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Birinci dereceden bir bilinmeyenli denklem ve birinci dereceden bir bilinmeyenli eşitsizlik içeren gerçek yaşam problemlerini çözebilme",
+                           "unite":  "İŞLEMLERLE CEBİRSEL DÜŞÜNME / VE DEĞİŞİMLER",
+                           "konu":  "Cebirsel İfadelerle İşlemler / Denklem ve Eşitsizlikler | Denklem ve Eşitsizlikler | Denklem ve Eşitsizlikler / İspat",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.2.3",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Sayılar ve özelliklerini içeren ispatlara ilişkin matematiksel muhakeme yapabilme",
+                           "unite":  "İŞLEMLERLE CEBİRSEL DÜŞÜNME / VE DEĞİŞİMLER",
+                           "konu":  "Denklem ve Eşitsizlikler / İspat | İspat",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.2.4",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Temel aritmetik ve cebirsel ifadelerle işlem içeren durumlardaki süreci algoritma ifade yöntemlerini kullanarak yapılandırabilme / a) Aritmetik ve cebirsel ifadelerle işlem içeren durumlardaki adımları ve ilişkileri açıklar. / b) Algoritma ifade yöntemlerini kullanarak incelediği adımlar ve ilişkilerden uyumlu bir bütün oluşturur",
+                           "unite":  "İŞLEMLERLE CEBİRSEL DÜŞÜNME / VE DEĞİŞİMLER",
+                           "konu":  "Cebirsel İfadelerle İşlemler ve Algoritma",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.4.7",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Dikdörtgenin, paralelkenarın alanına ve çemberin uzunluğuna ilişkin deneyimlerini dairenin alan bağıntısına yansıtabilme",
+                           "unite":  "GEOMETRİK NİCELİKLER (2)",
+                           "konu":  "Daire ve Daire Diliminin Alanı",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.4.8",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Çemberde merkez açı ve gördüğü yay uzunluğu arasındaki ilişkiden yola çıkarak daire ve daire diliminin alanları arasındaki ilişkiye yönelik analojik akıl yürütebilme",
+                           "unite":  "GEOMETRİK NİCELİKLER (2)",
+                           "konu":  "Daire ve Daire Diliminin Alanı",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.4.9",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Eşkenar dörtgen ve yamuğun alan bağıntılarına dair çıkarım yapabilme / a) Dikdörtgen, paralelkenar ve üçgenin alan bağıntısına dair ön bilgisiyle eşkenar dörtgenin ve yamuğun alan hesabına yönelik varsayımda bulunur. / b) Eşkenar dörtgeni ve yamuğu parçalayarak veya tamamlayarak oluşturduğu geometrik şekillerin alanlarını belirler. / c) Oluşturulan geometrik şekillerin alanlarını varsayımlarıyla k",
+                           "unite":  "GEOMETRİK NİCELİKLER (2)",
+                           "konu":  "Eşkenar Dörtgen ve Yamuk",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.7.4.10",
+                           "sinif":  7,
+                           "ders":  "Matematik",
+                           "metin":  "Günlük hayat durumlarında daire, daire dilimi, eşkenar dörtgen ve yamuğun alanına ilişkin problem çözebilme / a) Günlük hayat durumlarında daire, daire dilimi, eşkenar dörtgen ve yamuğun / alanlarına ilişkin problemde ilgili matematiksel bileşenleri (şekil, uzunluk, alan, açı, köşegen, yarıçap, yükseklik gibi) belirler. / b) Matematiksel bileşenler arasındaki ilişkileri belirler. / c) Problem bağl",
+                           "unite":  "GEOMETRİK NİCELİKLER (2)",
+                           "konu":  "Daire ve Daire Diliminin Alanı / Eşkenar Dörtgen ve Yamuk",
+                           "program":  "TYMM"
+                       }
+                   ]
+}

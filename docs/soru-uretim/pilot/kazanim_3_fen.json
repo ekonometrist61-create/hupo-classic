@@ -1,0 +1,187 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (Fen Bilimleri 3. sınıf; program: TYMM)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "FB.3.1.1",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Bilimsel bilgiye ulaşma yollarını sorgulayabilme / a) Merak ettiği bilimsel bir konuyu tanımlar. / b) İlgili konu hakkında sorular sorar. / c) Sorularını cevaplamaya yönelik bilgi toplar. / ç) Bilimsel bilgiye ulaşma yollarının uygunluğunu değerlendirir. / d) Toplanan bilgiler üzerinden bilimsel bilgiye ulaşma yollarına ilişkin çıkarım yapar",
+                           "unite":  "1. ÜNİTE: BİLİMSEL KEŞİF YOLCULUĞU",
+                           "konu":  "Bilimsel Bilgiye Ulaşma Yolları | Bilimsel Bilgiye Ulaşma Yolları / Bilim İnsanlarının Özellikleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.1.2",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Bilim insanlarının özelliklerini genelleyebilme / a) Merak ettiği bilimsel bir konuyu tanımlar. / b) İlgili konu hakkında sorular sorar. / c) Sorularını cevaplamaya yönelik bilgi toplar. / ç) Bilimsel bilgiye ulaşma yollarının uygunluğunu değerlendirir. / d) Toplanan bilgiler üzerinden bilimsel bilgiye ulaşma yollarına ilişkin çıkarım yapar. / a) Bilim insanları hakkında bilgi toplar. / b) Bilim i",
+                           "unite":  "1. ÜNİTE: BİLİMSEL KEŞİF YOLCULUĞU",
+                           "konu":  "Bilim İnsanlarının Özellikleri | Bilimsel Bilgiye Ulaşma Yolları / Bilim İnsanlarının Özellikleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.2.1",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Canlıları; mikroskopla görülebilen canlılar, mantarlar, bitkiler ve hayvanlar olarak sınıflandırabilme / a) Canlıların benzer ve farklı niteliklerini belirler. / b) Canlıları niteliklerine göre ayırır. / c) Canlıları gruplandırır. / ç) Canlıları etiketler",
+                           "unite":  "2. ÜNİTE: CANLILAR DÜNYASINA YOLCULUK",
+                           "konu":  "Canlıların Sınıflandırılması",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.2.2",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Canlıların çevrelerini farklı yollarla algılamaları konusunda bilimsel çıkarım yapabilme / a) Canlıların çevrelerini algılama biçimlerine ilişkin nitelikleri tanımlar. / b) Duyu organlarının işlevleri ile ilgili veri toplayarak kaydeder. / c) Canlıların çevrelerini farklı biçimlerde algılamalarına ilişkin verileri yorumlayarak değerlendirir",
+                           "unite":  "2. ÜNİTE: CANLILAR DÜNYASINA YOLCULUK",
+                           "konu":  "Duyu Organlarının İşlevleri | Duyu Organlarının İşlevleri / Canlıların Yaşam Döngüleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.2.3",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Canlıların yaşam döngülerini açıklamada tümevarımsal akıl yürütebilme / a) Canlıların çevrelerini algılama biçimlerine ilişkin nitelikleri tanımlar. / b) Duyu organlarının işlevleri ile ilgili veri toplayarak kaydeder. / c) Canlıların çevrelerini farklı biçimlerde algılamalarına ilişkin verileri yorumlayarak değerlendirir. / a) Canlıların yaşam döngüleri ile ilgili örüntüleri bulur. / b) Canlıları",
+                           "unite":  "2. ÜNİTE: CANLILAR DÜNYASINA YOLCULUK | 2. ÜNİTE: CANLILAR DÜNYASINA YOLCULUK / 3. ÜNİTE: YER BİLİMCİLER İŞ BAŞINDA",
+                           "konu":  "Canlıların Yaşam Döngüleri / Kayaçlar, Madenler ve Mineraller | Duyu Organlarının İşlevleri / Canlıların Yaşam Döngüleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.3.1",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kayaçlar, madenler ve mineraller ile ilgili tümdengelimsel akıl yürütebilme / a) Canlıların yaşam döngüleri ile ilgili örüntüleri bulur. / b) Canlıların yaşam döngüleri ile ilgili genelleme yapar. / a) Kayaçlar, madenler ve mineralleri belirler. / b) Kayaçlar, madenler ve mineraller arasında ilişki kurar. / c) Kayaçlar, madenler ve mineraller arasında genelden genele veya genelden özele çıkarım ya",
+                           "unite":  "2. ÜNİTE: CANLILAR DÜNYASINA YOLCULUK / 3. ÜNİTE: YER BİLİMCİLER İŞ BAŞINDA | 3. ÜNİTE: YER BİLİMCİLER İŞ BAŞINDA",
+                           "konu":  "Canlıların Yaşam Döngüleri / Kayaçlar, Madenler ve Mineraller | Kayaçlar, Madenler ve Mineraller | Kayaçlar, Madenler ve Mineraller / Fosil Oluşumu",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.3.2",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Fosil oluşumu ile ilgili bilgileri sentezleyebilme / a) Kayaçlar, madenler ve mineralleri belirler. / b) Kayaçlar, madenler ve mineraller arasında ilişki kurar. / c) Kayaçlar, madenler ve mineraller arasında genelden genele veya genelden özele çıkarım yapar. / a) Fosil oluşumunu gösteren sürecin bütün ve parçalarını belirler. / b) Süreci oluşturan aşamalar arasında ilişki kurar. / c) Fosillerin ol",
+                           "unite":  "3. ÜNİTE: YER BİLİMCİLER İŞ BAŞINDA | 3. ÜNİTE: YER BİLİMCİLER İŞ BAŞINDA / 4. ÜNİTE: MADDEYİ TANIYALIM, KARIŞTIRIP AYIRALIM",
+                           "konu":  "Fosil Oluşumu | Fosil Oluşumu / Maddenin Katı, Sıvı ve Gaz Hâli | Kayaçlar, Madenler ve Mineraller / Fosil Oluşumu",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.4.1",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Çevresindeki maddeleri hâllerine göre sınıflandırabilme / a) Fosil oluşumunu gösteren sürecin bütün ve parçalarını belirler. / b) Süreci oluşturan aşamalar arasında ilişki kurar. / c) Fosillerin oluşum sürecini oluşturan aşamaları uygun sırayla bir bütün hâline getirir. / a) Çevresindeki maddelerin niteliklerini tanımlar. / b) Çevresindeki maddeleri niteliklerine göre ayırır. / c) Çevresindeki mad",
+                           "unite":  "3. ÜNİTE: YER BİLİMCİLER İŞ BAŞINDA / 4. ÜNİTE: MADDEYİ TANIYALIM, KARIŞTIRIP AYIRALIM | 4. ÜNİTE: MADDEYİ TANIYALIM, KARIŞTIRIP AYIRALIM",
+                           "konu":  "Fosil Oluşumu / Maddenin Katı, Sıvı ve Gaz Hâli | Maddenin Katı, Sıvı ve Gaz Hâli | Maddenin Katı, Sıvı ve Gaz Hâli / Karışımlar ve Karışımların Ayrılması",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.4.2",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Günlük yaşamda karşılaştığı karışımların ayrılmasında kullanılabilecek uygun yöntemleri kullanarak deney yapabilme / a) Çevresindeki maddelerin niteliklerini tanımlar. / b) Çevresindeki maddeleri niteliklerine göre ayırır. / c) Çevresindeki maddeleri hâllerine göre gruplandırır. / ç) Maddeleri hâllerine göre katı, sıvı ve gaz olarak etiketler. / a) Karışımların ayrılmasında kullanılabilecek yöntem",
+                           "unite":  "4. ÜNİTE: MADDEYİ TANIYALIM, KARIŞTIRIP AYIRALIM",
+                           "konu":  "Karışımlar ve Karışımların Ayrılması / Atıkların Ayrıştırılması | Maddenin Katı, Sıvı ve Gaz Hâli / Karışımlar ve Karışımların Ayrılması",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.4.3",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Atıkların ayrıştırılmasına ilişkin problem çözebilme / a) Karışımların ayrılmasında kullanılabilecek yöntemlerle ilgili deney tasarlar. / b) Deneyle ilgili ölçme ve veri analizi yapar. / a) Atıkların ayrıştırılmasına ilişkin problemi yapılandırır. / b) Atıkların ayrıştırılmasına ilişkin problemi özetler. / c) Atıkların ayrıştırılmasına ilişkin çözüm önerilerini gözleme ya da veriye dayalı tahmin /",
+                           "unite":  "4. ÜNİTE: MADDEYİ TANIYALIM, KARIŞTIRIP AYIRALIM | 4. ÜNİTE: MADDEYİ TANIYALIM, KARIŞTIRIP AYIRALIM / 5. ÜNİTE: HAREKETİ KEŞFEDİYORUM",
+                           "konu":  "Atıkların Ayrıştırılması | Atıkların Ayrıştırılması / Varlıkların Hareketleri | Karışımlar ve Karışımların Ayrılması / Atıkların Ayrıştırılması",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.5.1",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Varlıkların hareket durumlarını gözleme dayalı tahmin edebilme / a) Atıkların ayrıştırılmasına ilişkin problemi yapılandırır. / b) Atıkların ayrıştırılmasına ilişkin problemi özetler. / c) Atıkların ayrıştırılmasına ilişkin çözüm önerilerini gözleme ya da veriye dayalı tahmin eder. / ç) Atıkların ayrıştırılmasına ilişkin problemin çözümüne yönelik önermeler üzerinden akıl yürütür. / d) Atıkların a",
+                           "unite":  "4. ÜNİTE: MADDEYİ TANIYALIM, KARIŞTIRIP AYIRALIM / 5. ÜNİTE: HAREKETİ KEŞFEDİYORUM | 5. ÜNİTE: HAREKETİ KEŞFEDİYORUM",
+                           "konu":  "Atıkların Ayrıştırılması / Varlıkların Hareketleri | Varlıkların Hareketleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.5.2",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kuvvetin varlıklar üzerindeki etkilerini bilimsel gözleme dayalı tahmin edebilme / a) Varlıkların hareketinin ve şekil değiştirmesinin nedenine ilişkin ön bilgi ve deneyimleriyle önerme oluşturur. / b) Varlıkların hareketinin ve şekil değiştirmesinin nedenine ilişkin gözleme dayalı olan önermeleri karşılaştırır. / c) Kuvvetin varlıkların hareketine ve şekil değiştirmesine etkilerine ilişkin tahmin",
+                           "unite":  "5. ÜNİTE: HAREKETİ KEŞFEDİYORUM | 5. ÜNİTE: HAREKETİ KEŞFEDİYORUM / 6. ÜNİTE: YAŞAMIMIZI KOLAYLAŞTIRAN ELEKTRİK",
+                           "konu":  "Kuvvet ve Etkileri | Kuvvet ve Etkileri / Elektrikli Araç Gereç",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.6.1",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Bazı araç gerecin elektrikli olduğuna ilişkin bilimsel çıkarım yapabilme / a) Varlıkların hareketinin ve şekil değiştirmesinin nedenine ilişkin ön bilgi ve deneyimleriyle önerme oluşturur. / b) Varlıkların hareketinin ve şekil değiştirmesinin nedenine ilişkin gözleme dayalı olan önermeleri karşılaştırır. / c) Kuvvetin varlıkların hareketine ve şekil değiştirmesine etkilerine ilişkin tahminlerini t",
+                           "unite":  "5. ÜNİTE: HAREKETİ KEŞFEDİYORUM / 6. ÜNİTE: YAŞAMIMIZI KOLAYLAŞTIRAN ELEKTRİK | 6. ÜNİTE: YAŞAMIMIZI KOLAYLAŞTIRAN ELEKTRİK",
+                           "konu":  "Elektrikli Araç Gereç / Elektrikli Araç Gerecin Güvenli Kullanımı | Kuvvet ve Etkileri / Elektrikli Araç Gereç",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.6.2",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Elektrikli araç gerecin güvenli kullanımı ile ilgili eleştirel düşünebilme / a) Farklı araç gerecin niteliklerini tanımlar. / b) Elektrikli araç gereçle ilgili veri toplayarak kaydeder. / c) Elektrikli araç gereçle ilgili verileri değerlendirir. / a) Elektrikli araç gerecin güvenli kullanımı ile ilgili verilen bir olay/konu/problem veya durumu sorgular. / b) Elektrikli araç gerecin kullanımında gü",
+                           "unite":  "6. ÜNİTE: YAŞAMIMIZI KOLAYLAŞTIRAN ELEKTRİK",
+                           "konu":  "Elektrikli Araç Gerecin Güvenli Kullanımı | Elektrikli Araç Gereç / Elektrikli Araç Gerecin Güvenli Kullanımı",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.6.3",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Elektriği tasarruflu kullanma konusunda bilimsel veriye dayalı tahmin edebilme / a) Elektriği tasarruflu kullanma konusunda verilere ve/veya ön bilgilere dayalı önerme oluşturur. / b) Elektriği tasarruflu kullanma üzerine nicel ölçüm verilerine dayalı önermelerini gerekçelendirir. / c) Hesaplamalarına dayalı olarak tahmin eder. / ç) Tahminlerin geçerliliğini sorgular",
+                           "unite":  "6. ÜNİTE: YAŞAMIMIZI KOLAYLAŞTIRAN ELEKTRİK | 6. ÜNİTE: YAŞAMIMIZI KOLAYLAŞTIRAN ELEKTRİK / 7. ÜNİTE: TOPRAĞI TANIYORUM, TARIMI KEŞFEDİYORUM",
+                           "konu":  "Elektriğin Tasarruflu Kullanımı | Elektriğin Tasarruflu Kullanımı / Toprak Oluşumu ve Yapısı",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.7.1",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Toprak oluşumunu ve yapısını bilimsel olarak gözlemleyebilme / a) Elektriği tasarruflu kullanma konusunda verilere ve/veya ön bilgilere dayalı önerme oluşturur. / b) Elektriği tasarruflu kullanma üzerine nicel ölçüm verilerine dayalı önermelerini gerekçelendirir. / c) Hesaplamalarına dayalı olarak tahmin eder. / ç) Tahminlerin geçerliliğini sorgular. / a) Toprağın oluşumuna ve yapısına ilişkin nit",
+                           "unite":  "6. ÜNİTE: YAŞAMIMIZI KOLAYLAŞTIRAN ELEKTRİK / 7. ÜNİTE: TOPRAĞI TANIYORUM, TARIMI KEŞFEDİYORUM | 7. ÜNİTE: TOPRAĞI TANIYORUM, TARIMI KEŞFEDİYORUM",
+                           "konu":  "Elektriğin Tasarruflu Kullanımı / Toprak Oluşumu ve Yapısı | Toprak Oluşumu ve Yapısı | Toprak Oluşumu ve Yapısı / Bitki Yetiştirme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.7.2",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Bir bitkinin yetişmesi için gerekenleri genelleyebilme / a) Toprağın oluşumuna ve yapısına ilişkin nitelikleri tanımlar. / b) Toprağın yapısına ilişkin veri toplayarak kaydeder. / c) Toprağın yapısına ilişkin topladığı verileri açıklar. / a) Çevresinde bulunan tarım ürünlerinin nasıl yetiştirildiği konusunda araştırma yaparak bilgi toplar. / b) Bitki yetiştirmek için gerekli ortak özellikleri beli",
+                           "unite":  "7. ÜNİTE: TOPRAĞI TANIYORUM, TARIMI KEŞFEDİYORUM | 7. ÜNİTE: TOPRAĞI TANIYORUM, TARIMI KEŞFEDİYORUM / 8. ÜNİTE: CANLILARIN YAŞAM ALANLARINA YOLCULUK",
+                           "konu":  "Bitki Yetiştirme | Bitki Yetiştirme / Yaşam Alanları | Toprak Oluşumu ve Yapısı / Bitki Yetiştirme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.8.1",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Canlıların yaşam alanlarının özelliklerini belirlemeye yönelik kanıt kullanabilme / a) Çevresinde bulunan tarım ürünlerinin nasıl yetiştirildiği konusunda araştırma yaparak bilgi toplar. / b) Bitki yetiştirmek için gerekli ortak özellikleri belirler. / c) Farklı bitkilerin yetiştirilmesinde ortak olmayan özellikleri belirler. / ç) Bir bitki yetiştirmek için yapılması gerekenler konusunda önermede ",
+                           "unite":  "7. ÜNİTE: TOPRAĞI TANIYORUM, TARIMI KEŞFEDİYORUM / 8. ÜNİTE: CANLILARIN YAŞAM ALANLARINA YOLCULUK | 8. ÜNİTE: CANLILARIN YAŞAM ALANLARINA YOLCULUK",
+                           "konu":  "Bitki Yetiştirme / Yaşam Alanları | Yaşam Alanları | Yaşam Alanları / Canlı Çeşitliliği",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.8.2",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Yaşam alanındaki canlı çeşitliliğini operasyonel olarak tanımlayabilme / a) Canlıların yaşam alanlarının özelliklerine ilişkin veri toplayarak kaydeder. / b) Canlıların yaşam alanlarına ilişkin veri setleri oluşturur. / c) Canlıların yaşam alanlarının özelliklerine ilişkin veriye dayalı açıklama yapar. / a) Yaşam alanının özelliklerini tanımlar. / b) Yaşam alanındaki canlı çeşitliliği ile ilgili ö",
+                           "unite":  "8. ÜNİTE: CANLILARIN YAŞAM ALANLARINA YOLCULUK",
+                           "konu":  "Canlı Çeşitliliği | Yaşam Alanları / Canlı Çeşitliliği",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.3.8.3",
+                           "sinif":  3,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Yaşam alanlarının korunması için yapılacakları sorgulayabilme / a) Merak ettiği konuyu tanımlar. / b) İlgili konu hakkında sorular sorar. / c) İlgili konu hakkında bilgi toplar. / ç) Toplanan bilgilerin doğruluğunu değerlendirir. / d) Toplanan bilgiler üzerinde çıkarım yapar",
+                           "unite":  "8. ÜNİTE: CANLILARIN YAŞAM ALANLARINA YOLCULUK",
+                           "konu":  "Yaşam Alanlarının Korunmasının Canlı Çeşitliliğine Etkisi",
+                           "program":  "TYMM"
+                       }
+                   ]
+}

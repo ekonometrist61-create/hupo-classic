@@ -1,0 +1,304 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (Matematik 3. sınıf; program: TYMM)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "MAT.3.1.1",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Niceliklerin büyüklüklerine karşılık gelen 1000’e kadar olan sayıların temsillerinden yararlanabilme",
+                           "unite":  "SAYILAR VE NİCELİKLER (1)",
+                           "konu":  "Sayılar / Sayıları Çözümleme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.2",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "1000’e kadar olan sayıları çözümleyebilme / a) Niceliklerin büyüklüklerinin temsillerini tanır. / b) Niceliklerin büyüklüklerine uygun sayı temsillerini belirler. / c) Niceliklerin büyüklüklerine karşılık gelen uygun sayıları okur ve yazar. / a) Üç basamaklı sayıların basamaklarını belirler. / b) Üç basamaklı sayıların basamak ve basamak değerleri arasındaki ilişkileri / belirler",
+                           "unite":  "SAYILAR VE NİCELİKLER (1)",
+                           "konu":  "Sayılar / Sayıları Çözümleme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.3",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Sayıları sıralayabilme",
+                           "unite":  "SAYILAR VE NİCELİKLER (1)",
+                           "konu":  "Sayıları Sıralama / Ritmik Sayma",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.4",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Sayıları ileriye ve geriye doğru ritmik sayabilme / a) 1000’e kadar olan sayıları öncelik/sonralık ilişkisine göre belirler. / b) 1000’e kadar olan sayıları bulundukları onluklara ve yüzlüklere göre ayırır. / c) 1000’e kadar olan sayıları en yakın onluklara ve yüzlüklere göre tasnif eder. / ç) 1000’e kadar olan sayıları en yakın onluklara ve yüzlüklere göre ifade eder. / a) Modeller üzerinde ileri",
+                           "unite":  "SAYILAR VE NİCELİKLER (1)",
+                           "konu":  "Ritmik Sayma / Tek ve Çift Sayılar | Sayıları Sıralama / Ritmik Sayma",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.5",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Sayıları tek-çift olarak sınıflandırabilme / b) 60 içinde altışar, 70 içinde yedişer, 80 içinde sekizer, 90 içinde dokuzar; 1000 içinde onar ve yüzer ileriye ve geriye doğru ritmik sayarken örüntü bulur. / c) İleriye ve geriye doğru ritmik sayarken bulduğu örüntüyü geneller. / a) Sayıları tek-çift ilişkisine göre belirler. / b) Sayıları tek-çift olma durumlarına göre ayırt eder. / c) Sayıları tek-",
+                           "unite":  "SAYILAR VE NİCELİKLER (1)",
+                           "konu":  "Ritmik Sayma / Tek ve Çift Sayılar | Tek ve Çift Sayılar / Tek ve Çift Sayıların Toplamı / Sayı ve Şekil Örüntüleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.6",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Tek ve çift sayıların toplamlarının tek ya da çift olma durumu arasındaki ilişkiye / yönelik tümevarımsal akıl yürütebilme",
+                           "unite":  "SAYILAR VE NİCELİKLER (1)",
+                           "konu":  "Tek ve Çift Sayılar / Tek ve Çift Sayıların Toplamı / Sayı ve Şekil Örüntüleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.7",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Sayı ve sayı temsiline dönüşen şekil örüntülerine dayalı çıkarım yapabilme / ç) Sayıları tek-çift sayı olarak ifade eder. / a) Tek ve çift sayıların toplamlarına yönelik örnek durumların tek ya da çift / olma özelliklerini belirler. / b) Toplanan sayılar ile elde edilen toplamın tek ya da çift olma durumları arasındaki örüntüyü belirler. / c) Tek ve çift sayıların toplamlarının tek ya da çift olma",
+                           "unite":  "SAYILAR VE NİCELİKLER (1)",
+                           "konu":  "Sayı ve Şekil Örüntüleri / Nesne Sayısını Tahmin Etme | Tek ve Çift Sayılar / Tek ve Çift Sayıların Toplamı / Sayı ve Şekil Örüntüleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.8",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Bir çokluktaki ilişkilerden yararlanarak 100’e kadar olan nesnelerin sayısını tahmin edebilme / b) Belirlediği varsayıma göre sayı ve sayı temsiline dönüşen şekil örüntülerini / örnekler üzerinde listeler. / c) Gösterilen örüntünün varsayımı karşılayıp karşılamadığını örneklerle sınar. / ç) Karşılaştırılan sayı ve sayı temsiline dönüşen şekil örüntülerinin kuralını / sözlü olarak ifade eder. / d) ",
+                           "unite":  "SAYILAR VE NİCELİKLER (1) | SAYILAR VE NİCELİKLER (1) / SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Nesne Sayısını Tahmin Etme / Bütün, Yarım ve Çeyreğin Kesir Gösterimi | Sayı ve Şekil Örüntüleri / Nesne Sayısını Tahmin Etme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.9",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Bütün, yarım ve çeyreğin kesirle gösterimi için modellerden yararlanabilme / b) Bir çokluğun büyüklüğünü stratejiye dayanarak tahmin eder. / c) Tahmini ile sayma sonucunu karşılaştırarak tahmininin doğruluğuna yönelik bir yargıda bulunur. / a) Bütün, yarım ve çeyrek modellerinin temsillerini tanır",
+                           "unite":  "SAYILAR VE NİCELİKLER (1) / SAYILAR VE NİCELİKLER (2) | SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Bütün, Yarım ve Çeyreğin Kesir Gösterimi | Nesne Sayısını Tahmin Etme / Bütün, Yarım ve Çeyreğin Kesir Gösterimi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.10",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Bir bütünü eş parçalar oluşturacak şekilde birim kesir olarak çözümleyebilme / a) Bir bütünü oluşturan eş parçaları belirler. / b) Bütün ile eş parçaların her biri arasındaki ilişkiyi belirler",
+                           "unite":  "SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Bir Bütünü Oluşturan Eş Parçalar | Bir Bütünü Oluşturan Eş Parçalar / Bir Kesrin / Payı İle Paydası Arasındaki İlişki",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.11",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Bir kesrin payı ile paydası arasındaki ilişkiyi çözümleyebilme / b) Bütün ile eş parçaların her biri arasındaki ilişkiyi belirler. / a) Bir kesrin pay ve paydasına ait parçaları belirler. / b) Bir kesrin pay ve paydasına ait parçalar arasındaki ilişkiyi belirler",
+                           "unite":  "SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Bir Bütünü Oluşturan Eş Parçalar / Bir Kesrin / Payı İle Paydası Arasındaki İlişki",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.12",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Analog ve dijital saatlerde zamanı okuyabilme ve yazabilme",
+                           "unite":  "SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Analog ve Dijital Saatlerde Zamanı Okuma ve Yazma / Zaman Ölçü Birimleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.13",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Zaman ölçü birimlerini çözümleyebilme / a) Zaman ölçü birimlerini (yıl, ay, hafta, gün, saat, dakika, saniye) belirler. / b) Zaman ölçü birimleri arasındaki ilişkileri belirler",
+                           "unite":  "SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Analog ve Dijital Saatlerde Zamanı Okuma ve Yazma / Zaman Ölçü Birimleri | Zaman Ölçü Birimleri / Olayların Oluş Sürelerini Tahmin Etme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.14",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Olayların oluş sürelerini tahmin ederek yargıda bulunabilme / b) Zaman ölçü birimleri arasındaki ilişkileri belirler. / a) Olayların oluş sürelerini birbirleriyle ilişkilendirir",
+                           "unite":  "SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Olayların Oluş Sürelerini Tahmin Etme | Zaman Ölçü Birimleri / Olayların Oluş Sürelerini Tahmin Etme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.15",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Uzunluk ve kütle birimleri arasındaki ilişkileri kullanarak bu birimleri kendi içerisinde çözümleyebilme",
+                           "unite":  "SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Uzunluk ve Kütle Ölçü Birimleri / Madenî ve Kâğıt Paralar",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.1.16",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Madenî ve kâğıt paraları değerlerine göre ilişkilendirerek yorumlayabilme / a) Standart kütle ve uzunluk birimlerine ilişkin parçaları belirler. / b) Santimetre, metre, kilometre ve gram, kilogram ve ton arasındaki ilişkileri / kendi içerisinde belirler. / a) Paraları değerlerine göre inceler",
+                           "unite":  "SAYILAR VE NİCELİKLER (2)",
+                           "konu":  "Madenî ve Kâğıt Paralar | Uzunluk ve Kütle Ölçü Birimleri / Madenî ve Kâğıt Paralar",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.2.1",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Toplama ve çıkarma işlemlerinin sonuçlarını tahminde bulunarak ve zihinden / işlem yaparak muhakeme edebilme / a) Toplama ve çıkarma işlemlerine ilişkin ögeleri belirler. / b) Toplama ve çıkarma işlemlerine ilişkin ögeler arasındaki ilişkileri belirler",
+                           "unite":  "İŞLEMLERDEN CEBİRSEL DÜŞÜNMEYE",
+                           "konu":  "Toplama ve Çıkarma İşlemlerinin Sonuçlarını / Tahmin Etme ve Zihinden İşlem",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.2.2",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Toplama ve çıkarma işlemlerini çözümleyebilme / a) Toplama ve çıkarma işlemlerinin adımlarını belirler. / b) Toplama ve çıkarmanın işlem süreçlerini birbiri ile ilişkilendirir",
+                           "unite":  "İŞLEMLERDEN CEBİRSEL DÜŞÜNMEYE",
+                           "konu":  "Toplama / ve Çıkarma İşlemlerini Çözümleme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.2.3",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Çarpma ve bölme işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme / a) Çarpma ve bölme işlemlerine ilişkin bileşenleri belirler. / b) Çarpma ve bölme işlemlerine ilişkin bileşenler arasındaki ilişkileri belirler. / c) Çarpma ve bölme işlemine yönelik tahminî ve zihinden işlem sonuçlarını ifade eder. / ç) Tahminî ve zihinden işlem sonuçlarını kendi cümleleri il",
+                           "unite":  "İŞLEMLERDEN CEBİRSEL DÜŞÜNMEYE",
+                           "konu":  "Çarpma ve Bölme İşlemlerinin Sonuçlarını / Tahmin Etme ve Zihinden İşlem",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.2.4",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Çarpma ve bölme işlemlerini çözümleyebilme / a) Çarpma ve bölme işlemlerinin adımlarını belirler. / b) Çarpma ve bölme işlemlerini birbiri ile ilişkilendirir",
+                           "unite":  "İŞLEMLERDEN CEBİRSEL DÜŞÜNMEYE",
+                           "konu":  "Çarpma ve Bölme İşlemlerini Çözümleme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.2.5",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Dört işlem gerektiren durumlar için verilen yönergeleri takip ederek yorumlayabilme / a) Dört işleme ait bileşenleri inceler. / b) İncelediği bileşenleri işlem diline dönüştürür. / c) Oluşturduğu yapıyı temsillerle yeniden ifade eder",
+                           "unite":  "İŞLEMLERDEN CEBİRSEL DÜŞÜNMEYE",
+                           "konu":  "Dört İşlemi Yönergelere / Göre Yorumlama",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.2.6",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Dört işlem gerektiren günlük yaşam problemlerini çözebilme / a) Problemi anlayarak verilenleri ve istenilenleri belirler. / b) Problemde verilenlerin ve istenilenlerin gerektirdiği işlemler arasındaki ilişkiyi belirler. / c) Probleme ilişkin verilenleri belirleyerek uygun matematiksel temsillere dönüştürür. / ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar",
+                           "unite":  "İŞLEMLERDEN CEBİRSEL DÜŞÜNMEYE",
+                           "konu":  "Dört İşlem Gerektiren Problemleri Çözme | Dört İşlem Gerektiren Problemleri Çözme / Dört İşlem Gerektiren / Problemleri Yapılandırma",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.2.7",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Dört işlem gerektiren problem durumlarını yapılandırabilme / h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir. / a) Dört işlem gerektiren problem durumlarına yönelik hiyerarşik, nedensel ya / da mantıksal ilişkiler ortaya koyar",
+                           "unite":  "İŞLEMLERDEN CEBİRSEL DÜŞÜNMEYE",
+                           "konu":  "Dört İşlem Gerektiren / Problemleri Yapılandırma / Dört İşlemde Eşitlik | Dört İşlem Gerektiren Problemleri Çözme / Dört İşlem Gerektiren / Problemleri Yapılandırma",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.2.8",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Dört işlem bağlamında eşitliğin farklı anlamlarını yorumlayabilme / b) Dört işlem yapmayı gerektiren deneyimleriyle elde ettiği ilişkilere dayalı bir / problem oluşturur. / a) Dört işlemde eşitliğin kullanımını inceler. / b) Aynı sonucu veren dört işlemi eşitliğin anlamını kullanarak farklı sayılarla / ifade eder",
+                           "unite":  "İŞLEMLERDEN CEBİRSEL DÜŞÜNMEYE | İŞLEMLERDEN CEBİRSEL DÜŞÜNMEYE / NESNELERİN GEOMETRİSİ (1)",
+                           "konu":  "Dört İşlem Gerektiren / Problemleri Yapılandırma / Dört İşlemde Eşitlik | Dört İşlemde Eşitlik / Geometrik Cisimlerin Özellikleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.3.1",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Geometrik cisimlerin özelliklerini yorumlayabilme / c) Eşitliğin anlamlarını dört işlem bağlamında ifade eder. / a) Geometrik cisimlerin özelliklerini inceler. / b) Geometrik cisimlerin köşe, yüz ve ayrıt özelliklerini ifade eder",
+                           "unite":  "NESNELERİN GEOMETRİSİ (1) | İŞLEMLERDEN CEBİRSEL DÜŞÜNMEYE / NESNELERİN GEOMETRİSİ (1)",
+                           "konu":  "Dört İşlemde Eşitlik / Geometrik Cisimlerin Özellikleri | Geometrik Cisimlerin Özellikleri / Geometrik Şekilleri Sınıflandırma",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.3.2",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Kenar sayılarına göre geometrik şekilleri sınıflandırabilme / c) Köşe, yüz ve ayrıt terimlerini kendi ifadeleri ile açıklar. / a) Geometrik şekillerin kenarlarını belirler. / b) Geometrik şekilleri kenar sayılarına göre ayırır. / c) Geometrik şekilleri kenar sayılarına göre tasnif eder",
+                           "unite":  "NESNELERİN GEOMETRİSİ (1)",
+                           "konu":  "Geometrik Cisimlerin Özellikleri / Geometrik Şekilleri Sınıflandırma | Geometrik Şekilleri Sınıflandırma / Geometrik Şekiller / ve Cisimler Çizme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.3.3",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Matematiksel araç ve teknolojileri kullanarak çeşitli geometrik şekilleri ve / cisimleri çizebilme / ç) Geometrik şekilleri kenar sayılarına göre adlandırır. / a) Geometrik şekil ve cisim çizmeyi gerektiren matematiksel araç ve teknolojileri / tanır. / b) Geometrik şekil ve cisim çizmek için gerekli araçları ve teknolojiyi belirler. / c) Belirlenen araç ve teknolojiyi kullanır",
+                           "unite":  "NESNELERİN GEOMETRİSİ (1)",
+                           "konu":  "Geometrik Şekilleri Sınıflandırma / Geometrik Şekiller / ve Cisimler Çizme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.3.4",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Standart olmayan ve standart ölçme araçları ile geometrik şekillerin çevre / uzunluğunu tahmin edebilme",
+                           "unite":  "NESNELERİN GEOMETRİSİ (1)",
+                           "konu":  "Geometrik Şekillerin Çevre Uzunluklarını Tahmin Etme / Sıvı Miktarını / Tahmin Etme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.3.5",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Standart sıvı ölçü birimleri cinsinden sıvı miktarını tahmin edebilme / a) Standart olmayan ve standart uzunluk ölçme araçlarına ilişkin deneyimini, tahmine konu olan şeklin çevre uzunluğu ile ilişkilendirir. / b) Belirlenen standart olmayan ve standart uzunluk ölçme aracına göre çevre uzunluğuna ilişkin tahminde bulunur. / c) Tahminini ölçüm sonuçlarıyla karşılaştırarak tahminine ilişkin yargıda ",
+                           "unite":  "NESNELERİN GEOMETRİSİ (1) | NESNELERİN GEOMETRİSİ (1) / NESNELERİN GEOMETRİSİ (2)",
+                           "konu":  "Geometrik Şekillerin Çevre Uzunluklarını Tahmin Etme / Sıvı Miktarını / Tahmin Etme | Sıvı Miktarını / Tahmin Etme / Simetri Doğrusu",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.3.6",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Birden fazla simetri doğrusu olan şekilleri çözümleyebilme / b) Belirlenen standart sıvı ölçü birimi cinsinden sıvının miktarına ilişkin tahminde bulunur. / c) Tahminini ölçüm sonuçlarıyla karşılaştırarak tahminine ilişkin yargıda bulunur. / a) Kare, dikdörtgen ve dairenin birden fazla simetri doğrusu olduğunu belirler. / b) Simetri doğrusuna göre oluşan parçaların birbirine eş olduğunu belirler",
+                           "unite":  "NESNELERİN GEOMETRİSİ (1) / NESNELERİN GEOMETRİSİ (2)",
+                           "konu":  "Sıvı Miktarını / Tahmin Etme / Simetri Doğrusu",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.3.7",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Bir parçası verilen simetrik şekli simetri doğrusuna göre yapılandırabilme",
+                           "unite":  "NESNELERİN GEOMETRİSİ (2)",
+                           "konu":  "Simetrik Şekli Tamamlama / Simetrik Şekil Oluşturma",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.3.8",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Yönerge ile yapılandırılan ve bir parçası verilen bir şekli tamamlayarak simetrisini oluşturmaya ilişkin kodlama stratejilerini kullanarak yargıda bulunabilme / a) Bir parçası verilen simetrik şekli inceleyerek mantıksal ilişkiler ortaya koyar. / b) Bir parçası verilen simetrik şekli yatay ve dikey simetri doğrusuna göre tamamlar. / a) Bir parçası verilen şekli tamamlayarak simetrisini oluşturmaya",
+                           "unite":  "NESNELERİN GEOMETRİSİ (2)",
+                           "konu":  "Simetrik Şekil Oluşturma | Simetrik Şekli Tamamlama / Simetrik Şekil Oluşturma",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "MAT.3.4.1",
+                           "sinif":  3,
+                           "ders":  "Matematik",
+                           "metin":  "Kategorik ve sayma ile elde edilen nicel veriye dayalı tek veri grubu ile çalışabilme ve veriye dayalı karar verebilme / a) Kategorik ve nicel veriye dayalı istatistiksel araştırma gerektiren günlük yaşam durumları belirler. / b) Kategorik ve nicel veriye dayalı betimleme gerektirebilecek araştırma soruları oluşturur. / c) Kategorik ve nicel verileri toplamak için plan yapar",
+                           "unite":  "VERİYE DAYALI ARAŞTIRMA",
+                           "konu":  "Veriyle Çalışma ve Veriye Dayalı Karar Verme",
+                           "program":  "TYMM"
+                       }
+                   ]
+}

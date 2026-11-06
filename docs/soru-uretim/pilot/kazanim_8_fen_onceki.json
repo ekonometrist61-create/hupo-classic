@@ -1,0 +1,556 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (Fen Bilimleri 8. sınıf; program: önceki program)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "F.8.1.1.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Mevsimlerin oluşumuna yönelik tahminlerde bulunur",
+                           "unite":  "1.ÜNİTE: MEVSİMLER VE İKLİM",
+                           "konu":  "8.1.1. Mevsimlerin Oluşumu",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.1.2.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "İklim ve hava olayları arasındaki farkı açıklar",
+                           "unite":  "1.ÜNİTE: MEVSİMLER VE İKLİM",
+                           "konu":  "8.1.2. İklim ve Hava Hareketleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.1.2.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "İklim biliminin (klimatoloji) bir bilim dalı olduğunu ve bu alanda çalışan uzmanlara iklim bilimci (klimatolog) adı verildiğini söyler",
+                           "unite":  "1.ÜNİTE: MEVSİMLER VE İKLİM / 2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.1.2. İklim ve Hava Hareketleri / 8.2.1. DNA ve Genetik Kod",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.1.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Nükleotid, gen, DNA ve kromozom kavramlarını açıklayarak bu kavramlar arasında ilişki kurar",
+                           "unite":  "1.ÜNİTE: MEVSİMLER VE İKLİM / 2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.1.2. İklim ve Hava Hareketleri / 8.2.1. DNA ve Genetik Kod",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.1.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "DNA’nın yapısını model üzerinde gösterir",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.1. DNA ve Genetik Kod / 8.2.2. Kalıtım",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.1.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "DNA’nın kendini nasıl eşlediğini ifade eder",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.1. DNA ve Genetik Kod / 8.2.2. Kalıtım",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.2.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kalıtım ile ilgili kavramları tanımlar",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.1. DNA ve Genetik Kod / 8.2.2. Kalıtım | 8.2.2. Kalıtım",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.2.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Tek karakter çaprazlamaları ile ilgili problemler çözerek sonuçlar hakkında yorum yapar",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.2. Kalıtım",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.2.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Akraba evliliklerinin genetik sonuçlarını tartışır",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.2. Kalıtım",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.3.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Örneklerden yola çıkarak mutasyonu açıklar",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.3. Mutasyon ve Modifikasyon / 8.2.4. Adaptasyon (Çevreye Uyum)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.3.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Örneklerden yola çıkarak modifikasyonu açıklar",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.3. Mutasyon ve Modifikasyon / 8.2.4. Adaptasyon (Çevreye Uyum)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.3.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Mutasyonla modifikasyon arasındaki farklar ile ilgili çıkarımda bulunur",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.3. Mutasyon ve Modifikasyon / 8.2.4. Adaptasyon (Çevreye Uyum)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.4.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Canlıların yaşadıkları çevreye uyumlarını gözlem yaparak açıklar",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.3. Mutasyon ve Modifikasyon / 8.2.4. Adaptasyon (Çevreye Uyum)",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.5.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Genetik mühendisliğini ve biyoteknolojiyi ilişkilendirir",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.5. Biyoteknoloji",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.5.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Biyoteknolojik uygulamalar kapsamında oluşturulan ikilemlerle bu uygulamaların insanlık için yararlı ve zararlı yönlerini tartışır",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.5. Biyoteknoloji",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.2.5.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Gelecekteki genetik mühendisliği ve biyoteknoloji uygulamalarının neler olabileceği hakkında tahminde bulunur",
+                           "unite":  "2.ÜNİTE: DNA VE GENETİK KOD",
+                           "konu":  "8.2.5. Biyoteknoloji",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.3.1.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Katı basıncını etkileyen değişkenleri deneyerek keşfeder",
+                           "unite":  "3.ÜNİTE: BASINÇ",
+                           "konu":  "8.3.1. Basınç",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.3.1.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Sıvı basıncını etkileyen değişkenleri tahmin eder ve tahminlerini test eder",
+                           "unite":  "3.ÜNİTE: BASINÇ",
+                           "konu":  "8.3.1. Basınç",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.3.1.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Katı, sıvı ve gazların basınç özelliklerinin günlük yaşam ve teknolojideki uygulamalarına örnekler verir",
+                           "unite":  "3.ÜNİTE: BASINÇ / 4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.3.1. Basınç / 8.4.1. Periyodik Sistem",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.1.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Periyodik sistemde, grup ve periyotların nasıl oluşturulduğunu açıklar",
+                           "unite":  "3.ÜNİTE: BASINÇ / 4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.3.1. Basınç / 8.4.1. Periyodik Sistem",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.1.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Elementleri periyodik tablo üzerinde metal, yarımetal ve ametal olarak sınıflandırır",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.1. Periyodik Sistem / 8.4.2. Fiziksel ve Kimyasal Değişimler",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.2.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Fiziksel ve kimyasal değişim arasındaki farkları, çeşitli olayları gözlemleyerek açıklar",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.1. Periyodik Sistem / 8.4.2. Fiziksel ve Kimyasal Değişimler | 8.4.2. Fiziksel ve Kimyasal Değişimler / 8.4.3. Kimyasal Tepkimeler",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.3.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Bileşiklerin kimyasal tepkime sonucunda oluştuğunu bilir",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.2. Fiziksel ve Kimyasal Değişimler / 8.4.3. Kimyasal Tepkimeler | 8.4.3. Kimyasal Tepkimeler / 8.4.4. Asitler ve Bazlar",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.4.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Asit ve bazların genel özelliklerini ifade eder",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.3. Kimyasal Tepkimeler / 8.4.4. Asitler ve Bazlar",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.4.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Asit ve bazlara günlük yaşamdan örnekler verir",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.3. Kimyasal Tepkimeler / 8.4.4. Asitler ve Bazlar",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.4.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Günlük hayatta ulaşılabilecek malzemeleri asit-baz ayracı olarak kullanır",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.3. Kimyasal Tepkimeler / 8.4.4. Asitler ve Bazlar",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.4.4",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Maddelerin asitlik ve bazlık durumlarına ilişkin pH değerlerini kullanarak çıkarımda bulunur",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.4. Asitler ve Bazlar",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.4.5",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Asit ve bazların çeşitli maddeler üzerindeki etkilerini gözlemler",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.4. Asitler ve Bazlar",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.4.6",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Asit ve bazların temizlik malzemesi olarak kullanılması esnasında oluşabilecek tehlikelerle ilgili gerekli tedbirleri alır",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.4. Asitler ve Bazlar",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.4.7",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Asit yağmurlarının önlenmesine yönelik çözüm önerileri sunar",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.4. Asitler ve Bazlar / 8.4.5. Maddenin Isı ile Etkileşimi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.5.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Isınmanın maddenin cinsine, kütlesine ve/veya sıcaklık değişimine bağlı olduğunu deney yaparak keşfeder",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.4. Asitler ve Bazlar / 8.4.5. Maddenin Isı ile Etkileşimi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.5.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Hâl değiştirmek için gerekli ısının maddenin cinsi ve kütlesiyle ilişkili olduğunu deney yaparak keşfeder",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.4. Asitler ve Bazlar / 8.4.5. Maddenin Isı ile Etkileşimi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.5.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Maddelerin hâl değişimi ve ısınma grafiğini çizerek yorumlar",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.5. Maddenin Isı ile Etkileşimi / 8.4.6.Türkiye’de Kimya Endüstrisi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.5.4",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Günlük yaşamda meydana gelen hâl değişimleri ile ısı alışverişini ilişkilendirir",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.5. Maddenin Isı ile Etkileşimi / 8.4.6.Türkiye’de Kimya Endüstrisi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.6.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Geçmişten günümüze Türkiye’deki kimya endüstrisinin gelişimini araştırır",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ",
+                           "konu":  "8.4.5. Maddenin Isı ile Etkileşimi / 8.4.6.Türkiye’de Kimya Endüstrisi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.4.6.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kimya endüstrisinde meslek dallarını araştırır ve gelecekteki yeni meslek alanları hakkında öneriler sunar",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ / 5.ÜNİTE: BASİT MAKİNELER",
+                           "konu":  "8.4.6.Türkiye’de Kimya Endüstrisi / 8.5.1. Basit Makineler",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.5.1.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Basit makinelerin sağladığı avantajları örnekler üzerinden açıklar",
+                           "unite":  "4.ÜNİTE: MADDE VE ENDÜSTRİ / 5.ÜNİTE: BASİT MAKİNELER | 5.ÜNİTE: BASİT MAKİNELER",
+                           "konu":  "8.4.6.Türkiye’de Kimya Endüstrisi / 8.5.1. Basit Makineler | 8.5.1. Basit Makineler",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.5.1.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Basit makinelerden yararlanarak günlük yaşamda iş kolaylığı sağlayacak bir düzenek tasarlar",
+                           "unite":  "5.ÜNİTE: BASİT MAKİNELER",
+                           "konu":  "8.5.1. Basit Makineler",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.1.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Besin zincirindeki üretici, tüketici, ayrıştırıcılara örnekler verir",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.1. Besin Zinciri ve Enerji Akışı / 8.6.2. Enerji Dönüşümleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.2.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Bitkilerde besin üretiminde fotosentezin önemini fark eder",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.1. Besin Zinciri ve Enerji Akışı / 8.6.2. Enerji Dönüşümleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.2.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Fotosentez hızını etkileyen faktörler ile ilgili çıkarımlarda bulunur",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.2. Enerji Dönüşümleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.2.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Canlılarda solunumun önemini belirtir",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.2. Enerji Dönüşümleri | 8.6.2. Enerji Dönüşümleri / 8.6.3. Madde Döngüleri ve Çevre Sorunları",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.3.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Madde döngülerini şema üzerinde göstererek açıklar",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.2. Enerji Dönüşümleri / 8.6.3. Madde Döngüleri ve Çevre Sorunları",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.3.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Madde döngülerinin yaşam açısından önemini sorgular",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.3. Madde Döngüleri ve Çevre Sorunları",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.3.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Küresel iklim değişikliklerinin nedenlerini ve olası sonuçlarını tartışır",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.3. Madde Döngüleri ve Çevre Sorunları | 8.6.3. Madde Döngüleri ve Çevre Sorunları / 8.6.4. Sürdürülebilir Kalkınma",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.4.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kaynakların kullanımında tasarruflu davranmaya özen gösterir",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.3. Madde Döngüleri ve Çevre Sorunları / 8.6.4. Sürdürülebilir Kalkınma",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.4.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kaynakların tasarruflu kullanımına yönelik proje tasarlar",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.3. Madde Döngüleri ve Çevre Sorunları / 8.6.4. Sürdürülebilir Kalkınma",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.4.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Geri dönüşüm için katı atıkların ayrıştırılmasının önemini açıklar",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.4. Sürdürülebilir Kalkınma",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.4.4",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Geri dönüşümün ülke ekonomisine katkısına ilişkin araştırma verilerini kullanarak çözüm önerileri sunar",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.4. Sürdürülebilir Kalkınma",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.6.4.5",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kaynakların tasarruflu kullanılmaması durumunda gelecekte karşılaşılabilecek problemleri belirterek / çözüm önerileri sunar",
+                           "unite":  "6.ÜNİTE: ENERJİ DÖNÜŞÜMLERİ VE ÇEVRE BİLİMİ",
+                           "konu":  "8.6.4. Sürdürülebilir Kalkınma",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.1.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Elektriklenmeyi, bazı doğa olayları ve teknolojideki uygulama örnekleri ile açıklar",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.1. Elektrik Yükleri ve Elektriklenme",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.1.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Elektrik yüklerini sınıflandırarak aynı ve farklı cins elektrik yüklerinin birbirlerine etkisini açıklar",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.1. Elektrik Yükleri ve Elektriklenme",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.1.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Deneyler yaparak elektriklenme çeşitlerini fark eder",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.1. Elektrik Yükleri ve Elektriklenme / 8.7.2. Elektrik Yüklü Cisimler",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.2.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Cisimleri, sahip oldukları elektrik yükleri bakımından sınıflandırır",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.1. Elektrik Yükleri ve Elektriklenme / 8.7.2. Elektrik Yüklü Cisimler | 8.7.2. Elektrik Yüklü Cisimler",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.2.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Topraklamayı açıklar",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.2. Elektrik Yüklü Cisimler | 8.7.2. Elektrik Yüklü Cisimler / 8.7.3. Elektrik Enerjisinin Dönüşümü",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.3.1",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Elektrik enerjisinin ısı, ışık ve hareket enerjisine dönüştüğü uygulamalara örnekler verir",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.2. Elektrik Yüklü Cisimler / 8.7.3. Elektrik Enerjisinin Dönüşümü",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.3.2",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Elektirik enerjisinin ısı, ışık veya hareket enerjisine dönüşümü temel alan bir model tasarlar",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.3. Elektrik Enerjisinin Dönüşümü",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.3.3",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Güç santrallerinde elektrik enerjisinin nasıl üretildiğini açıklar",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.3. Elektrik Enerjisinin Dönüşümü",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.3.4",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Güç santrallerinin avantaj ve dezavantajları konusunda fikirler üretir",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.3. Elektrik Enerjisinin Dönüşümü",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.3.5",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Elektrik enerjisinin bilinçli ve tasarruflu kullanılmasının aile ve ülke ekonomisi bakımından önemini tartışır",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.3. Elektrik Enerjisinin Dönüşümü",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.8.7.3.6",
+                           "sinif":  8,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Evlerde elektriği tasarruflu kullanmaya özen gösterir",
+                           "unite":  "7.ÜNİTE: ELEKTRİK YÜKLERİ VE ELEKTRİK ENERJİSİ",
+                           "konu":  "8.7.3. Elektrik Enerjisinin Dönüşümü",
+                           "program":  "önceki program"
+                       }
+                   ]
+}

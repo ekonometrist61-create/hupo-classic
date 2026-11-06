@@ -1,0 +1,322 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (Fen Bilimleri 7. sınıf; program: TYMM)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "FB.7.1.1",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Uzay araştırmaları için geliştirilen teknolojileri karşılaştırabilme",
+                           "unite":  "1. ÜNİTE: UZAY ÇAĞI",
+                           "konu":  "Türkiye ve Uzay Araştırmaları",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.1.2",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Uzay gözlem araçları ile ilgili bilimsel model oluşturabilme",
+                           "unite":  "1. ÜNİTE: UZAY ÇAĞI",
+                           "konu":  "Türkiye ve Uzay Araştırmaları",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.1.3",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Uzay araştırmalarının yol açabileceği problemleri çözebilme",
+                           "unite":  "1. ÜNİTE: UZAY ÇAĞI",
+                           "konu":  "Türkiye ve Uzay Araştırmaları",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.1.4",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Yıldızların yaşamını açıklayarak yapılandırabilme",
+                           "unite":  "1. ÜNİTE: UZAY ÇAĞI",
+                           "konu":  "Uzayda Neler Var?",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.1.5",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Yıldız, galaksi ve evren kavramlarını açıklayarak yapılandırabilme",
+                           "unite":  "1. ÜNİTE: UZAY ÇAĞI",
+                           "konu":  "Uzayda Neler Var?",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.2.1",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Fiziksel anlamda yapılan işin bağlı olduğu faktörlere ilişkin bilimsel çıkarım / yapabilme",
+                           "unite":  "2. ÜNİTE: KUVVET VE ENERJİYİ KEŞFEDELİM",
+                           "konu":  "Kuvvet, İş ve Enerji İlişkisi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.2.2",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Enerji çeşitlerinden kinetik ve potansiyel enerjiyi karşılaştırabilme",
+                           "unite":  "2. ÜNİTE: KUVVET VE ENERJİYİ KEŞFEDELİM",
+                           "konu":  "Kuvvet, İş ve Enerji İlişkisi | Kuvvet, İş ve Enerji İlişkisi / Enerji Dönüşümleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.2.3",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Enerji dönüşümünden hareketle enerjinin korunduğuna yönelik tümevarımsal / akıl yürütebilme",
+                           "unite":  "2. ÜNİTE: KUVVET VE ENERJİYİ KEŞFEDELİM",
+                           "konu":  "Enerji Dönüşümleri | Kuvvet, İş ve Enerji İlişkisi / Enerji Dönüşümleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.3.1",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Sindirim sistemini oluşturan yapı ve organların görevlerini model üzerinde / bilimsel olarak gözlemleyebilme",
+                           "unite":  "3. ÜNİTE: VÜCUDUMUZDAKİ SİSTEMLER",
+                           "konu":  "Sindirim Sistemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.3.2",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Sindirim sisteminin sağlığı için yapılması gerekenler konusunda bilgi toplayabilme",
+                           "unite":  "3. ÜNİTE: VÜCUDUMUZDAKİ SİSTEMLER",
+                           "konu":  "Sindirim Sistemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.3.3",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Dolaşım sistemini oluşturan yapı ve organların görevlerini model üzerinde / bilimsel olarak gözlemleyebilme",
+                           "unite":  "3. ÜNİTE: VÜCUDUMUZDAKİ SİSTEMLER",
+                           "konu":  "Dolaşım Sistemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.3.4",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kan bağışının toplumsal dayanışma açısından önemini tartışabilme",
+                           "unite":  "3. ÜNİTE: VÜCUDUMUZDAKİ SİSTEMLER",
+                           "konu":  "Dolaşım Sistemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.3.5",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Dolaşım sisteminin sağlığı için yapılması gerekenler konusunda bilgi toplayabilme",
+                           "unite":  "3. ÜNİTE: VÜCUDUMUZDAKİ SİSTEMLER",
+                           "konu":  "Dolaşım Sistemi / Solunum Sistemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.3.6",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Solunum sistemini oluşturan yapı ve organların görevlerini model üzerinde / bilimsel olarak gözlemleyebilme",
+                           "unite":  "3. ÜNİTE: VÜCUDUMUZDAKİ SİSTEMLER",
+                           "konu":  "Dolaşım Sistemi / Solunum Sistemi | Solunum Sistemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.3.7",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Solunum sisteminin sağlığı için yapılması gerekenler konusunda bilgi / toplayabilme",
+                           "unite":  "3. ÜNİTE: VÜCUDUMUZDAKİ SİSTEMLER",
+                           "konu":  "Solunum Sistemi / Boşaltım Sistemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.3.8",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Boşaltım sistemini oluşturan yapı ve organları model üzerinde bilimsel olarak / gözlemleyebilme",
+                           "unite":  "3. ÜNİTE: VÜCUDUMUZDAKİ SİSTEMLER",
+                           "konu":  "Boşaltım Sistemi | Solunum Sistemi / Boşaltım Sistemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.3.9",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Boşaltım sisteminin sağlığı için yapılması gerekenler konusunda bilgi / toplayabilme",
+                           "unite":  "3. ÜNİTE: VÜCUDUMUZDAKİ SİSTEMLER",
+                           "konu":  "Boşaltım Sistemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.4.1",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Ortam değiştiren ışığın izlediği yolu gözlemleyerek kırılma olayına yönelik bilimsel çıkarım yapabilme",
+                           "unite":  "4. ÜNİTE: IŞIĞIN KIRILMASI VE MERCEKLER",
+                           "konu":  "Işığın Kırılması",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.4.2",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Mercek çeşitlerine yönelik bilimsel çıkarım yapabilme",
+                           "unite":  "4. ÜNİTE: IŞIĞIN KIRILMASI VE MERCEKLER",
+                           "konu":  "Mercekler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.4.3",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Merceklerin günlük hayatta kullanım alanlarını örneklerle sınıflandırabilme",
+                           "unite":  "4. ÜNİTE: IŞIĞIN KIRILMASI VE MERCEKLER",
+                           "konu":  "Mercekler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.5.1",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Atomun yapısını ve yapısındaki temel parçacıkları çözümleyebilme",
+                           "unite":  "5. ÜNİTE: MADDENİN DOĞASINA YOLCULUK",
+                           "konu":  "Maddenin Tanecikli Yapısı",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.5.2",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Geçmişten günümüze atom kavramı ile ilgili bilimsel bilgilerin değişebileceğini sorgulayabilme",
+                           "unite":  "5. ÜNİTE: MADDENİN DOĞASINA YOLCULUK",
+                           "konu":  "Maddenin Tanecikli Yapısı",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.5.3",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Farklı moleküllere ait bilimsel model oluşturabilme",
+                           "unite":  "5. ÜNİTE: MADDENİN DOĞASINA YOLCULUK",
+                           "konu":  "Maddenin Tanecikli Yapısı / Saf Maddeler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.5.4",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Saf maddeleri element ve bileşik olarak sınıflandırabilme",
+                           "unite":  "5. ÜNİTE: MADDENİN DOĞASINA YOLCULUK",
+                           "konu":  "Maddenin Tanecikli Yapısı / Saf Maddeler | Saf Maddeler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.5.5",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Periyodik tablodaki ilk 18 elementin isimlerini sembolleriyle yapılandırabilme",
+                           "unite":  "5. ÜNİTE: MADDENİN DOĞASINA YOLCULUK",
+                           "konu":  "Saf Maddeler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.5.6",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Periyodik tabloda grup ve periyotları karşılaştırabilme",
+                           "unite":  "5. ÜNİTE: MADDENİN DOĞASINA YOLCULUK",
+                           "konu":  "Saf Maddeler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.5.7",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Bileşiklerin isimlerini formülleriyle yapılandırabilme",
+                           "unite":  "5. ÜNİTE: MADDENİN DOĞASINA YOLCULUK",
+                           "konu":  "Saf Maddeler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.5.8",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Karışımları homojen ve heterojen olarak sınıﬂandırabilme",
+                           "unite":  "5. ÜNİTE: MADDENİN DOĞASINA YOLCULUK",
+                           "konu":  "Karışımlar",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.5.9",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Çözünme hızına etki eden faktörler ile ilgili hipotez oluşturabilme",
+                           "unite":  "5. ÜNİTE: MADDENİN DOĞASINA YOLCULUK",
+                           "konu":  "Karışımlar",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.5.10",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Karışımları ayırmak için deney yapabilme",
+                           "unite":  "5. ÜNİTE: MADDENİN DOĞASINA YOLCULUK",
+                           "konu":  "Karışımların Ayrılması",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.6.1",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Elektriklenme ile ilgili bilgi toplayabilme",
+                           "unite":  "6. ÜNİTE: ELEKTRİKLENME",
+                           "konu":  "Elektrik Yükleri ve Elektriklenme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.6.2",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Elektriklenme çeşitlerini belirlemeye yönelik deney yapabilme",
+                           "unite":  "6. ÜNİTE: ELEKTRİKLENME",
+                           "konu":  "Elektrik Yükleri ve Elektriklenme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.6.3",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Cisimlerin elektrik yüklerini sınıflandırabilme",
+                           "unite":  "6. ÜNİTE: ELEKTRİKLENME",
+                           "konu":  "Elektrik Yükleri ve Elektriklenme",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.7.1",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Besin zincirindeki canlılar arasındaki ilişkileri yapılandırabilme",
+                           "unite":  "7. ÜNİTE: SÜRDÜRÜLEBİLİR YAŞAM VE ENERJİ",
+                           "konu":  "Besin Zinciri ve Enerji Akışı | Besin Zinciri ve Enerji Akışı / Sürdürülebilir Yaşam",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "FB.7.7.2",
+                           "sinif":  7,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kaynakların tasarruflu kullanımının önemini sorgulayabilme",
+                           "unite":  "7. ÜNİTE: SÜRDÜRÜLEBİLİR YAŞAM VE ENERJİ",
+                           "konu":  "Besin Zinciri ve Enerji Akışı / Sürdürülebilir Yaşam | Sürdürülebilir Yaşam",
+                           "program":  "TYMM"
+                       }
+                   ]
+}

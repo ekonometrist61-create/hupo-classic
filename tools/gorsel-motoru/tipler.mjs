@@ -2,6 +2,18 @@
 // `olgular` çözücüdür: şekilden kodla hesaplanan doğrular (cevap anahtarı bununla eşleşmeli).
 import { Sahne, PALET, aciRad } from './cekirdek.mjs';
 import { TIPLER_EK } from './tipler-ek.mjs';
+import { TIPLER_B1 } from './tipler-b1.mjs';
+import { TIPLER_B2 } from './tipler-b2.mjs';
+import { TIPLER_B3 } from './tipler-b3.mjs';
+import { TIPLER_B4 } from './tipler-b4.mjs';
+import { TIPLER_A1 } from './tipler-a1.mjs';
+import { TIPLER_A2 } from './tipler-a2.mjs';
+import { TIPLER_A3 } from './tipler-a3.mjs';
+import { TIPLER_A4 } from './tipler-a4.mjs';
+import { TIPLER_A5 } from './tipler-a5.mjs';
+import { TIPLER_A6 } from './tipler-a6.mjs';
+import { TIPLER_A7 } from './tipler-a7.mjs';
+import { TIPLER_A8 } from './tipler-a8.mjs';
 
 const hata = (m) => { throw new Error(m); };
 const r2 = (n) => Math.round(n * 100) / 100;
@@ -223,6 +235,18 @@ function dinamometre(p, profil) {
 
 export const TIPLER = {
   ...TIPLER_EK,
+  ...TIPLER_B1,
+  ...TIPLER_B2,
+  ...TIPLER_B3,
+  ...TIPLER_B4,
+  ...TIPLER_A1,
+  ...TIPLER_A2,
+  ...TIPLER_A3,
+  ...TIPLER_A4,
+  ...TIPLER_A5,
+  ...TIPLER_A6,
+  ...TIPLER_A7,
+  ...TIPLER_A8,
   'dinamometre': dinamometre,
   'cokgen': cokgen,
   'dogru-modelleri': dogruModelleri,

@@ -1,0 +1,1456 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (İngilizce 5. sınıf; program: TYMM)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "ENG.5.1.L1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the listening/watching-comprehension process for the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” carefully",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.L2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” together through significant details and main components while listening/watching it",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.L3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of/derive meaning from the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” through significant details by listening/watching it carefully",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.L4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experience, thoughts, and feelings examined carefully about the whole listening/watching-comprehension process in relation to the current content / on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.P1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target phonological elements of the current content about “school life with people, places and rules at school; school clubs; countries; national days and celebrations” accurately, authentically, and naturally through spontaneous decision-making processes and use it in an appropriate and effective way when communicating with others",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.R1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the reading-comprehension process about the current content on “school life with people, places and rules at school; school clubs; countries; national days and / celebrations”",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.R2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “school life with people, places / and rules at school; school clubs; countries; national days and celebrations” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.R3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of / derive meaning from the current content about “school life with people, places and rules at school; school clubs; countries; national days and celebrations” by reading it carefully",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.R4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “school life with people, places and rules at school; school clubs; countries; national days and celebrations” in relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.V1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target vocabulary of the current content about “school life with / people, places and rules at school; school clubs; countries; national days and celebrations” / accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.G1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target grammatical elements of the current content about / “school life with people, places and rules at school; school clubs; countries; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.W1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the writing-expression process about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.W2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can understand the model/example for the writing task about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.W3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a content for the assigned writing task on the current content “school life with people, places and rules at school; school clubs; countries; national days and celebrations” based on the model/example provided",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.W4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can individually construct/form content for the assigned writing task on the current content “school life with people, places and rules at school; school clubs; countries; national / days and celebrations”",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.W5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information in the new written tasks about the “school life with people, places and rules at school; school clubs; countries; national days and celebrations” to communicate with other people",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.W6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the writing-expression process about the current content, “school life with people, places and rules at school; school clubs; countries; national days and celebrations” in relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.S1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for speaking-expression process about the current content on / “school life with people, places and rules at school; school clubs; countries; national days and celebrations”",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.S2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can use the model/example for producing verbal content about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.S3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a new verbal content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” by speaking accurately, efficiently, and authentically",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.S4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can construct a new verbal content on “school life with people, places and rules / at school; school clubs; countries; national days and celebrations” by speaking accurately, efficiently, and authentically",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.S5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information about the “school life with people, places and rules at school; school clubs; countries; national days and celebrations” to communicate with other people",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.1.S6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “school life with people, places and rules at school; school clubs; countries; national days and celebrations” to communicate with other people in relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 1: SCHOOL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.L1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the listening/watching-comprehension process for the current / content on “classroom life with classroom rules and language; school subjects; timetables; / classroom objects; days of the week; time” carefully",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.L2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “classroom life with classroom / rules and language; school subjects; timetables; classroom objects; days of the week; time” / together through significant details and main components while listening/watching it",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.L3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of/derive meaning from the current content on “classroom life / with classroom rules and language; school subjects; timetables; classroom objects; days of / the week; time” through significant details by listening/watching it carefully",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.L4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experience, thoughts, and feelings examined carefully / about the whole listening/watching-comprehension process in relation to the current content / on “classroom life with classroom rules and language; school subjects; timetables; classroom / objects; days of the week; time”",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.P1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target phonological elements of the current content about / “classroom life with classroom rules and language; school subjects; timetables; classroom / objects; days of the week; time” accurately, authentically, and naturally through spontaneous / decision-making processes and use it in an appropriate and effective way when communicating / with others",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.R1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the reading-comprehension process about the current content on / “classroom life with classroom rules and language; school subjects; timetables; classroom / objects; days of the week; time”",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.R2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “classroom life with classroom / rules and language; school subjects; timetables; classroom objects; days of the week; time” / through skimming (looking quickly at) the audio-visual elements and reading the content very / quickly",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.R3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of / derive meaning from the current content about “classroom / life with classroom rules and language; school subjects; timetables; classroom objects; days / of the week; time” by reading it carefully",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.R4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / reading-comprehension process about the current content, “classroom life with classroom / rules and language; school subjects; timetables; classroom objects; days of the week; time” / in relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.V1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target vocabulary of the current content about “classroom life / with classroom rules and language; school subjects; timetables; classroom objects; days of / the week; time” accurately, authentically, spontaneously, and naturally and use it appropriately / and effectively when communicating with others",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.G1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target grammatical elements of the current content about / “classroom life with classroom rules and language; school subjects; timetables; classroom / objects; days of the week; time” accurately, authentically, spontaneously, and naturally and / use it appropriately and effectively when communicating with others",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.W1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the writing-expression process about the current content on / “classroom life with classroom rules and language; school subjects; timetables; classroom / objects; days of the week; time”",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.W2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can understand the model/example for the writing task about the current content / on “classroom life with classroom rules and language; school subjects; timetables; classroom / objects; days of the week; time”",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.W3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a content for the assigned writing task on the current content / “classroom life with classroom rules and language; school subjects; timetables; classroom / objects; days of the week; time” based on the model/example provided",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.W4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can individually construct/form content for the assigned writing task on the current / content “classroom life with classroom rules and language; school subjects; timetables; / classroom objects; days of the week; time”",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.W5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information in the new written tasks about the / “classroom life with classroom rules and language; school subjects; timetables; classroom / objects; days of the week; time” to communicate with other people",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.W6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the / writing-expression process about the current content, “classroom life with classroom rules / and language; school subjects; timetables; classroom objects; days of the week; time” in / relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.S1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for speaking-expression process about the current content on / “classroom life with classroom rules and language; school subjects; timetables; classroom / objects; days of the week; time”",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.S2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can use the model/example for producing verbal content about the current content / on “classroom life with classroom rules and language; school subjects; timetables; classroom / objects; days of the week; time”",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.S3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a new verbal content on “classroom life with classroom rules and / language; school subjects; timetables; classroom objects; days of the week; time” by / speaking accurately, efficiently, and authentically",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.S4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can construct a new verbal content on “classroom life with classroom rules / and language; school subjects; timetables; classroom objects; days of the week; time” by / speaking accurately, efficiently, and authentically",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.S5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information about the “classroom life with / classroom rules and language; school subjects; timetables; classroom objects; days of the / week; time” to communicate with other people",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.2.S6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / speaking-expression process about the current content, “classroom life with classroom rules / and language; school subjects; timetables; classroom objects; days of the week; time” to / communicate with other people in relation to themselves or others, both individually and/or / with others",
+                           "unite":  "THEME 2: CLASSROOM LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.L1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the listening/watching-comprehension process for the current / content on “personal life with basic body parts and physical features; clothes; daily routines / and activities” carefully",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.L2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “personal life with basic body / parts and physical features; clothes; daily routines and activities” together through significant / details and main components while listening/watching it",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.L3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of/derive meaning from the current content on “personal life / with basic body parts and physical features; clothes; daily routines and activities” through / significant details by listening/watching it carefully",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.L4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experience, thoughts, and feelings examined carefully / about the whole listening/watching-comprehension process in relation to the current / content on “personal life with basic body parts and physical features; clothes; daily routines / and activities”",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.P1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target phonological elements of the current content about / “personal life with basic body parts and physical features; clothes; daily routines and activities” / accurately, authentically, and naturally through spontaneous decision-making processes and / use it in an appropriate and effective way when communicating with others",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.R1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the reading-comprehension process about the current content / on “personal life with basic body parts and physical features; clothes; daily routines and / activities”",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.R2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “personal life with basic body / parts and physical features; clothes; daily routines and activities” through skimming (looking / quickly at) the audio-visual elements and reading the content very quickly",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.R3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of / derive meaning from the current content about “personal life / with basic body parts and physical features; clothes; daily routines and activities” by reading / it carefully",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.R4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / reading-comprehension process about the current content, “personal life with basic body / parts and physical features; clothes; daily routines and activities” in relation to themselves or / others, both individually and/or with others",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.V1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target vocabulary of the current content about “personal life / with basic body parts and physical features; clothes; daily routines and activities” accurately, / authentically, spontaneously, and naturally and use it appropriately and effectively when / communicating with others",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.G1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target grammatical elements of the current content about / “personal life with basic body parts and physical features; clothes; daily routines and activities” / accurately, authentically, spontaneously, and naturally and use it appropriately and effectively / when communicating with others",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.W1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the writing-expression process about the current content / on “personal life with basic body parts and physical features; clothes; daily routines and / activities”",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.W2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can understand the model/example for the writing task about the current content / on “personal life with basic body parts and physical features; clothes; daily routines and / activities”",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.W3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a content for the assigned writing task on the current content “personal / life with basic body parts and physical features; clothes; daily routines and activities” based / on the model/example provided",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.W4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can individually construct/form content for the assigned writing task on the current / content “personal life with basic body parts and physical features; clothes; daily routines and / activities”",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.W5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information in the new written tasks about / the “personal life with basic body parts and physical features; clothes; daily routines and / activities” to communicate with other people",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.W6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the / writing-expression process about the current content, “personal life with basic body parts / and physical features; clothes; daily routines and activities” in relation to themselves or / others, both individually and/or with others",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.S1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for speaking-expression process about the current content on / “personal life with basic body parts and physical features; clothes; daily routines and activities”",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.S2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can use the model/example for producing verbal content about the current content / on “personal life with basic body parts and physical features; clothes; daily routines and / activities”",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.S3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a new verbal content on “personal life with basic body parts and / physical features; clothes; daily routines and activities” by speaking accurately, efficiently, / and authentically",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.S4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can construct a new verbal content on “personal life with basic body parts and / physical features; clothes; daily routines and activities” by speaking accurately, efficiently, / and authentically",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.S5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information about the “personal life with basic / body parts and physical features; clothes; daily routines and activities” to communicate with / other people",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.3.S6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / speaking-expression process about the current content, “personal life with basic body parts / and physical features; clothes; daily routines and activities” to communicate with other people / in relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 3: PERSONAL LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.L1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the listening/watching-comprehension process for the current / content on “family life with family members’ routines; family members’ hobbies and activities” / carefully",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.L2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “family life with family members’ / routines; family members’ hobbies and activities” together through significant details and / main components while listening/watching it",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.L3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of/derive meaning from the current content on “family life with / family members’ routines; family members’ hobbies and activities” through significant details / by listening/watching it carefully",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.L4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experience, thoughts, and feelings examined carefully / about the whole listening/watching-comprehension process in relation to the current content / on “family life with family members’ routines; family members’ hobbies and activities”",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.P1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target phonological elements of the current content about / “family life with family members’ routines; family members’ hobbies and activities” accurately, / authentically, and naturally through spontaneous decision-making processes and use it in an / appropriate and effective way when communicating with others",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.R1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the writing-comprehension process about the current content on / “family life with family members’ routines; family members’ hobbies and activities”",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.R2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “family life with family members’ / routines; family members’ hobbies and activities” through skimming (looking quickly at) the / audio-visual elements and reading the content very quickly",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.R3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of / derive meaning from the current content about “family life / with family members’ routines; family members’ hobbies and activities” by reading it carefully",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.R4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / reading-comprehension process about the current content, “family life with family members’ / routines; family members’ hobbies and activities” in relation to themselves or others, both / individually and/or with others",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.V1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target vocabulary of the current content about “family life with / family members’ routines; family members’ hobbies and activities” accurately, authentically, / spontaneously, and naturally and use it appropriately and effectively when communicating / with others",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.G1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target grammatical elements of the current content about / “family life with family members’ routines; family members’ hobbies and activities” accurately, / authentically, spontaneously, and naturally and use it appropriately and effectively when / communicating with others",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.W1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the writing-expression process about the current content on / “family life with family members’ routines; family members’ hobbies and activities”",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.W2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can understand the model/example for the writing task about the current content / on “family life with family members’ routines; family members’ hobbies and activities”",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.W3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a content for the assigned writing task on the current content “family / life with family members’ routines; family members’ hobbies and activities” based on the / model/example provided",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.W4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can individually construct/form content for the assigned writing task on the current / content “family life with family members’ routines; family members’ hobbies and activities”",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.W5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information in the new written tasks about / the “family life with family members’ routines; family members’ hobbies and activities” to / communicate with other people",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.W6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reflect on their knowledge, experiences, thoughts, and feelings related to / the writing-expression process about the current content, “family life with family members’ / routines; family members’ hobbies and activities” in relation to themselves or others, both / individually and/or with others",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.S1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for speaking-expression process about the current content on “family / life with family members’ routines; family members’ hobbies and activities”",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.S2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can use the model/example for producing verbal content about the current content / on “family life with family members’ routines; family members’ hobbies and activities”",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.S3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a new verbal content on “family life with family members’ routines; / family members’ hobbies and activities” by speaking accurately, efficiently, and authentically",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.S4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can construct a new verbal content on “family life with family members’ routines; / family members’ hobbies and activities” by speaking accurately, efficiently, and authentically",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.S5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information about the “family life with family / members’ routines; family members’ hobbies and activities” to communicate with other / people",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.4.S6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / speaking-expression process about the current content, “family life with family members’ / routines; family members’ hobbies and activities” to communicate with other people in / relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 4: FAMILY LIFE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.L1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the listening/watching-comprehension process for the current / content on “life in the neighbourhood and city with places for recreation and attractions in the / neighbourhood and city ; different types of houses” carefully",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.L2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “life in the neighbourhood / and city with places for recreation and attractions in the neighbourhood and city ; different / types of houses” together through significant details and main components while listening/ / watching it",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.L3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of/derive meaning from the current content on “life in the / neighbourhood and city with places for recreation and attractions in the neighbourhood and / city ; different types of houses” through significant details by listening/watching it carefully",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.L4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experience, thoughts, and feelings examined carefully / about the whole listening/watching-comprehension process in relation to the current / content on “life in the neighbourhood and city with places for recreation and attractions in the / neighbourhood and city ; different types of houses”",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.P1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target phonological elements of the current content / about “life in the neighbourhood and city with places for recreation and attractions in the / neighbourhood and city ; different types of houses” accurately, authentically, and naturally / through spontaneous decision-making processes and use it in an appropriate and effective / way when communicating with others",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.R1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the reading-comprehension process about the current content / on “life in the neighbourhood and city with places for recreation and attractions in the / neighbourhood and city ; different types of houses”",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.R2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “life in the neighbourhood and / city with places for recreation and attractions in the neighbourhood and city ; different types / of houses” through skimming (looking quickly at) the audio-visual elements and reading the / content very quickly",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.R3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of / derive meaning from the current content about “life in the / neighbourhood and city with places for recreation and attractions in the neighbourhood and / city ; different types of houses” by reading it carefully",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.R4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / reading-comprehension process about the current content, “life in the neighbourhood and / city with places for recreation and attractions in the neighbourhood and city ; different types / of houses” in relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.V1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target vocabulary of the current content about “life in the / neighbourhood and city with places for recreation and attractions in the neighbourhood and / city ; different types of houses” accurately, authentically, spontaneously, and naturally and / use it appropriately and effectively when communicating with others",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.G1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target grammatical elements of the current content about “life / in the neighbourhood and city with places for recreation and attractions in the neighbourhood / and city ; different types of houses” accurately, authentically, spontaneously, and naturally / and use it appropriately and effectively when communicating with others",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.W1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the writing-expression process about the current content on “life / in the neighbourhood and city with places for recreation and attractions in the neighbourhood / and city ; different types of houses”",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.W2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can understand the model/example for the writing task about the current content / on “life in the neighbourhood and city with places for recreation and attractions in the / neighbourhood and city ; different types of houses”",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.W3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a content for the assigned writing task on the current content “life in / the neighbourhood and city with places for recreation and attractions in the neighbourhood / and city ; different types of houses” based on the model/example provided",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.W4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can individually construct/form content for the assigned writing task on the current / content “life in the neighbourhood and city with places for recreation and attractions in the / neighbourhood and city ; different types of houses”",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.W5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information in the new written tasks about / the “life in the neighbourhood and city with places for recreation and attractions in the / neighbourhood and city ; different types of houses” to communicate with other people",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.W6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the / writing-expression process about the current content, “life in the neighbourhood and city / with places for recreation and attractions in the neighbourhood and city ; different types of / houses” in relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.S1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for speaking-expression process about the current content on “life in / the neighbourhood and city with places for recreation and attractions in the neighbourhood / and city ; different types of houses”",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.S2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can use the model/example for producing verbal content about the current content / on “life in the neighbourhood and city with places for recreation and attractions in the / neighbourhood and city ;different types of houses”",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.S3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a new verbal content on “life in the neighbourhood and city with places / for recreation and attractions in the neighbourhood and city ; different types of houses” by / speaking accurately, efficiently, and authentically",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.S4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can construct a new verbal content on “life in the neighbourhood and city with places / for recreation and attractions in the neighbourhood and city ; different types of houses” by / speaking accurately, efficiently, and authentically",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.S5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information about the “life in the neighbourhood / and city with places for recreation and attractions in the neighbourhood and city ; different / types of houses” to communicate with other people",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.5.S6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / speaking-expression process about the current content, “life in the neighbourhood and city / with places for recreation and attractions in the neighbourhood and city ; different types / of houses” to communicate with other people in relation to themselves or others, both / individually and/or with others",
+                           "unite":  "THEME 5: LIFE IN THE NEIGHBOURHOOD AND CITY",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.L1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the listening/watching-comprehension process for the current / content on “life in the world with basic food types; ordering in a restaurant; food events in the / city” carefully",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.L2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current conte t on “life in the world with basic food / types; ordering in a restaurant; food events in the city” together through significant details / and main components while listening/watching it",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.L3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of/derive meaning from the current content on “life in the world / with basic food types; ordering in a restaurant; food events in the city” through significant / details by listening/watching it carefully",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.L4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experience, thoughts, and feelings examined carefully / about the whole listening/watching-comprehension process in relation to the current content / on “life in the world with basic food types; ordering in a restaurant; food events in the city”",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.P1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target phonological elements of the current content about “life / in the world with basic food types; ordering in a restaurant; food events in the city” accurately, / authentically, and naturally through spontaneous decision-making processes and use it in an / appropriate and effective way when communicating with others",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.R1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the reading-comprehension process about the current content on / “life in the world with basic food types; ordering in a restaurant; food events in the city”",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.R2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “life in the world with basic food / types; ordering in a restaurant; food events in the city” through skimming (looking quickly at) / the audio-visual elements and reading the content very quickly",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.R3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of / derive meaning from the current content about “life in the / world with basic food types; ordering in a restaurant; food events in the city” by reading it / carefully",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.R4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / reading-comprehension process about the current content, “life in the world with basic food / types; ordering in a restaurant; food events in the city” in relation to themselves or others, / both individually and/or with others",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.V1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target vocabulary of the current content about “life in the / world with basic food types; ordering in a restaurant; food events in the city” accurately, / authentically, spontaneously, and naturally and use it appropriately and effectively when / communicating with others",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.G1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target grammatical elements of the current content about / “life in the world with basic food types; ordering in a restaurant; food events in the city” / accurately, authentically, spontaneously, and naturally and use it appropriately and effectively / when communicating with others",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.W1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the writing-expression process about the current content on “life / in the world with basic food types; ordering in a restaurant; food events in the city”",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.W2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can understand the model/example for the writing task about the current content / on “life in the world with basic food types; ordering in a restaurant; food events in the city”",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.W3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a content for the assigned writing task on the current content “life in / the world with basic food types; ordering in a restaurant; food events in the city” based on the / model/example provided",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.W4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can individually construct/form content for the assigned writing task on the current / content “life in the world with basic food types; ordering in a restaurant; food events in the / city”",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.W5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information in the new written tasks about / the “life in the world with basic food types; ordering in a restaurant; food events in the city” to / communicate with other people",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.W6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reflect on their knowledge, experiences, thoughts, and feelings related to / the writing-expression process about the current content, “life in the world with basic food / types; ordering in a restaurant; food events in the city” in relation to themselves or others, / both individually and/or with others",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.S1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for speaking-expression process about the current content on “life in / the world with basic food types; ordering in a restaurant; food events in the city”",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.S2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can use the model/example for producing verbal content about the current content / on “life in the world with basic food types; ordering in a restaurant; food events in the city”",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.S3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a new verbal content on “life in the world with basic food types; ordering / in a restaurant; food events in the city” by speaking accurately, efficiently, and authentically",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.S4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can construct a new verbal content on “life in the world with basic food types; / ordering in a restaurant; food events in the city” by speaking accurately, efficiently, and / authentically",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.S5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information about the “life in the world with / basic food types; ordering in a restaurant; food events in the city” to communicate with other / people",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.6.S6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / speaking-expression process about the current content, “life in the world with basic food / types; ordering in a restaurant; food events in the city” to communicate with other people in / relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 6: LIFE IN THE WORLD",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.L1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the listening/watching-comprehension process for the current / content on “life in the universe and future with planet Earth; holidays; school holidays, places, / activities, and plans for holidays” carefully",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.L2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “life in the universe and future / with planet Earth; holidays; school holidays, places, activities, and plans for holidays” together / through significant details and main components while listening/watching it",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.L3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of/derive meaning from the current content on “life in the / universe and future with planet Earth; holidays; school holidays, places, activities, and plans / for holidays” through significant details by listening/watching it carefully",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.L4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experience, thoughts, and feelings examined carefully / about the whole listening/watching-comprehension process in relation to the current / content on “life in the universe and future with planet Earth; holidays; school holidays, places, / activities, and plans for holidays”",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.P1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target phonological elements of the current content about / “life in the universe and future with planet Earth; holidays; school holidays, places, activities, / and plans for holidays” accurately, authentically, and naturally through spontaneous decisionmaking / processes and use it in an appropriate and effective way when communicating with / others",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.R1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the reading-comprehension process about the current content on / “life in the universe and future with planet Earth; holidays; school holidays, places, activities, / and plans for holidays”",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.R2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can bring information about the current content on “life in the universe and future / with planet Earth; holidays; school holidays, places, activities, and plans for holidays” through / skimming (looking quickly at) the audio-visual elements and reading the content very quickly",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.R3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can make meaning of / derive meaning from the current content about “life in the / universe and future with planet Earth; holidays; school holidays, places, activities, and plans / for holidays” by reading it carefully",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.R",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "4. Students can convey their knowledge, experiences, thoughts, and feelings related to the / reading-comprehension process about the current content, “life in the universe and future / with planet Earth; holidays; school holidays, places, activities, and plans for holidays” in / relation to themselves or others, both individually and/or with others",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.V1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target vocabulary of the current content about “life in the / universe and future with planet Earth; holidays; school holidays, places, activities, and plans / for holidays” accurately, authentically, spontaneously, and naturally and use it appropriately / and effectively when communicating with others",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.G1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can select and use the target grammatical elements of the current content about / “life in the universe and future with planet Earth; holidays; school holidays, places, activities, / and plans for holidays” accurately, authentically, spontaneously, and naturally and use it / appropriately and effectively when communicating with others",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.W1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for the writing-expression process about the current content on “life / in the universe and future with planet Earth; holidays; school holidays, places, activities, and / plans for holidays”",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.W2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can understand the model/example for the writing task about the current content on / “life in the universe and future with planet Earth; holidays; school holidays, places, activities, / and plans for holidays”",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.W3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a content for the assigned writing task on the current content “life in / the universe and future with planet Earth; holidays; school holidays, places, activities, and / plans for holidays” based on the model/example provided",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.W4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can individually construct/form content for the assigned writing task on the current / content “life in the universe and future with planet Earth; holidays; school holidays, places, / activities, and plans for holidays”",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.W5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information in the new written tasks about the / “life in the universe and future with planet Earth; holidays; school holidays, places, activities, / and plans for holidays” to communicate with other people",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.W6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the / writing-expression process about the current content, “life in the universe and future with / planet Earth; holidays; school holidays, places, activities, and plans for holidays” in relation to / themselves or others, both individually and/or with others",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.S1",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can get ready for speaking-expression process about the current content on “life / in the universe and future with planet Earth; holidays; school holidays, places, activities, and / plans for holidays”",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.S2",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can use the model/example for producing verbal content about the current content / on “life in the universe and future with planet Earth; holidays; school holidays, places, / activities, and plans for holidays”",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.S3",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can organise a new verbal content on “life in the universe and future with planet Earth; / holidays; school holidays, places, activities, and plans for holidays” by speaking accurately, / efficiently, and authentically",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.S4",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can construct a new verbal content on “life in the universe and future with planet / Earth; holidays; school holidays, places, activities, and plans for holidays” by speaking / accurately, efficiently, and authentically",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.S5",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can reorganise (reconstruct) and use information about the “life in the universe and / future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” / to communicate with other people",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "ENG.5.8.S6",
+                           "sinif":  5,
+                           "ders":  "İngilizce",
+                           "metin":  "Students can convey their knowledge, experiences, thoughts, and feelings related to the / speaking-expression process about the current content, “life in the universe and future / with planet Earth; holidays; school holidays, places, activities, and plans for holidays” to / communicate with other people in relation to themselves or others, both individually and/or / with others",
+                           "unite":  "THEME 8: LIFE IN THE UNIVERSE AND FUTURE",
+                           "konu":  "",
+                           "program":  "TYMM"
+                       }
+                   ]
+}

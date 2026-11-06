@@ -52,7 +52,7 @@ test('kör sonuç: cevap dosyası yoksa açık hata verir', async () => {
 });
 
 test('eksik üretim: trafik kazanımında 46 farklı soru var (6 tek ışık + 40 kavşak) → 50 istenirse EKSIK_URETIM', async () => {
-  const { sorular, istatistik } = await uret({ ders: 'hayat', sinif: 1, adet: 50, tohum: 1 });
+  const { sorular, istatistik } = await uret({ ders: 'hayat', sinif: 1, kod: 'HB.1.2.3', adet: 50, tohum: 1 });
   const r = yazPaket(sorular, meta(istatistik, 'Hayat Bilgisi', 1, 'HB.1.2.3'), yeniKlasor(), { png: false });
   assert.equal(r.uretim.uretilen, 46);
   assert.equal(r.uretim.eksik, 4);

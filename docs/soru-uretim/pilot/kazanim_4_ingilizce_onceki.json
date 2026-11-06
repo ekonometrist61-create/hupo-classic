@@ -1,0 +1,430 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (İngilizce 4. sınıf; program: önceki program)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "E4.1.L1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to understand / short and clear utterances about requests",
+                           "unite":  "1 Classroom Rules",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.1.L2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to understand / short and clear utterances about permission",
+                           "unite":  "1 Classroom Rules",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.1.L3",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to recognize / simple classroom instructions",
+                           "unite":  "1 Classroom Rules",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.1.L4",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to recognize / numbers from one to fifty. / Speaking",
+                           "unite":  "1 Classroom Rules",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.1.S1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to interact with / their classmates through asking for and giving permission in short utterances",
+                           "unite":  "1 Classroom Rules",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.1.S2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to make requests by using simple utterances",
+                           "unite":  "1 Classroom Rules",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.1.S3",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to give and / respond to simple instructions verbally",
+                           "unite":  "1 Classroom Rules",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.1.S4",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to count up to fifty. / Contexts / Captions / Cartoons / Conversations / Illustrations / Instructions / Lists / Notes and Messages / Posters / Signs / Songs / Videos / Tasks/Activities / Arts and Crafts / Chants and Songs / Drama (Role Play, Simulation, Pantomime) / Drawing and Coloring / Games / Making Puppets / Matching / Questions and Answers / Assignments / • Students pre",
+                           "unite":  "1 Classroom Rules",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.2.L1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to recognize / information about other people",
+                           "unite":  "2 Nationality",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.2.L2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to identify different people’s nationalities. / Speaking",
+                           "unite":  "2 Nationality",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.2.S1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to talk about / nations and nationalities",
+                           "unite":  "2 Nationality",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.2.S2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to talk about / locations of cities. / Contexts / Captions / Cartoons / Charts / Conversations / Illustrations / Instructions / Lists / Maps / Postcards / Posters / Rhymes / Songs / Tables / Tasks/Activities / Arts and Crafts / Chants and Songs / Drama (Role Play, Simulation, Pantomime) / Drawing and Coloring / Games / Labeling / Making Puppets / Matching / Questions and Answ",
+                           "unite":  "2 Nationality",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.3.L1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to get the main / idea of a simple oral text about the abilities of the self and others",
+                           "unite":  "3 Cartoon Characters",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.3.L2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to recognize / possessions of others in a clear, short and slow oral text. / Speaking",
+                           "unite":  "3 Cartoon Characters",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.3.S1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to talk about their own and others’ possessions",
+                           "unite":  "3 Cartoon Characters",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.3.S2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to deliver a / simple, brief speech about abilities with an initial preparation. / Contexts / Captions / Cartoons / Charts / Conversations / Illustrations / Notices / Posters / Probes/Realia / Rhymes / Songs / Stories / Tables / Videos / Tasks/Activities / Arts and Crafts / Chants and Songs / Drama (Role Play, Simulation, Pantomime) / Drawing and Coloring / Games / Matching /",
+                           "unite":  "3 Cartoon Characters",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.4.L1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to understand the general information in an oral text about likes and dislikes. / Speaking",
+                           "unite":  "4 Free Time",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.4.S1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to talk about their likes and dislikes",
+                           "unite":  "4 Free Time",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.4.S2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to engage in / simple conversations about likes and dislikes",
+                           "unite":  "4 Free Time",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.4.S3",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to ask for / clarification in conversations. / Contexts / Captions / Cartoons / Charts / Conversations / Illustrations / Notices / Posters / Rhymes / Songs / Stories / Tables / Videos / Tasks/Activities / Arts and Crafts / Chants and Songs / Drama (Role Play, Simulation, Pantomime) / Drawing and Coloring / Games / Labeling / Making Puppet / Matching / Questions and Answers / ",
+                           "unite":  "4 Free Time",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.5.L1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to understand the general and specific information in a short, oral text about daily routines",
+                           "unite":  "5 My Day",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.5.L2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to recognize the time in a short oral text. / Speaking",
+                           "unite":  "5 My Day",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.5.S1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to talk about their daily routines",
+                           "unite":  "5 My Day",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.5.S2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to talk about the time. / Contexts / Advertisements / Captions / Cartoons / Charts / Conversations / Fairy tales / Illustrations / Lists / Notes and Messages / Poems / Postcards / Posters / Probes/Realia / Rhymes Songs / Tables / Videos / Tasks/Activities / Arts and Crafts / Chants and Songs / Drama (Role Play, Simulation, Pantomime) / Drawing and Coloring / Games / Making Pu",
+                           "unite":  "5 My Day",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.6.L1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to understand and follow simple instructions",
+                           "unite":  "6 Fun with Science",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.6.L2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to recognize phrases/descriptions about locations. / Speaking",
+                           "unite":  "6 Fun with Science",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.6.S1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to give short and basic instructions",
+                           "unite":  "6 Fun with Science",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.6.S2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to talk about locations of objects",
+                           "unite":  "6 Fun with Science",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.6.S3",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to ask and answer simple clarification questions. / Contexts / Captions / Cartoons / Charts / Conversations / Illustrations / Instructions / Lists / Poems / Posters / Probes/Realia / Rhymes / Songs / Tables / Videos / Tasks/Activities / Arts and Crafts / Chants and Songs / Drama (Role Play, Simulation, Pantomime) / Drawing and Coloring / Games / Labeling / Matching / Question",
+                           "unite":  "6 Fun with Science",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.7.L1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to identify other people’s jobs and likes in a short, simple oral text. / Speaking",
+                           "unite":  "7 Jobs",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.7.S1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to talk about other people’s jobs and likes in simple conversations. / Contexts / Advertisements / Captions / Cartoons / Charts / Conversations / Illustrations / Lists / Podcasts / Posters / Probes/Realia / Rhymes / Songs / Stories / Videos / Tasks/Activities / Arts and Crafts / Chants and Songs / Drama (Role Play, Simulation, Pantomime) / Drawing and Coloring / Games / Label",
+                           "unite":  "7 Jobs",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.8.L1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to understand / short oral texts about weather conditions and / clothing",
+                           "unite":  "8 My Clothes",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.8.L2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to recognize the / names of the seasons and clothes in short oral / texts. / Speaking",
+                           "unite":  "8 My Clothes",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.8.S1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to describe the weather conditions",
+                           "unite":  "8 My Clothes",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.8.S2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to name the seasons",
+                           "unite":  "8 My Clothes",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.8.S3",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to ask and answer / simple questions about weather conditions and / clothing items in simple conversations",
+                           "unite":  "8 My Clothes",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.8.S4",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to make simple / request about borrowing. / Contexts / Advertisements / Captions / Cartoons / Charts / Conversations / Illustrations / Lists / Notes and Messages / Poems / Postcards / Posters / Rhymes / Signs / Songs / Stories / Tables / Videos / Tasks/Activities / Arts and Crafts / Chants and Songs / Drama (Role Play, Simulation, Pantomime) / Drawing and Coloring / Games / L",
+                           "unite":  "8 My Clothes",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.9.L1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to understand the / main point in short, clear, simple messages and / announcements (e.g., describing people and / their features)",
+                           "unite":  "9 My Friends",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.9.L2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to understand / short, oral texts about possessions. / Speaking",
+                           "unite":  "9 My Friends",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.9.S1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to describe their / friends and other people (family members, / teachers, etc.)",
+                           "unite":  "9 My Friends",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.9.S2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to ask and / answer questions about other people’s physical / characteristics",
+                           "unite":  "9 My Friends",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.9.S3",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to talk about / possessions. / Contexts / Advertisements / Captions / Cartoons / Charts / Conversations / Illustrations / Lists / Poems / Posters / Probes/Realia / Rhymes / Songs / Stories / Tables / Videos / Tasks/Activities / Arts and Crafts / Chants and Songs / Drama (Role Play, Simulation, Pantomime) / Drawing and Coloring / Labeling / Making Puppets / Matching / Question",
+                           "unite":  "9 My Friends",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.10.L1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to recognize / simple words and phrases about food and drinks",
+                           "unite":  "10 Food and Drinks",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.10.L2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to understand the offers about their basic needs",
+                           "unite":  "10 Food and Drinks",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.10.L3",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to identify others’ needs and feelings in simple oral texts. / Speaking",
+                           "unite":  "10 Food and Drinks",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.10.S1",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to talk about their basic needs and feelings",
+                           "unite":  "10 Food and Drinks",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "E4.10.S2",
+                           "sinif":  4,
+                           "ders":  "İngilizce",
+                           "metin":  "Students will be able to express others’ feelings and their needs. / Contexts / Advertisements / Captions / Cartoons / Conversations / Coupons / Illustrations / Lists / Menus / Posters / Probes/Realia / Rhymes / Signs / Songs / Stories / Tables / Videos / Tasks/Activities / Arts and Crafts / Chants and Songs / Drama (Role Play, Simulation, Pantomime) / Drawing and Coloring / Games / Labeling / Mat",
+                           "unite":  "10 Food and Drinks",
+                           "konu":  "",
+                           "program":  "önceki program"
+                       }
+                   ]
+}

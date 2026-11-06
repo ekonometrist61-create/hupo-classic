@@ -22,11 +22,20 @@ export function ascii(s) {
 }
 
 // Ders (ascii) → kazanım dosyası eki. Burada olmayan ders için kaynak yoktur, üretilmez.
-const DERS_EKI = { matematik: 'matematik', fenbilimleri: 'fen', sosyalbilgiler: 'sosyal', hayatbilgisi: 'hayat_bilgisi', turkce: 'turkce' };
+const DERS_EKI = {
+  matematik: 'matematik', fenbilimleri: 'fen', sosyalbilgiler: 'sosyal', hayatbilgisi: 'hayat_bilgisi', turkce: 'turkce',
+  ingilizce: 'ingilizce', tcinkilaptarihiveataturkculuk: 'inkilap',
+};
+// 2026-27'de 4 ve 8. sınıf önceki programda (TYMM kodu yürürlükte sayılmaz): varsa `_onceki` dosyası kullanılır.
+const ONCEKI_PROGRAM = new Set([4, 8]);
 
 export function kazanimDosyasi(ders, sinif) {
   const ek = DERS_EKI[ascii(ders)];
-  return ek ? path.join(KAZANIM_KLASORU, `kazanim_${sinif}_${ek}.json`) : null;
+  if (!ek) return null;
+  const normal = path.join(KAZANIM_KLASORU, `kazanim_${sinif}_${ek}.json`);
+  if (!ONCEKI_PROGRAM.has(sinif)) return normal;
+  const onceki = path.join(KAZANIM_KLASORU, `kazanim_${sinif}_${ek}_onceki.json`);
+  return fs.existsSync(onceki) ? onceki : normal;
 }
 
 export function kazanimKodlari(dosya) {

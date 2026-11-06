@@ -1,0 +1,322 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (Türkçe 3. sınıf; program: TYMM)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "T.D.2.1",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlemeyi/izlemeyi yönetebilme / b) Dinleme kurallarına uygun olarak dinler",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.D.2.2",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinledikleri/izledikleri ile ilgili anlam oluşturabilme / g) Dinlediklerindeki/izlediklerindeki farklı nesne ve karakterleri özelliklerine göre sınıflandırır",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.D.2.3",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediklerini/izlediklerini çözümleyebilme / b) Dinlediği/izlediği metnin konusunu bulur",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.D.2.5",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinleme/izleme sürecini değerlendirebilme / a) Dinleme/izleme sürecindeki hatalarını belirler",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.K.2.1",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşmalarını yönetebilme / b) Konuşma türüne göre konuşmasını belirler",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.K.2.2",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşmalarında içerik oluşturabilme / a) Dinlediklerini/izlediklerini ifade ederken ön bilgilerini kullanır",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.K.2.3",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşma kurallarını uygulayabilme / a) Konuşmalarında konuşma hızını ayarlar. / c) Konuşmalarında vurgu ve tonlamaya dikkat eder. / ç) Konuşmalarında sözcükleri yerinde ve anlamına uygun kullanır. / e) Konuşmalarında anlamlı ve kurallı cümleler kullanır",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.K.2.4",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşma sürecini değerlendirebilme / a) Konuşmasında fark ettiği hataları düzeltir. / b) Konuşmasındaki olumlu davranışları fark eder. / c) Konuşmasındaki olumlu davranışları sonraki konuşmalarına aktarır",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.O.2.1",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuma sürecini yönetebilme / c) Kuralına uygun sesli ve sessiz okur. / ç) Noktalama işaretlerine dikkat ederek okur",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.O.2.2",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Okudukları ile ilgili anlam oluşturabilme / f) Okuduğu metindeki zıt anlamlı sözcükleri bulur",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.O.2.3",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuduklarını çözümleyebilme / a) Okuduğu metindeki karakter, olay ve bilgileri açıklar. / b) Okuduğu metnin konusunu bulur",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.O.2.4",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuma sürecine etki eden durumları gözden geçirebilme / a) Okuduğu ortamın fiziksel özelliklerini açıklar",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.Y.2.1",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazılı anlatım becerilerini yönetebilme / a) Verilen bir yazma görevine uygun biçimde hazırlıksız yazı yazar",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.Y.2.2",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazılarında içerik oluşturabilme / f) Yazılarında sözcükleri anlamına uygun kullanır. / g) Dinlediği/izlediği veya okuduğu bir metindeki olayları oluş sırasına göre kendi ifadeleriyle yazar. / ğ) Basit yönergeler yazar",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.Y.2.3",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazma kurallarını uygulayabilme / a) Hedef kitle ve konunun özelliğine göre hazırladığı plana uygun yazar. / c) Yazılarında sözcükleri yerinde kullanır. / ç) Yazışmalarında mesajlarını birden çok cümleyle açık ve anlaşılır şekilde ifade eder. / e) Kısaltmaları kuralına uygun yazar. / f) Büyük harfleri kuralına uygun yazar. / g) Yazılarında yazım alanını uygun şekilde (yazıyı sayfaya hizalama, para",
+                           "unite":  "HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.D.3.1",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlemeyi/izlemeyi yönetebilme / c) Dinleme kurallarına uygun olarak dinler. / ç) Dinlediği konuya ilişkin düşüncelerini belirtmek için uygun zamanda söz alır",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.D.3.2",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinledikleri/izledikleri ile ilgili anlam oluşturabilme / c) Dinlediklerinde/izlediklerinde geçen olayların sonrası hakkında tahminde bulunur. / ç) Dinlediklerindeki/izlediklerindeki bilgiler ile ön bilgileri arasında bağlantı kurar. / ğ) Dinlediklerine/izlediklerine yönelik düşüncelerini nedenleriyle ifade eder. / h) Dinlediklerindeki/izlediklerindeki iletilere ilişkin önerilerde bulunur",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.D.3.3",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinlediklerini/izlediklerini çözümleyebilme / b) Dinlediği/izlediği metindeki ana fikri/ana duyguyu bulur. / c) Dinlediği/izlediği metnin konusunu bulur",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.K.3.1",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşmalarını yönetebilme / a) Konunun özelliğine göre konuşma üslubunu belirler. / ç) Konuşma kurallarına uygun (ses düzeyi, nezaket ifadeleri, göz teması) bir biçimde iletişimi sürdürür",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.K.3.2",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşmalarında içerik oluşturabilme / a) Konuşmanın içeriğine uygun olarak yaşantı ve ön bilgilerinden örnekler verir",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.K.3.3",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşma kurallarını uygulayabilme / a) Konuşmanın özelliğine uygun olarak ses düzeyini ayarlar. / ç) Konuşmalarında sözcükleri yerinde ve anlamına uygun kullanır. / e) Konuşmasındaki mesajları açık ve anlaşılır cümlelerle ifade eder. / g) Konuşmalarında anlamlı ve kurallı cümleler kullanır",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.O.3.1",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuma sürecini yönetebilme / a) Okuyacağı metnin başlığı ve görsellerini inceler. / b) Noktalama işaretlerine dikkat ederek okur",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.O.3.2",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Okudukları ile ilgili anlam oluşturabilme / a) Okuduğu metindeki bilgiler ile ön bilgileri arasında bağlantı kurar. / b) Metnin başlığı ve görsellerinden hareketle metinde geçen bilgiler/olaylar hakkında tahminde bulunur. / ç) Okuma sırasında metinde verilen bilgilerden ve görsellerden hareketle metinde geçen bilgilerin/olayların sırası hakkında tahminde bulunur. / j) Okuyacağı metnin başlığı ve g",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.O.3.3",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuduklarını çözümleyebilme / a) Okuduğu metindeki karakter, olay, bilgi veya duyguları açıklar. / b) Okuduğu metnin konusunu bulur. / c) Okuduğu metindeki ana fikri/ana duyguyu bulur",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.Y.3.2",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazılarında içerik oluşturabilme / b) Bir sözcüğün anlamına ilişkin tahminlerini bağlamdan yararlanarak yazar. / g) Dinlediği/izlediği bir olayı veya okuduklarını kendi ifadeleriyle yazar",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.Y.3.3",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazma kurallarını uygulayabilme / b) Yazılarında sözcükleri yerinde ve anlamına uygun kullanır. / f) Büyük harfleri kuralına uygun yazar. / g) Yazılarında noktalama işaretlerini (nokta, kesme işareti, virgül, iki nokta, ünlem, tırnak işareti, soru işareti, kısa çizgi, konuşma çizgisi, yay ayraç, üç nokta ve eğik çizgi) kuralına uygun kullanır",
+                           "unite":  "1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ | 1.TEMA: DEĞERLERİMİZLE YAŞIYORUZ / 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.Y.3.1",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazılı anlatım becerilerini yönetebilme / a) Verilen bir yazma görevine uygun biçimde hazırlıksız yazı yazar",
+                           "unite":  "2. TEMA: ATATÜRK VE KAHRAMANLARIMIZ | 3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ / 4. TEMA: BİLGİ HAZİNEMİZ | 4. TEMA: BİLGİ HAZİNEMİZ | 5. TEMA: YETENEKLERİMİZİ KULLANIYORUZ | 5. TEMA: YET",
+                           "konu":  "DİNLEME | KONUŞMA | OKUL TEMELLİ PLANLAMA* | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.D.3.5",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinleme/izleme sürecini değerlendirebilme / c) Dinlemesindeki/izlemesindeki uygun davranışlarını sonraki dinlemelerine aktarır",
+                           "unite":  "3. TEMA: DOĞAYI TANIYORUZ | 6. TEMA: BİLİM YOLCULUĞU | 7.TEMA: MİLLÎ KÜLTÜRÜMÜZ | 8. TEMA: HAK VE SORUMLULUKLARIMIZ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.O.3.5",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuma sürecini değerlendirebilme / a) Okuma sürecinde belirlediği hatalarını düzeltir. / b) Okuma sürecindeki olumlu davranışlarını sonraki okumalarına aktarır",
+                           "unite":  "3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ / 4. TEMA: BİLGİ HAZİNEMİZ | 6. TEMA: BİLİM YOLCULUĞU | 6.TEMA: BİLİM YOLCULUĞU | 8. TEMA: HAK VE SORUMLULUKLARIMIZ | OKUL TEMELLİ PLANLAMA*",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.K.3.5",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşma sürecini değerlendirebilme / a) Başkalarının konuşmalarındaki hataları fark eder",
+                           "unite":  "3. TEMA: DOĞAYI TANIYORUZ | 3. TEMA: DOĞAYI TANIYORUZ / 4. TEMA: BİLGİ HAZİNEMİZ | 8. TEMA: HAK VE SORUMLULUKLARIMIZ | HATIRLATMA HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.Y.3.5",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazma sürecini değerlendirebilme / a) Yazılarında hatalarını bulur. / b) Yazılarında belirlediği hataları düzeltir. / c) Yazılarındaki uygun davranışları sonraki yazılarına aktarır",
+                           "unite":  "4. TEMA: BİLGİ HAZİNEMİZ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.D.3.4",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Dinleme/izleme sürecine etki eden durumları gözden geçirebilme / a) Dinleme/izleme yapacağı ortamın uygunluğunu gözden geçirir",
+                           "unite":  "6. TEMA: BİLİM YOLCULUĞU | 7.TEMA: MİLLÎ KÜLTÜRÜMÜZ | 8. TEMA: HAK VE SORUMLULUKLARIMIZ | PEKİŞTİRME HAFTASI",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.O.3.4",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Okuma sürecine etki eden durumları gözden geçirebilme / a) Okuma yapacağı ortamın uygunluğunu değerlendirir. / b) Okuma yapacağı ortamın fiziksel özelliklerini dikkate alarak okur",
+                           "unite":  "8. TEMA: HAK VE SORUMLULUKLARIMIZ | OKUL TEMELLİ PLANLAMA*",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.K.3.4",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Konuşma sürecine etki eden durumları gözden geçirebilme / a) Konuşma yapacağı ortamın uygunluğunu gözden geçirir. / b) Konuşma ortamının konuşma sürecindeki duygu, düşünce ve davranışlarına etkisini açıklar",
+                           "unite":  "8. TEMA: HAK VE SORUMLULUKLARIMIZ",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "T.Y.3.4",
+                           "sinif":  3,
+                           "ders":  "Türkçe",
+                           "metin":  "Yazma sürecine etki eden durumları gözden geçirebilme / a) Yazma yapacağı ortamın uygunluğunu gözden geçirir. / b) Yazma ortamının yazma sürecindeki duygu, düşünce ve davranışlarına etkisini açıklar",
+                           "unite":  "8. TEMA: HAK VE SORUMLULUKLARIMIZ | OKUL TEMELLİ PLANLAMA*",
+                           "konu":  "DİNLEME | KONUŞMA | OKUMA | YAZMA",
+                           "program":  "TYMM"
+                       }
+                   ]
+}

@@ -1,0 +1,187 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (Hayat Bilgisi 3. sınıf; program: TYMM)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "HB.3.1.1",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Güçlü ve gelişime açık olduğu alanlara karar verebilme / a) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik amacını belirler. / b) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik bilgi toplar. / c) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik seçenekler / oluşturur",
+                           "unite":  "BEN VE OKULUM",
+                           "konu":  "Güçlü ve Gelişime Açık Alanlar",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.1.2",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Okuldaki hak ve sorumluluklarına uygun davranabilme",
+                           "unite":  "BEN VE OKULUM",
+                           "konu":  "Okuldaki Hak ve Sorumluluklar",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.1.3",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Çocuk haklarını tanıtmak için fikirlerini eyleme dönüştürebilme / a) Çocuk haklarını tanıtmak için plan yapar. / b) Çocuk haklarını tanıtmak için yaptığı planı uygular",
+                           "unite":  "BEN VE OKULUM",
+                           "konu":  "Çocuk Hakları",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.2.1",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Sağlığını korumaya yönelik davranışlarını düzenleyebilme",
+                           "unite":  "SAĞLIĞIM VE GÜVENLİĞİM",
+                           "konu":  "Sağlığı Koruma",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.2.2",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenleri sorgulayabilme / a) Güvenliğini tehdit eden durumları tanımlar. / b) Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenler hakkında / sorular sorar",
+                           "unite":  "SAĞLIĞIM VE GÜVENLİĞİM",
+                           "konu":  "Güvenliği Tehdit Eden Durumlar",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.2.3",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Trafik kurallarına uymanın önemine ilişkin özgün ürünler sentezleyebilme / a) Trafik kurallarına uymanın önemini belirler",
+                           "unite":  "SAĞLIĞIM VE GÜVENLİĞİM | SAĞLIĞIM VE GÜVENLİĞİM / AİLEM VE TOPLUM",
+                           "konu":  "Trafik Kuralları | Trafik Kuralları / Aile ve Toplum",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.3.1",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Aile ve toplum arasındaki ilişkiyi çözümleyebilme / c) Trafik kurallarına uymanın önemine ilişkin özgün bir ürün oluşturur. / a) Aile ve toplumun özelliklerini belirler",
+                           "unite":  "AİLEM VE TOPLUM | SAĞLIĞIM VE GÜVENLİĞİM / AİLEM VE TOPLUM",
+                           "konu":  "Aile ve Toplum | Trafik Kuralları / Aile ve Toplum",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.3.2",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için fikirlerini eyleme dönüştürebilme / a) Yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için plan yapar",
+                           "unite":  "AİLEM VE TOPLUM",
+                           "konu":  "Yardımlaşma",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.3.3",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Mesleklerin toplumsal yaşamdaki önemini yorumlayabilme / a) Mesleklerin toplumsal yaşamdaki önemine ilişkin verilen örnekleri inceler",
+                           "unite":  "AİLEM VE TOPLUM | AİLEM VE TOPLUM / YAŞADIĞIM YER VE ÜLKEM",
+                           "konu":  "Toplumsal Yaşamda Meslekler | Toplumsal Yaşamda Meslekler / Tarihî Mekân ve Doğal Güzellikler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.4.1",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Yakın çevresindeki tarihî mekân ve doğal güzelliklerin korunmasının önemini fark edebilme / b) Mesleklerin toplumsal yaşamdaki önemine ilişkin verilen örnekleri bağlamdan / kopmadan özgün örneklere dönüştürür. / c) Mesleklerin toplumsal yaşamdaki önemine ilişkin oluşturduğu özgün örnekleri / kendi cümleleri ile ifade eder",
+                           "unite":  "AİLEM VE TOPLUM / YAŞADIĞIM YER VE ÜLKEM",
+                           "konu":  "Toplumsal Yaşamda Meslekler / Tarihî Mekân ve Doğal Güzellikler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.4.2",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Ülkemizin yönetim şekli ile ilgili kaynaklardan bilgi toplayabilme / a) Ülkemizin yönetim şekli ile ilgili bilgi toplayacağı kaynakları belirler. / b) Ülkemizin yönetim şekli ile ilgili belirlediği kaynaklardan bilgileri bulur",
+                           "unite":  "YAŞADIĞIM YER VE ÜLKEM",
+                           "konu":  "Ülkemizin Yönetim Şekli",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.4.3",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Mustafa Kemal Atatürk’ün kişilik özelliklerini çözümleyebilme / a) Mustafa Kemal Atatürk’ün kişilik özelliklerini ve elde ettiği başarıları belirler",
+                           "unite":  "YAŞADIĞIM YER VE ÜLKEM",
+                           "konu":  "Mustafa Kemal Atatürk’ün Başarıları ve Kişilik Özellikleri",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.4.4",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Millî birlik ve beraberliğimizin ülkemize katkılarını açıklayabilme",
+                           "unite":  "YAŞADIĞIM YER VE ÜLKEM",
+                           "konu":  "Millî Birlik ve Beraberlik",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.5.1",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Doğadaki varlıkların insan yaşamı için önemini yorumlayabilme / a) Doğadaki varlıkların insan yaşamı için önemine ilişkin verilen örnekleri inceler. / b) Doğadaki varlıkların insan yaşamı için önemine ilişkin verilen örnekleri bağlamdan / kopmadan özgün örneklere dönüştürür. / c) Doğadaki varlıkların insan yaşamı için önemine ilişkin oluşturduğu özgün örnekleri / kendi cümleleri ile ifade eder",
+                           "unite":  "DOĞA VE ÇEVRE",
+                           "konu":  "Doğadaki Varlıkların İnsan Yaşamındaki Önemi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.5.2",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Krokiyi kullanarak bulunduğu yerin konumunu algılayabilme / a) Krokiyi kullanarak bulunduğu yerin konumunu belirler. / b) Bulunduğu yerin konumsal görselleştirmesini yapar. / c) Bulunduğu yerin konumsal özelliklerini özetler",
+                           "unite":  "DOĞA VE ÇEVRE",
+                           "konu":  "Kroki ve Konum",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.5.3",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Afetlere yönelik yapılması gerekenleri sınıflandırabilme / a) Afetlere yönelik yapılması gerekenlere ilişkin ölçütleri afet öncesi, afet anı ve afet / sonrası olarak belirler. / b) Afetlere yönelik yapılması gerekenleri afet öncesi, afet anı ve afet sonrası olarak / ayrıştırır",
+                           "unite":  "DOĞA VE ÇEVRE",
+                           "konu":  "Afet Öncesi, Afet Anı ve Afet Sonrasında Yapılması Gerekenler",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.5.4",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Çevresel sürdürülebilirliğe yönelik kaynaklardan bilgi toplayabilme / a) Çevresel sürdürülebilirliğe yönelik bilgi toplayacağı kaynakları belirler. / b) Çevresel sürdürülebilirliğe yönelik belirlediği kaynaklardan bilgileri bulur",
+                           "unite":  "DOĞA VE ÇEVRE",
+                           "konu":  "Çevresel Sürdürülebilirlik",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.6.1",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Bilimsel gelişmelerin günlük yaşama etkisini yorumlayabilme / a) Bilimsel gelişmelerin günlük yaşama etkisine ilişkin verilen örnekleri inceler. / b) Bilimsel gelişmelerin günlük yaşama etkisine ilişkin verilen örnekleri bağlamdan / kopmadan özgün örneklere dönüştürür. / c) Bilimsel gelişmelerin günlük yaşama etkisine ilişkin oluşturduğu özgün örnekleri / kendi cümleleri ile ifade eder",
+                           "unite":  "BİLİM, TEKNOLOJİ VE SANAT",
+                           "konu":  "Bilimsel Gelişmelerin Günlük Yaşama Etkisi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.6.2",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Teknolojik gelişmelerin günlük yaşama etkisini çözümleyebilme / a) Teknolojik gelişmelerin günlük yaşama etkisini belirler",
+                           "unite":  "BİLİM, TEKNOLOJİ VE SANAT",
+                           "konu":  "Teknolojik Gelişmelerin Günlük Yaşama Etkisi",
+                           "program":  "TYMM"
+                       },
+                       {
+                           "kod":  "HB.3.6.3",
+                           "sinif":  3,
+                           "ders":  "Hayat Bilgisi",
+                           "metin":  "Sanatçıların sanata katkılarına yönelik kaynaklardan bilgi toplayabilme / a) Sanatçıların sanata katkılarına yönelik bilgi toplayacağı kaynakları belirler. / b) Sanatçıların sanata katkılarına yönelik belirlediği kaynaklardan bilgileri bulur",
+                           "unite":  "BİLİM, TEKNOLOJİ VE SANAT",
+                           "konu":  "Sanatçıların Sanata Katkıları",
+                           "program":  "TYMM"
+                       }
+                   ]
+}

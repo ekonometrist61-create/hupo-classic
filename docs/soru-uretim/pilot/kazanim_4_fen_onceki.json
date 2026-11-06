@@ -1,0 +1,394 @@
+{
+    "kaynak_url":  "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+    "program_surumu":  "MEB 2026-2027 çerçeve yıllık plan (Fen Bilimleri 4. sınıf; program: önceki program)",
+    "dogrulama":  "2026-10-30: docs/mufredat/kazanim_etiket_tablosu_2026_2027.csv (MEB yıllık plan kaynaklı) satırlarından üretildi; kodlar kaynakta görülüyor. Yayın öncesi program yılı ayrıca doğrulanmalı.",
+    "kazanimlar":  [
+                       {
+                           "kod":  "F.4.1.1.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Yer kabuğunun kara tabakasının kayaçlardan oluştuğunu belirtir",
+                           "unite":  "1. ÜNİTE: Yer Kabuğu ve Dünya’mızın Hareketleri",
+                           "konu":  "F.4.1.1. Yer Kabuğunun Yapısı",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.1.1.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kayaçlarla madenleri ilişkilendirir ve kayaçların ham madde olarak önemini tartışır",
+                           "unite":  "1. ÜNİTE: Yer Kabuğu ve Dünya’mızın Hareketleri",
+                           "konu":  "F.4.1.1. Yer Kabuğunun Yapısı",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.1.1.3",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Fosillerin oluşumunu açıklar",
+                           "unite":  "1. ÜNİTE: Yer Kabuğu ve Dünya’mızın Hareketleri",
+                           "konu":  "F.4.1.1. Yer Kabuğunun Yapısı",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.1.2.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Dünya’nın dönme ve dolanma hareketleri arasındaki farkı açıklar",
+                           "unite":  "1. ÜNİTE: Yer Kabuğu ve Dünya’mızın Hareketleri",
+                           "konu":  "F.4.1.2. Dünya’mızın Hareketleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.1.2.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Dünya’nın hareketleri sonucu gerçekleşen olayları açıklar",
+                           "unite":  "1. ÜNİTE: Yer Kabuğu ve Dünya’mızın Hareketleri",
+                           "konu":  "F.4.1.2. Dünya’mızın Hareketleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.2.1.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Canlı yaşamı ve besin içerikleri arasındaki ilişkiyi açıklar",
+                           "unite":  "2. ÜNİTE: Besinlerimiz",
+                           "konu":  "F.4.2.1. Besinler ve Özellikleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.2.1.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Su ve minerallerin bütün besinlerde bulunduğu çıkarımını yapar",
+                           "unite":  "2. ÜNİTE: Besinlerimiz",
+                           "konu":  "F.4.2.1. Besinler ve Özellikleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.2.1.3",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Sağlıklı bir yaşam için besinlerin tazeliğinin ve doğallığının önemini, araştırma verilerine dayalı olarak tartışır",
+                           "unite":  "2. ÜNİTE: Besinlerimiz",
+                           "konu":  "F.4.2.1. Besinler ve Özellikleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.2.1.4",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "İnsan sağlığı ile dengeli beslenmeyi ilişkilendirir",
+                           "unite":  "2. ÜNİTE: Besinlerimiz",
+                           "konu":  "F.4.2.1. Besinler ve Özellikleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.2.1.5",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Alkol ve sigara kullanımının insan sağlığına olan olumsuz etkilerinin farkına varır",
+                           "unite":  "2. ÜNİTE: Besinlerimiz",
+                           "konu":  "F.4.2.1. Besinler ve Özellikleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.2.1.6",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Yakın çevresinde sigara kullanımını azaltmaya yönelik sorumluluk üstlenir",
+                           "unite":  "2. ÜNİTE: Besinlerimiz",
+                           "konu":  "F.4.2.1. Besinler ve Özellikleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.3.1.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kuvvetin, cisimlere hareket kazandırmasına ve cisimlerin şekillerini değiştirmesine yönelik deneyler yapar",
+                           "unite":  "3. ÜNİTE: Kuvvetin Etkileri",
+                           "konu":  "F.4.3.1. Kuvvetin Cisimler Üzerindeki Etkileri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.3.2.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Mıknatısı tanır ve kutupları olduğunu keşfeder",
+                           "unite":  "3. ÜNİTE: Kuvvetin Etkileri",
+                           "konu":  "F.4.3.2. Mıknatısların Uyguladığı Kuvvet",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.3.2.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Mıknatısın etki ettiği maddeleri deney yaparak keşfeder",
+                           "unite":  "3. ÜNİTE: Kuvvetin Etkileri",
+                           "konu":  "F.4.3.2. Mıknatısların Uyguladığı Kuvvet",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.3.2.3",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Mıknatısların günlük yaşamdaki kullanım alanlarına örnekler verir",
+                           "unite":  "3. ÜNİTE: Kuvvetin Etkileri",
+                           "konu":  "F.4.3.2. Mıknatısların Uyguladığı Kuvvet",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.3.2.4",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Mıknatısların yeni kullanım alanları konusunda fikirlerini açıklar",
+                           "unite":  "3. ÜNİTE: Kuvvetin Etkileri",
+                           "konu":  "F.4.3.2. Mıknatısların Uyguladığı Kuvvet",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.4.1.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Beş duyu organını kullanarak maddeyi niteleyen temel özellikleri açıklar",
+                           "unite":  "4. ÜNİTE: Maddenin Özellikleri",
+                           "konu":  "F.4.4.1. Maddeyi Niteleyen Özellikler",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.4.2.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Farklı maddelerin kütle ve hacimlerini ölçerek karşılaştırır",
+                           "unite":  "Maddenin Özellikleri",
+                           "konu":  "F.4.4.2. Maddenin Ölçülebilir Özellikleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.4.2.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Ölçülebilir özelliklerini kullanarak maddeyi tanımlar",
+                           "unite":  "Maddenin Özellikleri",
+                           "konu":  "F.4.4.2. Maddenin Ölçülebilir Özellikleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.4.3.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Maddelerin hâllerine ait temel özellikleri karşılaştırır",
+                           "unite":  "4. ÜNİTE: Maddenin Özellikleri",
+                           "konu":  "F.4.4.3. Maddenin Hâlleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.4.3.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Aynı maddenin farklı hâllerine örnekler verir",
+                           "unite":  "4. ÜNİTE: Maddenin Özellikleri",
+                           "konu":  "F.4.4.3. Maddenin Hâlleri / F.4.4.4. Maddenin Isı Etkisiyle Değişimi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.4.4.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Maddelerin ısınıp soğumasına yönelik deneyler tasarlar",
+                           "unite":  "4. ÜNİTE: Maddenin Özellikleri",
+                           "konu":  "F.4.4.3. Maddenin Hâlleri / F.4.4.4. Maddenin Isı Etkisiyle Değişimi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.4.4.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Maddelerin ısı etkisiyle hâl değiştirebileceğine yönelik deney tasarlar",
+                           "unite":  "4. ÜNİTE: Maddenin Özellikleri",
+                           "konu":  "F.4.4.4. Maddenin Isı Etkisiyle Değişimi",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.4.5.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Günlük yaşamında sıklıkla kullandığı maddeleri saf madde ve karışım şeklinde sınıflandırarak araların daki farkları açıklar",
+                           "unite":  "4. ÜNİTE: Maddenin Özellikleri",
+                           "konu":  "F.4.4.5. Saf Madde ve Karışım",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.4.5.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Günlük yaşamda karşılaştığı karışımların ayrılmasında kullanılabilecek yöntemlerden uygun olanı seçer",
+                           "unite":  "4. ÜNİTE: Maddenin Özellikleri",
+                           "konu":  "F.4.4.5. Saf Madde ve Karışım",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.4.5.3",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Karışımların ayrılmasını, ülke ekonomisine katkısı ve kaynakların etkili kullanımı bakımından tartışır",
+                           "unite":  "4. ÜNİTE: Maddenin Özellikleri",
+                           "konu":  "F.4.4.5. Saf Madde ve Karışım",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.1.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Geçmişte ve günümüzde kullanılan aydınlatma araçlarını karşılaştırır",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.1. Aydınlatma Teknolojileri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.1.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Gelecekte kullanılabilecek aydınlatma araçlarına yönelik tasarım yapar",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.1. Aydınlatma Teknolojileri / F.4.5.2. Uygun Aydınlatma",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.2.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Uygun aydınlatma hakkında araştırma yapar",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.1. Aydınlatma Teknolojileri / F.4.5.2. Uygun Aydınlatma",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.2.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Aydınlatma araçlarının tasarruflu kullanımının aile ve ülke ekonomisi bakımından önemini tartışır",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.2. Uygun Aydınlatma / F.4.5.3. Işık Kirliliği",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.3.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Işık kirliliğinin nedenlerini sorgular",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.2. Uygun Aydınlatma / F.4.5.3. Işık Kirliliği",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.3.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Işık kirliliğinin, doğal hayata ve gök cisimlerinin gözlenmesine olan olumsuz etkilerini açıklar",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.3. Işık Kirliliği",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.3.3",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Işık kirliliğini azaltmaya yönelik çözümler üretir",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.3. Işık Kirliliği | F.4.5.3. Işık Kirliliği / F.4.5.4. Geçmişten Günümüze Ses Teknolojileri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.4.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Geçmişte ve günümüzde kullanılan ses teknolojilerini karşılaştırır",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.3. Işık Kirliliği / F.4.5.4. Geçmişten Günümüze Ses Teknolojileri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.4.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Şiddetli sese sahip teknolojik araçların olumlu ve olumsuz etkilerini araştırır",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.4. Geçmişten Günümüze Ses Teknolojileri / F.4.5.5. Ses Kirliliği",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.5.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Ses kirliliğinin nedenlerini sorgular",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.4. Geçmişten Günümüze Ses Teknolojileri / F.4.5.5. Ses Kirliliği",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.5.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Ses kirliliğinin insan sağlığı ve çevre üzerindeki olumsuz etkilerini açıklar",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.5. Ses Kirliliği",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.5.5.3",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Ses kirliliğini azaltmaya yönelik çözümler üretir",
+                           "unite":  "5. ÜNİTE: Aydınlatma ve Ses Teknolojileri",
+                           "konu":  "F.4.5.5. Ses Kirliliği",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.6.1.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Kaynakların kullanımında tasarruflu davranmaya özen gösterir",
+                           "unite":  "6. ÜNİTE: İnsan ve Çevre",
+                           "konu":  "F.4.6.1. Bilinçli Tüketici",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.6.1.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Yaşam için gerekli olan kaynakların ve geri dönüşümün önemini fark eder",
+                           "unite":  "6. ÜNİTE: İnsan ve Çevre",
+                           "konu":  "F.4.6.1. Bilinçli Tüketici",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.7.1.1",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Basit elektrik devresini oluşturan devre elemanlarını işlevleri ile tanır",
+                           "unite":  "7. ÜNİTE: Basit Elektrik Devreleri",
+                           "konu":  "F.4.7.1. Basit Elektrik Devreleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.7.1.2",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Çalışan bir elektrik devresi kurar",
+                           "unite":  "7. ÜNİTE: Basit Elektrik Devreleri",
+                           "konu":  "F.4.7.1. Basit Elektrik Devreleri",
+                           "program":  "önceki program"
+                       },
+                       {
+                           "kod":  "F.4.7.1.3",
+                           "sinif":  4,
+                           "ders":  "Fen Bilimleri",
+                           "metin":  "Evde ve okuldaki elektrik düğmelerinin ve kabloların birer devre elemanı olduğunu bilir",
+                           "unite":  "7. ÜNİTE: Basit Elektrik Devreleri",
+                           "konu":  "F.4.7.1. Basit Elektrik Devreleri",
+                           "program":  "önceki program"
+                       }
+                   ]
+}

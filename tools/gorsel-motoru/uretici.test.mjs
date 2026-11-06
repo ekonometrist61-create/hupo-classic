@@ -13,13 +13,13 @@ test('kayıt doğrulaması bozuk kaydı yakalar (kod yok, kaynak yok, id tekrar�
   const iyi = { id: 'a', ders: 'Matematik', sinif: 5, idOnek: 'A', mufredat_surum: 'x', kodlar: ['MAT.5.5.1'], fabrika: () => 0, uret: () => 0, dosya: 'x' };
   const kotu = [
     { ...iyi, id: 'b', kodlar: ['MAT.5.9.9'] },
-    { ...iyi, id: 'c', ders: 'İngilizce', kodlar: ['EN.5.1'] },
+    { ...iyi, id: 'c', ders: 'Din Kültürü', kodlar: ['DKAB.5.1'] },
     { ...iyi, id: 'a' },
     { ...iyi, id: 'a' },
   ];
   const sorun = kayitlariDogrula(kotu).join('\n');
   assert.match(sorun, /MAT\.5\.9\.9 kaynak dosyada yok/);
-  assert.match(sorun, /"İngilizce" için kazanım kaynağı tanımlı değil/);
+  assert.match(sorun, /"Din Kültürü" için kazanım kaynağı tanımlı değil/);
   assert.match(sorun, /id tekrarı/);
 });
 
@@ -36,8 +36,8 @@ test('ders eşleşmesi Türkçe karakterden bağımsız (turkce = Türkçe, fen 
   assert.equal(ascii('Fen Bilimleri'), 'fenbilimleri');
 });
 
-test('kaynağı olmayan ders (İngilizce, Din) üretilmez ve açık hata verir', async () => {
-  await assert.rejects(() => uret({ ders: 'İngilizce', sinif: 5, adet: 1 }), /şablon_yok/);
+test('kaynağı olmayan ders (Din) üretilmez ve açık hata verir', async () => {
+  await assert.rejects(() => uret({ ders: 'Din Kültürü', sinif: 5, adet: 1 }), /şablon_yok/);
   assert.equal(kazanimDosyasi('Din Kültürü', 5), null);
 });
 
