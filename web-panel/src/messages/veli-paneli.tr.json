@@ -13,9 +13,10 @@
       "learning": "Öğrenme",
       "subjects": "Dersler & Konular",
       "ogrenmeHaritasi": "Öğrenme Haritası",
+      "destekPlani": "Destek Planı",
       "questions": "Soru Performansı",
       "review": "Yanlışlar & Tekrar",
-      "exams": "Deneme Sınavları",
+      "exams": "Deneme ve Gelişim",
       "goals": "Hedefler",
       "achievements": "Başarılar",
       "activity": "Aktivite Akışı",
@@ -287,6 +288,27 @@
         "guclu": "Farklı günlerde ve aralıklı tekrarlarda da doğru yanıtlanıyor."
       }
     },
+    "destekPlani": {
+      "title": "Destek Planı",
+      "desc": "Bu hafta evde ne yapabilirsiniz? Okuldaki kazanımlara ve tekrar kayıtlarına göre en fazla üç öneri.",
+      "empty": "Bu hafta öncelikli bir destek alanı görünmüyor. Keyifle devam edin.",
+      "sonDortHafta": "Son 4 haftada {sayi} hafta destek verdiniz.",
+      "isaretHata": "İşaret kaydedilemedi. Birazdan tekrar deneyin.",
+      "isaretYenilenemedi": "İşaret kaydedildi ama liste yenilenemedi. Güncel durumu görmek için sayfayı yenileyin.",
+      "kaynak": "Öneriler kazanım durumu ve tekrar kayıtlarına göre seçilir. Bu bölüm bir tanı, puan ya da yeterlilik değerlendirmesi değildir. Etkinlikleri çocuğunuzla birlikte yapın; her hafta bir öneri yeterlidir.",
+      "kart": {
+        "gelisiyor": "Destek isteyen kazanım",
+        "buHafta": "Bu hafta işleniyor",
+        "tekrar": "Tekrar zamanı",
+        "sure": "Yaklaşık 10 dakikalık etkinlik",
+        "adimlar": "Adımlar",
+        "konusma": "Konuşma sorusu",
+        "birak": "Ne zaman bırakmalı",
+        "yaptik": "Yaptık",
+        "yapildi": "Yaptık olarak işaretlendi",
+        "kaydediliyor": "Kaydediliyor..."
+      }
+    },
     "subjectsPage": {
       "pick": "Ders seçin",
       "empty": "Henüz çözülmüş soru yok. Çocuğunuz soru çözmeye başladığında derslerdeki başarı burada görünecek.",
@@ -369,6 +391,58 @@
     "odeme": {
       "loading": "Yükleniyor...",
       "durumBaslik": "Durum"
+    },
+    "denemeGelisim": {
+      "title": "Deneme ve Gelişim",
+      "desc": "Çocuğunuzun tamamladığı deneme sınavlarının zaman içindeki görünümü.",
+      "kaynak": "Kaynak: çocuğun tamamladığı deneme sınavları. Bu bölüm bir tanı, puan garantisi veya yeterlilik değerlendirmesi değildir.",
+      "loading": "Yükleniyor...",
+      "error": "Deneme sonuçları yüklenemedi. Sayfayı yenileyip tekrar deneyin.",
+      "trend": {
+        "title": "Deneme trendi",
+        "puanDesc": "Her denemenin yüzde puanı, tarih sırasıyla.",
+        "sayiDesc": "Bu sınıfta sonuçlar doğru, yanlış ve boş sayılarıyla gösterilir.",
+        "empty": "Henüz tamamlanmış deneme yok.",
+        "emptyNot": "Çocuğunuz bir deneme sınavını tamamladığında sonuçlar burada görünecek.",
+        "ozet": "{sayi} deneme gösteriliyor.",
+        "tekDeneme": "Eğilim görmek için en az iki deneme gerekir.",
+        "puan": "Puan",
+        "dogru": "Doğru",
+        "yanlis": "Yanlış",
+        "bos": "Boş",
+        "srPuan": "{ad}, {tarih}: puan {puan}.",
+        "srSayi": "{ad}, {tarih}: {dogru} doğru, {yanlis} yanlış, {bos} boş."
+      },
+      "fark": {
+        "title": "İlk denemeden bugüne",
+        "yetersiz": "Karşılaştırmak için en az iki deneme gerekir.",
+        "puan": "İlk denemede %{ilk}, son denemede %{son}. Gözlenen değişim: {fark} puan.",
+        "sayi": "İlk denemede {ilk} doğru, son denemede {son} doğru. Gözlenen değişim: {fark} soru.",
+        "artti": "Son denemede doğru sayısı önceki denemeye göre arttı.",
+        "ayni": "Son denemede doğru sayısı önceki denemeyle aynı.",
+        "azaldi": "Son denemede doğru sayısı önceki denemeye göre azaldı.",
+        "iki": "Bu fark iki denemeye dayanır; eğilim için daha fazla deneme gerekir.",
+        "gozlem": "Bu bir gözlenen değişimdir; nedenini göstermez."
+      },
+      "bos": {
+        "title": "Yanıtsız bırakma",
+        "yetersiz": "Bu eğilimi görmek için en az üç deneme gerekir.",
+        "iyi": "Son üç denemede yanıtsız kalan soru oranı düşük (ortalama %{oran}).",
+        "orta": "Son üç denemede yanıtsız kalan soru oranı ortalama %{oran}.",
+        "notu": "Son üç denemede soruların ortalama %{oran} kadarı yanıtsız kaldı. Bu bir tanı değildir; nedeni sorunun zorluğu, süre ya da dikkat olabilir.",
+        "oneri": "Birlikte bakın: yanıtsız kalan bir soruyu seçin ve neyin zor geldiğini konuşun."
+      },
+      "sonraki": {
+        "title": "Sonraki deneme",
+        "yukleniyor": "Yükleniyor...",
+        "hata": "Yaklaşan deneme bilgisi yüklenemedi.",
+        "yok": "Yaklaşan bir deneme görünmüyor.",
+        "sure": "{dk} dk",
+        "kayitli": "Kayıtlı",
+        "kayitsiz": "Henüz kayıtlı değil",
+        "git": "Deneme kaydına git",
+        "not": "Kayıt ve katılım onayı Deneme Kaydı kartında yapılır."
+      }
     },
     "denemeKaydi": {
       "consentLegend": "Onaylar",

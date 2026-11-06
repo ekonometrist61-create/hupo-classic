@@ -1,7 +1,7 @@
 {
   "veliPaneli": {
     "nav": {
-      "okumaDunyasi": "Okuma Dünyası"
+      "okumaDunyasi": "Okuma ve Dil"
     },
     "okuma": {
       "giris": "Okuma Dünyası'nda çocuğunuz kendi adıyla yer aldığı kısa hikâyeler okur ve her hikâyenin sonunda anlama soruları yanıtlar. Bu sayfada okuma alışkanlığını ve hangi tür sorularda desteğe ihtiyaç duyduğunu görür, hikâye önerilerinde öne çıkmasını istediğiniz değerleri seçersiniz.",
@@ -37,6 +37,39 @@
         "okunan": "Okunan hikâye",
         "tamamlanan": "Tamamlanan hikâye",
         "bosDonem": "Bu dönemde henüz hikâye okunmadı. Birkaç hikâye okunduktan sonra özet dolmaya başlar."
+      },
+      "dil": {
+        "baslik": "Okuma ve dil profili",
+        "aciklama": "Son 30 günde soru çözümünden ve hikâye okumadan gelen tablo. Bu bölüm bir tanı veya puan değildir; birlikte nerede konuşabileceğinizi gösterir.",
+        "yukleniyor": "Okuma ve dil profili yükleniyor…",
+        "kilitli": "Okuma verilerini göstermek için veli onayı gerekiyor. Onay verene kadar bu bölüm hesaplanmaz.",
+        "kapali": "Okuma Dünyası bu hesapta henüz açılmadı. Açıldığında profil burada görünür.",
+        "hata": "Okuma ve dil profili alınamadı. Bağlantınızı kontrol edip yeniden deneyin.",
+        "tekrar": "Yeniden dene",
+        "bosDonem": "Son 30 günde hikâye okunmadı. Birkaç hikâye okunduktan sonra profil dolmaya başlar.",
+        "profilBaslik": "Beceri profili",
+        "profilAciklama": "Hangi tür anlama sorularında rahat, hangilerinde birlikte konuşmak işe yarar. Çubuk yalnızca göreli durumu gösterir; bir puan değildir.",
+        "seviye": {
+          "guclu": "Güçlü",
+          "pekisiyor": "Pekişiyor",
+          "gelisiyor": "Gelişiyor"
+        },
+        "yeterliDegil": "Henüz yeterli veri yok (en az 3 soru gerekir)",
+        "seviyeNot": "Gelişiyor, bu tür sorularda birlikte konuşmanın işe yarayabileceği anlamına gelir; bir eksiklik hükmü değildir.",
+        "basamakBaslik": "Kavram, atasözü ve sözcük basamakları",
+        "basamakAciklama": "Her öğe bugünkü basamağında sayılır. Sonraki günlerde verilen doğru cevaplarla ilerler; görmek öğrenmek demek değildir.",
+        "kavram": "Kavramlar",
+        "atasozu": "Atasözü ve deyimler",
+        "sozcuk": "Sözcükler",
+        "bekleyen": "Tekrar zamanı gelen: {sayi}",
+        "bosBasamak": "Henüz izlenen yok",
+        "hacimBaslik": "Okuma hacmi",
+        "hacimAciklama": "Miktar bilgisidir; anlamanın ölçüsü değildir.",
+        "konusmaBaslik": "Bu hafta birlikte konuşun",
+        "konusmaTema": "Son 30 günde en çok okunan tema: {tema}. Bu hafta bu temada bir hikâye seçip okuyun.",
+        "konusmaGenel": "Bu hafta okuduğunuz bir hikâyeyi birlikte yeniden anlatın.",
+        "konusmaSoru": "Hikâyede sence hangi karar en zordu? Sen olsaydın ne yapardın?",
+        "konusmaNot": "Cevabı düzeltmeye çalışmadan dinleyin; yargılamadan sorun."
       },
       "premium": {
         "baslik": "Ayrıntılı özet premium ile açılır",

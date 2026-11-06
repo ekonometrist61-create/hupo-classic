@@ -1,7 +1,7 @@
 {
   "veliPaneli": {
     "nav": {
-      "okumaDunyasi": "Reading World"
+      "okumaDunyasi": "Reading and Language"
     },
     "okuma": {
       "giris": "In Reading World your child reads short stories starring a hero of their own choice and answers comprehension questions at the end of each one. On this page you can see their reading habit and which kinds of questions may need support, and choose the values you want to see first in story suggestions.",
@@ -37,6 +37,39 @@
         "okunan": "Stories read",
         "tamamlanan": "Stories completed",
         "bosDonem": "No stories were read in this period yet. The summary fills in after a few stories."
+      },
+      "dil": {
+        "baslik": "Reading and language profile",
+        "aciklama": "A table from question answers and story reading over the last 30 days. This section is not a diagnosis or a score; it shows where you can talk together.",
+        "yukleniyor": "Loading reading and language profile…",
+        "kilitli": "We need parental consent before we can show reading data. This section is not calculated until you give consent.",
+        "kapali": "Reading World is not yet open for this account. The profile will appear here once it is.",
+        "hata": "The reading and language profile could not be loaded. Check your connection and try again.",
+        "tekrar": "Try again",
+        "bosDonem": "No stories were read in the last 30 days. The profile fills in after a few stories.",
+        "profilBaslik": "Skill profile",
+        "profilAciklama": "Which kinds of comprehension questions feel comfortable, and where talking together may help. Bars show only a relative level; they are not a score.",
+        "seviye": {
+          "guclu": "Strong",
+          "pekisiyor": "Settling in",
+          "gelisiyor": "Developing"
+        },
+        "yeterliDegil": "Not enough data yet (at least 3 questions needed)",
+        "seviyeNot": "Developing means talking this kind of question through together may help; it is not a judgement of a shortcoming.",
+        "basamakBaslik": "Concept, proverb and word steps",
+        "basamakAciklama": "Each item is counted at its current step. Steps advance with correct answers on later days; seeing an item is not learning it.",
+        "kavram": "Concepts",
+        "atasozu": "Proverbs and idioms",
+        "sozcuk": "Words",
+        "bekleyen": "Due for review: {sayi}",
+        "bosBasamak": "None tracked yet",
+        "hacimBaslik": "Reading volume",
+        "hacimAciklama": "This is a measure of quantity; it is not a measure of understanding.",
+        "konusmaBaslik": "Talk together this week",
+        "konusmaTema": "Most read theme in the last 30 days: {tema}. Pick a story on this theme to read this week.",
+        "konusmaGenel": "Retell a story you read this week together.",
+        "konusmaSoru": "Which decision in the story was the hardest? What would you have done?",
+        "konusmaNot": "Listen without trying to correct the answer; ask without judging."
       },
       "premium": {
         "baslik": "The detailed summary opens with premium",

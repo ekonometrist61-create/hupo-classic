@@ -13,9 +13,10 @@
       "learning": "Learning",
       "subjects": "Subjects & Topics",
       "ogrenmeHaritasi": "Learning Map",
+      "destekPlani": "Support Plan",
       "questions": "Question Performance",
       "review": "Mistakes & Review",
-      "exams": "Practice Exams",
+      "exams": "Exams and Progress",
       "goals": "Goals",
       "achievements": "Achievements",
       "activity": "Activity Feed",
@@ -287,6 +288,27 @@
         "guclu": "Answered correctly on different days and in spaced repeats."
       }
     },
+    "destekPlani": {
+      "title": "Support Plan",
+      "desc": "What you can do at home this week. Up to three suggestions, based on school outcomes and review records.",
+      "empty": "No priority support area is showing this week. Enjoy the steady pace.",
+      "sonDortHafta": "You supported your child on {sayi} of the last 4 weeks.",
+      "isaretHata": "The mark could not be saved. Please try again shortly.",
+      "isaretYenilenemedi": "The mark was saved but the list could not be refreshed. Reload the page to see the current state.",
+      "kaynak": "Suggestions are chosen from outcome status and review records. This section is not a diagnosis, score, or proficiency assessment. Do the activities together with your child; one suggestion a week is enough.",
+      "kart": {
+        "gelisiyor": "Outcome that needs support",
+        "buHafta": "Taught this week",
+        "tekrar": "Time to review",
+        "sure": "About a 10-minute activity",
+        "adimlar": "Steps",
+        "konusma": "Conversation question",
+        "birak": "When to stop",
+        "yaptik": "Done",
+        "yapildi": "Marked as done",
+        "kaydediliyor": "Saving..."
+      }
+    },
     "subjectsPage": {
       "pick": "Choose a subject",
       "empty": "No questions solved yet. Subject success will appear here once your child starts solving questions.",
@@ -369,6 +391,58 @@
     "odeme": {
       "loading": "Loading...",
       "durumBaslik": "Status"
+    },
+    "denemeGelisim": {
+      "title": "Exams and Progress",
+      "desc": "How your child's completed practice exams look over time.",
+      "kaynak": "Source: practice exams your child completed. This section is not a diagnosis, a score guarantee or an assessment of readiness.",
+      "loading": "Loading...",
+      "error": "Exam results could not be loaded. Refresh the page and try again.",
+      "trend": {
+        "title": "Exam trend",
+        "puanDesc": "Each exam's percentage score, in date order.",
+        "sayiDesc": "For this grade, results are shown as counts of correct, wrong and blank answers.",
+        "empty": "No completed exams yet.",
+        "emptyNot": "Results will appear here once your child completes a practice exam.",
+        "ozet": "Showing {sayi} exams.",
+        "tekDeneme": "At least two exams are needed to see a trend.",
+        "puan": "Score",
+        "dogru": "Correct",
+        "yanlis": "Wrong",
+        "bos": "Blank",
+        "srPuan": "{ad}, {tarih}: score {puan}.",
+        "srSayi": "{ad}, {tarih}: {dogru} correct, {yanlis} wrong, {bos} blank."
+      },
+      "fark": {
+        "title": "From the first exam to now",
+        "yetersiz": "At least two exams are needed to compare.",
+        "puan": "First exam: {ilk}%, latest exam: {son}%. Observed change: {fark} points.",
+        "sayi": "First exam: {ilk} correct, latest exam: {son} correct. Observed change: {fark} questions.",
+        "artti": "The number of correct answers increased compared with the previous exam.",
+        "ayni": "The number of correct answers is the same as in the previous exam.",
+        "azaldi": "The number of correct answers decreased compared with the previous exam.",
+        "iki": "This difference is based on two exams; more exams are needed to see a trend.",
+        "gozlem": "This is an observed change; it does not show the cause."
+      },
+      "bos": {
+        "title": "Unanswered questions",
+        "yetersiz": "At least three exams are needed to see this pattern.",
+        "iyi": "The share of unanswered questions in the last three exams is low (average {oran}%).",
+        "orta": "The average share of unanswered questions in the last three exams is {oran}%.",
+        "notu": "In the last three exams, about {oran}% of questions were left unanswered. This is not a diagnosis; the cause may be question difficulty, time or attention.",
+        "oneri": "Look at it together: pick one unanswered question and talk about what felt hard."
+      },
+      "sonraki": {
+        "title": "Next exam",
+        "yukleniyor": "Loading...",
+        "hata": "Upcoming exam information could not be loaded.",
+        "yok": "No upcoming exam is showing.",
+        "sure": "{dk} min",
+        "kayitli": "Registered",
+        "kayitsiz": "Not registered yet",
+        "git": "Go to exam registration",
+        "not": "Registration and participation consent are handled in the Exam Registration card."
+      }
     },
     "denemeKaydi": {
       "consentLegend": "Consents",
