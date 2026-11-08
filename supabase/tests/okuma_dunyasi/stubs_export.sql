@@ -7,8 +7,5 @@ create table public.user_answers (student_id uuid, question_id uuid, secilen_sik
 create table public.user_badges (student_id uuid, badge_code text, earned_at timestamptz default now());
 create table public.notifications (alici_id uuid, tur text, baslik text, mesaj text, created_at timestamptz default now());
 create table public.xp_events (student_id uuid, xp integer, created_at timestamptz default now());
-create table public.kelime_denemeleri (ogrenci_id uuid, soru_id uuid, anlam_id uuid, secilen_indeks integer,
-  dogru_mu boolean, ipucu_kullanildi boolean, kazanilan_xp integer, created_at timestamptz default now());
-create table public.kelime_ustaliklari (ogrenci_id uuid, anlam_id uuid, beceri text, basari_seviyesi integer,
-  sonraki_tekrar_tarihi date, son_cevap_tarihi timestamptz, guncellendi timestamptz default now());
-create table public.kelime_kaydedilenler (ogrenci_id uuid, anlam_id uuid, created_at timestamptz default now());
+-- Kelime tabloları (kelime_denemeleri, kelime_ustaliklari, kelime_kaydedilenler) burada TAKLİT EDİLMEZ:
+-- gerçek tanımlar kos.mjs içinde 20261022000000 / 20261023000000 migrasyonlarından gelir (GÖR-048).
