@@ -25,9 +25,10 @@ interface KendiSonuc {
   yanlis_sayisi: number;
   bos_sayisi: number;
   sinif: number;
-  sinif_katilimci: number;
-  sira: number;
-  yuzdelik: number;
+  // Sınıfta 5'ten az katılımcı varsa sıra, yüzdelik ve katılımcı sayısı null gelir (GÖR-095)
+  sinif_katilimci: number | null;
+  sira: number | null;
+  yuzdelik: number | null;
 }
 interface PublicResults {
   sinav: { id: string; ad: string; baslangic_zamani: string };
@@ -134,18 +135,22 @@ export default async function DenemesonuclariPage({
                 </p>
                 <p className="text-xs text-gray-500">puan</p>
               </div>
-              <div className="text-center">
-                <p className="text-2xl font-bold text-gray-800 dark:text-gray-200">
-                  {kendi.sira}. / {kendi.sinif_katilimci}
-                </p>
-                <p className="text-xs text-gray-500">sınıf sırası</p>
-              </div>
-              <div className="text-center">
-                <p className="text-2xl font-bold text-gray-800 dark:text-gray-200">
-                  %{Number(kendi.yuzdelik).toFixed(0)}
-                </p>
-                <p className="text-xs text-gray-500">yüzdelik dilim</p>
-              </div>
+              {kendi.sira != null && kendi.sinif_katilimci != null && kendi.yuzdelik != null && (
+                <>
+                  <div className="text-center">
+                    <p className="text-2xl font-bold text-gray-800 dark:text-gray-200">
+                      {kendi.sira}. / {kendi.sinif_katilimci}
+                    </p>
+                    <p className="text-xs text-gray-500">sınıf sırası</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-2xl font-bold text-gray-800 dark:text-gray-200">
+                      %{Number(kendi.yuzdelik).toFixed(0)}
+                    </p>
+                    <p className="text-xs text-gray-500">yüzdelik dilim</p>
+                  </div>
+                </>
+              )}
             </div>
             <div className="mt-3 flex gap-4 text-sm">
               <span className="text-green-600 dark:text-green-400">
@@ -161,7 +166,7 @@ export default async function DenemesonuclariPage({
           </div>
         )}
 
-        {kendi && (
+        {kendi && kendi.sira != null && kendi.sinif_katilimci != null && kendi.yuzdelik != null && (
           <PaylasKarti
             sinavAd={sinav.ad}
             puan={Number(kendi.puan)}
