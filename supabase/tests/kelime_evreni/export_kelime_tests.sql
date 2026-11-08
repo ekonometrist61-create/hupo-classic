@@ -30,6 +30,8 @@ declare
   sayac int := 0;
   ok boolean;
   n_den int; n_ust int; n_kay int;
+  vl uuid := gen_random_uuid();   -- ob'un velisi
+  n_yab int; an3 uuid; so3 uuid; r jsonb; hata text; n1 int; n2 int; n3 int;
 begin
   -- Hesaplar (yalın kurulum; tümü transaction içinde, sonunda geri alınabilir)
   insert into auth.users (id, email) values (ob, 'kelime-b@test.local'), (oa, 'kelime-a@test.local');
@@ -113,4 +115,100 @@ begin
   sayac := sayac + 1; no := sayac; senaryo := 'export_my_data: anon kapalı, authenticated açık';
   gecti := ok; detay := 'yetki kontrolü';
   return next;
+
+  -- =====================================================================
+  -- GERÇEK RPC + RLS (GÖR-048): taban taklitleri değil, 20261022/23/45/46 gövdeleri
+  -- =====================================================================
+  insert into auth.users (id, email) values (vl, 'kelime-veli@test.local');
+  insert into public.profiles (id, role, full_name) values (vl, 'veli', 'Test Veli');
+  update public.profiles set parent_id = vl, sinif = 3 where id = ob;
+  update public.profiles set sinif = 3 where id = oa;
+  insert into public.kelime_anlamlari (kelime, anlam) values ('yağmur', 'bulutlardan damlalar halinde düşen su') returning id into an3;
+  insert into public.kelime_sorulari (anlam_id, iliski_turu, sinif, zorluk, soru_metni, secenekler, dogru_indeks, aciklama, durum, inceleyen_id, yayin_tarihi)
+    values (an3, 'es_anlamli', 3, 1, 'Yağmur sözcüğüyle ilgili doğru şık hangisidir?', '["yağış","kar"]', 0, 'Test sorusu, açıklama metni yeterli uzunlukta.', 'yayinda', oa, now())
+    returning id into so3;
+
+  -- 7) kelime_cevap_gonder (gerçek RPC) -> export'ta deneme ve ustalık görünür
+  perform pg_temp.exp_giris(ob);
+  r := public.kelime_cevap_gonder(so3, 0, false, 'rpc-deneme-0001');
+  ex := public.export_my_data();
+  perform pg_temp.exp_cikis();
+  kel := ex -> 'kelime';
+  ok := (r ->> 'dogru')::boolean and (r ->> 'kazanilan_xp')::int = 10
+        and (kel #> '{denemeler}') @> jsonb_build_array(jsonb_build_object('soru_id', so3, 'anlam_id', an3, 'dogru_mu', true, 'kazanilan_xp', 10))
+        and (kel #> '{ustaliklar}') @> jsonb_build_array(jsonb_build_object('anlam_id', an3, 'beceri', 'taninma', 'basari_seviyesi', 1));
+  sayac := sayac + 1; no := sayac; senaryo := 'RPC kelime_cevap_gonder: deneme ve ustalık export''ta görünür (10 XP, seviye 1)';
+  gecti := ok; detay := r::text; return next;
+
+  -- 8) idempotent tekrar export'ta çoğalmaz; kelime_kaydet açma/kapama export'a yansır
+  perform pg_temp.exp_giris(ob);
+  r := public.kelime_cevap_gonder(so3, 0, false, 'rpc-deneme-0001');
+  perform public.kelime_kaydet(an3, true);
+  kel := public.export_my_data() -> 'kelime';
+  n1 := jsonb_array_length(kel #> '{kaydedilenler}');
+  ok := (r ->> 'tekrar')::boolean and (kel #> '{kaydedilenler}') @> jsonb_build_array(jsonb_build_object('anlam_id', an3));
+  perform public.kelime_kaydet(an3, false);
+  kel := public.export_my_data() -> 'kelime';
+  n2 := jsonb_array_length(kel #> '{kaydedilenler}');
+  n3 := (select count(*) from jsonb_array_elements(kel #> '{denemeler}') e where e ->> 'soru_id' = so3::text);
+  perform pg_temp.exp_cikis();
+  sayac := sayac + 1; no := sayac; senaryo := 'RPC: tekrar gönderim export''ta çoğalmaz; kelime_kaydet aç/kapa export''a yansır';
+  gecti := ok and n2 = n1 - 1 and n3 = 1; detay := format('kayit %s -> %s; so3 deneme %s', n1, n2, n3); return next;
+
+  -- 9) kelime_ogrenci_ozeti öğrenciye çalışır; veli/anon kapalı
+  perform pg_temp.exp_giris(ob);
+  r := public.kelime_ogrenci_ozeti();
+  perform pg_temp.exp_cikis();
+  begin
+    perform pg_temp.exp_giris(vl);
+    perform public.kelime_cevap_gonder(so3, 0, false, 'veli-deneme-0001');
+    hata := 'hata yok';
+  exception when others then hata := sqlstate || ':' || sqlerrm; end;
+  perform pg_temp.exp_cikis();
+  sayac := sayac + 1; no := sayac; senaryo := 'RPC yetki: öğrenci özeti döner; veli cevap gönderemez (STUDENT_ONLY); anon execute yok';
+  gecti := jsonb_typeof(r) = 'object' and hata like '42501:STUDENT_ONLY%'
+           and not has_function_privilege('anon', 'public.kelime_cevap_gonder(uuid,integer,boolean,text)', 'execute')
+           and not has_function_privilege('anon', 'public.kelime_kaydet(uuid,boolean)', 'execute')
+           and has_function_privilege('authenticated', 'public.kelime_ogrenci_ozeti()', 'execute');
+  detay := hata || ' | ' || left(r::text, 150); return next;
+
+  -- 10) RLS: tablo yetkisi kapalıyken doğrudan okuma reddedilir (ilk savunma hattı)
+  begin
+    perform pg_temp.exp_giris(ob);
+    perform count(*) from public.kelime_denemeleri;
+    hata := 'hata yok';
+  exception when others then hata := sqlstate; end;
+  perform pg_temp.exp_cikis();
+  sayac := sayac + 1; no := sayac; senaryo := 'RLS: kelime tablolarına doğrudan okuma yetkisi kapalı (42501)';
+  gecti := hata = '42501'; detay := hata; return next;
+
+  -- 11) RLS politikaları (tablo yetkisi geçici açık): öğrenci yalnız kendini, bağlı veli çocuğunu görür, yabancı görmez
+  grant select on public.kelime_denemeleri, public.kelime_ustaliklari to authenticated;
+  perform pg_temp.exp_giris(ob);
+  n1 := (select count(*) from public.kelime_denemeleri) ; n2 := (select count(*) from public.kelime_denemeleri where ogrenci_id = oa);
+  perform pg_temp.exp_cikis();
+  perform pg_temp.exp_giris(vl);
+  n3 := (select count(*) from public.kelime_denemeleri where ogrenci_id = ob);
+  perform pg_temp.exp_cikis();
+  select count(*) into n_yab from (select 1) x where false;
+  perform pg_temp.exp_giris(oa);
+  n_yab := (select count(*) from public.kelime_denemeleri where ogrenci_id = ob) + (select count(*) from public.kelime_ustaliklari where ogrenci_id = ob);
+  perform pg_temp.exp_cikis();
+  revoke all on public.kelime_denemeleri, public.kelime_ustaliklari from authenticated;
+  sayac := sayac + 1; no := sayac; senaryo := 'RLS politikası: öğrenci yalnız kendini, bağlı veli çocuğunu görür; yabancı öğrenci görmez';
+  gecti := n1 = (select count(*) from public.kelime_denemeleri where ogrenci_id = ob) and n2 = 0 and n3 = n1 and n_yab = 0;
+  detay := format('ob kendi %s, ob->oa %s, veli->ob %s, oa->ob %s', n1, n2, n3, n_yab); return next;
+
+  -- 12) RLS: kelime_kaydedilenler yazma politikası başkası adına ekleme yapamaz
+  grant select, insert on public.kelime_kaydedilenler to authenticated;
+  begin
+    perform pg_temp.exp_giris(ob);
+    insert into public.kelime_kaydedilenler (ogrenci_id, anlam_id) values (oa, an3);
+    hata := 'hata yok';
+  exception when others then hata := sqlstate; end;
+  perform pg_temp.exp_cikis();
+  revoke all on public.kelime_kaydedilenler from authenticated;
+  sayac := sayac + 1; no := sayac; senaryo := 'RLS: başkası adına kelime kaydı eklenemez (with check, 42501)';
+  gecti := hata = '42501' and not exists (select 1 from public.kelime_kaydedilenler where ogrenci_id = oa and anlam_id = an3);
+  detay := hata; return next;
 end $fn$;

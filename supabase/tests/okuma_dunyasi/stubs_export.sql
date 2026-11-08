@@ -9,3 +9,11 @@ create table public.notifications (alici_id uuid, tur text, baslik text, mesaj t
 create table public.xp_events (student_id uuid, xp integer, created_at timestamptz default now());
 -- Kelime tabloları (kelime_denemeleri, kelime_ustaliklari, kelime_kaydedilenler) burada TAKLİT EDİLMEZ:
 -- gerçek tanımlar kos.mjs içinde 20261022000000 / 20261023000000 migrasyonlarından gelir (GÖR-048).
+-- GÖR-048: export_my_data son tanımı (20261106 growth bölümü) yalnız bu tabloları okur; çağrı sözleşmesi taklidi.
+-- (Gerçek tanımlar 20261014000000_growth_crm_core.sql içindedir; son tanım bu kolonlarla sınanır.)
+create table public.growth_households (
+  id uuid primary key default gen_random_uuid(), core_parent_user_id uuid, merged_into uuid,
+  created_at timestamptz not null default now(), customer_no text, lifecycle text, plan text, subscription_status text);
+create table public.growth_events (household_id uuid, event_name text, source text, occurred_at timestamptz default now());
+create table public.growth_consent_bridge (household_id uuid, channel text, granted boolean, source text, changed_at timestamptz default now());
+create table public.growth_message_log (household_id uuid, channel text, status text);

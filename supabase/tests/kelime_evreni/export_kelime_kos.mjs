@@ -13,6 +13,7 @@ const adimlar = [
   path.join(here, 'stubs.sql'),
   path.join(here, 'export_taban_stubs.sql'),
   mig('20261022000000_kelime_evreni.sql'),
+  mig('20261023000000_kelime_evreni_duzeltme.sql'),
   mig('20261045000000_kelime_veli_ozeti_riza_kapisi.sql'),
   mig('20261046000000_export_my_data_kelime.sql'),
   path.join(here, 'export_kelime_tests.sql'),

@@ -61,6 +61,33 @@ for (const m of migrasyonlar) {
   console.log(`migration: ${path.basename(m)} tamam`);
 }
 
+// GÖR-048: export_my_data SON tanımı (20261106 growth_kvkk_birlestirme) gerçek zincirin üstüne uygulanır.
+// Tüm 20261106 migrasyonu growth/musteri_360 zinciri ister; yalnız export_my_data gövdesi (bölüm 9) ve
+// yetki satırları dosyadan KESİLEREK yüklenir (metin elle kopyalanmaz). growth tabloları stubs_export.sql'de taklit.
+const sonExportDosya = mig('20261106000000_growth_kvkk_birlestirme.sql');
+const sonExportMetin = fs.readFileSync(sonExportDosya, 'utf8');
+const govdeRe = /create or replace function public\.export_my_data\(\)[\s\S]*?\n\$\$;/;
+const yetkiRe = /revoke execute on function public\.export_my_data\(\) from public, anon;\s*grant\s+execute on function public\.export_my_data\(\) to authenticated;/;
+const sonGovde = sonExportMetin.match(govdeRe)?.[0];
+const sonYetki = sonExportMetin.match(yetkiRe)?.[0];
+if (!sonGovde || !sonYetki) { console.log('HATA: 20261106 export_my_data gövdesi/yetkisi bulunamadı'); process.exit(1); }
+// Önceki tanım (20261050000500) ile karşılaştırma: kelime + okuma bölümleri aynen korunmalı.
+const oncekiMetin = fs.readFileSync(mig('20261050000500_export_my_data_okuma.sql'), 'utf8');
+const bolum = (s) => {
+  const a = s.indexOf("'kelime', jsonb_build_object(");
+  const b = s.indexOf("'growth', jsonb_build_object(");
+  const sonu = b > 0 ? b : s.indexOf('\n  );\nend;');
+  return s.slice(a, sonu).replace(/\s+/g, ' ').replace(/--[^\n]*/g, '').replace(/,\s*(--.*)?$/, '').trim();
+};
+const normalize = (s) => bolum(s).replace(/--.*?(?= ')/g, '').replace(/[,\s]+$/, '').replace(/\)\s*\)\s*;?$/, '').trim();
+const oncekiBolum = normalize(oncekiMetin.replace(/--[^\n]*/g, ''));
+const sonBolum = normalize(sonExportMetin.slice(sonExportMetin.indexOf('create or replace function public.export_my_data()')).replace(/--[^\n]*/g, ''));
+const bolumKarsilastirma = oncekiBolum.length > 500 && sonBolum.startsWith(oncekiBolum.slice(0, oncekiBolum.length - 12));
+console.log(`export_my_data karşılaştırma (20261050000500 → 20261106): kelime+okuma bölümleri ${bolumKarsilastirma ? 'AYNEN KORUNUYOR' : 'FARKLI'} (${oncekiBolum.length}/${sonBolum.length} karakter)`);
+if (!bolumKarsilastirma) process.exit(1);
+await adim('20261106-export_my_data', () => db.exec(sonGovde + '\n' + sonYetki));
+console.log('migration: 20261106 export_my_data (son tanım, kesit) tamam');
+
 // Gerçek paketler (yoksa fixture)
 await db.exec('create table public.test_paketler (ad text primary key, icerik jsonb not null)');
 await db.exec('revoke all on public.test_paketler from anon, authenticated');
@@ -124,6 +151,18 @@ for (const r of sonuc.rows) {
 }
 console.log(`\nSONUÇ: ${gecen}/${sonuc.rows.length} senaryo geçti`);
 
+// GÖR-048: export_my_data son tanımı (20261106) senaryoları
+await adim('export-son-yukleme', () => db.exec(fs.readFileSync(path.join(here, 'export_son_testleri.sql'), 'utf8')));
+const sonSonuc = await adim('export-son', () => db.query('select * from pg_temp.export_son_testleri()'));
+let sonGecen = 0;
+for (const r of sonSonuc.rows) {
+  if (r.gecti) sonGecen++;
+  console.log(`E${r.no}. [${r.gecti ? 'OK  ' : 'FAIL'}] ${r.senaryo}`);
+  if (!r.gecti || process.env.DETAY) console.log(`      detay: ${String(r.detay).slice(0, 600)}`);
+}
+console.log(`EXPORT SON TANIM: ${sonGecen}/${sonSonuc.rows.length} senaryo geçti`);
+const sonTamam = sonGecen === sonSonuc.rows.length && sonSonuc.rows.length > 0;
+
 // export_my_data kapsamı (yalnız tespit; genişletme ayrı migration işidir)
 const migKlasor = path.resolve(here, '../../migrations');
 const exportDosyalari = fs.readdirSync(migKlasor).filter((f) => f.endsWith('.sql')).sort()
@@ -132,5 +171,5 @@ const sonExport = exportDosyalari[exportDosyalari.length - 1];
 const okumaKapsami = sonExport && /okuma_/.test(fs.readFileSync(path.join(migKlasor, sonExport), 'utf8'));
 console.log(`\nNOT export_my_data: son tanım ${sonExport || '(bulunamadı)'}; okuma_* tablolarını kapsıyor mu: ${okumaKapsami ? 'EVET' : 'HAYIR (eksik; ayrı migration gerekir)'}`);
 
-process.exit(gecen === sonuc.rows.length && sonuc.rows.length > 0 ? 0 : 1);
+process.exit(gecen === sonuc.rows.length && sonuc.rows.length > 0 && sonTamam ? 0 : 1);
 
