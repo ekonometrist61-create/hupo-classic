@@ -10,6 +10,8 @@ import { PRIVACY_NOTICE_VERSION, type ParentConsent } from "./privacy";
 
 interface ConsentCardProps {
   studentId: string;
+  /** Rıza kaydı başarıyla değiştiğinde çağrılır; üst kabuk veriyi yeniden okur. */
+  onChange?: () => void;
 }
 
 interface Loaded {
@@ -19,7 +21,7 @@ interface Loaded {
 
 // Çocuk için veri işleme açık rızasını verme / geri çekme kartı.
 // Geri çekmek vermek kadar kolaydır (tek tık).
-export default function ConsentCard({ studentId }: ConsentCardProps) {
+export default function ConsentCard({ studentId, onChange }: ConsentCardProps) {
   const t = useTranslations("veliPaneli.consent");
   const [loaded, setLoaded] = useState<Loaded | null>(null);
   const [saving, setSaving] = useState(false);
@@ -58,6 +60,7 @@ export default function ConsentCard({ studentId }: ConsentCardProps) {
       setSaveFailed(true);
     } else {
       setLoaded({ studentId, status: giving ? "verildi" : "geri_cekildi" });
+      onChange?.();
     }
     setSaving(false);
   }

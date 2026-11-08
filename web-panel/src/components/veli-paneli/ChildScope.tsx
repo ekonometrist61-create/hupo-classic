@@ -56,6 +56,18 @@ export default function ChildScope({ students, render, ilkVeri }: ChildScopeProp
     };
   }, [selectedId]);
 
+  // Rıza değişince dashboard verisi (ve riza alanı) sunucudan yeniden okunur; böylece içerik yenilemeden açılır.
+  const verileriYenile = () => {
+    if (!selectedId) return;
+    const id = selectedId;
+    createClient()
+      .rpc("get_student_dashboard", { p_student_id: id, p_gun: 7 })
+      .then(({ data, error }) => {
+        if (error || !data) return;
+        setResult({ studentId: id, data: data as DashboardData });
+      });
+  };
+
   if (students.length === 0) {
     return (
       <VeliMessage
@@ -97,7 +109,7 @@ export default function ChildScope({ students, render, ilkVeri }: ChildScopeProp
 
       {data && consentGiven && render(selectedId, data)}
 
-      {selectedId && <ConsentCard studentId={selectedId} />}
+      {selectedId && <ConsentCard studentId={selectedId} onChange={verileriYenile} />}
     </div>
   );
 }
