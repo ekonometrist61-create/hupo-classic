@@ -405,6 +405,17 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 
 ## B. Kayıtlar (en yeni üstte)
 
+### K-0231 · 2026-11-08 · VT/GÜV · Drift kaynağı: 20260927000120 uzakta revoke olmadan uygulanmış (GÖR-095)
+- **Tür:** Teşhis
+- **Konu:** VT / GÜV (GÖR-095 drift maddesi)
+- **Bağlam:** Kullanıcı Supabase proje kayıtlarından drift kaynağını incelemesini ve not almasını istedi. Yalnız salt okunur sorgular (`supabase db query --linked`, SELECT); yazma yok.
+- **Bulgu 1 (uygulanan SQL):** Uzak `supabase_migrations.schema_migrations` kaydında `20260927000120` var, ama kaydedilmiş komut metninde `revoke execute on function public.set_updated_at() from public, anon, authenticated;` yok (`grant ... tr_normalize ... to authenticated` var). Repodaki dosya bu revoke'u içerir ve `e530704` (2026-09-28) commit'inden beri değişmemiş. Uzakta çalışan metin repodakiyle aynı değil.
+- **Bulgu 2 (canlı ACL):** `set_updated_at`, `tr_normalize`, `hafta_baslangic` üçünde de `anon`, `authenticated`, `service_role` EXECUTE açık; PUBLIC da açık.
+- **Bulgu 3 (20261159–65):** Uzak kayıtta 7 migrasyonun komut metni var; `20261164`/`20261165` bu oturumun dosyalarıyla aynı adla kayıtlı. K-0230 uygulamanın kullanıcının "tüm migrasyonları uygula" talimatıyla `db push` ile yapıldığını yazıyor. Oysa GÖR-095 kararında 20261159–61 "sahipleri netleşmeden deploy yok" diye işaretliydi. Bu kayıt o kararla çelişiyor; uygulamayı kimin onayladığı bu kayıttan doğrulanamadı.
+- **Açık:** Revoke'un neden uygulanmadığı kayıtlardan çıkmadı (uygulanan metin farkı ya da sonradan düzenleme olabilir). Bunun için Supabase Dashboard'daki migrasyon/log kaydına bakmak gerekir; bu oturumda Management API erişimi yok.
+- **Öneri (onay bekliyor, uygulanmadı):** Yeni bir düzeltme migrasyonu (ör. `20261166000000`) ile üç fonksiyonda `revoke ... from public, anon, authenticated` ve sonrasında ACL kontrolü. `set_updated_at` yalnızca trigger olduğu için risk yok; `tr_normalize` için kayıt akışı kontrolü GÖR-095 kararında belirtildiği gibi önce yapılmalı.
+- **Devir:** Bu konuşma kapanıyor. Açık işler: (1) düzeltme migrasyonu kararı (yukarıdaki Öneri); (2) 20261159–61 onay kaydı; (3) Dashboard'dan revoke'un neden uygulanmadığı; (4) PROJE_GUNLUGU.md'deki diğer oturumların commit edilmemiş değişiklikleri ayrı ayrı ele alınmalı.
+
 ### K-0215 · 2026-11-08 · YÖN/VT · Sorular ajan kapısı: migration uygulandı, panel dağıtıldı, 91 soru iki ajanla denetlendi
 - **Tür:** Gelişme
 - **Konu:** YÖN
