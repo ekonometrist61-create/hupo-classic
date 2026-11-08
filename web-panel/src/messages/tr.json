@@ -78,6 +78,63 @@
       "baslik": "Konu Bazlı Analiz"
     }
   },
+  "yontem": {
+    "metaTitle": "Yöntem ve araştırma kütüphanesi | Hupolingo",
+    "metaDescription": "Hupolingo'nun içerik denetim sürecini, bilmediklerimizi ve dayandığımız 12 araştırmanın bulgu ve sınırlarını açıklıyoruz.",
+    "geri": "Ana sayfaya dön",
+    "etiket": "ŞEFFAFLIK",
+    "baslik": "Yöntemimiz ve kanıt notlarımız",
+    "giris": "Bu sayfada neyi bildiğimizi, neyi bilmediğimizi ve içeriklerimizin nasıl denetlendiğini yazıyoruz. Hupolingo'ya özgü bir etki araştırması henüz yok.",
+    "bilmedikleri": {
+      "baslik": "Bilmediklerimiz",
+      "ogeler": [
+        "Hupolingo'ya özgü bir etki araştırması henüz yok. Bu sayfadaki araştırmalar başka öğrenme ortamlarında yapıldı.",
+        "Hupolingo pilot aşamasında. Pilot kapsamı 3–7. sınıftır; sitede genel bir sınıf veya başarı iddiası yok.",
+        "Kendi sonuçlarımızı bağımsız bir çalışmayla doğrulamadan 'kanıtlandı' diye sunmayacağız.",
+        "Her araştırma yalnızca kendi ölçtüğünü ölçtü. Palikot ve arkadaşları hikâye tamamlamayı ölçtü, öğrenmeyi değil. Aulagnon ve arkadaşlarının Peru'daki çalışması farklı bir platformu inceledi.",
+        "Etkiler çocuğun yaşına, dersine ve müdahalenin tasarımına göre değişiyor. Tek bir sonuç her çocuk için geçerli değildir."
+      ]
+    },
+    "surec": {
+      "baslik": "Yöntemimiz ve denetim",
+      "adimlar": [
+        { "baslik": "Kaynak doğrulama", "metin": "Bir kazanım kodu yalnızca kaynakta görüldüğünde soruya yazılır. Görülmediyse kayıt 'kaynak bekliyor' olarak işaretlenir." },
+        { "baslik": "Özgün üretim", "metin": "Sorular özgün yazılır. Yayınevi veya MEB sorularının metni çoğaltılmaz; benzerlik kontrolünden geçmeyen soru yayınlanmaz." },
+        { "baslik": "Çeldirici ve açıklama kontrolü", "metin": "Her yanlış seçeneğin neden yanlış olduğu ve açıklamanın doğruluğu ayrıca incelenir." },
+        { "baslik": "İki ayrı inceleme", "metin": "Her soru iki ayrı incelemeden geçer. İkisi de geçmeden yayına alınmaz." },
+        { "baslik": "İnsan onayı", "metin": "Son yayın kararı bir insanındır. Varsayılan durum yayın kapalıdır; insan onayı verilmeden hiçbir soru yayınlanmaz." }
+      ],
+      "yapayZeka": "Yapay zekâ ile hazırlanan taslaklar yalnızca taslaktır; yayın kararını vermez.",
+      "uzman": "Bağımsız uzman incelemesi (pedagog, hekim veya psikolog) henüz yapılmadı. Bu süreç uzman onayı yerine geçmez."
+    },
+    "kutuphane": {
+      "baslik": "Araştırma kütüphanesi",
+      "aciklama": "Her kaynak için tasarım, bulgu ve sınır birlikte verilir. Bulgular standartlaştırılmış ölçüler ya da ham oranlarla yazılmıştır.",
+      "uyari": "g ve d standartlaştırılmış etki büyüklükleridir; yüzde artış değildir. Çalışma sayıları toplanıp toplam öğrenci sayısı olarak sunulmaz.",
+      "dipnot": "Bu bulgular Hupolingo'nun kendi sonuçları değildir.",
+      "tasarim": "Tasarım ve örneklem",
+      "bulgu": "Bulgu",
+      "sinir": "Sınır",
+      "kaynak": "Kaynak",
+      "zayif": "Zayıf veya farklı kanıt: dikkatli okuyun",
+      "items": {
+        "zeng2024": { "tasarim": "22 deneysel çalışmanın meta-analizi", "bulgu": "Akademik performans için oyunlaştırma lehine g = 0,782 (standartlaştırılmış ölçü; yüzde değildir)", "sinir": "Hupolingo'ya özgü değil; örneklemler ve uygulamalar farklı." },
+        "kurnaz2025": { "tasarim": "31 çalışma, 41 etki; K-12 meta-analizi", "bulgu": "Motivasyonda g = 0,654; ortaokul alt grubunda g = 1,015", "sinir": "Heterojenlik yüksek (I² = %88,92); ortaokul alt grubu sonucu herkese genellenemez." },
+        "yao2026": { "tasarim": "20 meta-analiz, 688 birincil çalışmayı kapsayan ikinci düzey meta-analiz", "bulgu": "Matematikte genel g = 0,407; bilişsel g = 0,454", "sinir": "Duyuşsal etki anlamlı değil; düşük kaliteli çalışmalar etkiyi abartabilir." },
+        "ruitenburg2026": { "tasarim": "Gerçek ilk ve ortaöğretim sınıflarında 53 çalışma, 7.303 öğrenci", "bulgu": "Aktif geri çağırma g = 0,37; aralıklı çalışma g = 0,20; karışık pratik g = 0,40", "sinir": "Tekrarın uygulama biçimi önemlidir; üç etki toplanmaz." },
+        "palikot2026": { "tasarim": "Hindistan'da 138 okul, yaklaşık 10.000 öğrenci; rastgele kontrollü deney", "bulgu": "Yarışma grubunda yarışma sırasında %45 daha fazla hikâye; ödüller kalktıktan 12 hafta sonra %76 daha fazla hikâye", "sinir": "Ölçülen sonuç hikâye tamamlamadır; öğrenme veya okuma başarısı değildir. Mutlak katılım düşüktür." },
+        "aulagnon2025": { "tasarim": "Peru'da 4–6. sınıf, 60.000 öğrenci; randomize deney", "bulgu": "Seri vurgusu ve kişiselleştirilmiş bildirimler platform kullanımını artırdı; teste katılan alt örneklemde matematik lehine bulgular", "sinir": "Teste yalnızca yaklaşık 1.500 öğrenci (%2,3) katıldı; seçim yanlılığı riski var. Farklı bir platformda yapıldı." },
+        "mawson2025": { "tasarim": "22 rapor, 31 etki; 3.000'den fazla kişi", "bulgu": "Aralıklı tekrar için d = 0,54", "sinir": "Farklı eğitim kademeleri, konular ve süreler karışık." },
+        "ratinho2026": { "tasarim": "45 nitel inceleme ve 11 meta-analiz; ortaöğretim ve yükseköğretim matematiği", "bulgu": "Motivasyonda g = 0,383", "sinir": "Katılım ölçümlerinde veri sınırlı; ilkokula doğrudan aktarılamaz." },
+        "mohammed2024": { "tasarim": "Mısır'da 30 beşinci sınıf öğrencisi; iki oyunlaştırılmış grup", "bulgu": "Rozet ve liderlik tablosu gruplarında motivasyon arttı; iki grup arasında anlamlı fark yok", "sinir": "Küçük örneklem; oyunlaştırılmamış kontrol grubu yok." },
+        "pan2026": { "tasarim": "33 beşinci sınıf öğrencisi; ön test ve son test", "bulgu": "Matematiğe katılımda toplam d = 0,50; davranışsal d = 0,51", "sinir": "Kontrol grubunun olmayışı nedensel yorumu sınırlar." },
+        "gonzalez2025": { "tasarim": "337 dil öğrencisi; 16 haftalık ön ve son test", "bulgu": "Duolingo grubunda genel dil yeterliği ve alıcı kelime bilgisi daha yüksek; sınıf grubunda dinlemede daha yüksek gelişim", "sinir": "Yabancı dil çalışması; farklı popülasyon. Türkçe müfredat için kanıt değildir." },
+        "romero2024": { "tasarim": "İlkokul oyunlaştırmasının sistematik derlemesi", "bulgu": "İlkokul öğrenme sonuçlarında sağlam kanıt eksikliği; bazı iş birliği riskleri", "sinir": "İncelenen literatür ve yöntemler farklı olabilir." }
+      }
+    },
+    "cta": "Örnek soruları dene",
+    "ticariIleti": "Ticari ileti izni"
+  },
   "meta": {
     "gizlilik": {
       "title": "Gizlilik Politikası | Hupolingo",
@@ -494,6 +551,33 @@
           "desc": "Sınav kazanma veya puan artışı vaadi vermiyoruz. Hupo düzenli pratiği ve tekrar ihtiyacını görünür kılmak için tasarlandı."
         }
       ]
+    },
+    "ogrenmeBilimi": {
+      "etiket": "ÖĞRENME BİLİMİYLE TANIŞIN",
+      "baslik": "Sadece eğlenceli değil, öğrenme araştırmalarıyla uyumlu bir yaklaşım",
+      "giris": "Araştırmalar, iyi tasarlanmış oyunlaştırmanın motivasyonu; aktif soru çözümü ve aralıklı tekrarın ise öğrenmeyi destekleyebildiğini gösteriyor. Hupolingo, bu yaklaşımları çocuğun günlük çalışma deneyiminde bir araya getiriyor.",
+      "hupoNot": "Bu araştırmalar Hupolingo'nun kendi öğrencileriyle yapılmadı.",
+      "kartlar": {
+        "palikot": {
+          "kaynak": "Palikot vd. (2026)",
+          "tur": "Rastgele kontrollü deney · Hindistan, 138 okul",
+          "sonuc": "Başka bir uygulamada yaklaşık 10.000 öğrenciyle yapılan deneyde, yarışma sırasında tamamlanan hikâye sayısı %45 daha fazlaydı. Ölçülen sonuç öğrenme değil, katılımdır."
+        },
+        "kurnaz": {
+          "kaynak": "Kurnaz & Koçtürk (2025)",
+          "tur": "Meta-analiz · 31 çalışma",
+          "sonuc": "Oyunlaştırmanın öğrenci motivasyonu üzerinde olumlu etkisi bulundu. Çalışmaların sonuçları birbirinden farklı."
+        },
+        "ruitenburg": {
+          "kaynak": "Ruitenburg vd. (2026)",
+          "tur": "Meta-analiz · 53 çalışma, 7.303 öğrenci",
+          "sonuc": "Aktif hatırlama ve aralıklı tekrar, gerçek okul sınıflarında öğrenmeyi destekleyebildi. Uygulama biçimi etkiyi değiştiriyor."
+        }
+      },
+      "arastirmayiIncele": "Araştırmayı incele",
+      "yeniSekme": " (yeni sekmede açılır)",
+      "dipnot": "Bu bulgular Hupolingo'nun kendi sonuçları değildir.",
+      "kutuphaneLink": "Araştırma kütüphanesi ve yöntemimiz →"
     },
     "plans": {
       "title": "Planlar",
@@ -933,6 +1017,7 @@
     },
     "footer": {
       "rehber": "Veli rehberi: çarpım tablosu",
+      "method": "Yöntem ve kaynaklar",
       "tagline": "Öğren. Güçlen. Zirveye çık.",
       "colProduct": "Hupo",
       "colParents": "Veliler",

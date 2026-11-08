@@ -10,6 +10,7 @@ import { FinalCtaSection } from "@/components/landing/sections/FinalCtaSection";
 import { HeroSection } from "@/components/landing/sections/HeroSection";
 import { HikayelerSection } from "@/components/landing/sections/HikayelerSection";
 import { HowItWorksSection } from "@/components/landing/sections/HowItWorksSection";
+import { OgrenmeBilimiSection } from "@/components/landing/sections/OgrenmeBilimiSection";
 import { ParentPanelSection } from "@/components/landing/sections/ParentPanelSection";
 import { PricingSection } from "@/components/landing/sections/PricingSection";
 import { RehberBandi } from "@/components/landing/sections/RehberBandi";
@@ -57,6 +58,8 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
           <ParentPanelSection />
           <CharacterUniverseSection />
           <TrustSection />
+          {/* Öğrenme Bilimi: kanıt paketi §3 uyarlaması; akademik bulgular ürün şemasına konmaz. */}
+          <OgrenmeBilimiSection />
           <PricingSection />
           {/* İkincil, düşük vurgulu rehber bandı (NEXT_PUBLIC_LEAD_MAGNET_ACIK kapalıyken çizilmez). */}
           <RehberBandi />
