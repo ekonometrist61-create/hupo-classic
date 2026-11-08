@@ -33,7 +33,8 @@ export function kur({ R, sec, ekle, konum }) {
   const karisik = (d) => { const a = [...d]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(R() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   function capraz() {
     for (let deneme = 0; deneme < 50; deneme++) {
-      const tur = sec(['gen', 'gen', 'cift', 'cift', 'say', 'say']);
+      // 'gen' türü kaldırıldı: tek gen için yalnız 3 geçerli genotip-özellik çifti var; 4 şık için geçersiz şık gerekiyordu.
+      const tur = sec(['cift', 'cift', 'say', 'say']);
       const c = sec(CAPRAZ), harf = sec(['A', 'B', 'D', 'T', 'K']);
       const cevir = (g) => g.split('').map((x) => (buyuk(x) ? harf : harf.toLowerCase())).join('');
       const [e1, e2] = R() < 0.5 ? c : [c[1], c[0]];
@@ -47,20 +48,6 @@ export function kur({ R, sec, ekle, konum }) {
       const ortak = { kod: 'F.8.2.2.2', konu: 'Kalıtım', alt_konu: 'Tek karakter çaprazlaması', zorluk: 3,
         spec: { tip_id: 'b2-punnett', parametreler: { e1: cevir(e1), e2: cevir(e2) } },
         dogrulama: Object.entries(sayi).map(([g, m]) => ({ yol: ['sayi', g], beklenen: m })) };
-      if (tur === 'gen') {
-        const p = Math.floor(R() * 4), gk = ham[p];
-        const ifade = (g) => `${cevir(g)} genotipli, ${YAZ(g)}`;
-        const tum = ['AA', 'Aa', 'aa'].flatMap((g) => [`${cevir(g)} genotipli, baskın özellikli`, `${cevir(g)} genotipli, çekinik özellikli`]);
-        const dogru = ifade(gk);
-        const nz = (x) => x.toLocaleLowerCase('tr-TR'), goruldu = new Set([nz(dogru)]), diger = [];
-        for (const x of karisik(tum)) if (!goruldu.has(nz(x)) && diger.length < 3) { goruldu.add(nz(x)); diger.push(x); }
-        ekle({ ...ortak, dogru, celdirici: diger,
-          kok: `${ust}${bilgi} Buna göre tablonun ${KONUMLAR[p]} kutusundaki yavru için aşağıdakilerden hangisi doğrudur?`,
-          gerekce: diger.map(() => `Bu ifade, şekilde tablonun ${KONUMLAR[p]} kutusuna yazılan genotiple ve bu genotipin gösterdiği özellikle uyuşmuyor; kutuya yeniden bak.`),
-          ipucu: `Tablonun ${KONUMLAR[p]} kutusuna bak: kutudaki iki harfi oku, sonra büyük harfin baskın özelliği gösterdiğini hatırla.`,
-          cozum: [`Şekilde tablonun ${KONUMLAR[p]} kutusunu bul ve içindeki harfleri oku.`, 'Okuduğun genotipin gösterdiği özelliği büyük/küçük harf kuralına göre belirle.'] });
-        return;
-      }
       if (tur === 'cift') {
         const o = sec(OZELLIK), uy = ham.map((g) => o.uy(g));
         const m = uy.filter(Boolean).length;
