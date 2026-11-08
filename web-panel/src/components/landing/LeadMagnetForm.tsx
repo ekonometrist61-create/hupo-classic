@@ -2,7 +2,6 @@
 
 import { TurnstileWidget } from "@/components/guvenlik/TurnstileWidget";
 import { Link } from "@/i18n/navigation";
-import { utmOzellikleri } from "@/lib/analytics/utm";
 import { IZIN_SURUM, KVKK_SURUM } from "@/lib/lead-magnet";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
@@ -61,12 +60,6 @@ export default function LeadMagnetForm({ magnet, onSuccess }: Props) {
       const anonKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!;
       const sinifSayi = parseInt(sinif, 10);
 
-      // UTM yalnız çerez onayı varsa dolar (rıza kapılı); yoksa alan hiç gönderilmez.
-      const u = utmOzellikleri();
-      const utm: Record<string, string> = {};
-      if (u.utm_source) utm.kaynak = u.utm_source;
-      if (u.utm_medium) utm.kanal = u.utm_medium;
-      if (u.utm_content) utm.icerik = u.utm_content;
 
       const res = await fetch(`${supabaseUrl}/functions/v1/lead-magnet-kayit`, {
         method: "POST",
@@ -80,7 +73,6 @@ export default function LeadMagnetForm({ magnet, onSuccess }: Props) {
           izin_surum: IZIN_SURUM,
           izin_eposta: izinEposta,
           captcha_token: captchaToken,
-          ...(Object.keys(utm).length > 0 ? { utm } : {}),
         }),
       });
 
