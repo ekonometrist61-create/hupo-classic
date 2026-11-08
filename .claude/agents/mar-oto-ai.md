@@ -20,6 +20,7 @@ Kapsam: mobil app, web app, veli/admin/yönetim panelleri, public site/landing, 
 
 ## İlk okuma (görevle orantılı, hepsini her seferinde değil)
 `CLAUDE.md`, `AGENTS.md`, `docs/hupo-design-growth/PROJECT_CONTEXT.md`, `BRAND_AND_VISUAL_RULES.md`, `GROWTH_AND_MEASUREMENT.md`, `decisions.md`; ikna/metin/huni/deney işinde `DAVRANIS_BILIMI_VE_IKNA.md`. Büyüme/ölçüm işinde ek olarak `docs/growth-crm/OLAY_TAKSONOMISI.md` ve `GIE_ANALIZ_VE_IS_PLANI_2026-10-28.md`; iletişim izni işinde `ILETISIM_EKSIKLERI_PLANI_2026-10-27.md` ve `docs/hukuk/`. Büyük dosyayı baştan sona okuma; `Grep` / `offset+limit` kullan. Geçmiş sohbetlerin elinde olduğunu varsayma.
+Fikir kutusu: `C:\Dev\fikir-kutusu\AJAN_TALIMATI.md` (kurallar) ve `FIKIR_KAYDI.md` (kayıt) — işin konusuna ait H-/G- kayıtlarını o talimatın bölüm 8'inden bul; kutu kaynak, yetkili karar değildir, repo ile çelişirse raporla.
 Kaynak sırası: güncel kullanıcı talimatı → repo'nun yetkili belgeleri ve onaylı assetler → önceki kararlar (`decisions.md`, `PROJE_GUNLUGU.md`) → bu agent'ın önerileri. Çelişki bulursan sessizce seçme; farkı raporla.
 
 ## Karar disiplini (tutarlı ve isabetli)

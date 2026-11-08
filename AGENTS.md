@@ -34,6 +34,12 @@ otomatik devralır. `.claude/agents/hupo-design-growth-director.md` tasarım sis
 ekran tasarımı için kurulu proje agent'ıdır. İkisi de kod/güvenlik/backend kurallarını değiştirmez.
 Ayrıntı: `docs/hupo-design-growth/`.
 
+### Fikir kutusu
+Hupo ve diğer projelerdeki fikir, karar ve pilot önerileri `C:\Dev\fikir-kutusu\` altındadır.
+Fikir, strateji, ürün, pazarlama veya sınav konusu geçtiğinde önce `FIKIR_KAYDI.md` ve ilgili arşiv
+satırlarına bak; yeni fikirleri oraya işle. Kurallar: `C:\Dev\fikir-kutusu\AJAN_TALIMATI.md`.
+Kutu yetkili karar değildir; repo kayıtlarıyla çelişirse repo önce gelir ve çelişki raporlanır.
+
 ---
 
 ## 1. Dil

@@ -1,6 +1,7 @@
 # Hupo — Claude Code talimatları
 
 Proje kuralları `AGENTS.md` içindedir; başlamadan önce onu ve `MASTER_BRIEF.md`'yi oku.
+Fikir, strateji veya ürün konusunda `C:\Dev\fikir-kutusu\FIKIR_KAYDI.md` ve kuralları için `C:\Dev\fikir-kutusu\AJAN_TALIMATI.md`'ye bak; yeni fikirleri oraya işle.
 Not: `MASTER_BRIEF.md` içindeki eski OneDrive yolu geçersizdir; proje `C:\Dev\hupo` konumundadır.
 
 ## Barındırma (hosting)
