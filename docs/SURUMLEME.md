@@ -38,6 +38,16 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.7.0 · 2026-11-08
+
+Büyük değişiklik (MINOR: yeni kullanıcı yüzeyleri ve veri sözleşmesine geriye uyumlu eklenti).
+- Veli rehberi altyapısı: /rehber/carpim-tablosu-pif-noktalari sayfası, e-posta + sınıf (3–7) formu ve lead-magnet-kayit uç noktası. **Bayrak kapalı** (NEXT_PUBLIC_LEAD_MAGNET_ACIK): sayfa 404, landing bandı ve footer bağlantısı yok. Açılış için hukuk onayı (GÖR-078), şirket bilgileri ve ticari ileti metnindeki yer tutucuların kapanması gerekir.
+- Landing: "Öğrenme Bilimi" bölümü (3 araştırma kartı, DOI bağlantılı, "Hupolingo'nun sonucu değildir" dipnotu) ve footer'da "Yöntem ve kaynaklar" bağlantısı.
+- Yeni sayfa /yontem: bilmediklerimiz, yöntem ve denetim süreci, 12 kaynaklı araştırma kütüphanesi.
+- Migration: \20261030000100_lead_magnet_kayit\ (lead_magnet_kayitlari, append-only lead_magnet_izin_logu, lead_magnet_kayit_ekle). Üretimde uygulandı.
+- Edge function: \lead-magnet-kayit\ (--no-verify-jwt). Üretimde deploy edildi. Operasyon notu: \CAPTCHA_SECRET\ 2026-11-08 güncellendi; bu, canlı deneme ön kayıt ve veli adayı formlarını da etkiler.
+- Analitik: bu yayında UTM okuması lead magnet formunda yok (\58dfc57\ henüz master'da değil). Lead magnet olayları (\lead_magnet_*\) taksonomide tanımlı, bayrak kapalı.
+- Uyumluluk: App etkilenmez (yeni RPC yok, mevcut sözleşme değişmedi).
 ### panel 0.6.3 · 2026-10-30
 
 Küçük görünüm ve kod kalitesi düzeltmesi (PATCH).
