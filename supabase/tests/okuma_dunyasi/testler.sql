@@ -1191,12 +1191,25 @@ begin
            from pg_proc p where p.proname = 'export_my_data' and p.pronamespace = 'public'::regnamespace), pg_temp.son_hata());
 
   -- GÖR-048: export_my_data 'kelime' bölümü kendi verisini taşır, başkasınınkini taşımaz
-  insert into public.kelime_denemeleri (ogrenci_id, soru_id, anlam_id, secilen_indeks, dogru_mu, ipucu_kullanildi, kazanilan_xp)
-    values (ob, '00000000-0000-0000-0000-00000000a001', '00000000-0000-0000-0000-00000000b001', 2, true, false, 5),
-           (oa, '00000000-0000-0000-0000-00000000a002', '00000000-0000-0000-0000-00000000b002', 0, false, true, 0);
-  insert into public.kelime_kaydedilenler (ogrenci_id, anlam_id) values (ob, '00000000-0000-0000-0000-00000000b001');
+  -- Sözcük ve soru satırları (gerçek FK'ler için: deneme.soru_id, deneme.anlam_id, ustalık.anlam_id)
+  insert into public.kelime_anlamlari (id, kelime, anlam) values
+    ('00000000-0000-0000-0000-00000000b001', 'bulut', 'gökyüzünde yüzen su buharı kümesi'),
+    ('00000000-0000-0000-0000-00000000b002', 'sis', 'havada asılı kalan ince su tanecikleri');
+  insert into public.kelime_sorulari (id, anlam_id, iliski_turu, sinif, soru_metni, secenekler, dogru_indeks, aciklama) values
+    ('00000000-0000-0000-0000-00000000a001', '00000000-0000-0000-0000-00000000b001', 'es_anlamli', 4,
+     'Bulut sözcüğünün eş anlamlısı hangisidir?', '["sis","es","bulut"]', 2, 'Bulut ile aynı anlamdaki sözcük; test açıklaması.'),
+    ('00000000-0000-0000-0000-00000000a002', '00000000-0000-0000-0000-00000000b002', 'es_anlamli', 4,
+     'Sis sözcüğünün eş anlamlısı hangisidir?', '["bulut","es"]', 1, 'Sis ile aynı anlamdaki sözcük; test açıklaması.');
+  -- Öğrenci denemeleri: deneme_anahtari NOT NULL (8-100 karakter) gerçek şemada zorunlu
+  insert into public.kelime_denemeleri (ogrenci_id, soru_id, anlam_id, deneme_anahtari, secilen_indeks, dogru_mu, ipucu_kullanildi, kazanilan_xp)
+    values (ob, '00000000-0000-0000-0000-00000000a001', '00000000-0000-0000-0000-00000000b001', 'gor048-ob-deneme-001', 2, true, false, 5),
+           (oa, '00000000-0000-0000-0000-00000000a002', '00000000-0000-0000-0000-00000000b002', 'gor048-oa-deneme-001', 0, false, true, 0);
+  insert into public.kelime_kaydedilenler (ogrenci_id, anlam_id) values (ob, '00000000-0000-0000-0000-00000000b001'),
+                                                                        (oa, '00000000-0000-0000-0000-00000000b002');
+  -- Ustalık beceri değerleri gerçek CHECK'e göre: taninma | baglam | hatirlama | uretim (MVP: taninma)
   insert into public.kelime_ustaliklari (ogrenci_id, anlam_id, beceri, basari_seviyesi, sonraki_tekrar_tarihi, son_cevap_tarihi)
-    values (ob, '00000000-0000-0000-0000-00000000b001', 'anlam', 2, current_date + 1, now());
+    values (ob, '00000000-0000-0000-0000-00000000b001', 'taninma', 2, now() + interval '1 day', now()),
+           (oa, '00000000-0000-0000-0000-00000000b002', 'taninma', 1, now() + interval '1 day', now());
   perform pg_temp.k('export: kelime bölümü yalnız kendi denemelerini, ustalıklarını ve kayıtlarını içerir',
     (pg_temp.c(ob, 'public.export_my_data()') #> '{kelime,denemeler}') @> '[{"secilen_indeks":2,"dogru_mu":true,"kazanilan_xp":5}]'::jsonb
     and jsonb_array_length(pg_temp.c(ob, 'public.export_my_data()') #> '{kelime,denemeler}')
@@ -1205,8 +1218,31 @@ begin
           = (select count(*) from public.kelime_ustaliklari where ogrenci_id = ob)
     and jsonb_array_length(pg_temp.c(ob, 'public.export_my_data()') #> '{kelime,kaydedilenler}')
           = (select count(*) from public.kelime_kaydedilenler where ogrenci_id = ob)
-    and position('00000000-0000-0000-0000-00000000a002' in (pg_temp.c(ob, 'public.export_my_data()') #> '{kelime}')::text) = 0,
+    and position('00000000-0000-0000-0000-00000000a002' in (pg_temp.c(ob, 'public.export_my_data()') #> '{kelime}')::text) = 0
+    and position('00000000-0000-0000-0000-00000000b002' in (pg_temp.c(ob, 'public.export_my_data()') #> '{kelime}')::text) = 0,
     pg_temp.son_hata());
+
+  -- GÖR-048: gerçek şema kuralları geçersiz yazımı reddeder (eski taklit tablolar bunları yakalayamazdı)
+  declare
+    v_beceri_red  boolean := false;
+    v_anahtar_red boolean := false;
+  begin
+    begin
+      insert into public.kelime_ustaliklari (ogrenci_id, anlam_id, beceri)
+        values (ob, '00000000-0000-0000-0000-00000000b001', 'anlam');
+    exception when check_violation then
+      v_beceri_red := true;
+    end;
+    begin
+      insert into public.kelime_denemeleri (ogrenci_id, soru_id, anlam_id, secilen_indeks, dogru_mu)
+        values (ob, '00000000-0000-0000-0000-00000000a001', '00000000-0000-0000-0000-00000000b001', 0, true);
+    exception when not_null_violation then
+      v_anahtar_red := true;
+    end;
+    perform pg_temp.k('kelime: gerçek şema geçersiz beceri (anlam) ve eksik deneme anahtarını reddeder',
+      v_beceri_red and v_anahtar_red,
+      'beceri_red=' || v_beceri_red || ' anahtar_red=' || v_anahtar_red);
+  end;
 
   -- ---------------- Düşün alanı (20261051000000): isteğe bağlı hikaye.dusun ----------------
   perform pg_temp.k('düşün: dusun alanı olmayan gerçek paket doğrulayıcıdan geçer (geriye uyum)',

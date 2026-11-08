@@ -21,6 +21,11 @@ const migrasyonlar = [
   mig('20261050000200_okuma_dunyasi_ogrenci.sql'),
   mig('20261050000300_okuma_dunyasi_veli_ogretmen.sql'),
   path.join(here, 'stubs_export.sql'),             // export_my_data bağımlılık tabloları (yalnız test)
+  // GÖR-048: kelime tabloları GERÇEK migrasyonlardan (taklit yok); üretimdeki sıra: 22 → 23 (düzeltme) → 45 → 46
+  mig('20261022000000_kelime_evreni.sql'),
+  mig('20261023000000_kelime_evreni_duzeltme.sql'),
+  mig('20261045000000_kelime_veli_ozeti_riza_kapisi.sql'),
+  mig('20261046000000_export_my_data_kelime.sql'),
   mig('20261050000400_okuma_dunyasi_sozluk.sql'),
   mig('20261050000500_export_my_data_okuma.sql'),
   mig('20261051000000_okuma_dusun_alani.sql'),
