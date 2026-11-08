@@ -35,9 +35,26 @@ export async function karsilamaAtla(page: Page) {
 export async function girisBaglantisi(page: Page) {
   const secici = 'a[href="/veli-paneli/giris"]:visible';
   if ((await page.locator(secici).count()) === 0) {
+    // goto sonrası hemen tıklama hidrasyondan önce olabilir (GÖR-094).
+    await hidrasyonBekle(page, "header button[aria-expanded][aria-label]");
     await page.locator("header button[aria-expanded][aria-label]:visible").click();
   }
   return page.locator(secici).first();
+}
+
+/**
+ * React hidrasyonunu bekler: düğmenin onClick'i yalnız hidrasyondan sonra bağlanır.
+ * goto sonrası hemen tıklanırsa tıklama kaybolur (GÖR-094).
+ */
+export async function hidrasyonBekle(page: Page, secici: string) {
+  await page.waitForFunction(
+    (s) => {
+      const el = document.querySelector(s);
+      return !!el && Object.keys(el).some((k) => k.startsWith("__reactProps"));
+    },
+    secici,
+    { timeout: 60_000 },
+  );
 }
 
 /** Giriş kapıları: veli (ve öğretmen) ile yönetim ayrı adreslerde. */

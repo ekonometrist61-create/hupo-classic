@@ -1,6 +1,6 @@
 import { expect, test, type Page } from "@playwright/test";
 
-import { DEMO, karsilamaAtla } from "./helpers";
+import { DEMO, hidrasyonBekle, karsilamaAtla } from "./helpers";
 
 // Kabul ölçütü (TASKS §20): tüm panel rotaları telefon ve tablet genişliğinde
 // yatay taşmadan açılmalı; mobilde kontroller ≥44 px, girdiler ≥16 px olmalı.
@@ -172,6 +172,8 @@ test.describe("Panel mobil ve tablet uyumluluğu (TASKS §20)", () => {
     await expect(dugme).toBeVisible();
     await expect(dugme).toHaveAttribute("aria-expanded", "false");
 
+    // Tıklamadan önce hidrasyon: SSR düğmesi hidrasyondan önce tıklanırsa olay bağlanmaz (GÖR-094).
+    await hidrasyonBekle(page, "[data-mobil-menu]");
     await dugme.click();
     await expect(dugme).toHaveAttribute("aria-expanded", "true");
     await expect(page.locator('aside a[href="/veli-paneli/dersler"]')).toBeVisible();
