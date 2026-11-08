@@ -145,7 +145,7 @@ void main() {
       expect(v.fontWeight, FontWeight.w700);
       expect(v.decoration, TextDecoration.underline);
       expect(v.decorationColor, AppColors.vurguCizgi);
-      expect(v.decorationThickness, 2.5);
+      expect(v.decorationThickness, 4.0);
       expect(v.color, AppColors.vurguMetin);
       expect(c.last.style, isNull);
       expect(find.text('Altı çizili sözcüğü bul', findRichText: true),

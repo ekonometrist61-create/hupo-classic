@@ -12,9 +12,10 @@ import '../utils/soru_vurgu.dart';
 /// Geçiş uyumu: [highlights] boşsa ve metinde eski `**kalın**` işaretleri varsa onlar vurgulanır
 /// (yeni verideki ofset vurgusu bu işaretlerin yerini alacak).
 ///
-/// Çizgi kalınlığı Flutter'da yazı tipinin varsayılan kalınlığının katıdır (2,5 kat: 17-21 px'te
-/// yaklaşık 2,5-3 px) ve yazı büyütmeyle ölçeklenir. Flutter'da alt çizgi mesafesi (underline
-/// offset) ve skip-ink ayarı yoktur; çizgi motorun varsayılan konumundadır.
+/// Çizgi kalınlığı Flutter'da yazı tipinin varsayılan kalınlığının katıdır (4,0 kat; 2,5 çok
+/// ince kalmıştı, web'deki 2,5-3 px çizgiye yakın görünüm için artırıldı) ve yazı büyütmeyle
+/// ölçeklenir. Flutter'da alt çizgi mesafesi (underline offset) ve skip-ink ayarı yoktur; çizgi
+/// motorun varsayılan konumundadır.
 class QuestionRichText extends StatelessWidget {
   const QuestionRichText(
     this.metin, {
@@ -37,7 +38,7 @@ class QuestionRichText extends StatelessWidget {
       color: koyu ? AppColors.vurguMetinKoyu : AppColors.vurguMetin,
       decoration: TextDecoration.underline,
       decorationColor: koyu ? AppColors.vurguCizgiKoyu : AppColors.vurguCizgi,
-      decorationThickness: 2.5,
+      decorationThickness: 4.0,
     );
   }
 
