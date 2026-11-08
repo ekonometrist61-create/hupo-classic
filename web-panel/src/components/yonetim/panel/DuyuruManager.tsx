@@ -85,7 +85,9 @@ export default function DuyuruManager() {
   const t = useTranslations("yonetim.duyurular");
   const tMecra = useTranslations("yonetim.merkez.surveys");
   const [arsiv, setArsiv] = useState(false);
-  const state = useAdminRpc<Duyuru[]>("admin_list_duyurular", { p_arsiv: arsiv });
+  // Sunucu varsayılanı 200; "Daha fazla göster" sınırı 200'er artırır (sunucu en çok 1000 verir).
+  const [limit, setLimit] = useState(200);
+  const state = useAdminRpc<Duyuru[]>("admin_list_duyurular", { p_arsiv: arsiv, p_limit: limit });
   // Durum (yayında / süresi doldu) render anında hesaplanır; saat bileşen ömrü boyunca sabit kalır.
   const [simdi] = useState(() => Date.now());
 
@@ -464,6 +466,14 @@ export default function DuyuruManager() {
                 </tbody>
               </table>
             </div>
+
+            {duyurular.length >= limit && limit < 1000 && (
+              <div className="mt-4 text-center">
+                <button type="button" className={EYLEM_BTN} onClick={() => setLimit((l) => Math.min(l + 200, 1000))}>
+                  {t("list.loadMore")}
+                </button>
+              </div>
+            )}
           </>
         )}
       </section>

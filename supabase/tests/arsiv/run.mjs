@@ -47,6 +47,8 @@ if (!(await calistir('anket-temel', anketTemel))) process.exit(1);
 for (const m of migrasyonlar) {
   if (!(await calistir(path.basename(m), m))) process.exit(1);
 }
+// EK_MIGRASYON=<yol>: isteğe bağlı ek migration (ör. D1 regresyonu). Varsayılan: yok.
+if (process.env.EK_MIGRASYON && !(await calistir('ek', process.env.EK_MIGRASYON))) process.exit(1);
 if (!(await calistir('testler', path.join(here, 'duyuru_anket_arsiv_tests.sql')))) process.exit(1);
 
 const sonuc = await db.query('select * from pg_temp.arsiv_testleri()');
