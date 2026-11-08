@@ -27,7 +27,7 @@ class QuizRepository {
   SupabaseClient get supabaseClient => _client;
 
   static const _questionColumns =
-      'id, ders, konu, alt_konu, zorluk, soru_metni, siklar, gorsel_svg, gorsel_alt_metin, gorsel_tip';
+      'id, ders, konu, alt_konu, zorluk, soru_metni, siklar, gorsel_svg, gorsel_alt_metin, gorsel_tip, highlights';
 
   String get _uid {
     final user = _client.auth.currentUser;
