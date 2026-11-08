@@ -138,18 +138,17 @@ void main() {
         'Altı çizili sözcüğü bul',
         highlights: [VurguAraligi(0, 4)],
       )));
-      final c = cocuklar(t);
-      expect(c.map((e) => e.text).join(), 'Altı çizili sözcüğü bul');
-      final v = c.first.style!;
-      expect(c.first.text, 'Altı');
-      expect(v.fontWeight, FontWeight.w700);
-      expect(v.decoration, TextDecoration.underline);
-      expect(v.decorationColor, AppColors.vurguCizgi);
-      expect(v.decorationThickness, 4.0);
-      expect(v.color, AppColors.vurguMetin);
-      expect(c.last.style, isNull);
-      expect(find.text('Altı çizili sözcüğü bul', findRichText: true),
-          findsOneWidget);
+      final kok = t.widget<RichText>(find.byType(RichText).first).text;
+      expect(kok.toPlainText(), contains(' çizili sözcüğü bul'));
+      final metin = t.widget<Text>(find.text('Altı'));
+      expect(metin.style!.fontWeight, FontWeight.w700);
+      expect(metin.style!.color, AppColors.vurguMetin);
+      final kutu = t.widget<DecoratedBox>(find
+          .ancestor(of: find.text('Altı'), matching: find.byType(DecoratedBox))
+          .first);
+      final alt = (kutu.decoration as BoxDecoration).border!.bottom;
+      expect(alt.color, AppColors.vurguCizgi);
+      expect(alt.width, 5);
     });
 
     testWidgets('koyu temada koyu token çifti', (t) async {
@@ -157,9 +156,13 @@ void main() {
         const QuestionRichText('abc', highlights: [VurguAraligi(0, 1)]),
         b: Brightness.dark,
       ));
-      final v = cocuklar(t).first.style!;
-      expect(v.decorationColor, AppColors.vurguCizgiKoyu);
-      expect(v.color, AppColors.vurguMetinKoyu);
+      final metin = t.widget<Text>(find.text('a'));
+      expect(metin.style!.color, AppColors.vurguMetinKoyu);
+      final kutu = t.widget<DecoratedBox>(find
+          .ancestor(of: find.text('a'), matching: find.byType(DecoratedBox))
+          .first);
+      expect((kutu.decoration as BoxDecoration).border!.bottom.color,
+          AppColors.vurguCizgiKoyu);
     });
 
     testWidgets('geçersiz aralık -> düz metin, hiçbir parça vurgulu değil',
@@ -177,9 +180,11 @@ void main() {
       await t.pumpWidget(sar(const QuestionRichText('Düz soru')));
       expect(cocuklar(t).single.style, isNull);
       await t.pumpWidget(sar(const QuestionRichText('a **b** c')));
-      final c = cocuklar(t);
-      expect(c[1].text, 'b');
-      expect(c[1].style!.decoration, TextDecoration.underline);
+      expect(find.text('b'), findsOneWidget);
+      final kutu = t.widget<DecoratedBox>(find
+          .ancestor(of: find.text('b'), matching: find.byType(DecoratedBox))
+          .first);
+      expect((kutu.decoration as BoxDecoration).border!.bottom.width, 5);
     });
 
     testWidgets('dar ekran + 2x yazı büyütmede taşma hatası vermez',

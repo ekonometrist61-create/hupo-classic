@@ -118,6 +118,17 @@ class QuizRepository {
         .eq('ders', ders);
     final rows = await (konu == null ? filtre : filtre.eq('konu', konu));
     final questions = [for (final r in rows) Question.fromMap(r)];
+    if (_gorselliTest) {
+      // Yalnızca test hesabına açık; diğer hesaplarda hata normal soruları engellemez.
+      try {
+        questions.insertAll(
+          0,
+          await fetchTestGorselliSorular(ders: ders, konu: konu),
+        );
+      } on PostgrestException {
+        // Test hesabı değil: görselli sorular atlanır.
+      }
+    }
     if (questions.isEmpty) return [];
 
     final answered = await _client
@@ -138,6 +149,24 @@ class QuizRepository {
     final rest = questions.where((q) => notDue.contains(q.id)).toList()
       ..shuffle();
     return [...priority, ...rest].take(limit).toList();
+  }
+
+  /// Yalnızca `--dart-define=GORSELLI_TEST=true` ile derlenen test sürümünde açık.
+  /// Sunucu yalnızca E2E çocuk test hesabına beklemede görselli soruları verir.
+  static const bool _gorselliTest = bool.fromEnvironment('GORSELLI_TEST');
+
+  /// ogrenci_test_gorselli_sorular() — yalnızca test hesabı; diğer kullanıcılarda hata döner.
+  Future<List<Question>> fetchTestGorselliSorular({
+    required String ders,
+    String? konu,
+  }) async {
+    final rows = await _client
+        .rpc('ogrenci_test_gorselli_sorular', params: {'p_ders': ders});
+    final questions = [
+      for (final r in rows as List)
+        Question.fromMap(Map<String, dynamic>.from(r as Map)),
+    ];
+    return konu == null ? questions : questions.where((q) => q.konu == konu).toList();
   }
 
   /// Tekrar zamanı gelmiş sorular (aralıklı tekrar).

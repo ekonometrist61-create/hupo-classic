@@ -12,10 +12,9 @@ import '../utils/soru_vurgu.dart';
 /// Geçiş uyumu: [highlights] boşsa ve metinde eski `**kalın**` işaretleri varsa onlar vurgulanır
 /// (yeni verideki ofset vurgusu bu işaretlerin yerini alacak).
 ///
-/// Çizgi kalınlığı Flutter'da yazı tipinin varsayılan kalınlığının katıdır (4,0 kat; 2,5 çok
-/// ince kalmıştı, web'deki 2,5-3 px çizgiye yakın görünüm için artırıldı) ve yazı büyütmeyle
-/// ölçeklenir. Flutter'da alt çizgi mesafesi (underline offset) ve skip-ink ayarı yoktur; çizgi
-/// motorun varsayılan konumundadır.
+/// Vurgulu parça, metnin hemen altında kalın bir kenarlıkla çizilir: Flutter'ın varsayılan alt
+/// çizgisi konumu ve kalınlığı ayarlanamadığı için çizgi kendi widget'ımızda çizilir
+/// ([_cizgiKalinlik] px, metnin [_cizgiBoslugu] px altında).
 class QuestionRichText extends StatelessWidget {
   const QuestionRichText(
     this.metin, {
@@ -30,22 +29,28 @@ class QuestionRichText extends StatelessWidget {
   final TextStyle? style;
   final TextAlign? textAlign;
 
+  static const double _cizgiKalinlik = 5;
+  static const double _cizgiBoslugu = 2;
+
   /// Vurgulu parça stili; koyu temada koyu token çiftini kullanır.
   static TextStyle vurguStili(Brightness parlaklik) {
     final koyu = parlaklik == Brightness.dark;
     return TextStyle(
       fontWeight: FontWeight.w700,
       color: koyu ? AppColors.vurguMetinKoyu : AppColors.vurguMetin,
-      decoration: TextDecoration.underline,
-      decorationColor: koyu ? AppColors.vurguCizgiKoyu : AppColors.vurguCizgi,
-      decorationThickness: 4.0,
     );
   }
+
+  /// Vurgu alt çizgisinin rengi; koyu temada koyu token çiftini kullanır.
+  static Color vurguCizgiRengi(Brightness parlaklik) =>
+      parlaklik == Brightness.dark ? AppColors.vurguCizgiKoyu : AppColors.vurguCizgi;
 
   @override
   Widget build(BuildContext context) {
     final taban = style ?? DefaultTextStyle.of(context).style;
-    final vurgu = vurguStili(Theme.of(context).brightness);
+    final parlaklik = Theme.of(context).brightness;
+    final vurgu = taban.merge(vurguStili(parlaklik));
+    final cizgi = vurguCizgiRengi(parlaklik);
 
     final List<VurguParcasi> parcalar;
     if (highlights != null && highlights!.isNotEmpty) {
@@ -64,7 +69,24 @@ class QuestionRichText extends StatelessWidget {
         style: taban,
         children: [
           for (final p in parcalar)
-            TextSpan(text: p.metin, style: p.vurgulu ? vurgu : null),
+            if (p.vurgulu)
+              WidgetSpan(
+                alignment: PlaceholderAlignment.baseline,
+                baseline: TextBaseline.alphabetic,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    border: Border(
+                      bottom: BorderSide(color: cizgi, width: _cizgiKalinlik),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: _cizgiBoslugu),
+                    child: Text(p.metin, style: vurgu),
+                  ),
+                ),
+              )
+            else
+              TextSpan(text: p.metin),
         ],
       ),
       textAlign: textAlign,
