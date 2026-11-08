@@ -3,7 +3,7 @@
 // Kelime Evreni sözlüğü: anlam ekleme ve sözcük ilişkisi önerme/onaylama.
 // Onay ilişkiyi kuran kişi tarafından yapılamaz (dört göz); bu kural sunucuda da uygulanır.
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import { createClient } from "@/utils/supabase/client";
@@ -48,6 +48,12 @@ export default function KelimeSozlukPanel({ anlamlar, onDegisti }: Props) {
   const [onaylanan, setOnaylanan] = useState<string | null>(null);
 
   const reload = useCallback(() => setYenile((k) => k + 1), []);
+
+  // Onay bekleyenler üstte; onaylananlar listenin altına iner. Her grupta sunucu sırası korunur.
+  const siraliIliskiler = useMemo(
+    () => [...iliskiler].sort((a, b) => Number(a.onay_tarihi !== null) - Number(b.onay_tarihi !== null)),
+    [iliskiler],
+  );
 
   useEffect(() => {
     let cancelled = false;
@@ -194,14 +200,18 @@ export default function KelimeSozlukPanel({ anlamlar, onDegisti }: Props) {
                 <td className={tdClass} colSpan={4}>{t("sozluk.iliskiYok")}</td>
               </tr>
             ) : (
-              iliskiler.map((r) => (
+              siraliIliskiler.map((r) => (
                 <tr key={r.id}>
                   <td className={tdClass}>
                     {r.kaynak_kelime} ↔ {r.hedef_kelime}
                     <span className="block text-xs text-gray-500">{r.kaynak_anlam} · {r.hedef_anlam}</span>
                   </td>
                   <td className={tdClass}>{t(`turler.${r.iliski_turu}`)}</td>
-                  <td className={tdClass}>{r.onay_tarihi ? t("sozluk.onayli") : t("sozluk.onayBekliyor")}</td>
+                  <td className={tdClass}>
+                    <span className={r.onay_tarihi ? "font-medium text-green-700 dark:text-green-400" : "font-medium text-amber-700 dark:text-amber-400"}>
+                      {r.onay_tarihi ? t("sozluk.onayli") : t("sozluk.onayBekliyor")}
+                    </span>
+                  </td>
                   <td className={tdClass}>
                     {!r.onay_tarihi && (
                       <button

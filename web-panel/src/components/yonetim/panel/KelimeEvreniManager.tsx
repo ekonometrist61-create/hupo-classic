@@ -3,7 +3,7 @@
 // Kelime Evreni yönetimi: metrikler, soru taslakları, inceleme ve yayın akışı.
 // Sunucu kuralları (dört göz, onaylı ilişki, geçiş kuralları) RPC'de uygulanır; burada yalnızca gösterilir.
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import { createClient } from "@/utils/supabase/client";
@@ -80,6 +80,13 @@ const ILISKILER: KelimeIliskiTuru[] = [
 ];
 const SINIFLAR = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
+// Listede önce iş bekleyen sorular, sonra yayındakiler, en sonda arşiv. Yayınlanan soru arka plana iner.
+const DURUM_SIRASI: Record<KelimeDurum, number> = { incelemede: 0, taslak: 1, yayinda: 2, arsiv: 3 };
+const DURUM_RENGI: Partial<Record<KelimeDurum, string>> = {
+  incelemede: "text-amber-700 dark:text-amber-400",
+  yayinda: "text-green-700 dark:text-green-400",
+};
+
 const BOS_FORM: SoruForm = {
   id: null,
   anlamId: "",
@@ -122,6 +129,12 @@ export default function KelimeEvreniManager() {
   const [mesaj, setMesaj] = useState<string | null>(null);
 
   const reload = useCallback(() => setReloadKey((k) => k + 1), []);
+
+  // Sıralama istemcide yapılır; her grupta sunucunun güncelleme sırası (yeniden eskiye) korunur.
+  const siraliSatirlar = useMemo(
+    () => [...satirlar].sort((a, b) => DURUM_SIRASI[a.durum] - DURUM_SIRASI[b.durum]),
+    [satirlar],
+  );
 
   useEffect(() => {
     let cancelled = false;
@@ -424,7 +437,7 @@ export default function KelimeEvreniManager() {
 
             {/* Telefon ve küçük tablet (md altı): kart görünümü */}
             <ul className="space-y-3 md:hidden">
-              {satirlar.map((s) => (
+              {siraliSatirlar.map((s) => (
                 <li key={s.id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <div className="flex min-w-0 items-start gap-2">
@@ -443,7 +456,7 @@ export default function KelimeEvreniManager() {
                         <p className="text-xs wrap-break-word text-gray-500 dark:text-gray-400">{s.anlam}</p>
                       </div>
                     </div>
-                    <span className="text-theme-xs font-medium text-gray-600 dark:text-gray-300">{t(`durumlar.${s.durum}`)}</span>
+                    <span className={`text-theme-xs font-medium ${DURUM_RENGI[s.durum] ?? "text-gray-600 dark:text-gray-300"}`}>{t(`durumlar.${s.durum}`)}</span>
                   </div>
                   <p className="mt-2 line-clamp-2 text-theme-sm text-gray-700 dark:text-gray-300">{s.soru_metni}</p>
                   <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 text-theme-sm">
@@ -491,7 +504,7 @@ export default function KelimeEvreniManager() {
                   </tr>
                 </thead>
                 <tbody>
-                  {satirlar.map((s) => (
+                  {siraliSatirlar.map((s) => (
                     <tr key={s.id}>
                       <td className={tdClass}>
                         <span className="inline-flex min-h-11 min-w-11 items-center justify-center">
@@ -514,7 +527,7 @@ export default function KelimeEvreniManager() {
                       <td className={`${tdClass} max-w-md`}>
                         <span className="line-clamp-2">{s.soru_metni}</span>
                       </td>
-                      <td className={tdClass}>{t(`durumlar.${s.durum}`)}</td>
+                      <td className={`${tdClass} ${DURUM_RENGI[s.durum] ?? ""}`}>{t(`durumlar.${s.durum}`)}</td>
                       <td className={tdClass}>
                         <div className="flex flex-wrap gap-x-3 gap-y-1">{islemler(s)}</div>
                       </td>
