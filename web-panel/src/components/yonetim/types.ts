@@ -175,6 +175,15 @@ export interface PaymentList {
 
 export type QuestionStatus = "beklemede" | "onaylandi" | "reddedildi";
 
+/** Tek bir ajanın denetim sonucu. Anahtar yoksa "pending" sayılır. */
+export type AjanDurumu = "pending" | "pass" | "review_needed" | "fail";
+
+/** Sorunun iki ajan denetimi (ajan A ve ajan B). Sunucu liste satırında döner. */
+export interface QuestionDenetim {
+  ajan_a?: AjanDurumu;
+  ajan_b?: AjanDurumu;
+}
+
 /** Şıklar "A".."E" anahtarlı; sunucu jsonb olarak saklar. */
 export type QuestionOptions = Record<string, string>;
 
@@ -193,6 +202,8 @@ export interface AdminQuestion {
   dogru_sik: string;
   cozum_adimlari: string[];
   onay_durumu: QuestionStatus;
+  /** Ajan denetimi; alan yoksa veya null ise iki ajan da "bekliyor" sayılır. */
+  denetim?: QuestionDenetim | null;
   created_at: string;
 }
 

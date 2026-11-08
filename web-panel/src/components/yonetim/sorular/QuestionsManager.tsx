@@ -15,6 +15,7 @@ import { fetchDersler } from "../kazanim/kazanimVeri";
 import DeleteConfirmModal from "./DeleteConfirmModal";
 import QuestionFormModal from "./QuestionFormModal";
 import QuestionsTable from "./QuestionsTable";
+import { ajanGecti, type AjanSuzgeci } from "./ajanKapisi";
 
 const PAGE_SIZE = 25;
 const SINIFLAR = [1, 2, 3, 4, 5, 6, 7, 8] as const;
@@ -52,6 +53,8 @@ export default function QuestionsManager() {
   const [debounced, setDebounced] = useState({ arama: "", ders: "" });
   const [durum, setDurum] = useState("");
   const [zorluk, setZorluk] = useState("");
+  // Ajan denetimi süzgeci: boş = hepsi (sunucuya null gider).
+  const [denetim, setDenetim] = useState<AjanSuzgeci | "">("");
   const [page, setPage] = useState(0);
   const [reloadCounter, setReloadCounter] = useState(0);
   const [loaded, setLoaded] = useState<LoadedList | null>(null);
@@ -69,6 +72,8 @@ export default function QuestionsManager() {
   const [kDersler, setKDersler] = useState<LoadedDersler | null>(null);
   const [kLoaded, setKLoaded] = useState<LoadedKazanimsiz | null>(null);
   const [assignOpen, setAssignOpen] = useState(false);
+  // "Ajan onaylılarını onayla" sayısı: beklemede + ajan_gecti. Hangi filtreyle sayıldığı imzada tutulur.
+  const [ajanOnayliSayi, setAjanOnayliSayi] = useState<{ sig: string; toplam: number | null } | null>(null);
 
   // Arama kutuları için ~400ms gecikme
   useEffect(() => {
@@ -86,6 +91,7 @@ export default function QuestionsManager() {
     debounced,
     durum,
     zorluk,
+    denetim,
     page,
     reloadCounter,
     kazanimsiz,
@@ -102,6 +108,7 @@ export default function QuestionsManager() {
         p_durum: durum || null,
         p_zorluk: zorluk ? Number(zorluk) : null,
         p_arama: debounced.arama || null,
+        p_denetim: denetim || null,
         p_limit: PAGE_SIZE,
         p_offset: page * PAGE_SIZE,
       })
@@ -123,7 +130,36 @@ export default function QuestionsManager() {
     return () => {
       cancelled = true;
     };
-  }, [requestKey, debounced, durum, zorluk, page, kazanimsiz]);
+  }, [requestKey, debounced, durum, zorluk, denetim, page, kazanimsiz]);
+
+  // "Ajan onaylılarını onayla" sayısı: yükleme listesiyle aynı arama/ders/zorluk, durum=beklemede, denetim=ajan_gecti.
+  const ajanSig = JSON.stringify([debounced, zorluk, reloadCounter]);
+  useEffect(() => {
+    if (kazanimsiz) return;
+    let cancelled = false;
+    createClient()
+      .rpc("admin_list_questions", {
+        p_ders: debounced.ders || null,
+        p_durum: "beklemede",
+        p_denetim: "ajan_gecti",
+        p_zorluk: zorluk ? Number(zorluk) : null,
+        p_arama: debounced.arama || null,
+        p_limit: 1,
+        p_offset: 0,
+      })
+      .then(({ data, error }) => {
+        if (cancelled) return;
+        setAjanOnayliSayi({
+          sig: ajanSig,
+          toplam: error || !data ? null : (data as Paged<AdminQuestion>).toplam,
+        });
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [ajanSig, debounced, zorluk, kazanimsiz]);
+  const ajanOnayliToplam =
+    ajanOnayliSayi?.sig === ajanSig ? ajanOnayliSayi.toplam : null;
 
   // Kazanımsız liste: sınıf ve ders seçilmeden istek atılmaz.
   const kAktif = kazanimsiz && kSinif !== null && kDers !== "";
@@ -256,9 +292,10 @@ export default function QuestionsManager() {
     reload();
   };
 
-  // Filtredeki tüm bekleyen sorular: sayfa sayfa id toplanır, sonra 500'lük parçalarla onaylanır.
+  // Ajan onaylı bekleyen sorular (beklemede + ajan_gecti): sayfa sayfa id toplanır, sonra 500'lük parçalarla onaylanır.
+  // Sunucu ajan kapısını yine zorlar; hata olursa parti tamamen geri alınır.
   const approveAllFiltered = async () => {
-    if (!window.confirm(t("bulk.approveAllConfirm", { count: total }))) return;
+    if (!window.confirm(t("bulk.approveAjanConfirm", { count: ajanOnayliToplam ?? 0 }))) return;
     setBusy(true);
     setActionError(null);
     setNotice(null);
@@ -269,6 +306,7 @@ export default function QuestionsManager() {
         const { data, error } = await supabase.rpc("admin_list_questions", {
           p_ders: debounced.ders || null,
           p_durum: "beklemede",
+          p_denetim: "ajan_gecti",
           p_zorluk: zorluk ? Number(zorluk) : null,
           p_arama: debounced.arama || null,
           p_limit: 100,
@@ -310,6 +348,7 @@ export default function QuestionsManager() {
           p_durum: durum || null,
           p_zorluk: zorluk ? Number(zorluk) : null,
           p_arama: debounced.arama || null,
+          p_denetim: denetim || null,
           p_limit: 100,
           p_offset: offset,
         });
@@ -324,6 +363,13 @@ export default function QuestionsManager() {
     }
     setBusy(false);
   };
+
+  // Seçim yalnızca bu sayfadaki satırlardansa, ajan kapısını geçmeyenleri onay öncesinde göster (sunucu yine zorlar).
+  const sayfaIdleri = new Set(rows.map((r) => r.id));
+  const secimSayfada = selected.size > 0 && [...selected].every((id) => sayfaIdleri.has(id));
+  const ajansizSecili = secimSayfada
+    ? rows.filter((r) => selected.has(r.id) && !ajanGecti(r)).length
+    : 0;
 
   const from = total === 0 ? 0 : page * PAGE_SIZE + 1;
   const to = Math.min(total, (page + 1) * PAGE_SIZE);
@@ -342,6 +388,9 @@ export default function QuestionsManager() {
           <p className="text-theme-sm text-gray-500 dark:text-gray-400">
             {t("total", { count: total })}
           </p>
+          <p className="mt-1 text-theme-sm text-gray-500 dark:text-gray-400">
+            {t("ajanKapisiNotu")}
+          </p>
         </div>
         <div className="flex flex-wrap gap-2">
           {!kazanimsiz && (
@@ -357,12 +406,16 @@ export default function QuestionsManager() {
           {!kazanimsiz && (
             <button
               type="button"
-              disabled={busy || durum !== "beklemede" || total === 0}
+              disabled={busy || !ajanOnayliToplam}
               onClick={() => void approveAllFiltered()}
-              title={durum !== "beklemede" ? t("bulk.approveAllHint") : undefined}
+              title={t("bulk.approveAjanTitle")}
               className={`${dokunmaHedefi} justify-center rounded-lg border border-success-300 px-4 text-sm font-medium text-success-700 hover:bg-success-50 disabled:cursor-not-allowed disabled:opacity-50 dark:border-success-500/40 dark:text-success-500 dark:hover:bg-success-500/10`}
             >
-              {busy ? t("bulk.approveAllProgress") : t("bulk.approveAll", { count: total })}
+              {busy
+                ? t("bulk.approveAllProgress")
+                : ajanOnayliToplam === null
+                  ? t("bulk.ajanSayiliyor")
+                  : t("bulk.approveAjanAll", { count: ajanOnayliToplam })}
             </button>
           )}
           <button
@@ -403,7 +456,9 @@ export default function QuestionsManager() {
         {tk("filter.kazanimsiz")}
       </label>
 
-      <div className="mb-4 grid gap-3 md:grid-cols-2 lg:grid-cols-4">
+      <div
+        className={`mb-4 grid gap-3 md:grid-cols-2 ${kazanimsiz ? "lg:grid-cols-4" : "lg:grid-cols-3 xl:grid-cols-5"}`}
+      >
         {kazanimsiz ? (
           <>
             <select
@@ -500,6 +555,20 @@ export default function QuestionsManager() {
               <option value="2">{t("difficulty.2")}</option>
               <option value="3">{t("difficulty.3")}</option>
             </select>
+            <select
+              value={denetim}
+              onChange={(e) => {
+                setDenetim(e.target.value as AjanSuzgeci | "");
+                setPage(0);
+              }}
+              aria-label={t("filters.denetim")}
+              className={fieldClass}
+            >
+              <option value="">{t("filters.denetimTumu")}</option>
+              <option value="ajan_gecti">{t("filters.denetimGecti")}</option>
+              <option value="ajan_bekliyor">{t("filters.denetimBekliyor")}</option>
+              <option value="ajan_reddi">{t("filters.denetimReddi")}</option>
+            </select>
           </>
         )}
       </div>
@@ -534,6 +603,11 @@ export default function QuestionsManager() {
           >
             {t("bulk.approve")}
           </button>
+          {ajansizSecili > 0 && (
+            <span className="text-theme-xs font-medium text-warning-700 dark:text-orange-400">
+              {t("bulk.ajansizUyari", { count: ajansizSecili })}
+            </span>
+          )}
           <button
             type="button"
             disabled={busy}

@@ -10,6 +10,7 @@
       "newQuestion": "Yeni Soru",
       "bulkImport": "Toplu Ekle",
       "total": "Toplam",
+      "ajanKapisiNotu": "Soru, Ajan A ve Ajan B kontrolünden geçmeden onaylanamaz.",
       "difficulty": {
         "1": "Kolay",
         "2": "Orta",
@@ -28,7 +29,22 @@
         "durum": "Durum",
         "allStatuses": "Tüm durumlar",
         "zorluk": "Zorluk",
-        "allDifficulties": "Tüm zorluklar"
+        "allDifficulties": "Tüm zorluklar",
+        "denetim": "Ajan denetimi",
+        "denetimTumu": "Tümü",
+        "denetimGecti": "Ajan onaylı",
+        "denetimBekliyor": "Ajan bekliyor",
+        "denetimReddi": "Ajan reddi"
+      },
+      "denetim": {
+        "ajanA": "Ajan A: {deger}",
+        "ajanB": "Ajan B: {deger}",
+        "sonuc": {
+          "pending": "bekliyor",
+          "pass": "geçti",
+          "review_needed": "gözden geçir",
+          "fail": "red"
+        }
       },
       "table": {
         "select": "Seç",
@@ -37,6 +53,7 @@
         "course": "Ders",
         "difficulty": "Zorluk",
         "status": "Durum",
+        "ajan": "Ajan denetimi",
         "created": "Eklenme",
         "actions": "İşlemler",
         "edit": "Düzenle"
@@ -59,7 +76,12 @@
         "statusConfirm": "{count} soru için \"{action}\" işlemi uygulanacak. Devam edilsin mi?",
         "reject": "Reddet",
         "pending": "Yayından kaldır",
-        "delete": "Sil"
+        "delete": "Sil",
+        "approveAjanAll": "Ajan onaylılarını onayla ({count})",
+        "approveAjanTitle": "Yalnızca beklemede olan ve Ajan A ile Ajan B'den geçmiş sorular onaylanır.",
+        "approveAjanConfirm": "Ajan A ve B'den geçmiş {count} bekleyen soru onaylanacak. Devam edilsin mi?",
+        "ajanSayiliyor": "Sayılıyor…",
+        "ajansizUyari": "{count} seçili soru ajan kontrolünden geçmedi. Onaylama tamamen engellenir."
       },
       "form": {
         "newTitle": "Yeni Soru",

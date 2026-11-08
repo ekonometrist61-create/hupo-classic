@@ -13,7 +13,8 @@ import { useTranslations } from "next-intl";
 
 import { cardClass } from "../panel/styles";
 import { dokunmaHedefi, masaustuTablo, mobilKart, yapiskanBaslik, yapiskanHucre } from "../ui/responsive";
-import type { AdminQuestion, QuestionStatus } from "../types";
+import type { AdminQuestion, AjanDurumu, QuestionStatus } from "../types";
+import { ajanDurumu } from "./ajanKapisi";
 
 interface QuestionsTableProps {
   rows: AdminQuestion[];
@@ -31,6 +32,14 @@ const STATUS_COLOR: Record<QuestionStatus, "warning" | "success" | "error"> = {
 };
 
 const DIFFICULTY_COLOR = { 1: "info", 2: "primary", 3: "dark" } as const;
+
+// Ajan sonucu rengi: geçti yeşil, red kırmızı, gözden geçir sarı, bekliyor nötr.
+const AJAN_COLOR: Record<AjanDurumu, "success" | "error" | "warning" | "light"> = {
+  pass: "success",
+  fail: "error",
+  review_needed: "warning",
+  pending: "light",
+};
 
 /** Onay kutusu: dokunma hedefi 44 px olsun diye etrafı sarılır (R2). */
 const checkboxWrap = "inline-flex min-h-11 min-w-11 items-center justify-center";
@@ -62,6 +71,22 @@ export default function QuestionsTable({
   const headerClass =
     "px-3 py-3 text-start text-theme-xs font-medium text-gray-500 dark:text-gray-400";
   const cellClass = "px-3 py-3 text-theme-sm text-gray-700 dark:text-gray-300";
+
+  // Ajan A ve Ajan B rozetleri (mobil kart ve masaüstü tablo ortak).
+  const ajanRozetleri = (q: AdminQuestion) => (
+    <div className="flex flex-wrap gap-1">
+      {(["ajan_a", "ajan_b"] as const).map((ajan) => {
+        const d = ajanDurumu(q, ajan);
+        return (
+          <Badge key={ajan} size="sm" color={AJAN_COLOR[d]}>
+            {t(ajan === "ajan_a" ? "denetim.ajanA" : "denetim.ajanB", {
+              deger: t(`denetim.sonuc.${d}`),
+            })}
+          </Badge>
+        );
+      })}
+    </div>
+  );
 
   return (
     <>
@@ -117,6 +142,7 @@ export default function QuestionsTable({
                       {formatDate(new Date(q.created_at))}
                     </span>
                   </div>
+                  <div className="mt-2">{ajanRozetleri(q)}</div>
                 </div>
               </div>
               <div className="mt-2 flex justify-end">
@@ -162,6 +188,9 @@ export default function QuestionsTable({
               </TableCell>
               <TableCell isHeader className={headerClass}>
                 {t("table.status")}
+              </TableCell>
+              <TableCell isHeader className={headerClass}>
+                {t("table.ajan")}
               </TableCell>
               <TableCell isHeader className={headerClass}>
                 {t("table.created")}
@@ -214,6 +243,7 @@ export default function QuestionsTable({
                     {statusLabel[q.onay_durumu]}
                   </Badge>
                 </TableCell>
+                <TableCell className={cellClass}>{ajanRozetleri(q)}</TableCell>
                 <TableCell className={`${cellClass} whitespace-nowrap`}>
                   {formatDate(new Date(q.created_at))}
                 </TableCell>

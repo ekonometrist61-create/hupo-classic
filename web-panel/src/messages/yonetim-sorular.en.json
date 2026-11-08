@@ -10,6 +10,7 @@
       "newQuestion": "New Question",
       "bulkImport": "Bulk Import",
       "total": "Total",
+      "ajanKapisiNotu": "A question cannot be approved until it passes the Agent A and Agent B checks.",
       "difficulty": {
         "1": "Easy",
         "2": "Medium",
@@ -28,7 +29,22 @@
         "durum": "Status",
         "allStatuses": "All statuses",
         "zorluk": "Difficulty",
-        "allDifficulties": "All difficulties"
+        "allDifficulties": "All difficulties",
+        "denetim": "Agent review",
+        "denetimTumu": "All",
+        "denetimGecti": "Agent approved",
+        "denetimBekliyor": "Agent pending",
+        "denetimReddi": "Agent rejected"
+      },
+      "denetim": {
+        "ajanA": "Agent A: {deger}",
+        "ajanB": "Agent B: {deger}",
+        "sonuc": {
+          "pending": "pending",
+          "pass": "passed",
+          "review_needed": "needs review",
+          "fail": "failed"
+        }
       },
       "table": {
         "select": "Select",
@@ -37,6 +53,7 @@
         "course": "Subject",
         "difficulty": "Difficulty",
         "status": "Status",
+        "ajan": "Agent review",
         "created": "Created",
         "actions": "Actions",
         "edit": "Edit"
@@ -59,7 +76,12 @@
         "statusConfirm": "\"{action}\" will be applied to {count} questions. Continue?",
         "reject": "Reject",
         "pending": "Unpublish",
-        "delete": "Delete"
+        "delete": "Delete",
+        "approveAjanAll": "Approve agent-approved ({count})",
+        "approveAjanTitle": "Only pending questions that passed Agent A and Agent B are approved.",
+        "approveAjanConfirm": "{count} pending questions that passed Agent A and B will be approved. Continue?",
+        "ajanSayiliyor": "Counting…",
+        "ajansizUyari": "{count} selected question(s) did not pass the agent checks. Approval is blocked for the whole selection."
       },
       "form": {
         "newTitle": "New Question",
