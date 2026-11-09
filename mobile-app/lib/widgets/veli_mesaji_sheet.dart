@@ -8,7 +8,7 @@ import 'ui/chunky_button.dart';
 /// baskı ya da suçluluk dili kullanılmaz.
 const String kVeliMesaji =
     "Merhaba, Hupolingo'da bugünkü ücretsiz sorularımı tamamladım. "
-    "Yarın yeni sorularla devam edebilirim. Premium'u veli panelinden açabilir misin?";
+    'Yarın yeni sorularla devam edebilirim. Uygulamanın üyelik seçeneklerini sen incelemek ister misin?';
 
 // Çocuk uygulamasında satın alma bağlantısı YOKTUR (Apple 3.1.1 / Google Play ödeme politikası).
 // Bu sayfa yalnızca mesajı kopyalatır; velinin ödeme/üyelik adımını kendi cihazında yapması beklenir.
