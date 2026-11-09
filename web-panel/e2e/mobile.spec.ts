@@ -1,5 +1,7 @@
 import { expect, test, type Page } from "@playwright/test";
 
+import { hidrasyonBekle } from "./helpers";
+
 // Telefon genişliği (iPhone 12–15 sınıfı). Projeden bağımsız olarak burada sabit.
 test.use({ viewport: { width: 390, height: 844 }, hasTouch: true });
 
@@ -30,6 +32,8 @@ test.describe("Mobil görünüm", () => {
     await expect(menuDugmesi).toBeVisible();
     await expect(menuDugmesi).toHaveAttribute("aria-expanded", "false");
 
+    // Tıklamadan önce hidrasyon: goto sonrası erken tıklama olayı kaybettirir (GÖR-094).
+    await hidrasyonBekle(page, "header button[aria-expanded][aria-label]");
     await menuDugmesi.click();
     await expect(menuDugmesi).toHaveAttribute("aria-expanded", "true");
     // Masaüstü menüsü telefonda gizli; görünen bağlantı mobil menüdendir.
