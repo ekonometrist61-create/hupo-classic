@@ -80,7 +80,10 @@ class KelimeEvreniScreen extends ConsumerWidget {
                   data: (o) => _OzetSatiri(ozet: o),
                 ),
                 const SizedBox(height: 24),
-                Text('Oyunlar', style: appText(size: 19, weight: FontWeight.w900)),
+                Semantics(
+                  header: true,
+                  child: Text('Oyunlar', style: appText(size: 19, weight: FontWeight.w900)),
+                ),
                 const SizedBox(height: 12),
                 for (final tur in KelimeIliskiTuru.values)
                   Padding(
@@ -88,7 +91,10 @@ class KelimeEvreniScreen extends ConsumerWidget {
                     child: _OyunKarti(tur: tur, onTap: () => _oyunAc(context, ref, tur)),
                   ),
                 const SizedBox(height: 24),
-                Text('Kaydettiğim kelimeler', style: appText(size: 19, weight: FontWeight.w900)),
+                Semantics(
+                  header: true,
+                  child: Text('Kaydettiğim kelimeler', style: appText(size: 19, weight: FontWeight.w900)),
+                ),
                 const SizedBox(height: 12),
                 kayitlar.when(
                   loading: () => const Center(child: CircularProgressIndicator()),

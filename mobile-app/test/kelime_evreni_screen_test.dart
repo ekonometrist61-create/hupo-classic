@@ -43,6 +43,22 @@ void main() {
     });
   }
 
+  testWidgets('390 px: tek ekran, bölüm başlıkları erişilebilir başlık, taşma yok', (tester) async {
+    final semantics = tester.ensureSemantics();
+    await _pump(tester, FakeKelimeRepository(), const Size(390, 844));
+
+    expect(find.byType(KelimeEvreniScreen), findsOneWidget);
+    expect(tester.getSemantics(find.text('Oyunlar')), matchesSemantics(isHeader: true, label: 'Oyunlar'));
+    await tester.ensureVisible(find.text('Kaydettiğim kelimeler'));
+    await tester.pump();
+    expect(
+      tester.getSemantics(find.text('Kaydettiğim kelimeler')),
+      matchesSemantics(isHeader: true, label: 'Kaydettiğim kelimeler'),
+    );
+    expect(tester.takeException(), isNull);
+    semantics.dispose();
+  });
+
   testWidgets('özet alınamazsa hata metni ve "Tekrar dene" gösterilir', (tester) async {
     await _pump(tester, OzetHatali(), const Size(390, 844));
 
