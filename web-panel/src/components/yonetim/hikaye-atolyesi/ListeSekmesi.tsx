@@ -302,7 +302,7 @@ export default function ListeSekmesi() {
               </ul>
 
               {/* md ve üzeri: tablo kendi kapsayıcısında kayar */}
-              <div className="hidden overflow-x-auto md:block">
+              <div className="relative hidden overflow-x-auto md:block">
                 <table className="min-w-full text-left text-sm">
                   <thead>
                     <tr>
