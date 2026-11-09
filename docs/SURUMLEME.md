@@ -95,6 +95,14 @@ Büyük değişiklik (MINOR: yeni yönetici yüzeyi). Hikâye Atölyesi liste ek
 **Migration:** yok (mevcut RPC kullanılır).
 
 **Uyumluluk:** Sunucu sözleşmesi değişmedi; panel 0.3.0 ile aynı RPC'ler.
+### app 1.3.1+5 · 2026-11-09
+
+Küçük değişiklik (PATCH: mevcut ekranın eksik kalan parçası; veri sözleşmesi değişmedi).
+- Çocuk hikâye seçiminde "Veli tercihleri" çipi ve kartlarda "Veli tercihi" rozeti: veli panelinde seçilen değerle eşleşen hikâyeler filtrelenir ve rozetlenir. Liste sıralaması bu değerle eşleşen hikâyeleri öne alır (sunucu tarafı, mevcut RPC).
+- Test: okuma değer filtresi ve tüm mobil paket (`flutter test`) geçti. Cihazda görsel kontrol bu sürümde ayrıca yapılmalı.
+
+Migration yok. Uyumluluk: Sunucu sözleşmesi değişmedi (`okuma_katalog_filtre`, `okuma_veli_degerleri_getir/ayarla`, migration 20261050000200/300 zaten uygulanmış; canlıda 2026-11-09 testinde doğrulandı).
+
 ### app 1.4.0+6 · panel 0.4.0 · 2026-10-29
 
 Büyük değişiklik (MINOR: kartsız ücretsiz deneme ve özellik sınırları; veri sözleşmesine geriye uyumlu eklenti).
