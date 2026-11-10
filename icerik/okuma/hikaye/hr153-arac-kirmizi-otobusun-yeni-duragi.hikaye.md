@@ -30,37 +30,37 @@ sorular:
     dayanak_sayfa: 1
     metin: "Durağın önündeki sorun neydi?"
     secenekler:
-      - {id: A, metin: "Kaldırımın geçişi zorlaştırması"}
+      - {id: A, metin: "Kaldırımın zor geçilmesi"}
       - {id: B, metin: "Otobüsün renginin değişmesi"}
       - {id: C, metin: "Biletlerin kaybolması"}
       - {id: D, metin: "Bütün lambaların sönmesi"}
     dogru: A
     dayanak: "Yeni yapılan kaldırım yüzünden bekleyenler kapıya rahat ulaşamıyordu."
-    aciklama: "Metindeki \"Yeni yapılan kaldırım yüzünden bekleyenler kapıya rahat ulaşamıyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Yeni yapılan kaldırım yüzünden bekleyenler kapıya rahat ulaşamıyordu.\" cümlesi A seçeneğini doğrular. Otobüsün rengi değişmemiş, biletler kaybolmamış ve lambalar sönmemişti; B, C ve D bu yüzden yanlıştır."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
     metin: "Rampanın açılabilmesi neden önemlidir?"
     secenekler:
       - {id: A, metin: "Otobüsün daha hızlı gitmesi için"}
-      - {id: B, metin: "Herkesin güvenli binmesine yardım ettiği için"}
+      - {id: B, metin: "Herkes güvenle binebilsin diye"}
       - {id: C, metin: "Camların daha temiz kalması için"}
       - {id: D, metin: "Durakta daha çok ışık olması için"}
     dogru: B
     dayanak: "Kapısındaki rampa güvenle açılabilmeliydi."
-    aciklama: "Metindeki \"Kapısındaki rampa güvenle açılabilmeliydi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Kapısındaki rampa güvenle açılabilmeliydi.\" cümlesi, rampanın herkesin güvenle binmesi için gerektiğini gösterir. Hız, camların temizliği ve durağın aydınlığı metinde rampayla ilişkilendirilmez."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
     metin: "“Sıra” sözcüğü burada neyi anlatır?"
     secenekler:
-      - {id: A, metin: "Otobüsün tekerleğini"}
-      - {id: B, metin: "Durağın rengini"}
-      - {id: C, metin: "Yolcuların düzenli bekleme dizisini"}
-      - {id: D, metin: "Yolun uzunluğunu"}
+      - {id: A, metin: "Otobüsün büyük tekerleğini"}
+      - {id: B, metin: "Durağın boyalı tabelasını"}
+      - {id: C, metin: "Bekleyenlerin dizilişini"}
+      - {id: D, metin: "Yolun uzayıp giden kısmını"}
     dogru: C
     dayanak: "Biletini hazırlayanlar sıra boyunca ilerledi."
-    aciklama: "Metindeki \"Biletini hazırlayanlar sıra boyunca ilerledi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Biletini hazırlayanlar sıra boyunca ilerledi.\" cümlesinde sıra, yolcuların art arda dizilmiş hâlidir. Tekerlek, tabela ve yolun kısmı bu cümlede ilerleyen kişilerle ilgili değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
@@ -69,10 +69,10 @@ sorular:
       - {id: A, metin: "Otobüsü saklamak için"}
       - {id: B, metin: "Çöp kutusunu büyütmek için"}
       - {id: C, metin: "Durağı başka yere almak için"}
-      - {id: D, metin: "Herkesin onu daha kolay görmesi için"}
+      - {id: D, metin: "Daha kolay görülsün diye"}
     dogru: D
     dayanak: "Bunun üzerine işaret daha görünür bir yere taşındı."
-    aciklama: "Metindeki \"Bunun üzerine işaret daha görünür bir yere taşındı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Bunun üzerine işaret daha görünür bir yere taşındı.\" cümlesi, bazı kişilerin yerini şaşırması üzerine işaretin daha kolay görülsün diye taşındığını gösterir. Otobüsü saklamak, çöp kutusunu büyütmek ya da durağı başka yere almak metinde yoktur."
 ---
 
 @omurga
@@ -89,16 +89,16 @@ Görevli, duraktaki sorunu ulaşıma bildirdi. {kahraman} ertesi gün aynı yere
 
 @omurga
 
-Durağın çevresinde ölçüm yapıldı. Bekleme çizgisi biraz geri alındı. Çöp kutusu da geçiş yolundan uzaklaştırıldı. {kahraman} yeni yere yanaştığında kapının önü açıktı. Biletini hazırlayanlar sıra boyunca ilerledi. Bir yolcu bastonuyla rahatça yürüyebildi. Diğerleri de sıranın sonunda bekleyenlere yer açtı. {kahraman} herkesin yolculuğa aynı rahatlıkla başlamasını istedi. Güneş otobüsün camından içeri vuruyordu.
+Durağın çevresinde ölçüm yapıldı. Bekleme çizgisi biraz geri alındı. Çöp kutusu da geçiş yolundan uzaklaştırıldı. {kahraman} yeni yere yanaştığında kapının önü açıktı. Biletini hazırlayanlar sıra boyunca ilerledi. Bir yolcu bastonuyla rahatça yürüyebildi. Sıranın sonundakiler öne geçmeye çalışmadan beklediler. {kahraman} herkesin yolculuğa aynı rahatlıkla başlamasını istedi. Güneş otobüsün camından içeri vuruyordu.
 
 ---
 
 @omurga
 
-İlk deneme yolculuğunda görevli durakta bekledi. Birkaç kişinin yerini şaşırdığını gördü. Bunun üzerine işaret daha görünür bir yere taşındı. {kahraman} ikinci kez yanaştığında herkes kapının nerede açılacağını biliyordu. Kapı önünde sıkışma olmadı. Rampanın önü boş kaldı. Ulaşım görevlisi notlarına “Sıra çizgisi işe yaradı” yazdı. Büyük bir araç için küçücük bir çizgi bile günlük işleri kolaylaştırabiliyordu.
+İlk deneme yolculuğunda görevli durakta bekledi. Birkaç kişinin yerini şaşırdığını gördü. Bunun üzerine işaret daha görünür bir yere taşındı. {kahraman} ikinci kez yanaştığında herkes kapının nerede açılacağını biliyordu. Kapı önünde sıkışma olmadı. Rampanın önü boş kaldı. Ulaşım görevlisi notlarına “Sıra çizgisi işe yaradı” yazdı. Kocaman bir otobüs için bile küçük bir çizgi büyük fark yaratmıştı.
 
 ---
 
 @omurga
 
-Akşam olunca {kahraman} son seferine çıktı. Yenilenen durakta bekleyenler düzenli bir sıra oluşturdu. Kapısı açılınca herkes rahatça bindi. Önceki günkü karışıklık yoktu. {kahraman} yola çıkarken aynasında düzgün kaldırımı gördü. Yolculuk yalnızca varılacak yere gitmek değildi. Bazen yolculuğun güzel başlaması için birinin küçük bir sorunu fark etmesi yeterdi. Kırmızı otobüs sonraki durağa huzurla ilerledi.
+Akşam olunca {kahraman} son seferine çıktı. Yenilenen durakta bekleyenler düzenli bir sıra oluşturdu. Kapısı açılınca herkes rahatça bindi. Önceki günkü karışıklık yoktu. {kahraman} yola çıkarken aynasında düzgün kaldırımı gördü. Çizgiyi çekenleri, ölçüm yapanları ve işareti taşıyanları düşündü. Küçük bir düzeltme, bütün durağın gününü değiştirmişti. Kırmızı otobüs sonraki durağa huzurla ilerledi.

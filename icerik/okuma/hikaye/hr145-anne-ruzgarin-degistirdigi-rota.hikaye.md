@@ -28,19 +28,19 @@ sorular:
   - id: s1
     beceri: hatirlama
     dayanak_sayfa: 1
-    metin: "İlk incelemede hangi durum sorun olarak belirlendi?"
+    metin: "Yeni gezi planlanırken ortaya çıkan temel sorun neydi?"
     secenekler:
-      - {id: A, metin: "Patikanın her gün kapalı olması"}
-      - {id: B, metin: "Yolun araçlarca tamamen dolması"}
-      - {id: C, metin: "Yolun bazı kullanıcılar için uygun olmaması"}
-      - {id: D, metin: "Seyir alanında hiç manzara olmaması"}
+      - {id: A, metin: "Patikanın her gün kapatılıyor olması"}
+      - {id: B, metin: "Yolun araçlarla tamamen dolmuş olması"}
+      - {id: C, metin: "Yolun herkes için uygun olmaması"}
+      - {id: D, metin: "Seyir alanında hiç manzara bulunmaması"}
     dogru: C
-    dayanak: "Ancak bu kez yeni bir gezi düzenleneceğinde önemli bir sorun ortaya çıktı: Patikanın bazı bölümleri tekerlekli sandalye kullanan ziyaretçiler için uygun değildi."
-    aciklama: "Metindeki \"Ancak bu kez yeni bir gezi düzenleneceğinde önemli bir sorun ortaya çıktı: Patikanın bazı bölümleri tekerlekli sandalye kullanan ziyaretçiler için uygun değildi.\" ifadesi doğru seçeneği destekler."
+    dayanak: "Patikanın bazı bölümleri tekerlekli sandalye kullanan ziyaretçiler için uygun değildi."
+    aciklama: "Patikanın bazı bölümleri tekerlekli sandalye kullananlara uygun değildi; sorun yolun herkese uygun olmamasıydı. Kapalı olması, araç yoğunluğu ve manzara eksikliği metinde yazmaz."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
-    metin: "Daha uzun yolun tercih edilmesini hangi özellik açıklıyor?"
+    metin: "Daha alçak yamaçtan giden, biraz daha uzun yolun tercih edilmesini hangi özellik açıklıyor?"
     secenekler:
       - {id: A, metin: "Zemininin daha düz olması"}
       - {id: B, metin: "Rüzgârın daha hızlı esmesi"}
@@ -48,57 +48,57 @@ sorular:
       - {id: D, metin: "Haritada daha kalın çizilmesi"}
     dogru: A
     dayanak: "Daha alçak yamaçtan giden yol biraz uzundu fakat zemini düzdü."
-    aciklama: "Metindeki \"Daha alçak yamaçtan giden yol biraz uzundu fakat zemini düzdü.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Yol daha uzundu ama zemini düzdü; erişilebilirlik için bu önemliydi. Rüzgâr, dükkân ve harita çizgisi tercihin nedeni olarak verilmez."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
-    metin: "“Koordinasyon” neyi anlatmaktadır?"
+    metin: "“Gezi rehberleri, bakım görevlileri ve ulaşım ekibi arasında koordinasyon kuruldu.” cümlesindeki “koordinasyon” neyi anlatır?"
     secenekler:
-      - {id: A, metin: "Yolun taşlarını boyamayı"}
-      - {id: B, metin: "Ekiplerin işini uyumlu düzenlemeyi"}
-      - {id: C, metin: "Yalnız yürümeyi tercih etmeyi"}
-      - {id: D, metin: "Eski levhaları saklamayı"}
+      - {id: A, metin: "Yolun taşlarını yeniden boyamayı"}
+      - {id: B, metin: "Ekiplerin işini uyumlu yürütmeyi"}
+      - {id: C, metin: "Yalnız başına yürümeyi tercih etmeyi"}
+      - {id: D, metin: "Eski levhaları depoya kaldırmayı"}
     dogru: B
     dayanak: "Gezi rehberleri, bakım görevlileri ve ulaşım ekibi arasında koordinasyon kuruldu."
-    aciklama: "Metindeki \"Gezi rehberleri, bakım görevlileri ve ulaşım ekibi arasında koordinasyon kuruldu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Üç ekibin birbiriyle uyumlu çalışması koordinasyondur. Boyama, yalnız yürüme ve levha saklama cümleyle ilgili değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
-    metin: "{kahraman} neden yalnızca uyarı levhasıyla yetinmedi?"
+    metin: "Çamurlu bölüm için geçici levha önerildi. {kahraman} neden yalnızca uyarı levhasıyla yetinmedi?"
     secenekler:
-      - {id: A, metin: "Haritayı daha renkli yapmak için"}
+      - {id: A, metin: "Haritayı daha renkli hâle getirmek için"}
       - {id: B, metin: "Yağmuru tamamen durdurmak için"}
-      - {id: C, metin: "Geziyi iptal etmek için"}
-      - {id: D, metin: "Kayganlığın kendisini gidermek için"}
+      - {id: C, metin: "Geziyi tamamen iptal etmek için"}
+      - {id: D, metin: "Kayganlığı gerçekten gidermek için"}
     dogru: D
     dayanak: "{kahraman} buna karşı çıktı; görünür bir levhanın kaygan zemini ortadan kaldırmayacağını biliyordu."
-    aciklama: "Metindeki \"{kahraman} buna karşı çıktı; görünür bir levhanın kaygan zemini ortadan kaldırmayacağını biliyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Levha uyarır ama zemini düzeltmez; {kahraman} kayganlığın kendisini gidermek istedi ve tahliye oluğu yaptırdı. Yağmuru durdurmak mümkün değildir, geziyi iptal etmek de amaç değildi."
 ---
 
 @omurga
 
-Vadinin tepesindeki tarihî seyir alanına uzanan patika, her yıl çok sayıda ziyaretçiyi ağırlıyordu. Ancak bu kez yeni bir gezi düzenleneceğinde önemli bir sorun ortaya çıktı: Patikanın bazı bölümleri tekerlekli sandalye kullanan ziyaretçiler için uygun değildi. Kent gezi planlamacısı olan {kahraman}, yalnızca en kısa yolu gösteren haritayı kabul etmedi. Herkesin manzaraya ulaşabildiği bir güzergâh oluşturmayı amaçladı. Girişteki eski levhada yalnızca yürüyüş süresi yazıyordu. {kahraman} bu bilginin herkese aynı şeyi anlatmadığını fark etti. Bir kişi için kısa olan süre başka biri için uzun olabilirdi. Bu yüzden levhada zemin, eğim, dinlenme noktası ve alternatif yol bilgileri birlikte bulunmalıydı. İlk toplantıda gezi rehberlerinin çoğu bu ayrıntıları hiç düşünmediklerini söyledi. Haritayı kullanacak insanları dinlemek, haritayı çizmekten önce geliyordu. İlk inceleme sırasında zeminin eğimini, dinlenme noktalarını ve araç girişlerini not etti. Rehberler, uzun bir yolun ziyaretçileri yoracağını düşünüyordu. {kahraman} ise herkes için kullanılabilir bir yolun, yalnızca mesafeyle değerlendirilemeyeceğini anlattı. Bir yolun gerçek uzunluğu, onu aşmakta zorlanan kişinin deneyimiyle de ilgiliydi.
-
----
-
-@omurga
-
-İkinci incelemede ekiple birlikte patikanın girişine gitti. Rüzgâr vadiden sert esiyordu ve dar bir geçitte küçük taşlar birikmişti. Haritadaki ilk alternatif bu noktadan geçiyordu. {kahraman} tehlikeli olabilecek koşullar için güzergâhı yeniden değerlendirdi. Dar geçitte rüzgârın savurduğu küçük taşlar, yolun gün içinde bile değişebildiğini gösteriyordu. {kahraman} güvenli bir rota çizdikten sonra onu sürekli aynı kabul etmemek gerektiğini biliyordu. Görevliler yeni yolun çevresini koruyucu biçimde düzenledi. Yolun ilginç manzaralar sunması tek başına yeterli değildi; durup nefes almak isteyenler için uygun yer de olmalıydı. Kısa olan yolla rahat olan yol arasındaki fark, o gün çok belirginleşmişti. Daha alçak yamaçtan giden yol biraz uzundu fakat zemini düzdü. Yolun üzerinde bir çeşme, iki gölgelik ve geniş bir dinlenme alanı bulunuyordu. Ekip üyeleri geçiş genişliğini ölçtü; yalnızca fotoğrafa bakıp karar vermediler. Böylece kararın kişisel beğeniye değil, somut koşullara dayanmasını sağladılar. “Erişilebilir bir gezi, herkesin aynı kapıdan girebilmesidir,” dedi {kahraman}.
+Vadinin tepesindeki tarihî seyir alanına uzanan patika her yıl çok sayıda ziyaretçi ağırlıyordu. Yeni bir gezi planlanırken önemli bir sorun ortaya çıktı. Patikanın bazı bölümleri tekerlekli sandalye kullanan ziyaretçiler için uygun değildi. Kent gezi planlamacısı {kahraman}, yalnızca en kısa yolu gösteren haritayı kabul etmedi; herkesin manzaraya ulaşabileceği bir güzergâh çizmek istedi. Girişteki eski levhada yalnızca yürüyüş süresi yazıyordu. Oysa bir kişi için kısa olan süre başka biri için uzun olabilirdi. {kahraman}, patikayı tekerlekli sandalyeyle deneyen bir gönüllüyle birlikte yürüdü; rehberin on beş dakikada çıktığı yamaç gönüllüye çok daha uzun sürdü. Levhada zemin, eğim, dinlenme noktası ve alternatif yol bilgisi birlikte bulunmalıydı. İlk toplantıda rehberlerin çoğu bu ayrıntıları hiç düşünmediğini söyledi. Bazıları uzun bir yolun ziyaretçileri yoracağını savundu. {kahraman}, bir yolun uzunluğunun yalnızca metreyle ölçülmediğini, o yolda zorlanan kişinin deneyimine de bağlı olduğunu anlattı. Eğimi, dinlenme noktalarını ve araç girişlerini not ederek ilk incelemeyi tamamladı.
 
 ---
 
 @omurga
 
-Planın bir başka aşaması ziyaretçi gruplarıyla görüşmekti. Bazı katılımcılar uzun rampaları dinlenmeden çıkmanın zor olduğunu söyledi. Diğerleri yolun kenarında yeterince açıklayıcı işaret bulunmadığını belirtti. {kahraman} bütün görüşleri aynı masada topladı. Görüşmeye katılanlar yalnızca zorlandıkları noktaları anlatmadı. Bazıları çevredeki kuş seslerini dinlemek için sessiz dinlenme alanı istedi. Başkaları bilgi levhalarının göz hizasında olmasının yararlı olacağını söyledi. {kahraman} bu isteklerin hepsini aynı cümleye sığdırmaya çalışmadı. Uygulanabilir olanları tasarıma işledi, henüz karara bağlanmayanları açıkça belirtti. Böylece kimse görüşünün kaybolduğunu düşünmedi. Yol planı, masadaki tek kişinin çizdiği haritadan ortaklaşa oluşturulan bir düzenlemeye dönüştü. Gezi rehberleri, bakım görevlileri ve ulaşım ekibi arasında koordinasyon kuruldu. Yeni işaretlerde yalnızca uzaklık değil, eğim ve dinlenme alanları da gösterilecekti. Üstelik isteyenler için daha kısa ama dik, isteyenler için daha uzun ama rahat bir yol bulunacaktı. Bu seçenekler ayrıcalık değil, farklı ihtiyaçlara uygun tasarımın parçalarıydı. Karar verilmeden önce güzergâhın yağmur sonrasındaki durumu da incelendi.
+İkinci incelemede ekiple birlikte patikanın girişine gitti. Rüzgâr vadiden sert esiyordu ve dar bir geçitte küçük taşlar birikmişti. Haritadaki ilk alternatif bu geçitten geçiyordu. Rüzgârın savurduğu taşlar yolun gün içinde bile değişebildiğini gösteriyordu; {kahraman}, güvenli bir rota çizdikten sonra onu hep aynı saymamak gerektiğini biliyordu. Daha alçak yamaçtan giden yol biraz uzundu fakat zemini düzdü. Üzerinde bir çeşme, iki gölgelik ve geniş bir dinlenme alanı vardı. Ekip üyeleri geçiş genişliğini kendi ölçtü; tekerlekli bir sandalyenin dar köşelerde rahatça dönüp dönemeyeceğine de baktı, yalnızca fotoğrafa bakarak karar vermedi. Görevliler yeni yolun kenarlarını güvenli biçimde düzenledi. “Erişilebilir bir gezi, herkesin aynı kapıdan girebilmesidir,” dedi {kahraman}.
 
 ---
 
 @omurga
 
-Beklenmedik bir yağmurdan sonra uzun yoldaki küçük bir bölüm çamurla kaplandı. Açılışa az zaman kalmıştı. Bazıları geçici bir levha koyarak geziyi başlatmayı önerdi. {kahraman} buna karşı çıktı; görünür bir levhanın kaygan zemini ortadan kaldırmayacağını biliyordu. Tahliye oluğu yapılırken suyun patikanın altındaki hassas bitkilere yönelmemesi için ek kontrol yapıldı. Sorunu bir noktadan alıp başka yere bırakmak gerçek çözüm sayılmazdı. {kahraman} bakım ekibinin kullandığı malzemelerin ileride onarılabilir olmasına da dikkat etti. Gezi açıldıktan sonra bir bölüm yıpranırsa bütün yolun yeniden yapılması gerekmemeliydi. Gönüllü denemesi sırasında bazı yön tabelalarının okunması zor bulundu; bu görüşler hemen çizelgeye eklendi. Bakım ekibiyle birlikte suyun biriktiği noktaya uygun bir tahliye oluğu tasarlandı. Ardından yolun eğimli kenarına tutunma desteği eklendi. Yapılan değişiklikler geçici gösteriş için değil, uzun süreli kullanım için planlandı. İşler tamamlanınca farklı ihtiyaçları olan gönüllüler yolu denedi. Notlar birleştirildi, eksik görülen son iki yön tabelası da yerleştirildi.
+Sonra ziyaretçi gruplarıyla görüşüldü. Bazı katılımcılar uzun rampaları dinlenmeden çıkmanın zor olduğunu söyledi. Bazıları yol boyunca yeterince açıklayıcı işaret bulunmadığını belirtti. Bir katılımcı yaz sıcağında gölgeliklerin çok önemli olacağını hatırlattı; bu not da çizelgeye girdi. Kimi kuş seslerini dinleyebileceği sessiz bir dinlenme alanı istedi, kimi bilgi levhalarının göz hizasında olmasını. {kahraman} bütün görüşleri aynı masada topladı ama hepsini tek cümleye sığdırmaya çalışmadı. Uygulanabilir olanları tasarıma işledi, henüz karara bağlanamayanları açıkça belirtti. Gezi rehberleri, bakım görevlileri ve ulaşım ekibi arasında koordinasyon kuruldu. Yeni işaretlerde yalnızca uzaklık değil, eğim ve dinlenme alanları da gösterilecekti. İsteyenler daha kısa ama dik, isteyenler daha uzun ama rahat yolu seçebilecekti. Bu seçenekler ayrıcalık değil, farklı ihtiyaçlara uygun tasarımın parçalarıydı.
 
 ---
 
 @omurga
 
-Açılış gününde ziyaretçiler tek sıra hâlinde zor bir patikaya yönelmek zorunda kalmadı. Herkes haritadan kendisine uygun yolu seçebiliyordu. Daha uzun güzergâhtan gelen bir ziyaretçi, tepedeki manzaranın önünde uzun süre durdu. “Burayı yalnızca fotoğraflarda görüyordum,” dedi. Manzara noktasında farklı yaşlardan ziyaretçiler yan yana duruyordu. Bazıları yavaş yürüyerek, bazıları sık dinlenerek tepeye ulaşmıştı. {kahraman} açılış fotoğrafını herkes aynı noktada durabilsin diye geniş alanda çektirdi. Sonraki haftalar için de geri bildirim defteri bırakıldı. Bir yol kullanılmaya başlandıktan sonra sorunların bittiği varsayılmayacaktı. Ziyaretçiler kendi deneyimlerini yazdıkça harita daha da geliştirilebilirdi. Rüzgâr artık yalnızca manzarayı değil, iyi hazırlanmış yön işaretlerini de hatırlatıyordu. {kahraman} kalabalığın arasından sessizce geçti. Aynı noktaya farklı yollardan varan insanların sevinci birbirinden eksik değildi. Yamaçtan esen rüzgâr, yeni yön levhalarını hafifçe sallıyordu. Gezi rehberleri ertesi hafta için bakım notları tutmaya başlamıştı. Harita tamamlanmıştı ama erişilebilirliğin sürekli dikkat gerektiren bir çalışma olduğu artık herkes tarafından anlaşılmıştı.
+Beklenmedik bir yağmurdan sonra uzun yoldaki küçük bir bölüm çamurla kaplandı. Açılışa az zaman kalmıştı. Bazıları geçici bir levha koyup geziyi başlatmayı önerdi. {kahraman} buna karşı çıktı; görünür bir levhanın kaygan zemini ortadan kaldırmayacağını biliyordu. Bakım ekibiyle birlikte suyun biriktiği noktaya bir tahliye oluğu yaptırdı. Suyun patikanın altındaki hassas bitkilere yönelmemesi için ek kontrol yapıldı; sorunu bir yerden alıp başka yere bırakmak çözüm sayılmazdı. Yolun eğimli kenarına tutunma desteği eklendi. {kahraman}, kullanılan malzemelerin ileride onarılabilir olmasına da dikkat etti, çünkü bir bölüm yıpranırsa bütün yolun yeniden yapılması gerekmemeliydi. Farklı ihtiyaçları olan gönüllüler yolu denedi. Biri tutunma desteğini kendi boyuna uygun buldu, bir başkası biraz daha alçak olmasını istedi; destek iki yükseklikte yapıldı. Bir gönüllü yolun sonunda oturabileceği bir sıra olup olmadığını sordu; son dinlenme alanına bir sıra daha kondu. Bazı yön tabelalarını okumak zor bulundu; bu görüşler çizelgeye eklendi ve eksik görülen son iki tabela yerleştirildi.
+
+---
+
+@omurga
+
+Açılış gününde ziyaretçiler zor bir patikaya yönelmek zorunda kalmadı; herkes haritadan kendine uygun yolu seçti. Daha uzun güzergâhtan gelen bir ziyaretçi tepedeki manzaranın önünde uzun süre durdu. “Burayı yalnızca fotoğraflarda görüyordum,” dedi. Manzara noktasında farklı yaşlardan ziyaretçiler yan yana duruyordu; kimi yavaş yürüyerek, kimi sık dinlenerek gelmişti. {kahraman}, açılış fotoğrafı için herkesin sığabileceği geniş bir alan seçti. Girişe bir geri bildirim defteri bırakıldı; ziyaretçilerin yazdıklarıyla harita sonraki haftalarda da düzeltilecekti. Gölgelikte oturan yaşlı bir çift manzarayı uzun uzun izledi. Rehberler bakım notları tutmaya başladı; biri de levhaları yeni bilgiye göre baştan yazmak için not aldı. Yamaçtan esen rüzgâr yeni yön levhalarını hafifçe sallıyordu, {kahraman} ise kalabalığın arasından sessizce geçip yoluna gitti.

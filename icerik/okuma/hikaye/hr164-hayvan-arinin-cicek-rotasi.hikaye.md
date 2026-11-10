@@ -30,49 +30,49 @@ sorular:
     dayanak_sayfa: 1
     metin: "{kahraman} ilk olarak neyi gözlemlemeye başladı?"
     secenekler:
-      - {id: A, metin: "Kovanların boyasını"}
-      - {id: B, metin: "Toprağın derinliğini"}
-      - {id: C, metin: "Bölgelere göre çiçeklenme zamanını"}
-      - {id: D, metin: "Yağmurun tam tarihini"}
+      - {id: A, metin: "Kovanların boyasını ve rengini"}
+      - {id: B, metin: "Toprağın kaç metre derin olduğunu"}
+      - {id: C, metin: "Hangi bölgenin ne zaman açtığını"}
+      - {id: D, metin: "Yağmurun yağacağı tam tarihi"}
     dogru: C
     dayanak: "Önce hangi bölgenin ne zaman çiçeklendiğini gözlemlemeye başladı."
-    aciklama: "Metindeki \"Önce hangi bölgenin ne zaman çiçeklendiğini gözlemlemeye başladı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Önce hangi bölgenin ne zaman çiçeklendiğini gözlemlemeye başladı.\" cümlesi C seçeneğini doğrular. Kovanın boyası, toprağın derinliği ve yağmurun tarihi arının gözlem konuları değildir."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
     metin: "Güneş alan köşeye gitmesinin nedeni nedir?"
     secenekler:
       - {id: A, metin: "Orada açmış çiçekler bulunması"}
-      - {id: B, metin: "Orada hiç bitki olmaması"}
+      - {id: B, metin: "Orada yiyecek sağlayacak bitki olmaması"}
       - {id: C, metin: "Ağaçların taşınmış olması"}
       - {id: D, metin: "Kovanın oraya kurulması"}
     dogru: A
     dayanak: "Orada farklı çiçeklerin açtığını gördü."
-    aciklama: "Metindeki \"Orada farklı çiçeklerin açtığını gördü.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Orada farklı çiçeklerin açtığını gördü.\" cümlesi, arının güneş alan köşeye açmış çiçekler olduğu için gittiğini gösterir; eski ağaçta bazı dallar henüz tomurcuktu. Bitkisiz olması, ağaçların taşınması ve kovanın kurulması metinde yoktur."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 2
     metin: "“Çeşitlilik” hangi anlamda kullanılmıştır?"
     secenekler:
-      - {id: A, metin: "Yalnız bir türün bulunması"}
-      - {id: B, metin: "Birden çok farklı çiçeğin bulunması"}
+      - {id: A, metin: "Yalnızca tek bir türün bulunması"}
+      - {id: B, metin: "Çok türde çiçek bulunması"}
       - {id: C, metin: "Bütün yolların kapanması"}
       - {id: D, metin: "Arıların aynı anda uyuması"}
     dogru: B
     dayanak: "Bahçenin çeşitlilik bakımından zengin olması, her gün aynı kaynağa bağlı kalmasını önlüyordu."
-    aciklama: "Metindeki \"Bahçenin çeşitlilik bakımından zengin olması, her gün aynı kaynağa bağlı kalmasını önlüyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Bahçenin çeşitlilik bakımından zengin olması, her gün aynı kaynağa bağlı kalmasını önlüyordu.\" cümlesinde çeşitlilik, bahçede çok sayıda farklı çiçeğin bulunmasıdır; tek tür bulunsaydı arı aynı kaynağa bağlı kalırdı. Yolların kapanması ve arıların uyuması bu anlama uymaz."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
     metin: "{kahraman} niçin sulama sırasında başka bölgeye yöneldi?"
     secenekler:
       - {id: A, metin: "Ağaçları saymak için"}
-      - {id: B, metin: "Diğer arılardan saklanmak için"}
+      - {id: B, metin: "Diğer arıların gözünden saklanmak için"}
       - {id: C, metin: "Renkleri değiştirmek için"}
-      - {id: D, metin: "O sırada uygun olmayan alanı kullanmamak için"}
+      - {id: D, metin: "Islak alandan uzak durmak için"}
     dogru: D
     dayanak: "Çiçeklerin üstüne su püskürürken {kahraman} o alana yaklaşmadı."
-    aciklama: "Metindeki \"Çiçeklerin üstüne su püskürürken {kahraman} o alana yaklaşmadı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Çiçeklerin üstüne su püskürürken {kahraman} o alana yaklaşmadı.\" cümlesi, arının sulanan ve ıslanan alana uğramayıp diğer çiçekli bölgelere yöneldiğini gösterir. Ağaç saymak, diğer arılardan saklanmak ve renk değiştirmek metinde amaç değildir."
 ---
 
 @omurga
@@ -95,10 +95,10 @@ Sabah ilk uçuşta {kahraman} eski ağacın yanına gitti. Çiçeklerden toplad�
 
 @omurga
 
-Bir gün bahçenin bir bölümünde sulama yapıldı. Çiçeklerin üstüne su püskürürken {kahraman} o alana yaklaşmadı. Diğer çiçekli bölgelere yöneldi. Bahçe görevlileri, canlıların yoğun olduğu saatlerde gereksiz püskürtmeden kaçınmayı tercih ediyordu. Sulama bitince bazı yaprakların üzerinde küçük su damlaları kaldı. {kahraman} hemen o bölgeye dönmedi; çiçeklerin yeniden uygun hâle gelmesini bekledi. Beklerken başka bir çalı grubunu inceledi. Orada yeni açan çiçeklerin bulunması, planı değiştirmenin bazen yeni fırsatlar getirdiğini gösterdi. {kahraman} bu düzenin birçok canlı için yararlı olduğunu gözledi. Bazı çiçeklerde polen azalmıştı; yenilerinde ise daha çok kaynak vardı. Rotasını güncel duruma göre değiştirmek, bahçedeki canlıların farklı ihtiyaçlarını gözetmesine yardımcı oldu. Öğleden sonra güneş yumuşayınca eski ağaca yeniden uğradı. Bu kez dalların çoğunda çiçekler açmıştı.
+Bir gün bahçenin bir bölümünde sulama yapıldı. Çiçeklerin üstüne su püskürürken {kahraman} o alana yaklaşmadı. Diğer çiçekli bölgelere yöneldi. Bahçe görevlileri sulamayı yalnızca küçük bir bölümle sınırlı tuttu. Sulama bitince bazı yaprakların üzerinde küçük su damlaları kaldı. {kahraman} hemen o bölgeye dönmedi; çiçeklerin yeniden uygun hâle gelmesini bekledi. Beklerken başka bir çalı grubunu inceledi. Orada yeni açan çiçeklerin bulunması, planı değiştirmenin bazen yeni fırsatlar getirdiğini gösterdi. {kahraman} bu düzenin birçok canlı için yararlı olduğunu gözledi. Bazı çiçeklerde polen azalmıştı; yenilerinde ise daha çok kaynak vardı. Rotasını güncel duruma göre değiştirmek, bahçedeki canlıların farklı ihtiyaçlarını gözetmesine yardımcı oldu. Öğleden sonra güneş yumuşayınca eski ağaca yeniden uğradı. Bu kez dalların çoğunda çiçekler açmıştı.
 
 ---
 
 @omurga
 
-Akşamüstü {kahraman} kovana döndü. Gün boyunca izlediği farklı çiçek yolları ona aynı bahçenin bile tek biçimde olmadığını göstermişti. Bir gün işe yarayan rota ertesi gün değişebilirdi. {kahraman} başka arıların getirdiği işaretleri gözledi; her biri bahçenin farklı bir yerini tanıyordu. Günün sonunda diğer arıların getirdiği bilgiler birbirinden farklıydı. {kahraman} bunu bir anlaşmazlık olarak görmedi. Çünkü farklı bölgelerde uçmuşlardı. Her gözlem yer ve zamanıyla birlikte düşünüldüğünde bahçenin bütününe ilişkin daha zengin bir görüntü ortaya çıkıyordu. Ertesi gün bu bilgiden yararlanabileceklerdi. Çiçeklerin çeşitliliği, hem arılar hem de bahçedeki başka canlılar için önem taşıyordu. Son ışıklar ağaçların arasından süzülürken {kahraman} dinlendi. Ertesi gün yine çalışacaktı ama artık nereye uçacağına daha bilinçli bakıyordu. Bahçenin düzeni, küçük gözlemlerin birikimiyle daha anlaşılır olmuştu.
+Akşamüstü {kahraman} kovana döndü. Gün boyunca izlediği farklı çiçek yolları ona aynı bahçenin bile tek biçimde olmadığını göstermişti. Bir gün işe yarayan rota ertesi gün değişebilirdi. {kahraman} başka arıların getirdiği işaretleri gözledi; her biri bahçenin farklı bir yerini tanıyordu. Günün sonunda diğer arıların getirdiği bilgiler birbirinden farklıydı. {kahraman} bunu bir anlaşmazlık olarak görmedi. Çünkü farklı bölgelerde uçmuşlardı. Her gözlem yer ve zamanıyla birlikte düşünüldüğünde bahçenin bütününe ilişkin daha zengin bir görüntü ortaya çıkıyordu. Çiçeklerin çeşitliliği, hem arılar hem de bahçedeki başka canlılar için önem taşıyordu. Son ışıklar ağaçların arasından süzülürken {kahraman} dinlendi. Ertesi gün yine çalışacaktı ama artık nereye uçacağına daha bilinçli bakıyordu. Bahçenin düzeni, küçük gözlemlerin birikimiyle daha anlaşılır olmuştu.

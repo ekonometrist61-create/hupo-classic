@@ -1,5 +1,5 @@
 ---
-baslik: "Bulutların Altındaki Sessiz Uçuş"
+baslik: "Bulutların Altındaki Uçuş"
 slug: "hr157-arac-bulutlarin-altindaki-sessiz-ucus"
 fis_kodu: "HR-157"
 tur: bilim
@@ -30,37 +30,37 @@ sorular:
     dayanak_sayfa: 1
     metin: "Uçuşun temel amacı neydi?"
     secenekler:
-      - {id: A, metin: "Kuşları başka yere götürmek"}
+      - {id: A, metin: "Kuşları kıyıdan başka bir bölgeye götürmek"}
       - {id: B, metin: "Rüzgâr ve sıcaklık verisi toplamak"}
       - {id: C, metin: "Ormana yol açmak"}
       - {id: D, metin: "Bulutları dağıtmak"}
     dogru: B
     dayanak: "Orman sınırındaki açık arazide rüzgâr ve sıcaklık ölçümleri yapmak için hazırlanmıştı."
-    aciklama: "Metindeki \"Orman sınırındaki açık arazide rüzgâr ve sıcaklık ölçümleri yapmak için hazırlanmıştı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Orman sınırındaki açık arazide rüzgâr ve sıcaklık ölçümleri yapmak için hazırlanmıştı.\" cümlesi B seçeneğini doğrular. Kuşları götürmek, ormana yol açmak ve bulutları dağıtmak metinde uçuşun amacı değildir; kuşların alanı tersine uçuşa kapalı bırakılır."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
     metin: "Rota neden uçuş öncesi değiştirildi?"
     secenekler:
       - {id: A, metin: "Aracın boyasını korumak için"}
-      - {id: B, metin: "Yolu uzatmayı sevdikleri için"}
-      - {id: C, metin: "Düzensiz hava hareketlerini gözetmek için"}
-      - {id: D, metin: "Haritada yeni isim yazmak için"}
+      - {id: B, metin: "Ekip yolu uzatmayı sevdiği için"}
+      - {id: C, metin: "Hava hareketlerini hesaba katmak için"}
+      - {id: D, metin: "Haritadaki yer adlarını yenilemek için"}
     dogru: C
     dayanak: "Bazı noktalarda türbülans adı verilen düzensiz hava hareketleri vardı."
-    aciklama: "Metindeki \"Bazı noktalarda türbülans adı verilen düzensiz hava hareketleri vardı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Bazı noktalarda türbülans adı verilen düzensiz hava hareketleri vardı.\" cümlesi, rotanın bu hareketler hesaba katılarak değiştirildiğini gösterir. Boyayı korumak, yolu uzatmak ya da harita adlarını yenilemek metinde rota değişikliğinin nedeni değildir."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
     metin: "“Ölçüm” sözcüğü burada neyi anlatır?"
     secenekler:
       - {id: A, metin: "Cihazla belirlenen sayısal bilgiyi"}
-      - {id: B, metin: "Aracın dış görünüşünü"}
-      - {id: C, metin: "Ormandaki yürüyüş yolunu"}
+      - {id: B, metin: "Aracın dış görünüşünü ve boyasını"}
+      - {id: C, metin: "Ormandaki yürüyüş yolunun uzunluğunu"}
       - {id: D, metin: "Görevlinin kişisel beğenisini"}
     dogru: A
     dayanak: "Aynı noktadaki rüzgâr ölçümü de beklenenden yüksekti."
-    aciklama: "Metindeki \"Aynı noktadaki rüzgâr ölçümü de beklenenden yüksekti.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Aynı noktadaki rüzgâr ölçümü de beklenenden yüksekti.\" cümlesinde ölçüm, cihazın verdiği sayısal değerdir; yüksek ya da düşük olabilmesi de bunu gösterir. Aracın görünüşü, yürüyüş yolu ve kişisel beğeni yüksek ya da düşük çıkan bir değer değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 5
@@ -69,21 +69,21 @@ sorular:
       - {id: A, metin: "Raporun sayfası artsın diye"}
       - {id: B, metin: "Uçuşu saklamak için"}
       - {id: C, metin: "Ağaçların yerini değiştirmek için"}
-      - {id: D, metin: "Bulguların sınırlarını dürüstçe göstermek için"}
+      - {id: D, metin: "Sınırları açıkça göstermek için"}
     dogru: D
     dayanak: "Raporda belirsizlikler de yer aldı."
-    aciklama: "Metindeki \"Raporda belirsizlikler de yer aldı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Raporda belirsizlikler de yer aldı.\" cümlesi, ekibin bulguların sınırlarını açıkça göstermek istediğini yansıtır; hangi sonuçların tekrar ölçümle desteklendiği de işaretlenmişti. Sayfa sayısını artırmak, uçuşu saklamak ve ağaçları taşımak metinde amaç değildir."
 ---
 
 @omurga
 
-{kahraman} bir araştırma ekibinin kullandığı küçük insansız hava aracıydı. Orman sınırındaki açık arazide rüzgâr ve sıcaklık ölçümleri yapmak için hazırlanmıştı. Bir gün ekip, ağaçlık bölgenin üstünde beklenmedik hava hareketleri gözledi. {kahraman} görev planını incelerken irtifa sınırlarının neden belirlendiğini düşündü. Kalkış alanı seçilirken ağaçların tepesindeki rüzgârla zemindeki rüzgârın farklı olabileceği hesaba katıldı. {kahraman} uçuş planındaki sınırları, daha uzağa gitmenin verdiği meraktan üstün tuttu. Ekip batarya durumunu kontrol edip acil dönüş için güvenli bir alan belirledi. Araştırmanın başlaması için bütün bu hazırlıkların tamamlanması gerekiyordu. Kuşların bulunduğu bölgenin haritada ayrı gösterilmesi, canlıların korunmasını kolaylaştırdı. İrtifa, aracın yerden ne kadar yüksekte bulunduğunu gösteren ölçüydü. Uçuşun amacı yüksekliğini göstermek değil, güvenli bölgede doğru veri toplamaktı. Ekip hava koşullarını kontrol edip gerekli izinleri doğruladı. {kahraman} yalnızca önceden tanımlanan rota içinde hareket edecekti; çevredeki kuşların dinlendiği alanlar uçuşa kapalı bırakıldı.
+{kahraman} bir araştırma ekibinin kullandığı küçük insansız hava aracıydı. Orman sınırındaki açık arazide rüzgâr ve sıcaklık ölçümleri yapmak için hazırlanmıştı. Bir gün ekip, ağaçlık bölgenin üstünde beklenmedik hava hareketleri gözledi. {kahraman} görev planını incelerken irtifa sınırlarının neden belirlendiğini düşündü. Kalkış alanı seçilirken ağaçların tepesindeki rüzgârla zemindeki rüzgârın farklı olabileceği hesaba katıldı. {kahraman} uçuş planındaki sınırları, daha uzağa gitmenin verdiği meraktan üstün tuttu. Ekip batarya durumunu kontrol edip acil dönüş için güvenli bir alan belirledi. Araştırmanın başlaması için bütün bu hazırlıkların tamamlanması gerekiyordu. Kuşların bulunduğu bölgenin haritada ayrı gösterilmesi, canlıların korunmasını kolaylaştırdı. İrtifa, aracın yerden ne kadar yüksekte bulunduğunu gösteren ölçüydü. Uçuşun amacı yüksekte görünmek değil, güvenli bölgede doğru veri toplamaktı. Ekip hava koşullarını kontrol edip gerekli izinleri doğruladı. {kahraman} yalnızca önceden tanımlanan rota içinde hareket edecekti; çevredeki kuşların dinlendiği alanlar uçuşa kapalı bırakıldı.
 
 ---
 
 @omurga
 
-Kalkıştan önce rüzgâr yönü tekrar ölçüldü. İlk plan, ormanın kenarını dümdüz geçiyordu. Ancak yere yakın hava akışı ağaçların oluşturduğu küçük boşluklarda değişiyordu. {kahraman} kontrol sisteminden gelen uyarıyı dikkate aldı. Bazı noktalarda türbülans adı verilen düzensiz hava hareketleri vardı. Uçuş öncesi toplantıda bir görevli yüksekten daha geniş görüntü alınacağını düşündü. {kahraman} daha geniş görüntünün her zaman daha doğru ölçüm anlamına gelmediğini biliyordu. İrtifa değiştiğinde sensörün örneklediği hava koşulları da değişebilirdi. Ekip hangi soruyu cevaplamak istediğini yeniden yazdı. Böylece rota yalnızca görüntü elde etmek için değil, ölçümleri karşılaştırılabilir kılmak için düzenlendi. Güvenli sınırların dışına çıkma önerisi kabul edilmedi. Bu hareketler aracın dengesini etkileyebilirdi. Ekip uçuş yüksekliğini ve rotayı güvenlik sınırları içinde yeniden düzenledi. Bir gözlemci, en kısa çizgiyi izlememenin zaman kaybettirdiğini söyledi. Diğer görevli, kaliteli verinin güvenli toplanmadığında pek işe yaramayacağını hatırlattı. Uçuş, hazırlıklar tamamlanmadan başlamadı.
+Kalkıştan önce rüzgâr yönü tekrar ölçüldü. İlk plan, ormanın kenarını dümdüz geçiyordu. Ancak yere yakın hava akışı ağaçların oluşturduğu küçük boşluklarda değişiyordu. {kahraman} kontrol sisteminden gelen uyarıyı dikkate aldı. Bazı noktalarda türbülans adı verilen düzensiz hava hareketleri vardı. Uçuş öncesi toplantıda bir görevli yüksekten daha geniş görüntü alınacağını düşündü. {kahraman} daha geniş görüntünün her zaman daha doğru ölçüm anlamına gelmediğini biliyordu. İrtifa değiştiğinde sensörün örneklediği hava koşulları da değişebilirdi. Ekip hangi soruyu cevaplamak istediğini yeniden yazdı. Böylece rota yalnızca görüntü elde etmek için değil, ölçümleri karşılaştırılabilir kılmak için düzenlendi. Güvenli sınırların dışına çıkma önerisi kabul edilmedi. Yüksekte ve ağaçlara yakın uçmak aracın dengesini bozabilirdi. Ekip uçuş yüksekliğini ve rotayı güvenlik sınırları içinde yeniden düzenledi. Bir gözlemci, en kısa çizgiyi izlememenin zaman kaybettirdiğini söyledi. Diğer görevli, kaliteli verinin güvenli toplanmadığında pek işe yaramayacağını hatırlattı. Uçuş, hazırlıklar tamamlanmadan başlamadı.
 
 ---
 
@@ -101,4 +101,4 @@ Kalkıştan önce rüzgâr yönü tekrar ölçüldü. İlk plan, ormanın kenar�
 
 @omurga
 
-Son raporda ölçümlerin yapıldığı saatler, güzergâhlar ve koşullar açıkça belirtildi. {kahraman} bakım masasında sessizce dururken ekip uçuş kayıtlarını arşivledi. Çalışma, orman kenarındaki yerel hava hareketlerini anlamaya yardımcı olmuştu. Ne tek bir uçuş her soruyu çözmüştü ne de bütün veriler aynı açıklamaya uyuyordu. Raporun son bölümünde hangi sonuçların tekrar ölçümle desteklendiği açıkça işaretlendi. {kahraman} bakım masasında dururken sorumlu araştırmacı farklı renklerle çizilmiş güzergâhlara baktı. İlk planın değişmiş olması bir eksiklik olarak görülmedi. Koşullara göre güvenli karar verebilmek araştırmanın parçasıydı. Ekip ileride başka mevsimde ölçüm yapmanın yararlı olabileceğini not etti. Böylece çalışma bittiğinde yeni sorular da görünür hâle geldi. Raporda belirsizlikler de yer aldı. Bir görevli, “En iyi buluşu hangi uçuşta yaptık?” diye sordu. Ekip sorumlusu, “Uçuşu gerektiğinde değiştirebildiğimizde,” dedi. {kahraman} için bu söz anlamlıydı: Görevi tamamlamak kadar sınırları bilerek hareket etmek de önemliydi. Ekibin bir sonraki gözlem için planı vardı ve veriler güvenle saklandı.
+Son raporda ölçümlerin yapıldığı saatler, güzergâhlar ve koşullar açıkça belirtildi. {kahraman} bakım masasında sessizce dururken ekip uçuş kayıtlarını arşivledi. Çalışma, orman kenarındaki yerel hava hareketlerini anlamaya yardımcı olmuştu. Ne tek bir uçuş her soruyu çözmüştü ne de bütün veriler aynı açıklamaya uyuyordu. Raporun son bölümünde hangi sonuçların tekrar ölçümle desteklendiği açıkça işaretlendi. Sorumlu araştırmacı farklı renklerle çizilmiş güzergâhlara baktı. İlk planın değişmiş olması bir eksiklik olarak görülmedi. Koşullara göre güvenli karar verebilmek araştırmanın parçasıydı. Ekip ileride başka mevsimde ölçüm yapmanın yararlı olabileceğini not etti. Böylece çalışma bittiğinde yeni sorular da görünür hâle geldi. Raporda belirsizlikler de yer aldı. Bir görevli, “En iyi buluşu hangi uçuşta yaptık?” diye sordu. Ekip sorumlusu, “Uçuşu gerektiğinde değiştirebildiğimizde,” dedi. {kahraman} bu cevabı uçuş kayıtlarının arasına not etti. Ekibin bir sonraki gözlem için planı vardı ve veriler güvenle saklandı.

@@ -30,17 +30,17 @@ sorular:
     dayanak_sayfa: 1
     metin: "Çanın incelenmesinin nedeni neydi?"
     secenekler:
-      - {id: A, metin: "Yerinin değiştirilecek olması"}
-      - {id: B, metin: "Sesinin eskisi kadar net olmaması"}
-      - {id: C, metin: "Meydana yeni yol açılması"}
-      - {id: D, metin: "Bütün saatlerin durması"}
+      - {id: A, metin: "Meydanda yerinin değiştirilecek olması"}
+      - {id: B, metin: "Sesinin eskisi gibi çıkmaması"}
+      - {id: C, metin: "Meydana yeni bir yol açılması"}
+      - {id: D, metin: "Meydandaki bütün saatlerin durması"}
     dogru: B
     dayanak: "Çanın sesi eskisi kadar net çıkmayınca bazıları onu tamamen yenilemeyi önerdi."
-    aciklama: "Metindeki \"Çanın sesi eskisi kadar net çıkmayınca bazıları onu tamamen yenilemeyi önerdi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Çanın sesi eskisi kadar net çıkmadığı için inceleme başladı. Yer değişikliği, yeni yol ve saatlerin durması metinde geçmez."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
-    metin: "Eski bakım defterlerinin eksikliği neye yol açmıştır?"
+    metin: "Eski bakım defterlerinde kullanılan malzemenin kaydedilmemiş olması neye yol açmıştır?"
     secenekler:
       - {id: A, metin: "Onarım yöntemini belirlemeyi zorlaştırmıştır"}
       - {id: B, metin: "Çanın tamamen kaybolmasına neden olmuştur"}
@@ -48,57 +48,57 @@ sorular:
       - {id: D, metin: "Meydanın ziyaretçilere kapanmasını gerektirmiştir"}
     dogru: A
     dayanak: "Bu eksiklik, bugünkü işlemi zorlaştırıyordu."
-    aciklama: "Metindeki \"Bu eksiklik, bugünkü işlemi zorlaştırıyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Malzeme kaydı olmayınca bugünkü işlem zorlaştı; yani doğru yöntemi seçmek güçleşti. Çan kaybolmadı, ses kayıtları gereksiz olmadı, meydan da kapanmadı."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
-    metin: "“Özgün” ifadesi burada hangi anlama yakındır?"
+    metin: "“Malzemenin özgün görünüşüne zarar vermeyecek yöntemler karşılaştırıldı.” cümlesindeki “özgün” sözcüğü hangi anlama yakındır?"
     secenekler:
-      - {id: A, metin: "En ucuz olan"}
-      - {id: B, metin: "En ağır olan"}
+      - {id: A, metin: "Fiyatı en düşük olan"}
+      - {id: B, metin: "Ağırlığı en fazla olan"}
       - {id: C, metin: "İlk yapısına ait olan"}
-      - {id: D, metin: "En parlak görünen"}
+      - {id: D, metin: "Yüzeyi en parlak olan"}
     dogru: C
     dayanak: "Malzemenin özgün görünüşüne zarar vermeyecek yöntemler karşılaştırıldı."
-    aciklama: "Metindeki \"Malzemenin özgün görünüşüne zarar vermeyecek yöntemler karşılaştırıldı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Özgün görünüş, malzemenin ilk yapısındaki görünüştür. Ucuzluk, ağırlık ve parlaklık metinde korunması istenen şeyler değildir; hatta parlaklığın ses kalitesini göstermediği yazar."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
     metin: "{kahraman} doğrulanmayan tarihi neden panoya yazmadı?"
     secenekler:
-      - {id: A, metin: "Panoyu çok kısa tutmak için"}
-      - {id: B, metin: "Tarihi tamamen saklamak için"}
-      - {id: C, metin: "Çanı daha sessiz yapmak için"}
-      - {id: D, metin: "Ziyaretçiye güvenilir bilgi sunmak için"}
+      - {id: A, metin: "Panoyu olabildiğince kısa tutmak için"}
+      - {id: B, metin: "Tarihi tamamen gizli tutmak için"}
+      - {id: C, metin: "Çanı daha sessiz çaldırmak için"}
+      - {id: D, metin: "Güvenilir bilgi vermek için"}
     dogru: D
     dayanak: "Efsane gibi aktarılan bir tarihi ise belgelenmediği için metne eklemedi."
-    aciklama: "Metindeki \"Efsane gibi aktarılan bir tarihi ise belgelenmediği için metne eklemedi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Belgelenmeyen bilgi güvenilir sayılmaz; pano yalnızca doğrulanmış bilgiyi vermek için hazırlandı. Kısalık, gizleme ya da sesi azaltma amaç değildi."
 ---
 
 @omurga
 
-Eski saat meydanında duran küçük çanın sesi yıllardır mahalle halkının günlük yaşamına karışmıştı. Çanın sesi eskisi kadar net çıkmayınca bazıları onu tamamen yenilemeyi önerdi. Ses koruma uzmanı olan {kahraman} ise önce bu değişimin nedenini anlamak istedi. Meydanda durup farklı uzaklıklardan çanın sesini dinledi. Çanın yanında uzun yıllar çalışan meydan görevlisi, sesin değişimini ilk fark eden kişiydi. {kahraman} onu dinlerken yalnızca anılarını toplamadı; değişimin yaklaşık ne zaman başladığını da sordu. Bu bilgi, eski akustik kayıtların tarihleriyle karşılaştırılacaktı. Akustik, sesin oluşması ve çevrede yayılmasıyla ilgili inceleme alanıydı. Geçmişte kaydedilen her gözlem kesin doğru kabul edilmedi, fakat soruların daha iyi sorulmasına yardım etti. Ardından sesleri özel bir kayıt cihazıyla topladı. Çanın yalnızca metal bir nesne olmadığını düşünüyordu; insanlar için zamanı, buluşmaları ve yılların alışkanlıklarını hatırlatan bir işaretti. Ancak bu duygusal bağ, teknik incelemenin yerine geçemezdi. {kahraman}, hem geçmişi koruyan hem de güvenli kullanım sağlayan bir çözüm arayacaktı.
-
----
-
-@omurga
-
-İlk ölçümlerde çanın temel tını özelliğinin değişmediği görüldü. Tını, bir sesi aynı yükseklikteki başka sesten ayıran kendine özgü niteliğiydi. Sorun çanın gövdesinde değil, ona vurmayı sağlayan küçük mekanizmanın düzensiz hareketinde olabilirdi. {kahraman} eski tamir defterlerini incelemek üzere belediye arşivine gitti. Belgelerde çanın daha önce iki kez bakım gördüğü yazıyordu. Arşivdeki defterlerin sayfaları arasında kısa notlar vardı. Birinde bakımın yağışlı bir günde yapıldığı, diğerinde çanın sesi için yeni bir düzen denendiği yazıyordu. {kahraman} hangi notun hangi işlemle ilgili olduğunu anlamadan hepsini tek bir hikâyeye bağlamadı. Belgeleme eksik olduğunda küçük ayrıntıların sonradan ne kadar önemli olabileceği görülüyordu. Bu kez hiçbir ölçüm tarihi unutulmayacaktı. Hazırlanan çizelge herkesin kontrol edebileceği kadar açık tutuldu. Fakat kullanılan malzemeler ayrıntılı kaydedilmemişti. Bu eksiklik, bugünkü işlemi zorlaştırıyordu. {kahraman} bundan sonra yapılacak her değişikliğin belgelenmesini önerdi. Ekibin bir üyesi, eski metalin rengini de değiştirmek gerektiğini söyledi. {kahraman} görünüşten önce işlevi anlamayı tercih etti.
+Eski saat meydanındaki küçük çanın sesi yıllardır mahalle halkının günlük yaşamına karışmıştı. Çanın sesi eskisi kadar net çıkmayınca bazıları onu tamamen yenilemeyi önerdi. Ses koruma uzmanı {kahraman} ise önce bu değişimin nedenini anlamak istedi. Meydanın farklı köşelerinde durup çanı dinledi. Saat kulesinin altında oturan yaşlılar, çanın bir zamanlar daha gür çaldığını anımsıyordu. Çanın yanında uzun yıllar çalışan meydan görevlisi, sesin değiştiğini ilk fark eden kişiydi. {kahraman}, onun anılarını dinlemekle kalmadı; değişimin yaklaşık ne zaman başladığını da sordu. Bu tarihi eski akustik kayıtlarla karşılaştıracaktı. Akustik, sesin nasıl oluştuğunu ve çevrede nasıl yayıldığını inceleyen alandı. Geçmişte tutulan her gözlem kesin doğru sayılmadı ama soruların daha iyi sorulmasına yardım etti. Sonra çanın sesini özel bir cihazla kaydetti. Çan, insanlar için yalnızca metal bir nesne değildi; zamanı ve buluşmaları hatırlatan bir işaretti. Yine de bu duygusal bağ, teknik incelemenin yerini tutamazdı.
 
 ---
 
 @omurga
 
-Meydandaki küçük atölyede çanın hareketli parçası dikkatlice söküldü. Parçanın kenarında aşınmış ince bir yüzey vardı. Yeni bir parça üretmek mümkündü ama ölçüler hassas biçimde alınmalıydı. {kahraman} eski parçayı örnek alarak çizim hazırladı. Malzemenin özgün görünüşüne zarar vermeyecek yöntemler karşılaştırıldı. Atölyedeki denemelerde iki parça arasındaki fark ilk dinleyişte pek belirgin değildi. {kahraman} ortamın gürültüsünü azaltıp sesleri aynı koşullarda karşılaştırdı. Her iki parçanın da eski görünüme uyması yeterli değildi. Yapılan küçük değişiklik, gelecekte bakım yapılabilmesine de engel olmamalıydı. Bu nedenle montaj biçimi ayrıca değerlendirildi. Ekibin farklı görüşlerini dinlemek, tek bir fikre gereksiz yere bağlanmaktan daha yararlıydı. Atölye çalışanı en parlak metalin en iyi sonucu vereceğini düşündü. Ölçümler ise farklı bir şey gösteriyordu: Parlaklık, ses kalitesinin güvenilir göstergesi değildi. Önemli olan uygun biçim, ağırlık ve temas noktasıydı. Yapılan denemelerde bir parça daha yumuşak, diğeri daha sert ses çıkarıyordu. Ekip acele karar vermedi; kayıtlar üzerinden dinleyerek karşılaştırma yaptı.
+İlk ölçümlerde çanın tını özelliğinin değişmediği görüldü. Tını, aynı yükseklikteki iki sesi birbirinden ayıran niteliktir. Demek ki sorun çanın gövdesinde değil, ona vuran hareketli parçanın düzensiz çalışmasında olabilirdi. {kahraman}, eski tamir defterlerini incelemek üzere belediye arşivine gitti. Belgelerde çanın daha önce iki kez bakım gördüğü yazıyordu. Defter sayfalarının arasında kısa notlar vardı: Birinde bakımın yağışlı bir günde yapıldığı, ötekinde çanın vuruş düzeninin değiştirildiği yazıyordu. {kahraman}, hangi notun hangi işlemle ilgili olduğunu anlamadan hepsini tek bir hikâyeye bağlamadı. Fakat kullanılan malzemeler ayrıntılı kaydedilmemişti. Bu eksiklik, bugünkü işlemi zorlaştırıyordu. Belgeleme eksik kalınca küçük ayrıntıların sonradan ne kadar önemli olabildiği görülüyordu. {kahraman}, bundan sonra her ölçümün ve değişikliğin tarihiyle birlikte yazılmasını istedi. Ekipten biri eski metalin rengini de yenilemeyi önerdi; {kahraman} görünüşten önce işlevi anlamayı seçti.
 
 ---
 
 @omurga
 
-Yeni düzenek monte edildikten sonra meydanda kısa bir deneme yapıldı. Çanın sesi eskiye göre daha düzenliydi fakat {kahraman} son kararı tek başına vermedi. Bakım ekibi, çevrede yaşayanlar ve ses ölçüm uzmanı birlikte değerlendirme yaptı. Meydana yakın oturan yaşlı bir ziyaretçi, çanın çok yüksek çalmasının dinlenmeyi güçleştirdiğini belirtti. Meydanda yaşayanların dinlenme saatlerine ilişkin görüşler toplandı. Çanın herkes için aynı duyguyu uyandırmadığı ortaya çıktı. Bazıları sesi seviyor, bazılarıysa günün belirli saatlerinde daha sessiz bir ortam istiyordu. {kahraman} bu farklılığı bir tartışma sebebi yapmak yerine kullanım planına dâhil etti. Koruma çalışmasının çevrede yaşayanlara rağmen değil, onlarla birlikte yürütülmesi gerekiyordu. Ses düzeyi ölçüldü, tekrar dinlendi ve ortak bir düzen üzerinde uzlaşıldı. Böylece sesin korunmasıyla çevrede yaşayanların huzuru arasındaki denge yeniden düşünüldü. Uygun ses düzeyine karar verilince bir çalışma takvimi oluşturuldu. {kahraman} çanın tarihini anlatan kısa panoya yalnızca doğrulanmış bilgilerin yazılmasını istedi. Efsane gibi aktarılan bir tarihi ise belgelenmediği için metne eklemedi.
+Meydandaki küçük atölyede çanı vuran hareketli parça dikkatle söküldü. Kenarında aşınmış ince bir yüzey vardı. Yeni bir parça üretmek mümkündü ama ölçüler hassas alınmalıydı. {kahraman} eski parçayı örnek alarak bir çizim hazırladı. Malzemenin özgün görünüşüne zarar vermeyecek yöntemler karşılaştırıldı. Atölye çalışanı en parlak metalin en iyi sonucu vereceğini düşündü. Ölçümler başka bir şey gösterdi: Parlaklık ses kalitesinin güvenilir göstergesi değildi; önemli olan uygun biçim, ağırlık ve temas noktasıydı. Denemelerde iki parça arasındaki fark ilk dinleyişte belirgin değildi; küçük bir kumpasla alınan ölçüler de aradaki farkın çok az olduğunu gösterdi. {kahraman} ortamın gürültüsünü azaltıp sesleri aynı koşullarda karşılaştırdı. Bir parça biraz daha yumuşak, öteki biraz daha sert ses veriyordu. Yeni parçanın eski görünüme uyması yeterli değildi; ileride bakım yapılmasını da engellememeliydi, bu yüzden montaj biçimi ayrıca değerlendirildi. Ekip acele etmeden kayıtları dinleyerek karşılaştırma yaptı.
 
 ---
 
 @omurga
 
-Meydanın yeniden düzenlendiği gün çan ilk kez saat başında çaldı. Ses, alışılmış biçimde taş sokaklardan yayıldı; yakındaki tezgâhlarda çalışanlar başlarını kaldırıp gülümsedi. {kahraman} törenin merkezinde durmadı. Bir köşede, kayıt cihazındaki son dalga görüntüsünü eski ölçümlerle karşılaştırıyordu. Tören bittiğinde bir ziyaretçi çanın parlak görünmemesine şaşırdı. {kahraman} yeni bir ürün üretmediklerini, var olan bir eserin işlevini koruduklarını anlattı. Yüzeydeki her eski iz zarar anlamına gelmiyordu. Dosyadaki fotoğraflar, onarılan bölümle dokunulmayan bölümü ayırıyordu. Gelecekte çanı inceleyecek biri neyin değiştiğini anlayabilecekti. Çanın hafızası sesinde olduğu kadar tutulan belgelerde de saklı kalacaktı. Ardından bakım dosyasını görevliye teslim etti. Dosyada çizimler, ölçüm koşulları ve yapılması gereken sonraki kontroller vardı. Meydan halkı çanın sesiyle yıllardır kurduğu bağı yeniden duyarken uzmanlığın bazen görünmeyen ayrıntıları korumak anlamına geldiğini gördü. Çan yepyeni görünmüyordu; ama tanıdık sesi yeniden berrak ve dengeli duyuluyordu.
+Yeni düzenek takıldıktan sonra meydanda kısa bir deneme yapıldı. Çanın sesi eskiye göre daha düzenliydi ama {kahraman} son kararı tek başına vermedi. Bakım ekibi, çevrede yaşayanlar ve ses ölçüm uzmanı birlikte değerlendirme yaptı. Meydana yakın oturan yaşlı bir komşu, çanın çok yüksek çalmasının dinlenmeyi güçleştirdiğini söyledi. Çanın herkes için aynı duyguyu uyandırmadığı ortaya çıktı: Kimi sesi seviyor, kimi günün belirli saatlerinde daha sessiz bir ortam istiyordu. {kahraman} bu farkı tartışma konusu yapmadı, kullanım planına dâhil etti. Ses düzeyi ölçüldü, yeniden dinlendi ve ortak bir düzen üzerinde uzlaşıldı. Çanın tarihini anlatan kısa pano için {kahraman} yalnızca doğrulanmış bilgilerin yazılmasını istedi. Efsane gibi aktarılan bir tarihi ise belgelenmediği için metne eklemedi.
+
+---
+
+@omurga
+
+Meydanın yeniden düzenlendiği gün çan ilk kez saat başında çaldı. Çocuklar çanın altında toplanıp vuruşları saydı. Ses taş sokaklara yayıldı; yakındaki tezgâhlarda çalışanlar başlarını kaldırıp gülümsedi. {kahraman} törenin ortasında durmadı. Bir köşede, kayıt cihazındaki son ses grafiğini eski ölçümlerle karşılaştırıyordu. Tören bittiğinde bir ziyaretçi çanın parlak görünmemesine şaşırdı. {kahraman}, yeni bir şey üretmediklerini, var olan eserin işlevini koruduklarını söyledi. Yüzeydeki her eski iz zarar demek değildi. Dosyadaki fotoğraflar onarılan bölümle dokunulmayan bölümü ayırıyordu; gelecekte çanı inceleyecek biri neyin değiştiğini anlayabilecekti. {kahraman} bakım dosyasını görevliye teslim etti. İçinde çizimler, ölçüm koşulları ve yapılacak sonraki kontroller vardı. Çan yepyeni görünmüyordu ama tanıdık sesi yeniden berrak ve dengeli duyuluyordu.

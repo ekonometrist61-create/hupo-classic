@@ -30,49 +30,49 @@ sorular:
     dayanak_sayfa: 1
     metin: "Yeni yürüyüş yoluyla ilgili sorun neydi?"
     secenekler:
-      - {id: A, metin: "Yolun tamamen su altında olması"}
+      - {id: A, metin: "Yolun tamamen su altında kalmış olması"}
       - {id: B, metin: "Yolun çok kısa olması"}
-      - {id: C, metin: "Bazı yerlerin dinlenme bölgesine yaklaşması"}
+      - {id: C, metin: "Yolun kuşlara fazla yaklaşması"}
       - {id: D, metin: "Yolda hiç işaret bulunmaması"}
     dogru: C
     dayanak: "Yollar insanlara doğayı izleme fırsatı veriyordu ama bazı noktalarda kuşların sakin kaldığı bölgeye fazla yaklaşılıyordu."
-    aciklama: "Metindeki \"Yollar insanlara doğayı izleme fırsatı veriyordu ama bazı noktalarda kuşların sakin kaldığı bölgeye fazla yaklaşılıyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Yollar insanlara doğayı izleme fırsatı veriyordu ama bazı noktalarda kuşların sakin kaldığı bölgeye fazla yaklaşılıyordu.\" cümlesi C seçeneğini doğrular. Yol su altında kalmamış, kısa olması sorun sayılmamış ve işaretsiz de değildi."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
     metin: "{kahraman} neden daha sakin koyu seçti?"
     secenekler:
-      - {id: A, metin: "Daha az rahatsız edilip dinlenebilmek için"}
+      - {id: A, metin: "Daha az ürkerek dinlenmek için"}
       - {id: B, metin: "Koydaki bütün taşları saymak için"}
       - {id: C, metin: "Yürüyüş yoluna yaklaşmak için"}
       - {id: D, metin: "Göçü tamamen bırakmak için"}
     dogru: A
     dayanak: "{kahraman} sürünün daha sakin bir bölgeye yönelmesini işaret etti."
-    aciklama: "Metindeki \"{kahraman} sürünün daha sakin bir bölgeye yönelmesini işaret etti.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"{kahraman} sürünün daha sakin bir bölgeye yönelmesini işaret etti.\" cümlesinden önce günün ilerleyen saatlerinde insan seslerinin arttığı yazar; sakin koy bu yüzden seçildi. Taş saymak, yürüyüş yoluna yaklaşmak ve göçü bırakmak metinde amaç değildir."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 4
     metin: "“Enerji” bu metinde hangi anlamda kullanılmıştır?"
     secenekler:
-      - {id: A, metin: "Yol levhasının boyası"}
+      - {id: A, metin: "Gözlem yolundaki levhanın parlak boyası"}
       - {id: B, metin: "Uçuş ve hareket için gereken güç"}
-      - {id: C, metin: "Suyun tuz oranı"}
+      - {id: C, metin: "Sulak alandaki suyun tuz oranı"}
       - {id: D, metin: "Kuşların tüy rengi"}
     dogru: B
     dayanak: "Tam tersine, göç sırasında doğru zamanlamayla hareket etmek enerjinin dikkatli kullanılmasını sağlıyordu."
-    aciklama: "Metindeki \"Tam tersine, göç sırasında doğru zamanlamayla hareket etmek enerjinin dikkatli kullanılmasını sağlıyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Tam tersine, göç sırasında doğru zamanlamayla hareket etmek enerjinin dikkatli kullanılmasını sağlıyordu.\" cümlesinde enerji, kuşun uçması ve hareket etmesi için gereken güçtür; metnin başında da uzun uçuşta harcanan enerjinin dinlenirken yeniden kazanılması gerektiği yazar. Levha boyası, suyun tuz oranı ve tüy rengi enerjiyle ilgili değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
     metin: "{kahraman} neden rüzgârın dinmesini bekledi?"
     secenekler:
-      - {id: A, metin: "Göç yönünü unutmak için"}
+      - {id: A, metin: "Göç yönünü zamanla unutmak için"}
       - {id: B, metin: "Kıyıyı değiştirmek için"}
       - {id: C, metin: "Sürüyü dağıtmak için"}
-      - {id: D, metin: "Güvenli ve daha uygun koşulda uçmak için"}
+      - {id: D, metin: "Uygun koşulda uçmak için"}
     dogru: D
     dayanak: "{kahraman} uçuşa geçmek için uygun koşulları beklemeyi tercih etti."
-    aciklama: "Metindeki \"{kahraman} uçuşa geçmek için uygun koşulları beklemeyi tercih etti.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"{kahraman} uçuşa geçmek için uygun koşulları beklemeyi tercih etti.\" cümlesi, turnanın sert rüzgârda uçmak yerine koşulların düzelmesini beklediğini gösterir. Yönü unutmak, kıyıyı değiştirmek ve sürüyü dağıtmak metinde yoktur; tersine sürünün birlikte kalmasına yardım edilmiştir."
 ---
 
 @omurga
@@ -101,4 +101,4 @@ Birkaç gün sonra sert bir rüzgâr başladı. {kahraman} uçuşa geçmek için
 
 @omurga
 
-Şafak sökmeye başladığında {kahraman} kanatlarını açtı. Sürü önce yavaşça yükseldi, ardından gökyüzünde uzun bir çizgi oluşturdu. Sulak alan geride kalırken kıyıdaki yeni bekleme sınırı seçiliyordu. {kahraman} orada birkaç gün geçirmişti ama bu kısa konaklama, uzun yolculuğun önemli bir parçasıydı. Uçuş başladıktan sonra sulak alanın kıvrımları geride küçüldü. {kahraman} sürünün düzenini bozmayacak bir hızda ilerledi. Bir sonraki durakta hangi koşullarla karşılaşacaklarını bilmiyordu ama önceki konaklamadan önemli bir deneyim kazanmışlardı. Dinlenmekle ilerlemek birbirinin karşıtı değildi. İyi bir yolculuk ikisini birlikte gerektiriyordu. Arkada kalan sessiz bölgenin gelecek sürüler için de korunması, bu yüzden değerliydi. Gökyüzünde uzanan çizgi başka bir durağa yöneldi. Göç eden kuşların güvenli duraklara ihtiyacı vardı; doğayı gözlemleyen insanların da mesafeyi koruyarak bu yolculuğa saygı göstermesi gerekiyordu. {kahraman} önündeki açık gökyüzüne baktı. Uçmak kadar zamanında dinlenmek de yolun bilgisiydi. Sürü uzaklaşırken kıyı sessizliğini korudu.
+Şafak sökmeye başladığında {kahraman} kanatlarını açtı. Sürü önce yavaşça yükseldi, ardından gökyüzünde uzun bir çizgi oluşturdu. Sulak alan geride kalırken kıyıdaki bekleme çizgisi ilk ışıkta uzaktan seçiliyordu. {kahraman} orada birkaç gün geçirmişti ama bu kısa konaklama, uzun yolculuğun önemli bir parçasıydı. Uçuş başladıktan sonra sulak alanın kıvrımları geride küçüldü. {kahraman} sürünün düzenini bozmayacak bir hızda ilerledi. Bir sonraki durakta hangi koşullarla karşılaşacaklarını bilmiyordu ama önceki konaklamadan önemli bir deneyim kazanmışlardı. Arkada kalan sessiz bölgenin gelecek sürüler için de korunması, bu yüzden değerliydi. Gökyüzünde uzanan çizgi başka bir durağa yöneldi. Gözlem yolundaki ziyaretçiler dürbünlerini indirip sürünün yükselişini uzaktan izledi. {kahraman} önündeki açık gökyüzüne baktı. Sürü uzaklaşırken kıyı sessizliğini korudu.

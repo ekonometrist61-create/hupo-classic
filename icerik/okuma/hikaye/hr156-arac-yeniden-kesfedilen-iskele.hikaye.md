@@ -31,36 +31,36 @@ sorular:
     metin: "Yeni rota ihtiyacı neden doğdu?"
     secenekler:
       - {id: A, metin: "Feribotun boyası döküldüğü için"}
-      - {id: B, metin: "Kıyılardan biri tamamen kapandığı için"}
+      - {id: B, metin: "Kıyılardan biri tamamen ulaşıma kapandığı için"}
       - {id: C, metin: "Bir iskelede yolcu yoğunluğu arttığı için"}
       - {id: D, metin: "Deniz haritası kaybolduğu için"}
     dogru: C
     dayanak: "Fakat yeni açılan bir yürüyüş alanı yüzünden bir iskelede yolcu yoğunluğu artmıştı."
-    aciklama: "Metindeki \"Fakat yeni açılan bir yürüyüş alanı yüzünden bir iskelede yolcu yoğunluğu artmıştı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Fakat yeni açılan bir yürüyüş alanı yüzünden bir iskelede yolcu yoğunluğu artmıştı.\" cümlesi C seçeneğini doğrular. Feribotun boyası, deniz haritası ve kıyının kapanması metinde sorun olarak geçmez."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
     metin: "Eski iskele neden hemen kullanılmadı?"
     secenekler:
-      - {id: A, metin: "Yolcu kullanımına güvenli olup olmadığı bilinmediği için"}
+      - {id: A, metin: "Güvenliği henüz bilinmediği için"}
       - {id: B, metin: "Feribotun pencereleri küçük olduğu için"}
       - {id: C, metin: "Yeni tabela renkli olmadığı için"}
-      - {id: D, metin: "Suyun rengi farklı olduğu için"}
+      - {id: D, metin: "Suyun rengi diğer iskelelerden farklı olduğu için"}
     dogru: A
     dayanak: "Haritada yalnızca bakım alanı olarak işaretlenmişti; yolcu kullanımına uygun olup olmadığı bilinmiyordu."
-    aciklama: "Metindeki \"Haritada yalnızca bakım alanı olarak işaretlenmişti; yolcu kullanımına uygun olup olmadığı bilinmiyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Haritada yalnızca bakım alanı olarak işaretlenmişti; yolcu kullanımına uygun olup olmadığı bilinmiyordu.\" cümlesi, iskelenin yolcu için güvenli olup olmadığının belli olmadığını gösterir; bu yüzden uzman onayı beklendi. Pencerelerin boyu, tabelanın rengi ve suyun rengi metinde nedenler arasında yoktur."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 2
     metin: "“Menzil” bu hikâyede ne demektir?"
     secenekler:
-      - {id: A, metin: "Bir iskelede bekleyen kişi sayısı"}
+      - {id: A, metin: "Bir iskelede aynı anda bekleyen kişi sayısı"}
       - {id: B, metin: "Enerjiyle gidilebilecek güvenli uzaklık"}
       - {id: C, metin: "Denizdeki dalgaların yüksekliği"}
       - {id: D, metin: "Feribotun içindeki koltuk sayısı"}
     dogru: B
     dayanak: "Menzil, bir aracın mevcut enerjiyle güvenle gidebileceği uzaklıktı."
-    aciklama: "Metindeki \"Menzil, bir aracın mevcut enerjiyle güvenle gidebileceği uzaklıktı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Menzil, bir aracın mevcut enerjiyle güvenle gidebileceği uzaklıktı.\" cümlesi, menzilin tanımını verir. Bekleyen kişi sayısı yoğunluğu, dalga yüksekliği ve koltuk sayısı menzille ilgili değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
@@ -69,15 +69,15 @@ sorular:
       - {id: A, metin: "Sadece yeni levha hazırlamak için"}
       - {id: B, metin: "Yolculuğu zorlaştırmak için"}
       - {id: C, metin: "Eski rotayı gizlemek için"}
-      - {id: D, metin: "Kararı eksiksiz verilere dayandırmak için"}
+      - {id: D, metin: "Kararı verilere dayandırmak için"}
     dogru: D
     dayanak: "Ekip yalnızca başarılı örnekleri değil, gecikmeleri de kaydetti."
-    aciklama: "Metindeki \"Ekip yalnızca başarılı örnekleri değil, gecikmeleri de kaydetti.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Ekip yalnızca başarılı örnekleri değil, gecikmeleri de kaydetti.\" cümlesi, ekibin kararını yalnızca iyi sonuçlara değil tüm verilere dayandırmak istediğini gösterir. Levha hazırlamak, yolculuğu zorlaştırmak ve eski rotayı gizlemek metinde gecikme kaydının amacı değildir."
 ---
 
 @omurga
 
-{kahraman} iki kıyı arasında yolcu taşıyan elektrikli bir feribottu. Günlük rotası kısa ve sakindi. Fakat yeni açılan bir yürüyüş alanı yüzünden bir iskelede yolcu yoğunluğu artmıştı. Herkes aynı feribota binmek isteyince bekleme süresi uzuyordu. Sabah ilk seferin kayıtlarında bekleme süresi özellikle iki saatte artıyordu. {kahraman} bu yoğunluk verisinin, yeni durak kararını nasıl etkilediğini anlamak istedi. Sakin saatlerde ek iskeleye uğramak yolcuları pek rahatlatmayacak, gereksiz enerji kullanacaktı. İşletme ekibi sayıları günlere göre de karşılaştırdı. {kahraman} yeni bir güzergâh düşünmeye başladı. Ancak hangi iskeleye uğrayacağına yalnızca kendi isteğiyle karar veremezdi. Kıyı işletmesinin güvenlik, zaman ve enerji planına uyması gerekiyordu. Feribotun kontrol sisteminde duraklardaki bekleme bilgileri toplanıyordu. Bu bilgiler sayesinde kalabalığın yalnızca hangi saatlerde oluştuğu değil, başka iskelelerin nasıl kullanıldığı da görülebilecekti.
+{kahraman} iki kıyı arasında yolcu taşıyan elektrikli bir feribottu. Günlük rotası kısa ve sakindi. Fakat yeni açılan bir yürüyüş alanı yüzünden bir iskelede yolcu yoğunluğu artmıştı. Herkes aynı feribota binmek isteyince bekleme süresi uzuyordu. Kayıtlara göre bekleme süresi sabah ilk seferde ve akşamüstü özellikle uzuyordu. {kahraman} bu yoğunluk verisinin, yeni durak kararını nasıl etkilediğini anlamak istedi. Sakin saatlerde ek iskeleye uğramak yolcuları pek rahatlatmayacak, gereksiz enerji kullanacaktı. İşletme ekibi sayıları günlere göre de karşılaştırdı. {kahraman} yeni bir güzergâh düşünmeye başladı. Ancak hangi iskeleye uğrayacağına yalnızca kendi isteğiyle karar veremezdi. Kıyı işletmesinin güvenlik, zaman ve enerji planına uyması gerekiyordu. Feribotun kontrol sisteminde duraklardaki bekleme bilgileri toplanıyordu. Bu bilgiler sayesinde kalabalığın yalnızca hangi saatlerde oluştuğu değil, başka iskelelerin nasıl kullanıldığı da görülebilecekti.
 
 ---
 
@@ -101,4 +101,4 @@ Deneme günü {kahraman} yeni iskeleye güvenli hızla yaklaştı. İskele göre
 
 @omurga
 
-Bir ay sonra işletme yeni rotanın verilerini değerlendirdi. Yoğun saatlerdeki ek durak yararlı bulunmuş, sakin saatlerde kullanılmamasına karar verilmişti. {kahraman} böylece boş yere uzun yol gitmeyecekti. Enerji tasarrufu yapılırken yolcuların ihtiyacı da karşılanıyordu. Aylık değerlendirme toplantısında bir görevli bütün gün aynı rotayı kullanmayı önerdi. Başka bir görevli sakin saat verilerini gösterince karar yeniden ele alındı. {kahraman} koşullara göre değişen planın daha uygun olduğunu gördü. Kullanılmayan enerji, ilerideki seferler için korunacaktı. Kıyı yaşamı da gereksiz hareketle meşgul edilmeyecekti. Kıyı boyunca yürüyenler artık iki farklı iskele seçeneğini görebiliyordu. {kahraman} akşam son seferinden dönerken suyun üzerindeki ışıkları izledi. İyi bir rota yalnızca kısa olan değildi; doğru zamanda doğru yere uğrayandı. Eski harita tamamen atılmadı; üzerine yeni kullanım saatleri dikkatle eklendi.
+Bir ay sonra işletme yeni rotanın verilerini değerlendirdi. Yoğun saatlerdeki ek durak yararlı bulunmuş, sakin saatlerde kullanılmamasına karar verilmişti. {kahraman} böylece boş yere uzun yol gitmeyecekti. Enerji tasarrufu yapılırken yolcuların ihtiyacı da karşılanıyordu. Aylık değerlendirme toplantısında bir görevli bütün gün aynı rotayı kullanmayı önerdi. Başka bir görevli sakin saat verilerini gösterince karar yeniden ele alındı. {kahraman} koşullara göre değişen planın daha uygun olduğunu gördü. Kullanılmayan enerji, ilerideki seferler için korunacaktı. Kıyı yaşamı da gereksiz hareketle meşgul edilmeyecekti. Kıyı boyunca yürüyenler artık iki farklı iskele seçeneğini görebiliyordu. {kahraman} akşam son seferinden dönerken suyun üzerindeki ışıkları izledi. Rota artık günün saatine göre değişiyordu: yoğun saatlerde iki iskeleye, sakin saatlerde yalnızca birine uğranıyordu. Eski harita tamamen atılmadı; üzerine yeni kullanım saatleri dikkatle eklendi.

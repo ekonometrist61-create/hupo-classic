@@ -42,25 +42,25 @@ sorular:
     dayanak_sayfa: 2
     metin: "İnce kumun bulunması neden önemliydi?"
     secenekler:
-      - {id: A, metin: "Bilet fiyatını belirlediği için"}
-      - {id: B, metin: "Sarsıntıyla ilişkili bir etken olabileceği için"}
-      - {id: C, metin: "Peronu büyüttüğü için"}
+      - {id: A, metin: "Bilet fiyatını ve seferleri belirlediği için"}
+      - {id: B, metin: "Sarsıntıyla ilgili olabileceği için"}
+      - {id: C, metin: "Peronu büyütüp genişlettiği için"}
       - {id: D, metin: "Rayın rengini değiştirdiği için"}
     dogru: B
     dayanak: "Fakat yağmurdan sonra bir noktada ince kum biriktiği fark edildi."
-    aciklama: "Metindeki \"Fakat yağmurdan sonra bir noktada ince kum biriktiği fark edildi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Fakat yağmurdan sonra bir noktada ince kum biriktiği fark edildi.\" cümlesi, kumun sarsıntının olası bir etkeni olarak incelendiğini gösterir; metinde değişikliğin kumun arttığı günlerde belirginleştiği de yazar. Bilet fiyatı, peronun boyutu ve rayın rengi kumla ilişkilendirilmez."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
     metin: "“Birikinti” ifadesi bağlamda neyi anlatır?"
     secenekler:
-      - {id: A, metin: "Hız göstergesini"}
-      - {id: B, metin: "Yeni bir vagonu"}
+      - {id: A, metin: "Trenin hız göstergesindeki ibreyi"}
+      - {id: B, metin: "Hatta yeni eklenen bir vagonu"}
       - {id: C, metin: "Bir noktada toplanan maddeyi"}
-      - {id: D, metin: "İstasyon tabelasını"}
+      - {id: D, metin: "İstasyonun girişindeki büyük tabelayı"}
     dogru: C
     dayanak: "Ray çevresindeki birikinti temizlendi, drenaj kontrol edildi."
-    aciklama: "Metindeki \"Ray çevresindeki birikinti temizlendi, drenaj kontrol edildi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Ray çevresindeki birikinti temizlendi, drenaj kontrol edildi.\" cümlesinde birikinti, rayın çevresinde toplanıp temizlenen maddedir; önceki bölümde biriken ince kum da bunu destekler. Hız göstergesi, vagon ve tabela temizlenen şeyler değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
@@ -69,21 +69,21 @@ sorular:
       - {id: A, metin: "Gecikmeyi artırmak için"}
       - {id: B, metin: "Treni başka yere satmak için"}
       - {id: C, metin: "Bütün istasyonları kapatmak için"}
-      - {id: D, metin: "Güvenli kullanımın doğrulanması için"}
+      - {id: D, metin: "Güvenliği doğrulamak için"}
     dogru: D
     dayanak: "Test sonuçları uzman ekip tarafından değerlendirildi ve hat ancak uygun görülünce açıldı."
-    aciklama: "Metindeki \"Test sonuçları uzman ekip tarafından değerlendirildi ve hat ancak uygun görülünce açıldı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Test sonuçları uzman ekip tarafından değerlendirildi ve hat ancak uygun görülünce açıldı.\" cümlesi, hattın güvenliği doğrulanmadan açılmadığını gösterir. Gecikmeyi artırmak, treni satmak ya da istasyonları kapatmak metinde hiç amaç olarak geçmez."
 ---
 
 @omurga
 
-{kahraman} dağ eteklerinden geçen bir yolcu treniydi. Her seferinde tüneli geçtikten sonra kısa bir sarsıntı hissediyordu. Kontrol sistemleri normal çalışsa da bu değişikliğin anlaşılması gerekiyordu. {kahraman} bakım merkezine girdiğinde teknisyenler yeni kayıtları inceledi. İstasyon görevlisi gecikmeye ilişkin duyuruyu güncelledi. {kahraman} seferlerin değişmesinin yolcuları etkilediğini biliyordu. Ancak bakım kararı belirsiz bir söylentiye değil, kayıtlarla doğrulanan bir inceleme ihtiyacına dayanıyordu. Bekleyenlere alternatif saatler sunuldu. Böylece teknik önlem, insanların planlarına saygılı biçimde uygulanmış oldu. Sarsıntı yalnızca bir virajdan çıkarken beliriyordu. Tren, bu düzensizliğe alışıp görmezden gelmek istemiyordu. Yolcuların güvenliği için küçük bir farklılığın bile dikkatle değerlendirilmesi gerektiğini biliyordu. Bakım ekibi ölçümleri tamamlayana kadar planlanan sefer değiştirildi. Bu karar bazı yolcuları bekletse de güvenliğin öncelikli olduğu açıklandı.
+{kahraman} dağ eteklerinden geçen bir yolcu treniydi. Her seferinde tüneli geçtikten sonra kısa bir sarsıntı hissediyordu. Sarsıntı yalnızca bir virajdan çıkarken beliriyordu. Kontrol sistemleri normal çalışsa da bu değişikliğin anlaşılması gerekiyordu. {kahraman} bakım merkezine girdiğinde teknisyenler yeni kayıtları inceledi. İstasyon görevlisi gecikmeye ilişkin duyuruyu güncelledi, bekleyenlere alternatif saatler sunuldu. {kahraman} seferlerin değişmesinin yolcuları etkilediğini biliyordu. Yine de bakım kararı belirsiz bir söylentiye değil, kayıtlarla doğrulanan bir inceleme ihtiyacına dayanıyordu. Küçük bir farklılığı görmezden gelmek, yolcuların güvenliğini şansa bırakmak olurdu. Bakım ekibi ölçümleri tamamlayana kadar planlanan sefer değiştirildi. Bu karar bazı yolcuları bekletti ama gerekçesi duyuruda açıklandı.
 
 ---
 
 @omurga
 
-Rayların bulunduğu bölümde uzman ekip çalıştı. İki yüzey birbirine değdiğinde oluşan sürtünme, trenin hareketini etkileyebiliyordu. Ekip, tekerlek ve ray temasındaki ölçümleri kontrol etti. Ardından kayıt cihazındaki titreşim bilgilerini dinamik bir grafik üzerinde inceledi. Tekerlek yüzeyindeki izler incelenirken uzmanlar bakım geçmişine de baktı. {kahraman} her rayda aynı sesin oluşmadığını anımsıyordu. Bu ayrıntı, sorunun bütün hatta yayılan bir bozukluk olmayabileceğini düşündürdü. Ekip farklı olasılıkları listeden birer birer kontrol etti; henüz kanıtlanmamış bir tahmini sonuç diye yazmadı. İlk incelemede raylarda büyük bir bozukluk görünmüyordu. Fakat yağmurdan sonra bir noktada ince kum biriktiği fark edildi. {kahraman} aynı bölgeden geçen önceki seferlerin kayıtlarını anımsıyordu. Değişiklik, kumun artmaya başladığı günlerde belirginleşmişti. Teknisyenler bu bağlantıyı not etti ama başka olasılıkları da incelemeye devam etti.
+Rayların bulunduğu bölümde uzman ekip çalıştı. İki yüzey birbirine değdiğinde oluşan sürtünme, trenin hareketini etkileyebiliyordu. Ekip, tekerlek ve ray temasındaki ölçümleri kontrol etti. Ardından kayıt cihazındaki titreşim bilgilerini bir grafik üzerinde inceledi. Tekerlek yüzeyindeki izler incelenirken uzmanlar bakım geçmişine de baktı. {kahraman} her rayda aynı sesin oluşmadığını anımsıyordu. Bu ayrıntı, sorunun bütün hatta yayılan bir bozukluk olmayabileceğini düşündürdü. Ekip farklı olasılıkları listeden birer birer kontrol etti; henüz kanıtlanmamış bir tahmini sonuç diye yazmadı. İlk incelemede raylarda büyük bir bozukluk görünmüyordu. Fakat yağmurdan sonra bir noktada ince kum biriktiği fark edildi. {kahraman} aynı bölgeden geçen önceki seferlerin kayıtlarını anımsıyordu. Değişiklik, kumun artmaya başladığı günlerde belirginleşmişti. Teknisyenler bu bağlantıyı not etti ama başka olasılıkları da incelemeye devam etti.
 
 ---
 
@@ -95,10 +95,10 @@ Hattın ilgili bölümü yetkililerce güvenli çalışmaya kapatıldı. Ray çe
 
 @omurga
 
-Gerekli bakım tamamlanınca tekrar deneme yapıldı. Ray boyunca kontrol noktaları işaretlenmişti. Tren her birinden geçerken hareket verileri kaydedildi. Test sonuçları uzman ekip tarafından değerlendirildi ve hat ancak uygun görülünce açıldı. Peronun kenarında bekleyen yolculara yaklaşma çizgisinin gerisinde durmaları hatırlatıldı. {kahraman} duraklamanın ve yeniden hareket etmenin de yolculuğun önemli parçaları olduğunu düşünüyordu. Güvenli bir hat tek başına yeterli değildi; istasyondaki açık işaretler ve düzenli duyurular da yolculuğun tamamını destekliyordu. Bu ayrıntılar bakım notlarından bağımsız değildi. {kahraman} istasyona yaklaşırken peronun aydınlık çizgisini gördü. Peron, yolcuların tren beklediği yükseltilmiş bölümdü. Yolcular yeniden düzenlenen sefer saatini tabeladan öğrendi. Gecikme için açıklama yapılmıştı. Yolculuk sırasında saklanan bir sorun kalmamış olması, herkesi rahatlattı.
+Gerekli bakım tamamlanınca tekrar deneme yapıldı. Ray boyunca kontrol noktaları işaretlenmişti. Tren her birinden geçerken hareket verileri kaydedildi. Test sonuçları uzman ekip tarafından değerlendirildi ve hat ancak uygun görülünce açıldı. Peronun kenarında bekleyen yolculara yaklaşma çizgisinin gerisinde durmaları hatırlatıldı. {kahraman} duraklamanın ve yeniden hareket etmenin de yolculuğun önemli parçaları olduğunu düşünüyordu. Güvenli bir hat tek başına yeterli değildi; istasyondaki açık işaretler ve düzenli duyurular da yolculuğun tamamını destekliyordu. {kahraman} istasyona yaklaşırken peronun aydınlık çizgisini gördü. Peron, yolcuların tren beklediği yükseltilmiş bölümdü. Yolcular yeniden düzenlenen sefer saatini tabeladan öğrendi. Gecikme için açıklama yapılmıştı. Yolculuk sırasında saklanan bir sorun kalmamış olması, herkesi rahatlattı.
 
 ---
 
 @omurga
 
-Sonraki hafta {kahraman} aynı virajı geçerken sarsıntıyı hissetmedi. Ama bakım kayıtlarının düzenli tutulması devam etti. Tren, her şey yolundayken yapılan kontrollerin de önemli olduğunu biliyordu. İstasyonda bir çocuk pencerenin ardından dağları gösterdi. Dağ manzarası vagondaki pencerelerden birer birer geçiyordu. {kahraman} eski sarsıntıyı artık hissetmemekle yetinmedi; düzenli kontrollerin sürmesini değerli buldu. Çünkü bir sorun ortadan kalktığında ona yol açan koşulları hatırlamak gelecekteki işleri kolaylaştırırdı. İstasyonda tutulan dosya bunun için hazırlanmıştı. Yolcular sessizce yolculuğuna devam etti. {kahraman} raylardan yükselen düzenli sesi dinledi. Artık bu ses ona yalnızca yolculuğu değil, dikkatli çalışmanın sonucunu da hatırlatıyordu. Bir trenin gücü hızlı gitmesinde değil, yolcularını güvenli biçimde hedefe ulaştırmasındaydı. Dağlar geride kalırken yol devam etti.
+Sonraki hafta {kahraman} aynı virajı geçerken sarsıntıyı hissetmedi. Ama bakım kayıtlarının düzenli tutulması devam etti. Tren, her şey yolundayken yapılan kontrollerin de önemli olduğunu biliyordu. İstasyonda bir çocuk pencerenin ardından dağları gösterdi. Dağ manzarası vagondaki pencerelerden birer birer geçiyordu. {kahraman} eski sarsıntıyı artık hissetmemekle yetinmedi; düzenli kontrollerin sürmesini değerli buldu. Çünkü bir sorun ortadan kalktığında ona yol açan koşulları hatırlamak gelecekteki işleri kolaylaştırırdı. İstasyonda tutulan dosya bunun için hazırlanmıştı. Yolcular sessizce yolculuğuna devam etti. {kahraman} raylardan yükselen düzenli sesi dinledi. Ses düzgündü ve ritmi bir an bile aksamıyordu. Dağlar geride kalırken yol devam etti.

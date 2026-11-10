@@ -36,31 +36,31 @@ sorular:
       - {id: D, metin: "Bahçe duvarı"}
     dogru: B
     dayanak: "Avluya sonradan yapılan yüksek saçak, güneşin gelişini bazı saatlerde engelliyordu."
-    aciklama: "Metindeki \"Avluya sonradan yapılan yüksek saçak, güneşin gelişini bazı saatlerde engelliyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Sonradan yapılan yüksek saçak güneşi bazı saatlerde engelliyordu. Merdiven, cam kapı ve bahçe duvarı metinde geçmez."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
     metin: "Eski çizim neden tek başına yeterli görülmedi?"
     secenekler:
-      - {id: A, metin: "Çizimde hiç taş bulunmuyordu"}
-      - {id: B, metin: "Çizim çok renksizdi"}
-      - {id: C, metin: "Hangi mevsime ait olduğu bilinmiyordu"}
-      - {id: D, metin: "Gölgeler her zaman aynıydı"}
+      - {id: A, metin: "Çizimde hiçbir taş bulunmadığı için"}
+      - {id: B, metin: "Çizim çok renksiz olduğu için"}
+      - {id: C, metin: "Mevsimi belli olmadığı için"}
+      - {id: D, metin: "Gölgeler her zaman aynı olduğu için"}
     dogru: C
     dayanak: "Ancak çizimin hangi mevsimde hazırlandığı belli değildi."
-    aciklama: "Metindeki \"Ancak çizimin hangi mevsimde hazırlandığı belli değildi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Gölge mevsime göre değiştiği için çizimin mevsimi bilinmeyince tek başına yeterli sayılmadı. Taş, renk ve gölgelerin hep aynı olması gerekçe değildir; gölgeler değişir."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 2
-    metin: "“Açı” bu metinde neyi anlatıyor?"
+    metin: "“Eski bir çizimde çubuğun açısı açıkça gösterilmişti.” cümlesindeki “açı” neyi anlatıyor?"
     secenekler:
-      - {id: A, metin: "Çubuğun duruş yönüne ilişkin ölçüyü"}
-      - {id: B, metin: "Avlunun giriş ücretini"}
-      - {id: C, metin: "Güneşin parlaklığını"}
-      - {id: D, metin: "Günlük ziyaretçi sayısını"}
+      - {id: A, metin: "Çubuğun duruşuna ilişkin ölçüyü"}
+      - {id: B, metin: "Avlunun giriş ücretine ilişkin tutarı"}
+      - {id: C, metin: "Güneşin parlaklığına ilişkin ölçüyü"}
+      - {id: D, metin: "Günlük ziyaretçi sayısına ilişkin ölçüyü"}
     dogru: A
     dayanak: "Eski bir çizimde çubuğun açısı açıkça gösterilmişti; bu çizim güvenilir bir referans sağlayabilirdi."
-    aciklama: "Metindeki \"Eski bir çizimde çubuğun açısı açıkça gösterilmişti; bu çizim güvenilir bir referans sağlayabilirdi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Çizimde çubuğun nasıl durduğunu gösteren ölçü yer alır; açı budur. Ücret, parlaklık ve ziyaretçi sayısı çubuğun açısı değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
@@ -69,36 +69,36 @@ sorular:
       - {id: A, metin: "Daha uzun panolar hazırlamak için"}
       - {id: B, metin: "Rakamları tamamen silmek için"}
       - {id: C, metin: "Saati başka hana taşımak için"}
-      - {id: D, metin: "Sonucun güvenilirliğini sınamak için"}
+      - {id: D, metin: "Sonucun doğruluğunu sınamak için"}
     dogru: D
     dayanak: "Yine de farklı bir hava koşulunda ölçüm yapmadan işi tamamlanmış saymadı."
-    aciklama: "Metindeki \"Yine de farklı bir hava koşulunda ölçüm yapmadan işi tamamlanmış saymadı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Tek hava koşulundaki sonuç yetmediği için ölçüm farklı koşulda tekrarlandı; amaç doğruluğu sınamaktı. Pano uzatmak, rakamları silmek ya da saati taşımak amaç değildi."
 ---
 
 @omurga
 
-Taş hanın avlusundaki güneş saati uzun zamandır doğru vakti göstermiyordu. Han, ziyaretçilerin eski ticaret yollarını tanıdığı küçük bir kültür alanına dönüştürülmüştü. Zaman ölçüm sistemleri üzerinde çalışan {kahraman}, saati incelemesi için davet edildi. İlk bakışta metal çubuğun hafifçe eğildiği görülüyordu. Avlunun taş duvarında geçmiş yıllardan kalma küçük çizikler vardı. Ziyaretçiler bu çizikleri rastgele oluşmuş sanıyordu. {kahraman} çiziklerin gerçekten saatle ilgili olup olmadığını incelemeden kesin konuşmadı. Yeni yapılan saçakların gölgeyi hangi saatlerde değiştirdiğini gösteren fotoğraflar çekildi. Böylece aynı avlunun farklı zamanlardaki görünüşü kayda geçti. Kültür alanındaki rehberler, bundan sonra ziyaretçilere yalnızca sonuçları değil, nasıl araştırıldığını da anlatabileceklerdi. Fakat sorun yalnızca bundan kaynaklanmayabilirdi. Avluya sonradan yapılan yüksek saçak, güneşin gelişini bazı saatlerde engelliyordu. {kahraman} eski fotoğrafları, avlunun yönünü ve gölge izlerini birlikte değerlendirmeye karar verdi. Ziyaretçilerden biri saatin üzerindeki rakamları yeni bir renkle boyamayı önerdi. {kahraman} önce mekanizmayı anlamadan görünüşe müdahale etmeye gerek olmadığını söyledi.
-
----
-
-@omurga
-
-Sabah boyunca gölge çizgisi izlendi. Güneşin konumu değiştikçe çubuğun gölgesi de taş zeminde yer değiştiriyordu. {kahraman} bu hareketi belirli aralıklarla işaretleyip bir çizelgeye yazdı. Eski bir çizimde çubuğun açısı açıkça gösterilmişti; bu çizim güvenilir bir referans sağlayabilirdi. Ölçüm çizelgesine güneşli ve bulutlu saatler ayrı işaretlendi. {kahraman} aynı çizginin her gün aynı biçimde görünmeyebileceğini göstermek istiyordu. Avlunun yönü, mevsim ve ışığın geliş açısı birlikte ele alındı. Bir görevli, eski çizimin üzerine yeni çizgiler eklemeyi önerdi. {kahraman} orijinal belgeyi değiştirmek yerine onun kopyası üzerinde çalışmayı seçti. Böylece eski çizim korunacak, yeni yorumlar da anlaşılır biçimde gösterilebilecekti. Ancak çizimin hangi mevsimde hazırlandığı belli değildi. Bu nedenle eski kaydı tek başına yeterli saymadı. Farklı saatlerde yapılan ölçümlerle çizim arasında tutarlılık aradı. Avludaki görevli, birkaç saatte her şeyin çözüleceğini sanıyordu. {kahraman} çalışma yöntemini anlattıkça neden birkaç güne ihtiyaç duyulduğu daha anlaşılır oldu.
+Taş hanın avlusundaki güneş saati uzun zamandır doğru vakti göstermiyordu. Han, ziyaretçilerin eski ticaret yollarını tanıdığı küçük bir kültür alanına dönüştürülmüştü. Han, sabahtan akşama kadar gezi gruplarına açıktı ve güneş saati her grubun ilk durağıydı. Zaman ölçüm sistemleri üzerinde çalışan {kahraman}, saati incelemeye çağrıldı. İlk bakışta metal çubuğun hafifçe eğildiği görülüyordu. Avlunun taş duvarında geçmiş yıllardan kalma küçük çizikler de vardı; ziyaretçiler onları rastgele sanıyordu. {kahraman}, çiziklerin saatle ilgili olup olmadığını incelemeden kesin konuşmadı. Avluya sonradan yapılan yüksek saçak, güneşin gelişini bazı saatlerde engelliyordu. Bu yüzden aynı avlunun farklı saatlerdeki görünüşü fotoğraflandı ve eski fotoğraflar, avlunun yönü ve gölge izleriyle birlikte değerlendirildi. Ziyaretçilerden biri saatin rakamlarını yeni bir renkle boyamayı önerdi. {kahraman}, mekanizma anlaşılmadan görünüşe dokunmanın gereksiz olduğunu söyledi.
 
 ---
 
 @omurga
 
-İkinci gün bir görevli çubuğu elle düzeltmeye kalkıştı. {kahraman} durmasını rica etti; eski metal zorlanırsa zarar görebilirdi. Önce koruyucu destek hazırlanmalı, ardından uygun işlem belirlenmeliydi. Ekip, güneşin farklı zamanlardaki gölge yönlerini yeniden çizdi. Metal çubuğun destek noktasında eskiden yapılmış bir onarım izi vardı. Ekip bu izin işlevi etkileyip etkilemediğini kontrol etti. {kahraman} eski parçanın ölçülerini yazarken yalnızca uzunluğuna değil, yönüne ve bağlantı biçimine de dikkat etti. Yanlış bir hareket, düzeltilmeye çalışılan sorunu büyütebilirdi. Koruyucu malzeme hazırlandıktan sonra kontrollü işlem yapıldı. Ziyaretçilere avlunun bir bölümü geçici olarak kapatıldı; güvenli açıklıklar işaretlendi. Çubuğun eğikliği ile saçak gölgesinin etkileri ayrı ayrı incelendi. Bazı saatlerde yanlış görünen değerlerin bir kısmı, aslında güneş saatinin çalışma biçiminin yanlış yorumlanmasından kaynaklanıyordu. {kahraman} açıklama panosuna güneş saatinin bugünkü saatlerle her an birebir aynı sonucu vermeyebileceğini de yazdı. Gerçeği basitleştirmek başka, yanlış aktarmak başkaydı.
+Sabah boyunca gölge çizgisi izlendi. Güneşin konumu değiştikçe çubuğun gölgesi de taş zeminde yer değiştiriyordu; sabahın erken saatlerinde uzun, öğleye doğru kısa görünüyordu. {kahraman} bu hareketi belirli aralıklarla işaretleyip çizelgeye yazdı. Güneşli ve bulutlu saatler ayrı işaretlendi. Eski bir çizimde çubuğun açısı açıkça gösterilmişti; bu çizim güvenilir bir referans sağlayabilirdi. Ancak çizimin hangi mevsimde hazırlandığı belli değildi. Gölgenin uzunluğu ve yönü mevsime göre değişirdi, bu yüzden eski kaydı tek başına yeterli saymadı. Bir görevli eski çizimin üzerine yeni çizgiler eklemeyi önerdi. {kahraman} orijinal belgeyi değiştirmek yerine kopyası üzerinde çalıştı; eski çizim korunacak, yeni yorumlar da ayrı gösterilecekti. Farklı saatlerdeki ölçümlerle çizim arasında tutarlılık aradı. Avludaki görevli birkaç saatte her şeyin çözüleceğini sanıyordu. {kahraman} yöntemini anlattıkça neden birkaç gün gerektiği daha iyi anlaşıldı.
 
 ---
 
 @omurga
 
-Çubuk uzman kontrolünde uygun konuma getirildi. Yeni saçak için ise tüm yapıyı değiştirmeye gerek kalmadı; aydınlatmayı etkileyen küçük bir bölüm yeniden düzenlendi. {kahraman} ertesi gün aynı saatlerde tekrar ölçüm yaptı. Sonuçlar önceki çizelgeyle karşılaştırıldığında belirgin iyileşme görüldü. Hava bir gün aniden bulutlandı ve gölge çizgisi kayboldu. {kahraman} bu durumu başarısızlık saymadı. Araç, güneş ışığı olmadan çalışamazdı; bu sınır onun tasarımının parçasıydı. Ekip o gün diğer ölçüm kayıtlarını düzenledi. Önceki denemelerde eksik görülen saatleri listeleyip uygun hava için yeni gözlem zamanı belirledi. Sabırlı çalışmak her gün aynı işi yapmak değil, koşullara göre doğru işi seçmekti. Yine de farklı bir hava koşulunda ölçüm yapmadan işi tamamlanmış saymadı. Hanın avlusunu gezenler her gün yeni işaretler görüyordu. Bir ziyaretçi, “Bu kadar küçük gölge için ne çok uğraştınız,” dedi. {kahraman} bir çizgiye bakarak zaman okumanın, uzun yılların bilgisiyle mümkün olduğunu hatırlattı.
+İkinci gün bir görevli çubuğu elle düzeltmeye kalktı. {kahraman} durmasını rica etti; eski metal zorlanırsa zarar görebilirdi. Önce koruyucu bir destek hazırlanmalı, sonra uygun işlem belirlenmeliydi. Çubuğun destek noktasında eskiden yapılmış bir onarım izi vardı; ekip bu izin işlevi etkileyip etkilemediğini kontrol etti. {kahraman} eski parçanın ölçülerini yazarken yalnızca uzunluğuna değil, yönüne ve bağlantı biçimine de baktı. Avlunun bir bölümü ziyaretçilere geçici olarak kapatıldı, güvenli geçişler işaretlendi. Taşlar ısındıkça ekip gölgeye çekilip notlarını düzenledi. Çubuğun eğikliği ile saçağın gölgesi ayrı ayrı incelendi. Bazı saatlerde yanlış görünen değerlerin bir kısmının, güneş saatinin çalışma biçiminin yanlış yorumlanmasından geldiği anlaşıldı. {kahraman} açıklama panosuna, güneş saatinin bugünkü saatlerle her an birebir aynı sonucu vermeyebileceğini de yazdı. Gerçeği basitleştirmek başka, yanlış aktarmak başkaydı.
 
 ---
 
 @omurga
 
-Son gün avlunun taş zemini temizlendi, ölçüm notları arşive bırakıldı. Güneş ışığı çubuğa vurunca dar bir gölge eski çizgiye uzandı. Çevrede toplananlar şaşkınlıkla baktı. Tanıtım panosuna saatin nasıl okunacağını gösteren kısa bir örnek eklendi. Bir ziyaretçi önce kendi kol saatine, sonra taş zemindeki çizgiye baktı. Aradaki farkı görünce bunun bozulma anlamına gelmediğini öğrendi. {kahraman} panodaki açıklamanın yanıltıcı olmaması için son kez kontrol yaptı. Çocuğuyla gezen bir ziyaretçi, gölgeyi birlikte izleyebilecekleri bir noktada durdu. Böylece eser sadece bakılan değil, merak edilip anlaşılmaya çalışılan bir nesneye dönüştü. {kahraman} çalışmanın kendisini anlatan kısa bir kart hazırladı: “Zamanı göstermek için önce doğru bakmak gerekir.” Kartın yanına ölçümlerin tarihleri de yazılmıştı. Ziyaretçiler artık güneş saatinin yalnızca güzel bir taş eser olmadığını, dikkatli gözleme dayanan bir araç olduğunu biliyordu. Hanın sessiz avlusunda hareket eden ince gölge, sabırla biriken bilginin izini taşımaya devam etti.
+Çubuk, uzman kontrolünde uygun konuma getirildi. Saçağın tamamını değiştirmek gerekmedi; gölgeyi etkileyen küçük bir bölüm yeniden düzenlendi. {kahraman} ertesi gün aynı saatlerde ölçümü tekrarladı; ölçümler farklı günlerde aynı saatte yinelendi ve sonuçlar önceki çizelgeye göre belirgin biçimde düzeldi. Bir gün hava aniden bulutlandı, gölge çizgisi kayboldu. {kahraman} bunu başarısızlık saymadı: Güneş saati ışık olmadan çalışamazdı, bu sınır aracın doğasındaydı. Ekip o gün diğer kayıtları düzenledi, eksik görülen saatleri listeledi ve uygun hava için yeni gözlem zamanı belirledi. Yine de farklı bir hava koşulunda ölçüm yapmadan işi tamamlanmış saymadı. Bir ziyaretçi, “Bu kadar küçük bir gölge için ne çok uğraştınız,” dedi. {kahraman} bir çizgiye bakarak zaman okumanın uzun yılların bilgisine dayandığını hatırlattı.
+
+---
+
+@omurga
+
+Son gün avlunun taş zemini temizlendi, ölçüm notları arşive kaldırıldı. Güneş ışığı çubuğa vurunca dar bir gölge eski çizgiye uzandı. Çevrede toplananlar şaşkınlıkla baktı. Panoya saatin nasıl okunacağını gösteren kısa bir örnek eklendi. Bir ziyaretçi önce kol saatine, sonra taş zemindeki çizgiye baktı; aradaki farkın bozulma anlamına gelmediğini öğrendi. {kahraman}, panodaki açıklamanın yanıltıcı olmaması için son kez kontrol yaptı. Çocuğuyla gezen bir ziyaretçi gölgeyi birlikte izleyebilecekleri bir noktada durdu. {kahraman} çalışmayı anlatan kısa bir kart hazırladı: “Zamanı göstermek için önce doğru bakmak gerekir.” Kartın yanına ölçümlerin tarihleri yazıldı. Akşama doğru avludan geçen bir rehber, panodaki örneği ziyaretçilere yüksek sesle okudu. Hanın sessiz avlusunda hareket eden ince gölge, sabırla biriken bilginin izini taşımaya devam etti.

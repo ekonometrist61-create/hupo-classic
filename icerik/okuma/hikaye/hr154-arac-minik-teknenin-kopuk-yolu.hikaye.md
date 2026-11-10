@@ -30,25 +30,25 @@ sorular:
     dayanak_sayfa: 1
     metin: "Teknenin ilk gördüğü şey neydi?"
     secenekler:
-      - {id: A, metin: "Büyük bir köprü"}
+      - {id: A, metin: "Suyu kesen büyük bir köprü"}
       - {id: B, metin: "Uzun bir köpük çizgisi"}
-      - {id: C, metin: "Düşmüş bir ağaç"}
-      - {id: D, metin: "Yeni bir iskele"}
+      - {id: C, metin: "Kıyıya düşmüş yaşlı bir ağaç"}
+      - {id: D, metin: "Yeni yapılmış bir iskele"}
     dogru: B
     dayanak: "Bir gün suyun üzerinde uzun bir köpük çizgisi gördü."
-    aciklama: "Metindeki \"Bir gün suyun üzerinde uzun bir köpük çizgisi gördü.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Bir gün suyun üzerinde uzun bir köpük çizgisi gördü.\" cümlesi B seçeneğini doğrular. Köprü, düşmüş ağaç ve yeni iskele metinde hiç geçmez."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
     metin: "{kahraman} neden köpüğe rastgele madde dökmedi?"
     secenekler:
-      - {id: A, metin: "Teknenin rengi değişmesin diye"}
+      - {id: A, metin: "Teknenin boyası ve rengi zarar görmesin diye"}
       - {id: B, metin: "Güneş batmak üzere olduğu için"}
-      - {id: C, metin: "Nedeni belli olmayan duruma zarar vermemek için"}
-      - {id: D, metin: "Toplama kutusu dolu olduğu için"}
+      - {id: C, metin: "Durumu bilmeden zarar vermemek için"}
+      - {id: D, metin: "Toplama kutusunda yer kalmadığı için"}
     dogru: C
     dayanak: "Köpüğün nedenini bilmeden hiçbir maddeyi suya dökmedi."
-    aciklama: "Metindeki \"Köpüğün nedenini bilmeden hiçbir maddeyi suya dökmedi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Köpüğün nedenini bilmeden hiçbir maddeyi suya dökmedi.\" cümlesi, tekneyi sebebini bilmediği bir durumda zarar vermekten kaçındığını gösterir. Teknenin rengi, batan güneş ve dolu kutu metinde bu kararın nedeni olarak geçmez."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
@@ -56,28 +56,28 @@ sorular:
     secenekler:
       - {id: A, metin: "Bir yerde toplanan parçaları"}
       - {id: B, metin: "Gölün en derin kısmını"}
-      - {id: C, metin: "Güneşin yansımasını"}
-      - {id: D, metin: "Kıyıdaki oturma yerini"}
+      - {id: C, metin: "Güneşin suya vuran yansımasını"}
+      - {id: D, metin: "Kıyıda ziyaretçilerin oturduğu yeri"}
     dogru: A
     dayanak: "Rüzgâr yön değiştirince yüzeydeki birikinti de başka yere kaydı."
-    aciklama: "Metindeki \"Rüzgâr yön değiştirince yüzeydeki birikinti de başka yere kaydı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Rüzgâr yön değiştirince yüzeydeki birikinti de başka yere kaydı.\" cümlesinde birikinti, yüzeyde bir araya gelmiş parçalardır; rüzgârla birlikte kayması bunu gösterir. Gölün derinliği, yansıma ve oturma yeri kayabilecek şeyler değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 3
     metin: "Tekne sazlıklara neden girmedi?"
     secenekler:
       - {id: A, metin: "Yolu kısaltmak için"}
-      - {id: B, metin: "Daha çok köpük toplamak için"}
+      - {id: B, metin: "Köpüğün biriktiği yerden daha çok toplamak için"}
       - {id: C, metin: "Görevliyi bekletmek için"}
-      - {id: D, metin: "Dinlenen canlıları rahatsız etmemek için"}
+      - {id: D, metin: "Dinlenen kuşu ürkütmemek için"}
     dogru: D
-    dayanak: "{kahraman} o bölgeye girmedi."
-    aciklama: "Metindeki \"{kahraman} o bölgeye girmedi.\" ifadesi doğru seçeneği destekler."
+    dayanak: "Kıyıdaki sazlar arasında küçük bir kuş dinleniyordu."
+    aciklama: "Metindeki \"Kıyıdaki sazlar arasında küçük bir kuş dinleniyordu.\" cümlesi, teknenin sazlığa girmeyerek kuşu ürkütmemeyi seçtiğini gösterir. Yolu kısaltmak, daha çok köpük toplamak ve görevliyi bekletmek metinde sazlıktan kaçınmanın nedeni değildir."
 ---
 
 @omurga
 
-{kahraman} gölde çalışan küçük bir temizlik teknesiydi. Her sabah kıyı yakınındaki yaprakları ve çöpleri toplardı. Bir gün suyun üzerinde uzun bir köpük çizgisi gördü. Köpük, hafif akıntı ile gölün bir köşesine taşınıyordu. {kahraman} oraya hemen hızla gitmedi. Çünkü kıyıda dinlenen ördekleri ürkütmek istemiyordu. Önce yavaşça ilerledi, sonra yüzeyde biriken parçaları gözledi.
+{kahraman} gölde çalışan küçük bir temizlik teknesiydi. Her sabah kıyı yakınındaki yaprakları ve çöpleri toplardı. Bir gün suyun üzerinde uzun bir köpük çizgisi gördü. Köpük, hafif akıntı ile gölün bir köşesine taşınıyordu. {kahraman} oraya hızla gitmedi. Çünkü kıyıda dinlenen ördekleri ürkütmek istemiyordu. Önce yavaşça ilerledi, sonra yüzeyde biriken parçaları gözledi.
 
 ---
 
@@ -101,4 +101,4 @@ Rüzgâr yön değiştirince yüzeydeki birikinti de başka yere kaydı. {kahram
 
 @omurga
 
-Ertesi sabah göl daha temiz görünüyordu. Ördekler kıyıda sakin sakin yüzüyordu. {kahraman} suyun üstündeki son yaprakları topladı. Kıyı boyunca çöpler için yeni kutular konmuştu. Ziyaretçiler atıklarını buralara bırakmaya başladı. Küçük tekne kocaman gölün tamamını bir günde değiştiremezdi. Ama her gün yaptığı dikkatli iş, suyun ve canlıların daha iyi korunmasına yardım ediyordu.
+Ertesi sabah göl daha temiz görünüyordu. Ördekler kıyıda sakin sakin yüzüyordu. {kahraman} suyun üstündeki son yaprakları topladı. Kıyı boyunca çöpler için yeni kutular konmuştu. Ziyaretçiler atıklarını buralara bırakmaya başladı. Küçük tekne kocaman gölün tamamını bir günde değiştiremezdi. Ama her sabah kıyıdan bir avuç yaprak ve çöp eksiliyor, ördeklerin yüzdüğü su biraz daha berraklaşıyordu.

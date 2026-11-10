@@ -1,5 +1,5 @@
 ---
-baslik: "Serçenin Sessiz Konseri"
+baslik: "Serçenin Ortak Şarkısı"
 slug: "hr160-hayvan-sercenin-sessiz-konseri"
 fis_kodu: "HR-160"
 tur: mizah
@@ -36,31 +36,31 @@ sorular:
       - {id: D, metin: "Çeşmenin durması"}
     dogru: A
     dayanak: "Sesler öyle karıştı ki kimse kendi melodisini duyamadı."
-    aciklama: "Metindeki \"Sesler öyle karıştı ki kimse kendi melodisini duyamadı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Sesler öyle karıştı ki kimse kendi melodisini duyamadı.\" cümlesi A seçeneğini doğrular. Yapraklar dökülmemiş, ağaç kaybolmamış ve çeşme durmamıştı."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
     metin: "Kuşların yeniden denemesi neyi gösterir?"
     secenekler:
       - {id: A, metin: "Şarkıyı unutmak istediklerini"}
-      - {id: B, metin: "Birlikte söylemeyi öğrenebildiklerini"}
-      - {id: C, metin: "Parktan taşınacaklarını"}
+      - {id: B, metin: "Birlikte söyleyebildiklerini"}
+      - {id: C, metin: "Parktan başka yere taşınacaklarını"}
       - {id: D, metin: "Dalların yerini değiştirdiklerini"}
     dogru: B
     dayanak: "Sonra denemeyi yeniden yaptılar."
-    aciklama: "Metindeki \"Sonra denemeyi yeniden yaptılar.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Sonra denemeyi yeniden yaptılar.\" cümlesi, kuşların vazgeçmeyip tekrar denediğini ve sonunda birlikte söyleyebildiğini gösterir. Şarkıyı unutmak, parktan ayrılmak ya da dalları değiştirmek metinde yoktur."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
     metin: "“Uyum” sözcüğü neyi anlatır?"
     secenekler:
-      - {id: A, metin: "Sadece hızlı söylemeyi"}
+      - {id: A, metin: "Yalnızca hızlı ve yüksek sesle söylemeyi"}
       - {id: B, metin: "Herkesin susmasını"}
       - {id: C, metin: "Seslerin birbirini tamamlamasını"}
       - {id: D, metin: "Kanatların büyümesini"}
     dogru: C
     dayanak: "Birkaç denemeden sonra sesler uyum içinde yükseldi."
-    aciklama: "Metindeki \"Birkaç denemeden sonra sesler uyum içinde yükseldi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Birkaç denemeden sonra sesler uyum içinde yükseldi.\" cümlesinde uyum, seslerin birbirini bozmadan tamamlamasıdır; sonraki cümle de kimsenin şarkıyı tek başına taşımadığını söyler. Hızlı söylemek, susmak ve kanat büyümesi uyum değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
@@ -69,10 +69,10 @@ sorular:
       - {id: A, metin: "Birbirlerini hiç duymadıklarını"}
       - {id: B, metin: "Şarkı söylemekten vazgeçtiklerini"}
       - {id: C, metin: "Yalnızca en hızlı kuşu dinlediklerini"}
-      - {id: D, metin: "Birlikte hareket etmeye özen gösterdiklerini"}
+      - {id: D, metin: "Birbirini beklediklerini"}
     dogru: D
     dayanak: "Bu kez kuşların hiçbiri acele etmedi."
-    aciklama: "Metindeki \"Bu kez kuşların hiçbiri acele etmedi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Bu kez kuşların hiçbiri acele etmedi.\" cümlesi, kuşların ilk vuruşu bekleyip birbirine uyduğunu gösterir. Birbirini hiç duymamak, şarkıdan vazgeçmek ve yalnızca en hızlı kuşu dinlemek metindeki davranışa uymaz."
 ---
 
 @omurga
@@ -89,7 +89,7 @@ sorular:
 
 @omurga
 
-Küçük prova sürerken rüzgâr esti. Dal hafifçe sallandı. {kahraman} kanatlarını açarak dengesini korudu. Başka bir kuş yanlış yerde ötünce bütün grup güldü. Fakat alay eden olmadı. Hep birlikte baştan başladılar. Birkaç denemeden sonra sesler uyum içinde yükseldi. Kimse tek başına bütün şarkıyı taşımıyordu. Her sesin küçük ama önemli bir yeri vardı. Parkın çeşmesi de uzaktan şarkıya eşlik eder gibiydi.
+Küçük prova sürerken rüzgâr esti. Dal hafifçe sallandı. {kahraman} kanatlarını açarak dengesini korudu. Başka bir kuş yanlış yerde ötünce kısa bir sessizlik oldu. Kimse alay etmedi. Hep birlikte baştan başladılar. Birkaç denemeden sonra sesler uyum içinde yükseldi. Kimse tek başına bütün şarkıyı taşımıyordu. Her sesin küçük ama önemli bir yeri vardı. Parkın çeşmesi de uzaktan şarkıya eşlik eder gibiydi.
 
 ---
 
@@ -101,4 +101,4 @@ Küçük prova sürerken rüzgâr esti. Dal hafifçe sallandı. {kahraman} kanat
 
 @omurga
 
-Konser bittiğinde parkta kısa bir sessizlik oldu. Ardından ağaçların arasında neşeli sesler duyuldu. {kahraman} küçük bir serçe olduğunu biliyordu. Ama küçük bir kuş da dinleyerek büyük bir iş yapabilirdi. Kuşlar dallarına ayrılırken ritim hâlâ hafifçe sürüyordu. Rüzgâr yaprakları salladı. {kahraman} son bir kez öttü ve kanatlarını açıp yakınındaki dala kondu. Parktaki o gün, çok farklı seslerin güzel bir bütün oluşturabildiği gündü.
+Konser bittiğinde parkta kısa bir sessizlik oldu. Ardından ağaçların arasında neşeli sesler duyuldu. {kahraman} dalın en küçük sesine sahipti. Yine de ilk vuruşu o yapmış, herkes de ona uymuştu. Kuşlar dallarına ayrılırken ritim hâlâ hafifçe sürüyordu. Rüzgâr yaprakları salladı. {kahraman} son bir kez öttü ve kanatlarını açıp yakınındaki dala kondu. Parktaki o gün, çok farklı seslerin güzel bir bütün oluşturabildiği gündü.

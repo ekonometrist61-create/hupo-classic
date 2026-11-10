@@ -1,5 +1,5 @@
 ---
-baslik: "Pazar Yerindeki Sessiz Terazi"
+baslik: "Elmayı Farklı Tartan Teraziler"
 slug: "hr150-baba-pazar-yerindeki-sessiz-terazi"
 fis_kodu: "HR-150"
 tur: mizah
@@ -36,69 +36,69 @@ sorular:
       - {id: D, metin: "Üzüm kutusu"}
     dogru: A
     dayanak: "Pazar yerinde iki satıcının terazisi aynı elma kasası için farklı ağırlık gösteriyordu."
-    aciklama: "Metindeki \"Pazar yerinde iki satıcının terazisi aynı elma kasası için farklı ağırlık gösteriyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "İki terazi aynı elma kasası için farklı ağırlık gösteriyordu. Ekmek, pirinç ve üzüm metinde geçmez."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
-    metin: "Terazilerden birinin düz masaya alınması neden farkı azalttı?"
+    metin: "Terazilerden biri düz yüzeye alınınca fark küçüldü. Bunun nedeni ne olabilir?"
     secenekler:
-      - {id: A, metin: "Elmalar değiştiği için"}
-      - {id: B, metin: "Masa daha yüksek olduğu için"}
-      - {id: C, metin: "Eğri zemin ölçümü etkilediği için"}
-      - {id: D, metin: "Terazinin rengi açıldığı için"}
+      - {id: A, metin: "Kasadaki elmalar değiştirildiği için"}
+      - {id: B, metin: "Masa biraz daha yüksek olduğu için"}
+      - {id: C, metin: "Eğri zemin tartıyı etkilediği için"}
+      - {id: D, metin: "Terazinin rengi açık olduğu için"}
     dogru: C
     dayanak: "Birinin ayağı eğri zeminde hafifçe havada kalıyordu."
-    aciklama: "Metindeki \"Birinin ayağı eğri zeminde hafifçe havada kalıyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Bir terazinin ayağı eğri zeminde havada kaldığı için ölçüm bozuluyordu; düz yüzey bunu düzeltti. Elmalar değişmedi, masa yüksekliği ve renk de ölçümle ilgili değildir."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
-    metin: "“Denge” sözcüğü burada hangi anlamdadır?"
+    metin: "Karton parçası tartım sırasında dengeyi bozuyordu. Buradaki “denge” neyi anlatır?"
     secenekler:
-      - {id: A, metin: "Meyvenin tadı"}
-      - {id: B, metin: "Tartım aracının düzgün durumu"}
-      - {id: C, metin: "Pazarın kalabalığı"}
-      - {id: D, metin: "Satış saatinin uzunluğu"}
+      - {id: A, metin: "Meyvenin tatlı ya da ekşi olması"}
+      - {id: B, metin: "Tartının sallanmadan durması"}
+      - {id: C, metin: "Pazar yerindeki kalabalığın artması"}
+      - {id: D, metin: "Satış saatinin uzun sürmesi"}
     dogru: B
     dayanak: "Karton, tartım sırasında dengeyi bozuyordu."
-    aciklama: "Metindeki \"Karton, tartım sırasında dengeyi bozuyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Karton terazinin tablasına sıkışıp tartıyı sallantılı ve yanlış yapıyordu; denge, tartının düzgün durmasıdır. Tat, kalabalık ve satış saati bu anlama uymaz."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
-    metin: "{kahraman} neden “hiç şaşmaz” sözünü önermedi?"
+    metin: "Satıcı tabelasına “Terazim hiç şaşmaz” yazmak isteyince {kahraman} neden başka bir ifade önerdi?"
     secenekler:
-      - {id: A, metin: "Daha büyük tabela istediği için"}
-      - {id: B, metin: "Tezgâhların sayısını azaltmak için"}
+      - {id: A, metin: "Tabelanın daha büyük olmasını istediği için"}
+      - {id: B, metin: "Pazardaki tezgâh sayısını azaltmak için"}
       - {id: C, metin: "Elmaların adını değiştirmek için"}
-      - {id: D, metin: "Abartı yerine doğrulanabilir bilgi gerektiği için"}
+      - {id: D, metin: "Doğrulanabilir bilgi vermek istediği için"}
     dogru: D
     dayanak: "Böylece müşterilere abartılı bir söz değil, güvenilir bir bilgi verilecekti."
-    aciklama: "Metindeki \"Böylece müşterilere abartılı bir söz değil, güvenilir bir bilgi verilecekti.\" ifadesi doğru seçeneği destekler."
+    aciklama: "“Hiç şaşmaz” abartılı bir söz; kontrol edildiğini belirten ifade ise doğrulanabilir. Tabela boyutu, tezgâh sayısı ve elma adı konu dışıdır."
 ---
 
 @omurga
 
-Pazar yerinde iki satıcının terazisi aynı elma kasası için farklı ağırlık gösteriyordu. Kimse kimseyi suçlamak istemiyordu ama aradaki fark müşterileri şaşırtmıştı. Ölçüm uzmanı olan {kahraman}, satıcıların çağrısıyla pazara geldi. Önce elmaların gerçekten aynı kasadan alındığını kontrol etti. Ardından iki teraziyi düz bir masaya yerleştirdi. Masanın çevresinde toplanan satıcılar önce kendi terazilerini öne çıkarmaya çalıştı. {kahraman} her cihazın aynı sırayla kontrol edileceğini söyledi. Hangi tezgâhtan geldiği sonucu değiştirmemeliydi. Müşteriler de yapılan işlemi uzaktan izleyebiliyordu. Açık bir inceleme, kuşkuları azaltan ilk adımdı. Bir satıcı, “Benimki hep doğru çıkar,” dedi. Diğeri, “Benimki daha yeni,” diye karşılık verdi. {kahraman} cihazların yaşına bakarak karar vermedi. Herkesin gözü önünde, bilinen ağırlıklarla adil bir deneme yapmayı önerdi. Böylece kişilerin sözleri yerine ölçümler konuşacaktı.
-
----
-
-@omurga
-
-Ölçüm masasındaki özel ağırlıklar standart olarak kullanılıyordu. Standart, herkesin aynı sonuca ulaşmasına yardım eden ortak ölçüydü. {kahraman} her iki terazide de sıfır ayarını kontrol etti. Birinin ayağı eğri zeminde hafifçe havada kalıyordu. Standart ağırlıklar kullanılmadan önce temizlendi ve uygun biçimde yerleştirildi. {kahraman} tartım masasının sallanmadığından emin oldu. Sonuç tablosuna ölçümün nerede ve nasıl yapıldığı da yazıldı. Bir sayı tek başına doğru görünse bile ölçüm koşulları bilinmiyorsa yeniden incelenmesi gerekebilirdi. İlk sapma buradan doğmuş olabilirdi. Terazi düz bir yüzeye alındığında fark küçüldü ama tamamen kaybolmadı. {kahraman} kalibrasyon işlemini başlattı; yani terazinin gösterdiği değerleri güvenilir ölçüyle karşılaştırıp ayarını kontrol etti. Satıcılar sonuçları küçük bir tabloya birlikte yazdı. Önceden tartışılan her sayı artık açıklanabilir hâle geliyordu.
+Pazar yerinde iki satıcının terazisi aynı elma kasası için farklı ağırlık gösteriyordu. Kimse kimseyi suçlamak istemiyordu ama aradaki fark müşterileri şaşırtmıştı. Ölçüm uzmanı {kahraman}, satıcıların çağrısıyla pazara geldi. Önce elmaların gerçekten aynı kasadan alındığını kontrol etti, aynı elmaların iki terazide de tartılacağından emin oldu. Sonra iki teraziyi aynı masaya koydu. Satıcılar önce kendi terazilerini öne çıkarmaya çalıştı. Biri, “Benimki hep doğru çıkar,” dedi. Öteki, “Benimki daha yeni,” diye karşılık verdi. {kahraman} cihazların yaşına bakarak karar vermedi. Her teraziyi aynı sırayla, herkesin gözü önünde, ağırlıkları bilinen örneklerle denemeyi önerdi. Müşteriler de işlemi uzaktan izleyebiliyordu. Böylece kişilerin sözleri yerine ölçümler konuşacaktı.
 
 ---
 
 @omurga
 
-Öğleye doğru pazarda komik bir söylenti yayıldı: “Elmalar sabah hafif, öğlen ağır oluyor!” Bir müşteri bunu duyunca gülmeye başladı. {kahraman} ölçüm koşullarını değiştirip yeniden denedi. Bir terazinin tablasına sıkışmış küçük bir karton parçası vardı. Karton, tartım sırasında dengeyi bozuyordu. Söylentiyi duyan küçük bir ziyaretçi, elmaların gerçekten ağırlaşıp ağırlaşmadığını sordu. {kahraman} gülerek, ölçümde sorun aramadan önce böyle bir sonuca ulaşılamayacağını anlattı. Ziyaretçi iki terazide aynı ağırlığı görünce şaşkınlığını gizlemedi. Bazen komik bir söylenti, dikkatli bir deney için iyi bir başlangıç olabiliyordu. Temizleme ve ayar sonrasında iki terazi aynı standart ağırlık için uyumlu sonuç verdi. {kahraman} elma kasalarını yeniden ölçtü. Sonuçlar da birbirine yakındı. Satıcılar, sorunun elmadan değil aletlerden ve zeminden kaynaklandığını görünce rahatladı. Herkes kendi iddiasını sessizce bir kenara bıraktı.
+Masadaki özel ağırlıklar standart olarak kullanıldı. Standart, herkesin aynı sonuca ulaşmasına yardım eden ortak ölçüdür. {kahraman} her iki terazide de sıfır ayarını kontrol etti ve her ağırlığı tek tek, boş tablayla başlayarak denedi. Masa eğri bir zeminde duruyordu ve iki terazi de tam oturmuyordu. Birinin ayağı eğri zeminde hafifçe havada kalıyordu. {kahraman} standart ağırlıkları temizleyip uygun biçimde yerleştirdi ve masanın sallanmadığından emin oldu. Sonuç tablosuna ölçümün nerede ve nasıl yapıldığını da yazdı; koşulları bilinmeyen bir sayıya güvenmek zordu. İlk sapma buradan doğmuş olabilirdi. Terazi düz bir yüzeye alınınca fark küçüldü ama tamamen kaybolmadı. {kahraman} bu kez kalibrasyon yaptı; yani terazinin gösterdiği değerleri güvenilir ölçülerle karşılaştırıp ayarını kontrol etti. Satıcılar sonuçları küçük bir tabloya birlikte yazdı.
 
 ---
 
 @omurga
 
-Pazar yönetimi bütün tezgâhlarda basit bir kontrol günü düzenlemeye karar verdi. {kahraman} hangi denemelerin uzmanlık gerektirdiğini, günlük olarak nelerin gözlemlenebileceğini anlattı. Terazinin düz yerde durması, boşken sıfırı göstermesi ve hasar belirtisinin fark edilmesi önemliydi. Kontrol günü için hazırlanan duyuruda hangi hizmetlerin verileceği açıkça belirtildi. {kahraman} yetkili kontrolün günlük gözlemden farklı olduğunu özellikle vurguladı. Satıcılar her şeyi kendi başlarına onarmaya kalkışmamalıydı. Doğru kişiden yardım istemek de güvenilir ticaretin bir parçasıydı. Hazırlanan duyuru bütün tezgâhlara ulaştırıldı. Fakat resmi ayar ve doğrulamalar yetkili kişilerce yapılmalıydı. Satıcılardan biri tabelasına “Terazim hiç şaşmaz” yazmak istedi. {kahraman} bunun yerine ölçümlerin düzenli kontrol edildiğini belirten doğru bir ifade önerdi. Böylece müşterilere abartılı bir söz değil, güvenilir bir bilgi verilecekti.
+Öğleye doğru pazarda komik bir söylenti yayıldı: “Elmalar sabah hafif, öğlen ağır oluyor!” Bir müşteri bunu duyunca gülmeye başladı. {kahraman} ölçüm koşullarını değiştirip yeniden denedi. Terazilerden birinin tablasına sıkışmış küçük bir karton parçası buldu. Karton, tartım sırasında dengeyi bozuyordu. Küçük bir ziyaretçi bir elmayı elinde tartar gibi sallayıp kaşlarını çattı ve elmaların gerçekten ağırlaşıp ağırlaşmadığını sordu. {kahraman} gülerek, önce ölçüm aracında sorun aramadan böyle bir sonuca varılamayacağını anlattı. Temizlik ve ayarın ardından iki terazi aynı standart ağırlık için uyumlu sonuç verdi. {kahraman} elma kasalarını yeniden tarttı; sonuçlar birbirine yakındı. Satıcılar sorunun elmada değil alette ve zeminde olduğunu görünce rahatladı.
 
 ---
 
 @omurga
 
-Akşam kasalar toplanırken iki satıcı birlikte elma tartıyordu. Sonuçlar birbirini doğruluyordu. Daha önce şaşıran müşteri tekrar uğradı ve gülerek “Demek elmaların suçu yokmuş,” dedi. {kahraman} ölçüm çantasını kapattı. Pazarın sonunda iki satıcı birbirine elma ikram etti. Sorunun çözülmesi onları rahatlatmıştı. {kahraman} tartışmanın başındaki cümleleri hatırladı: biri yeniliğe, diğeri alışkanlığa güvenmişti. Oysa her ikisinin de ihtiyaç duyduğu şey karşılaştırılabilir ölçüydü. Doğru çalışan terazi artık ortak güvenin simgesiydi. Pazarın sesi yükselirken masadaki iki terazi artık kimseyi karşı karşıya getirmiyordu. Küçük bir ayar, alışverişteki güveni yeniden kurmuştu. Satıcılar ertesi gün tezgâhlarını kurarken masanın düz olup olmadığına bakmayı da unutmamaya söz verdi. Adalet bazen büyük sözlerle değil, düzgün çalışan küçük araçlarla başlıyordu.
+Pazar yönetimi bütün tezgâhlarda basit bir kontrol günü düzenlemeye karar verdi. {kahraman} hangi kontrollerin uzman gerektirdiğini, hangilerinin günlük olarak gözlemlenebileceğini anlattı. Terazinin düz yerde durması, boşken sıfırı göstermesi ve hasar belirtisi olup olmaması herkesin bakabileceği şeylerdi. Resmî ayar ve doğrulamayı ise yetkili kişiler yapmalıydı; satıcılar her şeyi kendi başlarına onarmaya kalkışmamalıydı. Duyuru kısa ve resimli hazırlandı, bütün tezgâhlara dağıtıldı. Satıcılardan biri tabelasına “Terazim hiç şaşmaz” yazmak istedi. {kahraman} bunun yerine ölçümlerin düzenli kontrol edildiğini belirten doğru bir ifade önerdi. Böylece müşterilere abartılı bir söz değil, güvenilir bir bilgi verilecekti.
+
+---
+
+@omurga
+
+Akşam kasalar toplanırken iki satıcı birlikte elma tartıyordu. Sonuçlar birbirini doğruluyordu. Sabah şaşıran müşteri tekrar uğradı ve gülerek “Demek elmaların suçu yokmuş,” dedi. {kahraman} standart ağırlıkları tek tek sayıp ölçüm çantasına yerleştirdi ve çantayı kapattı. Pazar kapanırken iki satıcı birbirine elma ikram etti. {kahraman} tartışmanın başındaki cümleleri hatırladı: Biri yeniliğe, öteki alışkanlığa güvenmişti. Oysa ikisinin de ihtiyacı olan şey karşılaştırılabilir bir ölçüydü. Satıcılar ertesi gün tezgâhlarını kurarken masanın düz olup olmadığına bakmaya söz verdi. Adalet bazen büyük sözlerle değil, düzgün çalışan küçük araçlarla başlıyordu.

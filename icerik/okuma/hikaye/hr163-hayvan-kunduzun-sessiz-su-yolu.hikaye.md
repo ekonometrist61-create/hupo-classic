@@ -1,5 +1,5 @@
 ---
-baslik: "Kunduzun Sessiz Su Yolu"
+baslik: "Kunduzun Dere Dengesi"
 slug: "hr163-hayvan-kunduzun-sessiz-su-yolu"
 fis_kodu: "HR-163"
 tur: doga
@@ -31,48 +31,48 @@ sorular:
     metin: "Deredeki ilk sorun neydi?"
     secenekler:
       - {id: A, metin: "Bütün suyun kaybolması"}
-      - {id: B, metin: "Akışın bazı yerlerde farklılaşması"}
-      - {id: C, metin: "Dalların yeşile boyanması"}
+      - {id: B, metin: "Akışın her yerde aynı olmaması"}
+      - {id: C, metin: "Dalların hepsinin yemyeşile boyanması"}
       - {id: D, metin: "Kıyıda yeni yol açılması"}
     dogru: B
     dayanak: "Suyun bir bölümü eski bir dal yığınının çevresinden dönüyor, başka bir bölümde ise neredeyse duruyordu."
-    aciklama: "Metindeki \"Suyun bir bölümü eski bir dal yığınının çevresinden dönüyor, başka bir bölümde ise neredeyse duruyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Suyun bir bölümü eski bir dal yığınının çevresinden dönüyor, başka bir bölümde ise neredeyse duruyordu.\" cümlesi, akışın her yerde aynı olmadığını gösterir. Su kaybolmamış, dallar boyanmamış ve kıyıda yeni yol açılmamıştı."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 1
     metin: "{kahraman} neden büyük dalları hemen kaldırmadı?"
     secenekler:
-      - {id: A, metin: "Bazı canlılara korunak sağladıkları için"}
-      - {id: B, metin: "Dalların rengini sevmediği için"}
+      - {id: A, metin: "Canlılara korunak oldukları için"}
+      - {id: B, metin: "Dalların rengini hiç sevmediği için"}
       - {id: C, metin: "Dereyi tamamen kurutmak için"}
       - {id: D, metin: "Bütün balıklar uzaklaşsın diye"}
     dogru: A
     dayanak: "Dallar bazı canlılara korunak sağlıyordu; değişiklik yapmadan önce etkilerini düşünmek gerekiyordu."
-    aciklama: "Metindeki \"Dallar bazı canlılara korunak sağlıyordu; değişiklik yapmadan önce etkilerini düşünmek gerekiyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Dallar bazı canlılara korunak sağlıyordu; değişiklik yapmadan önce etkilerini düşünmek gerekiyordu.\" cümlesi A seçeneğini doğrular. Kunduz dalların rengiyle ilgilenmemiş, dereyi kurutmak ya da balıkları uzaklaştırmak istememiştir."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 2
     metin: "“Birikim” sözcüğü bağlamda neyi anlatır?"
     secenekler:
-      - {id: A, metin: "Suyun buharlaşmasını"}
+      - {id: A, metin: "Suyun güneşte buharlaşıp azalmasını"}
       - {id: B, metin: "Kıyıdaki güneşi"}
-      - {id: C, metin: "Bir noktada toplanan yaprak ve dalları"}
-      - {id: D, metin: "Balığın hızla yüzmesini"}
+      - {id: C, metin: "Bir yerde toplanan yaprakları"}
+      - {id: D, metin: "Balığın hızla yüzüp uzaklaşmasını"}
     dogru: C
     dayanak: "Sorun, eski yığının bir yanında çok fazla birikim oluşmasıydı."
-    aciklama: "Metindeki \"Sorun, eski yığının bir yanında çok fazla birikim oluşmasıydı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Sorun, eski yığının bir yanında çok fazla birikim oluşmasıydı.\" cümlesinden sonra yaprakların ve küçük dalların burada toplandığı yazar; birikim bir yerde toplanıp yığılan şeydir. Buharlaşma, güneş ve balığın yüzmesi bu anlama uymaz."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
     metin: "{kahraman} neden birkaç gün daha gözlem yaptı?"
     secenekler:
       - {id: A, metin: "Dalları saymak için"}
-      - {id: B, metin: "Kıyıya yeni yuva yapmak için"}
+      - {id: B, metin: "Kıyıya kendine yeni bir yuva yapmak için"}
       - {id: C, metin: "Yağmuru durdurmak için"}
-      - {id: D, metin: "Değişimin farklı koşullardaki etkisini görmek için"}
+      - {id: D, metin: "Tek gözlemle karar vermemek için"}
     dogru: D
-    dayanak: "Farklı noktalara bakmaya devam etti."
-    aciklama: "Metindeki \"Farklı noktalara bakmaya devam etti.\" ifadesi doğru seçeneği destekler."
+    dayanak: "{kahraman} bu tek gözlemin tüm dere için kesin sonuç olmadığını biliyordu."
+    aciklama: "Metindeki \"{kahraman} bu tek gözlemin tüm dere için kesin sonuç olmadığını biliyordu.\" cümlesi, kunduzun tek bir gözleme güvenmeyip farklı noktalara bakmaya devam ettiğini gösterir. Dalları saymak, yuva yapmak ve yağmuru durdurmak metinde yoktur."
 ---
 
 @omurga
@@ -83,7 +83,7 @@ sorular:
 
 @omurga
 
-Ertesi gün {kahraman} suyun geçtiği noktaları uzaktan izledi. Bir engel, akışın yönünü değiştirebiliyordu. Fakat her engel kötü değildi; bazıları kıyının aşınmasını azaltıyordu. Sorun, eski yığının bir yanında çok fazla birikim oluşmasıydı. Yapraklar ve küçük dallar burada toplanmıştı. Kurbağanın gölgeyi sevmesi, balığın ise daha açık su istemesi ilk bakışta çelişiyor gibiydi. {kahraman} iki isteğin aynı dere içinde farklı yerlerde karşılanabileceğini fark etti. Herkesi tek bir noktaya toplamak gerekmiyordu. Küçük alanları birlikte korumak mümkündü. {kahraman} suyu tamamen kesmeyen bir düzenleme yapmayı düşündü. Önce kıyıdaki küçük canlıların hangi bölümde dinlendiğini öğrendi. Bir kurbağa, dal aralığının gölgesini seviyordu. Balık ise akışın biraz daha açık olmasını istiyordu. Her iki ihtiyacı da dikkate almak kolay değildi.
+Ertesi gün {kahraman} suyun geçtiği noktaları uzaktan izledi. Bir engel, akışın yönünü değiştirebiliyordu. Fakat her engel kötü değildi; bazıları kıyının aşınmasını azaltıyordu. Sorun, eski yığının bir yanında çok fazla birikim oluşmasıydı. Yapraklar ve küçük dallar burada toplanmıştı. Kurbağa gölgeyi, balık ise daha açık suyu seviyordu. Bu iki istek ilk bakışta çelişiyor gibiydi. {kahraman} iki isteğin aynı dere içinde farklı yerlerde karşılanabileceğini fark etti. Herkesi tek bir noktaya toplamak gerekmiyordu. Küçük alanları birlikte korumak mümkündü. {kahraman} suyu tamamen kesmeyen bir düzenleme yapmayı düşündü. Önce kıyıdaki küçük canlıların hangi bölümde dinlendiğini öğrendi. Her iki ihtiyacı da dikkate almak kolay değildi.
 
 ---
 
@@ -101,4 +101,4 @@ Birkaç gün sonra yoğun yağmur yağdı. {kahraman} güvenli kıyıdan suyu iz
 
 @omurga
 
-Yaz başında dere sakinleşti. {kahraman} dal yığınının yanına oturup suyu dinledi. Artık tek bir yerde hızlı akan suyun başka bir yerde oluşturabileceği etkileri daha iyi anlıyordu. Denge, her noktanın aynı olması değil, farklı ihtiyaçların bir arada karşılanabilmesiydi. Akşam serinliği çöktüğünde balığın bulunduğu sığ bölüm sakinleşti. Kurbağa gölgeli aralığa döndü. {kahraman} kendi yaptığı değişikliklerin yalnızca bir bölümde değil, bütün küçük canlıların yaşamında iz bırakabildiğini düşündü. Bu yüzden yeni bir dalı oynatmadan önce biraz daha uzun gözlem yapmayı tercih etti. Balık açık su bölümünde yüzüyor, kurbağa gölgeye çekiliyordu. {kahraman} dalları kendi istediği biçime sokmak yerine derenin işleyişine uyum sağlamaya çalışmıştı. Yaprakların su üzerinde çizdiği küçük daireler yavaşça akıntıya karıştı. Dere sessizce yoluna devam etti.
+Yaz başında dere sakinleşti. {kahraman} dal yığınının yanına oturup suyu dinledi. Artık tek bir yerde hızlı akan suyun başka bir yerde oluşturabileceği etkileri daha iyi anlıyordu. Denge, her noktanın aynı olması değil, farklı ihtiyaçların bir arada karşılanabilmesiydi. Akşam serinliği çöktüğünde balığın bulunduğu sığ bölüm sakinleşti. {kahraman} kendi yaptığı değişikliklerin yalnızca bir bölümde değil, bütün küçük canlıların yaşamında iz bırakabildiğini düşündü. Bu yüzden yeni bir dalı oynatmadan önce biraz daha uzun gözlem yapmayı tercih etti. Balık açık su bölümünde yüzüyor, kurbağa gölgeye çekiliyordu. {kahraman} dalları kendi istediği biçime sokmak yerine derenin işleyişine uyum sağlamaya çalışmıştı. Yaprakların su üzerinde çizdiği küçük daireler yavaşça akıntıya karıştı. Dere sessizce yoluna devam etti.

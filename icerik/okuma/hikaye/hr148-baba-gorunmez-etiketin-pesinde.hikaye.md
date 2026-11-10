@@ -30,75 +30,75 @@ sorular:
     dayanak_sayfa: 1
     metin: "Kavanozların ilk etiketindeki sorun neydi?"
     secenekler:
-      - {id: A, metin: "Adının çok kısa olması"}
-      - {id: B, metin: "Kavanozların küçük olması"}
-      - {id: C, metin: "İçeriğin açık yazılmaması"}
-      - {id: D, metin: "Raflara yerleştirilmemesi"}
+      - {id: A, metin: "Adının gereğinden kısa olması"}
+      - {id: B, metin: "Kavanozların fazla küçük olması"}
+      - {id: C, metin: "İçindekilerin yazılmaması"}
+      - {id: D, metin: "Raflara hiç yerleştirilmemesi"}
     dogru: C
-    dayanak: "Kasabanın küçük meyve atölyesinde kavanozlara komik bir etiket yapıştırılmıştı: “Gizemli Güneş Reçeli.” Atölyenin gıda uzmanı olan {kahraman}, ismin ilgi çekici olduğunu düşündü ama kavanozun içindekilerin açıkça belirtilmediğini fark etti."
-    aciklama: "Metindeki \"Kasabanın küçük meyve atölyesinde kavanozlara komik bir etiket yapıştırılmıştı: “Gizemli Güneş Reçeli.” Atölyenin gıda uzmanı olan {kahraman}, ismin ilgi çekici olduğunu düşündü ama kavanozun içindekilerin açıkça belirtilmediğini fark etti.\" ifadesi doğru seçeneği destekler."
+    dayanak: "Atölyenin gıda uzmanı olan {kahraman}, ismin ilgi çekici olduğunu düşündü ama kavanozun içindekilerin açıkça belirtilmediğini fark etti."
+    aciklama: "İsim ilgi çekiciydi ama içindekiler açıkça yazılmamıştı. Etiketin kısalığı, kavanoz boyutu ya da raf yerleşimi sorun olarak anılmaz."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
-    metin: "Her partiden numune alınması neden daha güvenilir?"
+    metin: "Atölyede her üretim partisinden numune ayrılması neden daha güvenilir bir kontrol sağlar?"
     secenekler:
-      - {id: A, metin: "Farklı üretimlerin ayrı ayrı incelenmesini sağlar"}
-      - {id: B, metin: "Etiket yazısını otomatik büyütür"}
-      - {id: C, metin: "Kavanozların hepsini aynı yapar"}
-      - {id: D, metin: "Meyvenin rengini değiştirir"}
+      - {id: A, metin: "Her üretimin ayrı incelenmesini sağlar"}
+      - {id: B, metin: "Etiket yazısını kendiliğinden büyütür"}
+      - {id: C, metin: "Bütün kavanozları birbirinin aynısı yapar"}
+      - {id: D, metin: "Meyvelerin rengini kalıcı olarak değiştirir"}
     dogru: A
     dayanak: "{kahraman} rastgele bir kavanozu açıp tadına bakmak yerine her partiden uygun bir numune ayırdı."
-    aciklama: "Metindeki \"{kahraman} rastgele bir kavanozu açıp tadına bakmak yerine her partiden uygun bir numune ayırdı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Partiler arasında meyve oranı değişebildiği için her partiden numune almak, her üretimi ayrı ayrı incelemeye izin verir. Numune almak yazıyı büyütmez, kavanozları eşitlemez, rengi de değiştirmez."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
-    metin: "“Okunaklı” etiket nasıl bir etikettir?"
+    metin: "“{kahraman} okunaklı ve sade bir yerleşim hazırladı.” cümlesindeki “okunaklı” ne demektir?"
     secenekler:
-      - {id: A, metin: "Çok ağır"}
+      - {id: A, metin: "Ağırlığı çok olan"}
       - {id: B, metin: "Kolay okunabilen"}
       - {id: C, metin: "Birden çok kapaklı"}
       - {id: D, metin: "Yalnız resimli"}
     dogru: B
     dayanak: "{kahraman} okunaklı ve sade bir yerleşim hazırladı."
-    aciklama: "Metindeki \"{kahraman} okunaklı ve sade bir yerleşim hazırladı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Küçük yazıların kolay okunması istendiği için okunaklı, kolay okunabilen demektir. Ağırlık, kapak sayısı ya da yalnız resim bu anlamda geçmez."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
-    metin: "{kahraman} çizimin bilgiyi örtmemesini neden istedi?"
+    metin: "Çalışanlar çizimi öne çıkarmak isteyince {kahraman} neden bilginin örtülmemesini istedi?"
     secenekler:
-      - {id: A, metin: "Resim çizmek zor olduğu için"}
-      - {id: B, metin: "Sadece atölyeyi süslemek için"}
-      - {id: C, metin: "Pazarın kapanmaması için"}
-      - {id: D, metin: "Müşterinin doğru seçim yapabilmesi için"}
+      - {id: A, metin: "Resim çizmek çok zor olduğu için"}
+      - {id: B, metin: "Atölyenin duvarlarını süslemek için"}
+      - {id: C, metin: "Pazarın zamanında kapanması için"}
+      - {id: D, metin: "Müşteri doğru seçim yapsın diye"}
     dogru: D
     dayanak: "Fakat {kahraman} çizimin doğru bilgiyi örtmesine izin vermedi."
-    aciklama: "Metindeki \"Fakat {kahraman} çizimin doğru bilgiyi örtmesine izin vermedi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Etiketin görevi doğru bilgi vermek; çizim bunu örterse müşteri doğru seçemez. Çizmenin zorluğu, duvar süsü ve pazar saati metinde gerekçe değildir."
 ---
 
 @omurga
 
-Kasabanın küçük meyve atölyesinde kavanozlara komik bir etiket yapıştırılmıştı: “Gizemli Güneş Reçeli.” Atölyenin gıda uzmanı olan {kahraman}, ismin ilgi çekici olduğunu düşündü ama kavanozun içindekilerin açıkça belirtilmediğini fark etti. Bir müşteri, “Bunun içinde ne var?” diye sorunca herkes aynı anda konuşmaya başladı. Biri kayısı dedi, biri şeftali, biri de portakal. {kahraman} tahmin yarışına katılmadı. Atölyedeki ilk toplantıda herkes kendi tahminini kâğıda yazdı. Aynı kavanoz için üç farklı cevap çıkması, sorunun müşteride olmadığını açıkça gösterdi. {kahraman} bu kâğıtları çöpe atmadı; yeni etiket tamamlanınca eski ve yeni bilgi arasındaki farkı göstermek için sakladı. Önce ürünün üretim kaydını istedi. Çünkü bir etiket yalnızca güzel görünmek için değil, doğru bilgi vermek için de vardı. Atölye sahibi, “İsmin gizemli olması daha eğlenceli değil mi?” diye sordu. {kahraman} gizemli bir adla belirsiz içeriğin aynı şey olmadığını açıkladı.
-
----
-
-@omurga
-
-Kayıt defterinde üç ayrı meyvenin karışım hâlinde kullanıldığı yazılıydı. Ancak kavanozların bir kısmında miktarlar da yanlış basılmıştı. {kahraman} rastgele bir kavanozu açıp tadına bakmak yerine her partiden uygun bir numune ayırdı. Numune, incelenmek için seçilmiş küçük bir örnekti. Üretim kayıtlarının tutulduğu klasör daha önce rafın arkasındaydı. {kahraman} kayıtların kolay bulunabileceği bir yer önerdi. Böylece bir soru geldiğinde herkes hafızasına dayanmak yerine aynı bilgiye ulaşacaktı. Bu küçük düzenleme, etiket düzeltmek kadar yararlı oldu. Üretim tarihini ve parti bilgisini karşılaştırdı. Bir görevli, baştan hazırlanan etiketlerin çöpe gitmesine üzüldü. {kahraman} kullanılabilir kâğıtların arka yüzünden deneme baskısı yapılabileceğini söyledi. Böylece hem doğru bilgi hazırlanacak hem de gereksiz malzeme tüketilmeyecekti. Çalışma masasındaki renkli çıkartmalar artık daha düzenli görünüyordu.
+Kasabanın küçük meyve atölyesinde kavanozlara komik bir etiket yapıştırılmıştı: “Gizemli Güneş Reçeli.” Atölyenin gıda uzmanı olan {kahraman}, ismin ilgi çekici olduğunu düşündü ama kavanozun içindekilerin açıkça belirtilmediğini fark etti. Bir müşteri, “Bunun içinde ne var?” diye sorunca herkes aynı anda konuşmaya başladı. Biri kayısı dedi, biri şeftali, biri de portakal. {kahraman} tahmin yarışına katılmadı. Önce herkesten tahminini kâğıda yazmasını istedi. Aynı kavanoz için üç farklı cevap çıkınca sorunun müşteride olmadığı anlaşıldı. {kahraman} kâğıtları sakladı; yeni etiket hazır olunca eski ve yeni bilgiyi yan yana göstermek için kullanacaktı. Sonra ürünün üretim kaydını istedi, çünkü bir etiket yalnızca güzel görünmek için değil, doğru bilgi vermek için vardı. Atölye sahibi, “İsmin gizemli olması daha eğlenceli değil mi?” diye sordu. {kahraman}, gizemli bir adla belirsiz içeriğin aynı şey olmadığını söyledi.
 
 ---
 
 @omurga
 
-Yeni etiket tasarımında komik isim kaldı. Altına meyvelerin isimleri ve içerik bilgileri açıkça yazıldı. {kahraman} özellikle küçük yazıların kolay okunmasını istedi. Çalışanlardan biri, çok uzun yazıları kavanozun altına koymayı önerdi. Yazı büyüklüğü denenirken biri parlak renklerin her sorunu çözeceğini düşündü. {kahraman} açık arka plan üzerinde koyu yazının nasıl göründüğünü gösterdi. Renklerin güzel olması yeterli değildi; göz yormayan ve okunabilen bir tasarım da gerekiyordu. Denemeyi farklı uzaklıklardan yaptılar. Bu kez müşteri kavanozu ters çevirmeden bilgiye ulaşamayacaktı. {kahraman} okunaklı ve sade bir yerleşim hazırladı. Ayrıca alerji ya da özel beslenme ihtiyacı olan insanların ürünleri daha dikkatli seçebileceğini hatırlattı. Atölye, uzman incelemesinden geçen bilgileri kullanmaya karar verdi. İlk baskı yapıldığında herkes kavanozu elden ele dolaştırıp yazıları okumayı denedi.
+Kayıt defterinde reçelin üç meyveden oluşan bir karışım olduğu yazılıydı. Ama partiden partiye meyve oranları değişmişti ve bunu hiçbir kavanoz göstermiyordu. {kahraman} rastgele bir kavanozu açıp tadına bakmak yerine her partiden uygun bir numune ayırdı. Numune, incelenmek için seçilmiş küçük bir örnekti. Üretim tarihini ve parti bilgisini kayıtlarla karşılaştırdı. Kayıt klasörü o güne kadar rafın arkasında duruyordu; {kahraman}, onun herkesin kolay ulaşacağı bir yere konmasını önerdi. Böylece bir soru geldiğinde kimse hafızasına dayanmak zorunda kalmayacaktı. Bir görevli, hazırlanmış etiketlerin çöpe gitmesine üzüldü. {kahraman}, kullanılabilir kâğıtların arka yüzüne deneme baskısı yapılabileceğini söyledi; hem doğru bilgi hazırlanacak hem de gereksiz malzeme harcanmayacaktı. Çalışma masasındaki renkli çıkartmalar da kutulara ayrıldı.
 
 ---
 
 @omurga
 
-Öğleden sonra bir ziyaretçi atölyeye geldi. Eski tasarımı görünce güldü; yeni tasarıma bakınca içeriği hemen anladı. “Demek gizemli olan sadece adıymış,” dedi. {kahraman} etiketin arkasındaki küçük çizimi gösterdi. Çizimde üç meyve el ele tutuşmuş gibi duruyordu. Etiketin kontrol edildiğini belirten işaret tasarımın en küçük bölümündeydi. {kahraman} müşterinin asıl görmek istediği içeriğin ön planda kalmasını sağladı. Çizimlerin yeri bir kez daha değiştirildi; böylece bilgi kaybolmadan eğlenceli görünüm korunmuş oldu. Atölyedeki çalışanlar bu fikri çok sevdi. Fakat {kahraman} çizimin doğru bilgiyi örtmesine izin vermedi. Daha sonra kavanozların üzerine birer kontrol işareti kondu. İşaret, içeriğin kontrol edildiğini gösteriyor ama ürünü olduğundan farklı tanıtmıyordu. Gülümseten bir tasarımla güvenilir bilgi aynı kavanozda buluşmuştu.
+Yeni etiket tasarımında komik isim kaldı. Altına meyvelerin adları ve içerik bilgileri açıkça yazıldı. {kahraman} özellikle küçük yazıların kolay okunmasını istedi. Çalışanlardan biri uzun yazıları kavanozun altına koymayı önerdi, bir başkası parlak renklerin her sorunu çözeceğini düşündü. {kahraman} açık zemin üzerinde koyu yazının nasıl göründüğünü gösterdi. Renkler güzel olabilirdi ama göz yormayan, okunabilen bir tasarım gerekiyordu. Denemeyi farklı uzaklıklardan yaptılar. Müşteri kavanozu ters çevirmeden bilgiye ulaşabilmeliydi. {kahraman} okunaklı ve sade bir yerleşim hazırladı. Alerjisi ya da özel beslenme ihtiyacı olan insanların ürünleri daha dikkatli seçebileceğini de hatırlattı. İlk baskı yapılınca herkes kavanozu elden ele dolaştırıp yazıları okumayı denedi.
 
 ---
 
 @omurga
 
-Akşam pazarına gönderilen kavanozlar raflara dizildi. Bir müşteri iki farklı reçeli karşılaştırıp kendisine uygun olanı seçti. Atölye sahibi, önceki etiketin ne kadar çok soru doğurduğunu hatırladı. Pazar kapanırken atölye çalışanları yeni ürün için kısa bir kontrol listesi oluşturdu. Adı, içeriği, kayıt bilgisi ve okunabilirliği ayrı ayrı gözden geçirilecekti. {kahraman} yalnızca bugünkü hatayı düzeltmek yerine benzer karışıklıkların yeniden yaşanmamasına yardım etmişti. “Bazen daha kısa bir cevap için daha doğru bir açıklama gerekiyormuş,” dedi. {kahraman} yeni parti kayıtlarının da düzenli tutulmasını istedi. Bir sonraki ürün farklı bir meyveden yapılacaktı; onun etiketi de kendi içeriğini anlatmalıydı. Gizemli Güneş Reçeli raflarda kaldı ama artık kavanozu eline alan kimse, içindekileri tahmin etmek zorunda değildi.
+Öğleden sonra bir ziyaretçi atölyeye geldi. Eski etiketi görünce güldü, yeni etikete bakınca içeriği hemen anladı. “Demek gizemli olan yalnızca adıymış,” dedi. {kahraman}, etiketin arkasındaki küçük çizimi gösterdi: Üç meyve el ele tutuşmuş gibi duruyordu. Çalışanlar bu fikri çok sevdi, hatta çizimi ön yüze büyük basmak istediler. Fakat {kahraman} çizimin doğru bilgiyi örtmesine izin vermedi. Çizimin yeri bir kez daha değiştirildi; bilgi kaybolmadan eğlenceli görünüm korunmuş oldu. Kavanozların üzerine küçük bir kontrol işareti kondu. İşaret içeriğin denetlendiğini gösteriyordu ama ürünü olduğundan farklı tanıtmıyordu.
+
+---
+
+@omurga
+
+Akşam pazarına gönderilen kavanozlar raflara dizildi. Bir müşteri iki farklı reçeli karşılaştırıp kendine uygun olanı seçti. Atölye sahibi, önceki etiketin ne çok soru doğurduğunu hatırladı. Pazar kapanırken çalışanlar yeni ürünler için kısa bir kontrol listesi hazırladı: Adı, içeriği, kayıt bilgisi ve okunabilirliği ayrı ayrı gözden geçirilecekti. “Bazen kısa bir cevap vermek için daha doğru bir açıklama gerekiyormuş,” dedi {kahraman}. Bir sonraki ürün başka bir meyveden yapılacaktı; onun etiketi de kendi içeriğini anlatacaktı. Gizemli Güneş Reçeli raflarda kaldı ama kavanozu eline alan kimse artık içindekileri tahmin etmek zorunda değildi.

@@ -30,75 +30,75 @@ sorular:
     dayanak_sayfa: 1
     metin: "İletişim sorunları en çok nerede görülüyordu?"
     secenekler:
-      - {id: A, metin: "Şehir meydanında"}
+      - {id: A, metin: "Şehir merkezindeki büyük meydanda"}
       - {id: B, metin: "Vadi yolunun bazı noktalarında"}
-      - {id: C, metin: "Köyün içindeki pazarda"}
-      - {id: D, metin: "Atölyenin koridorunda"}
+      - {id: C, metin: "Köyün içindeki küçük pazar yerinde"}
+      - {id: D, metin: "Merkezdeki atölyenin uzun koridorunda"}
     dogru: B
     dayanak: "Dağ köyleri arasındaki yol, bazı noktalarda telefon sinyalinin kesildiği uzun bir vadiden geçiyordu."
-    aciklama: "Metindeki \"Dağ köyleri arasındaki yol, bazı noktalarda telefon sinyalinin kesildiği uzun bir vadiden geçiyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Sinyal, köyleri birbirine bağlayan vadi yolunun bazı noktalarında kesiliyordu. Meydan, pazar ve atölye koridoru metinde geçmez."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
-    metin: "İlk konum niçin elendi?"
+    metin: "Ekip üç olası konumdan ilkini niçin eledi?"
     secenekler:
-      - {id: A, metin: "Bakım defteri bulunmadı"}
-      - {id: B, metin: "Orada çok insan vardı"}
-      - {id: C, metin: "Kaya radyo dalgasını engelliyordu"}
-      - {id: D, metin: "Yol haritası kaybolmuştu"}
+      - {id: A, metin: "Konumun bakım kaydı bulunamamıştı"}
+      - {id: B, metin: "Orada çok sayıda insan toplanmıştı"}
+      - {id: C, metin: "Kaya dalgaların yolunu kesiyordu"}
+      - {id: D, metin: "Konumun yol haritası kaybolmuştu"}
     dogru: C
     dayanak: "İlk konum uygun görünüyordu fakat arada yüksek bir kaya engel oluşturuyordu."
-    aciklama: "Metindeki \"İlk konum uygun görünüyordu fakat arada yüksek bir kaya engel oluşturuyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "İlk konumda yüksek bir kaya engel oluşturuyordu; radyo dalgalarının geçişini keser. Bakım kaydı, kalabalık ve yol haritası eleme nedeni olarak yazılmamıştır."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
-    metin: "“Sinyal” sözcüğü burada neyi anlatıyor?"
+    metin: "“Ekip, vadinin karşı tarafında aynı anda ölçüm yaparak sinyal gücünü not etti.” cümlesindeki “sinyal” neyi anlatıyor?"
     secenekler:
-      - {id: A, metin: "İletişim taşıyan işareti"}
-      - {id: B, metin: "Yol kenarındaki ağacı"}
-      - {id: C, metin: "Araçların yakıtını"}
-      - {id: D, metin: "Dağdaki rüzgârı"}
+      - {id: A, metin: "Haberleşmeyi taşıyan işareti"}
+      - {id: B, metin: "Yol kenarında duran büyük ağacı"}
+      - {id: C, metin: "Araçların depodaki yakıtını"}
+      - {id: D, metin: "Vadide esen soğuk rüzgârı"}
     dogru: A
     dayanak: "Ekip, vadinin karşı tarafında aynı anda ölçüm yaparak sinyal gücünü not etti."
-    aciklama: "Metindeki \"Ekip, vadinin karşı tarafında aynı anda ölçüm yaparak sinyal gücünü not etti.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Ölçülen şey haberleşmeyi taşıyan işaretin gücüdür. Ağaç, yakıt ve rüzgâr bu ölçümle ilgili değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
     metin: "{kahraman} bakım planını niçin hazırladı?"
     secenekler:
       - {id: A, metin: "Dağların adını değiştirmek için"}
-      - {id: B, metin: "Haritayı büyütmek için"}
-      - {id: C, metin: "Denemeleri gizlemek için"}
-      - {id: D, metin: "Sistemin ileride de çalışmasını sağlamak için"}
+      - {id: B, metin: "Haritayı daha da büyütmek için"}
+      - {id: C, metin: "Denemeleri herkesten gizlemek için"}
+      - {id: D, metin: "Sistemin sonra da çalışması için"}
     dogru: D
     dayanak: "{kahraman} bakım planını, cihazların kontrol tarihlerini ve olası arıza işaretlerini bir dosyada topladı."
-    aciklama: "Metindeki \"{kahraman} bakım planını, cihazların kontrol tarihlerini ve olası arıza işaretlerini bir dosyada topladı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Kontrol tarihleri ve arıza işaretleri düzenin kurulduktan sonra da çalışmasını sağlar. Dağ adı, harita boyutu ya da gizleme planın konusu değildir."
 ---
 
 @omurga
 
-Dağ köyleri arasındaki yol, bazı noktalarda telefon sinyalinin kesildiği uzun bir vadiden geçiyordu. Haberleşme teknikeri olan {kahraman}, bu yol üzerindeki iletişimi iyileştirmek için görevlendirildi. Yol ekipleri, kış aylarında birbirlerine daha kolay ulaşmak istiyordu. {kahraman} haritaya çizilmiş düz bir çizginin, gerçek arazinin bütün ayrıntılarını gösteremeyeceğini biliyordu. Vadiye ilk gidildiğinde ekip, haberleşmenin en çok hangi saatlerde gerekli olduğunu yol görevlilerine sordu. Sabah ve akşam yapılan kontroller farklı olabiliyordu. {kahraman} kullanım ihtiyacını anlamadan yalnızca en güçlü cihazı seçmenin yararlı olmayacağını biliyordu. Planın merkezinde cihaz değil, iletişim kurması gereken insanlar vardı. Önce vadiye gidip farklı yüksekliklerde ölçüm yaptı. Rüzgâr esiyor, tepelerde sis dolaşıyordu. Ölçüm cihazını yağmurdan koruyarak ilerledi. Birkaç noktada ses çok netti, başka noktalarda neredeyse duyulmuyordu. Bu düzensizliği anlamadan yeni cihaz kurulmasını önermedi.
-
----
-
-@omurga
-
-İkinci gün tepelerin arkasında kalan alanlar incelendi. Radyo dalgalarının yayılışında kullanılan frekans ve arazi yapısı birlikte değerlendiriliyordu. Frekans, bir dalganın belirli sürede ne kadar sık tekrar ettiğini anlatan ölçüydü. {kahraman} teknik ekiple harita üzerinde üç olası yer belirledi. Haritadaki üç nokta arasında yürüyerek ilerlemek kolay değildi. Teknik ekip güzergâhı önceden kontrol etti ve güvenli alanların dışına çıkmadı. {kahraman} en uygun konumu seçerken bakım aracının ulaşabileceği yolu da hesaba kattı. Bir düzenek çalışmaya başladıktan sonra arızalandığında ona ulaşabilmek de gerekiyordu. İlk konum uygun görünüyordu fakat arada yüksek bir kaya engel oluşturuyordu. İkinci konuma ulaşmak zordu; bakım ekibi oraya güvenle gidemeyebilirdi. Üçüncü yer, yol ve tepe arasında dengeli bir noktadaydı. {kahraman} yalnızca en yüksek tepeyi seçmenin her zaman en iyi sonuç vermediğini kaydetti.
+Dağ köyleri arasındaki yol, bazı noktalarda telefon sinyalinin kesildiği uzun bir vadiden geçiyordu. Haberleşme teknikeri {kahraman}, buradaki iletişimi iyileştirmek için görevlendirildi. Yol ekipleri özellikle kış aylarında birbirine daha kolay ulaşmak istiyordu. Sis çöktüğünde araçlar vadiden tek tek geçiyor, birbirinden haber almak zorlaşıyordu. {kahraman} ilk gün yol görevlilerine haberleşmenin en çok hangi saatlerde gerektiğini sordu; sabah ve akşam ihtiyaçları farklıydı. En güçlü cihazı seçmeden önce kullanıcıların ne istediğini öğrenmek gerekiyordu. Sonra vadiye çıkıp farklı yüksekliklerde ölçüm yaptı. Rüzgâr esiyor, tepelerde sis dolaşıyordu; ölçüm cihazını yağmurdan korudu. Bazı noktalarda ses çok netti, bazı noktalarda neredeyse hiç duyulmuyordu. Haritadaki düz bir çizgi arazinin bütün ayrıntılarını göstermiyordu. Bu düzensizliğin nedenini anlamadan yeni bir cihaz kurulmasını önermedi.
 
 ---
 
 @omurga
 
-Üçüncü noktaya geçici bir verici yerleştirildi. Ekip, vadinin karşı tarafında aynı anda ölçüm yaparak sinyal gücünü not etti. Sonuçlar umut vericiydi ama belirli bir virajda iletişim hâlâ kesiliyordu. {kahraman} ekip arkadaşlarından biriyle yol kenarındaki güvenli bir noktada durdu. Ölçüm sonuçlarına bakıldığında vadi boyunca kapsama alanının düzensiz olduğu görülüyordu. Kapsama, haberleşmenin kurulabildiği bölgenin genişliğini anlatıyordu. {kahraman} boş kalan küçük alanları harita üzerinde işaretledi. Böylece ekibin yalnızca iyi duyulan bölgelere odaklanması önlenmiş oldu. Eksik kalan kısımlar da planın parçasıydı. Ölçümlerin saati ve hava koşulları karşılaştırıldı. Sorunun, virajı çevreleyen dik kayaların etkisiyle büyüdüğü anlaşıldı. Cihazın gücünü sınırsız artırmak bir çözüm değildi. Bunun yerine daha uygun bir yerleşim ve yönlendirme üzerinde çalışıldı. Denemeler, teknik kurallara uygun şekilde yürütüldü.
+İkinci gün tepelerin arkasında kalan alanlar incelendi. Radyo dalgalarının nasıl yayıldığı, hem kullanılan frekansa hem de arazinin biçimine bağlıydı. Frekans, bir dalganın belirli sürede kaç kez tekrarlandığını anlatan ölçüdür. {kahraman} teknik ekiple harita üzerinde üç olası yer belirledi. Ekip yürüyüş güzergâhını önceden kontrol etti ve güvenli alanın dışına çıkmadı. {kahraman} konum seçerken bakım aracının ulaşabileceği yolu da hesaba kattı; cihaz arızalanırsa ona ulaşılabilmeliydi. İlk konum uygun görünüyordu fakat arada yüksek bir kaya engel oluşturuyordu. İkinci konuma ulaşmak zordu, bakım ekibi oraya güvenle gidemeyebilirdi. Üçüncü yer yol ile tepe arasında dengeli bir noktadaydı; bakım aracı oraya rahatça çıkabilirdi. En yüksek tepe her zaman en iyi konum değildi.
 
 ---
 
 @omurga
 
-Yeni düzenlemenin ardından test aracı aynı yolu yeniden izledi. Önceden kesilen virajda kısa bir sesli mesaj karşı tarafa ulaştı. {kahraman} sevindi ama tek bir denemeyi yeterli bulmadı. Günün farklı saatlerinde yapılan tekrarlar da başarılı oldu. Eğitime katılan yol görevlileri kısa ve açık mesajlar göndermeyi denedi. Bir mesaj çok uzun olduğunda önemli bilgi arada kaybolabiliyordu. {kahraman} örnek konuşmaları dinleyerek gerekli düzeltmeleri yaptı. Sistem ne kadar güçlü olursa olsun onu kullananların anlaşılır iletişim kurması da önemliydi. Bu nedenle eğitim uygulamalı düzenlendi. Yol bakım görevlileri sistemi kullanmadan önce kısa bir eğitim aldı. Hangi durumda hangi kanaldan iletişim kurulacağı açıkça anlatıldı. {kahraman} bakım planını, cihazların kontrol tarihlerini ve olası arıza işaretlerini bir dosyada topladı. Yardım sağlayan bir düzenin, kurulduktan sonra unutulamayacağını biliyordu.
+Üçüncü noktaya geçici bir verici yerleştirildi. Ekip, vadinin karşı tarafında aynı anda ölçüm yaparak sinyal gücünü not etti. Sonuçlar umut vericiydi ama belirli bir virajda iletişim hâlâ kesiliyordu. {kahraman}, yol kenarındaki güvenli bir noktada ekip arkadaşıyla birlikte ölçümlere baktı: Vadi boyunca kapsama düzensizdi. Kapsama, haberleşmenin kurulabildiği bölgenin genişliğidir. {kahraman} boş kalan küçük alanları haritada işaretledi; ekip yalnızca iyi çeken yerlere bakıp eksikleri unutmamalıydı. Ölçüm sırasında bir ekip üyesi vadinin karşı yamacında, öteki virajda duruyor, sonuçları ayrı ayrı yazıyordu. Ölçümlerin saati ve hava koşulları karşılaştırıldı. Sorunun, virajı çevreleyen dik kayalar yüzünden büyüdüğü anlaşıldı. Cihazın gücünü sınırsız artırmak çözüm değildi. Bunun yerine vericinin yerleşimi ve yönü değiştirildi.
 
 ---
 
 @omurga
 
-Birkaç gün sonra vadide yoğun sis oluştu. Yol ekipleri gerekli bilgileri birbirlerine aktarabildi. Haberleşmenin iyileşmesi, onların çalışmasını daha düzenli hâle getirmişti. {kahraman} son gözlemde vadiyi uzaktan izledi. Sisli günün ardından ekip yeniden bir araya geldi. Alınan mesajın duyulmuş olması sevindiriciydi ama kayıtların kontrolü de tamamlandı. {kahraman} son dosyaya hangi alanların henüz tekrar test edilmesi gerektiğini yazdı. Başarılı bir çalışma, kalan soruları unutturmak yerine görünür hâle getiriyordu. Dağların biçimi değişmemişti; yollar yine kıvrılıyordu. Fakat artık bu kıvrımlar arasındaki sessizlik eskisi kadar güçlü değildi. Köyden gelen bir görevli, “Sesin ulaşması insana güven veriyor,” dedi. {kahraman} elindeki haritaya yalnızca bir işaret ekledi: düzenli bakım. Bir cihazın işe yaraması kadar, gerektiği anda çalışmaya devam etmesi de önemliydi.
+Yeni düzenlemeden sonra test aracı aynı yolu yeniden izledi. Önceden kesilen virajda kısa bir sesli mesaj karşıya ulaştı. {kahraman} sevindi ama tek bir denemeyi yeterli bulmadı. Günün farklı saatlerinde yapılan tekrarlar da başarılı oldu. Yol görevlileri kısa bir eğitim aldı: Hangi durumda hangi kanaldan haberleşileceği anlatıldı, örnek mesajlar denendi. Kimi görevliler mesajları gereğinden uzun kuruyordu. Çok uzun bir mesajda önemli bilgi arada kaybolabiliyordu; {kahraman} örnek konuşmaları dinleyip düzeltmeler önerdi. {kahraman} bakım planını, cihazların kontrol tarihlerini ve olası arıza işaretlerini bir dosyada topladı. Kurulduktan sonra unutulan bir düzen, kısa sürede işe yaramaz hâle gelebilirdi.
+
+---
+
+@omurga
+
+Birkaç gün sonra vadide yoğun sis oluştu. Yol ekipleri gerekli bilgileri birbirine aktarabildi. Sisli günün ardından ekip yeniden bir araya geldi ve kayıtları kontrol etti. {kahraman}, son dosyaya hangi alanların henüz tekrar test edilmesi gerektiğini de yazdı; kalan sorular unutulmamalı, görünür kalmalıydı. Ekip, sinyali hâlâ zayıf kalan kısa bir bölümü de bir sonraki ölçüm listesine aldı. Dağların biçimi değişmemişti, yollar yine kıvrılıyordu. Fakat bu kıvrımların arasındaki sessizlik eskisi kadar uzun sürmüyordu. Köyden gelen bir görevli, “Sesin ulaşması insana güven veriyor,” dedi. {kahraman} elindeki haritaya yalnızca bir not ekledi: düzenli bakım.

@@ -1,5 +1,5 @@
 ---
-baslik: "Tavşanın Sessiz İşaretleri"
+baslik: "Tavşanın Kozalak İzleri"
 slug: "hr162-hayvan-tavsanin-sessiz-isaretleri"
 fis_kodu: "HR-162"
 tur: arkadaslik
@@ -8,7 +8,7 @@ sinif_alt: 5
 sinif_ust: 5
 kahraman_turu: hayvan
 deger_anahtarlari: [D4, D5]
-tanitim: "Orman patikalarındaki işaretler yağmurda kayboldu. {kahraman} arkadaşlarının anlayabileceği yeni bir yol dili oluşturuyor."
+tanitim: "Yağmur orman patikalarındaki eski işaretleri silmiş. {kahraman} arkadaşlarıyla birlikte herkesin aynı şeyi anlayacağı kozalak işaretleri kuruyor."
 durum: taslak
 uretim_kaynak: llm_taslak
 duzeltme_tarihi: "2026-11-10"
@@ -28,31 +28,31 @@ sorular:
   - id: s1
     beceri: hatirlama
     dayanak_sayfa: 1
-    metin: "Eski yol işaretlerine ne olmuştu?"
+    metin: "Meyve paylaşım günü yaklaşırken eski yol işaretlerine ne olmuştu?"
     secenekler:
-      - {id: A, metin: "Renkleri maviye dönmüştü"}
-      - {id: B, metin: "Tümü taşınmıştı"}
-      - {id: C, metin: "Yağmurda bir kısmı silinmişti"}
-      - {id: D, metin: "Çiçeklerle kaplanmıştı"}
+      - {id: A, metin: "Renkleri solup maviye dönmüştü"}
+      - {id: B, metin: "Bütün işaretler başka yere taşınmıştı"}
+      - {id: C, metin: "Yağmur bir kısmını silmişti"}
+      - {id: D, metin: "Üzerleri çiçeklerle örtülmüştü"}
     dogru: C
     dayanak: "Ancak yeni yağan yağmur, eski yol işaretlerinin bir kısmını silmişti."
-    aciklama: "Metindeki \"Ancak yeni yağan yağmur, eski yol işaretlerinin bir kısmını silmişti.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Ancak yeni yağan yağmur, eski yol işaretlerinin bir kısmını silmişti.\" cümlesi C seçeneğini doğrular. İşaretlerin rengi değişmemiş, taşınmamış ve çiçeklerle örtülmemişti; bu yüzden A, B ve D yanlıştır."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
-    metin: "İlk kozalak işaretinin değiştirilme nedeni nedir?"
+    metin: "{kahraman} üç kozalaklı ilk işareti neden değiştirdi?"
     secenekler:
-      - {id: A, metin: "Herkes aynı anlamı çıkarmadığı için"}
+      - {id: A, metin: "Sincap onu oyun sandığı için"}
       - {id: B, metin: "Kozalaklar çok ağır olduğu için"}
-      - {id: C, metin: "Yol çok kısa olduğu için"}
-      - {id: D, metin: "Köprü yüksek olduğu için"}
+      - {id: C, metin: "Köprü çok yüksek olduğu için"}
+      - {id: D, metin: "Yol çok kısa olduğu için"}
     dogru: A
     dayanak: "Fakat sincap, üç kozalağı görünce bunun bir oyun işareti olduğunu sandı."
-    aciklama: "Metindeki \"Fakat sincap, üç kozalağı görünce bunun bir oyun işareti olduğunu sandı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Fakat sincap, üç kozalağı görünce bunun bir oyun işareti olduğunu sandı.\" cümlesi, işaretin yol bilgisi olarak okunmadığını gösterir; bu yüzden yeni bir anlaşma gerekti. Kozalakların ağırlığı, köprünün yüksekliği ve yolun uzunluğu metinde değişiklik nedeni olarak geçmez."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 2
-    metin: "“Rota” hangi anlamda kullanılmıştır?"
+    metin: "“Rota” sözcüğü bu cümlede hangi anlamda kullanılmıştır?"
     secenekler:
       - {id: A, metin: "Meyvelerin tadı"}
       - {id: B, metin: "İzlenecek yol"}
@@ -60,45 +60,45 @@ sorular:
       - {id: D, metin: "Kozalakların rengi"}
     dogru: B
     dayanak: "{kahraman} sincapla birlikte ilk rotayı tekrar yürüdü."
-    aciklama: "Metindeki \"{kahraman} sincapla birlikte ilk rotayı tekrar yürüdü.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"{kahraman} sincapla birlikte ilk rotayı tekrar yürüdü.\" cümlesinde rota, yürünen yolu, yani izlenecek güzergâhı anlatır. Meyvenin tadı, gölge ve kozalağın rengi yürünebilecek bir şey değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 5
-    metin: "{kahraman} neden işaretleri gün sonunda topladı?"
+    metin: "{kahraman} neden günün sonunda kozalakları toplamaya çıktı?"
     secenekler:
       - {id: A, metin: "Yeni bir oyun başlatmak için"}
       - {id: B, metin: "Buluşmayı unutturmak için"}
       - {id: C, metin: "Köprüyü kapatmak için"}
-      - {id: D, metin: "Doğal çevreyi temiz ve düzenli bırakmak için"}
+      - {id: D, metin: "Ormanı doğal bırakmak için"}
     dogru: D
     dayanak: "Ormanın doğal görüntüsünün korunmasını istiyordu."
-    aciklama: "Metindeki \"Ormanın doğal görüntüsünün korunmasını istiyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Ormanın doğal görüntüsünün korunmasını istiyordu.\" cümlesi, toplama nedeninin ormanı olduğu gibi bırakmak olduğunu gösterir. Oyun başlatmak, buluşmayı unutturmak ya da köprüyü kapatmak metinde hiç amaç olarak geçmez."
 ---
 
 @omurga
 
-{kahraman} çalılıkların yanında yaşayan bir tavşandı. Ormanın geniş açıklığında her yıl küçük bir meyve paylaşım günü düzenlenirdi. Bu yıl farklı patikalardan gelecek canlılar aynı yerde buluşacaktı. Ancak yeni yağan yağmur, eski yol işaretlerinin bir kısmını silmişti. Orman açıklığının girişinde farklı boylarda taşlar bulunuyordu. {kahraman} bunları işaret olarak kullanmayı düşündü ama taşların başka canlılar için önemli olabileceğini hatırladı. Yerlerinden kaldırmadan da yol bulunabilmeliydi. Böylece kozalak düşüncesi daha uygun göründü. {kahraman} arkadaşlarının yanlış yola sapmasını istemedi. Önce açıklığa giden güvenli rotayı gözden geçirdi. Yolda yüksek bir taş, iki ağaç ve küçük bir köprü bulunuyordu. İşaretlerin yalnızca bir grup tarafından değil, bütün canlılar tarafından anlaşılması gerekiyordu. {kahraman} bu yüzden renkli yapraklar yerine kolay fark edilen doğal şekiller seçmeyi düşündü.
-
----
-
-@omurga
-
-İlk durak büyük taşın önüydü. {kahraman} taşın yanına üç kozalak dizdi. Kozalaklar ilerideki köprünün yönünü gösteriyordu. Fakat sincap, üç kozalağı görünce bunun bir oyun işareti olduğunu sandı. İlk anlaşmadan sonra sincap çizilen küçük yönleri kendisi denedi. {kahraman} arkasından seslenip doğru cevabı söylemedi; sincap işareti kendi başına yorumladı. Bir işaretin gerçekten anlaşılır olup olmadığı böyle daha iyi anlaşılabilirdi. Hataları birlikte düzelttiler. {kahraman} işaretin yeterince açık olmadığını fark etti. Sincapla küçük bir anlaşma yaptı: Yan yana iki kozalak düz yolu, köşeye konan tek kozalak dönüşü gösterecekti. Bu işaretler çevreye zarar vermeyecek biçimde yerleştirildi. Ne ağaç gövdesi çizildi ne de dallar kırıldı. {kahraman} sincapla birlikte ilk rotayı tekrar yürüdü.
+{kahraman} çalılıkların kenarında yaşayan bir tavşandı. Ormanın açıklığında her sonbahar meyve paylaşım günü kurulurdu. Bu kez canlılar farklı patikalardan gelecekti. Ancak yeni yağan yağmur, eski yol işaretlerinin bir kısmını silmişti. Patika başlarındaki boyalı çubuklar çamura gömülmüş, ayrım noktalarındaki izler akıp gitmişti. {kahraman} önce yol boyundaki taşları işaret olarak kullanmayı düşündü. Ama kimi taşlar yaşlı kaplumbağanın güneşlendiği yerlerdi, kimilerinin altında böcek yuvaları vardı. Yol, hiçbir şeyi yerinden oynatmadan gösterilmeliydi. Yerde bol bulunan kozalaklar bu iş için uygun görünüyordu. İşi bitince alınıp götürülebilirlerdi. {kahraman} açıklığa giden rotayı zihninde yürüdü: yüksek bir taş, iki çam ağacı, küçük bir köprü. İşaretleri bu üç noktaya koyacaktı. Tek kaygısı vardı. Kendisine açık gelen bir işaret, başkası için hiçbir şey söylemeyebilirdi.
 
 ---
 
 @omurga
 
-Köprüye yakın yerde patika ikiye ayrılıyordu. Bir yol kısa ama çamurluydu. Diğer yol daha uzun fakat düz ve kuru görünüyordu. {kahraman} kısa olanı herkes için uygun saymadı. Küçük kaplumbağanın geçeceği yolu düşündü. Kaplumbağa kuru patikada rahat ilerleyince sincap farklı bir şey fark etti: İki arkadaş aynı hızda yürümüyordu. {kahraman} hızın yolun doğruluğunu belirlemediğini düşündü. Önemli olan seçilen yolun hedefe güvenle ulaştırmasıydı. Bu deneme işaretlerin yerini değiştirmelerini sağladı. Kozalak işaretlerini kuru patikaya yönlendirdi. Ardından kaplumbağayla yürüyerek işaretleri denedi. Bir noktada kozalaklar otların arasında saklanmıştı. {kahraman} onları daha görünür yere taşıdı. Başkasının yolu anlaması için sadece niyetin iyi olması yeterli değildi; işaretin de açık olması gerekiyordu. Sincap, yapılan değişiklikleri dikkatle izledi.
+İlk durak yüksek taşın önüydü. {kahraman} oraya üç kozalak dizdi. Kozalaklar köprünün yönünü gösteriyordu. Fakat sincap, üç kozalağı görünce bunun bir oyun işareti olduğunu sandı. Kozalakları sayarak zıpladı, sonra yanlış patikaya daldı. {kahraman} peşinden seslenmedi; işaretin gerçekten anlaşılıp anlaşılmadığını görmek istiyordu. Sincap çamın dibinde yolunu kaybedip geri dönünce ikisi de güldü. Sorun sincapta değil, işaretteydi. Birlikte küçük bir anlaşma yaptılar: yan yana iki kozalak düz yolu, köşeye konan tek kozalak dönüşü gösterecekti. Üç kozalaklı dizilişi bir daha kullanmadılar. Ağaç gövdesine çizik atılmadı, dallar kırılmadı. {kahraman} sincapla birlikte ilk rotayı tekrar yürüdü. Bu kez sincap her işareti doğru okudu.
 
 ---
 
 @omurga
 
-Meyve paylaşım günü geldiğinde ilk gelenler işaretleri kolayca takip etti. Ancak yağmurdan ıslanan bir kozalak yerinden yuvarlandı. {kahraman} durumu fark ederek sincapla birlikte yeni bir işaret koydu. Bu kez kozalağı sağlam bir taşın yanına yerleştirdiler. Paylaşım alanında getirilen meyveler özenle yerleştirildi. Bazı canlılar belirli meyveleri seviyor, bazıları başka türleri tercih ediyordu. {kahraman} tek bir seçenek sunmak yerine küçük bölümler hazırladı. Böylece herkes kendi ihtiyacına uygun olanı kolayca buldu. Paylaşım alanında bazı canlılar erken, bazıları geç gelmişti. Kimseyi geciktiği için ayıplamadılar. {kahraman} rotanın anlaşılır olmasına sevinmişti. Meyveler türlerine göre ayrıldı; isteyen istediği bölümden aldı. Gün, düzenli bir buluşmaya dönüştü.
+Köprünün az ötesinde patika ikiye ayrılıyordu. Kısa yol çamurluydu. Uzun yol ise düz ve kuruydu. {kahraman} kaplumbağanın kısa yolda çamura saplanacağını düşündü. Yavaş yürüyen biri için hızlı görünen yol, aslında en uzun yol olabilirdi. Düz patikanın başına iki kozalak koydu, çamurlu yolun girişine ise hiçbir şey koymadı. Sonra kaplumbağayla birlikte yola çıkıp işaretleri denedi. Kaplumbağa kuru patikada rahatça ilerledi. Yalnız bir yerde kozalaklar uzun otların arasında kaybolmuştu. Kaplumbağa durup başını çevirdi, çünkü dönüşü göremiyordu. {kahraman} kozalakları otların üstüne, göz hizasına taşıdı. Sincap da bir şey fark etti: İşareti koymak kadar, yoldan geçenin onu nereden göreceğini düşünmek de gerekiyordu.
 
 ---
 
 @omurga
 
-Gün sonunda {kahraman} yolda kalan işaretleri toplamak için tekrar yürüdü. Ormanın doğal görüntüsünün korunmasını istiyordu. Sincap, “Artık bütün patikaları biliyoruz,” dedi. {kahraman} gülümsedi. İşaretleri toplarken sincap bir kozalağı hatıra olarak saklamak istedi. {kahraman} yerde bulduğu başka bir kozalağı gösterdi. Bu etkinliği hatırlamak için bütün yolu izlerle doldurmaya gerek yoktu. Birlikte yapılan işin anısı, çevreyi temiz bırakırken de korunabilirdi. Orman mevsimden mevsime değişebilirdi; bir işaretin her zaman aynı yerde işe yarayacağı garanti değildi. Ama birlikte düşünmeyi ve denemeyi öğrenmişlerdi. Meyve paylaşım alanında kimse geride kalmamıştı. {kahraman} son kozalağı da yerinden alırken iyi bir anlaşmanın ses yükseltmekten çok, birbirini anlamakla kurulduğunu düşündü.
+Paylaşım günü ilk gelenler işaretleri sorunsuz izledi. Öğleye doğru çisenen yağmur köprünün yanındaki kozalağı yuvarlayıp çamura itti. {kahraman} bunu görünce sincapla birlikte kozalağı sağlam bir taşın dibine, eğimin yukarı tarafına yerleştirdi. Artık kaymıyordu. Açıklıkta herkesin getirdiği meyveler sergileniyordu. Kimi canlı elmayı, kimi yaban eriğini seviyordu. {kahraman} meyveleri tek yığın yapmak yerine türlerine göre ayırdı ve herkes istediği bölümden aldı. Bazı canlılar erken geldi, bazıları geç. Geç gelenleri kimse azarlamadı; onlara da ayrı bir pay kaldı. Kaplumbağa kuru patikadan en son geldi ama meyve bölümüne hiç acele etmeden, ilk gelenlerle aynı rahatlıkla yaklaştı.
+
+---
+
+@omurga
+
+Akşam olunca {kahraman} yolda kalan kozalakları toplamak için patikayı baştan yürüdü. Ormanın doğal görüntüsünün korunmasını istiyordu. Sincap da yanına katıldı. “Artık bütün patikaları biliyoruz,” dedi. Bir kozalağı hatıra olarak saklamak istiyordu. {kahraman} buna karşı çıkmadı, yalnızca ormandan bir kozalağın eksileceğini söyledi. Sincap biraz düşündü, kozalağı olduğu yere bıraktı ve yerine bir çam iğnesi aldı. Köprünün başındaki son kozalağı da toplarken {kahraman} yarını düşündü. Orman değişirse işaretler de değişebilirdi. Bunu yine birlikte konuşup yine birlikte deneyeceklerdi.

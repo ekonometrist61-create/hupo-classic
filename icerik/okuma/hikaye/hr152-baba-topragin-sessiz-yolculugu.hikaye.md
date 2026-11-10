@@ -1,5 +1,5 @@
 ---
-baslik: "Toprağın Sessiz Yolculuğu"
+baslik: "Yağmurla Yola Çıkan Toprak"
 slug: "hr152-baba-topragin-sessiz-yolculugu"
 fis_kodu: "HR-152"
 tur: bilim
@@ -30,29 +30,29 @@ sorular:
     dayanak_sayfa: 1
     metin: "Araştırmayı başlatan temel sorun neydi?"
     secenekler:
-      - {id: A, metin: "Tepenin tamamen kuruması"}
-      - {id: B, metin: "Tarlaların yer değiştirmesi"}
-      - {id: C, metin: "Yağmur suyunun çok toprak taşıması"}
-      - {id: D, metin: "Bütün yolların kapanması"}
+      - {id: A, metin: "Tepenin bütünüyle kuruyup çatlaması"}
+      - {id: B, metin: "Tarlaların başka yere kayması"}
+      - {id: C, metin: "Yağmur suyunun toprağı taşıması"}
+      - {id: D, metin: "Bütün yolların birden kapanması"}
     dogru: C
     dayanak: "Kırsaldaki bir tepenin eteklerinde yağmurdan sonra bulanık su birikiyordu."
-    aciklama: "Metindeki \"Kırsaldaki bir tepenin eteklerinde yağmurdan sonra bulanık su birikiyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Yağmurdan sonra biriken bulanık su, toprağın taşındığını gösteriyordu; araştırma bunun için başladı. Tepenin kuruması, tarlaların kayması ve yolların kapanması metinde geçmez."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
-    metin: "Bitki köklü örnekten suyun yavaş akması neyi düşündürür?"
+    metin: "Aynı büyüklükteki kaplarda köklü toprakta su daha yavaş akıyor. Bu neyi düşündürür?"
     secenekler:
-      - {id: A, metin: "Bitki örtüsü toprağı tutmaya yardım edebilir"}
+      - {id: A, metin: "Bitki kökleri toprağı tutabilir"}
       - {id: B, metin: "Bütün bitkiler aynı türdendir"}
-      - {id: C, metin: "Kapların büyüklüğü önemsizdir"}
-      - {id: D, metin: "Yağmur yalnız yazın yağar"}
+      - {id: C, metin: "Kapların büyüklüğü hiç önemli değildir"}
+      - {id: D, metin: "Yağmur yalnızca yazın yağmaktadır"}
     dogru: A
     dayanak: "Bitki köklerinin bulunduğu örnekte suyun daha yavaş aktığı görüldü."
-    aciklama: "Metindeki \"Bitki köklerinin bulunduğu örnekte suyun daha yavaş aktığı görüldü.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Kökler suyu yavaşlatıyor, bu da bitki örtüsünün toprağı tutmaya yardım edebileceğini düşündürür. Bitki türü, kap büyüklüğü ve yağış mevsimi bu deneyden çıkarılamaz."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
-    metin: "“Eğim” sözcüğü burada hangi özelliği anlatır?"
+    metin: "“Biri çok dik, diğeri daha yumuşak bir eğim taşıyordu.” cümlesindeki “eğim” hangi özelliği anlatır?"
     secenekler:
       - {id: A, metin: "Toprağın rengini"}
       - {id: B, metin: "Yüzeyin diklik derecesini"}
@@ -60,45 +60,45 @@ sorular:
       - {id: D, metin: "Bitkilerin yaprak sayısını"}
     dogru: B
     dayanak: "Biri çok dik, diğeri daha yumuşak bir eğim taşıyordu."
-    aciklama: "Metindeki \"Biri çok dik, diğeri daha yumuşak bir eğim taşıyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Dik ve yumuşak sözcükleri yüzeyin ne kadar yatık olduğunu anlatır; eğim diklik derecesidir. Renk, sıcaklık ve yaprak sayısı eğimle ilgili değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 5
-    metin: "{kahraman} ilk yağmur sonucunu niçin kesin başarı saymadı?"
+    metin: "Yağmurdan sonra toprak kaybı azalınca {kahraman} bunu neden kesin başarı saymadı?"
     secenekler:
-      - {id: A, metin: "Çalışmayı gizlemek için"}
+      - {id: A, metin: "Çalışmayı kimseye göstermemek için"}
       - {id: B, metin: "Yeni örnek almak istemediği için"}
-      - {id: C, metin: "Tüm tarlaları satmak için"}
-      - {id: D, metin: "Uzun süreli ölçümler gerektiği için"}
+      - {id: C, metin: "Tarlaları bir an önce satmak için"}
+      - {id: D, metin: "Ölçümlerin sürmesi gerektiği için"}
     dogru: D
     dayanak: "Mevsim boyunca tekrarlanacak ölçümlerin daha güvenilir bilgi sağlayacağını söyledi."
-    aciklama: "Metindeki \"Mevsim boyunca tekrarlanacak ölçümlerin daha güvenilir bilgi sağlayacağını söyledi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Tek yağmurun sonucu erken bir bulguydu; güvenilir bilgi için ölçümlerin mevsim boyunca sürmesi gerekiyordu. Gizleme, örnek almama ya da tarla satma gerekçe değildir."
 ---
 
 @omurga
 
-Kırsaldaki bir tepenin eteklerinde yağmurdan sonra bulanık su birikiyordu. Arazinin aşağı kısmındaki küçük tarla bundan etkilenmişti. Toprak bilimi uzmanı olan {kahraman}, suyun neden bu kadar çok toprak taşıdığını anlamak için çağrıldı. İlk gün tepeyi dolaşırken bir noktada ince, başka noktada kalın toprak tabakası gördü. İlk arazi toplantısında herkes toprağın başka bir noktaya taşındığını anlatıyordu. Fakat hangi yağmurdan sonra ne kadar değişim olduğu konusunda ortak kayıt yoktu. {kahraman} belirli gözlem noktaları seçti. Herkesin aynı yerlere bakması, ayrı ayrı hatırlanan olayları karşılaştırmayı kolaylaştıracaktı. Çalışma başlamadan önce tarla sahipleri, işaretlerin günlük işlerine engel olmayacağı konusunda bilgilendirildi. Araziye yapılan her müdahalenin kimin yaşamını etkileyeceği düşünüldü. Bazı yamaçlarda bitki örtüsü zayıflamıştı. {kahraman} hemen her yere aynı tohumu ekmeyi önermedi. Önce toprağın yapısını, suyun izlediği yolu ve yüzeyin eğimini ayrı ayrı incelemek gerekiyordu. Çalışmayı köydeki arazi sahipleriyle birlikte planladı. Çünkü geçici bir gösteri değil, sürdürülebilir bir iyileşme isteniyordu.
-
----
-
-@omurga
-
-Ekip farklı noktalardan küçük bir örneklem topladı. Örneklem, bütün alanı daha iyi anlamak için seçilen sınırlı sayıda parçaydı. Toprak örnekleri aynı büyüklükte kaplara kondu. Ardından kontrollü koşullarda küçük miktarlarda su verildi. Bitki köklerinin bulunduğu örnekte suyun daha yavaş aktığı görüldü. Örnek kaplarına konan toprakların renkleri birbirinden farklıydı. Bazı örnekler kolayca dağılıyor, bazıları daha toplu duruyordu. {kahraman} yalnızca renge bakarak karar vermedi. Toprakta organik parçaların, bitki köklerinin ve farklı büyüklükte tanelerin bulunduğunu anlattı. Suyun davranışı bu özelliklerden etkilenebilirdi. Ekip her kabın yerini karıştırmamak için numara verdi. Deneme sonunda hangi sonuçların tekrarlanması gerektiği de bir kenara yazıldı. Açıkta duran toprağın ise daha kolay taşındığı fark edildi. Bu hareket, yani erozyon, verimli üst toprağın yerinden kopup başka yere taşınmasıydı. {kahraman} sonuçları herkesin anlayabileceği bir çizimle anlattı. Ancak kapta görülen sonucun doğrudan bütün tepeye uygulanamayacağını da ekledi. Gerçek arazide rüzgâr, yağış ve zemin birlikte etkiliydi.
+Kırsaldaki bir tepenin eteklerinde yağmurdan sonra bulanık su birikiyordu. Aşağıdaki küçük tarla bundan zarar görmüştü. Toprak bilimi uzmanı {kahraman}, suyun neden bu kadar çok toprak taşıdığını anlamak için çağrıldı. Tepeyi dolaşırken bir yerde ince, başka bir yerde kalın toprak tabakası gördü. Herkes toprağın bir yerden başka yere gittiğini anlatıyordu ama hangi yağmurdan sonra ne kadar değiştiğine dair ortak bir kayıt yoktu. {kahraman} belirli gözlem noktaları seçti ve bunları köy odasının duvarındaki eski haritaya işaretledi; herkes aynı yerlere bakarsa gözlemler karşılaştırılabilirdi. Tarla sahipleri, işaretlerin günlük işlerine engel olmayacağı konusunda bilgilendirildi. Bazı yamaçlarda bitki örtüsü zayıflamıştı ama {kahraman} her yere aynı tohumu ekmeyi önermedi. Önce toprağın yapısını, suyun izlediği yolu ve yüzeyin eğimini ayrı ayrı incelemek gerekiyordu. Çalışmayı köydeki arazi sahipleriyle birlikte planladı.
 
 ---
 
 @omurga
 
-İkinci aşamada tepeden aşağı inen küçük akış yolları işaretlendi. Biri çok dik, diğeri daha yumuşak bir eğim taşıyordu. Yağmur sırasında suyun nerede hızlandığını anlamak için güvenli bir gözlem yapıldı. {kahraman} toprağın daha az sürüklendiği yerlerde bitki örtüsünün daha sık olduğunu not etti. Komşu arazilerde aynı yağmurun farklı izler bırakması dikkat çekiciydi. {kahraman} yamaçların yalnızca diklik bakımından değil, üzerlerindeki bitkiler ve yüzey yapısı bakımından da değiştiğini gösterdi. Bir arazi sahibi kendi tarlasına yapılacak düzenlemenin aşağıdaki tarlayı etkileyebileceğini ilk kez bu kadar açık düşündü. Görüşme sonunda herkes kendi sınırına odaklanmak yerine suyun bütün yolunu gösteren haritaya baktı. Çözüm ortak alanları da kapsamalıydı. Bazı noktalarda geçici su yönlendirme düzenekleri işe yarayabilirdi ama bunların yanlış yapılması sorunu başka tarlaya taşıyabilirdi. Bu nedenle çözüm yalnızca tek bir parsele göre tasarlanmadı. Komşu arazilerin sahipleri de görüşmeye davet edildi. Herkes suyun kendi sınırında durmadığını, yukarıdan aşağı birlikte aktığını fark etti.
+Ekip tepenin farklı yerlerinden küçük bir örneklem topladı. Örneklem, bütün alanı daha iyi anlamak için seçilen sınırlı sayıda parçadır. Toprak örnekleri aynı büyüklükte kaplara kondu ve karışmasınlar diye numaralandırıldı. Kapların altına akan suyu toplayan küçük tepsiler yerleştirildi. Sonra kontrollü biçimde, her kaba aynı miktarda su verildi. Bitki köklerinin bulunduğu örnekte suyun daha yavaş aktığı görüldü. Toprakların renkleri farklıydı; bazıları kolayca dağılıyor, bazıları daha toplu duruyordu. {kahraman} yalnızca renge bakarak karar vermedi. Topraktaki organik parçaların, bitki köklerinin ve farklı büyüklükteki tanelerin suyun davranışını etkileyebileceğini anlattı. Açıktaki toprak daha kolay taşınıyordu. Verimli üst toprağın yerinden kopup başka yere taşınmasına erozyon denir. {kahraman} sonuçları herkesin anlayacağı bir çizimle gösterdi ama kapta görülen sonucun doğrudan bütün tepeye uygulanamayacağını da ekledi; gerçek arazide rüzgâr, yağış ve zemin birlikte etkiliydi.
 
 ---
 
 @omurga
 
-Plan, toprağın korunmasını sağlayacak bitkilendirme alanlarını ve uzmanların belirlediği küçük su yavaşlatma noktalarını içeriyordu. Bir köşede çökeltme amacıyla tasarlanmış güvenli bir alan ayrıldı; burada taşınan ince parçaların birikmesi gözlemlenebilecekti. {kahraman} her noktaya aynı yöntemi uygulamak yerine koşullara göre farklı çözüm seçti. Yavaşlatma noktaları tasarlanırken çevredeki küçük canlıların geçiş yollarına zarar verilmemesine dikkat edildi. Ekip, yapılan işin yağmurlu havada nasıl davranacağını önceden tartıştı. {kahraman} her ihtimale karşı bakım ve kontrol tarihlerinin de yazılmasını istedi. Bir yöntemin uygulanmasıyla etkisinin anlaşılması aynı şey değildi. Kontrol yapılmadığında başarılı gibi görünen bir düzenek, zaman içinde yeni bir soruna dönüşebilirdi. Bu nedenle planın yanında izleme çizelgesi hazırlandı. Toprağı gereksiz yere kazmak, korunmak istenen yüzeyi daha da bozabilirdi. Çalışmalar sırasında eski yürüyüş patikası da açık tutuldu. Çevrede yaşayanların günlük kullanımıyla koruma planı birlikte düşünülmüştü. İlk yağmur beklenirken ekip ölçüm işaretlerini yerleştirdi ve not defterlerini hazırladı.
+İkinci aşamada tepeden inen küçük akış yolları işaretlendi. Biri çok dik, diğeri daha yumuşak bir eğim taşıyordu. Yağmur sırasında suyun nerede hızlandığı güvenli bir noktadan gözlendi. Yağmur dindikten sonra akış yollarının kenarında küçük çukurlar ve sürüklenmiş çakıllar görüldü. {kahraman}, toprağın az sürüklendiği yerlerde bitki örtüsünün daha sık olduğunu not etti. Komşu arazilerde aynı yağmurun farklı izler bırakması dikkat çekiciydi; yamaçlar yalnızca diklik bakımından değil, bitki örtüsü ve yüzey yapısı bakımından da birbirinden ayrılıyordu. Bir arazi sahibi, kendi tarlasına yapılacak düzenlemenin aşağıdaki tarlayı etkileyebileceğini ilk kez bu kadar açık gördü. Komşu arazilerin sahipleri de görüşmeye çağrıldı ve herkes kendi sınırına değil, suyun bütün yolunu gösteren haritaya baktı. Bazı noktalarda geçici su yönlendirme düzenekleri işe yarayabilirdi ama yanlış yapılırlarsa sorunu başka tarlaya taşıyabilirdi. Bu yüzden çözüm tek bir parsele göre tasarlanmadı.
 
 ---
 
 @omurga
 
-Yağmurdan sonraki ölçümde su bütünüyle berrak değildi; böyle bir sonuç hemen beklenmiyordu. Fakat bazı noktalarda taşınan toprak miktarı azalmıştı. {kahraman} bu erken bulguyu kesin başarı diye duyurmadı. Mevsim boyunca tekrarlanacak ölçümlerin daha güvenilir bilgi sağlayacağını söyledi. Son görüşmede toprak kaybının azalması sevindirici bulundu ama daha uzun süreli sonuçlara ihtiyaç olduğu tekrar konuşuldu. {kahraman} erken gözlemlerle kesin yargı arasındaki farkı özellikle vurguladı. Tarla sahipleri bakım görevlerini mevsimlere göre paylaştı. Biri bitki örtüsünü, diğeri su akış işaretlerini kontrol edecekti. Toprak sessizce yerinde kalırken yapılan işlerin değeri hemen fark edilmeyebilirdi. Yine de bu sessizlik, korunmaya değer bir başarının ilk işareti sayılabilirdi. Arazi sahipleri, korunacak alanların bakımını paylaşmaya karar verdi. Tepeye bakan biri için yapılan işler küçük çizgiler ve yeşil yamalar gibi görünüyordu. Oysa bu çizgiler, toprağın yerinde kalmasına yardımcı olan dikkatli bir planın parçalarıydı. {kahraman} giderken örnek kaplarını topladı; toprağı korumak, onu önce anlamakla başlamıştı.
+Plan, toprağı koruyacak bitkilendirme alanlarını ve uzmanların belirlediği küçük su yavaşlatma noktalarını içeriyordu. Bir köşede çökeltme için güvenli bir alan ayrıldı; suyla gelen ince parçaların nasıl biriktiği burada gözlenecekti. {kahraman} her yere aynı yöntemi uygulamak yerine koşullara göre farklı çözümler seçti. Yavaşlatma noktaları yapılırken küçük canlıların geçiş yolları korundu, eski yürüyüş patikası açık tutuldu. Toprağı gereksiz kazmak, korunmak istenen yüzeyi daha da bozabilirdi. Ekip düzeneklerin yağmurlu havada nasıl davranacağını önceden tartıştı. {kahraman}, bakım ve kontrol tarihlerinin de yazılmasını istedi; kontrol edilmeyen bir düzenek zamanla yeni bir soruna dönüşebilirdi. Bu yüzden planın yanına bir izleme çizelgesi eklendi. İşaretlerin yanına bir yağmur ölçer de kondu; böylece her ölçüm aynı gün düşen yağmurla birlikte yazılacaktı. İlk yağmur beklenirken ekip ölçüm işaretlerini yerleştirdi ve not defterlerini hazırladı.
+
+---
+
+@omurga
+
+Yağmurdan sonraki ölçümde su tam berrak değildi; zaten bunu hemen beklemek doğru olmazdı. Fakat bazı noktalarda taşınan toprak miktarı azalmıştı. {kahraman} bu erken bulguyu kesin başarı diye duyurmadı. Mevsim boyunca tekrarlanacak ölçümlerin daha güvenilir bilgi sağlayacağını söyledi. Defterlerin ilk sayfasına tarih, yağış ve gözlem yeri başlıkları açıldı. Bir tarla sahibi aşağıdaki komşusunu da ölçüme çağırdı. Tarla sahipleri bakım görevlerini mevsimlere göre paylaştı: Biri bitki örtüsünü, öbürü su akış işaretlerini kontrol edecekti. Tepeye bakan biri yapılan işleri yalnızca küçük çizgiler ve yeşil yamalar olarak görüyordu. Oysa bu çizgiler toprağın yerinde kalmasına yardım eden dikkatli bir planın parçalarıydı. {kahraman} giderken örnek kaplarını topladı; toprağı korumak, onu önce anlamakla başlamıştı.

@@ -28,77 +28,77 @@ sorular:
   - id: s1
     beceri: hatirlama
     dayanak_sayfa: 1
-    metin: "{kahraman} ilk olarak neyi fark etti?"
+    metin: "Çiçekler eğik durduğunda {kahraman} toprağa dokununca ilk olarak neyi fark etti?"
     secenekler:
-      - {id: A, metin: "Çiçeklerin renginin değiştiğini"}
+      - {id: A, metin: "Çiçeklerin yapraklarının sarardığını"}
       - {id: B, metin: "Toprağın yer yer farklı ıslandığını"}
-      - {id: C, metin: "Bahçeye yeni ağaç dikildiğini"}
-      - {id: D, metin: "Rüzgâr gülünün durduğunu"}
+      - {id: C, metin: "Bahçeye yeni bir ağaç dikildiğini"}
+      - {id: D, metin: "Rüzgâr gülünün yön değiştirdiğini"}
     dogru: B
     dayanak: "Bir bölüm kupkuruydu, başka bir bölüm ise çok ıslaktı."
-    aciklama: "Metindeki \"Bir bölüm kupkuruydu, başka bir bölüm ise çok ıslaktı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Toprağın bir bölümü kupkuru, bir bölümü çok ıslaktı; bu yüzden B doğrudur. Yaprakların sarardığı, ağaç dikildiği ya da rüzgâr gülünün yön değiştirdiği metinde yazmaz."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
-    metin: "İki toprağa aynı su verilmesine rağmen farklı sonuç alınması neyi düşündürür?"
+    metin: "Aynı miktarda su verilen iki yerden biri çabuk kurudu, öteki uzun süre nemli kaldı. Bu fark neyi düşündürür?"
     secenekler:
-      - {id: A, metin: "Toprağın konumu sonucu etkiler"}
-      - {id: B, metin: "Suyun rengi değişmiştir"}
-      - {id: C, metin: "Çiçeklerin hepsi aynıdır"}
+      - {id: A, metin: "Güneş ve gölge sonucu etkiler"}
+      - {id: B, metin: "Suyun rengi değişmiş olabilir"}
+      - {id: C, metin: "Bütün çiçekler birbirinin aynısıdır"}
       - {id: D, metin: "Ölçü kabı yeterince büyüktür"}
     dogru: A
     dayanak: "Güneşte duran yerde su hızla kayboldu."
-    aciklama: "Metindeki \"Güneşte duran yerde su hızla kayboldu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Su güneşte duran yerde hızla kayboluyor, ağaç altında uzun süre kalıyor; demek ki güneş ve gölge farkı etkilidir. Suyun rengi, çiçek türü ya da kabın büyüklüğü bu farkı açıklamaz."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
-    metin: "Metindeki “filiz” neyi anlatır?"
+    metin: "“Çit dibinde yeni bir filiz yükseliyordu.” cümlesindeki “filiz” neyi anlatır?"
     secenekler:
-      - {id: A, metin: "Kurumuş ağaç dalını"}
-      - {id: B, metin: "Bahçenin taş yolunu"}
-      - {id: C, metin: "Yeni çıkmış küçük bitkiyi"}
-      - {id: D, metin: "Çiçeklerin su kabını"}
+      - {id: A, metin: "Kurumuş kalın bir ağaç dalını"}
+      - {id: B, metin: "Bahçenin ortasındaki taş yolu"}
+      - {id: C, metin: "Yeni çıkmış minik bir bitkiyi"}
+      - {id: D, metin: "Çiçeklerin su içtiği küçük kabı"}
     dogru: C
     dayanak: "Çit dibinde yeni bir filiz yükseliyordu."
-    aciklama: "Metindeki \"Çit dibinde yeni bir filiz yükseliyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Filiz, yeni çıkmış küçük bitkidir; cümlede yaprakları güneşe açılan minik bir bitkiden söz edilir. Kurumuş dal, taş yol ve su kabı bu anlama uymaz."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
-    metin: "{kahraman} neden çok ıslak yere yeniden su vermedi?"
+    metin: "{kahraman} çok ıslak yere neden yeni su eklemedi?"
     secenekler:
-      - {id: A, metin: "Bahçeyi terk etmek için"}
-      - {id: B, metin: "Çiçekleri saklamak için"}
-      - {id: C, metin: "Sulama kabını kırmamak için"}
-      - {id: D, metin: "Suyu gereksiz tüketmemek için"}
+      - {id: A, metin: "Bahçeden uzaklaşmak için"}
+      - {id: B, metin: "Çiçekleri gizlemek için"}
+      - {id: C, metin: "Sulama kabını korumak için"}
+      - {id: D, metin: "Suyu boşa harcamamak için"}
     dogru: D
     dayanak: "Çok ıslak yere yeni su eklemedi."
-    aciklama: "Metindeki \"Çok ıslak yere yeni su eklemedi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Zaten çok ıslak olan yere su eklemek suyu boşa harcamak olurdu; her bölüme yalnızca ihtiyacı kadar su verildi. Diğer seçeneklerin metinle ilgisi yoktur."
 ---
 
 @omurga
 
-Mahalle bahçesindeki çiçekler bir süredir eğik duruyordu. Bahçıvan olan {kahraman} toprağa dokundu. Bir bölüm kupkuruydu, başka bir bölüm ise çok ıslaktı. Oysa bütün çiçekler aynı gün sulanmıştı. {kahraman} hemen daha çok su vermedi. Önce bu farkın nedenini araştırmak istedi. Bahçenin girişinde renkli bir rüzgâr gülü dönüyordu. Yanından geçenler eğik çiçekleri görüp üzülüyordu. Biri, “Belki çiçekler güneşi sevmiyordur,” dedi. {kahraman} bu düşünceyi de not etti.
-
----
-
-@omurga
-
-Ertesi gün küçük bir ölçü kabı getirdi. Aynı miktarda suyu iki ayrı toprağa döktü. Güneşte duran yerde su hızla kayboldu. Ağaç altında kalan yer ise uzun süre nemli kaldı. Nemli toprağa dokununca parmakları hafifçe ıslandı. {kahraman} şimdi farkı daha iyi anlıyordu. Yoldan geçen bir komşu, “Hepsini daha sık sulayalım,” dedi. Ama {kahraman} suyun da dikkatle kullanılması gerektiğini düşündü. Çiçeklerin her birini inceledi.
+Mahalle bahçesindeki çiçekler birkaç gündür başlarını öne eğmişti. Bahçıvan olan {kahraman} toprağa dokundu. Bir bölüm kupkuruydu, başka bir bölüm ise çok ıslaktı. Oysa bütün çiçekler aynı gün sulanmıştı. Girişteki rüzgâr gülü her zamanki gibi dönüyordu. Bahçeden geçen biri, “Belki çiçekler güneşi sevmiyordur,” dedi. {kahraman} bu düşünceyi de deftere yazdı ama hemen daha çok su vermedi. Önce farkın nedenini araştıracaktı.
 
 ---
 
 @omurga
 
-Çit dibinde yeni bir filiz yükseliyordu. İncecik yaprakları güneşe doğru açılmıştı. {kahraman} filizin yanına küçük bir taş koydu; böylece kimse yanlışlıkla üzerine basmayacaktı. Sonra bahçeyi çizdiği kâğıtta güneşli ve gölgeli yerleri ayırdı. Komşular da hangi yerde suyun daha hızlı kuruduğunu gözledi. Birkaç gün boyunca herkes aynı saatlerde toprağa baktı. Notlar birbirini doğruluyordu. Artık sulama için yeni bir yol seçilebilir, gereksiz su kullanımı önlenebilirdi.
+Ertesi gün küçük bir ölçü kabı getirdi ve aynı miktarda suyu iki ayrı yere döktü. Güneşte duran yerde su hızla kayboldu. Ağaç altındaki toprak ise uzun süre nemli kaldı. {kahraman} iki toprağa parmaklarıyla dokunup karşılaştırdı. Bir komşu, “Hepsini daha sık sulayalım,” dedi. {kahraman} başını salladı: “Önce her yerin neye ihtiyacı olduğunu görelim.”
 
 ---
 
 @omurga
 
-{kahraman} güneş gören tarafa ince bir gölgelik yerleştirdi. Gölgelik günün en sıcak saatinde toprağı koruyacaktı. Ardından her bölüme ihtiyacı kadar su verdi. Çok ıslak yere yeni su eklemedi. Toprağı sertleşen köşeyi de dikkatle gevşetti. Çalışırken küçücük filizi unutmadı. Bir komşu “Bir damla su da mı önemli?” diye sordu. {kahraman} eliyle sulama kabını gösterdi: “Bir damlayı önemsersek bir bahçeye yetecek suyu koruruz.”
+Çit dibinde yeni bir filiz yükseliyordu. İncecik yaprakları güneşe doğru açılmıştı. {kahraman} filizin yanına küçük bir taş koydu; böylece kimse yanlışlıkla üzerine basmayacaktı. Sonra bahçenin planını çizdi ve güneşli ile gölgeli yerleri ayrı renklerle boyadı. Komşular da birkaç gün aynı saatlerde toprağa bakıp suyun nerede daha çabuk kuruduğunu yazdı. Notlar birbirini doğruladı.
 
 ---
 
 @omurga
 
-Bir hafta sonra çiçeklerin yaprakları canlandı. Yeni filiz de biraz daha uzamıştı. Bahçeden geçenler bu değişikliği gördü. {kahraman} herkese tek bir kural vermek yerine gözlem yapmayı önerdi. Çünkü güneş, gölge ve toprak her yerde aynı değildi. Ölçü kabı küçük kulübede durmaya devam etti. Çocuklar ve büyükler bahçeyi birlikte korudu. Rüzgâr gülü dönerken çiçekler artık başlarını dik tutuyordu. Bahçe, dikkatli bakmanın ne kadar işe yaradığını göstermişti.
+{kahraman} güneş gören tarafa ince bir gölgelik kurdu. Gölgelik, günün en sıcak saatinde toprağı koruyacaktı. Sonra her bölüme ihtiyacı kadar su verdi. Çok ıslak yere yeni su eklemedi. Sertleşen köşenin toprağını da dikkatle gevşetti. Bir komşu, “Bir damla su da mı önemli?” diye sordu. {kahraman} sulama kabını gösterdi: “Bir damlayı önemsersek bir bahçeye yetecek suyu koruruz.”
+
+---
+
+@omurga
+
+Bir hafta sonra çiçeklerin yaprakları canlandı, filiz de biraz uzadı. Bahçeden geçenler değişikliği fark etti. {kahraman} herkese tek bir kural vermedi; her köşeyi ayrı ayrı gözlemelerini önerdi, çünkü güneş, gölge ve toprak her yerde aynı değildi. Ölçü kabı bahçedeki küçük kulübede kaldı. Rüzgâr gülü dönerken çiçekler artık başlarını dik tutuyordu.

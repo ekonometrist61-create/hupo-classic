@@ -1,5 +1,5 @@
 ---
-baslik: "Fenerlerin Renk Haritası"
+baslik: "Işığını Arayan Fenerler"
 slug: "hr142-anne-fenerlerin-renk-haritasi"
 fis_kodu: "HR-142"
 tur: gezi_kultur
@@ -30,41 +30,41 @@ sorular:
     dayanak_sayfa: 1
     metin: "Esnaf ilk başta fenerler için ne önerdi?"
     secenekler:
-      - {id: A, metin: "Tüm fenerleri sarıya boyamayı"}
-      - {id: B, metin: "Sokağa yeni kapı yapmayı"}
+      - {id: A, metin: "Fenerleri sarıya boyamayı"}
+      - {id: B, metin: "Sokağa yeni bir kapı yapmayı"}
       - {id: C, metin: "Bütün lambaları kapatmayı"}
       - {id: D, metin: "Fenerleri başka yere taşımayı"}
     dogru: A
     dayanak: "Esnaf, tüm fenerlerin parlak sarıya boyanmasını istiyordu; böylece uzaktan daha dikkat çekici olacaklarını düşünüyordu."
-    aciklama: "Metindeki \"Esnaf, tüm fenerlerin parlak sarıya boyanmasını istiyordu; böylece uzaktan daha dikkat çekici olacaklarını düşünüyordu.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Esnaf fenerlerin parlak sarıya boyanmasını istiyordu, bu yüzden A doğrudur. Kapı yapmak, lambaları kapatmak ya da fenerleri taşımak metinde önerilmez."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
-    metin: "Temizlikten sonra desenlerin ortaya çıkması neyi gösterir?"
+    metin: "Temizlik sırasında seramik parçalarda desenlerin ve çizgilerin ortaya çıkması neyi gösterir?"
     secenekler:
-      - {id: A, metin: "Eski fotoğraflar gereksizdir"}
-      - {id: B, metin: "Yüzey altındaki izler bilgi taşır"}
+      - {id: A, metin: "Eski fotoğrafların artık önemi yoktur"}
+      - {id: B, metin: "Yüzeyin altındaki izler bilgi taşır"}
       - {id: C, metin: "Bütün seramikler aynı renktedir"}
       - {id: D, metin: "Fenerler her yıl değişmelidir"}
     dogru: B
     dayanak: "Temizlenen yüzeyde aynı desenin üç fenerde de tekrarlandığı ortaya çıktı."
-    aciklama: "Metindeki \"Temizlenen yüzeyde aynı desenin üç fenerde de tekrarlandığı ortaya çıktı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Kirin altındaki desen ve çizgiler parçaların sırasını ve renklerini gösteriyordu; yani izler bilgi taşır. Parçaların renkleri farklıydı ve fotoğraflar da kanıt olarak kullanıldı, bu yüzden A ile C yanlıştır."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
-    metin: "“Uyum” sözcüğü hangi anlamda kullanılmıştır?"
+    metin: "“Uyum” sözcüğü metinde hangi anlamda kullanılmıştır?"
     secenekler:
       - {id: A, metin: "Seslerin yüksek çıkması"}
       - {id: B, metin: "Zamanın yavaş ilerlemesi"}
       - {id: C, metin: "Parçaların birbirine yakışması"}
-      - {id: D, metin: "Nesnelerin aynı yere taşınması"}
+      - {id: D, metin: "Nesnelerin başka bir yere taşınması"}
     dogru: C
     dayanak: "Vitrin ışığı azaltılınca fenerlerle çevrenin uyum içinde olduğu anlaşıldı."
-    aciklama: "Metindeki \"Vitrin ışığı azaltılınca fenerlerle çevrenin uyum içinde olduğu anlaşıldı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Fenerlerle çevrenin uyum içinde olması, birbirine yakışması demektir. Cümlede ses, zaman ya da taşıma ile ilgili bir anlam yoktur."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
-    metin: "{kahraman} neden çatlak feneri hemen değiştirmedi?"
+    metin: "Sokağın en eski fenerinde çatlak belirdi ve bazıları feneri değiştirmeyi önerdi. {kahraman} neden hemen değiştirmedi?"
     secenekler:
       - {id: A, metin: "Esnafı meşgul etmek için"}
       - {id: B, metin: "Sokağı kapatmak için"}
@@ -72,33 +72,33 @@ sorular:
       - {id: D, metin: "Özgün parçayı korumak için"}
     dogru: D
     dayanak: "{kahraman}, çatlağın taşıyıcı bölüme ulaşmadığını, dikkatli bir onarım ile parçanın korunabileceğini açıkladı."
-    aciklama: "Metindeki \"{kahraman}, çatlağın taşıyıcı bölüme ulaşmadığını, dikkatli bir onarım ile parçanın korunabileceğini açıkladı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Çatlak taşıyıcı bölüme ulaşmadığı için onarımla özgün parça korunabilirdi. Esnafı meşgul etmek, sokağı kapatmak ya da fotoğraf çoğaltmak amaç değildi."
 ---
 
 @omurga
 
-Eski çarşının dar sokağında akşamları ışıklar yanardı. Restoratör olan {kahraman}, sokağın girişindeki seramik fenerlerin onarımıyla ilgileniyordu. Bir fener diğerlerinden daha soluk görünüyordu. Esnaf, tüm fenerlerin parlak sarıya boyanmasını istiyordu; böylece uzaktan daha dikkat çekici olacaklarını düşünüyordu. Sokak sakinlerinden biri eski ışıkların fotoğrafını yıllar önce bir albüme yerleştirmişti. Albümdeki görüntü net değildi ama duvar desenlerinin biçimi seçilebiliyordu. {kahraman} fotoğrafın ne zaman çekildiğini de not etti; görüntü tek başına kesin kanıt sayılmıyordu. {kahraman} önce eski fotoğrafları ve duvarlardaki izleri inceledi. Fotoğraflarda fenerlerin ışığı bugünkünden daha yumuşaktı. Işığın taş yüzeylerde yaptığı yansıma, dar sokağı neredeyse bir resim gibi gösteriyordu. “Hızlıca boyarsak eski ayrıntıları kaybedebiliriz,” dedi. Herkesin anlayabileceği küçük bir taslak hazırlamaya karar verdi.
-
----
-
-@omurga
-
-Ertesi gün onarım masasına üç parça seramik koydu. Birinde açık mavi, diğerinde toprak rengi, üçüncüsünde ise solmuş yeşil izler vardı. {kahraman} parçaları temizlemek için sert bir fırça kullanmadı; ince bir bez ve uygun bir temizleme yöntemi seçti. Çünkü çatlaklara dolan kirin altında gerçek renkler saklı olabilirdi. Temizlik sırasında seramiğin altındaki ince çizgilerin yalnızca süs olmadıkları anlaşıldı. Çizgiler, parçaların hangi sırayla yerleştirildiğini gösteriyordu. Bir görevli yanlışlıkla iki parçayı yan yana koyunca desen tamamlanmadı. Doğru sıra bulununca küçük bir bütün ortaya çıktı. Temizlenen yüzeyde aynı desenin üç fenerde de tekrarlandığı ortaya çıktı. Çarşıdaki saatçi, geçmişte fenerlerin tek renk olduğunu sanıyordu. Parçalar yan yana gelince fikri değişti. Artık hangi rengin nereye ait olduğunu gösteren daha güvenilir bir kayıt vardı.
+Eski çarşının dar sokağında akşamları seramik fenerler yanardı. Restoratör olan {kahraman}, sokağın girişindeki fenerlerin onarımıyla görevlendirildi. İçlerinden biri ötekilerden daha soluk görünüyordu. Esnaf, tüm fenerlerin parlak sarıya boyanmasını istiyordu; böylece uzaktan daha dikkat çekici olacaklarını düşünüyordu. {kahraman} ise önce eski fotoğraflara ve duvardaki izlere baktı. Bir sokak sakininin yıllar önce çektiği fotoğrafta görüntü net değildi ama fenerlerin biçimi seçilebiliyordu. {kahraman} fotoğrafın ne zaman çekildiğini de not etti, çünkü tek bir görüntü kesin kanıt sayılmazdı. Eski ışık bugünkünden daha yumuşaktı ve taşa vuran yansıması dar sokağı bir resim gibi gösteriyordu. “Hızlıca boyarsak eski ayrıntıları kaybedebiliriz,” dedi. Herkesin anlayabileceği bir taslak hazırlamaya karar verdi.
 
 ---
 
 @omurga
 
-{kahraman} fenerlerin birini örnek olarak düzenledi ve esnafı akşamüstü sokağa çağırdı. Gün ışığı çekilirken kandile benzeyen küçük lambalar yandı. Yeni düzenleme güçlü bir parıltı üretmiyordu; buna karşılık taş duvarda sakin bir ışık bırakıyordu. Bir dükkânın vitrini fazla parlaktı. Akşam ışıklarının denendiği sırada herkes aynı noktadan bakmadı. Bazıları sokağın girişinde, bazıları dükkânların önünde durdu. Işığın farklı açılarda nasıl göründüğü böylece anlaşılmış oldu. {kahraman} yalnızca en güzel fotoğrafı seçip diğer gözlemleri dışarıda bırakmadı. Vitrin ışığı azaltılınca fenerlerle çevrenin uyum içinde olduğu anlaşıldı. Esnaf kendi dükkânlarının daha az görünmesinden korkmuştu. Fakat geçenler artık fenerleri fark etmek için yavaşlıyor, vitrinlere de daha dikkatle bakıyordu. {kahraman} gözlemleri bir deftere kaydetti.
+Ertesi gün onarım masasına üç parça seramik koydu. Birinde açık mavi, diğerinde toprak rengi, üçüncüsünde solmuş yeşil izler vardı. Sert fırça kullanmadı; ince bir bezle ve uygun bir temizleme yöntemiyle çalıştı, çünkü çatlaklara dolan kirin altında gerçek renkler saklı olabilirdi. Temizlik ilerledikçe seramiğin altında ince çizgiler göründü. Çizgiler yalnızca süs değildi; parçaların hangi sırayla yerleştirileceğini gösteriyordu. Bir görevli yanlışlıkla iki parçayı yan yana koyunca desen tamamlanmadı, doğru sırayı bulunca küçük bir bütün ortaya çıktı. Temizlenen yüzeyde aynı desenin üç fenerde de tekrarlandığı ortaya çıktı. Çarşının saatçisi fenerlerin hep tek renk olduğunu sanıyordu; parçalar yan yana gelince fikrini değiştirdi. Artık hangi rengin nereye ait olduğunu gösteren güvenilir bir kayıt vardı.
 
 ---
 
 @omurga
 
-Sokağın en eski fenerinde küçük bir çatlak belirdi. Bazıları onu tamamen değiştirmeyi önerdi. {kahraman}, çatlağın taşıyıcı bölüme ulaşmadığını, dikkatli bir onarım ile parçanın korunabileceğini açıkladı. Önce durumu fotoğrafladı, sonra uygun malzemeyle çatlağı sağlamlaştırdı. Onarılan parçanın altında geçmişte yapılan başka bir müdahalenin izi bulunuyordu. {kahraman} bu izi silmek yerine kayıt altına aldı. Çünkü her iz mutlaka hata değildi; bazısı eşyanın nasıl kullanıldığını anlatıyordu. Karar, parçanın korunmasına katkı sağlayacak şekilde verildi. Çalışma sırasında fener sokağın dışına taşınmadı; insanlar sürecin nasıl ilerlediğini görebildi. Her aşama küçük levhalarla anlatıldı. Esnaf da iş bitince fenerlere nasıl bakım yapılacağını öğrendi. Uzun yıllardır orada duran eşyalar bir süs değil, ortak bir hatıraydı.
+{kahraman} fenerlerden birini örnek olarak düzenleyip esnafı akşamüstü sokağa çağırdı. Gün ışığı çekilirken küçük lambalar yandı. Esnaf bir süre hiçbir şey söylemeden taş duvardaki yumuşak ışığa baktı. Yeni düzenleme güçlü bir parıltı vermiyordu; taş duvarda sakin bir ışık bırakıyordu. Yalnız bir dükkânın vitrini fazla parlaktı. Işığın nasıl göründüğünü anlamak için kimi sokağın girişinde, kimi dükkânların önünde durdu. {kahraman} yalnızca en güzel fotoğrafı seçmedi, bütün gözlemleri deftere yazdı. Vitrin ışığı azaltılınca fenerlerle çevrenin uyum içinde olduğu anlaşıldı. Esnaf, dükkânlarının daha az görüneceğinden korkmuştu. Oysa geçenler fenerleri fark etmek için yavaşlıyor, vitrinlere de daha dikkatle bakıyordu.
 
 ---
 
 @omurga
 
-Birkaç akşam sonra çarşıda küçük bir yürüyüş düzenlendi. Dükkân sahipleri ve ziyaretçiler fenerlerin altından geçerken desenlerdeki farkları aradı. En genç esnaf, önceki parlak sarı önerisini hatırladı ve gülümsedi. “Bir şeyi güzelleştirmek, onu mutlaka değiştirmek değilmiş,” dedi. Son fotoğrafı çeken esnaf, önceki görüntüyle yenisini yan yana getirdi. İki karede de aynı taş yol uzanıyordu. Değişen şey ışığın parlaklığından çok, insanların ayrıntılara bakma biçimiydi. Çarşı yeniden canlıydı ama tanıdık yüzünü kaybetmemişti. {kahraman} bu söze bir cevap vermedi; yalnızca fenerlerin şimdi nasıl göründüğüne baktı. Sokağın girişindeki eski fotoğrafın yanına yeni bir fotoğraf asıldı. İki görüntü birbirine benziyordu ama yeni görüntüde çatlak yoktu. Işıklar, sokağın belleğini koruyarak yeniden parlıyordu.
+Sokağın en eski fenerinde küçük bir çatlak belirdi. Bazıları onu tamamen değiştirmeyi önerdi. {kahraman}, çatlağın taşıyıcı bölüme ulaşmadığını, dikkatli bir onarım ile parçanın korunabileceğini açıkladı. Önce çatlağı fotoğrafladı, sonra uygun bir malzemeyle sağlamlaştırdı. Parçanın altında geçmişte yapılmış başka bir müdahalenin izi çıktı. {kahraman} bu izi silmedi, kayıt altına aldı; çünkü her iz hata değildi, bazısı eşyanın nasıl kullanıldığını anlatıyordu. Çalışma sırasında fener sokaktan götürülmedi, insanlar süreci görebildi ve her aşama küçük levhalarla anlatıldı. İş bitince esnaf fenerlere nasıl bakım yapılacağını da öğrendi.
+
+---
+
+@omurga
+
+Birkaç akşam sonra çarşıda küçük bir yürüyüş düzenlendi. Dükkân sahipleri ve ziyaretçiler fenerlerin altından geçerken desenlerdeki farkları aradı. En genç esnaf, önceki parlak sarı önerisini hatırlayıp gülümsedi. “Bir şeyi güzelleştirmek, onu mutlaka değiştirmek değilmiş,” dedi. {kahraman} cevap vermedi, yalnızca fenerlerin şimdi nasıl göründüğüne baktı. Sokağın girişindeki eski fotoğrafın yanına yeni bir fotoğraf asıldı. İki karede de aynı taş yol uzanıyordu; farkı yalnızca yeni karedeki sağlam fener ve yumuşak ışık yaratıyordu. Çarşı yeniden canlıydı ama tanıdık yüzünü kaybetmemişti.

@@ -32,35 +32,35 @@ sorular:
     secenekler:
       - {id: A, metin: "Bisikletin rengi değiştiği için"}
       - {id: B, metin: "Tüm kitaplar satıldığı için"}
-      - {id: C, metin: "Festival nedeniyle yollar kapanacağı için"}
-      - {id: D, metin: "Okuma noktaları taşındığı için"}
+      - {id: C, metin: "Festival yolları kapatacağı için"}
+      - {id: D, metin: "Okuma noktaları başka mahalleye taşındığı için"}
     dogru: C
     dayanak: "Bu hafta sokak festivalinin hazırlıkları nedeniyle bazı yollar kapatılacaktı."
-    aciklama: "Metindeki \"Bu hafta sokak festivalinin hazırlıkları nedeniyle bazı yollar kapatılacaktı.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Bu hafta sokak festivalinin hazırlıkları nedeniyle bazı yollar kapatılacaktı.\" cümlesi C seçeneğini doğrular. Bisikletin rengi değişmemiş, kitaplar satılmamış ve okuma noktaları taşınmamıştı."
   - id: s2
     beceri: cikarim
     dayanak_sayfa: 2
     metin: "Kutular neden iki seferde taşındı?"
     secenekler:
-      - {id: A, metin: "Güvenli yük sınırı korunmak istendiği için"}
+      - {id: A, metin: "Yükü güvenli sınırda tutmak için"}
       - {id: B, metin: "İlk sefer çok sessiz geçtiği için"}
       - {id: C, metin: "Paketlerin rengi aynı olduğu için"}
       - {id: D, metin: "Bütün sokaklar aynı uzunlukta olduğu için"}
     dogru: A
     dayanak: "Oysa yük sınırını aşmak güvenli değildi."
-    aciklama: "Metindeki \"Oysa yük sınırını aşmak güvenli değildi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Oysa yük sınırını aşmak güvenli değildi.\" cümlesi, kutuların tek seferde taşınmamasının nedenini verir. İlk seferin sessizliği, paketlerin rengi ve sokak uzunlukları bölme kararıyla ilişkilendirilmez."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 3
     metin: "“Teslimat” sözcüğünün bağlamdaki anlamı nedir?"
     secenekler:
-      - {id: A, metin: "Harita çizmek"}
+      - {id: A, metin: "Kent haritasını baştan çizip yayımlamak"}
       - {id: B, metin: "Paketleri doğru yere ulaştırmak"}
       - {id: C, metin: "Bataryayı boyamak"}
-      - {id: D, metin: "Sokakları kapatmak"}
+      - {id: D, metin: "Festival için sokakları kapatmak"}
     dogru: B
-    dayanak: "{kahraman} bunu teslimat kaydına not etti."
-    aciklama: "Metindeki \"{kahraman} bunu teslimat kaydına not etti.\" ifadesi doğru seçeneği destekler."
+    dayanak: "Teslimatın bitmesi yalnızca kapıya ulaşmak değil, doğru içeriğin teslim edildiğinin doğrulanmasıydı."
+    aciklama: "Metindeki \"Teslimatın bitmesi yalnızca kapıya ulaşmak değil, doğru içeriğin teslim edildiğinin doğrulanmasıydı.\" cümlesinde teslimat, paketlerin doğru yere ve doğru içerikle ulaştırılmasıdır. Harita çizmek, bataryayı boyamak ve sokakları kapatmak teslimat değildir."
   - id: s4
     beceri: yorumlama
     dayanak_sayfa: 4
@@ -69,10 +69,10 @@ sorular:
       - {id: A, metin: "Festivalden kaçınmak için"}
       - {id: B, metin: "Kitapları geri toplamak için"}
       - {id: C, metin: "Bisikletin adını değiştirmek için"}
-      - {id: D, metin: "Gelecek seferleri daha iyi düzenlemek için"}
+      - {id: D, metin: "Sonraki planı iyileştirmek için"}
     dogru: D
     dayanak: "Ancak ekip kayıtları yalnızca başarı olarak görmedi; kapanan sokakların oluşturduğu gecikmeler de sonraki haftanın planına eklendi."
-    aciklama: "Metindeki \"Ancak ekip kayıtları yalnızca başarı olarak görmedi; kapanan sokakların oluşturduğu gecikmeler de sonraki haftanın planına eklendi.\" ifadesi doğru seçeneği destekler."
+    aciklama: "Metindeki \"Ancak ekip kayıtları yalnızca başarı olarak görmedi; kapanan sokakların oluşturduğu gecikmeler de sonraki haftanın planına eklendi.\" cümlesi, gecikmelerin sonraki haftanın planını iyileştirmek için kaydedildiğini gösterir. Festivalden kaçınmak, kitapları geri toplamak ve bisikletin adını değiştirmek metinde yoktur."
 ---
 
 @omurga
@@ -83,13 +83,12 @@ sorular:
 
 @omurga
 
-İlk rota, kısa görünmesine rağmen iki kez dik bir yokuştan geçiyordu. Bu güzergâh, bataryadan fazla enerji kullanacak ve dönüşte zorluk çıkarabilecekti. İkinci rota biraz daha uzundu ama bisiklet yolunun büyük bölümünü kullanıyordu. {kahraman} öncelik sırasını yalnızca mesafeye göre belirlemedi. Önce erken açılan okuma noktalarının teslimatlarını, sonra öğleden sonraki noktaların kutularını ayırdı. Alternatif güzergâhın kaldırım kenarlarında dar bölümler vardı. {kahraman} bu noktaları sadece haritadaki çizgiye bakarak değerlendirmedi. Görevliler yolu önceden yürüyerek kontrol etti. Yük taşıyan bir aracın nerede durabileceği, diğer yol kullanıcılarının geçişini engellemeden nasıl teslimat yapabileceği belirlendi. Dar sokakların tarihi dokusu da korunacaktı. Böylece plan, hızlı gitmekle birlikte çevreye özen göstermeyi de içerdi. Bir görevli tüm paketleri aynı anda taşımayı önerdi. Oysa yük sınırını aşmak güvenli değildi. Ekip kutuları iki sefere böldü. {kahraman} böylece daha dengeli hareket edebilecekti. Kullanılacak yolun tarihi sokakları koruyan kurallarına da uyulması gerekiyordu.
-
+İlk rota, kısa görünmesine rağmen iki kez dik bir yokuştan geçiyordu. Bu güzergâh, bataryadan fazla enerji kullanacak ve dönüşte zorluk çıkarabilecekti. İkinci rota biraz daha uzundu ama bisiklet yolunun büyük bölümünü kullanıyordu. {kahraman} öncelik sırasını yalnızca mesafeye göre belirlemedi. Önce erken açılan okuma noktalarının teslimatlarını, sonra öğleden sonraki noktaların kutularını ayırdı. Alternatif güzergâhın kaldırım kenarlarında dar bölümler vardı. {kahraman} bu noktaları sadece haritadaki çizgiye bakarak değerlendirmedi. Görevliler yolu önceden yürüyerek kontrol etti. Yük taşıyan bir aracın nerede durabileceği, diğer yol kullanıcılarının geçişini engellemeden nasıl teslimat yapabileceği belirlendi. Dar sokakların tarihi dokusu da korunacaktı. Böylece plan, hızlı gitmekle birlikte çevreye özen göstermeyi de içerdi. Bir görevli tüm paketleri aynı anda taşımayı önerdi. Oysa yük sınırını aşmak güvenli değildi. Ekip kutuları iki sefere böldü. {kahraman} böylece daha dengeli hareket edebilecekti.
 ---
 
 @omurga
 
-Sabah ilk seferde {kahraman} taş döşeli meydana ulaştı. Festival hazırlıkları başlamıştı; görevli alanı kapatan geçici işaretleri gösterdi. {kahraman} daha önce belirlenen alternatif sokaktan ilerledi. Okuma durağında görevli kitap kutularını teslim aldı ve içerik listesini kontrol etti. Okuma noktasındaki görevli teslim aldığı kitapları hemen rafa koymadı. Önce kutulardaki sayıyla listedeki sayıyı karşılaştırdı. {kahraman} bu adımın önemli olduğunu düşünüyordu; yanlış kitap farklı bir noktaya giderse başka bir okur bekleyebilirdi. Yıpranmış etiket geçici bir işaretle değiştirildi. Sonra kayıt güncellendi ve kutular güvenli biçimde taşındı. Teslimatın bitmesi yalnızca kapıya ulaşmak değil, doğru içeriğin teslim edildiğinin doğrulanmasıydı. Bir kutunun etiketi yıpranmıştı fakat içindeki kitaplar doğru yere gelmişti. {kahraman} bunu teslimat kaydına not etti. Dönüş yolunda bisiklet yoluna park edilmiş bir araç görüldü. Güvensiz biçimde aradan geçmek yerine izin verilen başka sokak seçildi. Birkaç dakika kaybedildi ama teslimat güvenle tamamlandı.
+Sabah ilk seferde {kahraman} taş döşeli meydana ulaştı. Festival hazırlıkları başlamıştı; görevli alanı kapatan geçici işaretleri gösterdi. {kahraman} daha önce belirlenen alternatif sokaktan ilerledi. Okuma durağında görevli kutuları teslim aldı. Kitapları hemen rafa koymadı. Önce kutulardaki sayıyla listedeki sayıyı karşılaştırdı. {kahraman} bu adımın önemli olduğunu düşünüyordu; yanlış kitap farklı bir noktaya giderse başka bir okur bekleyebilirdi. Bir kutunun etiketi yıpranmıştı; geçici bir işaretle yenilendi. Sonra kayıt güncellendi ve kutular güvenli biçimde taşındı. Teslimatın bitmesi yalnızca kapıya ulaşmak değil, doğru içeriğin teslim edildiğinin doğrulanmasıydı. Etiket yıpranmış olsa da içindeki kitaplar doğru yere gelmişti. {kahraman} bunu teslimat kaydına not etti. Dönüş yolunda bisiklet yoluna park edilmiş bir araç görüldü. Güvensiz biçimde aradan geçmek yerine izin verilen başka sokak seçildi. Birkaç dakika kaybedildi ama teslimat güvenle tamamlandı.
 
 ---
 
@@ -101,4 +100,4 @@ Sabah ilk seferde {kahraman} taş döşeli meydana ulaştı. Festival hazırlık
 
 @omurga
 
-Akşam festivalin ışıkları yanarken {kahraman} deposuna döndü. Yollar çok kalabalıktı ama okuma noktalarında kitap bekleyen kimse kalmamıştı. Ertesi gün güzergâh yeniden değişecekti; kent yaşayan bir yerdi ve her plan aynı kalamazdı. Deponun kapısında günü değerlendiren çizelge asıldı. {kahraman} bazı yolların iyi işlemiş, bazılarının ise yalnızca o gün uygun olmuş olabileceğini biliyordu. Festival bittikten sonra kapanan sokakların çoğu açılacaktı. Bu nedenle bugünkü rota sonsuza kadar kullanılacak kesin bir çözüm değildi. Ekip farklı koşullar için iki alternatif hazırladı. Kitapların ulaşması kadar sürdürülebilir bir dağıtım düzeni kurmak da önem kazanmıştı. {kahraman} güvenli ulaşımın, zamanında teslimatın ve enerji tasarrufunun birbirine karşı değil, birlikte düşünülmesi gerektiğini öğrenmişti. Bir görevli son kutuyu rafa kaldırıp kapıyı kapattı. Bisikletin önündeki küçük teslimat çizelgesinde bütün adreslerin yanında işaret vardı. O işaretler, dar sokakların arasında sessizce kurulan bir kitap yolunu anlatıyordu.
+Akşam festivalin ışıkları yanarken {kahraman} deposuna döndü. Yollar çok kalabalıktı ama okuma noktalarında kitap bekleyen kimse kalmamıştı. Ertesi gün güzergâh yeniden değişecekti; kent yaşayan bir yerdi ve her plan aynı kalamazdı. Deponun kapısında günü değerlendiren çizelge asıldı. {kahraman} bazı yolların iyi işlemiş, bazılarının ise yalnızca o gün uygun olmuş olabileceğini biliyordu. Festival bittikten sonra kapanan sokakların çoğu açılacaktı. Bu nedenle bugünkü rota sonsuza kadar kullanılacak kesin bir çözüm değildi. Ekip farklı koşullar için iki alternatif hazırladı. Kitapların ulaşması kadar sürdürülebilir bir dağıtım düzeni kurmak da önem kazanmıştı. {kahraman} güvenli ulaşımı, zamanında teslimatı ve enerji tasarrufunu aynı çizelgede birlikte tutmuştu. Bir görevli son kutuyu rafa kaldırıp kapıyı kapattı. Bisikletin önündeki küçük teslimat çizelgesinde bütün adreslerin yanında işaret vardı. O işaretler, dar sokakların arasında sessizce kurulan bir kitap yolunu anlatıyordu.
