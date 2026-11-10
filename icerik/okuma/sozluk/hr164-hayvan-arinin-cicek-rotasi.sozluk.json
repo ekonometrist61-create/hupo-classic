@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr164_polen",
+      "tur": "kelime",
+      "yazim": "polen",
+      "anlam": "Çiçeklerin üreme yapılarında bulunan ince, toz hâlindeki tanecik.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_polen_b",
+      "tur": "kelime",
+      "yazim": "çiçek tozu",
+      "anlam": "Çiçeklerden rüzgârla ya da hayvanlarla taşınan toz.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_polen_c",
+      "tur": "kelime",
+      "yazim": "tohum",
+      "anlam": "Bitkinin üremesini sağlayan tane.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_ciceklenme",
+      "tur": "kelime",
+      "yazim": "çiçeklenme",
+      "anlam": "Bitkilerin çiçek açma dönemi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_ciceklenme_b",
+      "tur": "kelime",
+      "yazim": "açılma",
+      "anlam": "Bir çiçeğin tomurcuktan açılması.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_ciceklenme_c",
+      "tur": "kelime",
+      "yazim": "bahar",
+      "anlam": "Bitkilerin canlandığı ilkbahar dönemi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_cesitlilik",
+      "tur": "kelime",
+      "yazim": "çeşitlilik",
+      "anlam": "Bir yerde çok sayıda farklı türün bulunması.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_cesitlilik_b",
+      "tur": "kelime",
+      "yazim": "çokluk",
+      "anlam": "Bir yerde çok sayıda olma durumu.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_cesitlilik_c",
+      "tur": "kelime",
+      "yazim": "zenginlik",
+      "anlam": "Bir yerde farklı şeylerin çok olması.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_gozlem",
+      "tur": "kelime",
+      "yazim": "gözlem",
+      "anlam": "Bir olguyu dikkatle izleyerek kaydetme.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_gozlem_b",
+      "tur": "kelime",
+      "yazim": "inceleme",
+      "anlam": "Bir konunun ayrıntılarına bakma.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr164_gozlem_c",
+      "tur": "kelime",
+      "yazim": "izleme",
+      "anlam": "Bir durumu belli aralıklarla takip etme.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr164_polen",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr164_polen"
+        },
+        {
+          "girdi": "hr164_polen_b"
+        },
+        {
+          "girdi": "hr164_polen_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr164_ciceklenme",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr164_ciceklenme"
+        },
+        {
+          "girdi": "hr164_ciceklenme_b"
+        },
+        {
+          "girdi": "hr164_ciceklenme_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr164_cesitlilik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr164_cesitlilik"
+        },
+        {
+          "girdi": "hr164_cesitlilik_b"
+        },
+        {
+          "girdi": "hr164_cesitlilik_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr164_gozlem",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr164_gozlem"
+        },
+        {
+          "girdi": "hr164_gozlem_b"
+        },
+        {
+          "girdi": "hr164_gozlem_c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,563 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr150-baba-pazar-yerindeki-sessiz-terazi",
+    "baslik": "Elmayı Farklı Tartan Teraziler",
+    "tur": "mizah",
+    "konu": "olcum_araci_kalibrasyonu",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "baba"
+    ],
+    "deger_anahtarlari": [
+      "D1",
+      "D6"
+    ],
+    "yetiskin_uygun": true,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "mizah"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D1",
+        "yardimci_deger": "D6"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr150",
+          "tur": "lexeme",
+          "etiket": "kalibrasyon",
+          "yuva": "hr150_kalibrasyon",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr150",
+          "tur": "lexeme",
+          "etiket": "sapma",
+          "yuva": "hr150_sapma",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr150",
+          "tur": "lexeme",
+          "etiket": "standart",
+          "yuva": "hr150_standart",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr150",
+          "tur": "lexeme",
+          "etiket": "ağırlık",
+          "yuva": "hr150_agirlik",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 487,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Pazardaki iki terazi aynı elmayı farklı tartıyor. {kahraman} suçlama yerine ölçüm yaparak karışıklığı çözüyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-150"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Pazar yerinde iki satıcının terazisi aynı elma kasası için farklı "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr150_agirlik"
+        },
+        {
+          "t": "metin",
+          "v": " gösteriyordu. Kimse kimseyi suçlamak istemiyordu ama aradaki fark müşterileri şaşırtmıştı. Ölçüm uzmanı "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", satıcıların çağrısıyla pazara geldi. Önce elmaların gerçekten aynı kasadan alındığını kontrol etti, aynı elmaların iki terazide de tartılacağından emin oldu. Sonra iki teraziyi aynı masaya koydu. Satıcılar önce kendi terazilerini öne çıkarmaya çalıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Ferit"
+        },
+        {
+          "t": "metin",
+          "v": ", “Benimki hep doğru çıkar,” dedi. Öteki, “Benimki daha yeni,” diye karşılık verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " cihazların yaşına bakarak karar vermedi. Her teraziyi aynı sırayla, herkesin gözü önünde, ağırlıkları bilinen örneklerle denemeyi önerdi. Müşteriler de işlemi uzaktan izleyebiliyordu. Böylece kişilerin sözleri yerine ölçümler konuşacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Masadaki özel ağırlıklar "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr150_standart"
+        },
+        {
+          "t": "metin",
+          "v": " olarak kullanıldı. Standart, herkesin aynı sonuca ulaşmasına yardım eden ortak ölçüdür. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " her iki terazide de sıfır ayarını kontrol etti ve her ağırlığı tek tek, boş tablayla başlayarak denedi. Masa eğri bir zeminde duruyordu ve iki terazi de tam oturmuyordu. Birinin ayağı eğri zeminde hafifçe havada kalıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " standart ağırlıkları temizleyip uygun biçimde yerleştirdi ve masanın sallanmadığından emin oldu. Sonuç tablosuna ölçümün nerede ve nasıl yapıldığını da yazdı; koşulları bilinmeyen bir sayıya güvenmek zordu. İlk "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr150_sapma"
+        },
+        {
+          "t": "metin",
+          "v": " buradan doğmuş olabilirdi. Terazi düz bir yüzeye alınınca fark küçüldü ama tamamen kaybolmadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr150_kalibrasyon"
+        },
+        {
+          "t": "metin",
+          "v": " yaptı; yani terazinin gösterdiği değerleri güvenilir ölçülerle karşılaştırıp ayarını kontrol etti. Satıcılar sonuçları küçük bir tabloya birlikte yazdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğleye doğru pazarda komik bir söylenti yayıldı: “Elmalar sabah hafif, öğlen ağır oluyor!” Bir müşteri bunu duyunca gülmeye başladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ölçüm koşullarını değiştirip yeniden denedi. Terazilerden birinin tablasına sıkışmış küçük bir karton parçası buldu. Karton, tartım sırasında dengeyi bozuyordu. Küçük bir ziyaretçi bir elmayı elinde tartar gibi sallayıp kaşlarını çattı ve elmaların gerçekten ağırlaşıp ağırlaşmadığını sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülerek, önce ölçüm aracında sorun aramadan böyle bir sonuca varılamayacağını anlattı. Temizlik ve ayarın ardından iki terazi aynı standart ağırlık için uyumlu sonuç verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " elma kasalarını yeniden tarttı; sonuçlar birbirine yakındı. Satıcılar sorunun elmada değil alette ve zeminde olduğunu görünce rahatladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Pazar yönetimi bütün tezgâhlarda basit bir kontrol günü düzenlemeye karar verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hangi kontrollerin uzman gerektirdiğini, hangilerinin günlük olarak gözlemlenebileceğini anlattı. Terazinin düz yerde durması, boşken sıfırı göstermesi ve hasar belirtisi olup olmaması herkesin bakabileceği şeylerdi. Resmî ayar ve doğrulamayı ise yetkili kişiler yapmalıydı; satıcılar her şeyi kendi başlarına onarmaya kalkışmamalıydı. Duyuru kısa ve resimli hazırlandı, bütün tezgâhlara dağıtıldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Ferit"
+        },
+        {
+          "t": "metin",
+          "v": " tabelasına “Terazim hiç şaşmaz” yazmak istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun yerine ölçümlerin düzenli kontrol edildiğini belirten doğru bir ifade önerdi. Böylece müşterilere abartılı bir söz değil, güvenilir bir bilgi verilecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam kasalar toplanırken iki satıcı birlikte elma tartıyordu. Sonuçlar birbirini doğruluyordu. Sabah şaşıran müşteri tekrar uğradı ve gülerek “Demek elmaların suçu yokmuş,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " standart ağırlıkları tek tek sayıp ölçüm çantasına yerleştirdi ve çantayı kapattı. Pazar kapanırken iki satıcı birbirine elma ikram etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tartışmanın başındaki cümleleri hatırladı: Biri yeniliğe, öteki alışkanlığa güvenmişti. Oysa ikisinin de ihtiyacı olan şey karşılaştırılabilir bir ölçüydü. Satıcılar ertesi gün tezgâhlarını kurarken masanın düz olup olmadığına bakmaya söz verdi. Adalet bazen büyük sözlerle değil, düzgün çalışan küçük araçlarla başlıyordu."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Tartışma hangi ürünün tartılmasıyla başladı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Elma kasası"
+        },
+        {
+          "id": "B",
+          "metin": "Ekmek sepeti"
+        },
+        {
+          "id": "C",
+          "metin": "Pirinç torbası"
+        },
+        {
+          "id": "D",
+          "metin": "Üzüm kutusu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "İki terazi aynı elma kasası için farklı ağırlık gösteriyordu. Ekmek, pirinç ve üzüm metinde geçmez."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Terazilerden biri düz yüzeye alınınca fark küçüldü. Bunun nedeni ne olabilir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kasadaki elmalar değiştirildiği için"
+        },
+        {
+          "id": "B",
+          "metin": "Masa biraz daha yüksek olduğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Eğri zemin tartıyı etkilediği için"
+        },
+        {
+          "id": "D",
+          "metin": "Terazinin rengi açık olduğu için"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Bir terazinin ayağı eğri zeminde havada kaldığı için ölçüm bozuluyordu; düz yüzey bunu düzeltti. Elmalar değişmedi, masa yüksekliği ve renk de ölçümle ilgili değildir."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "Karton parçası tartım sırasında dengeyi bozuyordu. Buradaki “denge” neyi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Meyvenin tatlı ya da ekşi olması"
+        },
+        {
+          "id": "B",
+          "metin": "Tartının sallanmadan durması"
+        },
+        {
+          "id": "C",
+          "metin": "Pazar yerindeki kalabalığın artması"
+        },
+        {
+          "id": "D",
+          "metin": "Satış saatinin uzun sürmesi"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Karton terazinin tablasına sıkışıp tartıyı sallantılı ve yanlış yapıyordu; denge, tartının düzgün durmasıdır. Tat, kalabalık ve satış saati bu anlama uymaz."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Satıcı tabelasına “Terazim hiç şaşmaz” yazmak isteyince {kahraman} neden başka bir ifade önerdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Tabelanın daha büyük olmasını istediği için"
+        },
+        {
+          "id": "B",
+          "metin": "Pazardaki tezgâh sayısını azaltmak için"
+        },
+        {
+          "id": "C",
+          "metin": "Elmaların adını değiştirmek için"
+        },
+        {
+          "id": "D",
+          "metin": "Doğrulanabilir bilgi vermek istediği için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "“Hiç şaşmaz” abartılı bir söz; kontrol edildiğini belirten ifade ise doğrulanabilir. Tabela boyutu, tezgâh sayısı ve elma adı konu dışıdır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr150_kalibrasyon",
+        "tur": "kelime",
+        "yazim": "kalibrasyon",
+        "anlam": "Bir ölçü aletini doğru değerlerle karşılaştırıp ayarlama işi.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_kalibrasyon_b",
+        "tur": "kelime",
+        "yazim": "ayar",
+        "anlam": "Bir aletin doğru çalışacak biçimde düzenlenmesi.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_kalibrasyon_c",
+        "tur": "kelime",
+        "yazim": "doğrulama",
+        "anlam": "Bir ölçümün doğru olduğunu sınama işlemi.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_sapma",
+        "tur": "kelime",
+        "yazim": "sapma",
+        "anlam": "Beklenen değerden ayrılma, farklılık.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_sapma_b",
+        "tur": "kelime",
+        "yazim": "hata",
+        "anlam": "Doğru olandan istenmeyen ayrılma.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_sapma_c",
+        "tur": "kelime",
+        "yazim": "fark",
+        "anlam": "İki şey arasındaki ayrılık.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_standart",
+        "tur": "kelime",
+        "yazim": "standart",
+        "anlam": "Herkesin aynı sonuca ulaşması için kabul edilen ölçü.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_standart_b",
+        "tur": "kelime",
+        "yazim": "ölçü",
+        "anlam": "Bir şeyin miktarını belirlemeye yarayan birim.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_standart_c",
+        "tur": "kelime",
+        "yazim": "birim",
+        "anlam": "Bir büyüklüğün ölçüldüğü temel değer.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_agirlik",
+        "tur": "kelime",
+        "yazim": "ağırlık",
+        "anlam": "Bir cismin çekim etkisiyle ölçülen kütlesi.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_agirlik_b",
+        "tur": "kelime",
+        "yazim": "kütle",
+        "anlam": "Bir cismin içerdiği madde miktarı.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr150_agirlik_c",
+        "tur": "kelime",
+        "yazim": "yük",
+        "anlam": "Taşınan şeyin ağırlığı.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr150_kalibrasyon",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr150_kalibrasyon"
+          },
+          {
+            "girdi": "hr150_kalibrasyon_b"
+          },
+          {
+            "girdi": "hr150_kalibrasyon_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr150_sapma",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr150_sapma"
+          },
+          {
+            "girdi": "hr150_sapma_b"
+          },
+          {
+            "girdi": "hr150_sapma_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr150_standart",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr150_standart"
+          },
+          {
+            "girdi": "hr150_standart_b"
+          },
+          {
+            "girdi": "hr150_standart_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr150_agirlik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr150_agirlik"
+          },
+          {
+            "girdi": "hr150_agirlik_b"
+          },
+          {
+            "girdi": "hr150_agirlik_c"
+          }
+        ]
+      }
+    ]
+  }
+}

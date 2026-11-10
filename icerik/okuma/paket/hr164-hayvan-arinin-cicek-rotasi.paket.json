@@ -1,0 +1,615 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr164-hayvan-arinin-cicek-rotasi",
+    "baslik": "Arının Çiçek Rotası",
+    "tur": "doga",
+    "konu": "polen_ve_bahce",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "hayvan"
+    ],
+    "deger_anahtarlari": [
+      "D3",
+      "D15"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "doga"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D3",
+        "yardimci_deger": "D15"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr164",
+          "tur": "lexeme",
+          "etiket": "polen",
+          "yuva": "hr164_polen",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr164",
+          "tur": "lexeme",
+          "etiket": "çiçeklenme",
+          "yuva": "hr164_ciceklenme",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr164",
+          "tur": "lexeme",
+          "etiket": "çeşitlilik",
+          "yuva": "hr164_cesitlilik",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr164",
+          "tur": "lexeme",
+          "etiket": "gözlem",
+          "yuva": "hr164_gozlem",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 572,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Bahçede her çiçek aynı zamanda açmıyor. {kahraman} gözlem yaparak daha uygun bir çiçek rotası buluyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-164"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " meyve bahçesinde yaşayan bir arıydı. Bahar gelince ağaçlar çiçeklerle doldu. Bazı günler aynı ağaçlarda çok sayıda çiçek açıyor, bazı günler ise başka köşeler canlanıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yiyecek ararken bütün bahçeyi rastgele dolaşmanın yorucu olduğunu fark etti. Bahçenin girişindeki eski ağacın çiçekleri kokularıyla da birbirinden ayrılıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " renklerin her zaman tek başına yeterli ipucu vermediğini öğrendi. Bazı çiçekler uzaktan benzer görünse bile yakınlarında farklı özellikler taşıyordu. Yol seçmek için birçok işarete dikkat etmek gerekiyordu. Önce hangi bölgenin ne zaman çiçeklendiğini gözlemlemeye başladı. Bir yanda açık renkli çiçekler, öte yanda koyu yapraklı çalılar vardı. Çiçeklerin renkleri kadar konumları da önemliydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güneşin hareketiyle gölgelerin nasıl değiştiğini izledi. Dikkatli bir rota, gereksiz uçuşu azaltabilir ve her gün farklı çiçeklere ulaşmayı kolaylaştırabilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sabah ilk uçuşta "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eski ağacın yanına gitti. Çiçeklerden topladığı "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr164_polen"
+        },
+        {
+          "t": "metin",
+          "v": ", çiçeklerin üreme yapılarında bulunan ince tanelerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " poleni bacaklarının özel bölümlerinde taşıyordu. Fakat o gün aynı ağacın bazı dalları henüz tomurcuktu. Öteki köşedeki çiçekler rüzgârdan daha az etkileniyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kısa bir süre orada dinlendi. Bu bölgeyi seçmesinin tek nedeni yiyecek miktarı değildi; güvenli uçuş ve dinlenme imkânı da önemliydi. Bahçenin farklı bölümleri farklı zamanlarda işe yarıyordu. Boş yere dolaşmak yerine bahçenin güneş alan öteki köşesine geçti. Orada farklı çiçeklerin açtığını gördü. Bahçenin "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr164_cesitlilik"
+        },
+        {
+          "t": "metin",
+          "v": " bakımından zengin olması, her gün aynı kaynağa bağlı kalmasını önlüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yiyecek toplarken çiçeklerin zarar görmemesine de dikkat etti. Bir çiçekten diğerine geçiş, bahçenin canlı düzeninin parçasıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğleye doğru sıcaklık arttı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gölgeli alanların bazılarında çiçeklerin yeni açtığını fark etti. Sabah açık olan birkaç çiçek ise artık kapanmıştı. Bunun üzerine rotasını günün saatine göre değiştirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Nil"
+        },
+        {
+          "t": "metin",
+          "v": ", aynı yolu hiç değiştirmediğini anlattı. İki arı karşılaştırma yaparken biri yalnızca uçtuğu mesafeyi hatırladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dönüşte ne kadar yorulduğunu da düşündü. Daha kısa yol her koşulda daha iyi sonuç vermiyordu. Çiçeklerin ne kadar açık olduğu ve hava hareketleri de yolculuğun verimini etkiliyordu. Bu ayrıntılar denemeyi anlamlı kıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hangi yolun daha az yorucu olduğunu birlikte denemeyi önerdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Nil"
+        },
+        {
+          "t": "metin",
+          "v": " ve bir arı farklı bölgeleri gözledi, sonra buldukları kaynakları karşılaştırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tek bir günün sonucunu kesin kural saymadı. Çünkü hava, rüzgâr ve "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr164_ciceklenme"
+        },
+        {
+          "t": "metin",
+          "v": " koşulları değişebilirdi. Yol planı da bu değişikliğe uyum sağlamalıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir gün bahçenin bir bölümünde sulama yapıldı. Çiçeklerin üstüne su püskürürken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " o alana yaklaşmadı. Diğer çiçekli bölgelere yöneldi. Bahçe görevlileri sulamayı yalnızca küçük bir bölümle sınırlı tuttu. Sulama bitince bazı yaprakların üzerinde küçük su damlaları kaldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen o bölgeye dönmedi; çiçeklerin yeniden uygun hâle gelmesini bekledi. Beklerken başka bir çalı grubunu inceledi. Orada yeni açan çiçeklerin bulunması, planı değiştirmenin bazen yeni fırsatlar getirdiğini gösterdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu düzenin birçok canlı için yararlı olduğunu gözledi. Bazı çiçeklerde polen azalmıştı; yenilerinde ise daha çok kaynak vardı. Rotasını güncel duruma göre değiştirmek, bahçedeki canlıların farklı ihtiyaçlarını gözetmesine yardımcı oldu. Öğleden sonra güneş yumuşayınca eski ağaca yeniden uğradı. Bu kez dalların çoğunda çiçekler açmıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşamüstü "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kovana döndü. Gün boyunca izlediği farklı çiçek yolları ona aynı bahçenin bile tek biçimde olmadığını göstermişti. Bir gün işe yarayan rota ertesi gün değişebilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başka arıların getirdiği işaretleri gözledi; her biri bahçenin farklı bir yerini tanıyordu. Günün sonunda diğer arıların getirdiği bilgiler birbirinden farklıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu bir anlaşmazlık olarak görmedi. Çünkü farklı bölgelerde uçmuşlardı. Her "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr164_gozlem"
+        },
+        {
+          "t": "metin",
+          "v": " yer ve zamanıyla birlikte düşünüldüğünde bahçenin bütününe ilişkin daha zengin bir görüntü ortaya çıkıyordu. Çiçeklerin çeşitliliği, hem arılar hem de bahçedeki başka canlılar için önem taşıyordu. Son ışıklar ağaçların arasından süzülürken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dinlendi. Ertesi gün yine çalışacaktı ama artık nereye uçacağına daha bilinçli bakıyordu. Bahçenin düzeni, küçük gözlemlerin birikimiyle daha anlaşılır olmuştu."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "{kahraman} ilk olarak neyi gözlemlemeye başladı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kovanların boyasını ve rengini"
+        },
+        {
+          "id": "B",
+          "metin": "Toprağın kaç metre derin olduğunu"
+        },
+        {
+          "id": "C",
+          "metin": "Hangi bölgenin ne zaman açtığını"
+        },
+        {
+          "id": "D",
+          "metin": "Yağmurun yağacağı tam tarihi"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Metindeki \"Önce hangi bölgenin ne zaman çiçeklendiğini gözlemlemeye başladı.\" cümlesi C seçeneğini doğrular. Kovanın boyası, toprağın derinliği ve yağmurun tarihi arının gözlem konuları değildir."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Güneş alan köşeye gitmesinin nedeni nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Orada açmış çiçekler bulunması"
+        },
+        {
+          "id": "B",
+          "metin": "Orada yiyecek sağlayacak bitki olmaması"
+        },
+        {
+          "id": "C",
+          "metin": "Ağaçların taşınmış olması"
+        },
+        {
+          "id": "D",
+          "metin": "Kovanın oraya kurulması"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Metindeki \"Orada farklı çiçeklerin açtığını gördü.\" cümlesi, arının güneş alan köşeye açmış çiçekler olduğu için gittiğini gösterir; eski ağaçta bazı dallar henüz tomurcuktu. Bitkisiz olması, ağaçların taşınması ve kovanın kurulması metinde yoktur."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Çeşitlilik” hangi anlamda kullanılmıştır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yalnızca tek bir türün bulunması"
+        },
+        {
+          "id": "B",
+          "metin": "Çok türde çiçek bulunması"
+        },
+        {
+          "id": "C",
+          "metin": "Bütün yolların kapanması"
+        },
+        {
+          "id": "D",
+          "metin": "Arıların aynı anda uyuması"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Metindeki \"Bahçenin çeşitlilik bakımından zengin olması, her gün aynı kaynağa bağlı kalmasını önlüyordu.\" cümlesinde çeşitlilik, bahçede çok sayıda farklı çiçeğin bulunmasıdır; tek tür bulunsaydı arı aynı kaynağa bağlı kalırdı. Yolların kapanması ve arıların uyuması bu anlama uymaz."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "{kahraman} niçin sulama sırasında başka bölgeye yöneldi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Ağaçları saymak için"
+        },
+        {
+          "id": "B",
+          "metin": "Diğer arıların gözünden saklanmak için"
+        },
+        {
+          "id": "C",
+          "metin": "Renkleri değiştirmek için"
+        },
+        {
+          "id": "D",
+          "metin": "Islak alandan uzak durmak için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Metindeki \"Çiçeklerin üstüne su püskürürken {kahraman} o alana yaklaşmadı.\" cümlesi, arının sulanan ve ıslanan alana uğramayıp diğer çiçekli bölgelere yöneldiğini gösterir. Ağaç saymak, diğer arılardan saklanmak ve renk değiştirmek metinde amaç değildir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr164_polen",
+        "tur": "kelime",
+        "yazim": "polen",
+        "anlam": "Çiçeklerin üreme yapılarında bulunan ince, toz hâlindeki tanecik.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_polen_b",
+        "tur": "kelime",
+        "yazim": "çiçek tozu",
+        "anlam": "Çiçeklerden rüzgârla ya da hayvanlarla taşınan toz.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_polen_c",
+        "tur": "kelime",
+        "yazim": "tohum",
+        "anlam": "Bitkinin üremesini sağlayan tane.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_ciceklenme",
+        "tur": "kelime",
+        "yazim": "çiçeklenme",
+        "anlam": "Bitkilerin çiçek açma dönemi.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_ciceklenme_b",
+        "tur": "kelime",
+        "yazim": "açılma",
+        "anlam": "Bir çiçeğin tomurcuktan açılması.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_ciceklenme_c",
+        "tur": "kelime",
+        "yazim": "bahar",
+        "anlam": "Bitkilerin canlandığı ilkbahar dönemi.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_cesitlilik",
+        "tur": "kelime",
+        "yazim": "çeşitlilik",
+        "anlam": "Bir yerde çok sayıda farklı türün bulunması.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_cesitlilik_b",
+        "tur": "kelime",
+        "yazim": "çokluk",
+        "anlam": "Bir yerde çok sayıda olma durumu.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_cesitlilik_c",
+        "tur": "kelime",
+        "yazim": "zenginlik",
+        "anlam": "Bir yerde farklı şeylerin çok olması.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_gozlem",
+        "tur": "kelime",
+        "yazim": "gözlem",
+        "anlam": "Bir olguyu dikkatle izleyerek kaydetme.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_gozlem_b",
+        "tur": "kelime",
+        "yazim": "inceleme",
+        "anlam": "Bir konunun ayrıntılarına bakma.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr164_gozlem_c",
+        "tur": "kelime",
+        "yazim": "izleme",
+        "anlam": "Bir durumu belli aralıklarla takip etme.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr164_polen",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr164_polen"
+          },
+          {
+            "girdi": "hr164_polen_b"
+          },
+          {
+            "girdi": "hr164_polen_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr164_ciceklenme",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr164_ciceklenme"
+          },
+          {
+            "girdi": "hr164_ciceklenme_b"
+          },
+          {
+            "girdi": "hr164_ciceklenme_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr164_cesitlilik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr164_cesitlilik"
+          },
+          {
+            "girdi": "hr164_cesitlilik_b"
+          },
+          {
+            "girdi": "hr164_cesitlilik_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr164_gozlem",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr164_gozlem"
+          },
+          {
+            "girdi": "hr164_gozlem_b"
+          },
+          {
+            "girdi": "hr164_gozlem_c"
+          }
+        ]
+      }
+    ]
+  }
+}

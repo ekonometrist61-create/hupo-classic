@@ -1,0 +1,515 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr160-hayvan-sercenin-sessiz-konseri",
+    "baslik": "Serçenin Ortak Şarkısı",
+    "tur": "mizah",
+    "konu": "kus_sesleri",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "okuma_bandi": 1,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "hayvan"
+    ],
+    "deger_anahtarlari": [
+      "D14",
+      "D4"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 3,
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 2,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "mizah"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D4"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr160",
+          "tur": "lexeme",
+          "etiket": "ritim",
+          "yuva": "hr160_ritim",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr160",
+          "tur": "lexeme",
+          "etiket": "sessizlik",
+          "yuva": "hr160_sessizlik",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr160",
+          "tur": "lexeme",
+          "etiket": "hızlı",
+          "yuva": "hr160_hizli",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr160",
+          "tur": "lexeme",
+          "etiket": "uyum",
+          "yuva": "hr160_uyum",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (3. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 277,
+        "tahmini_sure_dk": 4,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Parktaki kuşlar aynı anda ötünce şarkı birbirine karışıyor. {kahraman} birlikte dinlemeyi ve uyumlu ses çıkarmayı keşfediyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-160"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " küçük bir serçeydi. Parktaki büyük ağacın dalında şarkı söylemeyi severdi. Bir gün öteki kuşlar da aynı dalda toplandı. Her biri farklı bir ses çıkarıyordu. Sesler öyle karıştı ki kimse kendi melodisini duyamadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " biraz sustu. Sonra öteki kuşların seslerini dinledi. Bazıları "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr160_hizli"
+        },
+        {
+          "t": "metin",
+          "v": ", bazıları yavaş ötüyordu. Bir arada söylemek için önce birbirlerini duymaları gerekiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gagasıyla dala hafifçe vurdu. “Tak, tak, tak!” Bu ses düzenli bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr160_ritim"
+        },
+        {
+          "t": "metin",
+          "v": " oluşturdu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Defne"
+        },
+        {
+          "t": "metin",
+          "v": " üç vuruş bekledi, diğeri dördüncü vuruşta öttü. Başta herkes şaşırdı. Sonra denemeyi yeniden yaptılar. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Defne"
+        },
+        {
+          "t": "metin",
+          "v": " adlı kuşun çok yüksek sesle öttüğünü fark etti. Ona kızmak yerine biraz alçak sesle başlamasını işaret etti. Parkta yürüyenler ağacın yanında durdu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Küçük prova sürerken rüzgâr esti. Dal hafifçe sallandı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kanatlarını açarak dengesini korudu. Başka bir kuş yanlış yerde ötünce kısa bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr160_sessizlik"
+        },
+        {
+          "t": "metin",
+          "v": " oldu. Kimse alay etmedi. Hep birlikte baştan başladılar. Birkaç denemeden sonra sesler "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr160_uyum"
+        },
+        {
+          "t": "metin",
+          "v": " içinde yükseldi. Kimse tek başına bütün şarkıyı taşımıyordu. Her sesin küçük ama önemli bir yeri vardı. Parkın çeşmesi de uzaktan şarkıya eşlik eder gibiydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğle vakti kuşlar kısa bir dinlenme verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yere düşen küçük bir tüyü izledi. Birlikte söylemeyi öğrenmek, kendi sesinden vazgeçmek demek değildi. Öteki kuşlar kendi farklı sesleriyle şarkıya katılmıştı. Yeniden daldaki yerlerini aldılar. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk vuruşu yaptı. Bu kez kuşların hiçbiri acele etmedi. Şarkı yavaşça başladı ve sonra hızlandı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Konser bittiğinde parkta kısa bir sessizlik oldu. Ardından ağaçların arasında neşeli sesler duyuldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dalın en küçük sesine sahipti. Yine de ilk vuruşu o yapmış, herkes de ona uymuştu. Kuşlar dallarına ayrılırken ritim hâlâ hafifçe sürüyordu. Rüzgâr yaprakları salladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " son bir kez öttü ve kanatlarını açıp yakınındaki dala kondu. Parktaki o gün, çok farklı seslerin güzel bir bütün oluşturabildiği gündü."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Kuşların ilk sorunu neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Seslerin birbirine karışması"
+        },
+        {
+          "id": "B",
+          "metin": "Yaprakların tamamen dökülmesi"
+        },
+        {
+          "id": "C",
+          "metin": "Ağacın ortadan kaybolması"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Metindeki \"Sesler öyle karıştı ki kimse kendi melodisini duyamadı.\" cümlesi A seçeneğini doğrular. Yapraklar dökülmemiş, ağaç kaybolmamış ve çeşme durmamıştı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Kuşların yeniden denemesi neyi gösterir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Birlikte söyleyebildiklerini"
+        },
+        {
+          "id": "B",
+          "metin": "Parktan başka yere taşınacaklarını"
+        },
+        {
+          "id": "C",
+          "metin": "Dalların yerini değiştirdiklerini"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Metindeki \"Sonra denemeyi yeniden yaptılar.\" cümlesi, kuşların vazgeçmeyip tekrar denediğini ve sonunda birlikte söyleyebildiğini gösterir. Şarkıyı unutmak, parktan ayrılmak ya da dalları değiştirmek metinde yoktur."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Uyum” sözcüğü neyi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yalnızca hızlı ve yüksek sesle söylemeyi"
+        },
+        {
+          "id": "B",
+          "metin": "Seslerin birbirini tamamlamasını"
+        },
+        {
+          "id": "C",
+          "metin": "Kanatların büyümesini"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Metindeki \"Birkaç denemeden sonra sesler uyum içinde yükseldi.\" cümlesinde uyum, seslerin birbirini bozmadan tamamlamasıdır; sonraki cümle de kimsenin şarkıyı tek başına taşımadığını söyler. Hızlı söylemek, susmak ve kanat büyümesi uyum değildir."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Kuşların son provada acele etmemesi hangi davranışı gösterir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Şarkı söylemekten vazgeçtiklerini"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnızca en hızlı kuşu dinlediklerini"
+        },
+        {
+          "id": "C",
+          "metin": "Birbirini beklediklerini"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Metindeki \"Bu kez kuşların hiçbiri acele etmedi.\" cümlesi, kuşların ilk vuruşu bekleyip birbirine uyduğunu gösterir. Birbirini hiç duymamak, şarkıdan vazgeçmek ve yalnızca en hızlı kuşu dinlemek metindeki davranışa uymaz."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr160_ritim",
+        "tur": "kelime",
+        "yazim": "ritim",
+        "anlam": "Seslerin ya da hareketlerin düzenli aralıklarla tekrarlanması.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_ritim_b",
+        "tur": "kelime",
+        "yazim": "tempo",
+        "anlam": "Bir şeyin yapılış hızı ve düzeni.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_ritim_c",
+        "tur": "kelime",
+        "yazim": "vuruş",
+        "anlam": "Ritmi oluşturan her bir darbe ya da ses.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_sessizlik",
+        "tur": "kelime",
+        "yazim": "sessizlik",
+        "anlam": "Ses çıkmama durumu.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_sessizlik_b",
+        "tur": "kelime",
+        "yazim": "durgunluk",
+        "anlam": "Hareket ya da sesin olmadığı durum.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_sessizlik_c",
+        "tur": "kelime",
+        "yazim": "dinginlik",
+        "anlam": "Ortamın sakin ve sessiz olması.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_hizli",
+        "tur": "kelime",
+        "yazim": "hızlı",
+        "anlam": "Çok kısa sürede olan, çabuk.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_hizli_b",
+        "tur": "kelime",
+        "yazim": "çabuk",
+        "anlam": "Kısa zamanda, süratli olan.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_hizli_c",
+        "tur": "kelime",
+        "yazim": "yavaş",
+        "anlam": "Hareketi ya da sesi ağır olan.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_uyum",
+        "tur": "kelime",
+        "yazim": "uyum",
+        "anlam": "Parçaların birbirine uygun olması.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_uyum_b",
+        "tur": "kelime",
+        "yazim": "ahenk",
+        "anlam": "Birlikte çıkan seslerin hoş bir düzeni.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr160_uyum_c",
+        "tur": "kelime",
+        "yazim": "denge",
+        "anlam": "Parçaların birbirini bozmadan durması.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr160_ritim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr160_ritim"
+          },
+          {
+            "girdi": "hr160_ritim_b"
+          },
+          {
+            "girdi": "hr160_ritim_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr160_sessizlik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr160_sessizlik"
+          },
+          {
+            "girdi": "hr160_sessizlik_b"
+          },
+          {
+            "girdi": "hr160_sessizlik_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr160_hizli",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr160_hizli"
+          },
+          {
+            "girdi": "hr160_hizli_b"
+          },
+          {
+            "girdi": "hr160_hizli_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr160_uyum",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr160_uyum"
+          },
+          {
+            "girdi": "hr160_uyum_b"
+          },
+          {
+            "girdi": "hr160_uyum_c"
+          }
+        ]
+      }
+    ]
+  }
+}

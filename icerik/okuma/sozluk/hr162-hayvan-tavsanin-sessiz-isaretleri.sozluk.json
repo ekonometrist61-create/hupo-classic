@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr162_isaret",
+      "tur": "kelime",
+      "yazim": "işaret",
+      "anlam": "Bir şeyi gösteren ya da yön belirten simge ve belirti.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_isaret_b",
+      "tur": "kelime",
+      "yazim": "tabela",
+      "anlam": "Bilgi vermek için bir yere asılan levha.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_isaret_c",
+      "tur": "kelime",
+      "yazim": "iz",
+      "anlam": "Bir şeyin geçtiğini gösteren belirti.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_yol",
+      "tur": "kelime",
+      "yazim": "yol",
+      "anlam": "Bir yerden başka bir yere ulaşmayı sağlayan güzergâh.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_yol_b",
+      "tur": "kelime",
+      "yazim": "patika",
+      "anlam": "Yaya geçişine açık, dar yol.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_yol_c",
+      "tur": "kelime",
+      "yazim": "güzergâh",
+      "anlam": "Bir yolculukta izlenen yol.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_kozalak",
+      "tur": "kelime",
+      "yazim": "kozalak",
+      "anlam": "Çam ve benzeri ağaçların tohum taşıyan sert meyvesi.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_kozalak_b",
+      "tur": "kelime",
+      "yazim": "tohum",
+      "anlam": "Bitkilerin üremesini sağlayan tane.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_kozalak_c",
+      "tur": "kelime",
+      "yazim": "kabuk",
+      "anlam": "Meyve ya da tohumu dış etkilerden koruyan sert katman.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_anlasma",
+      "tur": "kelime",
+      "yazim": "anlaşma",
+      "anlam": "İki ya da daha çok tarafın birlikte kararlaştırdığı ortak düzen.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_anlasma_b",
+      "tur": "kelime",
+      "yazim": "uzlaşma",
+      "anlam": "Görüş ayrılıklarını ortak bir karara bağlama.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr162_anlasma_c",
+      "tur": "kelime",
+      "yazim": "sözleşme",
+      "anlam": "Yazılı olarak yapılan karşılıklı taahhüt.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr162_isaret",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr162_isaret"
+        },
+        {
+          "girdi": "hr162_isaret_b"
+        },
+        {
+          "girdi": "hr162_isaret_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr162_yol",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr162_yol"
+        },
+        {
+          "girdi": "hr162_yol_b"
+        },
+        {
+          "girdi": "hr162_yol_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr162_kozalak",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr162_kozalak"
+        },
+        {
+          "girdi": "hr162_kozalak_b"
+        },
+        {
+          "girdi": "hr162_kozalak_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr162_anlasma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr162_anlasma"
+        },
+        {
+          "girdi": "hr162_anlasma_b"
+        },
+        {
+          "girdi": "hr162_anlasma_c"
+        }
+      ]
+    }
+  ]
+}

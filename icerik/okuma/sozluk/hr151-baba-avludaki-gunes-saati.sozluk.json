@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr151_golge",
+      "tur": "kelime",
+      "yazim": "gölge",
+      "anlam": "Bir cisme ışık engel olunca oluşan karanlık alan.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_golge_b",
+      "tur": "kelime",
+      "yazim": "karanlık",
+      "anlam": "Işığın az ya da hiç bulunmadığı durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_golge_c",
+      "tur": "kelime",
+      "yazim": "yansıma",
+      "anlam": "Bir yüzeyden geri dönen ışık.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_sacak",
+      "tur": "kelime",
+      "yazim": "saçak",
+      "anlam": "Bir yapının duvarından dışarı uzanan çatı kenarı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_sacak_b",
+      "tur": "kelime",
+      "yazim": "çatı",
+      "anlam": "Bir yapının üstünü örten kısım.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_sacak_c",
+      "tur": "kelime",
+      "yazim": "sundurma",
+      "anlam": "Bir yapının bir kenarında gölge veren açık çatı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_referans",
+      "tur": "kelime",
+      "yazim": "referans",
+      "anlam": "Bir karşılaştırmada esas alınan güvenilir ölçü ya da kaynak.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_referans_b",
+      "tur": "kelime",
+      "yazim": "kaynak",
+      "anlam": "Bilginin alındığı yer ya da belge.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_referans_c",
+      "tur": "kelime",
+      "yazim": "ölçüt",
+      "anlam": "Bir değerlendirmede esas alınan ölçü.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_tutarlilik",
+      "tur": "kelime",
+      "yazim": "tutarlılık",
+      "anlam": "Birbirini doğrulayan, çelişmeyen durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_tutarlilik_b",
+      "tur": "kelime",
+      "yazim": "uyum",
+      "anlam": "Parçaların birbirine uygun olması.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr151_tutarlilik_c",
+      "tur": "kelime",
+      "yazim": "süreklilik",
+      "anlam": "Bir şeyin kesintisiz sürmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr151_golge",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr151_golge"
+        },
+        {
+          "girdi": "hr151_golge_b"
+        },
+        {
+          "girdi": "hr151_golge_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr151_sacak",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr151_sacak"
+        },
+        {
+          "girdi": "hr151_sacak_b"
+        },
+        {
+          "girdi": "hr151_sacak_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr151_referans",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr151_referans"
+        },
+        {
+          "girdi": "hr151_referans_b"
+        },
+        {
+          "girdi": "hr151_referans_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr151_tutarlilik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr151_tutarlilik"
+        },
+        {
+          "girdi": "hr151_tutarlilik_b"
+        },
+        {
+          "girdi": "hr151_tutarlilik_c"
+        }
+      ]
+    }
+  ]
+}

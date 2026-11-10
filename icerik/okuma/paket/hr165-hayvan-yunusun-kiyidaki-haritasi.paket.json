@@ -1,0 +1,583 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr165-hayvan-yunusun-kiyidaki-haritasi",
+    "baslik": "Yunusun Kıyıdaki Haritası",
+    "tur": "hayvanlar",
+    "konu": "deniz_cayiri_koruma",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "hayvan"
+    ],
+    "deger_anahtarlari": [
+      "D5",
+      "D20"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 7,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "hayvanlar"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D5",
+        "yardimci_deger": "D20"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr165",
+          "tur": "lexeme",
+          "etiket": "yankı",
+          "yuva": "hr165_yanki",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr165",
+          "tur": "lexeme",
+          "etiket": "akıntı",
+          "yuva": "hr165_akinti",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr165",
+          "tur": "lexeme",
+          "etiket": "kıyı",
+          "yuva": "hr165_kiyi",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr165",
+          "tur": "lexeme",
+          "etiket": "tekne",
+          "yuva": "hr165_tekne",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (7. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 644,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Koydaki deniz çayırlarının çevresinde su bulanıklaşıyor. {kahraman} canlıların doğal alanını koruyan işaretlerin önemini keşfediyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-165"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sakin bir koyda yaşayan bir yunustu. Koyun bazı noktalarında deniz çayırları uzanıyor, başka yerlerinde kumlu zemin başlıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " her gün aynı "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr165_kiyi"
+        },
+        {
+          "t": "metin",
+          "v": " boyunca yüzdüğü için akıntının küçük değişimlerini fark ediyordu. Bir sabah koyun girişinde artan "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr165_tekne"
+        },
+        {
+          "t": "metin",
+          "v": " hareketlerinin suyu daha bulanık yaptığını gördü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yalnızca üstten bakmanın yanıltıcı olabileceğini biliyordu. Sığ kesimde hareket eden kum taneleri, dipteki canlıların bulunduğu yere kadar ulaşabiliyordu. Bu yüzden aynı bölgeyi farklı zamanlarda gözlemek yararlıydı. Koyun girişindeki tekne hareketleri de günün saatine göre değişiyordu. Gözlemler yalnızca yoğun bir sabahın görüntüsüne dayanmayacaktı. Deniz çayırlarının yakınında dinlenen küçük canlılar başka köşelere çekilmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " değişimin yalnızca o güne mi ait olduğunu anlamak istedi. Ses çıkarıp geri dönen "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr165_yanki"
+        },
+        {
+          "t": "metin",
+          "v": " üzerinden çevresindeki nesnelerin konumunu algılayabiliyordu. Ancak yankı bütün soruları çözmüyordu; suyun rengi ve akışı da gözlemlenmeliydi. Koyun her bölümünün canlılar için farklı bir işlevi vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Önce koyun girişindeki derinlik farklarını izledi. Derinlik, su yüzeyi ile deniz tabanı arasındaki uzaklıktı. Sığ bölümde küçük tekneler geçerken dipteki ince parçalar kolayca karışıyordu. Daha açık bölümde su çoğu zaman daha berraktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Ilgın"
+        },
+        {
+          "t": "metin",
+          "v": " ile kıyıya yakın yaşayan küçük balıkların davranışını gözledi. Deniz çayırlarının kenarında küçük bir kum şeridi vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " burada yavaşça yüzerek suyun hareketini izledi. Bir sonraki gün rüzgâr değişince aynı bölgede farklı bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr165_akinti"
+        },
+        {
+          "t": "metin",
+          "v": " oluştuğunu gördü. Bu fark, suyun görünüşünü etkileyebilecek başka etkenlerin de bulunduğunu düşündürdü. Koyda yaşayan canlıların nerede yoğunlaştığını anlamak için yalnızca derinliği değil, gün içindeki değişimi de dikkate almak gerekiyordu. Bazı günler balıklar deniz çayırlarının arasında rahatça dolaşıyordu. Diğer günler bulanıklık artınca açık alana yöneliyorlardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tek bir işarete dayanmadı. Akıntı, tekne sayısı ve suyun görünüşünü birlikte değerlendirdi. Koyda yaşayan canlıların kendi düzenlerini bozmadan gözlem yapmak istiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir öğleden sonra koyun girişinde işaret şamandıraları yerleştirildi. Bu işaretler, teknelerin deniz çayırları bulunan hassas bölgeye yaklaşmamasına yardımcı olacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yeni çizgiyi izleyerek yüzdü. Su hâlâ bazı yerlerde bulanıktı. Şamandıraların konduğu ilk gün bazı tekneler yeni çizgiyi uzaktan fark etmedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Ilgın"
+        },
+        {
+          "t": "metin",
+          "v": " ve kıyı görevlileri işaretlerin anlamını daha açık anlatan levhalar hazırladı. Çizgi yalnızca su üstünde bir sınır değildi; tekne kullananların onu doğru okuyabilmesi de gerekiyordu. Açıklamalarla birlikte geçiş daha düzenli hâle geldi. Böylece hassas bölgeyi korumak isteyenlerin niyeti günlük davranışlara yansıdı. Teknelerin geçtiği hat de daha belirgin olmuştu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " suyun altındaki habitatın, yani canlıların yaşadığı doğal ortamın, görünmeyen ayrıntılar taşıdığını biliyordu. Deniz çayırları yalnızca yeşil bir yüzey değildi; pek çok küçük canlının sığındığı bir alandı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İzleyen günlerde koyda daha düzenli bir tekne geçişi oluştu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " deniz çayırlarının üzerindeki bulanıklığın bazı saatlerde azaldığını fark etti. Ancak bunun yalnızca yeni işaretlerden kaynaklandığını söylemek için erkendi. Rüzgârın yönü ve denizin dalgalanması da görünüşü etkileyebilirdi. Gözlem sürdükçe koyun kimi bölümünde kısa süreli bulanıklıkların devam ettiği görüldü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu bütün çalışmanın başarısızlığı saymadı. Mevsim, rüzgâr ve teknelerin hareketi birlikte etkiliydi. Koruma ekibi belirli saatlerde yeniden ölçüm yapıyordu. Kıyıda yaşayanlar da suyun görünüşüne dair notlar paylaşıyordu. Farklı kaynaklardan gelen bilgiler birbirini tamamlayabilirdi ama hiçbir gözlem kendi sınırlarının ötesinde kesin kanıt sayılmıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " aynı yerlerde tekrar gözlem yaptı. Koyun sakin bölümünde küçük balıklar yeniden çayırlara yaklaşmaya başlamıştı. Bir canlı için uygun olan her çözüm, başka bir canlı için aynı biçimde işlemeyebilirdi. Bu nedenle koyun bütün bölümleri birlikte düşünülüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Mevsim değişirken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " koyun girişinden açık denize doğru yüzdü, sonra yeniden çayırlara döndü. Su daha berrak görünüyordu; dipteki yaprakların hareketi uzaktan seçilebiliyordu. Koydaki yaşam tek bir günde düzelmemişti. Tekne yollarının düzenlenmesi, ölçümlerin sürmesi ve canlıların korunması ortak çalışmanın parçaları olmuştu. Koydan ayrılmadan önce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çayırlara son kez yaklaştı ama aralarına hızla dalmadı. Küçük canlıların sığındığı bölgeyi rahatsız etmeden çevresinde dolaştı. Koruma çalışmasının en görünür sonucu yeni şamandıralar olabilirdi. Asıl amaç ise bunların gösterdiği güvenli mesafenin sürdürülmesiydi. Koyun haritası zamanla yeniden gözden geçirilecekti; doğal yaşam her mevsim aynı görünmeyebilirdi. Sakin deniz yüzeyi altında birçok canlı kendi düzenini sürdürüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sesinin yankısını dinledi. Geri dönen küçük işaretler ona taşları, kıyıyı ve derinliği anlatıyordu. Yankı taşların ve derinliğin yerini gösteriyordu; hangi yere dikkatle yaklaşılacağını ise koruma ekibinin şamandıraları belirtiyordu. Deniz çayırları dalgalarla hafifçe sallanırken koy yaşamını sürdürdü."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Koyda fark edilen değişim neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Suyun tamamen çekilmesi"
+        },
+        {
+          "id": "B",
+          "metin": "Tekne hareketiyle artan bulanıklık"
+        },
+        {
+          "id": "C",
+          "metin": "Bütün deniz çayırlarının birden yok olması"
+        },
+        {
+          "id": "D",
+          "metin": "Kıyıdaki taşların uçması"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Metindeki \"Bir sabah koyun girişinde artan tekne hareketlerinin suyu daha bulanık yaptığını gördü.\" cümlesi B seçeneğini doğrular. Su çekilmemiş, çayırlar yok olmamış ve taşlar uçmamıştı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Sığ bölgede dip parçalarının karışması neyi düşündürür?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Derinlik de tekneler de etkili olabilir"
+        },
+        {
+          "id": "B",
+          "metin": "Koyun her yerinde su aynı derinliktedir"
+        },
+        {
+          "id": "C",
+          "metin": "Koyda hiç akıntı yoktur"
+        },
+        {
+          "id": "D",
+          "metin": "Deniz çayırları her gün başka yere taşınır"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Metindeki \"Sığ bölümde küçük tekneler geçerken dipteki ince parçalar kolayca karışıyordu.\" cümlesi, bulanıklığın sığ yerde tekne geçişiyle arttığını gösterir; yani derinlik ve tekne birlikte etkili olabilir. Koyun her yerinin aynı derinlikte olması, akıntının hiç bulunmaması ve çayırların taşınması metinde yoktur."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Habitat” kelimesinin anlamı nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Teknenin su altındaki pervane motoru"
+        },
+        {
+          "id": "B",
+          "metin": "Koyun haritası"
+        },
+        {
+          "id": "C",
+          "metin": "Canlıların doğal yaşam alanı"
+        },
+        {
+          "id": "D",
+          "metin": "Derinliğin sayısal ölçümü"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Metindeki \"{kahraman} suyun altındaki habitatın, yani canlıların yaşadığı doğal ortamın, görünmeyen ayrıntılar taşıdığını biliyordu.\" cümlesi habitatı canlıların yaşadığı doğal ortam olarak tanımlar. Motor, harita ve derinlik ölçümü bir yaşam alanı değildir."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "{kahraman} neden bulanıklığın azalmasını tek bir nedene bağlamadı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Gözlem yapmayı tamamen bırakmak için"
+        },
+        {
+          "id": "B",
+          "metin": "Tekneleri kovmak için"
+        },
+        {
+          "id": "C",
+          "metin": "Koydan uzaklaşmak için"
+        },
+        {
+          "id": "D",
+          "metin": "Başka etkenler de olabileceği için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Metindeki \"Rüzgârın yönü ve denizin dalgalanması da görünüşü etkileyebilirdi.\" cümlesi, bulanıklığın azalmasında şamandıralardan başka etkenlerin de rol oynayabileceğini gösterir. Gözlemi bırakmak, tekneleri kovmak ve koydan ayrılmak metinde yoktur."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr165_yanki",
+        "tur": "kelime",
+        "yazim": "yankı",
+        "anlam": "Bir sesin bir yüzeyden yansıyıp geri gelmesi.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_yanki_b",
+        "tur": "kelime",
+        "yazim": "yansıma",
+        "anlam": "Işığın ya da sesin bir yüzeyden geri dönmesi.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_yanki_c",
+        "tur": "kelime",
+        "yazim": "çınlama",
+        "anlam": "Bir sesin uzun süre titreşerek kalması.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_akinti",
+        "tur": "kelime",
+        "yazim": "akıntı",
+        "anlam": "Suyun belirli bir yönde akması.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_akinti_b",
+        "tur": "kelime",
+        "yazim": "akım",
+        "anlam": "Suyun ya da havanın hareket yönü ve hızı.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_akinti_c",
+        "tur": "kelime",
+        "yazim": "dalga",
+        "anlam": "Su yüzeyinde ilerleyen yükseltilmiş hareket.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_kiyi",
+        "tur": "kelime",
+        "yazim": "kıyı",
+        "anlam": "Denizin ya da gölün karaya bitişen kenarı.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_kiyi_b",
+        "tur": "kelime",
+        "yazim": "kenar",
+        "anlam": "Bir yerin dış sınırına yakın bölüm.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_kiyi_c",
+        "tur": "kelime",
+        "yazim": "sahil",
+        "anlam": "Denizin ya da gölün kıyısı boyunca uzanan alan.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_tekne",
+        "tur": "kelime",
+        "yazim": "tekne",
+        "anlam": "Su üzerinde yolcu ya da yük taşımaya yarayan küçük araç.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_tekne_b",
+        "tur": "kelime",
+        "yazim": "gemi",
+        "anlam": "Denizde yük ya da yolcu taşıyan büyük araç.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr165_tekne_c",
+        "tur": "kelime",
+        "yazim": "kayık",
+        "anlam": "Küçük ve açık, genellikle kürekle yürütülen tekne.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr165_yanki",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr165_yanki"
+          },
+          {
+            "girdi": "hr165_yanki_b"
+          },
+          {
+            "girdi": "hr165_yanki_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr165_akinti",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr165_akinti"
+          },
+          {
+            "girdi": "hr165_akinti_b"
+          },
+          {
+            "girdi": "hr165_akinti_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr165_kiyi",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr165_kiyi"
+          },
+          {
+            "girdi": "hr165_kiyi_b"
+          },
+          {
+            "girdi": "hr165_kiyi_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr165_tekne",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr165_tekne"
+          },
+          {
+            "girdi": "hr165_tekne_b"
+          },
+          {
+            "girdi": "hr165_tekne_c"
+          }
+        ]
+      }
+    ]
+  }
+}

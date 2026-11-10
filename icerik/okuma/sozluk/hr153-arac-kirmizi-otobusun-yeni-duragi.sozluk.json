@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr153_kaldirim",
+      "tur": "kelime",
+      "yazim": "kaldırım",
+      "anlam": "Yaya yolu olarak ayrılmış, yoldan yükseltilmiş kısım.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_kaldirim_b",
+      "tur": "kelime",
+      "yazim": "yaya yolu",
+      "anlam": "Yayaların yürüdüğü ayrılmış yol.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_kaldirim_c",
+      "tur": "kelime",
+      "yazim": "bordür",
+      "anlam": "Kaldırımla yolu ayıran sınır taşı.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_rampa",
+      "tur": "kelime",
+      "yazim": "rampa",
+      "anlam": "Yüzeyi eğimli olarak yapılan geçiş yolu.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_rampa_b",
+      "tur": "kelime",
+      "yazim": "eğim",
+      "anlam": "Bir yüzeyin yatıklık derecesi.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_rampa_c",
+      "tur": "kelime",
+      "yazim": "çıkıntı",
+      "anlam": "Bir yüzeyden dışarı doğru çıkan kısım.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_isaret",
+      "tur": "kelime",
+      "yazim": "işaret",
+      "anlam": "Bir şeyi gösteren ya da yön belirten simge ve belirti.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_isaret_b",
+      "tur": "kelime",
+      "yazim": "tabela",
+      "anlam": "Bilgi vermek için bir yere asılan levha.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_isaret_c",
+      "tur": "kelime",
+      "yazim": "levha",
+      "anlam": "Üzerinde bilgi ya da uyarı yazılı düz yüzey.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_sira",
+      "tur": "kelime",
+      "yazim": "sıra",
+      "anlam": "Birinin arkasına art arda dizilmiş insanlar ya da şeyler.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_sira_b",
+      "tur": "kelime",
+      "yazim": "dizi",
+      "anlam": "Birbirini izleyen şeyler topluluğu.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr153_sira_c",
+      "tur": "kelime",
+      "yazim": "kuyruk",
+      "anlam": "Bir yerde sırayla bekleyenlerin dizilişi.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr153_kaldirim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr153_kaldirim"
+        },
+        {
+          "girdi": "hr153_kaldirim_b"
+        },
+        {
+          "girdi": "hr153_kaldirim_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr153_rampa",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr153_rampa"
+        },
+        {
+          "girdi": "hr153_rampa_b"
+        },
+        {
+          "girdi": "hr153_rampa_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr153_isaret",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr153_isaret"
+        },
+        {
+          "girdi": "hr153_isaret_b"
+        },
+        {
+          "girdi": "hr153_isaret_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr153_sira",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr153_sira"
+        },
+        {
+          "girdi": "hr153_sira_b"
+        },
+        {
+          "girdi": "hr153_sira_c"
+        }
+      ]
+    }
+  ]
+}

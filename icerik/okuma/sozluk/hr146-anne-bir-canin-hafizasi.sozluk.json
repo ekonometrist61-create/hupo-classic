@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr146_akustik",
+      "tur": "kelime",
+      "yazim": "akustik",
+      "anlam": "Sesin oluşumunu, yayılışını ve algılanışını inceleyen bilim dalı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_akustik_b",
+      "tur": "kelime",
+      "yazim": "ses bilimi",
+      "anlam": "Sesin doğasını ve yayılmasını inceleyen bilgi alanı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_akustik_c",
+      "tur": "kelime",
+      "yazim": "titreşim",
+      "anlam": "Bir cismin ileri geri hareket etmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_tini",
+      "tur": "kelime",
+      "yazim": "tını",
+      "anlam": "Aynı yükseklikteki iki sesi birbirinden ayıran nitelik.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_tini_b",
+      "tur": "kelime",
+      "yazim": "perde",
+      "anlam": "Sesin tizlik ya da pesliğini belirleyen düzey.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_tini_c",
+      "tur": "kelime",
+      "yazim": "yankı",
+      "anlam": "Sesin bir yüzeyden yansıyıp geri gelmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_ozgun",
+      "tur": "kelime",
+      "yazim": "özgün",
+      "anlam": "İlk yapısını ve biçimini koruyan, aslına uygun olan.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_ozgun_b",
+      "tur": "kelime",
+      "yazim": "asıl",
+      "anlam": "Bir şeyin ilk ve gerçek hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_ozgun_c",
+      "tur": "kelime",
+      "yazim": "orijinal",
+      "anlam": "Bir eserin kopya olmayan, ilk hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_kayit",
+      "tur": "kelime",
+      "yazim": "kayıt",
+      "anlam": "Bir olayın ya da bilginin yazılı olarak tutulması.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_kayit_b",
+      "tur": "kelime",
+      "yazim": "not",
+      "anlam": "Hatırlanması için kısaca yazılan bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr146_kayit_c",
+      "tur": "kelime",
+      "yazim": "defter",
+      "anlam": "Notların ve kayıtların tutulduğu kitap.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr146_akustik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr146_akustik"
+        },
+        {
+          "girdi": "hr146_akustik_b"
+        },
+        {
+          "girdi": "hr146_akustik_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr146_tini",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr146_tini"
+        },
+        {
+          "girdi": "hr146_tini_b"
+        },
+        {
+          "girdi": "hr146_tini_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr146_ozgun",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr146_ozgun"
+        },
+        {
+          "girdi": "hr146_ozgun_b"
+        },
+        {
+          "girdi": "hr146_ozgun_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr146_kayit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr146_kayit"
+        },
+        {
+          "girdi": "hr146_kayit_b"
+        },
+        {
+          "girdi": "hr146_kayit_c"
+        }
+      ]
+    }
+  ]
+}

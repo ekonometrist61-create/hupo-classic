@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr143_titresim",
+      "tur": "kelime",
+      "yazim": "titreşim",
+      "anlam": "Bir cismin hızlı ileri geri hareket etmesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_titresim_b",
+      "tur": "kelime",
+      "yazim": "sarsıntı",
+      "anlam": "Bir cismin ani ve düzensiz sallanması.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_titresim_c",
+      "tur": "kelime",
+      "yazim": "salınım",
+      "anlam": "Bir şeyin denge noktası etrafında gidip gelmesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_sensor",
+      "tur": "kelime",
+      "yazim": "sensör",
+      "anlam": "Fiziksel bir büyüklüğü ölçüp kayda geçiren cihaz.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_sensor_b",
+      "tur": "kelime",
+      "yazim": "ölçer",
+      "anlam": "Bir büyüklüğün miktarını belirleyen araç.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_sensor_c",
+      "tur": "kelime",
+      "yazim": "kayıt cihazı",
+      "anlam": "Ölçülen verileri zamana bağlı saklayan alet.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_veri",
+      "tur": "kelime",
+      "yazim": "veri",
+      "anlam": "Ölçüm ya da gözlemlerden elde edilen bilgi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_veri_b",
+      "tur": "kelime",
+      "yazim": "kayıt",
+      "anlam": "Bir olayın yazılı ya da sayısal tutulan izi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_veri_c",
+      "tur": "kelime",
+      "yazim": "bilgi",
+      "anlam": "Bir konu hakkında öğrenilen gerçek.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_karsilastirma",
+      "tur": "kelime",
+      "yazim": "karşılaştırma",
+      "anlam": "İki şeyin benzerlik ve farklarına bakma işi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_karsilastirma_b",
+      "tur": "kelime",
+      "yazim": "kıyas",
+      "anlam": "Bir şeyi başka bir şeyle yan yana değerlendirme.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr143_karsilastirma_c",
+      "tur": "kelime",
+      "yazim": "benzetme",
+      "anlam": "Bir şeyi başka bir şeye benzeterek anlatma.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr143_titresim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr143_titresim"
+        },
+        {
+          "girdi": "hr143_titresim_b"
+        },
+        {
+          "girdi": "hr143_titresim_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr143_sensor",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr143_sensor"
+        },
+        {
+          "girdi": "hr143_sensor_b"
+        },
+        {
+          "girdi": "hr143_sensor_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr143_veri",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr143_veri"
+        },
+        {
+          "girdi": "hr143_veri_b"
+        },
+        {
+          "girdi": "hr143_veri_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr143_karsilastirma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr143_karsilastirma"
+        },
+        {
+          "girdi": "hr143_karsilastirma_b"
+        },
+        {
+          "girdi": "hr143_karsilastirma_c"
+        }
+      ]
+    }
+  ]
+}

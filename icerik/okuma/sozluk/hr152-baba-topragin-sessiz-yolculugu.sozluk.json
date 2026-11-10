@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr152_erozyon",
+      "tur": "kelime",
+      "yazim": "erozyon",
+      "anlam": "Üst toprağın su ya da rüzgârla yerinden taşınması.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_erozyon_b",
+      "tur": "kelime",
+      "yazim": "aşınma",
+      "anlam": "Yüzeyin sürtünme ya da su etkisiyle zamanla bozulması.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_erozyon_c",
+      "tur": "kelime",
+      "yazim": "sürüklenme",
+      "anlam": "Malzemenin bir akıntıyla başka yere taşınması.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_orneklem",
+      "tur": "kelime",
+      "yazim": "örneklem",
+      "anlam": "Bir bütünü temsil etmek için seçilen sınırlı parça kümesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_orneklem_b",
+      "tur": "kelime",
+      "yazim": "numune",
+      "anlam": "İncelemek için seçilmiş küçük örnek.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_orneklem_c",
+      "tur": "kelime",
+      "yazim": "örnek",
+      "anlam": "Bir bütünü temsil eden parça.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_egim",
+      "tur": "kelime",
+      "yazim": "eğim",
+      "anlam": "Bir yüzeyin yatıklık ya da diklik derecesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_egim_b",
+      "tur": "kelime",
+      "yazim": "diklik",
+      "anlam": "Bir yüzeyin dik olma durumu.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_egim_c",
+      "tur": "kelime",
+      "yazim": "meyil",
+      "anlam": "Bir yüzeyin yatay düzlemle yaptığı açı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_cokeltme",
+      "tur": "kelime",
+      "yazim": "çökeltme",
+      "anlam": "Sıvı içindeki katı parçaların dibe çökmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_cokeltme_b",
+      "tur": "kelime",
+      "yazim": "birikme",
+      "anlam": "Bir yerde zamanla toplanıp kalma.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr152_cokeltme_c",
+      "tur": "kelime",
+      "yazim": "tortu",
+      "anlam": "Suyun dibinde kalan katı madde.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr152_erozyon",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr152_erozyon"
+        },
+        {
+          "girdi": "hr152_erozyon_b"
+        },
+        {
+          "girdi": "hr152_erozyon_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr152_orneklem",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr152_orneklem"
+        },
+        {
+          "girdi": "hr152_orneklem_b"
+        },
+        {
+          "girdi": "hr152_orneklem_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr152_egim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr152_egim"
+        },
+        {
+          "girdi": "hr152_egim_b"
+        },
+        {
+          "girdi": "hr152_egim_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr152_cokeltme",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr152_cokeltme"
+        },
+        {
+          "girdi": "hr152_cokeltme_b"
+        },
+        {
+          "girdi": "hr152_cokeltme_c"
+        }
+      ]
+    }
+  ]
+}

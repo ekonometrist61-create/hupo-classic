@@ -1,0 +1,575 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr156-arac-yeniden-kesfedilen-iskele",
+    "baslik": "Yeniden Keşfedilen İskele",
+    "tur": "gezi_kultur",
+    "konu": "elektrikli_feribot_duraklari",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "arac"
+    ],
+    "deger_anahtarlari": [
+      "D17",
+      "D14"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D17",
+        "yardimci_deger": "D14"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr156",
+          "tur": "lexeme",
+          "etiket": "rota",
+          "yuva": "hr156_rota",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr156",
+          "tur": "lexeme",
+          "etiket": "menzil",
+          "yuva": "hr156_menzil",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr156",
+          "tur": "lexeme",
+          "etiket": "iskele",
+          "yuva": "hr156_iskele",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr156",
+          "tur": "lexeme",
+          "etiket": "yoğunluk",
+          "yuva": "hr156_yogunluk",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 592,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Kıyıdaki bir iskele yeni ulaşım ihtiyacına cevap verebilir mi? {kahraman} enerji, güvenlik ve bekleme sürelerini birlikte değerlendiren bir rota keşfediyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-156"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki kıyı arasında yolcu taşıyan elektrikli bir feribottu. Günlük rotası kısa ve sakindi. Fakat yeni açılan bir yürüyüş alanı yüzünden bir iskelede yolcu yoğunluğu artmıştı. Herkes aynı feribota binmek isteyince bekleme süresi uzuyordu. Kayıtlara göre bekleme süresi sabah ilk seferde ve akşamüstü özellikle uzuyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr156_yogunluk"
+        },
+        {
+          "t": "metin",
+          "v": " verisinin, yeni durak kararını nasıl etkilediğini anlamak istedi. Sakin saatlerde ek iskeleye uğramak yolcuları pek rahatlatmayacak, gereksiz enerji kullanacaktı. İşletme ekibi sayıları günlere göre de karşılaştırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yeni bir güzergâh düşünmeye başladı. Ancak hangi iskeleye uğrayacağına yalnızca kendi isteğiyle karar veremezdi. Kıyı işletmesinin güvenlik, zaman ve enerji planına uyması gerekiyordu. Feribotun kontrol sisteminde duraklardaki bekleme bilgileri toplanıyordu. Bu bilgiler sayesinde kalabalığın yalnızca hangi saatlerde oluştuğu değil, başka iskelelerin nasıl kullanıldığı da görülebilecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk incelemede kıyının daha sakin bir noktasında eski bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr156_iskele"
+        },
+        {
+          "t": "metin",
+          "v": " bulundu. Haritada yalnızca bakım alanı olarak işaretlenmişti; yolcu kullanımına uygun olup olmadığı bilinmiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu konumu hemen rotasına eklemedi. Uzmanlar iskelenin yapısını, su derinliğini ve yanaşma koşullarını inceledi. Eski iskelenin girişinde kıyı boyunca uzanan taşlar vardı. Uzmanlar yolcu geçişinin bu alanla nasıl bağlantı kuracağını inceledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yaklaşma açısının değişmesi hâlinde rotanın da yeniden hesaplanması gerektiğini biliyordu. Yanaşma düzeni ve erişim yolu aynı planda değerlendirildi. Yalnızca feribotun ulaşması yeterli değildi. Ayrıca bataryanın "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr156_menzil"
+        },
+        {
+          "t": "metin",
+          "v": " sınırı hesaplandı. Menzil, bir aracın mevcut enerjiyle güvenle gidebileceği uzaklıktı. Yeni bir durak eklemek, yalnızca haritadaki çizgiyi uzatmak değildi. Şarj süresi, yolcu inişi ve hava koşulları da birlikte düşünülmeliydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " enerji göstergesindeki değişiklikleri izleyerek olası rotaları karşılaştırdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Önerilen ilk "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr156_rota"
+        },
+        {
+          "t": "metin",
+          "v": " bazı saatlerde beklemeyi azaltıyor ama günün sonunda fazla enerji tüketiyordu. İkinci öneri ise sakin iskeleyi yalnızca yoğun saatlerde kullanıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu seçeneğin daha dengeli olabileceğini fark etti. İşletme ekibi bekleme verilerini yeniden hesapladı. Yolculara da yeni düzenleme hakkında bilgi verildi. Yeni levhaların denenmesi için kıyıda küçük bir uygulama yapıldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Tuna"
+        },
+        {
+          "t": "metin",
+          "v": " yolcu gibi yürüyerek her işareti takip etti. İki yön oku birbirine çok yakın duruyordu ve karışıklık yaratıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu yanlışlığın deneme başlamadan fark edilmesine sevindi. Levhaların biri kaydırıldı, duyuru metni de kısaltıldı. Kıyıda çalışan görevliler, durakların açıkça işaretlenmesi gerektiğini söyledi. Aksi hâlde insanlar yanlış sırada bekleyebilirdi. Yeni levhalar ve duyurular hazırlandı. Eski iskele uzman onayı almadan kullanılmadı. Böylece kolay görünen bir değişiklik, gerekli kontrollerle gerçek bir ulaşım planına dönüştü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Deneme günü "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yeni iskeleye güvenli hızla yaklaştı. İskele görevlileri hazırdı ve yolcular önceden belirtilmiş alanda bekliyordu. İlk yolculukta kapılar düzenli biçimde açıldı. Yaşlı bir ziyaretçi, yeni durak sayesinde uzun bir yürüyüş yapmadan sahile ulaştı. Deneme boyunca kıyının doğal alanlarına yaklaşılmadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iskeleye ayrılan güvenli koridorun dışına çıkmadı. Yolcuların inişinden sonra kapılar kapanmadan hareket edilmedi. Ekibin çizelgesinde bu güvenlik adımları da yer alıyordu. Zaman kazanmak uğruna düzenli kontrol basamakları atlanmadı. Rota ancak bu koşullarla sürdürülebilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " enerji göstergesine baktı; beklenen değerlerin dışına çıkılmamıştı. Yolculuk sonunda personel zaman çizelgesini kontrol etti. Bazı seferlerde yine gecikme görülüyordu, fakat kalabalığın en yoğun olduğu saatlerde belirgin rahatlama yaşandı. Ekip yalnızca başarılı örnekleri değil, gecikmeleri de kaydetti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir ay sonra işletme yeni rotanın verilerini değerlendirdi. Yoğun saatlerdeki ek durak yararlı bulunmuş, sakin saatlerde kullanılmamasına karar verilmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " böylece boş yere uzun yol gitmeyecekti. Enerji tasarrufu yapılırken yolcuların ihtiyacı da karşılanıyordu. Aylık değerlendirme toplantısında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Tuna"
+        },
+        {
+          "t": "metin",
+          "v": " bütün gün aynı rotayı kullanmayı önerdi. Başka bir görevli sakin saat verilerini gösterince karar yeniden ele alındı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " koşullara göre değişen planın daha uygun olduğunu gördü. Kullanılmayan enerji, ilerideki seferler için korunacaktı. Kıyı yaşamı da gereksiz hareketle meşgul edilmeyecekti. Kıyı boyunca yürüyenler artık iki farklı iskele seçeneğini görebiliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " akşam son seferinden dönerken suyun üzerindeki ışıkları izledi. Rota artık günün saatine göre değişiyordu: yoğun saatlerde iki iskeleye, sakin saatlerde yalnızca birine uğranıyordu. Eski harita tamamen atılmadı; üzerine yeni kullanım saatleri dikkatle eklendi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Yeni rota ihtiyacı neden doğdu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Feribotun boyası döküldüğü için"
+        },
+        {
+          "id": "B",
+          "metin": "Kıyılardan biri tamamen ulaşıma kapandığı için"
+        },
+        {
+          "id": "C",
+          "metin": "Bir iskelede yolcu yoğunluğu arttığı için"
+        },
+        {
+          "id": "D",
+          "metin": "Deniz haritası kaybolduğu için"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Metindeki \"Fakat yeni açılan bir yürüyüş alanı yüzünden bir iskelede yolcu yoğunluğu artmıştı.\" cümlesi C seçeneğini doğrular. Feribotun boyası, deniz haritası ve kıyının kapanması metinde sorun olarak geçmez."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Eski iskele neden hemen kullanılmadı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Güvenliği henüz bilinmediği için"
+        },
+        {
+          "id": "B",
+          "metin": "Feribotun pencereleri küçük olduğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Yeni tabela renkli olmadığı için"
+        },
+        {
+          "id": "D",
+          "metin": "Suyun rengi diğer iskelelerden farklı olduğu için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Metindeki \"Haritada yalnızca bakım alanı olarak işaretlenmişti; yolcu kullanımına uygun olup olmadığı bilinmiyordu.\" cümlesi, iskelenin yolcu için güvenli olup olmadığının belli olmadığını gösterir; bu yüzden uzman onayı beklendi. Pencerelerin boyu, tabelanın rengi ve suyun rengi metinde nedenler arasında yoktur."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Menzil” bu hikâyede ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir iskelede aynı anda bekleyen kişi sayısı"
+        },
+        {
+          "id": "B",
+          "metin": "Enerjiyle gidilebilecek güvenli uzaklık"
+        },
+        {
+          "id": "C",
+          "metin": "Denizdeki dalgaların yüksekliği"
+        },
+        {
+          "id": "D",
+          "metin": "Feribotun içindeki koltuk sayısı"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Metindeki \"Menzil, bir aracın mevcut enerjiyle güvenle gidebileceği uzaklıktı.\" cümlesi, menzilin tanımını verir. Bekleyen kişi sayısı yoğunluğu, dalga yüksekliği ve koltuk sayısı menzille ilgili değildir."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Ekip neden gecikmeleri de kaydetti?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sadece yeni levha hazırlamak için"
+        },
+        {
+          "id": "B",
+          "metin": "Yolculuğu zorlaştırmak için"
+        },
+        {
+          "id": "C",
+          "metin": "Eski rotayı gizlemek için"
+        },
+        {
+          "id": "D",
+          "metin": "Kararı verilere dayandırmak için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Metindeki \"Ekip yalnızca başarılı örnekleri değil, gecikmeleri de kaydetti.\" cümlesi, ekibin kararını yalnızca iyi sonuçlara değil tüm verilere dayandırmak istediğini gösterir. Levha hazırlamak, yolculuğu zorlaştırmak ve eski rotayı gizlemek metinde gecikme kaydının amacı değildir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr156_rota",
+        "tur": "kelime",
+        "yazim": "rota",
+        "anlam": "Bir yere gidilirken izlenecek yol ve yön planı.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_rota_b",
+        "tur": "kelime",
+        "yazim": "güzergâh",
+        "anlam": "Bir yolculukta izlenen yol.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_rota_c",
+        "tur": "kelime",
+        "yazim": "hat",
+        "anlam": "Düzenli sefer yapılan yol ya da bağlantı.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_menzil",
+        "tur": "kelime",
+        "yazim": "menzil",
+        "anlam": "Bir aracın enerjisiyle güvenle gidebileceği uzaklık.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_menzil_b",
+        "tur": "kelime",
+        "yazim": "erişim",
+        "anlam": "Bir yere ulaşabilme durumu.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_menzil_c",
+        "tur": "kelime",
+        "yazim": "kapasite",
+        "anlam": "Bir sistemin taşıyabileceği en yüksek miktar.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_iskele",
+        "tur": "kelime",
+        "yazim": "iskele",
+        "anlam": "Yolcu indirip bindirmek için denize uzanan yapı.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_iskele_b",
+        "tur": "kelime",
+        "yazim": "rıhtım",
+        "anlam": "Gemilerin yanaşıp yük ya da yolcu aldığı yapı.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_iskele_c",
+        "tur": "kelime",
+        "yazim": "yanaşma yeri",
+        "anlam": "Teknenin güvenle durabileceği kıyı noktası.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_yogunluk",
+        "tur": "kelime",
+        "yazim": "yoğunluk",
+        "anlam": "Bir alanda çok sayıda kişi ya da şeyin bulunması.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_yogunluk_b",
+        "tur": "kelime",
+        "yazim": "kalabalık",
+        "anlam": "Bir yerde bir araya gelmiş çok sayıda insan.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr156_yogunluk_c",
+        "tur": "kelime",
+        "yazim": "sıklık",
+        "anlam": "Bir olayın birim zamanda kaç kez olduğu.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr156_rota",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr156_rota"
+          },
+          {
+            "girdi": "hr156_rota_b"
+          },
+          {
+            "girdi": "hr156_rota_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr156_menzil",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr156_menzil"
+          },
+          {
+            "girdi": "hr156_menzil_b"
+          },
+          {
+            "girdi": "hr156_menzil_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr156_iskele",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr156_iskele"
+          },
+          {
+            "girdi": "hr156_iskele_b"
+          },
+          {
+            "girdi": "hr156_iskele_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr156_yogunluk",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr156_yogunluk"
+          },
+          {
+            "girdi": "hr156_yogunluk_b"
+          },
+          {
+            "girdi": "hr156_yogunluk_c"
+          }
+        ]
+      }
+    ]
+  }
+}

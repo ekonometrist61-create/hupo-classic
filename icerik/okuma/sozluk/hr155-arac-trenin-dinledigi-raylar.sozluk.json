@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr155_surtunme",
+      "tur": "kelime",
+      "yazim": "sürtünme",
+      "anlam": "İki yüzey birbirine değerken oluşan direnç.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_surtunme_b",
+      "tur": "kelime",
+      "yazim": "direnç",
+      "anlam": "Bir hareketi zorlaştıran karşı etki.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_surtunme_c",
+      "tur": "kelime",
+      "yazim": "aşınma",
+      "anlam": "Yüzeyin sürtünmeyle zamanla bozulması.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_titresim",
+      "tur": "kelime",
+      "yazim": "titreşim",
+      "anlam": "Bir cismin ileri geri hızlı hareketi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_titresim_b",
+      "tur": "kelime",
+      "yazim": "sarsıntı",
+      "anlam": "Bir cismin ani ve düzensiz sallanması.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_titresim_c",
+      "tur": "kelime",
+      "yazim": "salınım",
+      "anlam": "Bir şeyin denge noktası etrafında gidip gelmesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_bakim",
+      "tur": "kelime",
+      "yazim": "bakım",
+      "anlam": "Bir şeyin iyi çalışması için yapılan düzenli işlem.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_bakim_b",
+      "tur": "kelime",
+      "yazim": "onarım",
+      "anlam": "Bozulmuş bir şeyi düzeltme işi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_bakim_c",
+      "tur": "kelime",
+      "yazim": "servis",
+      "anlam": "Bir aracın ya da cihazın düzenli olarak kontrol edildiği hizmet.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_kontrol",
+      "tur": "kelime",
+      "yazim": "kontrol",
+      "anlam": "Bir şeyin doğru çalışıp çalışmadığını denetleme.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_kontrol_b",
+      "tur": "kelime",
+      "yazim": "denetim",
+      "anlam": "Bir işin kurallara uygunluğunu inceleme.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr155_kontrol_c",
+      "tur": "kelime",
+      "yazim": "gözlem",
+      "anlam": "Bir durumu dikkatle izleme.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr155_surtunme",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr155_surtunme"
+        },
+        {
+          "girdi": "hr155_surtunme_b"
+        },
+        {
+          "girdi": "hr155_surtunme_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr155_titresim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr155_titresim"
+        },
+        {
+          "girdi": "hr155_titresim_b"
+        },
+        {
+          "girdi": "hr155_titresim_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr155_bakim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr155_bakim"
+        },
+        {
+          "girdi": "hr155_bakim_b"
+        },
+        {
+          "girdi": "hr155_bakim_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr155_kontrol",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr155_kontrol"
+        },
+        {
+          "girdi": "hr155_kontrol_b"
+        },
+        {
+          "girdi": "hr155_kontrol_c"
+        }
+      ]
+    }
+  ]
+}

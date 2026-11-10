@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr157_irtifa",
+      "tur": "kelime",
+      "yazim": "irtifa",
+      "anlam": "Bir aracın yerden ya da deniz seviyesinden yüksekliği.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_irtifa_b",
+      "tur": "kelime",
+      "yazim": "yükseklik",
+      "anlam": "Bir nesnenin tabandan tepeye kadar olan uzaklığı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_irtifa_c",
+      "tur": "kelime",
+      "yazim": "derinlik",
+      "anlam": "Bir şeyin yüzeyden aşağı doğru uzaklığı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_turbulans",
+      "tur": "kelime",
+      "yazim": "türbülans",
+      "anlam": "Hava ya da suyun düzensiz, çalkantılı hareketi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_turbulans_b",
+      "tur": "kelime",
+      "yazim": "çalkantı",
+      "anlam": "Düzensiz ve sert hareket hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_turbulans_c",
+      "tur": "kelime",
+      "yazim": "akım",
+      "anlam": "Hava ya da suyun belirli yönde hareketi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_olcum",
+      "tur": "kelime",
+      "yazim": "ölçüm",
+      "anlam": "Bir büyüklüğü cihazla ya da birimle belirleme işlemi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_olcum_b",
+      "tur": "kelime",
+      "yazim": "tartım",
+      "anlam": "Bir şeyin ağırlığını belirleme işi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_olcum_c",
+      "tur": "kelime",
+      "yazim": "gözlem",
+      "anlam": "Bir olguyu dikkatle izleyerek kaydetme.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_guvenlik",
+      "tur": "kelime",
+      "yazim": "güvenlik",
+      "anlam": "Zarar görmekten korunmuş olma durumu.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_guvenlik_b",
+      "tur": "kelime",
+      "yazim": "emniyet",
+      "anlam": "Tehlike olmadığı güvenilir hâl.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr157_guvenlik_c",
+      "tur": "kelime",
+      "yazim": "koruma",
+      "anlam": "Bir şeyi zarar görmeden tutma işlemi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr157_irtifa",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr157_irtifa"
+        },
+        {
+          "girdi": "hr157_irtifa_b"
+        },
+        {
+          "girdi": "hr157_irtifa_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr157_turbulans",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr157_turbulans"
+        },
+        {
+          "girdi": "hr157_turbulans_b"
+        },
+        {
+          "girdi": "hr157_turbulans_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr157_olcum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr157_olcum"
+        },
+        {
+          "girdi": "hr157_olcum_b"
+        },
+        {
+          "girdi": "hr157_olcum_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr157_guvenlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr157_guvenlik"
+        },
+        {
+          "girdi": "hr157_guvenlik_b"
+        },
+        {
+          "girdi": "hr157_guvenlik_c"
+        }
+      ]
+    }
+  ]
+}

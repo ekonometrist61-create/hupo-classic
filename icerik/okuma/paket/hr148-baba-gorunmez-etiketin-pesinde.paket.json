@@ -1,0 +1,571 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr148-baba-gorunmez-etiketin-pesinde",
+    "baslik": "Görünmez Etiketin Peşinde",
+    "tur": "mizah",
+    "konu": "gida_etiketi_dogrulama",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "baba"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D13"
+    ],
+    "yetiskin_uygun": true,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "mizah"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D13"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr148",
+          "tur": "lexeme",
+          "etiket": "içerik",
+          "yuva": "hr148_icerik",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr148",
+          "tur": "lexeme",
+          "etiket": "etiket",
+          "yuva": "hr148_etiket",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr148",
+          "tur": "lexeme",
+          "etiket": "numune",
+          "yuva": "hr148_numune",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr148",
+          "tur": "lexeme",
+          "etiket": "karışım",
+          "yuva": "hr148_karisim",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 507,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Gizemli bir reçelin içindekileri kimse tam bilmiyor. {kahraman} eğlenceli bir etiketin aynı zamanda güvenilir olmasını sağlıyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-148"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kasabanın küçük meyve atölyesinde kavanozlara komik bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr148_etiket"
+        },
+        {
+          "t": "metin",
+          "v": " yapıştırılmıştı: “Gizemli Güneş Reçeli.” Atölyenin gıda uzmanı olan "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ismin ilgi çekici olduğunu düşündü ama kavanozun içindekilerin açıkça belirtilmediğini fark etti. Bir müşteri, “Bunun içinde ne var?” diye sorunca herkes aynı anda konuşmaya başladı. Biri kayısı dedi, biri şeftali, biri de portakal. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tahmin yarışına katılmadı. Önce herkesten tahminini kâğıda yazmasını istedi. Aynı kavanoz için üç farklı cevap çıkınca sorunun müşteride olmadığı anlaşıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıtları sakladı; yeni etiket hazır olunca eski ve yeni bilgiyi yan yana göstermek için kullanacaktı. Sonra ürünün üretim kaydını istedi, çünkü bir etiket yalnızca güzel görünmek için değil, doğru bilgi vermek için vardı. Atölye sahibi, “İsmin gizemli olması daha eğlenceli değil mi?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", gizemli bir adla belirsiz içeriğin aynı şey olmadığını söyledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kayıt defterinde reçelin üç meyveden oluşan bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr148_karisim"
+        },
+        {
+          "t": "metin",
+          "v": " olduğu yazılıydı. Ama partiden partiye meyve oranları değişmişti ve bunu hiçbir kavanoz göstermiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " rastgele bir kavanozu açıp tadına bakmak yerine her partiden uygun bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr148_numune"
+        },
+        {
+          "t": "metin",
+          "v": " ayırdı. Numune, incelenmek için seçilmiş küçük bir örnekti. Üretim tarihini ve parti bilgisini kayıtlarla karşılaştırdı. Kayıt klasörü o güne kadar rafın arkasında duruyordu; "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", onun herkesin kolay ulaşacağı bir yere konmasını önerdi. Böylece bir soru geldiğinde kimse hafızasına dayanmak zorunda kalmayacaktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Selin"
+        },
+        {
+          "t": "metin",
+          "v": ", hazırlanmış etiketlerin çöpe gitmesine üzüldü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kullanılabilir kâğıtların arka yüzüne deneme baskısı yapılabileceğini söyledi; hem doğru bilgi hazırlanacak hem de gereksiz malzeme harcanmayacaktı. Çalışma masasındaki renkli çıkartmalar da kutulara ayrıldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yeni etiket tasarımında komik isim kaldı. Altına meyvelerin adları ve "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr148_icerik"
+        },
+        {
+          "t": "metin",
+          "v": " bilgileri açıkça yazıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " özellikle küçük yazıların kolay okunmasını istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Selin"
+        },
+        {
+          "t": "metin",
+          "v": " uzun yazıları kavanozun altına koymayı önerdi, bir başkası parlak renklerin her sorunu çözeceğini düşündü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " açık zemin üzerinde koyu yazının nasıl göründüğünü gösterdi. Renkler güzel olabilirdi ama göz yormayan, okunabilen bir tasarım gerekiyordu. Denemeyi farklı uzaklıklardan yaptılar. Müşteri kavanozu ters çevirmeden bilgiye ulaşabilmeliydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " okunaklı ve sade bir yerleşim hazırladı. Alerjisi ya da özel beslenme ihtiyacı olan insanların ürünleri daha dikkatli seçebileceğini de hatırlattı. İlk baskı yapılınca herkes kavanozu elden ele dolaştırıp yazıları okumayı denedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğleden sonra bir ziyaretçi atölyeye geldi. Eski etiketi görünce güldü, yeni etikete bakınca içeriği hemen anladı. “Demek gizemli olan yalnızca adıymış,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", etiketin arkasındaki küçük çizimi gösterdi: Üç meyve el ele tutuşmuş gibi duruyordu. Çalışanlar bu fikri çok sevdi, hatta çizimi ön yüze büyük basmak istediler. Fakat "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizimin doğru bilgiyi örtmesine izin vermedi. Çizimin yeri bir kez daha değiştirildi; bilgi kaybolmadan eğlenceli görünüm korunmuş oldu. Kavanozların üzerine küçük bir kontrol işareti kondu. İşaret içeriğin denetlendiğini gösteriyordu ama ürünü olduğundan farklı tanıtmıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam pazarına gönderilen kavanozlar raflara dizildi. Bir müşteri iki farklı reçeli karşılaştırıp kendine uygun olanı seçti. Atölye sahibi, önceki etiketin ne çok soru doğurduğunu hatırladı. Pazar kapanırken çalışanlar yeni ürünler için kısa bir kontrol listesi hazırladı: Adı, içeriği, kayıt bilgisi ve okunabilirliği ayrı ayrı gözden geçirilecekti. “Bazen kısa bir cevap vermek için daha doğru bir açıklama gerekiyormuş,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". Bir sonraki ürün başka bir meyveden yapılacaktı; onun etiketi de kendi içeriğini anlatacaktı. Gizemli Güneş Reçeli raflarda kaldı ama kavanozu eline alan kimse artık içindekileri tahmin etmek zorunda değildi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Kavanozların ilk etiketindeki sorun neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Adının gereğinden kısa olması"
+        },
+        {
+          "id": "B",
+          "metin": "Kavanozların fazla küçük olması"
+        },
+        {
+          "id": "C",
+          "metin": "İçindekilerin yazılmaması"
+        },
+        {
+          "id": "D",
+          "metin": "Raflara hiç yerleştirilmemesi"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "İsim ilgi çekiciydi ama içindekiler açıkça yazılmamıştı. Etiketin kısalığı, kavanoz boyutu ya da raf yerleşimi sorun olarak anılmaz."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Atölyede her üretim partisinden numune ayrılması neden daha güvenilir bir kontrol sağlar?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Her üretimin ayrı incelenmesini sağlar"
+        },
+        {
+          "id": "B",
+          "metin": "Etiket yazısını kendiliğinden büyütür"
+        },
+        {
+          "id": "C",
+          "metin": "Bütün kavanozları birbirinin aynısı yapar"
+        },
+        {
+          "id": "D",
+          "metin": "Meyvelerin rengini kalıcı olarak değiştirir"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Partiler arasında meyve oranı değişebildiği için her partiden numune almak, her üretimi ayrı ayrı incelemeye izin verir. Numune almak yazıyı büyütmez, kavanozları eşitlemez, rengi de değiştirmez."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“{kahraman} okunaklı ve sade bir yerleşim hazırladı.” cümlesindeki “okunaklı” ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Ağırlığı çok olan"
+        },
+        {
+          "id": "B",
+          "metin": "Kolay okunabilen"
+        },
+        {
+          "id": "C",
+          "metin": "Birden çok kapaklı"
+        },
+        {
+          "id": "D",
+          "metin": "Yalnız resimli"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Küçük yazıların kolay okunması istendiği için okunaklı, kolay okunabilen demektir. Ağırlık, kapak sayısı ya da yalnız resim bu anlamda geçmez."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Çalışanlar çizimi öne çıkarmak isteyince {kahraman} neden bilginin örtülmemesini istedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Resim çizmek çok zor olduğu için"
+        },
+        {
+          "id": "B",
+          "metin": "Atölyenin duvarlarını süslemek için"
+        },
+        {
+          "id": "C",
+          "metin": "Pazarın zamanında kapanması için"
+        },
+        {
+          "id": "D",
+          "metin": "Müşteri doğru seçim yapsın diye"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Etiketin görevi doğru bilgi vermek; çizim bunu örterse müşteri doğru seçemez. Çizmenin zorluğu, duvar süsü ve pazar saati metinde gerekçe değildir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr148_icerik",
+        "tur": "kelime",
+        "yazim": "içerik",
+        "anlam": "Bir ürünün ya da metnin içinde bulunan şeyler.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_icerik_b",
+        "tur": "kelime",
+        "yazim": "madde",
+        "anlam": "Bir şeyi oluşturan özel nitelikli malzeme.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_icerik_c",
+        "tur": "kelime",
+        "yazim": "bileşen",
+        "anlam": "Bir karışımı oluşturan parçalardan her biri.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_etiket",
+        "tur": "kelime",
+        "yazim": "etiket",
+        "anlam": "Bir ürün üzerinde bilgi veren yapıştırılmış kâğıt ya da işaret.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_etiket_b",
+        "tur": "kelime",
+        "yazim": "damga",
+        "anlam": "Bir şeyin üzerine basılan ayırt edici işaret.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_etiket_c",
+        "tur": "kelime",
+        "yazim": "künye",
+        "anlam": "Bir ürünün kimlik ve içerik bilgilerini gösteren kayıt.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_numune",
+        "tur": "kelime",
+        "yazim": "numune",
+        "anlam": "İncelemek için seçilmiş küçük örnek.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_numune_b",
+        "tur": "kelime",
+        "yazim": "örnek",
+        "anlam": "Bir bütünü temsil eden parça.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_numune_c",
+        "tur": "kelime",
+        "yazim": "deneme",
+        "anlam": "Bir şeyi sınamak için yapılan ön uygulama.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_karisim",
+        "tur": "kelime",
+        "yazim": "karışım",
+        "anlam": "Birden çok maddenin bir araya getirilmesiyle oluşan şey.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_karisim_b",
+        "tur": "kelime",
+        "yazim": "bileşim",
+        "anlam": "Bir şeyi oluşturan öğelerin toplamı.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr148_karisim_c",
+        "tur": "kelime",
+        "yazim": "harman",
+        "anlam": "Farklı şeylerin birlikte karıştırılması.",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr148_icerik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr148_icerik"
+          },
+          {
+            "girdi": "hr148_icerik_b"
+          },
+          {
+            "girdi": "hr148_icerik_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr148_etiket",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr148_etiket"
+          },
+          {
+            "girdi": "hr148_etiket_b"
+          },
+          {
+            "girdi": "hr148_etiket_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr148_numune",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr148_numune"
+          },
+          {
+            "girdi": "hr148_numune_b"
+          },
+          {
+            "girdi": "hr148_numune_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr148_karisim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr148_karisim"
+          },
+          {
+            "girdi": "hr148_karisim_b"
+          },
+          {
+            "girdi": "hr148_karisim_c"
+          }
+        ]
+      }
+    ]
+  }
+}

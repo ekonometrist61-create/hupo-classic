@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr150_kalibrasyon",
+      "tur": "kelime",
+      "yazim": "kalibrasyon",
+      "anlam": "Bir ölçü aletini doğru değerlerle karşılaştırıp ayarlama işi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_kalibrasyon_b",
+      "tur": "kelime",
+      "yazim": "ayar",
+      "anlam": "Bir aletin doğru çalışacak biçimde düzenlenmesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_kalibrasyon_c",
+      "tur": "kelime",
+      "yazim": "doğrulama",
+      "anlam": "Bir ölçümün doğru olduğunu sınama işlemi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_sapma",
+      "tur": "kelime",
+      "yazim": "sapma",
+      "anlam": "Beklenen değerden ayrılma, farklılık.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_sapma_b",
+      "tur": "kelime",
+      "yazim": "hata",
+      "anlam": "Doğru olandan istenmeyen ayrılma.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_sapma_c",
+      "tur": "kelime",
+      "yazim": "fark",
+      "anlam": "İki şey arasındaki ayrılık.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_standart",
+      "tur": "kelime",
+      "yazim": "standart",
+      "anlam": "Herkesin aynı sonuca ulaşması için kabul edilen ölçü.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_standart_b",
+      "tur": "kelime",
+      "yazim": "ölçü",
+      "anlam": "Bir şeyin miktarını belirlemeye yarayan birim.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_standart_c",
+      "tur": "kelime",
+      "yazim": "birim",
+      "anlam": "Bir büyüklüğün ölçüldüğü temel değer.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_agirlik",
+      "tur": "kelime",
+      "yazim": "ağırlık",
+      "anlam": "Bir cismin çekim etkisiyle ölçülen kütlesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_agirlik_b",
+      "tur": "kelime",
+      "yazim": "kütle",
+      "anlam": "Bir cismin içerdiği madde miktarı.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr150_agirlik_c",
+      "tur": "kelime",
+      "yazim": "yük",
+      "anlam": "Taşınan şeyin ağırlığı.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr150_kalibrasyon",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr150_kalibrasyon"
+        },
+        {
+          "girdi": "hr150_kalibrasyon_b"
+        },
+        {
+          "girdi": "hr150_kalibrasyon_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr150_sapma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr150_sapma"
+        },
+        {
+          "girdi": "hr150_sapma_b"
+        },
+        {
+          "girdi": "hr150_sapma_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr150_standart",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr150_standart"
+        },
+        {
+          "girdi": "hr150_standart_b"
+        },
+        {
+          "girdi": "hr150_standart_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr150_agirlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr150_agirlik"
+        },
+        {
+          "girdi": "hr150_agirlik_b"
+        },
+        {
+          "girdi": "hr150_agirlik_c"
+        }
+      ]
+    }
+  ]
+}

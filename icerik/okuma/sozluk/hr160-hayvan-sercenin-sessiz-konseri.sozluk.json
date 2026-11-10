@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr160_ritim",
+      "tur": "kelime",
+      "yazim": "ritim",
+      "anlam": "Seslerin ya da hareketlerin düzenli aralıklarla tekrarlanması.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_ritim_b",
+      "tur": "kelime",
+      "yazim": "tempo",
+      "anlam": "Bir şeyin yapılış hızı ve düzeni.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_ritim_c",
+      "tur": "kelime",
+      "yazim": "vuruş",
+      "anlam": "Ritmi oluşturan her bir darbe ya da ses.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_sessizlik",
+      "tur": "kelime",
+      "yazim": "sessizlik",
+      "anlam": "Ses çıkmama durumu.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_sessizlik_b",
+      "tur": "kelime",
+      "yazim": "durgunluk",
+      "anlam": "Hareket ya da sesin olmadığı durum.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_sessizlik_c",
+      "tur": "kelime",
+      "yazim": "dinginlik",
+      "anlam": "Ortamın sakin ve sessiz olması.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_hizli",
+      "tur": "kelime",
+      "yazim": "hızlı",
+      "anlam": "Çok kısa sürede olan, çabuk.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_hizli_b",
+      "tur": "kelime",
+      "yazim": "çabuk",
+      "anlam": "Kısa zamanda, süratli olan.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_hizli_c",
+      "tur": "kelime",
+      "yazim": "yavaş",
+      "anlam": "Hareketi ya da sesi ağır olan.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_uyum",
+      "tur": "kelime",
+      "yazim": "uyum",
+      "anlam": "Parçaların birbirine uygun olması.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_uyum_b",
+      "tur": "kelime",
+      "yazim": "ahenk",
+      "anlam": "Birlikte çıkan seslerin hoş bir düzeni.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr160_uyum_c",
+      "tur": "kelime",
+      "yazim": "denge",
+      "anlam": "Parçaların birbirini bozmadan durması.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr160_ritim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr160_ritim"
+        },
+        {
+          "girdi": "hr160_ritim_b"
+        },
+        {
+          "girdi": "hr160_ritim_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr160_sessizlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr160_sessizlik"
+        },
+        {
+          "girdi": "hr160_sessizlik_b"
+        },
+        {
+          "girdi": "hr160_sessizlik_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr160_hizli",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr160_hizli"
+        },
+        {
+          "girdi": "hr160_hizli_b"
+        },
+        {
+          "girdi": "hr160_hizli_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr160_uyum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr160_uyum"
+        },
+        {
+          "girdi": "hr160_uyum_b"
+        },
+        {
+          "girdi": "hr160_uyum_c"
+        }
+      ]
+    }
+  ]
+}

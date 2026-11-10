@@ -1,0 +1,567 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr155-arac-trenin-dinledigi-raylar",
+    "baslik": "Trenin Dinlediği Raylar",
+    "tur": "bilim",
+    "konu": "ray_temasi_gozlemi",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "arac"
+    ],
+    "deger_anahtarlari": [
+      "D16",
+      "D12"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D16",
+        "yardimci_deger": "D12"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr155",
+          "tur": "lexeme",
+          "etiket": "sürtünme",
+          "yuva": "hr155_surtunme",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr155",
+          "tur": "lexeme",
+          "etiket": "titreşim",
+          "yuva": "hr155_titresim",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr155",
+          "tur": "lexeme",
+          "etiket": "bakım",
+          "yuva": "hr155_bakim",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr155",
+          "tur": "lexeme",
+          "etiket": "kontrol",
+          "yuva": "hr155_kontrol",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 524,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Bir tren, viraj çıkışında alışılmadık bir sarsıntı hissediyor. {kahraman} güvenli bakım tamamlanana kadar raylardaki işaretleri izliyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-155"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dağ eteklerinden geçen bir yolcu treniydi. Her seferinde tüneli geçtikten sonra kısa bir sarsıntı hissediyordu. Sarsıntı yalnızca bir virajdan çıkarken beliriyordu. Kontrol sistemleri normal çalışsa da bu değişikliğin anlaşılması gerekiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr155_bakim"
+        },
+        {
+          "t": "metin",
+          "v": " merkezine girdiğinde teknisyenler yeni kayıtları inceledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Ferhat"
+        },
+        {
+          "t": "metin",
+          "v": " gecikmeye ilişkin duyuruyu güncelledi, bekleyenlere alternatif saatler sunuldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " seferlerin değişmesinin yolcuları etkilediğini biliyordu. Yine de bakım kararı belirsiz bir söylentiye değil, kayıtlarla doğrulanan bir inceleme ihtiyacına dayanıyordu. Küçük bir farklılığı görmezden gelmek, yolcuların güvenliğini şansa bırakmak olurdu. Bakım ekibi ölçümleri tamamlayana kadar planlanan sefer değiştirildi. Bu karar bazı yolcuları bekletti ama gerekçesi duyuruda açıklandı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rayların bulunduğu bölümde uzman ekip çalıştı. İki yüzey birbirine değdiğinde oluşan "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr155_surtunme"
+        },
+        {
+          "t": "metin",
+          "v": ", trenin hareketini etkileyebiliyordu. Ekip, tekerlek ve ray temasındaki ölçümleri "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr155_kontrol"
+        },
+        {
+          "t": "metin",
+          "v": " etti. Ardından kayıt cihazındaki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr155_titresim"
+        },
+        {
+          "t": "metin",
+          "v": " bilgilerini bir grafik üzerinde inceledi. Tekerlek yüzeyindeki izler incelenirken uzmanlar bakım geçmişine de baktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " her rayda aynı sesin oluşmadığını anımsıyordu. Bu ayrıntı, sorunun bütün hatta yayılan bir bozukluk olmayabileceğini düşündürdü. Ekip farklı olasılıkları listeden birer birer kontrol etti; henüz kanıtlanmamış bir tahmini sonuç diye yazmadı. İlk incelemede raylarda büyük bir bozukluk görünmüyordu. Fakat yağmurdan sonra bir noktada ince kum biriktiği fark edildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " aynı bölgeden geçen önceki seferlerin kayıtlarını anımsıyordu. Değişiklik, kumun artmaya başladığı günlerde belirginleşmişti. Teknisyenler bu bağlantıyı not etti ama başka olasılıkları da incelemeye devam etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hattın ilgili bölümü yetkililerce güvenli çalışmaya kapatıldı. Ray çevresindeki birikinti temizlendi, drenaj kontrol edildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " daha sonra boş olarak test yolculuğuna çıktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Ferhat"
+        },
+        {
+          "t": "metin",
+          "v": " kontrol ekranındaki değerleri izliyordu. Deneme sürüşünün ardından elde edilen grafikler üst üste getirildi. Bazı değerler azalmıştı ama hepsi aynı miktarda değişmemişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu fark ettiğinde daha fazla ölçüm yapılmasının iyi olacağını düşündü. Teknisyenler farklı hız aralıklarında izin verilen koşulları karşılaştırdı. Küçük ayrıntılar birlikte incelendiğinde daha açık bir tablo oluştu. Sarsıntı azalmıştı; fakat viraj çıkışında hafif bir hareket hâlâ hissediliyordu. Ekip bu kez ray bağlantılarındaki küçük ayar farklılığını inceledi. İki ölçüm arasındaki fark net biçimde kaydedildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " değişikliğin nedenini tek bir olaya bağlamanın ne kadar yanıltıcı olabileceğini gördü. Birden fazla küçük etken bir araya gelmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gerekli bakım tamamlanınca tekrar deneme yapıldı. Ray boyunca kontrol noktaları işaretlenmişti. Tren her birinden geçerken hareket verileri kaydedildi. Test sonuçları uzman ekip tarafından değerlendirildi ve hat ancak uygun görülünce açıldı. Peronun kenarında bekleyen yolculara yaklaşma çizgisinin gerisinde durmaları hatırlatıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " duraklamanın ve yeniden hareket etmenin de yolculuğun önemli parçaları olduğunu düşünüyordu. Güvenli bir hat tek başına yeterli değildi; istasyondaki açık işaretler ve düzenli duyurular da yolculuğun tamamını destekliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " istasyona yaklaşırken peronun aydınlık çizgisini gördü. Peron, yolcuların tren beklediği yükseltilmiş bölümdü. Yolcular yeniden düzenlenen sefer saatini tabeladan öğrendi. Gecikme için açıklama yapılmıştı. Yolculuk sırasında saklanan bir sorun kalmamış olması, herkesi rahatlattı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sonraki hafta "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " aynı virajı geçerken sarsıntıyı hissetmedi. Ama bakım kayıtlarının düzenli tutulması devam etti. Tren, her şey yolundayken yapılan kontrollerin de önemli olduğunu biliyordu. İstasyonda bir çocuk pencerenin ardından dağları gösterdi. Dağ manzarası vagondaki pencerelerden birer birer geçiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eski sarsıntıyı artık hissetmemekle yetinmedi; düzenli kontrollerin sürmesini değerli buldu. Çünkü bir sorun ortadan kalktığında ona yol açan koşulları hatırlamak gelecekteki işleri kolaylaştırırdı. İstasyonda tutulan dosya bunun için hazırlanmıştı. Yolcular sessizce yolculuğuna devam etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " raylardan yükselen düzenli sesi dinledi. Ses düzgündü ve ritmi bir an bile aksamıyordu. Dağlar geride kalırken yol devam etti."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Sarsıntı hangi bölgede fark ediliyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Tünel sonrası virajda"
+        },
+        {
+          "id": "B",
+          "metin": "İstasyon kapısında"
+        },
+        {
+          "id": "C",
+          "metin": "Yolcu vagonunda"
+        },
+        {
+          "id": "D",
+          "metin": "Bakım merkezinin girişinde"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Metindeki \"Sarsıntı yalnızca bir virajdan çıkarken beliriyordu.\" ifadesi doğru seçeneği destekler."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "İnce kumun bulunması neden önemliydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bilet fiyatını ve seferleri belirlediği için"
+        },
+        {
+          "id": "B",
+          "metin": "Sarsıntıyla ilgili olabileceği için"
+        },
+        {
+          "id": "C",
+          "metin": "Peronu büyütüp genişlettiği için"
+        },
+        {
+          "id": "D",
+          "metin": "Rayın rengini değiştirdiği için"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Metindeki \"Fakat yağmurdan sonra bir noktada ince kum biriktiği fark edildi.\" cümlesi, kumun sarsıntının olası bir etkeni olarak incelendiğini gösterir; metinde değişikliğin kumun arttığı günlerde belirginleştiği de yazar. Bilet fiyatı, peronun boyutu ve rayın rengi kumla ilişkilendirilmez."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Birikinti” ifadesi bağlamda neyi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Trenin hız göstergesindeki ibreyi"
+        },
+        {
+          "id": "B",
+          "metin": "Hatta yeni eklenen bir vagonu"
+        },
+        {
+          "id": "C",
+          "metin": "Bir noktada toplanan maddeyi"
+        },
+        {
+          "id": "D",
+          "metin": "İstasyonun girişindeki büyük tabelayı"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Metindeki \"Ray çevresindeki birikinti temizlendi, drenaj kontrol edildi.\" cümlesinde birikinti, rayın çevresinde toplanıp temizlenen maddedir; önceki bölümde biriken ince kum da bunu destekler. Hız göstergesi, vagon ve tabela temizlenen şeyler değildir."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Hat niçin yalnızca son test uygun bulununca açıldı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Gecikmeyi artırmak için"
+        },
+        {
+          "id": "B",
+          "metin": "Treni başka yere satmak için"
+        },
+        {
+          "id": "C",
+          "metin": "Bütün istasyonları kapatmak için"
+        },
+        {
+          "id": "D",
+          "metin": "Güvenliği doğrulamak için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Metindeki \"Test sonuçları uzman ekip tarafından değerlendirildi ve hat ancak uygun görülünce açıldı.\" cümlesi, hattın güvenliği doğrulanmadan açılmadığını gösterir. Gecikmeyi artırmak, treni satmak ya da istasyonları kapatmak metinde hiç amaç olarak geçmez."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr155_surtunme",
+        "tur": "kelime",
+        "yazim": "sürtünme",
+        "anlam": "İki yüzey birbirine değerken oluşan direnç.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_surtunme_b",
+        "tur": "kelime",
+        "yazim": "direnç",
+        "anlam": "Bir hareketi zorlaştıran karşı etki.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_surtunme_c",
+        "tur": "kelime",
+        "yazim": "aşınma",
+        "anlam": "Yüzeyin sürtünmeyle zamanla bozulması.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_titresim",
+        "tur": "kelime",
+        "yazim": "titreşim",
+        "anlam": "Bir cismin ileri geri hızlı hareketi.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_titresim_b",
+        "tur": "kelime",
+        "yazim": "sarsıntı",
+        "anlam": "Bir cismin ani ve düzensiz sallanması.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_titresim_c",
+        "tur": "kelime",
+        "yazim": "salınım",
+        "anlam": "Bir şeyin denge noktası etrafında gidip gelmesi.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_bakim",
+        "tur": "kelime",
+        "yazim": "bakım",
+        "anlam": "Bir şeyin iyi çalışması için yapılan düzenli işlem.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_bakim_b",
+        "tur": "kelime",
+        "yazim": "onarım",
+        "anlam": "Bozulmuş bir şeyi düzeltme işi.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_bakim_c",
+        "tur": "kelime",
+        "yazim": "servis",
+        "anlam": "Bir aracın ya da cihazın düzenli olarak kontrol edildiği hizmet.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_kontrol",
+        "tur": "kelime",
+        "yazim": "kontrol",
+        "anlam": "Bir şeyin doğru çalışıp çalışmadığını denetleme.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_kontrol_b",
+        "tur": "kelime",
+        "yazim": "denetim",
+        "anlam": "Bir işin kurallara uygunluğunu inceleme.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr155_kontrol_c",
+        "tur": "kelime",
+        "yazim": "gözlem",
+        "anlam": "Bir durumu dikkatle izleme.",
+        "sinif_alt": 6,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr155_surtunme",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr155_surtunme"
+          },
+          {
+            "girdi": "hr155_surtunme_b"
+          },
+          {
+            "girdi": "hr155_surtunme_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr155_titresim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr155_titresim"
+          },
+          {
+            "girdi": "hr155_titresim_b"
+          },
+          {
+            "girdi": "hr155_titresim_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr155_bakim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr155_bakim"
+          },
+          {
+            "girdi": "hr155_bakim_b"
+          },
+          {
+            "girdi": "hr155_bakim_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr155_kontrol",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr155_kontrol"
+          },
+          {
+            "girdi": "hr155_kontrol_b"
+          },
+          {
+            "girdi": "hr155_kontrol_c"
+          }
+        ]
+      }
+    ]
+  }
+}

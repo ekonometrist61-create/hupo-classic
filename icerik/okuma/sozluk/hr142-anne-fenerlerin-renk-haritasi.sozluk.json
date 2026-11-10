@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr142_parilti",
+      "tur": "kelime",
+      "yazim": "parıltı",
+      "anlam": "Bir yüzeyden yansıyan ya da kendiliğinden çıkan hafif ışık.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_parilti_b",
+      "tur": "kelime",
+      "yazim": "ışıltı",
+      "anlam": "Parlayan ve göz kamaştıran ışık.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_parilti_c",
+      "tur": "kelime",
+      "yazim": "aydınlık",
+      "anlam": "Işığın yaydığı açıklık.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_taslak",
+      "tur": "kelime",
+      "yazim": "taslak",
+      "anlam": "Bir işin ilk, deneme biçimindeki planı.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_taslak_b",
+      "tur": "kelime",
+      "yazim": "tasarı",
+      "anlam": "Bir işin yapılmadan önceki ayrıntılı düzeni.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_taslak_c",
+      "tur": "kelime",
+      "yazim": "plan",
+      "anlam": "Bir işi yapmadan önce hazırlanan düzen.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_uyum",
+      "tur": "kelime",
+      "yazim": "uyum",
+      "anlam": "Parçaların birbirine yakışması, birlikte düzenli olması.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_uyum_b",
+      "tur": "kelime",
+      "yazim": "ahenk",
+      "anlam": "Birlikte çıkan seslerin ya da parçaların hoş düzeni.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_uyum_c",
+      "tur": "kelime",
+      "yazim": "denge",
+      "anlam": "Parçaların birbirini bozmadan durması.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_onarim",
+      "tur": "kelime",
+      "yazim": "onarım",
+      "anlam": "Bozulmuş bir şeyi düzeltme işi.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_onarim_b",
+      "tur": "kelime",
+      "yazim": "tamir",
+      "anlam": "Bozulan bir şeyi yeniden çalışır duruma getirme.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr142_onarim_c",
+      "tur": "kelime",
+      "yazim": "bakım",
+      "anlam": "Bir şeyin iyi kalması için yapılan düzenli işlem.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr142_parilti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr142_parilti"
+        },
+        {
+          "girdi": "hr142_parilti_b"
+        },
+        {
+          "girdi": "hr142_parilti_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr142_taslak",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr142_taslak"
+        },
+        {
+          "girdi": "hr142_taslak_b"
+        },
+        {
+          "girdi": "hr142_taslak_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr142_uyum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr142_uyum"
+        },
+        {
+          "girdi": "hr142_uyum_b"
+        },
+        {
+          "girdi": "hr142_uyum_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr142_onarim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr142_onarim"
+        },
+        {
+          "girdi": "hr142_onarim_b"
+        },
+        {
+          "girdi": "hr142_onarim_c"
+        }
+      ]
+    }
+  ]
+}

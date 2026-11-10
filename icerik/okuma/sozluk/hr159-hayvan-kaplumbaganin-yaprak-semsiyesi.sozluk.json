@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr159_siginak",
+      "tur": "kelime",
+      "yazim": "sığınak",
+      "anlam": "Tehlikeden, yağmurdan ya da soğuktan korunmak için gidilen yer.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_siginak_b",
+      "tur": "kelime",
+      "yazim": "barınak",
+      "anlam": "Canlıların kendini koruduğu yer.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_siginak_c",
+      "tur": "kelime",
+      "yazim": "siper",
+      "anlam": "Bir tehlikeden korunmak için arkasına geçilen engel.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_pirilti",
+      "tur": "kelime",
+      "yazim": "pırıltı",
+      "anlam": "Bir yüzeyde kısa kısa parlayan hafif ışık.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_pirilti_b",
+      "tur": "kelime",
+      "yazim": "parıltı",
+      "anlam": "Işığın yansıyarak oluşturduğu parlaklık.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_pirilti_c",
+      "tur": "kelime",
+      "yazim": "ışıltı",
+      "anlam": "Parlayan ve göz kamaştıran ışık.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_patika",
+      "tur": "kelime",
+      "yazim": "patika",
+      "anlam": "Yaya geçişine açık, dar ve kıvrımlı yol.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_patika_b",
+      "tur": "kelime",
+      "yazim": "keçiyolu",
+      "anlam": "Dağlık yerlerde yayaların kullandığı dar yol.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_patika_c",
+      "tur": "kelime",
+      "yazim": "yol",
+      "anlam": "Bir yerden başka bir yere ulaşmayı sağlayan güzergâh.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_paylasmak",
+      "tur": "kelime",
+      "yazim": "paylaşmak",
+      "anlam": "Bir şeyi başkasıyla birlikte kullanmak.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_paylasmak_b",
+      "tur": "kelime",
+      "yazim": "bölüşmek",
+      "anlam": "Bir şeyi aralarında ortak olarak dağıtmak.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr159_paylasmak_c",
+      "tur": "kelime",
+      "yazim": "dağıtmak",
+      "anlam": "Bir şeyi birkaç kişi arasında paylaştırmak.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr159_siginak",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr159_siginak"
+        },
+        {
+          "girdi": "hr159_siginak_b"
+        },
+        {
+          "girdi": "hr159_siginak_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr159_pirilti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr159_pirilti"
+        },
+        {
+          "girdi": "hr159_pirilti_b"
+        },
+        {
+          "girdi": "hr159_pirilti_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr159_patika",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr159_patika"
+        },
+        {
+          "girdi": "hr159_patika_b"
+        },
+        {
+          "girdi": "hr159_patika_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr159_paylasmak",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr159_paylasmak"
+        },
+        {
+          "girdi": "hr159_paylasmak_b"
+        },
+        {
+          "girdi": "hr159_paylasmak_c"
+        }
+      ]
+    }
+  ]
+}

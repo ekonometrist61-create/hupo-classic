@@ -1,0 +1,515 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr154-arac-minik-teknenin-kopuk-yolu",
+    "baslik": "Minik Teknenin Köpük Yolu",
+    "tur": "doga",
+    "konu": "gol_temizligi",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "okuma_bandi": 1,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "arac"
+    ],
+    "deger_anahtarlari": [
+      "D18",
+      "D9"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 3,
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 2,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "doga"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D18",
+        "yardimci_deger": "D9"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr154",
+          "tur": "lexeme",
+          "etiket": "kıyı",
+          "yuva": "hr154_kiyi",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr154",
+          "tur": "lexeme",
+          "etiket": "birikinti",
+          "yuva": "hr154_birikinti",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr154",
+          "tur": "lexeme",
+          "etiket": "ağ",
+          "yuva": "hr154_ag",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr154",
+          "tur": "lexeme",
+          "etiket": "akıntı",
+          "yuva": "hr154_akinti",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (3. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 251,
+        "tahmini_sure_dk": 4,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Küçük bir temizlik teknesi gölde değişen bir köpük çizgisi görüyor. {kahraman} canlıları rahatsız etmeden kıyıyı temizliyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-154"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gölde çalışan küçük bir temizlik teknesiydi. Her sabah "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr154_kiyi"
+        },
+        {
+          "t": "metin",
+          "v": " yakınındaki yaprakları ve çöpleri toplardı. Bir gün suyun üzerinde uzun bir köpük çizgisi gördü. Köpük, hafif "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr154_akinti"
+        },
+        {
+          "t": "metin",
+          "v": " ile gölün bir köşesine taşınıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " oraya hızla gitmedi. Çünkü kıyıda dinlenen ördekleri ürkütmek istemiyordu. Önce yavaşça ilerledi, sonra yüzeyde biriken parçaları gözledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Nazlı"
+        },
+        {
+          "t": "metin",
+          "v": " köpüğün nereden geldiğini anlamak için suyu inceledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise yalnızca güvenli bölgede çalışıyordu. Önündeki geniş "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr154_ag"
+        },
+        {
+          "t": "metin",
+          "v": " suyun üzerindeki küçük çöpleri topluyordu. Ağ, suyun içindeki canlılara zarar vermeyecek biçimde kullanılıyordu. Gölün kenarında bir plastik kap yüzüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dikkatle yaklaşıp kabı toplama bölümüne aldı. Köpüğün nedenini bilmeden hiçbir maddeyi suya dökmedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rüzgâr yön değiştirince yüzeydeki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr154_birikinti"
+        },
+        {
+          "t": "metin",
+          "v": " de başka yere kaydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " görevlinin belirlediği yeni yola yöneldi. Sığ alanda hızını düşürdü. Su üstündeki çöp parçaları yavaşça ağa doldu. Kıyıdaki sazlar arasında küçük bir kuş dinleniyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " o bölgeye girmedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Nazlı"
+        },
+        {
+          "t": "metin",
+          "v": ", gölün temiz kalması için çöplerin kıyıda da toplanması gerektiğini söyledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğleden sonra kıyıya dönen "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", topladığı atıkları ayrılmış kutulara bıraktı. Görevli köpüğün nedenini anlamak için uzman incelemesinin sürdüğünü anlattı. Her köpüğün aynı sebeple oluşmadığını, bu yüzden acele karar verilmemesi gerektiğini belirtti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " işinin bittiğini sanmadı. Ertesi gün için yeni bir kontrol rotası hazırladı. Dalgalar teknenin yanına usulca vuruyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi sabah göl daha temiz görünüyordu. Ördekler kıyıda sakin sakin yüzüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " suyun üstündeki son yaprakları topladı. Kıyı boyunca çöpler için yeni kutular konmuştu. Ziyaretçiler atıklarını buralara bırakmaya başladı. Küçük tekne kocaman gölün tamamını bir günde değiştiremezdi. Ama her sabah kıyıdan bir avuç yaprak ve çöp eksiliyor, ördeklerin yüzdüğü su biraz daha berraklaşıyordu."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Teknenin ilk gördüğü şey neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Suyu kesen büyük bir köprü"
+        },
+        {
+          "id": "B",
+          "metin": "Uzun bir köpük çizgisi"
+        },
+        {
+          "id": "C",
+          "metin": "Kıyıya düşmüş yaşlı bir ağaç"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Metindeki \"Bir gün suyun üzerinde uzun bir köpük çizgisi gördü.\" cümlesi B seçeneğini doğrular. Köprü, düşmüş ağaç ve yeni iskele metinde hiç geçmez."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "{kahraman} neden köpüğe rastgele madde dökmedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Teknenin boyası ve rengi zarar görmesin diye"
+        },
+        {
+          "id": "B",
+          "metin": "Durumu bilmeden zarar vermemek için"
+        },
+        {
+          "id": "C",
+          "metin": "Toplama kutusunda yer kalmadığı için"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Metindeki \"Köpüğün nedenini bilmeden hiçbir maddeyi suya dökmedi.\" cümlesi, tekneyi sebebini bilmediği bir durumda zarar vermekten kaçındığını gösterir. Teknenin rengi, batan güneş ve dolu kutu metinde bu kararın nedeni olarak geçmez."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Birikinti” sözcüğü neyi belirtir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir yerde toplanan parçaları"
+        },
+        {
+          "id": "B",
+          "metin": "Güneşin suya vuran yansımasını"
+        },
+        {
+          "id": "C",
+          "metin": "Kıyıda ziyaretçilerin oturduğu yeri"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Metindeki \"Rüzgâr yön değiştirince yüzeydeki birikinti de başka yere kaydı.\" cümlesinde birikinti, yüzeyde bir araya gelmiş parçalardır; rüzgârla birlikte kayması bunu gösterir. Gölün derinliği, yansıma ve oturma yeri kayabilecek şeyler değildir."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Tekne sazlıklara neden girmedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Köpüğün biriktiği yerden daha çok toplamak için"
+        },
+        {
+          "id": "B",
+          "metin": "Görevliyi bekletmek için"
+        },
+        {
+          "id": "C",
+          "metin": "Dinlenen kuşu ürkütmemek için"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Metindeki \"Kıyıdaki sazlar arasında küçük bir kuş dinleniyordu.\" cümlesi, teknenin sazlığa girmeyerek kuşu ürkütmemeyi seçtiğini gösterir. Yolu kısaltmak, daha çok köpük toplamak ve görevliyi bekletmek metinde sazlıktan kaçınmanın nedeni değildir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr154_kiyi",
+        "tur": "kelime",
+        "yazim": "kıyı",
+        "anlam": "Denizin ya da gölün karaya bitişen kenar kısmı.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_kiyi_b",
+        "tur": "kelime",
+        "yazim": "kenar",
+        "anlam": "Bir yerin dış sınırına yakın bölüm.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_kiyi_c",
+        "tur": "kelime",
+        "yazim": "sahil",
+        "anlam": "Denizin ya da gölün kıyısı boyunca uzanan alan.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_birikinti",
+        "tur": "kelime",
+        "yazim": "birikinti",
+        "anlam": "Bir yerde toplanan parçalar ya da madde.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_birikinti_b",
+        "tur": "kelime",
+        "yazim": "yığın",
+        "anlam": "Bir yerde üst üste toplanmış şey.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_birikinti_c",
+        "tur": "kelime",
+        "yazim": "köpük",
+        "anlam": "Su yüzeyinde toplanan kabarcıklı tabaka.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_ag",
+        "tur": "kelime",
+        "yazim": "ağ",
+        "anlam": "Su ya da havadaki parçaları yakalamak için örülmüş düzenek.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_ag_b",
+        "tur": "kelime",
+        "yazim": "süzgeç",
+        "anlam": "Sıvıdaki katı parçaları ayıran gözenekli düzenek.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_ag_c",
+        "tur": "kelime",
+        "yazim": "file",
+        "anlam": "İnce iplerden örülmüş tutucu.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_akinti",
+        "tur": "kelime",
+        "yazim": "akıntı",
+        "anlam": "Suyun belirli bir yönde akması.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_akinti_b",
+        "tur": "kelime",
+        "yazim": "akım",
+        "anlam": "Suyun ya da havanın hareket yönü ve hızı.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr154_akinti_c",
+        "tur": "kelime",
+        "yazim": "dalga",
+        "anlam": "Su yüzeyinde ilerleyen yükseltilmiş hareket.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr154_kiyi",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr154_kiyi"
+          },
+          {
+            "girdi": "hr154_kiyi_b"
+          },
+          {
+            "girdi": "hr154_kiyi_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr154_birikinti",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr154_birikinti"
+          },
+          {
+            "girdi": "hr154_birikinti_b"
+          },
+          {
+            "girdi": "hr154_birikinti_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr154_ag",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr154_ag"
+          },
+          {
+            "girdi": "hr154_ag_b"
+          },
+          {
+            "girdi": "hr154_ag_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr154_akinti",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr154_akinti"
+          },
+          {
+            "girdi": "hr154_akinti_b"
+          },
+          {
+            "girdi": "hr154_akinti_c"
+          }
+        ]
+      }
+    ]
+  }
+}

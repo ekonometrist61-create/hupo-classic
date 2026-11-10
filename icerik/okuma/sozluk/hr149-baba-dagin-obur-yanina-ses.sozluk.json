@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr149_verici",
+      "tur": "kelime",
+      "yazim": "verici",
+      "anlam": "Sinyal ya da dalga yayan cihaz.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_verici_b",
+      "tur": "kelime",
+      "yazim": "anten",
+      "anlam": "Radyo dalgalarını gönderen ya da alan düzenek.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_verici_c",
+      "tur": "kelime",
+      "yazim": "yayıcı",
+      "anlam": "Bir sinyali uzağa ileten aygıt.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_sinyal",
+      "tur": "kelime",
+      "yazim": "sinyal",
+      "anlam": "Bilgi taşıyan, iletilen işaret.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_sinyal_b",
+      "tur": "kelime",
+      "yazim": "işaret",
+      "anlam": "Bir şeyi anlatan ya da haber veren belirti.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_sinyal_c",
+      "tur": "kelime",
+      "yazim": "dalga",
+      "anlam": "Ortamda yayılan ve enerji taşıyan titreşim.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_engel",
+      "tur": "kelime",
+      "yazim": "engel",
+      "anlam": "Bir yerin geçilmesini güçleştiren şey.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_engel_b",
+      "tur": "kelime",
+      "yazim": "kaya",
+      "anlam": "Doğal olarak oluşmuş büyük ve sert taş kütlesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_engel_c",
+      "tur": "kelime",
+      "yazim": "set",
+      "anlam": "Suyun ya da hareketin tutulması için yapılan yükselti.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_kapsama",
+      "tur": "kelime",
+      "yazim": "kapsama",
+      "anlam": "Bir sinyalin ulaşabildiği alanın genişliği.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_kapsama_b",
+      "tur": "kelime",
+      "yazim": "erişim",
+      "anlam": "Bir yere ulaşabilme durumu.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr149_kapsama_c",
+      "tur": "kelime",
+      "yazim": "menzil",
+      "anlam": "Bir cihazın etkili olduğu uzaklık sınırı.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr149_verici",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr149_verici"
+        },
+        {
+          "girdi": "hr149_verici_b"
+        },
+        {
+          "girdi": "hr149_verici_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr149_sinyal",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr149_sinyal"
+        },
+        {
+          "girdi": "hr149_sinyal_b"
+        },
+        {
+          "girdi": "hr149_sinyal_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr149_engel",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr149_engel"
+        },
+        {
+          "girdi": "hr149_engel_b"
+        },
+        {
+          "girdi": "hr149_engel_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr149_kapsama",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr149_kapsama"
+        },
+        {
+          "girdi": "hr149_kapsama_b"
+        },
+        {
+          "girdi": "hr149_kapsama_c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,599 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr158-arac-kitap-tasiyan-kargo-bisikleti",
+    "baslik": "Kitap Taşıyan Kargo Bisikleti",
+    "tur": "gezi_kultur",
+    "konu": "kent_ici_teslimat",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "arac"
+    ],
+    "deger_anahtarlari": [
+      "D17",
+      "D20"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 7,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D17",
+        "yardimci_deger": "D20"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr158",
+          "tur": "lexeme",
+          "etiket": "rota",
+          "yuva": "hr158_rota",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr158",
+          "tur": "lexeme",
+          "etiket": "öncelik",
+          "yuva": "hr158_oncelik",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr158",
+          "tur": "lexeme",
+          "etiket": "dağıtım",
+          "yuva": "hr158_dagitim",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr158",
+          "tur": "lexeme",
+          "etiket": "verimlilik",
+          "yuva": "hr158_verimlilik",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (7. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 646,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Festival hazırlıkları yüzünden kitapların ulaştırılacağı sokaklar kapanıyor. {kahraman} dengeli yük ve doğru rotayla okuma duraklarını buluşturuyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-158"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kentin dar sokaklarında kitap taşıyan elektrik destekli bir kargo bisikletiydi. Gezici okuma noktasına her hafta farklı kitap kutuları götürüyordu. Bu hafta sokak festivalinin hazırlıkları nedeniyle bazı yollar kapatılacaktı. Teslimat saatleri değişmeden önce yeni bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr158_rota"
+        },
+        {
+          "t": "metin",
+          "v": " planlanması gerekiyordu. Kutuların üzerine yalnızca varış yerleri değil, teslim alınacak saat aralıkları da yazıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " böylece aynı sokaktan iki kez geçmek gerekip gerekmediğini görebiliyordu. Plan hazırlanırken kitapların zarar görmemesi için taşıma düzeni de incelendi. Çok ağır bir kutuyu en üste koymak uygun değildi. Görevliler yükü dengeli biçimde yerleştirdi. Bu küçük hazırlık, günün sonraki bölümünde yaşanabilecek karışıklıkları azaltacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " taşıdığı kutuların yalnızca eşya olmadığını düşünüyordu; her kutu, yeni bir okuma durağında bekleyen okurlara ulaşacaktı. Lojistik ekibi tüm adresleri ve yol kapanışlarını haritaya işledi. Lojistik, bir eşyanın doğru zamanda doğru yere ulaştırılmasının düzenlenmesiydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yokuşları, yük ağırlığını ve güvenli bisiklet yollarını birlikte dikkate alan planı incelemeye başladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk rota, kısa görünmesine rağmen iki kez dik bir yokuştan geçiyordu. Bu güzergâh, bataryadan fazla enerji kullanacak ve dönüşte zorluk çıkarabilecekti. İkinci rota biraz daha uzundu ama bisiklet yolunun büyük bölümünü kullanıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr158_oncelik"
+        },
+        {
+          "t": "metin",
+          "v": " sırasını yalnızca mesafeye göre belirlemedi. Önce erken açılan okuma noktalarının teslimatlarını, sonra öğleden sonraki noktaların kutularını ayırdı. Alternatif güzergâhın kaldırım kenarlarında dar bölümler vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu noktaları sadece haritadaki çizgiye bakarak değerlendirmedi. Görevliler yolu önceden yürüyerek kontrol etti. Yük taşıyan bir aracın nerede durabileceği, diğer yol kullanıcılarının geçişini engellemeden nasıl teslimat yapabileceği belirlendi. Dar sokakların tarihi dokusu da korunacaktı. Böylece plan, hızlı gitmekle birlikte çevreye özen göstermeyi de içerdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Veli"
+        },
+        {
+          "t": "metin",
+          "v": " tüm paketleri aynı anda taşımayı önerdi. Oysa yük sınırını aşmak güvenli değildi. Ekip kutuları iki sefere böldü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " böylece daha dengeli hareket edebilecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sabah ilk seferde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " taş döşeli meydana ulaştı. Festival hazırlıkları başlamıştı; görevli alanı kapatan geçici işaretleri gösterdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " daha önce belirlenen alternatif sokaktan ilerledi. Okuma durağında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Veli"
+        },
+        {
+          "t": "metin",
+          "v": " kutuları teslim aldı. Kitapları hemen rafa koymadı. Önce kutulardaki sayıyla listedeki sayıyı karşılaştırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu adımın önemli olduğunu düşünüyordu; yanlış kitap farklı bir noktaya giderse başka bir okur bekleyebilirdi. Bir kutunun etiketi yıpranmıştı; geçici bir işaretle yenilendi. Sonra kayıt güncellendi ve kutular güvenli biçimde taşındı. Teslimatın bitmesi yalnızca kapıya ulaşmak değil, doğru içeriğin teslim edildiğinin doğrulanmasıydı. Etiket yıpranmış olsa da içindeki kitaplar doğru yere gelmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu teslimat kaydına not etti. Dönüş yolunda bisiklet yoluna park edilmiş bir araç görüldü. Güvensiz biçimde aradan geçmek yerine izin verilen başka sokak seçildi. Birkaç dakika kaybedildi ama teslimat güvenle tamamlandı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci seferde rüzgâr arttı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kutuları sabitleyen bağların gevşemediğini kontrol ettirdi. Son durak, dar bir park girişinin yanındaydı. Parkta küçük bir okuma köşesi hazırlanıyordu. Görevli, kitapların yere konulmaması için yükseltilmiş bir masa getirdi. Parkın girişinde küçük bir çukur bulunuyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " görevlilerin belirlediği güvenli yanaşma noktasında durdu. Kitaplar dışarı alınırken çevrede yürüyenlere yol verildi. Etkinlik alanında kitapların yağmurdan korunabileceği kapalı bir köşe de hazırlanmıştı. Akşam saatlerinde hava değişirse bütün kutular yeniden taşınmak zorunda kalmayacaktı. Ekip bir sonraki haftanın teslimatını planlarken bu ayrıntıyı da not etti. Böylece kâğıtlar nemden korunacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki seferin enerji kullanımını karşılaştırdı. Beklenenden az enerji harcanmış, teslimatların tamamı planlanan zaman aralığında bitmişti. Ancak ekip kayıtları yalnızca başarı olarak görmedi; kapanan sokakların oluşturduğu gecikmeler de sonraki haftanın planına eklendi. Bu kayıtlar rotanın "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr158_verimlilik"
+        },
+        {
+          "t": "metin",
+          "v": " değerlendirmesinde kullanılacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam festivalin ışıkları yanarken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " deposuna döndü. Yollar çok kalabalıktı ama okuma noktalarında kitap bekleyen kimse kalmamıştı. Ertesi gün güzergâh yeniden değişecekti; kent yaşayan bir yerdi ve her plan aynı kalamazdı. Deponun kapısında günü değerlendiren çizelge asıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bazı yolların iyi işlemiş, bazılarının ise yalnızca o gün uygun olmuş olabileceğini biliyordu. Festival bittikten sonra kapanan sokakların çoğu açılacaktı. Bu nedenle bugünkü rota sonsuza kadar kullanılacak kesin bir çözüm değildi. Ekip farklı koşullar için iki alternatif hazırladı. Kitapların ulaşması kadar sürdürülebilir bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr158_dagitim"
+        },
+        {
+          "t": "metin",
+          "v": " düzeni kurmak da önem kazanmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güvenli ulaşımı, zamanında teslimatı ve enerji tasarrufunu aynı çizelgede birlikte tutmuştu. Bir görevli son kutuyu rafa kaldırıp kapıyı kapattı. Bisikletin önündeki küçük teslimat çizelgesinde bütün adreslerin yanında işaret vardı. O işaretler, dar sokakların arasında sessizce kurulan bir kitap yolunu anlatıyordu."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Yeni rota neden gerekti?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bisikletin rengi değiştiği için"
+        },
+        {
+          "id": "B",
+          "metin": "Tüm kitaplar satıldığı için"
+        },
+        {
+          "id": "C",
+          "metin": "Festival yolları kapatacağı için"
+        },
+        {
+          "id": "D",
+          "metin": "Okuma noktaları başka mahalleye taşındığı için"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Metindeki \"Bu hafta sokak festivalinin hazırlıkları nedeniyle bazı yollar kapatılacaktı.\" cümlesi C seçeneğini doğrular. Bisikletin rengi değişmemiş, kitaplar satılmamış ve okuma noktaları taşınmamıştı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Kutular neden iki seferde taşındı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yükü güvenli sınırda tutmak için"
+        },
+        {
+          "id": "B",
+          "metin": "İlk sefer çok sessiz geçtiği için"
+        },
+        {
+          "id": "C",
+          "metin": "Paketlerin rengi aynı olduğu için"
+        },
+        {
+          "id": "D",
+          "metin": "Bütün sokaklar aynı uzunlukta olduğu için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Metindeki \"Oysa yük sınırını aşmak güvenli değildi.\" cümlesi, kutuların tek seferde taşınmamasının nedenini verir. İlk seferin sessizliği, paketlerin rengi ve sokak uzunlukları bölme kararıyla ilişkilendirilmez."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Teslimat” sözcüğünün bağlamdaki anlamı nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kent haritasını baştan çizip yayımlamak"
+        },
+        {
+          "id": "B",
+          "metin": "Paketleri doğru yere ulaştırmak"
+        },
+        {
+          "id": "C",
+          "metin": "Bataryayı boyamak"
+        },
+        {
+          "id": "D",
+          "metin": "Festival için sokakları kapatmak"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Metindeki \"Teslimatın bitmesi yalnızca kapıya ulaşmak değil, doğru içeriğin teslim edildiğinin doğrulanmasıydı.\" cümlesinde teslimat, paketlerin doğru yere ve doğru içerikle ulaştırılmasıdır. Harita çizmek, bataryayı boyamak ve sokakları kapatmak teslimat değildir."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Ekip gecikmeleri neden sonraki plana ekledi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Festivalden kaçınmak için"
+        },
+        {
+          "id": "B",
+          "metin": "Kitapları geri toplamak için"
+        },
+        {
+          "id": "C",
+          "metin": "Bisikletin adını değiştirmek için"
+        },
+        {
+          "id": "D",
+          "metin": "Sonraki planı iyileştirmek için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Metindeki \"Ancak ekip kayıtları yalnızca başarı olarak görmedi; kapanan sokakların oluşturduğu gecikmeler de sonraki haftanın planına eklendi.\" cümlesi, gecikmelerin sonraki haftanın planını iyileştirmek için kaydedildiğini gösterir. Festivalden kaçınmak, kitapları geri toplamak ve bisikletin adını değiştirmek metinde yoktur."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr158_rota",
+        "tur": "kelime",
+        "yazim": "rota",
+        "anlam": "Bir yere gidilirken izlenen yol ve yön planı.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_rota_b",
+        "tur": "kelime",
+        "yazim": "güzergâh",
+        "anlam": "Bir yolculukta izlenen yol.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_rota_c",
+        "tur": "kelime",
+        "yazim": "hat",
+        "anlam": "Düzenli sefer yapılan yol ya da bağlantı.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_oncelik",
+        "tur": "kelime",
+        "yazim": "öncelik",
+        "anlam": "Önce yapılması gereken durum ya da iş.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_oncelik_b",
+        "tur": "kelime",
+        "yazim": "sıra",
+        "anlam": "Bir işin yapılacağı zaman dizisi.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_oncelik_c",
+        "tur": "kelime",
+        "yazim": "ivedilik",
+        "anlam": "Bir işin acil olarak yapılması gereği.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_dagitim",
+        "tur": "kelime",
+        "yazim": "dağıtım",
+        "anlam": "Bir şeyi çeşitli yerlere ulaştırma işi.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_dagitim_b",
+        "tur": "kelime",
+        "yazim": "teslimat",
+        "anlam": "Bir eşyanın alıcıya ulaştırılması.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_dagitim_c",
+        "tur": "kelime",
+        "yazim": "sevkiyat",
+        "anlam": "Malların bir yerden başka yere gönderilmesi.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_verimlilik",
+        "tur": "kelime",
+        "yazim": "verimlilik",
+        "anlam": "Kullanılan emeğe göre elde edilen sonucun iyiliği.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_verimlilik_b",
+        "tur": "kelime",
+        "yazim": "etkinlik",
+        "anlam": "Bir işi amacına uygun ve başarılı yürütme durumu.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr158_verimlilik_c",
+        "tur": "kelime",
+        "yazim": "tasarruf",
+        "anlam": "Kaynakları gereksiz harcamadan kullanma.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr158_rota",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr158_rota"
+          },
+          {
+            "girdi": "hr158_rota_b"
+          },
+          {
+            "girdi": "hr158_rota_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr158_oncelik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr158_oncelik"
+          },
+          {
+            "girdi": "hr158_oncelik_b"
+          },
+          {
+            "girdi": "hr158_oncelik_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr158_dagitim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr158_dagitim"
+          },
+          {
+            "girdi": "hr158_dagitim_b"
+          },
+          {
+            "girdi": "hr158_dagitim_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr158_verimlilik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr158_verimlilik"
+          },
+          {
+            "girdi": "hr158_verimlilik_b"
+          },
+          {
+            "girdi": "hr158_verimlilik_c"
+          }
+        ]
+      }
+    ]
+  }
+}

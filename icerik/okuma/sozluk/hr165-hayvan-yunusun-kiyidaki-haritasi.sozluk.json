@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr165_yanki",
+      "tur": "kelime",
+      "yazim": "yankı",
+      "anlam": "Bir sesin bir yüzeyden yansıyıp geri gelmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_yanki_b",
+      "tur": "kelime",
+      "yazim": "yansıma",
+      "anlam": "Işığın ya da sesin bir yüzeyden geri dönmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_yanki_c",
+      "tur": "kelime",
+      "yazim": "çınlama",
+      "anlam": "Bir sesin uzun süre titreşerek kalması.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_akinti",
+      "tur": "kelime",
+      "yazim": "akıntı",
+      "anlam": "Suyun belirli bir yönde akması.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_akinti_b",
+      "tur": "kelime",
+      "yazim": "akım",
+      "anlam": "Suyun ya da havanın hareket yönü ve hızı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_akinti_c",
+      "tur": "kelime",
+      "yazim": "dalga",
+      "anlam": "Su yüzeyinde ilerleyen yükseltilmiş hareket.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_kiyi",
+      "tur": "kelime",
+      "yazim": "kıyı",
+      "anlam": "Denizin ya da gölün karaya bitişen kenarı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_kiyi_b",
+      "tur": "kelime",
+      "yazim": "kenar",
+      "anlam": "Bir yerin dış sınırına yakın bölüm.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_kiyi_c",
+      "tur": "kelime",
+      "yazim": "sahil",
+      "anlam": "Denizin ya da gölün kıyısı boyunca uzanan alan.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_tekne",
+      "tur": "kelime",
+      "yazim": "tekne",
+      "anlam": "Su üzerinde yolcu ya da yük taşımaya yarayan küçük araç.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_tekne_b",
+      "tur": "kelime",
+      "yazim": "gemi",
+      "anlam": "Denizde yük ya da yolcu taşıyan büyük araç.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr165_tekne_c",
+      "tur": "kelime",
+      "yazim": "kayık",
+      "anlam": "Küçük ve açık, genellikle kürekle yürütülen tekne.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr165_yanki",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr165_yanki"
+        },
+        {
+          "girdi": "hr165_yanki_b"
+        },
+        {
+          "girdi": "hr165_yanki_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr165_akinti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr165_akinti"
+        },
+        {
+          "girdi": "hr165_akinti_b"
+        },
+        {
+          "girdi": "hr165_akinti_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr165_kiyi",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr165_kiyi"
+        },
+        {
+          "girdi": "hr165_kiyi_b"
+        },
+        {
+          "girdi": "hr165_kiyi_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr165_tekne",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr165_tekne"
+        },
+        {
+          "girdi": "hr165_tekne_b"
+        },
+        {
+          "girdi": "hr165_tekne_c"
+        }
+      ]
+    }
+  ]
+}

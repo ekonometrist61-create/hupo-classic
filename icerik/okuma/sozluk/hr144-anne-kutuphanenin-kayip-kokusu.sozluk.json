@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr144_koruma",
+      "tur": "kelime",
+      "yazim": "koruma",
+      "anlam": "Bir şeyi zarar görmekten ya da bozulmaktan kollama işi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_koruma_b",
+      "tur": "kelime",
+      "yazim": "muhafaza",
+      "anlam": "Bir şeyi olduğu gibi saklama.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_koruma_c",
+      "tur": "kelime",
+      "yazim": "bakım",
+      "anlam": "Bir şeyin iyi durumda kalması için yapılan işlem.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_havalandirma",
+      "tur": "kelime",
+      "yazim": "havalandırma",
+      "anlam": "Kapalı bir yere temiz hava girmesini sağlama işi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_havalandirma_b",
+      "tur": "kelime",
+      "yazim": "çekiş",
+      "anlam": "Bir alandaki havayı dışarı çekme.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_havalandirma_c",
+      "tur": "kelime",
+      "yazim": "dolaşım",
+      "anlam": "Havanın bir yerde serbestçe hareket etmesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_lif",
+      "tur": "kelime",
+      "yazim": "lif",
+      "anlam": "Bitkilerden ya da kâğıttan gelen ince, uzun tel parçası.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_lif_b",
+      "tur": "kelime",
+      "yazim": "tel",
+      "anlam": "İnce ve uzun bir malzeme parçası.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_lif_c",
+      "tur": "kelime",
+      "yazim": "doku",
+      "anlam": "Bir malzemenin iç yapısı.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_kayit",
+      "tur": "kelime",
+      "yazim": "kayıt",
+      "anlam": "Bir olayın ya da bilginin yazılı olarak tutulması.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_kayit_b",
+      "tur": "kelime",
+      "yazim": "not",
+      "anlam": "Hatırlanması için kısaca yazılan bilgi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr144_kayit_c",
+      "tur": "kelime",
+      "yazim": "defter",
+      "anlam": "Notların ve kayıtların tutulduğu kitap.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr144_koruma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr144_koruma"
+        },
+        {
+          "girdi": "hr144_koruma_b"
+        },
+        {
+          "girdi": "hr144_koruma_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr144_havalandirma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr144_havalandirma"
+        },
+        {
+          "girdi": "hr144_havalandirma_b"
+        },
+        {
+          "girdi": "hr144_havalandirma_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr144_lif",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr144_lif"
+        },
+        {
+          "girdi": "hr144_lif_b"
+        },
+        {
+          "girdi": "hr144_lif_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr144_kayit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr144_kayit"
+        },
+        {
+          "girdi": "hr144_kayit_b"
+        },
+        {
+          "girdi": "hr144_kayit_c"
+        }
+      ]
+    }
+  ]
+}

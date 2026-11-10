@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr158_rota",
+      "tur": "kelime",
+      "yazim": "rota",
+      "anlam": "Bir yere gidilirken izlenen yol ve yön planı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_rota_b",
+      "tur": "kelime",
+      "yazim": "güzergâh",
+      "anlam": "Bir yolculukta izlenen yol.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_rota_c",
+      "tur": "kelime",
+      "yazim": "hat",
+      "anlam": "Düzenli sefer yapılan yol ya da bağlantı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_oncelik",
+      "tur": "kelime",
+      "yazim": "öncelik",
+      "anlam": "Önce yapılması gereken durum ya da iş.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_oncelik_b",
+      "tur": "kelime",
+      "yazim": "sıra",
+      "anlam": "Bir işin yapılacağı zaman dizisi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_oncelik_c",
+      "tur": "kelime",
+      "yazim": "ivedilik",
+      "anlam": "Bir işin acil olarak yapılması gereği.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_dagitim",
+      "tur": "kelime",
+      "yazim": "dağıtım",
+      "anlam": "Bir şeyi çeşitli yerlere ulaştırma işi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_dagitim_b",
+      "tur": "kelime",
+      "yazim": "teslimat",
+      "anlam": "Bir eşyanın alıcıya ulaştırılması.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_dagitim_c",
+      "tur": "kelime",
+      "yazim": "sevkiyat",
+      "anlam": "Malların bir yerden başka yere gönderilmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_verimlilik",
+      "tur": "kelime",
+      "yazim": "verimlilik",
+      "anlam": "Kullanılan emeğe göre elde edilen sonucun iyiliği.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_verimlilik_b",
+      "tur": "kelime",
+      "yazim": "etkinlik",
+      "anlam": "Bir işi amacına uygun ve başarılı yürütme durumu.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr158_verimlilik_c",
+      "tur": "kelime",
+      "yazim": "tasarruf",
+      "anlam": "Kaynakları gereksiz harcamadan kullanma.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr158_rota",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr158_rota"
+        },
+        {
+          "girdi": "hr158_rota_b"
+        },
+        {
+          "girdi": "hr158_rota_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr158_oncelik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr158_oncelik"
+        },
+        {
+          "girdi": "hr158_oncelik_b"
+        },
+        {
+          "girdi": "hr158_oncelik_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr158_dagitim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr158_dagitim"
+        },
+        {
+          "girdi": "hr158_dagitim_b"
+        },
+        {
+          "girdi": "hr158_dagitim_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr158_verimlilik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr158_verimlilik"
+        },
+        {
+          "girdi": "hr158_verimlilik_b"
+        },
+        {
+          "girdi": "hr158_verimlilik_c"
+        }
+      ]
+    }
+  ]
+}

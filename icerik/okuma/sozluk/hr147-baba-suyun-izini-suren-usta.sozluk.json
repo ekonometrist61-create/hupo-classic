@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr147_sizinti",
+      "tur": "kelime",
+      "yazim": "sızıntı",
+      "anlam": "Bir yerden sıvı ya da gazın istenmeden çıkması.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_sizinti_b",
+      "tur": "kelime",
+      "yazim": "kaçak",
+      "anlam": "İzin verilmeden bir yerden dışarı sızan su ya da gaz.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_sizinti_c",
+      "tur": "kelime",
+      "yazim": "damlama",
+      "anlam": "Bir yerden damla damla sızma.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_baglanti",
+      "tur": "kelime",
+      "yazim": "bağlantı",
+      "anlam": "İki parçayı birbirine bağlayan yer ya da eleman.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_baglanti_b",
+      "tur": "kelime",
+      "yazim": "eklem",
+      "anlam": "İki parçanın birleştiği yer.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_baglanti_c",
+      "tur": "kelime",
+      "yazim": "halka",
+      "anlam": "Bir şeyi başka bir şeye bağlayan kapalı, yuvarlak parça.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_birikinti",
+      "tur": "kelime",
+      "yazim": "birikinti",
+      "anlam": "Bir yerde toplanıp kalan su ya da madde.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_birikinti_b",
+      "tur": "kelime",
+      "yazim": "gölcük",
+      "anlam": "Küçük bir yerde toplanmış durgun su.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_birikinti_c",
+      "tur": "kelime",
+      "yazim": "yığın",
+      "anlam": "Bir yerde üst üste toplanmış şey.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_kaygan",
+      "tur": "kelime",
+      "yazim": "kaygan",
+      "anlam": "Üzerinde kolay kayılan, tutunmayı zorlaştıran.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_kaygan_b",
+      "tur": "kelime",
+      "yazim": "ıslak",
+      "anlam": "Su ile kaplı, nemli olan.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr147_kaygan_c",
+      "tur": "kelime",
+      "yazim": "pürüzsüz",
+      "anlam": "Yüzeyi düz ve kaygan olan.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr147_sizinti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr147_sizinti"
+        },
+        {
+          "girdi": "hr147_sizinti_b"
+        },
+        {
+          "girdi": "hr147_sizinti_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr147_baglanti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr147_baglanti"
+        },
+        {
+          "girdi": "hr147_baglanti_b"
+        },
+        {
+          "girdi": "hr147_baglanti_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr147_birikinti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr147_birikinti"
+        },
+        {
+          "girdi": "hr147_birikinti_b"
+        },
+        {
+          "girdi": "hr147_birikinti_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr147_kaygan",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr147_kaygan"
+        },
+        {
+          "girdi": "hr147_kaygan_b"
+        },
+        {
+          "girdi": "hr147_kaygan_c"
+        }
+      ]
+    }
+  ]
+}

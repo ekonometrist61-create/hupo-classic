@@ -1,0 +1,579 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr151-baba-avludaki-gunes-saati",
+    "baslik": "Avludaki Güneş Saati",
+    "tur": "tarih_kultur",
+    "konu": "gunes_saati_restorasyonu",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "baba"
+    ],
+    "deger_anahtarlari": [
+      "D7",
+      "D12"
+    ],
+    "yetiskin_uygun": true,
+    "etiketler": {
+      "ana_sinif": 7,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kultur_miras"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D7",
+        "yardimci_deger": "D12"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr151",
+          "tur": "lexeme",
+          "etiket": "gölge",
+          "yuva": "hr151_golge",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr151",
+          "tur": "lexeme",
+          "etiket": "saçak",
+          "yuva": "hr151_sacak",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr151",
+          "tur": "lexeme",
+          "etiket": "referans",
+          "yuva": "hr151_referans",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr151",
+          "tur": "lexeme",
+          "etiket": "tutarlılık",
+          "yuva": "hr151_tutarlilik",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (7. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 587,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Bir hanın avlusundaki güneş saati şaşırtıcı sonuçlar veriyor. {kahraman} gölgelerin izini sürerek eski aracı yeniden anlamlandırıyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-151"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Taş hanın avlusundaki güneş saati uzun zamandır doğru vakti göstermiyordu. Han, ziyaretçilerin eski ticaret yollarını tanıdığı küçük bir kültür alanına dönüştürülmüştü. Han, sabahtan akşama kadar gezi gruplarına açıktı ve güneş saati her grubun ilk durağıydı. Zaman ölçüm sistemleri üzerinde çalışan "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", saati incelemeye çağrıldı. İlk bakışta metal çubuğun hafifçe eğildiği görülüyordu. Avlunun taş duvarında geçmiş yıllardan kalma küçük çizikler de vardı; ziyaretçiler onları rastgele sanıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", çiziklerin saatle ilgili olup olmadığını incelemeden kesin konuşmadı. Avluya sonradan yapılan yüksek "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr151_sacak"
+        },
+        {
+          "t": "metin",
+          "v": ", güneşin gelişini bazı saatlerde engelliyordu. Bu yüzden aynı avlunun farklı saatlerdeki görünüşü fotoğraflandı ve eski fotoğraflar, avlunun yönü ve "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr151_golge"
+        },
+        {
+          "t": "metin",
+          "v": " izleriyle birlikte değerlendirildi. Ziyaretçilerden biri saatin rakamlarını yeni bir renkle boyamayı önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", mekanizma anlaşılmadan görünüşe dokunmanın gereksiz olduğunu söyledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sabah boyunca gölge çizgisi izlendi. Güneşin konumu değiştikçe çubuğun gölgesi de taş zeminde yer değiştiriyordu; sabahın erken saatlerinde uzun, öğleye doğru kısa görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu hareketi belirli aralıklarla işaretleyip çizelgeye yazdı. Güneşli ve bulutlu saatler ayrı işaretlendi. Eski bir çizimde çubuğun açısı açıkça gösterilmişti; bu çizim güvenilir bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr151_referans"
+        },
+        {
+          "t": "metin",
+          "v": " sağlayabilirdi. Ancak çizimin hangi mevsimde hazırlandığı belli değildi. Gölgenin uzunluğu ve yönü mevsime göre değişirdi, bu yüzden eski kaydı tek başına yeterli saymadı. Bir görevli eski çizimin üzerine yeni çizgiler eklemeyi önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " orijinal belgeyi değiştirmek yerine kopyası üzerinde çalıştı; eski çizim korunacak, yeni yorumlar da ayrı gösterilecekti. Farklı saatlerdeki ölçümlerle çizim arasında "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr151_tutarlilik"
+        },
+        {
+          "t": "metin",
+          "v": " aradı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Kerem"
+        },
+        {
+          "t": "metin",
+          "v": " birkaç saatte her şeyin çözüleceğini sanıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yöntemini anlattıkça neden birkaç gün gerektiği daha iyi anlaşıldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci gün "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Kerem"
+        },
+        {
+          "t": "metin",
+          "v": " çubuğu elle düzeltmeye kalktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " durmasını rica etti; eski metal zorlanırsa zarar görebilirdi. Önce koruyucu bir destek hazırlanmalı, sonra uygun işlem belirlenmeliydi. Çubuğun destek noktasında eskiden yapılmış bir onarım izi vardı; ekip bu izin işlevi etkileyip etkilemediğini kontrol etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eski parçanın ölçülerini yazarken yalnızca uzunluğuna değil, yönüne ve bağlantı biçimine de baktı. Avlunun bir bölümü ziyaretçilere geçici olarak kapatıldı, güvenli geçişler işaretlendi. Taşlar ısındıkça ekip gölgeye çekilip notlarını düzenledi. Çubuğun eğikliği ile saçağın gölgesi ayrı ayrı incelendi. Bazı saatlerde yanlış görünen değerlerin bir kısmının, güneş saatinin çalışma biçiminin yanlış yorumlanmasından geldiği anlaşıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " açıklama panosuna, güneş saatinin bugünkü saatlerle her an birebir aynı sonucu vermeyebileceğini de yazdı. Gerçeği basitleştirmek başka, yanlış aktarmak başkaydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çubuk, uzman kontrolünde uygun konuma getirildi. Saçağın tamamını değiştirmek gerekmedi; gölgeyi etkileyen küçük bir bölüm yeniden düzenlendi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi gün aynı saatlerde ölçümü tekrarladı; ölçümler farklı günlerde aynı saatte yinelendi ve sonuçlar önceki çizelgeye göre belirgin biçimde düzeldi. Bir gün hava aniden bulutlandı, gölge çizgisi kayboldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu başarısızlık saymadı: Güneş saati ışık olmadan çalışamazdı, bu sınır aracın doğasındaydı. Ekip o gün diğer kayıtları düzenledi, eksik görülen saatleri listeledi ve uygun hava için yeni gözlem zamanı belirledi. Yine de farklı bir hava koşulunda ölçüm yapmadan işi tamamlanmış saymadı. Bir ziyaretçi, “Bu kadar küçük bir gölge için ne çok uğraştınız,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir çizgiye bakarak zaman okumanın uzun yılların bilgisine dayandığını hatırlattı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Son gün avlunun taş zemini temizlendi, ölçüm notları arşive kaldırıldı. Güneş ışığı çubuğa vurunca dar bir gölge eski çizgiye uzandı. Çevrede toplananlar şaşkınlıkla baktı. Panoya saatin nasıl okunacağını gösteren kısa bir örnek eklendi. Bir ziyaretçi önce kol saatine, sonra taş zemindeki çizgiye baktı; aradaki farkın bozulma anlamına gelmediğini öğrendi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", panodaki açıklamanın yanıltıcı olmaması için son kez kontrol yaptı. Çocuğuyla gezen bir ziyaretçi gölgeyi birlikte izleyebilecekleri bir noktada durdu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çalışmayı anlatan kısa bir kart hazırladı: “Zamanı göstermek için önce doğru bakmak gerekir.” Kartın yanına ölçümlerin tarihleri yazıldı. Akşama doğru avludan geçen bir rehber, panodaki örneği ziyaretçilere yüksek sesle okudu. Hanın sessiz avlusunda hareket eden ince gölge, sabırla biriken bilginin izini taşımaya devam etti."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Saatin çalışmasını etkileyen yeni yapı neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Ahşap merdiven"
+        },
+        {
+          "id": "B",
+          "metin": "Yüksek saçak"
+        },
+        {
+          "id": "C",
+          "metin": "Cam kapı"
+        },
+        {
+          "id": "D",
+          "metin": "Bahçe duvarı"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Sonradan yapılan yüksek saçak güneşi bazı saatlerde engelliyordu. Merdiven, cam kapı ve bahçe duvarı metinde geçmez."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Eski çizim neden tek başına yeterli görülmedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çizimde hiçbir taş bulunmadığı için"
+        },
+        {
+          "id": "B",
+          "metin": "Çizim çok renksiz olduğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Mevsimi belli olmadığı için"
+        },
+        {
+          "id": "D",
+          "metin": "Gölgeler her zaman aynı olduğu için"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Gölge mevsime göre değiştiği için çizimin mevsimi bilinmeyince tek başına yeterli sayılmadı. Taş, renk ve gölgelerin hep aynı olması gerekçe değildir; gölgeler değişir."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Eski bir çizimde çubuğun açısı açıkça gösterilmişti.” cümlesindeki “açı” neyi anlatıyor?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çubuğun duruşuna ilişkin ölçüyü"
+        },
+        {
+          "id": "B",
+          "metin": "Avlunun giriş ücretine ilişkin tutarı"
+        },
+        {
+          "id": "C",
+          "metin": "Güneşin parlaklığına ilişkin ölçüyü"
+        },
+        {
+          "id": "D",
+          "metin": "Günlük ziyaretçi sayısına ilişkin ölçüyü"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Çizimde çubuğun nasıl durduğunu gösteren ölçü yer alır; açı budur. Ücret, parlaklık ve ziyaretçi sayısı çubuğun açısı değildir."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "{kahraman} neden farklı koşullarda yeniden ölçtü?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Daha uzun panolar hazırlamak için"
+        },
+        {
+          "id": "B",
+          "metin": "Rakamları tamamen silmek için"
+        },
+        {
+          "id": "C",
+          "metin": "Saati başka hana taşımak için"
+        },
+        {
+          "id": "D",
+          "metin": "Sonucun doğruluğunu sınamak için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Tek hava koşulundaki sonuç yetmediği için ölçüm farklı koşulda tekrarlandı; amaç doğruluğu sınamaktı. Pano uzatmak, rakamları silmek ya da saati taşımak amaç değildi."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr151_golge",
+        "tur": "kelime",
+        "yazim": "gölge",
+        "anlam": "Bir cisme ışık engel olunca oluşan karanlık alan.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_golge_b",
+        "tur": "kelime",
+        "yazim": "karanlık",
+        "anlam": "Işığın az ya da hiç bulunmadığı durum.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_golge_c",
+        "tur": "kelime",
+        "yazim": "yansıma",
+        "anlam": "Bir yüzeyden geri dönen ışık.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_sacak",
+        "tur": "kelime",
+        "yazim": "saçak",
+        "anlam": "Bir yapının duvarından dışarı uzanan çatı kenarı.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_sacak_b",
+        "tur": "kelime",
+        "yazim": "çatı",
+        "anlam": "Bir yapının üstünü örten kısım.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_sacak_c",
+        "tur": "kelime",
+        "yazim": "sundurma",
+        "anlam": "Bir yapının bir kenarında gölge veren açık çatı.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_referans",
+        "tur": "kelime",
+        "yazim": "referans",
+        "anlam": "Bir karşılaştırmada esas alınan güvenilir ölçü ya da kaynak.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_referans_b",
+        "tur": "kelime",
+        "yazim": "kaynak",
+        "anlam": "Bilginin alındığı yer ya da belge.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_referans_c",
+        "tur": "kelime",
+        "yazim": "ölçüt",
+        "anlam": "Bir değerlendirmede esas alınan ölçü.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_tutarlilik",
+        "tur": "kelime",
+        "yazim": "tutarlılık",
+        "anlam": "Birbirini doğrulayan, çelişmeyen durum.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_tutarlilik_b",
+        "tur": "kelime",
+        "yazim": "uyum",
+        "anlam": "Parçaların birbirine uygun olması.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr151_tutarlilik_c",
+        "tur": "kelime",
+        "yazim": "süreklilik",
+        "anlam": "Bir şeyin kesintisiz sürmesi.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr151_golge",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr151_golge"
+          },
+          {
+            "girdi": "hr151_golge_b"
+          },
+          {
+            "girdi": "hr151_golge_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr151_sacak",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr151_sacak"
+          },
+          {
+            "girdi": "hr151_sacak_b"
+          },
+          {
+            "girdi": "hr151_sacak_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr151_referans",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr151_referans"
+          },
+          {
+            "girdi": "hr151_referans_b"
+          },
+          {
+            "girdi": "hr151_referans_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr151_tutarlilik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr151_tutarlilik"
+          },
+          {
+            "girdi": "hr151_tutarlilik_b"
+          },
+          {
+            "girdi": "hr151_tutarlilik_c"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr154_kiyi",
+      "tur": "kelime",
+      "yazim": "kıyı",
+      "anlam": "Denizin ya da gölün karaya bitişen kenar kısmı.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_kiyi_b",
+      "tur": "kelime",
+      "yazim": "kenar",
+      "anlam": "Bir yerin dış sınırına yakın bölüm.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_kiyi_c",
+      "tur": "kelime",
+      "yazim": "sahil",
+      "anlam": "Denizin ya da gölün kıyısı boyunca uzanan alan.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_birikinti",
+      "tur": "kelime",
+      "yazim": "birikinti",
+      "anlam": "Bir yerde toplanan parçalar ya da madde.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_birikinti_b",
+      "tur": "kelime",
+      "yazim": "yığın",
+      "anlam": "Bir yerde üst üste toplanmış şey.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_birikinti_c",
+      "tur": "kelime",
+      "yazim": "köpük",
+      "anlam": "Su yüzeyinde toplanan kabarcıklı tabaka.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_ag",
+      "tur": "kelime",
+      "yazim": "ağ",
+      "anlam": "Su ya da havadaki parçaları yakalamak için örülmüş düzenek.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_ag_b",
+      "tur": "kelime",
+      "yazim": "süzgeç",
+      "anlam": "Sıvıdaki katı parçaları ayıran gözenekli düzenek.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_ag_c",
+      "tur": "kelime",
+      "yazim": "file",
+      "anlam": "İnce iplerden örülmüş tutucu.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_akinti",
+      "tur": "kelime",
+      "yazim": "akıntı",
+      "anlam": "Suyun belirli bir yönde akması.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_akinti_b",
+      "tur": "kelime",
+      "yazim": "akım",
+      "anlam": "Suyun ya da havanın hareket yönü ve hızı.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr154_akinti_c",
+      "tur": "kelime",
+      "yazim": "dalga",
+      "anlam": "Su yüzeyinde ilerleyen yükseltilmiş hareket.",
+      "sinif_alt": 3,
+      "sinif_ust": 3,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr154_kiyi",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr154_kiyi"
+        },
+        {
+          "girdi": "hr154_kiyi_b"
+        },
+        {
+          "girdi": "hr154_kiyi_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr154_birikinti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr154_birikinti"
+        },
+        {
+          "girdi": "hr154_birikinti_b"
+        },
+        {
+          "girdi": "hr154_birikinti_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr154_ag",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr154_ag"
+        },
+        {
+          "girdi": "hr154_ag_b"
+        },
+        {
+          "girdi": "hr154_ag_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr154_akinti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr154_akinti"
+        },
+        {
+          "girdi": "hr154_akinti_b"
+        },
+        {
+          "girdi": "hr154_akinti_c"
+        }
+      ]
+    }
+  ]
+}

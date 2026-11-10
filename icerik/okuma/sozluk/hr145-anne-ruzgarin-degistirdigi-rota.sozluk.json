@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr145_guzergah",
+      "tur": "kelime",
+      "yazim": "güzergâh",
+      "anlam": "Bir yere gidilirken izlenen yol ya da rota.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_guzergah_b",
+      "tur": "kelime",
+      "yazim": "rota",
+      "anlam": "Bir yolculukta izlenecek yön ve yol planı.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_guzergah_c",
+      "tur": "kelime",
+      "yazim": "patika",
+      "anlam": "Yaya geçişinin sağlandığı dar yol.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_tutunma",
+      "tur": "kelime",
+      "yazim": "tutunma",
+      "anlam": "Bir yere sıkıca tutularak destek alma.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_tutunma_b",
+      "tur": "kelime",
+      "yazim": "destek",
+      "anlam": "Bir şeyi ayakta ya da dengede tutan parça.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_tutunma_c",
+      "tur": "kelime",
+      "yazim": "tutamak",
+      "anlam": "Tutularak kullanılan kısım.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_alternatif",
+      "tur": "kelime",
+      "yazim": "alternatif",
+      "anlam": "Bir seçenek yerine geçebilecek başka yol ya da çözüm.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_alternatif_b",
+      "tur": "kelime",
+      "yazim": "seçenek",
+      "anlam": "Birden çok olanaktan biri.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_alternatif_c",
+      "tur": "kelime",
+      "yazim": "yedek",
+      "anlam": "Gerektiğinde kullanılmak üzere ayrılan şey.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_koordinasyon",
+      "tur": "kelime",
+      "yazim": "koordinasyon",
+      "anlam": "Birden çok ekibin işini uyumlu biçimde yürütmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_koordinasyon_b",
+      "tur": "kelime",
+      "yazim": "uyum",
+      "anlam": "Parçaların birbirine yakışması, birlikte düzenli olması.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr145_koordinasyon_c",
+      "tur": "kelime",
+      "yazim": "işbirliği",
+      "anlam": "Birlikte çalışarak ortak bir amaca ulaşma.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr145_guzergah",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr145_guzergah"
+        },
+        {
+          "girdi": "hr145_guzergah_b"
+        },
+        {
+          "girdi": "hr145_guzergah_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr145_tutunma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr145_tutunma"
+        },
+        {
+          "girdi": "hr145_tutunma_b"
+        },
+        {
+          "girdi": "hr145_tutunma_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr145_alternatif",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr145_alternatif"
+        },
+        {
+          "girdi": "hr145_alternatif_b"
+        },
+        {
+          "girdi": "hr145_alternatif_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr145_koordinasyon",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr145_koordinasyon"
+        },
+        {
+          "girdi": "hr145_koordinasyon_b"
+        },
+        {
+          "girdi": "hr145_koordinasyon_c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr163_akinti",
+      "tur": "kelime",
+      "yazim": "akıntı",
+      "anlam": "Suyun belirli bir yönde akması.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_akinti_b",
+      "tur": "kelime",
+      "yazim": "akım",
+      "anlam": "Suyun ya da havanın hareket yönü ve hızı.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_akinti_c",
+      "tur": "kelime",
+      "yazim": "dalga",
+      "anlam": "Su yüzeyinde ilerleyen yükseltilmiş hareket.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_engel",
+      "tur": "kelime",
+      "yazim": "engel",
+      "anlam": "Bir yerin geçilmesini güçleştiren şey.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_engel_b",
+      "tur": "kelime",
+      "yazim": "kaya",
+      "anlam": "Doğal olarak oluşmuş büyük ve sert taş kütlesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_engel_c",
+      "tur": "kelime",
+      "yazim": "set",
+      "anlam": "Suyun akışını tutmak için yapılan yükselti.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_birikim",
+      "tur": "kelime",
+      "yazim": "birikim",
+      "anlam": "Bir yerde zamanla toplanıp kalan madde.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_birikim_b",
+      "tur": "kelime",
+      "yazim": "yığın",
+      "anlam": "Bir yerde üst üste toplanmış şey.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_birikim_c",
+      "tur": "kelime",
+      "yazim": "tortu",
+      "anlam": "Suyun dibinde kalan katı madde.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_korunak",
+      "tur": "kelime",
+      "yazim": "korunak",
+      "anlam": "Tehlikeden ya da kötü havadan korunulan yer.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_korunak_b",
+      "tur": "kelime",
+      "yazim": "sığınak",
+      "anlam": "Canlıların kendini koruduğu yer.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr163_korunak_c",
+      "tur": "kelime",
+      "yazim": "barınak",
+      "anlam": "Canlıların içinde kalıp korunabildiği yer.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr163_akinti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr163_akinti"
+        },
+        {
+          "girdi": "hr163_akinti_b"
+        },
+        {
+          "girdi": "hr163_akinti_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr163_engel",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr163_engel"
+        },
+        {
+          "girdi": "hr163_engel_b"
+        },
+        {
+          "girdi": "hr163_engel_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr163_birikim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr163_birikim"
+        },
+        {
+          "girdi": "hr163_birikim_b"
+        },
+        {
+          "girdi": "hr163_birikim_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr163_korunak",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr163_korunak"
+        },
+        {
+          "girdi": "hr163_korunak_b"
+        },
+        {
+          "girdi": "hr163_korunak_c"
+        }
+      ]
+    }
+  ]
+}

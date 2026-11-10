@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr148_icerik",
+      "tur": "kelime",
+      "yazim": "içerik",
+      "anlam": "Bir ürünün ya da metnin içinde bulunan şeyler.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_icerik_b",
+      "tur": "kelime",
+      "yazim": "madde",
+      "anlam": "Bir şeyi oluşturan özel nitelikli malzeme.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_icerik_c",
+      "tur": "kelime",
+      "yazim": "bileşen",
+      "anlam": "Bir karışımı oluşturan parçalardan her biri.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_etiket",
+      "tur": "kelime",
+      "yazim": "etiket",
+      "anlam": "Bir ürün üzerinde bilgi veren yapıştırılmış kâğıt ya da işaret.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_etiket_b",
+      "tur": "kelime",
+      "yazim": "damga",
+      "anlam": "Bir şeyin üzerine basılan ayırt edici işaret.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_etiket_c",
+      "tur": "kelime",
+      "yazim": "künye",
+      "anlam": "Bir ürünün kimlik ve içerik bilgilerini gösteren kayıt.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_numune",
+      "tur": "kelime",
+      "yazim": "numune",
+      "anlam": "İncelemek için seçilmiş küçük örnek.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_numune_b",
+      "tur": "kelime",
+      "yazim": "örnek",
+      "anlam": "Bir bütünü temsil eden parça.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_numune_c",
+      "tur": "kelime",
+      "yazim": "deneme",
+      "anlam": "Bir şeyi sınamak için yapılan ön uygulama.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_karisim",
+      "tur": "kelime",
+      "yazim": "karışım",
+      "anlam": "Birden çok maddenin bir araya getirilmesiyle oluşan şey.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_karisim_b",
+      "tur": "kelime",
+      "yazim": "bileşim",
+      "anlam": "Bir şeyi oluşturan öğelerin toplamı.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr148_karisim_c",
+      "tur": "kelime",
+      "yazim": "harman",
+      "anlam": "Farklı şeylerin birlikte karıştırılması.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr148_icerik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr148_icerik"
+        },
+        {
+          "girdi": "hr148_icerik_b"
+        },
+        {
+          "girdi": "hr148_icerik_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr148_etiket",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr148_etiket"
+        },
+        {
+          "girdi": "hr148_etiket_b"
+        },
+        {
+          "girdi": "hr148_etiket_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr148_numune",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr148_numune"
+        },
+        {
+          "girdi": "hr148_numune_b"
+        },
+        {
+          "girdi": "hr148_numune_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr148_karisim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr148_karisim"
+        },
+        {
+          "girdi": "hr148_karisim_b"
+        },
+        {
+          "girdi": "hr148_karisim_c"
+        }
+      ]
+    }
+  ]
+}

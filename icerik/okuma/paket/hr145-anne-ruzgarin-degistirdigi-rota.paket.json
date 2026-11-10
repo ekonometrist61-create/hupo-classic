@@ -1,0 +1,547 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr145-anne-ruzgarin-degistirdigi-rota",
+    "baslik": "Rüzgârın Değiştirdiği Rota",
+    "tur": "gezi_kultur",
+    "konu": "kirsal_erisilebilir_gezi",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "anne"
+    ],
+    "deger_anahtarlari": [
+      "D1",
+      "D20"
+    ],
+    "yetiskin_uygun": true,
+    "etiketler": {
+      "ana_sinif": 7,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D1",
+        "yardimci_deger": "D20"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr145",
+          "tur": "lexeme",
+          "etiket": "güzergâh",
+          "yuva": "hr145_guzergah",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr145",
+          "tur": "lexeme",
+          "etiket": "tutunma",
+          "yuva": "hr145_tutunma",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr145",
+          "tur": "lexeme",
+          "etiket": "alternatif",
+          "yuva": "hr145_alternatif",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr145",
+          "tur": "lexeme",
+          "etiket": "koordinasyon",
+          "yuva": "hr145_koordinasyon",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (7. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 623,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Tarihî bir tepeye çıkan yol herkes için uygun değil. {kahraman} farklı ihtiyaçları dinleyerek daha erişilebilir bir güzergâh tasarlıyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-145"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Vadinin tepesindeki tarihî seyir alanına uzanan patika her yıl çok sayıda ziyaretçi ağırlıyordu. Yeni bir gezi planlanırken önemli bir sorun ortaya çıktı. Patikanın bazı bölümleri tekerlekli sandalye kullanan ziyaretçiler için uygun değildi. Kent gezi planlamacısı "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", yalnızca en kısa yolu gösteren haritayı kabul etmedi; herkesin manzaraya ulaşabileceği bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr145_guzergah"
+        },
+        {
+          "t": "metin",
+          "v": " çizmek istedi. Girişteki eski levhada yalnızca yürüyüş süresi yazıyordu. Oysa bir kişi için kısa olan süre başka biri için uzun olabilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", patikayı tekerlekli sandalyeyle deneyen "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Ege"
+        },
+        {
+          "t": "metin",
+          "v": " ile birlikte yürüdü; rehberin on beş dakikada çıktığı yamaç gönüllüye çok daha uzun sürdü. Levhada zemin, eğim, dinlenme noktası ve "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr145_alternatif"
+        },
+        {
+          "t": "metin",
+          "v": " yol bilgisi birlikte bulunmalıydı. İlk toplantıda rehberlerin çoğu bu ayrıntıları hiç düşünmediğini söyledi. Bazıları uzun bir yolun ziyaretçileri yoracağını savundu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir yolun uzunluğunun yalnızca metreyle ölçülmediğini, o yolda zorlanan kişinin deneyimine de bağlı olduğunu anlattı. Eğimi, dinlenme noktalarını ve araç girişlerini not ederek ilk incelemeyi tamamladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci incelemede ekiple birlikte patikanın girişine gitti. Rüzgâr vadiden sert esiyordu ve dar bir geçitte küçük taşlar birikmişti. Haritadaki ilk alternatif bu geçitten geçiyordu. Rüzgârın savurduğu taşlar yolun gün içinde bile değişebildiğini gösteriyordu; "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", güvenli bir rota çizdikten sonra onu hep aynı saymamak gerektiğini biliyordu. Daha alçak yamaçtan giden yol biraz uzundu fakat zemini düzdü. Üzerinde bir çeşme, iki gölgelik ve geniş bir dinlenme alanı vardı. Ekip üyeleri geçiş genişliğini kendi ölçtü; tekerlekli bir sandalyenin dar köşelerde rahatça dönüp dönemeyeceğine de baktı, yalnızca fotoğrafa bakarak karar vermedi. Görevliler yeni yolun kenarlarını güvenli biçimde düzenledi. “Erişilebilir bir gezi, herkesin aynı kapıdan girebilmesidir,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sonra ziyaretçi gruplarıyla görüşüldü. Bazı katılımcılar uzun rampaları dinlenmeden çıkmanın zor olduğunu söyledi. Bazıları yol boyunca yeterince açıklayıcı işaret bulunmadığını belirtti. Bir katılımcı yaz sıcağında gölgeliklerin çok önemli olacağını hatırlattı; bu not da çizelgeye girdi. Kimi kuş seslerini dinleyebileceği sessiz bir dinlenme alanı istedi, kimi bilgi levhalarının göz hizasında olmasını. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bütün görüşleri aynı masada topladı ama hepsini tek cümleye sığdırmaya çalışmadı. Uygulanabilir olanları tasarıma işledi, henüz karara bağlanamayanları açıkça belirtti. Gezi rehberleri, bakım görevlileri ve ulaşım ekibi arasında "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr145_koordinasyon"
+        },
+        {
+          "t": "metin",
+          "v": " kuruldu. Yeni işaretlerde yalnızca uzaklık değil, eğim ve dinlenme alanları da gösterilecekti. İsteyenler daha kısa ama dik, isteyenler daha uzun ama rahat yolu seçebilecekti. Bu seçenekler ayrıcalık değil, farklı ihtiyaçlara uygun tasarımın parçalarıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Beklenmedik bir yağmurdan sonra uzun yoldaki küçük bir bölüm çamurla kaplandı. Açılışa az zaman kalmıştı. Bazıları geçici bir levha koyup geziyi başlatmayı önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " buna karşı çıktı; görünür bir levhanın kaygan zemini ortadan kaldırmayacağını biliyordu. Bakım ekibiyle birlikte suyun biriktiği noktaya bir tahliye oluğu yaptırdı. Suyun patikanın altındaki hassas bitkilere yönelmemesi için ek kontrol yapıldı; sorunu bir yerden alıp başka yere bırakmak çözüm sayılmazdı. Yolun eğimli kenarına "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr145_tutunma"
+        },
+        {
+          "t": "metin",
+          "v": " desteği eklendi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kullanılan malzemelerin ileride onarılabilir olmasına da dikkat etti, çünkü bir bölüm yıpranırsa bütün yolun yeniden yapılması gerekmemeliydi. Farklı ihtiyaçları olan gönüllüler yolu denedi. Biri tutunma desteğini kendi boyuna uygun buldu, bir başkası biraz daha alçak olmasını istedi; destek iki yükseklikte yapıldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Ege"
+        },
+        {
+          "t": "metin",
+          "v": " yolun sonunda oturabileceği bir sıra olup olmadığını sordu; son dinlenme alanına bir sıra daha kondu. Bazı yön tabelalarını okumak zor bulundu; bu görüşler çizelgeye eklendi ve eksik görülen son iki tabela yerleştirildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Açılış gününde ziyaretçiler zor bir patikaya yönelmek zorunda kalmadı; herkes haritadan kendine uygun yolu seçti. Daha uzun güzergâhtan gelen bir ziyaretçi tepedeki manzaranın önünde uzun süre durdu. “Burayı yalnızca fotoğraflarda görüyordum,” dedi. Manzara noktasında farklı yaşlardan ziyaretçiler yan yana duruyordu; kimi yavaş yürüyerek, kimi sık dinlenerek gelmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", açılış fotoğrafı için herkesin sığabileceği geniş bir alan seçti. Girişe bir geri bildirim defteri bırakıldı; ziyaretçilerin yazdıklarıyla harita sonraki haftalarda da düzeltilecekti. Gölgelikte oturan yaşlı bir çift manzarayı uzun uzun izledi. Rehberler bakım notları tutmaya başladı; biri de levhaları yeni bilgiye göre baştan yazmak için not aldı. Yamaçtan esen rüzgâr yeni yön levhalarını hafifçe sallıyordu, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise kalabalığın arasından sessizce geçip yoluna gitti."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Yeni gezi planlanırken ortaya çıkan temel sorun neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Patikanın her gün kapatılıyor olması"
+        },
+        {
+          "id": "B",
+          "metin": "Yolun araçlarla tamamen dolmuş olması"
+        },
+        {
+          "id": "C",
+          "metin": "Yolun herkes için uygun olmaması"
+        },
+        {
+          "id": "D",
+          "metin": "Seyir alanında hiç manzara bulunmaması"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Patikanın bazı bölümleri tekerlekli sandalye kullananlara uygun değildi; sorun yolun herkese uygun olmamasıydı. Kapalı olması, araç yoğunluğu ve manzara eksikliği metinde yazmaz."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Daha alçak yamaçtan giden, biraz daha uzun yolun tercih edilmesini hangi özellik açıklıyor?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Zemininin daha düz olması"
+        },
+        {
+          "id": "B",
+          "metin": "Rüzgârın daha hızlı esmesi"
+        },
+        {
+          "id": "C",
+          "metin": "Yol kenarında dükkân bulunması"
+        },
+        {
+          "id": "D",
+          "metin": "Haritada daha kalın çizilmesi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Yol daha uzundu ama zemini düzdü; erişilebilirlik için bu önemliydi. Rüzgâr, dükkân ve harita çizgisi tercihin nedeni olarak verilmez."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Gezi rehberleri, bakım görevlileri ve ulaşım ekibi arasında koordinasyon kuruldu.” cümlesindeki “koordinasyon” neyi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yolun taşlarını yeniden boyamayı"
+        },
+        {
+          "id": "B",
+          "metin": "Ekiplerin işini uyumlu yürütmeyi"
+        },
+        {
+          "id": "C",
+          "metin": "Yalnız başına yürümeyi tercih etmeyi"
+        },
+        {
+          "id": "D",
+          "metin": "Eski levhaları depoya kaldırmayı"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Üç ekibin birbiriyle uyumlu çalışması koordinasyondur. Boyama, yalnız yürüme ve levha saklama cümleyle ilgili değildir."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Çamurlu bölüm için geçici levha önerildi. {kahraman} neden yalnızca uyarı levhasıyla yetinmedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Haritayı daha renkli hâle getirmek için"
+        },
+        {
+          "id": "B",
+          "metin": "Yağmuru tamamen durdurmak için"
+        },
+        {
+          "id": "C",
+          "metin": "Geziyi tamamen iptal etmek için"
+        },
+        {
+          "id": "D",
+          "metin": "Kayganlığı gerçekten gidermek için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Levha uyarır ama zemini düzeltmez; {kahraman} kayganlığın kendisini gidermek istedi ve tahliye oluğu yaptırdı. Yağmuru durdurmak mümkün değildir, geziyi iptal etmek de amaç değildi."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr145_guzergah",
+        "tur": "kelime",
+        "yazim": "güzergâh",
+        "anlam": "Bir yere gidilirken izlenen yol ya da rota.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_guzergah_b",
+        "tur": "kelime",
+        "yazim": "rota",
+        "anlam": "Bir yolculukta izlenecek yön ve yol planı.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_guzergah_c",
+        "tur": "kelime",
+        "yazim": "patika",
+        "anlam": "Yaya geçişinin sağlandığı dar yol.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_tutunma",
+        "tur": "kelime",
+        "yazim": "tutunma",
+        "anlam": "Bir yere sıkıca tutularak destek alma.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_tutunma_b",
+        "tur": "kelime",
+        "yazim": "destek",
+        "anlam": "Bir şeyi ayakta ya da dengede tutan parça.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_tutunma_c",
+        "tur": "kelime",
+        "yazim": "tutamak",
+        "anlam": "Tutularak kullanılan kısım.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_alternatif",
+        "tur": "kelime",
+        "yazim": "alternatif",
+        "anlam": "Bir seçenek yerine geçebilecek başka yol ya da çözüm.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_alternatif_b",
+        "tur": "kelime",
+        "yazim": "seçenek",
+        "anlam": "Birden çok olanaktan biri.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_alternatif_c",
+        "tur": "kelime",
+        "yazim": "yedek",
+        "anlam": "Gerektiğinde kullanılmak üzere ayrılan şey.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_koordinasyon",
+        "tur": "kelime",
+        "yazim": "koordinasyon",
+        "anlam": "Birden çok ekibin işini uyumlu biçimde yürütmesi.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_koordinasyon_b",
+        "tur": "kelime",
+        "yazim": "uyum",
+        "anlam": "Parçaların birbirine yakışması, birlikte düzenli olması.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr145_koordinasyon_c",
+        "tur": "kelime",
+        "yazim": "işbirliği",
+        "anlam": "Birlikte çalışarak ortak bir amaca ulaşma.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr145_guzergah",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr145_guzergah"
+          },
+          {
+            "girdi": "hr145_guzergah_b"
+          },
+          {
+            "girdi": "hr145_guzergah_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr145_tutunma",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr145_tutunma"
+          },
+          {
+            "girdi": "hr145_tutunma_b"
+          },
+          {
+            "girdi": "hr145_tutunma_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr145_alternatif",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr145_alternatif"
+          },
+          {
+            "girdi": "hr145_alternatif_b"
+          },
+          {
+            "girdi": "hr145_alternatif_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr145_koordinasyon",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr145_koordinasyon"
+          },
+          {
+            "girdi": "hr145_koordinasyon_b"
+          },
+          {
+            "girdi": "hr145_koordinasyon_c"
+          }
+        ]
+      }
+    ]
+  }
+}

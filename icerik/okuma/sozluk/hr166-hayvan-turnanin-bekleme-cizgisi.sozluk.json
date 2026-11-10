@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr166_goc",
+      "tur": "kelime",
+      "yazim": "göç",
+      "anlam": "Canlıların mevsimlere bağlı olarak uzun yolculuklarla yer değiştirmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_goc_b",
+      "tur": "kelime",
+      "yazim": "yolculuk",
+      "anlam": "Bir yerden başka bir yere uzun süreli gidiş.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_goc_c",
+      "tur": "kelime",
+      "yazim": "dönüş",
+      "anlam": "Bir yolculuktan sonra yeniden yerine gelme.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_enerji",
+      "tur": "kelime",
+      "yazim": "enerji",
+      "anlam": "Bir şeyin iş yapabilme gücü.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_enerji_b",
+      "tur": "kelime",
+      "yazim": "güç",
+      "anlam": "Bir şeyi hareket ettirebilen etki.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_enerji_c",
+      "tur": "kelime",
+      "yazim": "yakıt",
+      "anlam": "Enerji elde etmek için yakılan madde.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_suru",
+      "tur": "kelime",
+      "yazim": "sürü",
+      "anlam": "Aynı türden hayvanların birlikte yaşayan topluluğu.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_suru_b",
+      "tur": "kelime",
+      "yazim": "topluluk",
+      "anlam": "Birlikte yaşayan ya da hareket eden canlılar grubu.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_suru_c",
+      "tur": "kelime",
+      "yazim": "grup",
+      "anlam": "Birlikte hareket eden insan ya da hayvanlar topluluğu.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_rehberlik",
+      "tur": "kelime",
+      "yazim": "rehberlik",
+      "anlam": "Birine yol göstererek destek olma işi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_rehberlik_b",
+      "tur": "kelime",
+      "yazim": "yönlendirme",
+      "anlam": "Bir kişiyi doğru yöne çevirme işi.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr166_rehberlik_c",
+      "tur": "kelime",
+      "yazim": "danışmanlık",
+      "anlam": "Bir konuda bilgi ve öneri verme hizmeti.",
+      "sinif_alt": 7,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr166_goc",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr166_goc"
+        },
+        {
+          "girdi": "hr166_goc_b"
+        },
+        {
+          "girdi": "hr166_goc_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr166_enerji",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr166_enerji"
+        },
+        {
+          "girdi": "hr166_enerji_b"
+        },
+        {
+          "girdi": "hr166_enerji_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr166_suru",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr166_suru"
+        },
+        {
+          "girdi": "hr166_suru_b"
+        },
+        {
+          "girdi": "hr166_suru_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr166_rehberlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr166_rehberlik"
+        },
+        {
+          "girdi": "hr166_rehberlik_b"
+        },
+        {
+          "girdi": "hr166_rehberlik_c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr161_isaret",
+      "tur": "kelime",
+      "yazim": "işaret",
+      "anlam": "Bir şeyi gösteren ya da yön belirten simge ve belirti.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_isaret_b",
+      "tur": "kelime",
+      "yazim": "tabela",
+      "anlam": "Bilgi vermek için bir yere asılan levha.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_isaret_c",
+      "tur": "kelime",
+      "yazim": "iz",
+      "anlam": "Bir şeyin geçtiğini ya da var olduğunu gösteren belirti.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_gozlem",
+      "tur": "kelime",
+      "yazim": "gözlem",
+      "anlam": "Bir olguyu dikkatle izleyerek kaydetme.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_gozlem_b",
+      "tur": "kelime",
+      "yazim": "inceleme",
+      "anlam": "Bir konunun ayrıntılarına bakma.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_gozlem_c",
+      "tur": "kelime",
+      "yazim": "izleme",
+      "anlam": "Bir durumu belli aralıklarla takip etme.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_kiyi",
+      "tur": "kelime",
+      "yazim": "kıyı",
+      "anlam": "Denizin ya da nehrin karaya bitiştiği kenar.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_kiyi_b",
+      "tur": "kelime",
+      "yazim": "kenar",
+      "anlam": "Bir yerin dış sınırına yakın bölüm.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_kiyi_c",
+      "tur": "kelime",
+      "yazim": "sahil",
+      "anlam": "Denizin ya da gölün kıyısı boyunca uzanan alan.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_duzenli",
+      "tur": "kelime",
+      "yazim": "düzenli",
+      "anlam": "Belli bir sıra ve ölçüye uygun olan.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_duzenli_b",
+      "tur": "kelime",
+      "yazim": "tertipli",
+      "anlam": "Düzenli biçimde sıralanmış olan.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr161_duzenli_c",
+      "tur": "kelime",
+      "yazim": "ardışık",
+      "anlam": "Birbirini düzenli biçimde izleyen.",
+      "sinif_alt": 5,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr161_isaret",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr161_isaret"
+        },
+        {
+          "girdi": "hr161_isaret_b"
+        },
+        {
+          "girdi": "hr161_isaret_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr161_gozlem",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr161_gozlem"
+        },
+        {
+          "girdi": "hr161_gozlem_b"
+        },
+        {
+          "girdi": "hr161_gozlem_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr161_kiyi",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr161_kiyi"
+        },
+        {
+          "girdi": "hr161_kiyi_b"
+        },
+        {
+          "girdi": "hr161_kiyi_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr161_duzenli",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr161_duzenli"
+        },
+        {
+          "girdi": "hr161_duzenli_b"
+        },
+        {
+          "girdi": "hr161_duzenli_c"
+        }
+      ]
+    }
+  ]
+}

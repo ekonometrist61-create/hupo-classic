@@ -1,0 +1,547 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr152-baba-topragin-sessiz-yolculugu",
+    "baslik": "Yağmurla Yola Çıkan Toprak",
+    "tur": "bilim",
+    "konu": "toprak_erozyon_modeli",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "baba"
+    ],
+    "deger_anahtarlari": [
+      "D5",
+      "D19"
+    ],
+    "yetiskin_uygun": true,
+    "etiketler": {
+      "ana_sinif": 7,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D5",
+        "yardimci_deger": "D19"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr152",
+          "tur": "lexeme",
+          "etiket": "erozyon",
+          "yuva": "hr152_erozyon",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr152",
+          "tur": "lexeme",
+          "etiket": "örneklem",
+          "yuva": "hr152_orneklem",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr152",
+          "tur": "lexeme",
+          "etiket": "eğim",
+          "yuva": "hr152_egim",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr152",
+          "tur": "lexeme",
+          "etiket": "çökeltme",
+          "yuva": "hr152_cokeltme",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (7. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 604,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Yağmur verimli toprağı tarlalardan uzaklaştırıyor. {kahraman} suyun ve toprağın hareketini inceleyerek kalıcı önlemler tasarlıyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-152"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kırsaldaki bir tepenin eteklerinde yağmurdan sonra bulanık su birikiyordu. Aşağıdaki küçük tarla bundan zarar görmüştü. Toprak bilimi uzmanı "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", suyun neden bu kadar çok toprak taşıdığını anlamak için çağrıldı. Tepeyi dolaşırken bir yerde ince, başka bir yerde kalın toprak tabakası gördü. Herkes toprağın bir yerden başka yere gittiğini anlatıyordu ama hangi yağmurdan sonra ne kadar değiştiğine dair ortak bir kayıt yoktu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " belirli gözlem noktaları seçti ve bunları köy odasının duvarındaki eski haritaya işaretledi; herkes aynı yerlere bakarsa gözlemler karşılaştırılabilirdi. Tarla sahipleri, işaretlerin günlük işlerine engel olmayacağı konusunda bilgilendirildi. Bazı yamaçlarda bitki örtüsü zayıflamıştı ama "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " her yere aynı tohumu ekmeyi önermedi. Önce toprağın yapısını, suyun izlediği yolu ve yüzeyin eğimini ayrı ayrı incelemek gerekiyordu. Çalışmayı köydeki arazi sahipleriyle birlikte planladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ekip tepenin farklı yerlerinden küçük bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr152_orneklem"
+        },
+        {
+          "t": "metin",
+          "v": " topladı. Örneklem, bütün alanı daha iyi anlamak için seçilen sınırlı sayıda parçadır. Toprak örnekleri aynı büyüklükte kaplara kondu ve karışmasınlar diye numaralandırıldı. Kapların altına akan suyu toplayan küçük tepsiler yerleştirildi. Sonra kontrollü biçimde, her kaba aynı miktarda su verildi. Bitki köklerinin bulunduğu örnekte suyun daha yavaş aktığı görüldü. Toprakların renkleri farklıydı; bazıları kolayca dağılıyor, bazıları daha toplu duruyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yalnızca renge bakarak karar vermedi. Topraktaki organik parçaların, bitki köklerinin ve farklı büyüklükteki tanelerin suyun davranışını etkileyebileceğini anlattı. Açıktaki toprak daha kolay taşınıyordu. Verimli üst toprağın yerinden kopup başka yere taşınmasına "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr152_erozyon"
+        },
+        {
+          "t": "metin",
+          "v": " denir. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sonuçları herkesin anlayacağı bir çizimle gösterdi ama kapta görülen sonucun doğrudan bütün tepeye uygulanamayacağını da ekledi; gerçek arazide rüzgâr, yağış ve zemin birlikte etkiliydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci aşamada tepeden inen küçük akış yolları işaretlendi. Biri çok dik, diğeri daha yumuşak bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr152_egim"
+        },
+        {
+          "t": "metin",
+          "v": " taşıyordu. Yağmur sırasında suyun nerede hızlandığı güvenli bir noktadan gözlendi. Yağmur dindikten sonra akış yollarının kenarında küçük çukurlar ve sürüklenmiş çakıllar görüldü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", toprağın az sürüklendiği yerlerde bitki örtüsünün daha sık olduğunu not etti. Komşu arazilerde aynı yağmurun farklı izler bırakması dikkat çekiciydi; yamaçlar yalnızca diklik bakımından değil, bitki örtüsü ve yüzey yapısı bakımından da birbirinden ayrılıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Nazım"
+        },
+        {
+          "t": "metin",
+          "v": ", kendi tarlasına yapılacak düzenlemenin aşağıdaki tarlayı etkileyebileceğini ilk kez bu kadar açık gördü. Komşu arazilerin sahipleri de görüşmeye çağrıldı ve herkes kendi sınırına değil, suyun bütün yolunu gösteren haritaya baktı. Bazı noktalarda geçici su yönlendirme düzenekleri işe yarayabilirdi ama yanlış yapılırlarsa sorunu başka tarlaya taşıyabilirdi. Bu yüzden çözüm tek bir parsele göre tasarlanmadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Plan, toprağı koruyacak bitkilendirme alanlarını ve uzmanların belirlediği küçük su yavaşlatma noktalarını içeriyordu. Bir köşede "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr152_cokeltme"
+        },
+        {
+          "t": "metin",
+          "v": " için güvenli bir alan ayrıldı; suyla gelen ince parçaların nasıl biriktiği burada gözlenecekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " her yere aynı yöntemi uygulamak yerine koşullara göre farklı çözümler seçti. Yavaşlatma noktaları yapılırken küçük canlıların geçiş yolları korundu, eski yürüyüş patikası açık tutuldu. Toprağı gereksiz kazmak, korunmak istenen yüzeyi daha da bozabilirdi. Ekip düzeneklerin yağmurlu havada nasıl davranacağını önceden tartıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bakım ve kontrol tarihlerinin de yazılmasını istedi; kontrol edilmeyen bir düzenek zamanla yeni bir soruna dönüşebilirdi. Bu yüzden planın yanına bir izleme çizelgesi eklendi. İşaretlerin yanına bir yağmur ölçer de kondu; böylece her ölçüm aynı gün düşen yağmurla birlikte yazılacaktı. İlk yağmur beklenirken ekip ölçüm işaretlerini yerleştirdi ve not defterlerini hazırladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yağmurdan sonraki ölçümde su tam berrak değildi; zaten bunu hemen beklemek doğru olmazdı. Fakat bazı noktalarda taşınan toprak miktarı azalmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu erken bulguyu kesin başarı diye duyurmadı. Mevsim boyunca tekrarlanacak ölçümlerin daha güvenilir bilgi sağlayacağını söyledi. Defterlerin ilk sayfasına tarih, yağış ve gözlem yeri başlıkları açıldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Nazım"
+        },
+        {
+          "t": "metin",
+          "v": " aşağıdaki komşusunu da ölçüme çağırdı. Tarla sahipleri bakım görevlerini mevsimlere göre paylaştı: Biri bitki örtüsünü, öbürü su akış işaretlerini kontrol edecekti. Tepeye bakan biri yapılan işleri yalnızca küçük çizgiler ve yeşil yamalar olarak görüyordu. Oysa bu çizgiler toprağın yerinde kalmasına yardım eden dikkatli bir planın parçalarıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " giderken örnek kaplarını topladı; toprağı korumak, onu önce anlamakla başlamıştı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Araştırmayı başlatan temel sorun neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Tepenin bütünüyle kuruyup çatlaması"
+        },
+        {
+          "id": "B",
+          "metin": "Tarlaların başka yere kayması"
+        },
+        {
+          "id": "C",
+          "metin": "Yağmur suyunun toprağı taşıması"
+        },
+        {
+          "id": "D",
+          "metin": "Bütün yolların birden kapanması"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Yağmurdan sonra biriken bulanık su, toprağın taşındığını gösteriyordu; araştırma bunun için başladı. Tepenin kuruması, tarlaların kayması ve yolların kapanması metinde geçmez."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Aynı büyüklükteki kaplarda köklü toprakta su daha yavaş akıyor. Bu neyi düşündürür?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bitki kökleri toprağı tutabilir"
+        },
+        {
+          "id": "B",
+          "metin": "Bütün bitkiler aynı türdendir"
+        },
+        {
+          "id": "C",
+          "metin": "Kapların büyüklüğü hiç önemli değildir"
+        },
+        {
+          "id": "D",
+          "metin": "Yağmur yalnızca yazın yağmaktadır"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kökler suyu yavaşlatıyor, bu da bitki örtüsünün toprağı tutmaya yardım edebileceğini düşündürür. Bitki türü, kap büyüklüğü ve yağış mevsimi bu deneyden çıkarılamaz."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Biri çok dik, diğeri daha yumuşak bir eğim taşıyordu.” cümlesindeki “eğim” hangi özelliği anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Toprağın rengini"
+        },
+        {
+          "id": "B",
+          "metin": "Yüzeyin diklik derecesini"
+        },
+        {
+          "id": "C",
+          "metin": "Yağmurun sıcaklığını"
+        },
+        {
+          "id": "D",
+          "metin": "Bitkilerin yaprak sayısını"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Dik ve yumuşak sözcükleri yüzeyin ne kadar yatık olduğunu anlatır; eğim diklik derecesidir. Renk, sıcaklık ve yaprak sayısı eğimle ilgili değildir."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 5,
+      "metin": "Yağmurdan sonra toprak kaybı azalınca {kahraman} bunu neden kesin başarı saymadı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çalışmayı kimseye göstermemek için"
+        },
+        {
+          "id": "B",
+          "metin": "Yeni örnek almak istemediği için"
+        },
+        {
+          "id": "C",
+          "metin": "Tarlaları bir an önce satmak için"
+        },
+        {
+          "id": "D",
+          "metin": "Ölçümlerin sürmesi gerektiği için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Tek yağmurun sonucu erken bir bulguydu; güvenilir bilgi için ölçümlerin mevsim boyunca sürmesi gerekiyordu. Gizleme, örnek almama ya da tarla satma gerekçe değildir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr152_erozyon",
+        "tur": "kelime",
+        "yazim": "erozyon",
+        "anlam": "Üst toprağın su ya da rüzgârla yerinden taşınması.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_erozyon_b",
+        "tur": "kelime",
+        "yazim": "aşınma",
+        "anlam": "Yüzeyin sürtünme ya da su etkisiyle zamanla bozulması.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_erozyon_c",
+        "tur": "kelime",
+        "yazim": "sürüklenme",
+        "anlam": "Malzemenin bir akıntıyla başka yere taşınması.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_orneklem",
+        "tur": "kelime",
+        "yazim": "örneklem",
+        "anlam": "Bir bütünü temsil etmek için seçilen sınırlı parça kümesi.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_orneklem_b",
+        "tur": "kelime",
+        "yazim": "numune",
+        "anlam": "İncelemek için seçilmiş küçük örnek.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_orneklem_c",
+        "tur": "kelime",
+        "yazim": "örnek",
+        "anlam": "Bir bütünü temsil eden parça.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_egim",
+        "tur": "kelime",
+        "yazim": "eğim",
+        "anlam": "Bir yüzeyin yatıklık ya da diklik derecesi.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_egim_b",
+        "tur": "kelime",
+        "yazim": "diklik",
+        "anlam": "Bir yüzeyin dik olma durumu.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_egim_c",
+        "tur": "kelime",
+        "yazim": "meyil",
+        "anlam": "Bir yüzeyin yatay düzlemle yaptığı açı.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_cokeltme",
+        "tur": "kelime",
+        "yazim": "çökeltme",
+        "anlam": "Sıvı içindeki katı parçaların dibe çökmesi.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_cokeltme_b",
+        "tur": "kelime",
+        "yazim": "birikme",
+        "anlam": "Bir yerde zamanla toplanıp kalma.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr152_cokeltme_c",
+        "tur": "kelime",
+        "yazim": "tortu",
+        "anlam": "Suyun dibinde kalan katı madde.",
+        "sinif_alt": 7,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr152_erozyon",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr152_erozyon"
+          },
+          {
+            "girdi": "hr152_erozyon_b"
+          },
+          {
+            "girdi": "hr152_erozyon_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr152_orneklem",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr152_orneklem"
+          },
+          {
+            "girdi": "hr152_orneklem_b"
+          },
+          {
+            "girdi": "hr152_orneklem_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr152_egim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr152_egim"
+          },
+          {
+            "girdi": "hr152_egim_b"
+          },
+          {
+            "girdi": "hr152_egim_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr152_cokeltme",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr152_cokeltme"
+          },
+          {
+            "girdi": "hr152_cokeltme_b"
+          },
+          {
+            "girdi": "hr152_cokeltme_c"
+          }
+        ]
+      }
+    ]
+  }
+}

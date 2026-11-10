@@ -1,0 +1,199 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr156_rota",
+      "tur": "kelime",
+      "yazim": "rota",
+      "anlam": "Bir yere gidilirken izlenecek yol ve yön planı.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_rota_b",
+      "tur": "kelime",
+      "yazim": "güzergâh",
+      "anlam": "Bir yolculukta izlenen yol.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_rota_c",
+      "tur": "kelime",
+      "yazim": "hat",
+      "anlam": "Düzenli sefer yapılan yol ya da bağlantı.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_menzil",
+      "tur": "kelime",
+      "yazim": "menzil",
+      "anlam": "Bir aracın enerjisiyle güvenle gidebileceği uzaklık.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_menzil_b",
+      "tur": "kelime",
+      "yazim": "erişim",
+      "anlam": "Bir yere ulaşabilme durumu.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_menzil_c",
+      "tur": "kelime",
+      "yazim": "kapasite",
+      "anlam": "Bir sistemin taşıyabileceği en yüksek miktar.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_iskele",
+      "tur": "kelime",
+      "yazim": "iskele",
+      "anlam": "Yolcu indirip bindirmek için denize uzanan yapı.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_iskele_b",
+      "tur": "kelime",
+      "yazim": "rıhtım",
+      "anlam": "Gemilerin yanaşıp yük ya da yolcu aldığı yapı.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_iskele_c",
+      "tur": "kelime",
+      "yazim": "yanaşma yeri",
+      "anlam": "Teknenin güvenle durabileceği kıyı noktası.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_yogunluk",
+      "tur": "kelime",
+      "yazim": "yoğunluk",
+      "anlam": "Bir alanda çok sayıda kişi ya da şeyin bulunması.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_yogunluk_b",
+      "tur": "kelime",
+      "yazim": "kalabalık",
+      "anlam": "Bir yerde bir araya gelmiş çok sayıda insan.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr156_yogunluk_c",
+      "tur": "kelime",
+      "yazim": "sıklık",
+      "anlam": "Bir olayın birim zamanda kaç kez olduğu.",
+      "sinif_alt": 6,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr156_rota",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr156_rota"
+        },
+        {
+          "girdi": "hr156_rota_b"
+        },
+        {
+          "girdi": "hr156_rota_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr156_menzil",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr156_menzil"
+        },
+        {
+          "girdi": "hr156_menzil_b"
+        },
+        {
+          "girdi": "hr156_menzil_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr156_iskele",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr156_iskele"
+        },
+        {
+          "girdi": "hr156_iskele_b"
+        },
+        {
+          "girdi": "hr156_iskele_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr156_yogunluk",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr156_yogunluk"
+        },
+        {
+          "girdi": "hr156_yogunluk_b"
+        },
+        {
+          "girdi": "hr156_yogunluk_c"
+        }
+      ]
+    }
+  ]
+}

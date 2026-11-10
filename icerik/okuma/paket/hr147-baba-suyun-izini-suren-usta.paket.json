@@ -1,0 +1,535 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr147-baba-suyun-izini-suren-usta",
+    "baslik": "Suyun İzini Süren Usta",
+    "tur": "bilim",
+    "konu": "cesme_sizintisi",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "okuma_bandi": 1,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "baba"
+    ],
+    "deger_anahtarlari": [
+      "D17",
+      "D16"
+    ],
+    "yetiskin_uygun": true,
+    "etiketler": {
+      "ana_sinif": 3,
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 2,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D17",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk1_hr147",
+          "tur": "lexeme",
+          "etiket": "sızıntı",
+          "yuva": "hr147_sizinti",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sozcuk2_hr147",
+          "tur": "lexeme",
+          "etiket": "bağlantı",
+          "yuva": "hr147_baglanti",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk3_hr147",
+          "tur": "lexeme",
+          "etiket": "birikinti",
+          "yuva": "hr147_birikinti",
+          "islev": "application"
+        },
+        {
+          "id": "sozcuk4_hr147",
+          "tur": "lexeme",
+          "etiket": "kaygan",
+          "yuva": "hr147_kaygan",
+          "islev": "transfer"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (3. sınıf); kazanım kodu yok (source_pending)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 269,
+        "tahmini_sure_dk": 4,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "sozcuk_baglami": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Meydan çeşmesi kapalıyken bile damlıyor. {kahraman} küçük bir sızıntının izini sürüp suyun boşa akmasını önlüyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-147"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Meydan çeşmesinin altında her gün küçük bir su birikintisi oluşuyordu. Su tesisatçısı "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çeşmeyi incelemeye geldi. Musluk kapalıydı ama taşın üzerinde ince bir iz vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce yere dökülen suyu değil, suyun nereden geldiğini bulmalıydı. Çeşmenin yanında bekleyenler hemen musluğun değiştirilmesini önerdi. Oysa sorun muslukta olmayabilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir bezle taşı kuruladı, sonra birkaç dakika sessizce bekledi. Taşın arkasında yeni bir damla belirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " suyun gelişini durdurmak için vanayı kapattı. Vana, suyun akışını açıp kapatan parçaydı. Çeşmenin arkasındaki ince boruda küçük bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr147_sizinti"
+        },
+        {
+          "t": "metin",
+          "v": " vardı; su oradan dışarı çıkıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " boruyu hemen sökmedi. Önce hangi parçanın yıprandığına baktı. Küçük bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr147_baglanti"
+        },
+        {
+          "t": "metin",
+          "v": " halkası eskimişti. Yeni halkayı almak için alet kutusuna uzandı. İşi izleyen "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Emre"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bu minicik parça mı bütün suyu akıtıyor?” diye şaşırdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bağlantı halkası değiştirildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " vanayı yavaşça açıp bekledi. İlk bakışta her şey yolundaydı ama kesin anlamak için bağlantıyı kuru bir bezle tekrar kontrol etti. Bez ıslanmamıştı. Yine de musluğu birkaç kez açıp kapattı. Su yalnızca gerektiğinde akıyor, çeşmenin altına damlamıyordu. Tamir bitmişti ama çevredeki su birikintisi hâlâ duruyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr147_kaygan"
+        },
+        {
+          "t": "metin",
+          "v": " zeminin temizlenmesini de istedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Komşular birlikte taşları sildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yere küçük bir kâğıt koyup yeni damla oluşup oluşmadığına baktı. Kâğıt kuru kaldı. Çeşmenin başında sıraya girenler temiz su doldurdu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Emre"
+        },
+        {
+          "t": "metin",
+          "v": " küçük bir tabelaya “Musluğu kapatmayı unutma” yazmak istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tabelanın herkesin görebileceği yere asılmasını önerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün meydan çeşmesi yine kullanılıyordu. Taşın altında "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr147_birikinti"
+        },
+        {
+          "t": "metin",
+          "v": " yoktu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " son kontrol için uğradı; boru kuruydu, musluk sağlamdı. Çeşmenin yanındaki tabelayı gördü. Oradan geçen biri su içtikten sonra musluğu dikkatle kapattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " alet kutusunu alıp sonraki işine yürüdü. Yaptığı iş küçük görünebilirdi; fakat bir damlanın nereden geldiğini bulmak çok sayıda damlayı kurtarmıştı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Çeşmenin altında ne oluşuyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Su birikintisi"
+        },
+        {
+          "id": "B",
+          "metin": "Küçük bir kum tepesi"
+        },
+        {
+          "id": "C",
+          "metin": "Küçük çiçek bahçesi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Çeşmenin altında her gün küçük bir su birikintisi oluşuyordu. Yaprak, kum ve çiçek metinde geçmez."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "{kahraman} onarıma başlamadan önce vanayı kapattı. Bu davranış neyi gösterir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İşe güvenli hazırlanıldığını"
+        },
+        {
+          "id": "B",
+          "metin": "Musluğun renginin değiştiğini"
+        },
+        {
+          "id": "C",
+          "metin": "Bütün boruların kırıldığını"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Su gelişi durdurulmadan boruya dokunmak güvenli olmazdı; vana kapatmak işe güvenli hazırlanmaktır. Çeşmenin kapanması ya da boruların kırılması metinde yoktur, yalnızca küçük bir halka eskimişti."
+    },
+    {
+      "id": "s3",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Tamir bitmişti ama çevredeki su birikintisi hâlâ duruyordu.” cümlesindeki “tamir” sözcüğü ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yeni bir çeşme resmi çizmek"
+        },
+        {
+          "id": "B",
+          "metin": "Meydanın yerine taş döşemek"
+        },
+        {
+          "id": "C",
+          "metin": "Bozulan yeri düzeltmek"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Bağlantı halkası değiştirilerek bozulan yer düzeltildi; tamir budur. Resim çizmek, taş döşemek ya da çeşmeyi taşımak yapılmadı."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "{kahraman} neden su birikintisinin temizlenmesini istedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çeşmeyi gözlerden saklamak için"
+        },
+        {
+          "id": "B",
+          "metin": "Komşuları bir süre oyalamak için"
+        },
+        {
+          "id": "C",
+          "metin": "Kayganlığı gidermek için"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Islak taş kaygan olur; temizlik bu tehlikeyi gidermek içindi. Boya, saklama ya da oyalama amacı metinde yoktur."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-11-10"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr147_sizinti",
+        "tur": "kelime",
+        "yazim": "sızıntı",
+        "anlam": "Bir yerden sıvı ya da gazın istenmeden çıkması.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_sizinti_b",
+        "tur": "kelime",
+        "yazim": "kaçak",
+        "anlam": "İzin verilmeden bir yerden dışarı sızan su ya da gaz.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_sizinti_c",
+        "tur": "kelime",
+        "yazim": "damlama",
+        "anlam": "Bir yerden damla damla sızma.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_baglanti",
+        "tur": "kelime",
+        "yazim": "bağlantı",
+        "anlam": "İki parçayı birbirine bağlayan yer ya da eleman.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_baglanti_b",
+        "tur": "kelime",
+        "yazim": "eklem",
+        "anlam": "İki parçanın birleştiği yer.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_baglanti_c",
+        "tur": "kelime",
+        "yazim": "halka",
+        "anlam": "Bir şeyi başka bir şeye bağlayan kapalı, yuvarlak parça.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_birikinti",
+        "tur": "kelime",
+        "yazim": "birikinti",
+        "anlam": "Bir yerde toplanıp kalan su ya da madde.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_birikinti_b",
+        "tur": "kelime",
+        "yazim": "gölcük",
+        "anlam": "Küçük bir yerde toplanmış durgun su.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_birikinti_c",
+        "tur": "kelime",
+        "yazim": "yığın",
+        "anlam": "Bir yerde üst üste toplanmış şey.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_kaygan",
+        "tur": "kelime",
+        "yazim": "kaygan",
+        "anlam": "Üzerinde kolay kayılan, tutunmayı zorlaştıran.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_kaygan_b",
+        "tur": "kelime",
+        "yazim": "ıslak",
+        "anlam": "Su ile kaplı, nemli olan.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "hr147_kaygan_c",
+        "tur": "kelime",
+        "yazim": "pürüzsüz",
+        "anlam": "Yüzeyi düz ve kaygan olan.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr147_sizinti",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr147_sizinti"
+          },
+          {
+            "girdi": "hr147_sizinti_b"
+          },
+          {
+            "girdi": "hr147_sizinti_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr147_baglanti",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr147_baglanti"
+          },
+          {
+            "girdi": "hr147_baglanti_b"
+          },
+          {
+            "girdi": "hr147_baglanti_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr147_birikinti",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr147_birikinti"
+          },
+          {
+            "girdi": "hr147_birikinti_b"
+          },
+          {
+            "girdi": "hr147_birikinti_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr147_kaygan",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr147_kaygan"
+          },
+          {
+            "girdi": "hr147_kaygan_b"
+          },
+          {
+            "girdi": "hr147_kaygan_c"
+          }
+        ]
+      }
+    ]
+  }
+}
