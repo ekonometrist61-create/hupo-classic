@@ -10,10 +10,13 @@ import { TIPLER_A1 } from './tipler-a1.mjs';
 import { TIPLER_A2 } from './tipler-a2.mjs';
 import { TIPLER_A3 } from './tipler-a3.mjs';
 import { TIPLER_A4 } from './tipler-a4.mjs';
+import { TIPLER_H4 } from './tipler-h4.mjs';
 import { TIPLER_A5 } from './tipler-a5.mjs';
 import { TIPLER_A6 } from './tipler-a6.mjs';
 import { TIPLER_A7 } from './tipler-a7.mjs';
 import { TIPLER_A8 } from './tipler-a8.mjs';
+import { TIPLER_H2 } from './tipler-h2.mjs';
+import { TIPLER_T4 } from './tipler-t4.mjs';
 
 const hata = (m) => { throw new Error(m); };
 const r2 = (n) => Math.round(n * 100) / 100;
@@ -239,6 +242,7 @@ export const TIPLER = {
   ...TIPLER_B2,
   ...TIPLER_B3,
   ...TIPLER_B4,
+  ...TIPLER_T4,
   ...TIPLER_A1,
   ...TIPLER_A2,
   ...TIPLER_A3,
@@ -247,6 +251,8 @@ export const TIPLER = {
   ...TIPLER_A6,
   ...TIPLER_A7,
   ...TIPLER_A8,
+  ...TIPLER_H4,
+  ...TIPLER_H2,
   'dinamometre': dinamometre,
   'cokgen': cokgen,
   'dogru-modelleri': dogruModelleri,
