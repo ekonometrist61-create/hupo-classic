@@ -38,6 +38,16 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.7.1 · 2026-11-10
+
+Düzeltme (PATCH: metin ve görünüm; veri değişmez, migration yok).
+- Landing fiyat bölümündeki "14 Gün İade Garantisi" ve "%100 Güvenli Ödeme" rozetleri kaldırıldı (kanıt yoktu). "İstediğin Zaman İptal" ve "Gizli Ücret Yok" kullanıcı kararıyla korundu.
+- Commit: 8a14222 (master'a 9999305 olarak alındı). Canlı HTML kontrolü: iki iddia yok.
+
+**Migration:** yok.
+
+**Uyumluluk:** Eski panel ve app ile aynen çalışır; veri sözleşmesi değişmez.
+
 ### panel 0.7.0 · 2026-11-08
 
 Büyük değişiklik (MINOR: yeni kullanıcı yüzeyleri ve veri sözleşmesine geriye uyumlu eklenti).
