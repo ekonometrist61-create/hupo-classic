@@ -5523,3 +5523,17 @@ Paketler:
 - **Durum:** TAMAM (denetim yazıldı, doğrulandı). Yayın kararı insanındır.
 - **Doğrulama:** KISMEN. Uzak dağılım sorgusu tutarlı; ajan çıktılarının kalitesi örneklemle kontrol edilmedi (9 fail kararı okundu, hepsi somut sorun gösteriyor). Ara dosyalar repo dışında: scratchpad\denetim\.
 - **İlgili:** GÖR-090, K-0214, K-0215, GÖR-063
+
+### K-0238 · 2026-11-10 · YÖN/VT · Hikâye yayın kapısı: yalnız insan onayı (kullanıcı kararı)
+- **Tür:** Karar
+- **Konu:** VT
+- **Bağlam:** Kullanıcı kuralı değiştirdi: insan onayı ajan onayını ezebilir; ör. Ajan A pass, Ajan B onaylamadı, insan onayladı → yayınlanabilir. Üç onayın hepsi aranmaz. Kapsam yalnız hikâye; soru kapısı (soru_ajan_kapisi, iki ajan pass + insan) değişmedi.
+- **Plan:** (1) Migration 20261201000000: `okuma_surum_yayin_kapisi` kısıtı ve `okuma_surum_durum_degistir` yalnız `insan = approved` + inceleyen ister; `okuma_toplu_yayin` adayı insan onaylı sürümden seçer. (2) Panel: SurumDetay "yayına hazır" ve ListeSekmesi süzgeci/toplu onay yalnız insan kararına bakar. (3) tr/en metinleri. (4) Testler: `testler.sql` bölüm C, `yonetim_crud_testleri.mjs`, `kos.mjs` ve `yonetim_crud` migration listeleri. (5) CLAUDE.md ve meb SKILL denetim bölümü (soru satırı ayrıldı).
+- **Karar:** Hikâye için yayın kapısı = insan kararı `approved` + inceleyen dolu. Ajan sonuçları (pass / review_needed / fail / pending) kaydedilir, panelde görünür, yayını engellemez. ONAYLI (kullanıcı, 2026-11-10).
+- **Durum:** BEKLİYOR. Migration uzakta uygulanmadı: `npm run db:deploy` otomatik izin sınıflandırıcısı tarafından reddedildi. `db:preview` yalnız bu dosyayı bekleyen olarak gösterdi (yabancı dosya yok). Uygulanana kadar canlı veritabanı eski kuralı zorlar: ajanı geçmemiş ama insan onaylı bir sürüm yayınlanamaz. Panel bu aralıkta "insan onayı yeter" metnini gösterir, sunucu ise YAYIN_KAPISI döner.
+- **Doğrulama:** KISMİ. PGlite: `supabase/tests/okuma_dunyasi` `npm test` 189/189 (envanter 34 → 35: `okuma_toplu_yayin` harness'te ilk kez yüklü); `yonetim_crud_testleri.mjs` 46/46; `dashboard_testleri.mjs` 39/39; `kullanim_testleri.mjs` 17/17. `web-panel` `tsc --noEmit` temiz. Canlı deploy ve panelde tarayıcı kontrolü YAPILMADI.
+- **Açık sorun:** Yönetim metni "Oluşturan ve yayınlayan aynı kişi olamaz; sunucu bunu denetler" (`detay.dortGoz`, `giris`) sunucuda uygulanmıyor; 20261068'den beri oluşturan da onaylayıp yayınlayabiliyor. Kural kullanıcı kararıyla ayrıca netleşmeli: metin mi düzeltilir, kontrol mü eklenir.
+- **Sahip:** Kullanıcı (deploy izni veya kendi terminalinde `npm run db:deploy`)
+- **Önem:** Yüksek
+- **Kanıt:** `npm run db:preview` → `20261201000000_okuma_hikaye_insan_onayi_yeter.sql` bekliyor; `db:deploy` izin reddi. Commit yapılmadı.
+- **İlgili:** K-0213, K-0219, GÖR-090, `supabase/migrations/20261068000000_okuma_uc_goz_yayin_kurali.sql`, `20261094000000_okuma_toplu_yayin.sql`
