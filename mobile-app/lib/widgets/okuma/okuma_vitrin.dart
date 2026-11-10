@@ -80,7 +80,6 @@ class _Ust extends StatelessWidget {
   Widget build(BuildContext context) {
     final serili = seri != null && seri!.seriDevam && seri!.seriSayisi > 0;
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Container(
           width: 48,
@@ -129,7 +128,7 @@ class _SeriRozeti extends StatelessWidget {
               children: [
                 const Icon(Icons.local_fire_department_rounded, size: 20, color: AppColors.coralDark),
                 const SizedBox(width: 2),
-                Text('$gun', style: appText(size: 16, weight: FontWeight.w900, color: AppColors.coralDark)),
+                Text('$gun', style: appText(weight: FontWeight.w900, color: AppColors.coralDark)),
               ],
             ),
           ),
@@ -162,7 +161,7 @@ class _AnaKart extends ConsumerWidget {
           children: [
             const Hupo(pose: HupoPose.dusunuyor, size: OkumaTema.hupoKart, semanticLabel: ''),
             const SizedBox(width: OkumaTema.bosluk12),
-            Expanded(child: Text(OkumaMetin.hikayeYukleniyor, style: appText(size: 16, color: AppColors.muted))),
+            Expanded(child: Text(OkumaMetin.hikayeYukleniyor, style: appText(color: AppColors.muted))),
           ],
         ),
       );
@@ -246,7 +245,7 @@ class _AnaKart extends ConsumerWidget {
           govde,
           maxLines: 4,
           overflow: TextOverflow.ellipsis,
-          style: appText(size: 16, color: AppColors.ink, height: 1.35),
+          style: appText(color: AppColors.ink, height: 1.35),
         ),
         if (alt != null) ...[const SizedBox(height: OkumaTema.bosluk12), alt],
       ],

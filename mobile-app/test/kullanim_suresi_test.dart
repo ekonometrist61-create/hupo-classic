@@ -137,7 +137,7 @@ void main() {
       simdi: () => saat,
       yuzey: 'flutter_web',
     );
-    saat = DateTime.utc(2026, 1, 1);
+    saat = DateTime.utc(2026, 1);
     k.ekranDegis('/a');
     saat = saat.add(const Duration(seconds: 3));
     k.ekranDegis('/b');

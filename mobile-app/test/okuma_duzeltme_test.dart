@@ -1,6 +1,5 @@
 // Okuma Dünyası düzeltmeleri: kelime paneli kapanır, anket isteğe bağlı, sonuç motivasyonu düğmelerin üstünde.
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

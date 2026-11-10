@@ -16,6 +16,7 @@
 import 'dart:typed_data';
 
 import 'package:file_saver/file_saver.dart';
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:okuma_motoru/okuma_motoru.dart' show Cikti, IkonKaydi, Stil, ikonBul, kIkonVarlikKlasoru, kMaskotIkonKimligi;
 import 'package:pdf/pdf.dart';
@@ -129,6 +130,17 @@ final class _Varlik {
 Future<void> hikayePdfIndir(OkumaPdfIstegi istek) async {
   final bytes = await hikayePdfYap(istek);
   final ad = istek.dosyaAdi.replaceFirst(RegExp(r'\.pdf$', caseSensitive: false), '');
+  // Android'de `saveFile` dosyayı uygulamaya özel klasöre (Android/data) yazar; kullanıcı bulamaz.
+  // Bu yüzden indirmeler `saveToDownloads` ile İndirilenler'e gider.
+  if (defaultTargetPlatform == TargetPlatform.android) {
+    await FileSaver.instance.saveToDownloads(
+      name: ad,
+      bytes: bytes,
+      fileExtension: 'pdf',
+      mimeType: MimeType.pdf,
+    );
+    return;
+  }
   await FileSaver.instance.saveFile(
     name: ad,
     bytes: bytes,

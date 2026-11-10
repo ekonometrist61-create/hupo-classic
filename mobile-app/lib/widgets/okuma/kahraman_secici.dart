@@ -117,11 +117,11 @@ class _KahramanSeciciState extends State<KahramanSecici> {
                       zemin: OkumaTema.primarySoft,
                       secili: t == KahramanTuru.ben,
                       onTap: () => widget.onSec(KahramanTuru.ben),
-                      gorsel: Row(
+                      gorsel: const Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Flexible(child: _Gorsel('${_karakterler}insan_erkek_neseli.webp', 76)),
-                          Flexible(child: _Gorsel('${_karakterler}insan_kiz_enerjik.webp', 76)),
+                          const Flexible(child: const _Gorsel('${_karakterler}insan_erkek_neseli.webp', 76)),
+                          const Flexible(child: const _Gorsel('${_karakterler}insan_kiz_enerjik.webp', 76)),
                         ],
                       ),
                     ),

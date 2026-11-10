@@ -90,8 +90,7 @@ class _Butce {
   final Set<int> cikartma;
 }
 
-class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
-    with TickerProviderStateMixin {
+class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> {
   int _sayfa = 0;
   bool _ileri = true;
   late bool _sade;
@@ -108,11 +107,10 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
   static const _kaydirmaBeklemesi = Duration(seconds: 3);
   static const _kaydirmaHizi = 35.0; // piksel / saniye
 
+  /// Kullanıcı dokunduğunda çağrılır. Dokunma, süren animasyonu zaten keser; burada yalnız bekleyen
+  /// zamanlayıcıyı iptal etmek yeterli. `jumpTo` burada çağrılırsa kullanıcının kendi kaydırması kesilir.
   void _kaydirmayiDurdur() {
     _kaydirmaZamani?.cancel();
-    if (_kaydirma.hasClients && _kaydirma.position.isScrollingNotifier.value) {
-      _kaydirma.jumpTo(_kaydirma.position.pixels);
-    }
   }
 
   void _otomatikKaydirmaPlanla() {
@@ -186,8 +184,9 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
     final aranan = kelime.toLowerCase();
     for (final m in RegExp(r'[^.!?…]+[.!?…]?').allMatches(metin)) {
       final cumle = m.group(0)!.trim();
-      if (cumle.isNotEmpty && cumle.toLowerCase().contains(aranan))
+      if (cumle.isNotEmpty && cumle.toLowerCase().contains(aranan)) {
         return cumle;
+      }
     }
     return null;
   }
@@ -257,7 +256,9 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
         final kimlik = c.ikonId;
         if (kimlik == null ||
             kimlik == kMaskotIkonKimligi ||
-            !b.cikartma.contains(i)) return const TextSpan(text: '');
+            !b.cikartma.contains(i)) {
+          return const TextSpan(text: '');
+        }
         final kayit = ikonBul(kimlik);
         if (kayit == null) return const TextSpan(text: '');
         final boy =
@@ -311,14 +312,13 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
     final anlam = widget.anlamlar[metin] ?? OkumaMetin.anlamYok;
     final ornek =
         etiket == OkumaMetin.sozlukAtasozu ? null : _ornekCumle(metin);
-    final denetleyici = AnimationController(
-      vsync: this,
-      duration: OkumaTema.sure(context, OkumaTema.hareketAltSayfa),
-    );
+    // Sheet kendi animasyon denetleyicisini kullanır. Bu state'e bağlı bir denetleyici verilince
+    // panel açılıp kapanırken takılıp kapanmıyordu (test ile doğrulandı).
+    final sure = OkumaTema.sure(context, OkumaTema.hareketAltSayfa);
     showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
-      transitionAnimationController: denetleyici,
+      sheetAnimationStyle: AnimationStyle(duration: sure, reverseDuration: sure),
       builder: (ctx) => OkumaKelimePaneli(
         etiket: etiket,
         metin: metin,
@@ -326,7 +326,7 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
         ornek: ornek,
         onKapat: () => Navigator.pop(ctx),
       ),
-    ).whenComplete(denetleyici.dispose);
+    );
   }
 
   /// "Sayfadaki kelimeler": tüm vurgular, sayfa bütçesinden bağımsız. Ekran okuyucu için yedek erişim.

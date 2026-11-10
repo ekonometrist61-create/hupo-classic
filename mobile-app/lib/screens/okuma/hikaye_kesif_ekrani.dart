@@ -185,7 +185,7 @@ class OkumaKategoriKapagi extends StatelessWidget {
                   ad,
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
-                  style: appText(size: 16, weight: FontWeight.w800, height: 1.2),
+                  style: appText(weight: FontWeight.w800, height: 1.2),
                 ),
                 if (alt != null)
                   Text(alt, style: appText(size: 14, weight: FontWeight.w700, color: AppColors.muted)),
@@ -340,7 +340,7 @@ class _DevamSatiri extends StatelessWidget {
                           devam.satir.baslik,
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: appText(size: 16, weight: FontWeight.w800),
+                          style: appText(weight: FontWeight.w800),
                         ),
                         if (sayfa != null) ...[
                           const SizedBox(height: OkumaTema.bosluk8),

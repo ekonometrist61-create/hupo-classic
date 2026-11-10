@@ -72,7 +72,7 @@ Map<String, dynamic> _uzunHarita() => {
                 ? <Map<String, dynamic>>[]
                 : [
                     _kazanim('T.4.1.$h', ilk: h, soru: 5, cevap: 8, dogru: 6),
-                    _kazanim('T.4.2.$h', ilk: h + 2, soru: 0),
+                    _kazanim('T.4.2.$h', ilk: h + 2),
                   ],
           },
       ],

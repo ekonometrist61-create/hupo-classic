@@ -71,8 +71,8 @@ void main() {
     // Her ikon kendi parçasında: kelime sayısı bütçeyi aşmaz, hiçbiri atlanmaz.
     final sayfalar = [
       for (final k in ikonKatalogu) [
-        Cikti('Ece', Stil.normal),
-        Cikti(' kelimesi', Stil.normal),
+        const Cikti('Ece', Stil.normal),
+        const Cikti(' kelimesi', Stil.normal),
         Cikti('', Stil.isaret, ikonId: k.id),
       ],
     ];
@@ -96,11 +96,11 @@ void main() {
 
   test('bilinmeyen ikon ve maskot satır içinde metni bozmaz', () async {
     final bytes = await hikayePdfYap(
-      OkumaPdfIstegi(
+      const OkumaPdfIstegi(
         baslik: 'Kenar durumlar',
         tanitim: 'Kısa.',
         dosyaAdi: 'kenar.pdf',
-        sayfalar: const [
+        sayfalar: [
           [
             Cikti('Hupo', Stil.normal),
             Cikti('🦉', Stil.isaret, ikonId: kMaskotIkonKimligi),
@@ -109,7 +109,7 @@ void main() {
             Cikti(' sonra.', Stil.normal),
           ],
         ],
-        sorular: const [],
+        sorular: [],
         sinif: 7,
         tema: OkumaPdfTema.murekkepTasarrufu,
       ),

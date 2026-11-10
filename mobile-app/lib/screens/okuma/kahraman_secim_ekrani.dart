@@ -371,7 +371,7 @@ class _BaslikKarti extends StatelessWidget {
         const SizedBox(height: OkumaTema.bosluk8),
         Text(
           OkumaMetin.kahramanAlt,
-          style: OkumaTema.yazi(OkumaTema.yaziYardimci, renk: OkumaTema.ink, satir: 1.35),
+          style: OkumaTema.yazi(OkumaTema.yaziYardimci, satir: 1.35),
         ),
       ],
     );
@@ -382,7 +382,6 @@ class _BaslikKarti extends StatelessWidget {
       child: buyuk
           ? metin
           : Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Expanded(child: metin),
                 const SizedBox(width: OkumaTema.bosluk12),

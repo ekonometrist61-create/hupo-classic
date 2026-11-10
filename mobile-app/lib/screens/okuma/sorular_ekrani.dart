@@ -90,7 +90,6 @@ class _SorularEkraniState extends State<SorularEkrani> {
         if (!mounted || baglam == null) return;
         Scrollable.ensureVisible(
           baglam,
-          alignment: 0.0,
           duration: MediaQuery.disableAnimationsOf(baglam)
               ? Duration.zero
               : const Duration(milliseconds: 350),

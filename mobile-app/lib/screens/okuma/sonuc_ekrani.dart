@@ -189,7 +189,6 @@ class _SonucEkraniState extends State<SonucEkrani> {
             children: [maskotAlani, const SizedBox(height: OkumaTema.bosluk8), baslikBlok],
           )
         : Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               maskotAlani,
               const SizedBox(width: OkumaTema.bosluk16),
