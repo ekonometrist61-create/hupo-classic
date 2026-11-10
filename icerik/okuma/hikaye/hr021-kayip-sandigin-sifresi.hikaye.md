@@ -72,5 +72,3 @@ Son sayfada küçük bir şiir vardı: Güneş sabahı getirir, yaprak yaşamı 
 {yoldas:yalin|bir arkadaş} önce biraz hayal kırıklığına uğradı. Sonra tohum paketini eline aldı. “Bunları dikebilir miyiz?” diye sordu. Görevli, tohumların eski olduğu için filizlenmeyebileceğini, yine de denemelerini önerdi.
 
 Çocuklar sandığın içindekileri düzenleyip okul arşivine teslim etti. Çekmecedeki dört şeklin kopyalarını da yeni {kelime:hr021_hatira} panosuna yerleştirdiler. Bir hafta sonra sınıflarına ait bir fotoğraf çektiler. Fotoğrafın arkasına herkes bir cümle yazdı. {kahraman:ilgi} cümlesi şuydu: Bir sandığın en değerli şifresi, insanların birlikte biriktirdiği anılardır.
-
-Dil hedefi: eşleştirme, çıkarım, tahmin ve kanıt; Kavram/değer: mantıksal sıralama, ortak hafıza, iş birliği. İkon önerileri: sandık, şifre, fotoğraf. Okuma sonrası: Şifreyi çözmelerini sağlayan kanıt hangisiydi? Defterler neden değerliydi?

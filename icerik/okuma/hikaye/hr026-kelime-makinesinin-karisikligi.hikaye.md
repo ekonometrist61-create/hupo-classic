@@ -33,12 +33,12 @@ etiketler:
     - {id: kavram_hr026, tur: concept, etiket: "Bağlama göre anlam", islev: application}
   kanit_duzeyi: C
   program_surumu: "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)"
-  denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
+  denetim: {ajan_a: review_needed, ajan_b: review_needed, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Yoldaşın cümlesindeki yüz sözcüğü neyi anlatıyor?", secenekler: [{id: A, metin: "Sayıyı, yüz tane sayfayı"}, {id: B, metin: "İnsanın suratını"}, {id: C, metin: "Bir yüzeyi"}], dogru: A, aciklama: "Mert'in cümlesinde yüz sayı anlamında kullanılıyor."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Kahraman cümlelerdeki anlamı nasıl buldu?", secenekler: [{id: A, metin: "Makineyi kapatarak"}, {id: B, metin: "Kartları karıştırarak"}, {id: C, metin: "Kelimenin yanındaki sözcüklerden yararlanarak"}], dogru: C, aciklama: "Yanındaki sözcükler anlamı seçmeye yardımcı oluyordu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Kahramanın “Sorular bazen cevaptan daha işe yarar” düşüncesi neyi gösterir?", secenekler: [{id: A, metin: "Soru sormanın öğrenmeyi desteklediğini"}, {id: B, metin: "Soru işareti çizilmemesi gerektiğini"}, {id: C, metin: "Dedenin hiç cevap vermediğini"}], dogru: A, aciklama: "Makinenin hatasını bulmak için sorular sormak, çocukları düşündürdü."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "“Bize kâr kaldı” cümlesinde kâr sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Kar yağışı"}, {id: B, metin: "Kırmızı renk"}, {id: C, metin: "Kazanç, para artışı"}], dogru: C, aciklama: "Kâr, bir işten elde edilen kazançtır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, dayanak: "Makine masaya yüz tane insan yüzü çizdi.", metin: "Makine, “Dedem yüz sayfa okudu” cümlesi için ne çizdi?", secenekler: [{id: A, metin: "Bir kitap ve bir kalem"}, {id: B, metin: "Yüz tane insan yüzü"}, {id: C, metin: "Kırmızı bir gül resmi"}, {id: D, metin: "Bir güneş ve bir bulut"}], dogru: B, aciklama: "Makine yüz sözcüğünü insan yüzü sanıp yüz tane yüz çizdi."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, dayanak: "“Yaz geldi” derken mevsimden söz ediyorlardı.", metin: "Makine “Yaz geldi, sen de yaz!” cümlesi için neden hem güneş hem kalem çizdi?", secenekler: [{id: A, metin: "Çizim yapmayı her zaman çok severdi"}, {id: B, metin: "Ekranı boş bırakmak hiç istemezdi"}, {id: C, metin: "Cümlenin yarısını eksik okumuştu"}, {id: D, metin: "Cümledeki iki yaz ayrı anlamdaydı"}], dogru: D, aciklama: "Birinci yaz mevsimi, ikinci yaz kalemle yazmayı anlatıyordu; makine ikisini de gösterdi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, dayanak: "Cümleyi ikiye böldü ve her parçayı yanındaki sözcüklerle birlikte okudu.", metin: "Makinenin hatasını bulmada hangi yol işe yaradı?", secenekler: [{id: A, metin: "Düğmelere art arda rastgele basmak"}, {id: B, metin: "Makineyi hemen prizden çekip kapatmak"}, {id: C, metin: "Cümleyi yanındaki sözcüklerle okumak"}, {id: D, metin: "Dededen yepyeni bir makine istemek"}], dogru: C, aciklama: "Düğmelere basmak işe yaramadı; cümleyi yanındaki sözcüklerle okuyunca anlam anlaşıldı."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 4, dayanak: "Dede kâr sözcüğünün bir işten geriye kalan kazanç olduğunu söyledi.", metin: "“Bize kâr kaldı” sözünde kâr ne demektir?", secenekler: [{id: A, metin: "Bir işten kalan kazanç"}, {id: B, metin: "Gökten düşen beyaz taneler"}, {id: C, metin: "Soğuk bir kış günü"}, {id: D, metin: "Kırmızı bir gül rengi"}], dogru: A, aciklama: "Kâr, bir işten geriye kalan kazanç demektir."}
 deyim_cumleleri:
   hr026_iki_buklum: "{yoldas:yalin|bir arkadaş} gülmekten iki büklüm oldu."
 ---
@@ -47,29 +47,25 @@ deyim_cumleleri:
 
 “Çiçek mi kahkaha attı?” diye sordu kardeşi {yoldas:yalin|bir arkadaş}.
 
-Makine cümleyi yorumlamak yerine masaya kırmızı bir gül resmi çizdi ve yanına kahkaha işareti koydu. {kahraman}, “İkisi de gül diye yazılıyor ama aynı anlama gelmiyor,” dedi.
-
-Dede gülümsedi. “Demek ki bir kelimenin nerede kullanıldığını anlamak gerekiyor.”
-
-{yoldas:yalin|bir arkadaş} yeni cümleyi söyledi: “Dedem {kelime:hr026_yuz} sayfasını okudu.” Makine masaya yüz tane yüz resmi çizdi.[[deyim:hr026_iki_buklum]] “Ben sayıyı söyledim!”
+Makine cümleyi yorumlamak yerine masaya kırmızı bir gül resmi çizdi ve yanına kahkaha işareti koydu. {kahraman}, “İkisi de gül diye yazılıyor ama aynı anlama gelmiyor,” dedi. Dede gülümseyip makineye yeni bir cümle yazdırdı. Makinenin fanı hafifçe vızıldadı.
 ---
 @omurga
-{kahraman} defterine örnekleri yazdı. Bir tarafta yüz sayısı, diğer tarafta yüz sözcüğünün insanın suratı anlamı vardı. Sonra kardeşinden yeni bir örnek istedi. {yoldas:yalin|bir arkadaş} hemen, “Yaz geldi, sen de yaz!” dedi. Makine ekrana güneş resmi ve bir kalem çizdi. Bu kez doğruya yaklaşmıştı. {isaret:kitap}
+{yoldas:yalin|bir arkadaş} yeni cümleyi yüksek sesle okudu: “Dedem {kelime:hr026_yuz} sayfa okudu.” Makine masaya yüz tane insan yüzü çizdi. [[deyim:hr026_iki_buklum]] {kahraman}, “Makine, o yüz değil, sayı olan yüz!” dedi.
 
-Dede, masaya iki kart daha koydu. Birinde “Kışın {kelime:hr026_kar} yağdı”, diğerinde “Bize kâr kaldı” yazıyordu. {kahraman} harfleri dikkatle inceledi. “Bunlar aynı yazılmıyor; sesleri de tam aynı değil,” dedi. Dede onayladı: “Her benzer kelimeyi aynı gruba koyamayız.” {yoldas:yalin|bir arkadaş} de yeni bir kart istedi. “O zaman yalnız gerçekten aynı yazılan ve farklı anlamlara gelen örneklerle başlayalım.”
+{kahraman} defterine iki sütun çizdi. Bir yanına yüz sayısını, öbür yanına insan yüzünü yazdı. Sonra kardeşinden yeni bir örnek istedi. {yoldas:yalin|bir arkadaş} hemen, “Yaz geldi, sen de yaz!” dedi. Makine ekrana bir güneş ve bir kalem çizdi. {isaret:kitap}
 ---
 @omurga
-Makine bu uyarıyı duyunca ekrana büyük bir soru işareti çıkardı. {kahraman}, “**Sorular bazen cevaptan daha işe yarar**,” diye düşündü. Makinenin hatasını bulmak, düğmelerine rastgele basmaktan daha çok zaman almış ama daha eğlenceli olmuştu.
+{kahraman} önce düğmelere rastgele bastı. Makine ekrana kalem, güneş ve bir bulut çizip ışıklarını yanıp söndürdü. “Böyle olmayacak,” dedi {kahraman}.
 
-{kahraman} bütün cümlelerin küçük bir ipucu taşıdığını fark etti. “Yaz geldi” derken mevsimden söz ediyorlardı. “Sen de yaz” derken ise kalemle bir şeyler yazmayı istiyorlardı. Kelimenin yanındaki başka sözcükler anlamı bulmalarını sağlıyordu.
+Cümleyi ikiye böldü ve her parçayı yanındaki sözcüklerle birlikte okudu. “Yaz geldi” derken mevsimden söz ediyorlardı. “Sen de yaz” derken ise kalemle bir şeyler yazmayı istiyorlardı. Makine bu kez ekrana yalnızca bir güneş çizdi, hemen altına da “Sen de yaz” diye yazdı.
 
-Dede, “Peki makinenin hatasını nasıl azaltacağız?” diye sordu. {kahraman} bir kural kartı hazırladı: Önce tüm cümleyi oku; sonra kelimenin anlamını seç. Kartı makinenin yanına koydular.
+Dede yanlarına oturup gözlüğünü düzeltti. “Makinenin hatasını nasıl azaltacağız?” diye sordu. {kahraman} bir kural kartı hazırladı: Önce tüm cümleyi oku. Kartı makinenin yanına koydular.
 ---
 @omurga
-Son denemede {yoldas:yalin|bir arkadaş}, “Çay kıyısında çay içtik,” dedi. Makine bu kez su akan bir dere ile iki fincan çizdi. İki kardeş sevinçle alkışladı.
+Dede masaya iki kart daha koydu. Birinde “Kışın kar yağdı”, ötekinde “Bize {kelime:hr026_kar} kaldı” yazıyordu. {kahraman} kartlara dikkatle baktı. “Bunlar aynı yazılmıyor,” dedi. “Birinin üstünde şapka var.” Dede kâr sözcüğünün bir işten geriye kalan kazanç olduğunu söyledi.
 
-Ancak makine beklenmedik bir soru sordu: “Peki kelimelerin iki anlamı varsa, insanların da bazen birden fazla duygusu olur mu?”
+{yoldas:yalin|bir arkadaş} ikinci kartı makineye okuttu. Makine bu kez karlı bir dağ yerine bozuk paralarla dolu bir kutu çizdi.
 
-{kahraman} biraz düşündü. “Olur,” dedi. “Hem heyecanlı hem çekingen olabilirim.” Dede ona bakıp gülümsedi. Bir kelime oyunu, o gün yeni bir konuşmanın kapısını açmıştı.
+Son denemede {yoldas:yalin|bir arkadaş}, “Çay kıyısında çay içtik,” dedi. Makine su akan bir dere ile iki fincan çizdi. İki kardeş sevinçle alkışladı.
 
-Dil hedefi: sesteş/homograf kullanımlar: gül, yüz, yaz, çay; Kavram/değer: bağlam, çok anlamlılık, esnek düşünme. İkon önerileri: robot, sözlük, konuşma balonu. Okuma sonrası: “Yaz geldi, sen de yaz” cümlesindeki iki yazın anlamı nedir?
+Makine beklenmedik bir soru sordu: “Kelimelerin iki anlamı olabiliyorsa, insanın aynı anda iki duygusu olur mu?” {kahraman} biraz düşündü. “Olur,” dedi. “Hem heyecanlı hem çekingen olabilirim.” Dede ona bakıp gülümsedi.

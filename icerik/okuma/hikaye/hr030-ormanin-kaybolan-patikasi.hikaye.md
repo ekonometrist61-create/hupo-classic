@@ -70,5 +70,3 @@ Bir hafta sonra sınıf yeniden parka geldi. Kapatılmış patikanın girişinde
 ---
 @omurga
 {kahraman} eve gidince iki haritayı yan yana koydu: Biri eski patikayı, diğeri güncel ve güvenli güzergâhı gösteriyordu. Aralarındaki farkı renklendirerek çizdi. Defterinin altına şu cümleyi yazdı: İyi bir yol bulmak, yalnızca hedefe varmak değil, oraya güvenle ulaşmaktır.
-
-Dil hedefi: rota, yön, uyarı; çözüm önerme; Kavram/değer: kroki, güvenli güzergâh, doğayı koruma. İkon önerileri: orman, pusula, levha. Okuma sonrası: Hangi kanıt yeni yolu seçmelerini sağladı? Bir levha tasarlasan neler koyardın?

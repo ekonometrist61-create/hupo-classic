@@ -9,7 +9,8 @@ sinif_ust: 3
 kahraman_turu: hazir
 deger_anahtarlari: [D3, D20]
 yoldas: "Serçe"
-tanitim: "Kitap paylaşım gününde rüzgâr yönlendirme kartlarını karıştırır. Hupo, kroki ve küçük simgeleri kullanarak kartları doğru yerlere asar."
+tanitim: "Rüzgâr, kitap paylaşım gününde yönlendirme kartlarını karıştırır. Hupo, kroki ve küçük simgeleri kullanarak kartları doğru yerlere asar."
+yetiskin_uygun: false
 durum: taslak
 uretim_kaynak: llm_taslak
 duzeltme_tarihi: "2026-10-24"
@@ -37,7 +38,7 @@ sorular:
       - {id: D, metin: "Çeşme yanına"}
     dogru: A
     dayanak: "Mavi ok masal kitaplarını, sarı ok bilgi kitaplarını gösteriyordu."
-    aciklama: "Mavi ok, masal kitaplarının masasını gösteriyordu."
+    aciklama: "Mavi ok, masal kitaplarını gösteriyordu."
   - id: s2
     beceri: hatirlama
     dayanak_sayfa: 1
@@ -57,20 +58,32 @@ sorular:
     secenekler:
       - {id: A, metin: "Kitapların bulunduğu uzun liste"}
       - {id: B, metin: "Masa örtülerinin renk listesi"}
-      - {id: C, metin: "Yukarıdan çizilmiş basit plan"}
+      - {id: C, metin: "Üstten bakılarak çizilmiş sade bir plan"}
       - {id: D, metin: "Bir masal kitabının özeti"}
     dogru: C
     dayanak: "Kroki, bir yerin yukarıdan bakılarak çizilmiş basit planıydı."
     aciklama: "Kroki, bir yerin yukarıdan bakılarak çizilmiş basit plandır."
+  - id: s4
+    beceri: cikarim
+    dayanak_sayfa: 2
+    metin: "Hupo kartları asmadan önce neden krokiye baktı?"
+    secenekler:
+      - {id: A, metin: "Kartların rengini değiştirmek için"}
+      - {id: B, metin: "Krokiyi öğretmene vermek için"}
+      - {id: C, metin: "Bahçedeki çiçekleri saymak için"}
+      - {id: D, metin: "Masaların yerini doğru bulmak için"}
+    dogru: D
+    dayanak: "Hupo, yerinden oynayan kartları gelişigüzel yerine koymak istemedi. Önce masaların yerini gösteren küçük krokisini açtı."
+    aciklama: "Hupo, kartları tahminle değil krokideki masa yerlerine göre yerleştirmek istedi."
 ---
 @omurga
-Hupo, okul bahçesinin kitap paylaşım gününde yardımcı olacaktı. Bahçe kapısından masalara giden yolda renkli oklar vardı. Mavi ok masal kitaplarını, sarı ok bilgi kitaplarını gösteriyordu. Fakat sabah esen rüzgâr iki kartı yerinden oynattı. Bir grup öğrenci bilgi kitabı ararken masal köşesine yöneldi. Hupo bu karışıklığı görünce işaretleri incelemeye karar verdi.
+Hupo, okul bahçesindeki kitap paylaşım gününde yardım etmek istiyordu. Bahçe kapısından masalara giden yolda renkli oklar vardı. Mavi ok masal kitaplarını, sarı ok bilgi kitaplarını gösteriyordu. Fakat sabah esen rüzgâr iki kartı yerinden oynattı. Bir grup öğrenci bilgi kitabı ararken masal köşesine yöneldi. Hupo bu karışıklığı görünce işaretleri incelemeye karar verdi.
 ---
 @omurga
-Hupo, yere düşen kartları gelişigüzel yerine koymak istemedi. Önce masaların yerini gösteren küçük krokisini açtı. Kroki, bir yerin yukarıdan bakılarak çizilmiş basit planıydı. Hupo, mavi kartın altında küçük bir yıldız, sarı kartın altında ise iki çizgi olduğunu gördü. Aynı işaretler ilgili masaların köşelerinde de vardı.
+Hupo, yerinden oynayan kartları gelişigüzel yerine koymak istemedi. Önce masaların yerini gösteren küçük krokisini açtı. Kroki, bir yerin yukarıdan bakılarak çizilmiş basit planıydı. Hupo, mavi kartın altında küçük bir yıldız, sarı kartın altında ise iki çizgi olduğunu gördü. Aynı işaretler ilgili masaların köşelerinde de vardı.
 ---
 @omurga
 Serçe, “Renkleri biliyoruz, hemen asalım,” dedi. Hupo bir an kabul edecek gibi oldu. Sonra durup “İşaretlere de bakalım,” dedi. Önce mavi kartı masal köşesindeki yıldızla eşleştirdi. Sarı kartın iki çizgisini de bilgi masasında buldu. İkisi kartları görevli öğretmene gösterdi; öğretmen yerlerine asılmasına yardım etti.
 ---
 @omurga
-Biraz sonra öğrenciler yine bahçeye geldi. Bu kez yönlerini kolayca buldular. Hupo, kartların yalnızca renge göre seçilmediğini, küçük simgelerin de önemli olduğunu fark etti. Krokinin kenarına “Önce bak, sonra eşleştir” yazdı. Serçe de iki masaya yürüyerek işaretlerin doğru yönü gösterdiğini kontrol etti.
+Biraz sonra öğrenciler yine bahçeye geldi. Bu kez yönlerini kolayca buldular. Hupo, her kartın altındaki simgeye bakıp kartı krokideki doğru masaya götürdü. Krokinin kenarına hangi simgenin hangi masaya ait olduğunu not etti. Serçe de iki masaya yürüyüp kartların doğru yerde olduğunu kontrol etti.

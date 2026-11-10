@@ -13,7 +13,7 @@ deger_anahtarlari: [D6, D15]
 yetiskin_uygun: false
 tanitim: "Eşikte yedi anahtar var. Her kapının ardında bir değer, bir seçim."
 durum: taslak
-uretim_kaynak: llm_taslak
+uretim_kaynak: chatgpt_taslak
 tarih: "2026-10-22"
 etiketler:
   ana_sinif: 5
@@ -33,124 +33,45 @@ etiketler:
     - {id: kavram_hr049, tur: concept, etiket: "Dürüstlük ve paylaşma", islev: application}
   kanit_duzeyi: C
   program_surumu: "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)"
-  denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
+  denetim: {ajan_a: review_needed, ajan_b: review_needed, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kâğıtta yazan cümleye göre yedi kapıyı geçen kişi ne yapar?", secenekler: [{id: A, metin: "Dileğini kendi eliyle kurar"}, {id: B, metin: "Altın bir anahtar bulup bekler"}, {id: C, metin: "Köyünü kalıcı olarak terk eder"}, {id: D, metin: "Hiç konuşmadan kapıdan çıkar"}], dogru: A, aciklama: "Kâğıtta, yedi kapıyı geçen kişinin dileğini kendi eliyle kuracağı yazıyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Ana karakter ilk kapıdan sonra neden anahtarı cebine koydu?", secenekler: [{id: A, metin: "Anahtarın altından yapılmış olabileceğini düşündüğü için"}, {id: B, metin: "Bir yarasanın ona kapının yolunu gösterdiği için"}, {id: C, metin: "Aynada annesinin yüzünü görüp dürüst olmayı seçtiği için"}, {id: D, metin: "Tüccar ona altın yüzüğü verip sorgusuz geçirdiği için"}], dogru: C, aciklama: "Aynada annesinin yüzünü gören kahraman, dürüst olmanın anahtarını hak ettiğini anladı."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 12, metin: "Yaşlı kadına göre paylaşmak nedir?", secenekler: [{id: A, metin: "Kimseye hiçbir şey vermeden saklamak"}, {id: B, metin: "Herkese eşit bölmek değil, ihtiyacı görmek"}, {id: C, metin: "Yalnızca kendine ayırmak ve saklamak"}, {id: D, metin: "Sofradakilerin yalnızca bir kısmını doyurmak"}], dogru: B, aciklama: "Paylaşmak, herkesin ihtiyacını dikkate almayı da içerir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 6, metin: "Metinde kurnazlık sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Dürüst olmayan yollarla çıkar sağlama becerisi"}, {id: B, metin: "Gece geç saatlere kadar uyanık kalabilme"}, {id: C, metin: "Herkesi dikkatle ve sabırla dinleyebilme"}, {id: D, metin: "Yolda hızlı koşup önce varabilme becerisi"}], dogru: A, aciklama: "Kurnazlık, çoğu zaman dürüstlükten uzak akıllılıktır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, dayanak: "Keloğlan sabah kapının eşiğinde yedi küçük anahtar buldu.", metin: "Keloğlan ilk anahtarı nerede buldu?", secenekler: [{id: A, metin: "Kuyu dibinde"}, {id: B, metin: "Taş köprüde"}, {id: C, metin: "Ev eşiğinde"}, {id: D, metin: "Pazar yerinde"}], dogru: C, aciklama: "Anahtarları evin eşiğinde bulur."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, dayanak: "Keloğlan, tüccarın düşürdüğü keseyi açmadan sahibine uzattı.", metin: "Keloğlan hangi davranışıyla tüccarın güvenini kazanmıştır?", secenekler: [{id: A, metin: "Yolunu birden değiştirerek"}, {id: B, metin: "Keseyi açmadan uzatarak"}, {id: C, metin: "Kesenin içine bakarak"}, {id: D, metin: "Kapıyı zorlayarak"}], dogru: B, aciklama: "Kese açılmadan geri verilir."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, dayanak: "Tam o sırada yolcuların arkasından gelen yaşlı kadın, yürümekten yorulan küçük bir çocuğu gösterdi.", metin: "Keloğlan hurmaların çoğunu neden çocuğa verdi?", secenekler: [{id: A, metin: "Çocuğa söz vermiş olduğu için"}, {id: B, metin: "Yolcular hurma sevmediği için"}, {id: C, metin: "Hurmalar çocuğa ait olduğu için"}, {id: D, metin: "Çocuk çok yorulmuş olduğu için"}], dogru: D, aciklama: "Yaşlı kadın yorulan çocuğu gösterdi; Keloğlan da hurmaların çoğunu ona verdi."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, dayanak: "Keloğlan, iki gözlü {kelime:hr049_heybe} içine ekmekle su kabını yerleştirdi.", metin: "“Heybe” sözcüğü yolculukta hangi eşyayı karşılar?", secenekler: [{id: A, metin: "Omuzda taşınan torba"}, {id: B, metin: "Yere serilen kilim"}, {id: C, metin: "Kapıya dışarıdan takılan kilit"}, {id: D, metin: "Masaya konan tabak"}], dogru: A, aciklama: "Heybe, eşya taşımaya yarayan çift gözlü torbadır."}
 deyim_cumleleri:
-  hr049_kulak_vermek: "Yolun sonunda küçük bir not buldu: Kulak vermek, yalnız sesi duymak değildir."
+  hr049_kulak_vermek: "Keloğlan çarkın sesine kulak verdi."
 ---
 @omurga
-{kahraman}, sabah kapıyı açtığında {kelime:hr049_esik} önünde yedi ayrı anahtar buldu. Anahtarların hiçbiri demirden değildi: biri ağaç kabuğundan, biri cam gibi saydam, biri de kurumuş bir yapraktan yapılmıştı. Altına iliştirilmiş kâğıtta tek bir cümle vardı: Yedi Söz Kapısı'nı geçebilen, dileğini kendi eliyle kurar.
+Keloğlan sabah kapının eşiğinde yedi küçük anahtar buldu. Biri tahtadandı, biri cam gibi saydamdı, sonuncusu da incecik bir yaprağa benziyordu. Kapının altına sıkıştırılmış kâğıtta, “Yedi Söz Kapısı'nı geçen dileğini kendi eliyle kurar,” yazıyordu. Keloğlan, {kelime:hr049_esik} eşik taşının dibindeki yedi çizgiyi saydı. Çizgiler, köyün dışındaki terk edilmiş değirmene uzanan patikayı gösteriyordu.
 
-{kahraman} önce bir şaka sanıp gülümsedi. Sonra en küçük anahtarın ucundaki işareti gördü. İşaret, köyün yukarısındaki eski değirmenin kapısına oyulmuş şeklin aynısıydı. O değirmen uzun zamandır çalışmıyordu. Köylüler, su yolunu onarmak için para toplamış ama hangi yolun güvenli olduğuna karar verememişti. {kahraman:ilgi} dileği, annesinin tarlasına su ulaştırmaktı. Fakat bu yedi kapı meselesini anlamadan değirmene gitmek de akıllıca değildi. {isaret:anahtar}
+Annesi ona yola çıkarken yarım somun ekmek ve küçük bir su kabı verdi. Keloğlan, iki gözlü {kelime:hr049_heybe} içine ekmekle su kabını yerleştirdi. Değirmenin arkasında birbirini izleyen yedi kapı vardı. İlk kapının önünde, yük taşıyan bir tüccar diz çökmüş, yere saçılan eşyasını topluyordu. Keloğlan, tüccarın düşürdüğü keseyi açmadan sahibine uzattı. İlk anahtar avucunda ısındı; kapı kendiliğinden aralandı.
 
-Annesi anahtarları eline aldı. “Bir gün boyunca yanında taşıyıp duracağın şeyin ağırlığını iyi düşün,” dedi. “Altın anahtara benzemiyorlar ama sözlerini tutması ağır olabilir.”
+Tüccar arkasından seslendi: “Kesede ne olduğunu merak etmedin mi?” Keloğlan omzunu silkti. “Senin kesen olduğu belliydi.” İkinci kapıda masanın üstüne iki kâse konmuştu. Birinde on iri hurma, ötekinde iki küçük hurma vardı. Masanın başında bekleyen iki yolcu, açlıktan karınlarını tutuyordu. Keloğlan hangi kâsenin kime ait olduğunu ararken kapı üzerindeki yazının silinmiş olduğunu gördü.
 ---
 @omurga
-“Ben sözümü tutarım ana,” diye karşılık verdi {kahraman}.
+Değirmenin taş duvarına asılmış küçük çanın ipi rüzgârla sallanıyordu. Her kapının çevresindeki taşlar farklı renkteydi; birincisi sarı, ikincisi yeşil, üçüncüsü koyu maviydi. Keloğlan bu renkleri heybesinden çıkardığı küçük kâğıda çizdi. Geri dönerken kapıları hangi sırayla geçtiğini böylece bulabilecekti.
 
-“Kolay söylenir. Zor zamanda da tutabiliyorsan ne mutlu sana.”
+İki yolcunun biri bütün gün yürümüş, öteki ise yalnız biraz önce yola çıkmıştı. Keloğlan önce kâseleri eşit paylaşmayı düşündü. Tam o sırada yolcuların arkasından gelen yaşlı kadın, yürümekten yorulan küçük bir çocuğu gösterdi. “Önce bu çocuk yesin, yolu hepinizden uzun yürüdü,” dedi. Keloğlan da hurmaların çoğunu çocuğa, kalanını yolculara dağıttı. Heybesindeki ikinci anahtar hafifçe tıkırdadı.
 
-{kahraman} küçük {kelime:hr049_heybe} ekmek, su ve ip koyup yola çıktı. Köy meydanında çocuklar etrafını sardı. Onlara bütün kapıları tek başına açacağını söylemek istedi. Fakat annesinin sözü aklına geldi; henüz yapmadığı bir işi önceden söylemek gösteriş olurdu. “Ne çıkacağını bilmiyorum,” dedi. “Dönersem anlatırım.” Bu yanıt çocukların hoşuna gitmedi ama yaşlı terzi ona başıyla selam verdi.
+Üçüncü kapıda bir tilki, tahta köprünün başında bekliyordu. “Köprüden geçmek istiyorsan elimdeki taşı altın say,” dedi. Keloğlan taşı eline aldı; sıradan çakıldı. Tilkinin {kelime:hr049_kurnazlik} dolu gülüşünü görünce güldü. “Taşı altın sayarsam avucum ağırlaşmaz.” Tilki gözlerini kıstı; Keloğlan’ın heybesindeki üçüncü anahtar yeşile döndü.
 
-Değirmenin ardındaki taşlık yolda ilk kapıyı buldu. Kapının üzerinde “Dürüstlük” yazıyordu. Ortada iki sepet vardı: birinde parlak elmalar, ötekinde toprağa düşmüş, üstü çizilmiş elmalar. Kapının yanından bir ses geldi: “Köye dönüp elmaların hepsinin sağlam olduğunu söylersen hızlıca geçersin.”
-
-{kahraman} parlayan elmalara baktı. Sırtında taşıdığı açlık duygusu o anda daha da büyüdü. Sonra yaralı elmaları gördü; bazıları hâlâ yenilebilirdi ama kusurlarını gizlemek doğru değildi.
+Dördüncü kapıda rüzgârla savrulan kâğıtlar uçuşuyordu. Her kâğıtta bir yol tarifi vardı; yollar birbirini tutmuyordu. Keloğlan en yakındaki kâğıdı okumak için uzanırken değirmen duvarından ince bir ses geldi. [[deyim:hr049_kulak_vermek]] Duvarın arkasında değirmen çarkı dönüyordu.
 ---
 @omurga
-“İnsanları kandırırsam kapıyı geçsem bile içim rahat etmez,” dedi. “Elmaların durumunu olduğu gibi söylerim.”
+Çark her dönüşte üç kez takırdıyor, ardından kısa bir sessizlik oluyordu. Keloğlan kâğıtların üstündeki üç noktalı yolu seçti. Dördüncü anahtar, heybenin içinde parladı. Beşinci kapının önünde bir ayna asılıydı. Aynada kendisini değil, yola çıkmadan önce annesinin su kabını dolduran ellerini gördü. Aynanın altındaki masada bir tas su duruyordu; susamış bir kuş, masanın kenarında kanatlarını titretiyordu.
 
-Ses sustu, kapı ağır ağır açıldı. Arkasında bir ayna vardı. {kahraman} aynada elmaların değil, annesinin yüzünü gördü. Annesi pazarda satacağı bezlerin eksik dokunan yerlerini müşteriden gizlemezdi. {kahraman} ilk anahtarı cebine koydu. Demek ki bazı anahtarlar cebine değil, davranışına uyuyordu.
+Keloğlan tası kuşa doğru itti. Kuş birkaç yudum içince aynadaki görüntü değişti; bu kez ayna, heybesinde kalan son ekmeği gösteriyordu. Heybedeki beşinci anahtar tasın gölgesinde parladı. Altıncı kapıda iki kardeş aynı pelerini çekiştiriyordu. Biri yağmurda ıslanmış, ötekinin ise kolları üşümüştü. Keloğlan, pelerini kısa bir süreliğine ikisinin de omzuna örttü; sonra heybesindeki kuru bezle pelerinin sırılsıklam ucunu sardı.
 
-İkinci kapının önüne geldiğinde küçük bir dere yolu kesiyordu. Taş köprü akıntı yüzünden daralmıştı. Yan tarafta bir çocuk, yünlerini suya düşürmüş ağlıyordu. Kapının üzerinde “Sabır” yazıyordu. “Benim acelem var,” diye geçirdi içinden {kahraman}. “Çocuğa yardım edersem geç kalırım.” Yine de durup ne olduğunu sordu. Çocuğun adı {yoldas:yalin|bir arkadaş}; yünleri annesinin dokuyacağı kilim için topladığını anlattı.
-
-{kahraman} uzun bir dal buldu, ipini düğümledi, yün demetlerini suya girmeden tek tek kıyıya çekti. İlk denemesi başarısız oldu. İkinci denemede düğüm çözüldü. {yoldas:yalin|bir arkadaş}, “Bırakalım, annem kızsa da olur,” dedi. {kahraman}, “Sabreden derviş muradına ermiş derler,” diye mırıldandı. Son denemede dalın ucuna çatal biçimli başka bir dal bağladı; kalan yünleri aldı. {yoldas:yalin|bir arkadaş} teşekkür ederken ikinci kapı kendiliğinden açıldı.
+Kardeşler, el ele verince pelerini genişçe açıp birlikte yürüyebildiler. Altıncı anahtar, Keloğlan’ın heybesinde ısındı. Keloğlan onu alıp son kapıya yöneldi. Kapının üzerinde ne yazı ne resim vardı. Yalnız ortasında, bir anahtar deliğinin çevresine çizilmiş yedi küçük halka bulunuyordu.
 ---
 @omurga
-Üçüncü kapının üstüne “Paylaşma” yazılmıştı. İçeride uzun bir sofrada tam üç tabak çorba duruyordu. Sofranın başında dört yolcu oturmuş, kimsenin önüne çorba koyamamıştı. {kahraman} içeri girince yolcular beş kişi oldu. Kapının sesi, “Üç tabak vardır; biri paylaşılmazsa kimse açlığını gideremez,” dedi.
+Son kapının önünde durup arkasına baktı. Taş köprünün altından su geçiyor, ayna sabah ışığında titreşiyor, pelerinli kardeşler uzaktan ona el sallıyordu. Yedi kapının hepsi aynı değirmene açılan uzun bir yolun parçalarıydı. Keloğlan anahtarları avucunda çevirirken aralarındaki şekil farklarını yeniden saydı.
 
-{kahraman} çorbanın miktarını tahmin etti. Herkesin doyması mümkün değildi. Ama herkesin az da olsa içmesi mümkündü. Tencerede kalan suyu sormak için mutfağa gitti. Biraz sıcak su, kuru ekmek parçaları ve sofradakilerin yanında getirdiği otlarla çorbayı çoğalttılar. Yemek basit ama lezzetli oldu. En yaşlı yolcu, “Bir elin nesi var, iki elin sesi var,” dedi. {kahraman} kapının ardındaki çanı duydu. Üçüncü anahtar kendiliğinden ışıldadı.
----
-@omurga
-Dördüncü kapı, dar bir bahçenin ucundaydı. Üzerinde “Dinlemek” yazıyordu. Bahçede iki kuş aynı anda ötüyordu. Biri ince, biri kalın ses çıkarıyordu. Tahta bir levhada, “Doğru yolu söyleyen kuşu dinle,” yazılmıştı. {kahraman} ince sesli kuşun yüksekten ötmesini önemli sandı. Fakat sesini yükseltenin her zaman doğruyu söylemeyeceğini düşündü. İki kuşun da konuşmasını bitirmesini bekledi. İnce kuş “Sağa git!” diye bağırıyordu. Kalın sesli kuş ise “Sol yolda taş düştü; aşağıdaki patikaya dikkat et,” diyordu. {kahraman}, nedenini açıklayan kuşu dinledi. Patikada gerçekten de yuvarlanmış taşlar vardı.
+Keloğlan altı anahtarı sırayla deliğe soktu; hiçbiri dönmedi. Yedinci anahtar ise ötekilerden farklıydı; üzerinde hiçbir işaret yoktu. Kapının yanında, içi boş bir un çuvalı ve ağız kısmı açık bir sandık duruyordu. Sandığın içinde, köye giden patikanın küçücük bir resmi vardı. Resmin yanında, patikayı gösteren küçük bir ok vardı.
 
-[[deyim:hr049_kulak_vermek]] {kahraman}, bu deyimin anlamını yeni yeni öğreniyordu. İnsan bazen kendisine söyleneni dikkatle düşünmediği için duyduğu hâlde anlamayabilirdi.
----
-@omurga
-Beşinci kapının önünde tüccar kıyafetli biri oturuyordu. {kahraman} ona yaklaşınca adam torbasından altın rengi bir yüzük çıkardı. “Bu yüzüğü alırsan kalan kapıları sorgusuz geçersin,” dedi. Kapının üzerinde “Ölçülülük” yazıyordu. {kahraman} yüzüğü eline almadı. Tüccar devam etti: “Kapıların ardında kimse ne yaptığını bilmeyecek. Biraz {kelime:hr049_kurnazlik} kimseye zarar vermeden kazanırsın.”
+Keloğlan çuvalı açtı. İçinde yalnızca birkaç buğday tanesi kalmıştı. Köydeki fırının o sabah unu bittiğini, komşuların ekmek beklediğini düşündü. Değirmenin çarkı dışarıda dönüyor, fakat un taşının üzerinden kimse buğday geçirmiyordu. Keloğlan, sandığın içine anahtar yerine buğday tanelerini bıraktı. Keloğlan’ın cebindeki yedinci anahtarın üzerinde buğday başağı belirdi.
 
-“Kurnazlıkla akıl aynı şey midir?” diye sordu {kahraman}.
+Kapıyı açınca karşısına bir hazine odası çıkmadı. Eski değirmenin un taşları ve uzun zamandır boş duran ambarı vardı. Keloğlan çarkın bağlı olduğu kayışı yerine geçirdi. Değirmenciye ulaşmak için penceredeki çanı çaldı. Biraz sonra tüccar, yaşlı kadın ve iki kardeş patikada göründü; hepsi duydukları çanı izliyordu.
 
-“Bazen aynıdır.”
-
-“Ya birisinin hakkını çiğnersem?”
-
-“Kimse görmez.”
-
-“Kendim görürüm.”
-
-Tüccar birden kâğıttan yapılmış bir şekle dönüştü. Beşinci kapı açıldığında {kahraman}, aşırı kolay görünen çözümlerin neden bazen en tehlikeli yollar olabildiğini düşündü.
-
-Altıncı kapının üzerinde “Cesaret” yazılıydı. İçeriden uğultulu bir ses geliyordu. {kahraman} ürküp geri çekildi. Gözleri karanlığa alışınca yerde bir yarasa gördü. Hayvanın kanadı, bir ipin halkasına takılmıştı. Uğultunun kaynağı yarasanın çırpınmasıydı. {kahraman} hayvanı incitmeden nasıl yardım edebileceğini düşündü. Tek başına elini uzatmak yerine yerde duran uzun bir değnekle ipi gevşetti, yarasa kurtulunca da yolu açtı. Cesaretin düşüncesizce tehlikeye atılmak olmadığını anladı. Bazen korktuğunu kabul edip güvenli bir çözüm aramak daha cesurcaydı.
----
-@omurga
-Yedinci kapı diğerlerinden farklıydı. Önünde ne sepet, ne dere, ne de konuşan kuş vardı. Taşın üzerine “Söz” yazılmıştı. Kapı, “Başından geçenleri anlat. Ama kendini olduğundan büyük gösterme,” dedi. {kahraman} ilk altı kapıyı düşündü. Elmalar, {yoldas:ilgi|bir arkadaşın} yünleri, sofradaki çorba, kuşlar, tüccarın yüzüğü ve yarasa… Kapıların hepsi farklıydı ama aralarında bir bağ vardı. Her seferinde birinin, bazen de kendisinin iyiliğini düşünerek karar vermişti.
-
-“Ben en güçlü kişi değilim,” dedi. “Bazen korktum, bazen acele ettim, bazen de açgözlülüğe kapılacak gibi oldum. Ama yeniden düşündüm. Bana sorarsan söz, davranışla tamamlanınca değer kazanır.”
-
-Kapının taşları bir süre sessiz kaldı. Ardından yavaşça ayrıldı. {kahraman} karşısında yüksek bir dağ yerine köyünün eski su kanalını buldu. Kanalın girişindeki vana paslanmıştı; birkaç taşı yerinden oynamıştı. Kanalın üstündeki levhada şu cümle yazıyordu: Dileğini tek başına taşıyamazsın; birlikte kurarsın.
----
-@omurga
-{kahraman} bir an öfkelendi. “Bunca yolu geldim, kapı kapı dolaştım. Sonunda yine köye mi döneceğim?”
-
-Sonra üçüncü kapıdaki sofrayı ve ikinci kapıdaki {yoldas:belirtme|bir arkadaşı} hatırladı. Sorun yalnız vanayı çevirmek değildi. Su kanalı, köyün ortak emeğiyle onarılmalıydı. Çevredeki taşları kaldırmaya çalıştı ama bazıları çok ağırdı. İşte o zaman annesinin söz ağırlığı hakkındaki uyarısı anlam kazandı. İlk iş olarak köye dönmek, herkesle konuşmak gerekiyordu.
-
-Köy meydanında toplananlara gördüklerini anlattı. Kimi “Bu masala benziyor,” dedi, kimi “Çocukça bir oyun,” diye küçümsedi. {kahraman} buna kızmadı. Kanaldaki bozuk yeri gösteren bir çizim yaptı, kimlerin hangi işte yardımcı olabileceğini sordu. Terzi sağlam ip getirdi. Değirmenci vanayı incelemek için aletlerini hazırladı. {yoldas:ilgi|bir arkadaşın} ailesi yoldaki küçük taşları toplayabileceklerini söyledi. Yaşlılar eski su yolunu bilen kişileri çağırdı. Bir iş bölümü yaptılar.
----
-@omurga
-İlk gün herkes çok çalıştı ama su akmadı. {kahraman} yüzünün kızardığını hissetti. Kapıları geçmiş olması ona hemen başarı getirmemişti. Değirmenci, “Daha işin başındayız,” dedi. “Suyun yolunu açmak, acele etmeyi değil, taşları doğru yerleştirmeyi gerektirir.” İkinci gün yanlış açıyla konmuş bir taşı düzelttiler. Üçüncü gün kanalın çevresini güvenli hâle getirdiler. Çocuklar yetişkinlerin yanında, tehlikeli yerlere yaklaşmadan küçük işlerde yardımcı oldu.
-
-Dördüncü sabah su, ince bir çizgi gibi kanala girdi. Önce birkaç damla geldi, sonra akış hızlandı. {kahraman:ilgi} annesi avuçlarını suyun altına tuttu. Yüzünde uzun zamandır görülmeyen bir rahatlama vardı.
-
-“Yedi kapıyı açtın demek,” dedi.
-
-“Yedi kapıyı köye getirdim, ana,” diye cevap verdi {kahraman}. “En zor kapıyı hep birlikte açtık.”
-
-O akşam köy meydanında bir sofra kuruldu. {yoldas:yalin|bir arkadaş} yünlerinden dokunan küçük bir bez getirdi. Terzi, bezin üzerine yedi ayrı işaret işlemişti: elma, yün, çorba kâsesi, kuş, yüzük, yarasa ve su damlası. {kahraman} işaretlere bakınca kapıların sırasını hatırladı. Her işaret ona bir sözcüğü değil, yaptığı bir seçimi hatırlatıyordu.
----
-@omurga
-Köyün çocukları ertesi gün aynı kapıları görmek istedi. {kahraman} onlara değirmenin ardındaki yola kadar eşlik etti. Fakat taşlık yerde yalnızca eski bir yol vardı. Ne konuşan kuş ne de altın yüzük bulunuyordu. Çocuklardan biri, “O hâlde bizi kandırdın mı?” diye sordu.
-
-{kahraman} durdu. “Gördüklerimi anlattım,” dedi. “Sizin de aynı şeyleri göreceğinizi söylemedim.” Sonra yerdeki küçük taşı kaldırıp kenara koydu. “Ama isterseniz ilk kapıyı şimdi açabiliriz. Şu yoldan herkes güvenle geçsin diye yardım eder misiniz?”
-
-Çocuklar taşları toplamaya başladılar. Birinin eli yetmediğinde öteki yardım etti. {kahraman} uzaktan onları izledi. Yedi anahtarın hiçbiri cebinde değildi artık. Ama kapıların nasıl açıldığını öğrendiğinden, artık onlara ihtiyaç duymuyordu.
----
-@omurga
-{kahraman:ilgi} yolculuğunda bir de pek anlatmadığı şaşkınlık vardı. İlk kapının aynasında annesinin yüzünü gördüğünde, kendisinin ne kadar sık kolay bir cevaba kaçtığını düşünmüştü. Geçen hafta köy çeşmesinin yanında iki komşu tartışırken hangisinin haklı olduğunu dinlemeden karar vermişti. Sonra da olayı eksik öğrendiği anlaşılmıştı. Şimdi o eski hatasını hatırlıyordu. Dürüst olmak, yalnız başkalarına yalan söylememek değildi. İnsan bazen kendini daha iyi göstermek için hatalarını saklardı. Bir kapının önünde ayakta durup “Bilmiyorum,” diyebilmek de dürüstlüğün bir parçasıydı.
-
-{yoldas:ilgi|bir arkadaşın} yünlerini toplarken başka bir sorun çıkmıştı. Deredeki su, sabahkinden daha hızlı akıyordu. {kahraman} dalı biraz daha uzattığında ayağı kaymış, dizinin üstüne düşmüştü. {yoldas:yalin|bir arkadaş} önce gülmek istemiş, sonra {kahraman:ilgi} canının acıdığını görünce elini uzatmıştı. “İstersen köyden yardım isteyelim,” demişti. {kahraman}, işi kendi başına başarmaya çalışmanın kahramanlık sayılacağını düşünüyordu. Fakat o anda yolun aşağısında duran çobanı çağırmak daha güvenliydi. Çoban uzun bir sırık getirdi; birlikte kalan demetleri sudan çıkardılar. {kahraman} sabrın inatla aynı şey olmadığını da böylece öğrendi. Bazen sabır, yeni bir yöntem bulacak kadar sakin kalmaktı.
----
-@omurga
-Sofradaki üçüncü kapıda yolcuların her birinin farklı ihtiyacı olduğu da ortaya çıkmıştı. Biri saatlerdir yürüdüğü için çok açtı; öteki küçük çocuğuna çorba götürmek istiyordu. {kahraman} herkesin tabağına aynı miktarı koymanın her zaman adalet anlamına gelmeyebileceğini düşündü. Çocuğa ayrılan payı biraz artırdılar, en aç olana da ekmek verdiler. Sofrayı kuran yaşlı kadın, “**Paylaşmak yalnız eşit bölmek değildir**; bazen ihtiyacı görmek gerekir,” dedi. {kahraman} ilk kez bir sözcüğün içinde birden çok anlam saklı olabileceğini hissetti. Köydeki su yolu açılınca suyu hangi tarlaya ne zaman verecekleri konusunda da benzer sorularla karşılaşacaklardı.
----
-@omurga
-Kuşların bulunduğu bahçeden geçerken, sesini en çok yükseltenin haklı olduğunu sanmasının başka bir nedeni vardı. Köy meydanında büyükler konuşurken çocukların soruları sık sık duyulmazdı. {kahraman} da bir süre sonra derdini anlatmak için bağırmaya başlamıştı. Oysa {yoldas:ilgi|bir arkadaşın} deredeki sakin sesi ona daha çok şey öğretmişti. Bahçe kapısının eşiğinde durup ince kuşa teşekkür etti: “Beni yanlış yola gönderdin ama önemli bir şeyi fark ettirdin.” Kuş başını eğdi, sanki bu sözden memnunmuş gibi kısa bir ötüş çıkardı. {kahraman}, her yanlış kararın bir ders taşıyabileceğini, yeter ki neden yanlış olduğunu anlamaya çalışmak gerektiğini düşündü.
-
-Tüccarın yüzüğünü reddettikten sonra cebindeki gerçek anahtarları saymıştı. Yedi anahtardan yalnızca beşi duruyordu. İki anahtarın ne zaman kaybolduğunu hatırlamıyordu. Önce telaşlandı; öteki kapıları açamazsa ne olacaktı? Sonra onların zaten kapıları açtıktan sonra kaybolduğunu fark etti. Belki de anahtarların amacı kapının ardında saklanmak değildi. Tüccarın onu kandırmak için “hiç kimse görmeyecek” demesi de aynı nedenle işe yaramamıştı: Yaptığı seçimi hatırlayan biri, kendi tanığıydı. {kahraman} bu düşünceyi aklında tutarak karanlık altıncı kapıya daha dikkatli girdi.
----
-@omurga
-Yarasanın bulunduğu odada ışık yakmak istemişti; elindeki çakmak taşıyla kıvılcım çıkarmanın iyi bir fikir olmadığını hemen anladı. Duvarlardaki kuru otlar tutuşabilirdi. Dışarıdaki gündüz ışığını içeri almak için kapıyı daha geniş açtı. Yarasanın etrafında koşmak yerine sakin kaldı ve alanı boş bıraktı. İpin halkası gevşediğinde hayvan kendiliğinden kanadını kurtardı. {kahraman} yarasaya dokunmadı; doğal yaşamda yabani hayvanlara yaklaşmanın risklerini bildiğinden yalnızca uzaktan yardımcı oldu. Cesaret kapısının onu korkusunu yenmeye değil, korkuyla birlikte sağlıklı düşünmeye çağırdığını böyle anladı.
----
-@omurga
-Su yolu çalışmaya başlayınca köyün önüne yeni bir soru çıktı. Suyu herkes aynı anda kullanmak istiyordu. Değirmenci ilk önce kendi değirmeninin dolmasını önerdi; tarlasındaki sebzeler kuruyan komşu ise suyun önce oraya gitmesini istedi. {kahraman} sesini yükseltmedi. Üçüncü kapıdaki sofrayı hatırlatarak bir sıra planı yapmalarını önerdi. Her tarla için gereken su miktarını bilen kişiler konuştu. Biri cetvel, biri eski su defteri getirdi. İlk hazırlanan çizelge herkesi memnun etmedi ama herkesin gerekçesi duyulduğunda yeni bir plan üzerinde anlaştılar. {kahraman} burada yalnız yedi kapının değil, köy yaşamının da sürekli açık tutulması gereken kapıları olduğunu gördü: Dinlemek, paylaşmak ve gerektiğinde fikrini değiştirmek.
-
-Bir akşam annesi, “Masalın en güzel yeri hangisiydi?” diye sordu. {kahraman}, kapıların taş duvarlarını, uçan kuşları veya parlayan yüzüğü anlatmadı. “{yoldas:ilgi|bir arkadaşın} yünleri sudan çıkınca güldüğü an,” dedi. “Çünkü o an bir kapıyı geçtiğimi bile bilmiyordum.” Annesi, “Demek ki iyi davranışın ödülünü bekleyerek yapmadın,” diye cevap verdi. {kahraman} düşündü. Belki de yedi kapının asıl amacı, insanın güzel sözleri ezberlemesi değil, gündelik hayatın küçük anlarında onlara karşılık bulmasıydı.
----
-@omurga
-{kahraman}, o günden sonra köyün çocuklarıyla her ay bir “söz günü” düzenledi. Herkes bir deyim seçiyor, sonra o deyimin günlük hayatta hangi davranışla anlam kazandığını anlatıyordu. Bir çocuk “etekleri zil çalmak” deyimini gerçekten eteklere zil takmak sanmıştı. Hep birlikte gülüştüler; ardından çok sevinmek anlamını öğrendiler. Masal bitmişti ama sözcüklerin açtığı kapılar kapanmıyordu.
----
-@omurga
-- Dil: Mecaz anlam, deyimler: “kulak vermek”, atasözleri: “Bir elin nesi var...” ve “Sabreden derviş...”. - Değerler: Dürüstlük, sabır, paylaşma, dinleme, ölçülülük, düşünülmüş cesaret, verilen sözü tutma. - Kaynak: {kahraman} karakteri ve anonim masal geleneğinden esinlenen yeni anlatı; yayımlanmış bir modern uyarlamanın kopyası değildir.
+“Dileğin ne?” diye sordu tüccar. Keloğlan un çuvalının ağzını açtı. “Köyde bu akşam ekmek pişsin.” Tüccar buğdayını getirdi, kardeşler çuvalları kaldırdı. Keloğlan yedi anahtarı sandığın içine bıraktı ve değirmenin taşına ilk avuç buğdayı döktü.

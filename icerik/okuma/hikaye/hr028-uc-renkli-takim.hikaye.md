@@ -32,19 +32,19 @@ etiketler:
     - {id: kavram_hr028, tur: concept, etiket: "Bireysel güçlü yönler ve takım", islev: application}
   kanit_duzeyi: C
   program_surumu: "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)"
-  denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
+  denetim: {ajan_a: pass, ajan_b: review_needed, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Cem hangi işi severdi?", secenekler: [{id: A, metin: "Bulmaca çözmeyi"}, {id: B, metin: "Top sürmeyi"}, {id: C, metin: "İp atlamayı"}], dogru: A, aciklama: "Cem bulmaca çözmeyi severdi."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Üç arkadaşın bulduğu doğru kart sırası hangisiydi?", secenekler: [{id: A, metin: "Mavi, kırmızı, sarı"}, {id: B, metin: "Sarı, mavi, kırmızı"}, {id: C, metin: "Kırmızı, sarı, mavi"}], dogru: C, aciklama: "Kırmızı maviden önce, sarı kırmızıdan sonra, mavi en sonda olmalıydı."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Cem, yoldaşın hangi yönünü önemli buldu?", secenekler: [{id: A, metin: "Sadece hızlı koşmasını"}, {id: B, metin: "Yalnız koşmak değil, arkadaşına yardım edebilmesini"}, {id: C, metin: "Topu çok sert atmasını"}], dogru: B, aciklama: "Yoldaş kartı görevliye teslim ederek başkasının oyununa da yardım etti."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen engel ne anlama gelir?", secenekler: [{id: A, metin: "Yolu kapatan ya da zorlaştıran şey"}, {id: B, metin: "Bir oyun kartı"}, {id: C, metin: "Bir top türü"}], dogru: A, aciklama: "Engel, geçilmesi zor olan bir şeydir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, dayanak: "{kahraman} ip atlamayı, {yoldas:yalin|bir arkadaş} top sürmeyi, Cem ise {kelime:hr028_bulmaca} çözmeyi seviyordu.", metin: "Cem hangi işi seviyordu?", secenekler: [{id: A, metin: "İp atlayıp zıplamayı"}, {id: B, metin: "Bulmaca çözmeyi"}, {id: C, metin: "Top sürmeyi"}, {id: D, metin: "Resim yapmayı"}], dogru: B, aciklama: "Cem bulmaca çözmeyi seviyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, dayanak: "Kırmızı, maviden önce; sarı, kırmızıdan sonra; mavi ise en sonda.", metin: "Notun söylediğine göre kartlar hangi sırayla dizilmeliydi?", secenekler: [{id: A, metin: "Mavi, kırmızı, sarı"}, {id: B, metin: "Sarı, mavi, kırmızı"}, {id: C, metin: "Kırmızı, sarı, mavi"}, {id: D, metin: "Kırmızı, mavi, sarı"}], dogru: C, aciklama: "Kırmızı maviden önce, sarı kırmızıdan sonra, mavi en sonda olmalıydı."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, dayanak: "{yoldas:yalin|bir arkadaş} kartı alıp görevliye teslim etti.", metin: "Cem, arkadaşının en hızlı olduğu şeyin yalnız koşmak olmadığını neden düşündü?", secenekler: [{id: A, metin: "Düşen kartı geri verdiği için"}, {id: B, metin: "Herkesten çok hızlı koştuğu için"}, {id: C, metin: "Topu sert attığı için"}, {id: D, metin: "Kuralları ezberlediği için"}], dogru: A, aciklama: "Arkadaşı başka takımın düşen kartını görevliye teslim etti; Cem de yalnız hızın değil yardımın da değerli olduğunu gördü."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, dayanak: "İlk durakta ip atlayarak bir {kelime:hr028_engel} aşılacak, ikinci durakta top hedefe atılacak, son durakta renkli kartların {kelime:hr028_sifre} çözülecekti.", metin: "“İp atlayarak bir engel aşılacak” cümlesinde engel ne demektir?", secenekler: [{id: A, metin: "Oyunun başlama işareti"}, {id: B, metin: "Takımın aldığı kurdele"}, {id: C, metin: "Arkadaşa verilen renkli kart"}, {id: D, metin: "Geçmeyi zorlaştıran şey"}], dogru: D, aciklama: "Engel, geçilmesi zor olan şeydir."}
 ---
 @omurga
 Okul bahçesinde “Üç Renkli Oyun” yapılacaktı. Takımlar üç kişiydi. {kahraman} ip atlamayı, {yoldas:yalin|bir arkadaş} top sürmeyi, Cem ise {kelime:hr028_bulmaca} çözmeyi seviyordu. Üçü aynı takıma seçilince {yoldas:yalin|bir arkadaş} homurdandı: “Biz hiç aynı oyunu sevmiyoruz.”
 
-Öğretmenleri kuralları açıkladı. İlk durakta ip {kelime:hr028_engel} geçilecek, ikinci durakta top hedefe atılacak, son durakta renkli kartların {kelime:hr028_sifre} çözülecekti. Takımın başarısı için üç görev de gerekliydi.
+Öğretmenleri kuralları açıkladı. İlk durakta ip atlayarak bir {kelime:hr028_engel} aşılacak, ikinci durakta top hedefe atılacak, son durakta renkli kartların {kelime:hr028_sifre} çözülecekti. Takımın başarısı için üç görev de gerekliydi.
 
-Başlama işareti verilince {yoldas:yalin|bir arkadaş} öne fırladı. Fakat ilk ip engelinde takıldı. {kahraman} ona yavaşça gösterdi: “Önce sağ ayak, sonra sol. Acele etme.” {yoldas:yalin|bir arkadaş} denedi ve geçti.
+Başlama işareti verilince {yoldas:yalin|bir arkadaş} öne fırladı. Fakat ilk durakta ipe takıldı ve yere oturdu. {kahraman} ona yavaşça gösterdi: “Önce sağ ayak, sonra sol. Acele etme.” {yoldas:yalin|bir arkadaş} denedi ve geçti.
 ---
 @omurga
 Top durağında {kahraman} topu iki kez kaçırdı. {yoldas:yalin|bir arkadaş} kızmak üzereydi, sonra ilk durakta aldığı yardımı hatırladı. “Topu sert değil, kontrollü gönder,” dedi. {kahraman} bu kez hedefi buldu. Cem alkışladı.
@@ -59,13 +59,8 @@ Tam son kartı yerleştirirken bir rüzgâr çıktı ve mavi kart uçtu. {yoldas
 Yarışın sonlarına doğru başka bir takımın kartlarından biri de yere düştü. {yoldas:yalin|bir arkadaş} onu görünce bir an tereddüt etti. Kartı geri vermek için durursa kendi takımları daha da yavaşlayacaktı. {kahraman} gözleriyle ne yapacağını sordu. {yoldas:yalin|bir arkadaş} kartı alıp görevliye teslim etti. “Onlar da oyunu bitirebilsin,” dedi. Cem hafifçe gülümsedi; {yoldas:ilgi|bir arkadaşın} en hızlı olduğu şeyin yalnız koşmak olmadığını düşündü.
 ---
 @omurga
-Son kartları dizdikten sonra üç arkadaş ellerini üst üste koydu. {kahraman} ip atlamayı bilmeyenlere yeniden göstermeyi, {yoldas:yalin|bir arkadaş} topu korkmadan deneyenlere cesaret vermeyi, Cem ise zor bilmecelerin ipuçlarını paylaşmayı teklif etti. Kimse ötekinin bütün işlerini yapmak zorunda değildi. **Herkes kendi güçlü yanını sunabilirdi**. {isaret:kalp}
+Son kartları dizdikten sonra üç arkadaş ellerini üst üste koydu. {kahraman} ip atlamayı bilmeyenlere yeniden göstermeyi, {yoldas:yalin|bir arkadaş} topu korkmadan deneyenlere cesaret vermeyi, Cem ise zor bilmecelerin ipuçlarını paylaşmayı teklif etti. {isaret:kalp}
 
-Sonuçlar açıklandığında birinci olamadılar.
+Sonuçlar açıklandığında birinci olamadılar, üçüncü oldular. Görevli üç arkadaşa birer kurdele verdi: kırmızı, mavi ve sarı. {yoldas:yalin|bir arkadaş} kurdelesini boynuna takarken biraz üzgündü. Cem üç kurdeleyi yan yana dizdi. “Tıpkı kart sırası gibi,” dedi. {kahraman} sarı kurdeleyi kırmızının yanına koydu.
 
-Sonuçlar açıklandığında birinci olamadılar. Üçüncülük kurdelesini alırken {yoldas:yalin|bir arkadaş} üzülmüştü. Cem ise her arkadaşının bir görevde takımı ilerlettiğini söyledi. {kahraman} üç kurdeleyi yan yana tuttu: “Farklı renkler birlikte daha güzel görünmüyor mu?”
-
-Ertesi gün {yoldas:yalin|bir arkadaş} bir öneriyle geldi: “Bu kez herkesin sevdiği bir oyunu birlikte deneyelim.” Önce ip atladılar, sonra top oynadılar, en sonda Cem'in bilmecelerini çözdüler. Üçü de bütün oyunları aynı derecede sevmedi. Yine de artık farklı olmanın birlikte eğlenmelerine engel olmadığını biliyorlardı.
----
-@omurga
-Dil hedefi: aynı–farklı, karşılaştırma, sıralama; Kavram/değer: takım çalışması, bireysel güçlü yönler, kurallara saygı. İkon önerileri: üç renk, top, el. Okuma sonrası: Her çocuk hangi görevde takımı ilerletti? Birinci olmamaları neyi değiştirdi?
+Ertesi gün {yoldas:yalin|bir arkadaş} bir öneriyle geldi: “Bu kez herkesin sevdiği bir oyunu birlikte deneyelim.” Önce ip atladılar, sonra top oynadılar, en sonda Cem'in bilmecelerini çözdüler. {kahraman} her oyunun başında kurdelesini koluna bağladı.

@@ -3,6 +3,59 @@
 Her girişte: tarih | sınıf | konu | öğrenilen | kanıt | durum (ONAYLI / ÖNERİ / KARAR BEKLİYOR).
 Kural değişikliği yalnızca kullanıcı onayıyla ONAYLI olur. Ajan ve model önerileri ÖNERİ olarak girer.
 
+## 2026-11-10 · kör denetim-3 (20 hikâye, 16 rapor) · kararlar hikâye `denetim:` alanına işlendi · DB'ye yazılmadı
+- **Kanıt:** `docs/okuma-entegrasyon/denetim/2026-11-09-kor-denetim-3/ozet.md`. Ajan A pass 9, Ajan B pass 1 (HR-024, iki ajan pass). HR-052 Ajan B fail. Kritik yok.
+- **Yapılan:** 20 dosyada `denetim: {ajan_a, ajan_b, insan: pending}` alanları raporlara göre güncellendi; `durum` ve `published`/`editor_approved` değişmedi.
+- **Öğrenilen:** Panel (Hikâye Atölyesi) karneyi sunucudaki RPC'lerden okuyor; sunucuya yazmak yönetici oturumu ve ayrı onay gerektirir. İçe aktarma (`okuma_paket_ice_aktar`) ile yansıtılır.
+- **Açık:** HR-052 düzeltmesi; 18 review_needed hikâye için tur seçimi; HR-024 insan incelemesi.
+
+## 2026-11-09 · kör denetim tamamlandı (36 hikâye, 12 ajan) · 0 pass (iki ajan) · düzeltme ve karar bekliyor
+- **Kanıt:** `docs/okuma-entegrasyon/denetim/2026-11-09-kor-denetim/ozet.md` (karar tablosu ve sistematik bulgular); 72 ajan raporu yerine 36 hikâye × 2 ajan yerine 12 ajan (her ajan 6 hikâye), hepsi kör.
+- **Sonuç:** Ajan A'da 17 pass; Ajan B hiçbir hikâyeye pass vermedi; 20 hikâye Ajan B'de fail. Kritik bulgu yok.
+- **Öğrenilen (önemli):** Uzunluk ve vaaz bulguları HR-049–062 kümesinde yoğunlaşıyor (1870–3030 kelime, 5. sınıf editoryal ~650). HR-057–062'nin soru nesnelerinde `dayanak` alanı yok; yalnız `dayanak_sayfa` var. Bu, birebir dayanak kontrolünü engelliyor ve ayrı bir yapı sorunu.
+- **Öğrenilen:** Seçenek dengeleme aracı (`okuma-secenek-dengele.mjs --uygula`) bir hikâyede (HR-126) sayfa ayracını cümleye yapıştırdı. Araç çıktısı için ayraç satırı kontrolü eklenmeli.
+- **Öğrenilen:** Ajanların "dayanak alanı yok" notu doğru çıktı; ama bu bulgu sayıya dahil edilmedi. Yapısal eksikler artık sayıma dahil edilmeli.
+- **ÖNERİ (onaysız):** Vaaz ve uzunluk düzeltmesi ile HR-057–062 dayanak yapısı için editör kararı; sonra yalnızca değişen hikâyelerde yeniden kör denetim.
+
+## 2026-11-09 · düzeltme dördüncü tur (HR-123, 125, 126, 127, 128, 132) + temizlenen 30 hikâyenin kontrolü · DÜZELTME UYGULANDI, KÖR DENETİM YAPILMADI
+- **Kanıt:** Düzeltilen dosyalar `icerik/okuma/hikaye/hr123…`, `hr125…`, `hr126…`, `hr127…`, `hr128…`, `hr132…`. Girdi raporları `docs/okuma-entegrasyon/denetim/2026-11-08-hr121-132-yeniden-3/`. `tools/okuma-hikaye-denetim.mjs --ayrinti`: 104 hikâye, 432 soru, sorusuz yok, karşılıksız ad yok. Dayanak cümleleri 6 hikâyede birebir metinde (0 kaçırma).
+- **Temizlik kontrolü (30 hikâye):** Silinen bloklar `@omurga`-etiketli editör notlarıydı; kalan `@omurga` satırları bölüm ayıracıdır. HR-015 sonu okundu, hikâye yapısı bozulmamış. Frontmatter `program_surumu` ve `Not:` kaynak beyanları duruyor.
+- **Yapılan (6 hikâye):** HR-123: s4 haberi "planlandı" yerine tamamlanmış olaya çevrildi (ajan A yüksek bulgu); çeldiriciler metinle ilgisiz nesnelerden çıkarıldı; s2 doğru şık en uzun olmaktan çıkarıldı; s2 dayanağı metinle birebir. HR-125: "yankı" → "tını" (hedef id `tini_hr125`); s3 çeldiricileri metinde geçmeyen eylemlerle değişti, s3 çıkarım oldu; "Acele karar verdik" öğüdü çıkarıldı. HR-126: s4 "güvenle" amacı metinde yoktu, kök ve doğru şık metindeki uzaklık bilgisine indirildi; eğim cümlesi yatay mesafe hatasından çıkarıldı; `yetiskin_uygun: false` eklendi; tanıtım metne hizalandı. HR-127: 1969 yılı karşılaştırma bölümünden önce açığa çıkmıyor; s1 doğru şık en uzun değil; `yetiskin_uygun: false` eklendi. HR-128: "sorumluluk" hedefi son blokta sahneye girdi; `yetiskin_uygun: false` eklendi; s2 açıklaması metne bağlandı; s4 kökü şıkla çakışmıyor. HR-132: s2 açıklaması metne bağlandı; s4 kökü dayanakla hizalandı; s3 sözcük bağlamı sorusu (telafi) eklendi, s5 çıkarıldı.
+- **Öğrenilen:** Ajanların "dayanak birebir değil" ve "kök dayanağa uymuyor" bulguları, dayanak cümlesini metinle yeniden karşılaştıran küçük bir kontrolle doğrulanabiliyor. Bu kontrol her düzeltmeden sonra yapılmalı.
+- **Öğrenilen:** Düzeltme metni "yayın kanıtı" değildir. Bu turda iki bağımsız (kör) denetim yapılmadı; ana oturum düzeltmeyi yaptı ve kendi kendini kontrol etti. Yayın kararı için ayrı kör denetim gerekiyor.
+- **Açık (bilerek bırakıldı):** `tur: bilim` ile kurgusal tren hikâyeleri (HR-128, HR-132) uyuşmuyor; HR-126 metni ~340–360 kelime (3. sınıf pilot ölçütü 330); HR-125 ritim sorularında bir çıkarım sorusu hâlâ hatırlama ağırlıklı; HR-128 s5 doğru şık dayanakla neredeyse aynı. Tüm hikâyelerde kazanım kodu `source_pending`, TDK sözlük onayı `pending`.
+- **ÖNERİ (onaysız):** 6 hikâye ve 30 temizlenmiş hikâye için iki bağımsız kör denetim (Ajan A/B) ayrı bir turda yapılsın. Yayın kapısı kullanıcı onayına kalsın.
+
+## 2026-11-08 · DEVİR · hikâye denetimi (HR-015–132) · başka sohbette buradan devam
+- **Durum:** Hiçbir hikâye yayın adayı değil (`published=false`, `editor_approved=false` dokunulmadı).
+  - HR-015–114 (92): ilk A/B tam turu tamam (184 rapor). Ajan A pass 71; Ajan B pass 0; fail 3 (HR-060/061/062 editör notu kritik bulgusu — notlar temizlendi, yeniden denetim bekliyor). Özet: `docs/okuma-entegrasyon/denetim/2026-11-08-hr015-114/ozet.md`.
+  - Editör notu temizliği: 30 hikâye (HR-015–062), yalnız etiketli editör blokları silindi, git diff'te ekleme 0. `Not:` kaynak beyanları korundu.
+  - HR-121–132 (12): HR-121, 122, 124, 129, 130, 131 iki ajandan pass. Açık 6: HR-123, 125, 126, 127, 128, 132. Üç düzeltme turu yapıldı; üçüncü turda açık sayı 6'da kaldı. Özet: `docs/okuma-entegrasyon/denetim/2026-11-08-hr121-132-yeniden-3/ozet.md`.
+- **Yeni sohbette ilk iş:** Kullanıcıdan iki karar al: (1) temizlenen 30 hikâye yeniden denetlensin mi (öneri: evet); (2) açık 6 için dördüncü tur mu, editör düzeltmesi mi. Ayrıca "Not:" kaynak beyanlarının silinip silinmeyeceği.
+- **Açık kalan teknik:** Sınıf kelime/cümle bandı ölçütü (pedagoji paketi `docs/pedagoji-paketi/skills/hupo-s*-hikaye/SKILL.md`) denetçilere tam verilmedi; uzunluk bulguları gözlem. TDK sözlük onayı (`sozluk_tdk pending`) ve kazanım kodları (`source_pending`) doğrulanmadı.
+- **Süreç notu:** Ajan bazen raporu dosyaya yazmıyor (HR-121–124 yeniden-2 örneği). Prompt'a "dosyaya yazmak zorunlu" eklendi ve işe yaradı. Oturum limiti (429) bir turu yarıda kesti; eksik raporlar diskten sayılıp yeniden başlatıldı. Denetim sayımı her zaman diskten yapılmalı.
+- **Düzeltme:** Önceki özetteki ajan A sayısı 8/4 yazılmıştı; doğrusu 9/3.
+
+## 2026-11-08 · editör notu temizliği + üçüncü düzeltme turu · 6 açık hikâye hâlâ açık
+- **Kanıt:** `docs/okuma-entegrasyon/denetim/2026-11-08-hr121-132-yeniden-3/ozet.md`; temizlik 30 hikâyede (HR-015–062), yalnız etiketli editör blokları silindi, "Not:" kaynak beyanları korundu. git numstat: temizlenen 30 dosyada ekleme 0.
+- **Öğrenilen:** Editör notu kalıbı tek satır değil; bazı hikâyelerde operatör talimatı ve "Durum özeti" sayfaları da vardı (HR-032). Temizlik öncesi kuru çalıştırma ile silinecek satırlar tek tek gözden geçirildi.
+- **Öğrenilen:** Üçüncü tur sonrası 6 açık hikâye değişmedi (6 → 6). Son turlar bulguları yer değiştirdi; dördüncü düzeltme turu verimsiz görünüyor. Kalan iş editör kararı gerektiriyor.
+- **ÖNERİ (onaysız):** Temizlenen 30 hikâye yeniden denetlensin (B'nin fail/review sebebinin bir kısmı artık çözüldü). Yayın için kalan vaaz ve soru bulguları editöre bırakılsın.
+
+## 2026-11-08 · hikâye A/B denetimi, tam tur (HR-015–114 + HR-121–132) · 0 yayın adayı · insan kararı bekliyor
+- **Kanıt:** `docs/okuma-entegrasyon/denetim/2026-11-08-hr121-132-yeniden-2/ozet.md` (12 hikâye: 6 iki ajan pass, 6 açık); `docs/okuma-entegrasyon/denetim/2026-11-08-hr015-114/ozet.md` (92 hikâye, 184 rapor: pass 71, review 110, fail 3).
+- **Öğrenilen (önemli):** Ajan B, 92 hikâyenin hiçbirinde pass vermedi. Ana sebep vaaz ve sondaki editör notu bloğu ("Kavramlar / Dil / Güvenlik"). Bu blok bazı hikâyelerde kritik (HR-060, 061, 062), çoğunda yüksek. Yayın öncesi toplu temizlik gerekiyor.
+- **Öğrenilen (süreç):** Bir ajan (Ajan A, HR-121–124 yeniden-2) raporu dosyaya yazmadı, metni mesajda verdi; ana oturum dosyaları mesajdan yazdı. Denetim promptunda "dosyaya yazmak zorunlu" kuralı eklendi ve sonraki turlarda işe yaradı. Bir tur oturum limiti (429) yüzünden yarıda kaldı; eksik raporlar diskten sayılıp yeniden başlatıldı.
+- **Düzeltme:** Önceki özet ajan A sayısını 8/4 yazmıştı; doğrusu 9/3 (düzeltildi).
+- **ÖNERİ (onaysız):** Editör notu bloğu temizliği tüm hikâyelerde toplu yapılsın; sonra yalnız değişen hikâyeler yeniden denetlensin. Açık 6 hikâye için üçüncü düzeltme turu kullanıcı kararı.
+
+## 2026-11-08 · 1.–3. sınıf hikâye (HR-121–132) · A/B denetim turu · önceki tur (özet)
+- **Kanıt:** `docs/okuma-entegrasyon/denetim/2026-11-08-hr121-132/` (PLAN.md, ozet.md, 24 ajan raporu). Mekanik kontrol `tools/okuma-hikaye-denetim.mjs --ayrinti`: sorusuz hikâye yok, karşılıksız ad yok.
+- **Öğrenilen (önemli):** HR-121–132 için A/B raporu yoktu; 2026-10-25 grup denetimleri tek denetçili ve farklı biçimdi, A/B yerine geçmez. Hikâye mtime'ı 10-25/10-27'de değişmiş; HR-015–114 A/B raporları eski metne ait. Kapsam tespitinde mtime değil rapor varlığı ve rapor tarihi karşılaştırıldı.
+- **Sonuç:** Ajan A 9 pass / 3 review_needed; Ajan B 0 pass / 12 review_needed (sayım düzeltildi: önceki yazım 8/4 idi); kritik ve fail yok. Yüksek bulgular: HR-125 (ritim çizelgesi çelişkisi, A ve B), HR-128 ve HR-131 (sonda ders, B).
+- **Öğrenilen:** Vaaz tonu (sonda "fark etti/öğrendi" ve ahlak repliği) bu turda en sık tekrar eden B bulgusu; yazım aşamasında kaldırılmalı.
+- **ÖNERİ (onaysız):** HR-015–114 için 92 hikâyenin A/B yeniden denetimi ayrı tur olarak planlansın (kullanıcı kararı).
+
 ## 2026-10-27 · 6. sınıf Matematik MAT.6.1.2 · 6 soru üretildi, otomatik kapılar ve kör çözüm geçti (K-0154) · insan denetimi bekliyor
 - **Kanıt:** `docs/soru-uretim/pilot/uretim_mat612_gor070_2026-10-27.json`, `kapi_sonuc_mat612_gor070_2026-10-27.md`; resmî DÖP PDF'i 67. sayfa metin katmanı.
 - **Öğrenilen (önemli):** Kazanım JSON'undaki ana cümle PDF satır sonu tire bölünmesinden kırpıktı ("çıka-"). Betik bunu "kazanım metni kaynakla farklı" diye yakaladı. Düzeltme için önce resmî PDF metni çıkarıldı ve karşılaştırıldı; düzeltme kanıtla yapıldı. Tahmine dayalı düzeltme yapılmadı.

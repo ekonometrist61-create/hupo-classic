@@ -81,5 +81,3 @@ Yemekte elmalardan birini paylaştılar. Hoca, {yoldas:yonelme|bir arkadaşa} bi
 “Üç,” dedi {yoldas:yalin|bir arkadaş}. “Çünkü Hasan amca oturmadı.”
 
 Hoca gülümsedi. “Aferin! Görmediğimiz birini sayarken önce ne olduğunu anlamak gerekir.” {yoldas:yalin|bir arkadaş} artık sofradaki boş yerlere bakıp hemen korkunç bir hikâye düşünmemeye karar verdi.
-
-Dil hedefi: gerçek–mecaz, soru cümlesi, çıkarım; Kavram/değer: misafirperverlik, iletişim, kişisel sınırlara saygı. İkon önerileri: tabak, sofra, kapı. Okuma sonrası: Boş tabağın gerçek nedeni neydi? Hoca misafire neden ısrar etmedi?

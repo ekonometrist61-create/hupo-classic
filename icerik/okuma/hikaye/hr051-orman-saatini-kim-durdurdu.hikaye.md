@@ -13,7 +13,7 @@ deger_anahtarlari: [D6, D9]
 yetiskin_uygun: false
 tanitim: "Orman saati sonbaharda takıldı ama çiçekler açıyor. Saati kim durdurdu?"
 durum: taslak
-uretim_kaynak: llm_taslak
+uretim_kaynak: chatgpt_taslak
 tarih: "2026-10-22"
 etiketler:
   ana_sinif: 5
@@ -29,113 +29,49 @@ etiketler:
     - {id: goc_hr051, tur: lexeme, etiket: "göç", yuva: hr051_goc, islev: first_hint}
     - {id: nem_hr051, tur: lexeme, etiket: "nem", yuva: hr051_nem, islev: application}
     - {id: mecaz_hr051, tur: lexeme, etiket: "mecaz", yuva: hr051_mecaz, islev: application}
-    - {id: deyim_hr051, tur: idiom, etiket: "Kulaktan kulağa haber yaymak", yuva: hr051_kulaktan_kulaga, islev: application}
+    - {id: deyim_hr051, tur: idiom, etiket: "Kulaktan kulağa yayılmak", yuva: hr051_kulaktan_kulaga, islev: application}
     - {id: kavram_hr051, tur: concept, etiket: "Gözlem ile çıkarım ayrımı", islev: application}
   kanit_duzeyi: C
   program_surumu: "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)"
-  denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
+  denetim: {ajan_a: pass, ajan_b: review_needed, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Bir sabah orman saatinin akrebi nerede takılı kaldı?", secenekler: [{id: A, metin: "İlkbaharda"}, {id: B, metin: "Yazda"}, {id: C, metin: "Sonbaharda"}, {id: D, metin: "Kışta"}], dogru: C, aciklama: "Saatin akrebi sonbaharda takılı kalmıştı."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Yuva sayısı neye bağlı olarak değişebilir?", secenekler: [{id: A, metin: "Yalnızca saatin durmasına bağlı"}, {id: B, metin: "Havaya, besine ve güvenli alana"}, {id: C, metin: "Yalnızca sincapların sayısına bağlı"}, {id: D, metin: "Kuşların renklerine ve ötüşüne bağlı"}], dogru: B, aciklama: "Mavi'ye göre yuva sayısı yalnızca hava ile değil, besin ve güvenli alanla da ilgiliydi."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 7, metin: "Usta Zaman'ın sözüne göre saat ve orman arasındaki fark nedir?", secenekler: [{id: A, metin: "Saat mevsimi tek başına belirler, orman yalnızca süs olur"}, {id: B, metin: "Orman zamanı sayar, saat de canlıları birbirine bağlar"}, {id: C, metin: "İkisi de zamanı ölçer ve aynı işi görür"}, {id: D, metin: "Saat zamanı sayar, orman canlıların ilişkilerini yaşar"}], dogru: D, aciklama: "Saat zamanı ölçer; ormanda ise canlıların birbirine bağlı ilişkileri sürer."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 7, metin: "Metinde geçen mecaz ne demektir?", secenekler: [{id: A, metin: "Bir olayın bilimsel yöntemle ölçülüp kaydedilmesi ve analizi"}, {id: B, metin: "Yapraklarını her kış döken büyük bir orman ağacı türü"}, {id: C, metin: "Bir şeyi başka bir şeyle anlamlı biçimde ilişkilendiren söz sanatı"}, {id: D, metin: "Bir bölgede uzun süreli hava koşullarının kaydı ve analizi"}], dogru: C, aciklama: "Mecaz, bir sözcüğü gerçek anlamından farklı ama ilişkili bir anlamda kullanmaktır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, dayanak: "Orman saatinin uzun kolu sonbahar yaprağında durmuştu.", metin: "Orman saatinin kolu hangi mevsimde durmuştur?", secenekler: [{id: A, metin: "İlkbaharda"}, {id: B, metin: "Sonbaharda"}, {id: C, metin: "Yaz başında"}, {id: D, metin: "Kış sonunda"}], dogru: B, aciklama: "Saatin kolu sonbahar yaprağındadır."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, dayanak: "Kuşlar, uçuş kararını saatin koluna değil rüzgâra ve yiyeceğe göre veriyordu.", metin: "Kuşların uçuşa hazırlanma kararı neye dayanıyordu?", secenekler: [{id: A, metin: "Saatin koluna ve çan sesine"}, {id: B, metin: "Kirpinin ve tavşanın uyarısına"}, {id: C, metin: "Dere kenarında açan çiçeklere"}, {id: D, metin: "Rüzgâra ve yiyecek miktarına"}], dogru: D, aciklama: "Kuşlar kararlarını saate değil, rüzgâra ve yiyeceğe göre verdi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, dayanak: "{kelime:hr051_nem} yüzünden şişen tahta parçası dişlinin arasına sıkışmıştı.", metin: "İnceleme sonunda hangi durum saatin kolunu sıkıştırmıştır?", secenekler: [{id: A, metin: "Nemlenen tahta parçası"}, {id: B, metin: "Kırılan cam bardak"}, {id: C, metin: "Yuvarlanan küçük çakıl taşı"}, {id: D, metin: "Kopan çiçek yaprağı"}], dogru: A, aciklama: "Nemle şişen tahta dişliyi sıkıştırmıştır."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, dayanak: "Baykuş, “orman uyandı” sözünün {kelime:hr051_mecaz} olduğunu söyledi.", metin: "“Mecaz” sözcüğü bu olayda hangi kullanımı anlatır?", secenekler: [{id: A, metin: "Kesin sayılarla yapılan bir ölçüm"}, {id: B, metin: "Kapıya asılan gizli işaret"}, {id: C, metin: "Gerçek anlamının dışında kullanım"}, {id: D, metin: "Resmî yazıyla yapılan sözleşme"}], dogru: C, aciklama: "“Orman uyandı” sözü gerçek anlamının dışında, benzetmeli kullanılmıştır."}
 deyim_cumleleri:
-  hr051_kulaktan_kulaga: "{yoldas:yalin|bir arkadaş} bunu görür görmez kulaktan kulağa haber yaydı: “Ormanın mevsimleri bozuldu!”"
+  hr051_kulaktan_kulaga: "Mevsimlerin karıştığı haberi kulaktan kulağa yayıldı."
 ---
 @omurga
-Orman okulunun duvarında dört kanatlı, kocaman bir saat asılıydı. Saatin kolları sayıların değil, ilkbahar çiçeklerinin, yaz güneşinin, sonbahar yapraklarının ve kış karının üzerinde dolaşıyordu. Ormandaki hayvanlar bu saati bir takvim gibi kullanmazdı; daha çok büyüklerin anlattığı bir masaldan kalma hatıra olarak severlerdi.
+Orman saatinin uzun kolu sonbahar yaprağında durmuştu. Saat, büyük meşenin gövdesine asılmış yuvarlak bir tahta levhaydı. Üzerinde sayıların yerine dört mevsimin simgeleri bulunuyordu. Kırlangıçlar güneye doğru uçuş hazırlığı yaparken dere kenarında beyaz çiçekler açmıştı. Sincap Mavi, “Biri mevsimleri birbirine karıştırdı,” diye bağırdı. Sözü duyan tavşan komşusuna, tavşan da kirpiye seslendi. [[deyim:hr051_kulaktan_kulaga]]
 
-Bir sabah saatin akrebi sonbaharda takılı kaldı. Oysa dere kıyısındaki çiçekler yeni açmıştı.[[deyim:hr051_kulaktan_kulaga]] {isaret:orman}
+{kahraman}, orman okulunun avlusuna vardığında herkes saatin altında toplanmıştı. Bir kirpi saatin yeniden dönmesini bekliyor, küçük bir serçe çiçeklerin gerçekten açıp açmadığını kontrol ediyordu. Baykuş Usta kulaklarını dikip herkesi dinledi. Haber çoktan en uzak kovuğa ulaşmıştı.
 
-Beşinci sınıftan {kahraman}, babasıyla birlikte yürüyüş yapmak için ormana geldiğinde herkesin saat hakkında konuştuğunu duydu. Orman girişindeki rehber panosunda gerçekten de eski bir saat resmi vardı; bu, yıllar önce bir sanatçının yaptığı ahşap bir düzeneğin simgesiydi. {kahraman}, sincapların konuştuğunu duymadığı hâlde hayalinde onların bir araya gelip tartıştığını düşündü. Babası, “Bir doğa hikâyesi yazmak ister misin?” diye sordu. {kahraman} defterine şu başlığı attı: Orman Saatini Kim Durdurdu?
+Sincap, çiçeklerin görülmesini bir işaret sayıyordu. “Saat sonbaharda kaldı diye bütün ağaçlar şaşırdı,” dedi. {kahraman} yere eğilip çiçeğin sapını inceledi. Sap sağlamdı; yakınında ılık suyun aktığı küçük bir kaynak vardı. Baykuş, uçan kuşların {kelime:hr051_goc} hazırlığını işaret etti. “Aynı anda iki farklı olay görüyoruz,” dedi. {kahraman}, saatle kaynak arasındaki uzaklığı ölçmek için avludaki ipi aldı.
 ---
 @omurga
-Hikâyede {yoldas:yalin|bir arkadaş} ilk olarak kirpi Pati'ye koştu. Pati toprağın {kelime:hr051_nem}ini kontrol ediyordu. “Kış yeniden gelecekmiş,” dedi {yoldas:yalin|bir arkadaş}. “Saat durmuş.”
+Ormanın en yaşlı kaplumbağası, saatin altındaki taşta duran bir sepet gösterdi. Sepetin içinde önceki mevsimlerden toplanmış yaprak örnekleri vardı. Sarı bir yaprak neredeyse kâğıt gibi kurumuştu; yeşil olanı ise hâlâ esnekti. {kahraman} bunları saatin çevresindeki ağaçların yapraklarıyla karşılaştırdı. Kırlangıçlar yükselirken uçuş yönüne savrulan yapraklar da rüzgârın değiştiğini gösteriyordu.
 
-Pati başını kaldırdı. “Saat bir işarettir, mevsimin kendisi değil. Toprak hâlâ ılık, çiçekler açıyor. Acele karar verme.”
+Kuşlar, uçuş kararını saatin koluna değil rüzgâra ve yiyeceğe göre veriyordu. Sürünün öncüsü, bu sabah dere boyunca daha az böcek gördüklerini söyledi. Kırlangıçlar dallardaki yaprakların sararmasına da bakmıştı. {kahraman}, duyduklarını küçük defterine sırayla yazdı. Saatin durmuş olması başka, kuşların uçmaya hazırlanması başka olaydı.
 
-{yoldas:yalin|bir arkadaş} ikna olmadı. Saatin altındaki yaprak motifinin üzerine yağmur damlaları birikmişti. “Baksana, yapraklar da dökülüyor,” dedi. Pati ona rüzgârın kuru yaprakları bütün yıl yere indirebileceğini anlattı. Bir işaretin tek başına mevsimi belirlemeyeceğini vurguladı. {yoldas:yalin|bir arkadaş} ise dört kanatlı saatin yıllardır yanlış göstermediğine inanıyordu.
+Derenin kenarındaki çiçekler saatten uzaktaydı. Toprağa yakın bir yerde sıcak su kabarcıkları yükseliyor, suyun üstünde ince bir buğu oluşuyordu. Tavşan, “Demek bütün orman ısındı,” dedi. {kahraman}, kaynağın hemen ilerisindeki toprağa dokundu; orası soğuktu. İki noktaya da birer tahta çubuk diktiler. Kaynağın yanındaki çiçekler açıktı, uzak çubuğun dibinde ise yalnız tomurcuk bulunuyordu.
 
-İkili ormandaki kuşlara sordu. Serçe Mavi, aynı dalda geçen yıldan daha az yuva gördüğünü söyledi. “Demek kuşlar kışı bekliyor,” dedi {yoldas:yalin|bir arkadaş}. Mavi başını iki yana salladı. “Bazı arkadaşlarımız başka yerlere {kelime:hr051_goc} ediyor, bazıları burada kalıyor. Her kuşun davranışı aynı değil. Üstelik yuva sayısı hava kadar besin ve güvenli alanla da ilgili.”
+Baykuş, gözlemleri yazdığı kâğıdı saat levhasına astı. Sincap kâğıdı okurken gözlerini büyüttü. “Çiçekler yalnız sıcak suyun yanında açmış!” dedi. {kahraman} sırtını meşe gövdesine yasladı; saatten hafif bir gıcırtı geliyordu. Sesi duyan kirpi, kulaklarını gövdeye yaklaştırdı. Gıcırtı her rüzgâr esişinde tekrarlanıyor, sonra birden kesiliyordu.
 ---
 @omurga
-Yol kenarındaki çiçekler bazen erken açmış, bazen geç kalmıştı. Arılar hava soğukken daha az dışarı çıkıyor, güneşli saatlerde çiçeklerin çevresinde daha çok görünüyordu. Orman saati ise bütün bu değişiklikleri tek bir hareketle anlatmaya çalışıyordu. {kahraman}, hikâyesinde saatin neden durduğunu öğrenmek için hayvanları bir araştırma ekibine dönüştürdü.
+Kirpi, saatin altındaki küçük tahta kapağı gösterdi. Kapağın içinden dişlilerin bir bölümü görünüyordu. Baykuş, saat sahibinin bıraktığı anahtarı getirip kapağı açtı. {kelime:hr051_nem} yüzünden şişen tahta parçası dişlinin arasına sıkışmıştı. Parçanın üstünde ince su damlacıkları vardı. {kahraman}, nem sözcüğünü not defterine yazarken Baykuş, yağıştan sonra ahşabın su alıp genişleyebileceğini anlattı.
 
-İlk görevleri çevreyi gözlemlemekti. Pati toprağın nemini, Mavi kuşların davranışlarını, {yoldas:yalin|bir arkadaş} da ağaçların yapraklarını izleyecekti. Tilki Doruk kayıt tutacaktı. Çünkü Doruk, kim neyi ne zaman gördüyse yazmanın kulaktan dolma sözlerden daha güvenilir olduğunu söylüyordu.
+Sincap hemen parçayı çekmek istedi. Baykuş elini durdurdu. “Dişliyi zedeleyebiliriz,” dedi. İnce bir tahta kamayı gevşetip küçük parçayı kenara aldı. Saatin kolu bir anda dönmedi; çünkü yay gerginliğini yitirmişti. Kirpi, saati kurmak için kullanılan pirinç anahtarı buldu. Usta, anahtarı çevirmeye hazırlanırken {kahraman} eski tahta parçanın nereye takıldığını bir çizimle kaydetti.
 
-Bir hafta sonra notlar birikti. {yoldas:yalin|bir arkadaş} her gün aynı ağaca baktı; yeni yapraklar küçücük başlayıp büyüyordu. Mavi, bazı göçmen kuşların geri döndüğünü gördü. Pati, sabah ile öğle arasında toprağın yüzey sıcaklığının değiştiğini yazdı. Doruk hepsini büyük bir kâğıda geçirdi.
+Tam o sırada ağaçtan bir yaprak düşüp saatin önüne kondu. Sincap, “Orman uyandı!” diye seslendi. Baykuş, “orman uyandı” sözünün {kelime:hr051_mecaz} olduğunu söyledi. Tavşan güldü; meşenin gözlerini açıp esnediğini hayal etmişti. Usta yayı yavaşça çevirdi. Saatin içinden üç düzenli tıkırtı duyuldu, fakat ibre bir yaprak kadar ilerleyip yeniden durdu.
 ---
 @omurga
-“İşte, ilkbahardayız,” dedi Pati.
+Tavşan, saatin sesini duyabilmek için yerdeki kuru dalları kenara taşıdı. Birkaç sincap meşe gövdesine tırmanıp dallarda beklemeye başladı. Herkes sessizleşince mekanizmanın içindeki ince sürtünme sesi daha açık işitildi. Kirpi sesin kapağın alt bölümünden geldiğini söyledi; {kahraman} çizimini bu bölgeyi de gösterecek biçimde genişletti.
 
-“Peki saat neden sonbaharda kaldı?” diye sordu {yoldas:yalin|bir arkadaş}. “Bütün bunlar birbirine uymuyor.”
+“Bir yerde daha sürtünüyor,” dedi Baykuş. {kahraman}, ilk çizimde işaretlediği dişliye baktı. Tahta kıymıklarından biri alttaki küçük yuvada kalmıştı. Usta kıymığı yumuşak bir fırçayla çıkardı. Bu kez saat kurulduğunda kol sonbahar yaprağından kış simgesine doğru ağır ağır yürüdü. Meşe gövdesine yaslanan çocuklar, düzgün tıkırtıyı işitince gülümsedi.
 
-Doruk, “Saat bozuk olabilir,” dedi. “Bunu anlamak için saate bakmamız gerek.”
+Sincap yine çiçeklere baktı. “Saat düzeldi ama bunlar hâlâ burada,” dedi. Kaynağın çevresindeki buğu yerinde duruyordu. Kırlangıçların öncüsü son kez su içmek için dereye indi. Sonra sürü, ağaçların üzerinden dönerek yükseldi. Saatin kolu kendi ritmiyle ilerliyor, kuşlar rüzgârdaki uygun anı kolluyordu.
 
-Saat, bir gövdeye sabitlenmişti. Kimse hayvanları ağaca tırmanmaya zorlamadı; hikâyede bile güvenli davranmayı tercih ediyorlardı. Orman görevlisi Ekin Hanım'dan yardım istediler. Gerçek ormanda böyle bir saati bakım ekibinin incelemesi gerekirdi. {kahraman} bu ayrıntıyı defterine özellikle ekledi.
+{kahraman}, defterindeki üç çizime göz gezdirdi: çiçeklerin yeri, nemli tahta parçası ve kuşların uçuş yönü. Sincap ilk sayfanın köşesine kocaman bir saat resmi yaptı. Kirpi de resmin yanına küçük bir kaynak çizdi; suyunu gerçek derenin kıvrımlarına benzetmek için kâğıdı birkaç kez çevirdi.
 
-Ekin Hanım saatin çevresini inceledi. Sert esen fırtınada kopan ince bir dal, ahşap çarkların arasına sıkışmıştı. Dal, saatin mevsim kanadını engelliyordu. {yoldas:yalin|bir arkadaş} şaşkınlıkla baktı. “Demek bütün orman bozulmadı, yalnızca saat sıkıştı.”
-
-Ekin Hanım bakım ekibiyle dalı güvenli şekilde çıkardı. Çarkları temizlediler; saate aşırı baskı yapan paslı bölümleri kontrol ettiler. Ahşap kanat yeniden döndüğünde {yoldas:yalin|bir arkadaş} sevinçle bağırdı. Ama Doruk'un aklında hâlâ bir soru vardı: “Saat düzelmiş olabilir, fakat çevredeki değişiklikleri nasıl anlatacağız?”
----
-@omurga
-Bu soru hayvanları susturdu. Çünkü dere kıyısında bu yıl gerçekten daha az su akıyordu. Ormanın bazı yerlerinde çocukların bıraktığı çöpler birikmişti. {kahraman}, olayın yalnızca kırılan bir saatten ibaret olmasını istemedi. Bir göstergenin düzelmesi, çevredeki bütün sorunların da çözülmesi anlamına gelmiyordu.
-
-Hikâyedeki hayvanlar dereye yürüdü. Pati, kıyıda plastik ambalajlar gördü. Mavi yuva yaparken takıldığı bir ipi gösterdi. Doruk, “Bunlar mevsimin değişmesi değil, insanların bıraktığı izler,” dedi. {yoldas:yalin|bir arkadaş}, saat bozuk sanıp ormanın gerçek işaretlerine bakmadığı için utandı.
-
-{kahraman} defterini kapatıp babasına okudu. Babası, “Saatin bozulduğu kısmı çok sevdim,” dedi. “Ama hayvanlar neden yalnızca bir haftalık gözlemle bütün mevsimleri açıklıyor?”
-
-{kahraman} düşündü. Bir haftalık veri bazen günlük değişimleri gösterebilirdi; uzun süreli iklim örüntülerini ise tek başına açıklayamazdı. Babasının sorusu hikâyeyi geliştirdi. Hayvanların yalnız bir hafta değil, yıl boyunca farklı aralıklarla gözlem yapmaya karar verdiği bir bölüm ekledi. Doruk, kayıtların yıllar içinde karşılaştırılmasını önerdi. Hava durumunun o günkü koşullarını, iklimin ise uzun süreli örüntülerini anlattığını öğrendiler.
----
-@omurga
-Ertesi pazar {kahraman} yeniden ormana geldi. Yanında küçük bir defter vardı. Bu kez gerçek gözlemlerini yazmaya başladı: “Saat 10.20, hava parçalı bulutlu. Dere akıyor. Üç serçe gördüm. Bir çiçeğin üstünde arı vardı.” Babası bunu görünce, “Yazar da araştırmacı da dikkatli bakmayı sever,” dedi.
-
-{kahraman}, kurduğu öykünün bazı kısımlarını düzeltti. Örneğin hayvanların insanlar gibi konuşmasını masal özelliği olarak bıraktı. Ancak kuşların göç etmesinin tek bir nedene bağlı olmadığını, mevsimlerin yalnızca bir saate bakılarak belirlenemeyeceğini açıkça gösterdi. Arkadaşlarıyla okulda okuduklarında kimse hikâyenin ders gibi olduğunu söylemedi. Çünkü saatin kim tarafından durdurulduğunu bulmak hâlâ merak uyandırıyordu.
-
-Hikâyenin sonunda {yoldas:yalin|bir arkadaş}, saatin altına yeni bir pano asmayı önerdi. Panoda dört mevsim vardı ama her birinin yanında hayvanların gözlem defterleri için ayrı kutular bulunuyordu. Baharda çiçeklenen bitkiler, yazın gölgede dinlenen hayvanlar, sonbaharda değişen yapraklar, kışın görülen izler kaydedilecekti. Her yeni yıl, eski notlarla karşılaştırılacaktı.
----
-@omurga
-Saat bundan sonra da bazen durabilirdi. Rüzgâr yine dal kırabilir, yağmur yağabilir, tahtalar eskirdi. {yoldas:yalin|bir arkadaş} artık her değişikliği felaket olarak görmeyecekti. Çünkü bir işareti anlamanın yolu, yalnızca ona bakmak değildi. Çevreyi birlikte gözlemlemek, kuşkuyu soru hâline getirmek ve uzun süreli kayıt tutmak gerekiyordu.
-
-Hikâyeyi tamamlamadan önce {kahraman}, aynı sınıftan Eren'le tartıştı. Eren, “Bir saatin durması için daha gizemli sebep gerekirdi,” diyordu. “Belki ormanın kalbi yorulmuştur.” {kahraman} bu fikri güzel bir {kelime:hr051_mecaz} olarak buldu ama ormanın gerçek anlamda bir kalbi olmadığını söyledi. İkisi kısa süreliğine anlaşamadı. Sonra öğretmenleri mecazla bilimsel bilgiyi nasıl yan yana kullanabileceklerini sordu. {kahraman}, “Orman tek bir canlının kalbi gibi işlemez, ama canlıların ilişkileri birbirini etkiler,” dedi. Eren, bu cümleden hareketle yeni bir karakter yazmalarını önerdi: Dere kıyısında yaşayan, bütün hayvanların haberlerini toplayan yaşlı kaplumbağa. Kaplumbağanın adı Usta Zaman olacaktı. Masalsı bilgeliğiyle şunu söyleyecekti: “Saatler dakikayı sayar, orman ilişkileri yaşar.”
----
-@omurga
-Usta Zaman ilk bölümde {yoldas:yonelme|bir arkadaşa} üç ayrı kutu gösterdi. Birinde yağmurdan sonra toplanmış su, birinde kuru yapraklar, diğerinde de küçük tohumlar vardı. “Bunlar aynı mevsime ait olabilir mi?” diye sordu. {yoldas:yalin|bir arkadaş} hemen “Hayır,” dedi. Sonra bahar yağmurunu, kıştan kalan yaprakları ve toprağa düşen tohumları düşündü. Birbirinden farklı işaretler aynı gün görülebilirdi. Usta Zaman, “Doğadaki her değişim aynı hızda gerçekleşmez,” dedi. “Bir ağaç başka bir ağaçtan önce yapraklanabilir. Bir kuşun göç zamanı, bir böceğin ortaya çıkış zamanı farklı olabilir.” {yoldas:yalin|bir arkadaş} bu sözleri dinledikten sonra saatin tek kanadına bakıp bütün orman adına konuşmamaya karar verdi.
----
-@omurga
-{kahraman}, hikâyenin araştırma bölümüne küçük bir yanlış alarm ekledi. Doruk bir sabah dere kenarında beyaz köpükler gördü ve suyun kirlenmiş olabileceğini düşündü. {yoldas:yalin|bir arkadaş} hemen panikledi. Pati ise köpüğün nedenini belirlemeden “zehirli” demelerinin doğru olmadığını söyledi. Ekin Hanım'a haber verdiler; görevli suyun görünüşünden kesin sonuç çıkarılamayacağını, şüpheli bir durumda yetkili birimlerce inceleme yapılması gerektiğini anlattı. Çocuklar da gerçek hayatta böyle bir durum görürlerse suya dokunmadan yetişkinlere bildirmeleri gerektiğini öğrendiler. Böylece hikâyedeki merak, tehlikeli denemelere dönüşmedi.
-
-Ormanın eski fotoğraflarına bakmak, Doruk'un aklına gelmişti. Park girişindeki ziyaretçi merkezinde on yıl önce çekilmiş görüntüler vardı. Bazı ağaçlar büyümüş, yürüyüş yolları değiştirilmiş, bir açıklığa yeni fidanlar dikilmişti. {yoldas:yalin|bir arkadaş} görüntüleri yan yana koyunca aynı alandaki değişimleri daha rahat gördü. Fakat fotoğrafların farklı mevsimlerde çekilmiş olabileceği uyarısını da not etti. Kışın çıplak görünen bir ağaç, yazın yapraksız kalmış bir ağaçla aynı anlama gelmiyordu. Ekin Hanım tarihlere bakmalarını istedi. Bu küçük ayrıntı olmadan karşılaştırmaları yanıltıcı olabilirdi.
----
-@omurga
-Bir gün Mavi, kuşların neden bazen sessizleştiğini sordu. {kahraman} bu bölüm için kuşların seslerini araştırdı. Kuşlar farklı amaçlarla ötebilir, çevredeki gürültü de seslerini duymamızı zorlaştırabilirdi. Mavi, orman kenarındaki yolun kalabalık saatlerinde kendi sesinin zor duyulduğunu anlattı. Bu yüzden sessizliği yalnızca “kuşlar yok oldu” diye yorumlamayacaklardı. Gözlemleri tekrar edecek, farklı saatlerde dinleyeceklerdi. {kahraman} hikâyeye küçük bir oyun koydu: Okur, ormanın üç farklı anında neyin değiştiğini düşünerek kendi gözlem listesi oluşturabilecekti. Ancak hikâyenin devamı bu oyunu tamamlamasına bağlı olmayacaktı; okumak her zaman özgür kalacaktı.
----
-@omurga
-Eren son taslakta, saati gerçekten kimin durdurduğunu öğrenmeden önce {yoldas:ilgi|bir arkadaşın} ağaca tırmanmasını istemişti. {kahraman} bu sahneyi değiştirdi. “Hayvanların istediği yere tırmanması başka; çocukların bozuk bir mekanizmayı kendilerinin tamir etmeye çalışması başka,” dedi. “Biz okuyucularımıza riskli bir şeyi örnek göstermeyelim.” Onun yerine Ekin Hanım'ın bakım ekibine haber verdiği, hayvanların da güvenli uzaklıkta beklediği sahne yazıldı. Eren bu çözümü sıkıcı buldu; fakat bakım ekibinin içinden çıkan paslı çarkı görünce ilgisi yeniden arttı. Çarkın üzerinde yıllar önce saati yapan ustanın küçük işareti vardı. Usta, saat durduğunda doğayı suçlamak yerine önce saatin bakımını kontrol etmelerini öğütleyen bir not bırakmıştı.
----
-@omurga
-{kahraman:ilgi} babası, yazdığı masalı akşam evde sesli okumasını istedi. Küçük kardeşi özellikle {yoldas:belirtme|bir arkadaşı} sevmişti. “Niye bu kadar acele ediyor?” diye sordu. {kahraman}, sincapların gerçekten telaşlı olduğu iddiasını değil, kendi karakterinin huyunu anlattı: {yoldas:yalin|bir arkadaş} başkalarına haber vermeyi sevdiği için doğrulamadan konuşuyordu. “Peki sonra ne öğreniyor?” sorusuna {kahraman} şu cevabı verdi: “Hızlı haber vermek bazen iyidir ama **yanlış haberi hızla yaymak zarar verebilir**.” Kardeşi ertesi gün sınıf grubunda duyduğu bir söylentiyi hemen paylaşmak istemediğini söyledi. {kahraman}, hikâyenin yalnız mevsimler hakkında olmadığını o anda anladı.
----
-@omurga
-Hikâyenin bitiminden sonra orman okulunda “Dört Mevsim Şenliği” düzenlendi. Hayvanlar her masada bir farklı gözlem türü sundu. Pati toprak ve nem ilişkisini, Mavi göç yolculuklarının zorluklarını, Doruk uzun süreli kayıtları anlattı. {yoldas:yalin|bir arkadaş} ise bir panoda “Önce bak, sonra sor, en son paylaş” yazdı. Başlarda kendisini her haberin ilk sahibi olarak görmek isterdi. Şimdi en iyi habercinin en hızlı bağıran değil, dikkatle dinleyen olduğunu düşünüyordu. Şenlik boyunca bir çocuk panodaki saatin resmini gösterip “Bunu kim düzeltti?” diye sorunca {yoldas:yalin|bir arkadaş} kahkaha attı: “Bakım ekibi! Biz yalnız soruyu doğru sormayı öğrendik.”
----
-@omurga
-{kahraman} son sayfaya, gerçek orman gezisinde gördüğü üç şeyi ekledi. Kırık dalın altındaki mantarlar, dere kıyısındaki taze ayak izleri ve rüzgârın çevirdiği kuru yaprak… Bunlardan hiçbiri tek başına koca ormanın sağlığı hakkında kesin karar verdirmiyordu. Ama her biri iyi bir başlangıç sorusu olabilirdi. {kahraman} defterini kapatırken masalındaki saati bir kez daha çizdi. Bu kez saatin yanında bir büyüteç, bir not defteri ve küçük bir soru işareti vardı. Mevsimleri yöneten sihirli bir düğme değil, doğayı anlamaya çalışan bir çocuğun araçları bunlardı.
-
-Öğretmenleri sınıfta farklı masalları okuduktan sonra herkes kendi metnindeki bir varsayımı işaretledi. {kahraman}, ormanda görülen az sayıdaki kuşun bütün türlerin azaldığı anlamına gelmediği cümlesini seçti. Eren ise “Ormanın kalbi yoruldu” benzetmesinin bilimsel bir açıklama olmadığını yazdı. İkisi artık aynı metinde hem şiirsel dili hem de güvenilir bilgiyi kullanabileceklerini biliyordu. Bu da arkadaşlıklarına iyi gelmişti. Çünkü tartışmaları artık kimin haklı olduğunu göstermeye değil, birlikte daha iyi bir hikâye yazmaya yönelmişti.
----
-@omurga
-Bir ay sonra öğretmen, öğrencilerden hikâyelerindeki kahramanların değişimini tek cümleyle anlatmalarını istedi. {kahraman}, {yoldas:ilgi|bir arkadaşın} saat bozukken ormanı suçladığını, sonunda ise kendi düşünme biçimini sorguladığını söyledi. Eren ona katıldı: “Bence saatin onarılması asıl bitiş değil. {yoldas:ilgi|bir arkadaşın} hemen hüküm vermemeyi öğrenmesi asıl son.” Sınıfta kısa bir sessizlik oldu. {kahraman} başlangıçta yalnızca durdurulmuş bir saat hakkında eğlenceli bir bilmece yazdığını sanmıştı. Şimdi bulmacanın kahramanın davranışlarına da dokunduğunu görüyordu.
-
-Yaz gelince {kahraman} ile babası aynı yürüyüş yoluna tekrar gitti. Dere biraz çekilmişti. {kahraman} bunun nedenini tek bir gözlemle açıklamaya kalkmadı. Yağış miktarı, sıcaklık, su kullanımı ve başka etkenleri araştırmaları gerektiğini biliyordu. Yanlarına aldıkları küçük bir torbaya yol kenarında buldukları çöp parçalarını, güvenli biçimde ve yetişkin gözetiminde topladılar; keskin veya tanımadıkları atıklara dokunmadılar. {kahraman}, bir hikâye yazmanın doğayla ilişkisini değiştirdiğini fark etti. Artık patikaya yalnız güzel bir manzara olarak bakmıyordu; orada yaşayan canlıların ihtiyaçlarını da düşünüyordu.
----
-@omurga
-O gece masalın sonuna yeni bir cümle ekledi: “{yoldas:yalin|bir arkadaş} her bahar saatin önünden geçiyor, onu kısa süreliğine kontrol ediyordu; ama asıl takvimi, birbirine bağlı canlıların yaşadığı ormanda okuyordu.” Böyle yazınca saatin simgesi de değişti. Başta korku yaratan saat, sonunda öğrenmeye açılan bir hatırlatıcıya dönüştü. {kahraman} bu sonu beğendi. Çocukların hiçbir değişikliği görmezden gelmemesini, ama tek bir işarete bakıp bütün dünyayı açıklamaya çalışmamasını istiyordu.
-
-Sonraki eğitim yılında okul, doğa gözlem defterlerini küçük bir sergide topladı. Bir öğrencinin çiziminde yağmurlu bir bahar günü, diğerinde sıcak bir sonbahar öğlesi vardı. {kahraman}, farklı gözlemlerin aynı dünyaya ait olabildiğini anlattı. Ziyaretçilerden biri “Peki saatin doğru gösterdiğini nereden biliyorsunuz?” diye sordu. {kahraman} gülümsedi. Masalını okuyup bitiren herkesin bu soruyu sorabilmesini umuyordu. “Saate bakarız,” dedi, “ama sonra çevremizdeki kanıtları da inceleriz. İki bilgi uyuşmuyorsa hemen korkmayız, nedenini araştırırız.” Sergiden çıkarken {yoldas:ilgi|bir arkadaşın} küçük resmine baktı. Resimdeki sincap artık kuyruğunu telaşla sallamıyordu. Bir yaprağın üzerine oturmuş, defterini açmıştı.
----
-@omurga
-{kahraman} sayfanın köşesine son bir çizgi ekledi: Saati onaran elin yanında küçük bir soru işareti vardı. Sorular bitmemişti; artık onlardan korkmuyordu. Çünkü merak, öğrenmenin en güzel başlangıcıydı.
----
-@omurga
-- Kavramlar: Mevsim, göç, ekosistem, hava durumu–iklim ayrımı, veri kaydı. - Dil: Benzetme, değişim ve döngü; gözlem ile çıkarım. - Editoryal: Hayvanların konuşması masal tekniğidir; ekolojik olgular gerçekçi açıklanmalıdır.
+Baykuş kapağı kapatıp saatin altına bir parça kuru örtü yerleştirdi. {kahraman} kirpiye anahtarı uzattı. Kirpi anahtarı Baykuş'un eline bıraktı; ardından yere düşen sarı yaprağı kaldırıp saatin yanındaki tahtaya iliştirdi.

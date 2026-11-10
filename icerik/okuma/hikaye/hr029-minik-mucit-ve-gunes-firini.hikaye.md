@@ -67,5 +67,3 @@ Bilim gününde çocuklar kutuları masaya yerleştirdi. {kahraman} ziyaretçile
 ---
 @omurga
 Sergi sonunda öğretmen ona bir yıldız çıkartması verdi. {kahraman} yıldızı defterine yapıştırmadı; kutuların fotoğrafının yanına koydu. Çünkü en çok, ilk tahminlerini ölçerek karşılaştırabilmiş olmasına seviniyordu.
-
-Dil hedefi: ısı, sıcak–soğuk, karşılaştırma; Kavram/değer: güneş enerjisi, ölçüm, güvenli deney. İkon önerileri: güneş, kutu, termometre. Okuma sonrası: Hangi kutu neden daha çok ısındı? Bulutlar ölçümü nasıl etkiledi?

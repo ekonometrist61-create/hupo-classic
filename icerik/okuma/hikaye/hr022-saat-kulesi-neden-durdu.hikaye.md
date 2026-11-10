@@ -66,6 +66,3 @@ Bir süre sonra bakım ustası Fatma Hanım geldi. Çocuklar, kuleye girmeden on
 O akşam kule yeniden çaldı. {yoldas:yalin|bir arkadaş}, ilk sesi duyduğunda sevinçten zıplayacaktı ama etraftaki güvercinler ürkmesin diye durdu. {kahraman} defterine son bir satır ekledi: **Önce gözlemledik, sonra bildirdik**, en sonunda nedeni öğrendik.
 
 Eve dönerken {yoldas:yalin|bir arkadaş} şakalaştı: “Saat kulede durmuş, bizim merakımız hiç durmamış!” {kahraman} gülerek, “Zaten soruları sormasaydık çarkın ne işe yaradığını öğrenemezdik,” dedi. Meydan her zamanki gibi kalabalıktı. Bu kez kulağa sıradan gelen saat sesi, ikisine küçük bir keşfi hatırlatıyordu. {isaret:ipucu}
----
-@omurga
-Dil hedefi: önce–sonra, saat okuma, zaman sıralaması; Kavram/değer: ölçme, bakım, kamu sorumluluğu. İkon önerileri: saat, çark, not. Okuma sonrası: Kule kaçta durmuştu? Çocuklar nasıl güvenli biçimde yardım sağladı?

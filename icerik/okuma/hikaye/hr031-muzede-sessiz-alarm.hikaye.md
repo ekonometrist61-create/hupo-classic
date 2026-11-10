@@ -73,5 +73,3 @@ Gezi devam ettiğinde rehber çocuklara tarihî pusulanın eski yolculuklarda y�
 Sınıfın dönüş otobüsünde herkes en sevdiği eseri söyledi. {kahraman} ise defterindeki üç sözcüğü gösterdi: **gözlem, varsayım, kanıt**. “Bir ses bizi korkutmuştu,” dedi, “ama ne olduğunu anlamak için acele hüküm vermemek gerekiyormuş.”
 
 Bir sonraki hafta müzeden sınıfa teşekkür mesajı geldi. Görevliler, çocukların dikkatli gözlem paylaşımının incelemeyi kolaylaştırdığını yazmıştı. {kahraman} mesajı okurken gülümsedi; müzedeki en ilginç şeyin yalnız geçmişe ait eşyalar değil, bugün kullanılan bilimsel düşünme biçimi olduğunu fark etti.
-
-Dil hedefi: kanıt–varsayım, neden–sonuç; Kavram/değer: sensörler, müze kültürü, acele hüküm vermeme. İkon önerileri: müze, alarm, mercek. Okuma sonrası: {kahraman} hangi ortak ayrıntıyı gözlemledi? Neden bunu önce yalnız tahmin saydı?

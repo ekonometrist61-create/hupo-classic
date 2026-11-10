@@ -9,6 +9,7 @@ sinif_ust: 3
 kahraman_turu: anne
 deger_anahtarlari: [D6, D3]
 tanitim: "Kütüphanenin yeni kitap köşesine raf sığmaz. Köprü mühendisi {kahraman}, kırık bir cetvelin hatalı ölçtüğünü fark edip ölçümü yeniden yapar."
+yetiskin_uygun: false
 durum: taslak
 uretim_kaynak: llm_taslak
 duzeltme_tarihi: "2026-10-24"
@@ -30,12 +31,12 @@ sorular:
     dayanak_sayfa: 2
     metin: "Raf neden boşluğa oturmadı?"
     secenekler:
-      - {id: A, metin: "İlk ölçüm hatalıydı"}
+      - {id: A, metin: "İlk ölçüm yanlış alınmıştı"}
       - {id: B, metin: "Duvarın yeni boyandığı için"}
       - {id: C, metin: "Kitap sayısı çok fazlaydı"}
       - {id: D, metin: "Rafın bir parçası kaybolmuştu"}
     dogru: A
-    dayanak: "{kahraman}, önceki ölçümün hatalı olduğunu anladı."
+    dayanak: "İlk cetvelin başında küçük bir kırık vardı. Bu nedenle cetvelin sıfır noktası görünmüyordu."
     aciklama: "Önceki ölçüm yanlıştı; raf bu yüzden oturmadı."
   - id: s2
     beceri: hatirlama
@@ -54,11 +55,11 @@ sorular:
     dayanak_sayfa: 3
     metin: "Eski rafın yerine ne yapıldı?"
     secenekler:
-      - {id: A, metin: "Uygun boydaki raf seçildi"}
-      - {id: B, metin: "Raf zorla boşluğa itildi"}
-      - {id: C, metin: "Boşluk büyütüldü"}
+      - {id: A, metin: "Raf zorla boşluğa itildi"}
+      - {id: B, metin: "Boşluk büyütüldü"}
+      - {id: C, metin: "Uygun boydaki raf seçildi"}
       - {id: D, metin: "Kitaplar tamamen kaldırıldı"}
-    dogru: A
+    dogru: C
     dayanak: "Eski rafı zorlayarak yerleştirmek yerine uygun boydaki rafı seçtiler."
     aciklama: "Eski raf zorlanmadı; uygun boydaki raf seçildi."
   - id: s4
@@ -71,20 +72,20 @@ sorular:
       - {id: C, metin: "Cetvelin yeniden alınmasını"}
       - {id: D, metin: "Çizimin tamamen atılmasını"}
     dogru: B
-    dayanak: "Sağlam cetvelle genişliği bir kez daha ölçtü."
+    dayanak: "Sağlam cetvelle genişliği bir kez daha ölçtü. Yeni sonuç, raftan biraz daha küçüktü."
     aciklama: "Sağlam cetvelle yapılan ölçüm, hatalı bilgiyi düzeltti."
 ---
 @omurga
 Kasabanın küçük kütüphanesinde yeni bir kitap köşesi hazırlanıyordu. Köprü mühendisi {kahraman}, gönüllü olarak rafların yerleşimine yardım etti. Masanın üstünde bir çizim ve iki cetvel vardı. Görevli, duvarın önündeki boşluğun bir raf için uygun olduğunu söyledi. {kahraman} çizime bakarak rafın sığacağını tahmin etti. Fakat raf geldiğinde boşluğa tam oturmadı.
 ---
 @omurga
-{kahraman}, görevliyle birlikte duvarı yeniden ölçmeye başladı. İlk cetvelin başında küçük bir kırık vardı. Bu nedenle cetvelin sıfır noktası görünmüyordu. {kahraman}, önceki ölçümün hatalı olduğunu anladı. Sağlam cetvelle genişliği bir kez daha ölçtü. Yeni sonuç, raftan biraz daha küçüktü.
+{kahraman}, görevliyle birlikte duvarı yeniden ölçmeye başladı. İlk cetvelin başında küçük bir kırık vardı. Bu nedenle cetvelin sıfır noktası görünmüyordu. {kahraman}, kırığı görevliye gösterdi. Sağlam cetvelle genişliği bir kez daha ölçtü. Yeni sonuç, raftan biraz daha küçüktü.
 ---
 @omurga
-“Bazen sorun düşündüğümüz yerde değildir,” dedi {kahraman}. Görevli başka bir raf önerdi, ancak bu rafın da yüksekliğini kontrol etmek gerekiyordu. Birlikte yeni rafın ölçülerini not ettiler. Kitap köşesinin çizimini değiştirdiler. Eski rafı zorlayarak yerleştirmek yerine uygun boydaki rafı seçtiler. Böylece duvara ve raflara zarar verme riskinden kaçındılar.
+{kahraman}, cetvelin ucunu duvardaki işaretle hizalayıp farkı gösterdi. Görevli başka bir raf önerdi, ancak bu rafın da yüksekliğini kontrol etmek gerekiyordu. Birlikte yeni rafın ölçülerini not ettiler. Kitap köşesinin çizimini değiştirdiler. Eski rafı zorlayarak yerleştirmek yerine uygun boydaki rafı seçtiler.
 ---
 @omurga
-Ertesi gün görevliler uygun rafı güvenli biçimde yerleştirdi. {kahraman}, çocuklar için alçak bir kitap sepetinin de çizimde gösterilmesini önerdi. Kitaplar düzenlenince okuma köşesi daha kullanışlı oldu. Görevli, “İlk bakışta cetvelin kırık ucunu gözden kaçırmışız,” dedi. {kahraman} gülümsedi: “Önemli olan bunu fark edince ölçümü yeniden yapabilmek.”
+Ertesi gün görevliler uygun rafı güvenli biçimde yerleştirdi. {kahraman}, kendi çocuğunun da bu köşeyi kullanacağını düşünerek alçak bir kitap sepetinin de çizimde gösterilmesini önerdi. Kitaplar düzenlenince okuma köşesi daha kullanışlı oldu. Görevli, “İlk bakışta cetvelin kırık ucunu gözden kaçırmışız,” dedi. {kahraman} gülümsedi.
 ---
 @omurga
 Açılış günü çocuklar kitap köşesini çok sevdi. {kahraman} eski ve yeni çizimi yan yana astı. Yanına ölçülerin nasıl alındığını yazdı. Kütüphaneye gelenler yeni köşeyi uzun uzun inceledi.

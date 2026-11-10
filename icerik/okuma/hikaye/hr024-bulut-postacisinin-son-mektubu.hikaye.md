@@ -33,45 +33,39 @@ etiketler:
     - {id: kavram_hr024, tur: concept, etiket: "Yön bilgisi ile süs arasındaki fark", islev: application}
   kanit_duzeyi: C
   program_surumu: "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)"
-  denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
+  denetim: {ajan_a: pass, ajan_b: pass, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Zarfta hangi adres yazıyordu?", secenekler: [{id: A, metin: "Deniz Kıyısı, Kırmızı Ev"}, {id: B, metin: "Kuzey Tepesi, Mavi Pencereli Ev"}, {id: C, metin: "Güney Vadisi"}], dogru: B, aciklama: "Zarfın üzerinde Kuzey Tepesi, Mavi Pencereli Ev yazıyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Pofuduk'un bir terslik olduğunu anlamasının nedeni neydi?", secenekler: [{id: A, metin: "Çantası çok ağırdı"}, {id: B, metin: "Yağmur başlamıştı"}, {id: C, metin: "Pusula kuzeyi gösterirken kendisi güneye gidiyordu"}], dogru: C, aciklama: "Pusulanın gösterdiği yönle uçuş yönü uyuşmuyordu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Pofuduk zarftaki yıldız hakkında ne sonuca vardı?", secenekler: [{id: A, metin: "Yön göstermeyen, yalnızca süs olan bir resim"}, {id: B, metin: "Hazine haritası"}, {id: C, metin: "Ev numarası"}], dogru: A, aciklama: "Pofuduk yıldızın yön göstermediğini, sadece süs olduğunu anladı."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen yön sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Bir mektup türü"}, {id: B, metin: "Gidilecek doğrultu"}, {id: C, metin: "Bir bulut rengi"}], dogru: B, aciklama: "Yön, bir yere giderken izlenecek doğrultudur."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, dayanak: "Zarfın üstünde bir {kelime:hr024_adres} ve bir ad yazılıydı: Kuzey Tepesi, Mavi Pencereli Ev, Sevgi Teyze.", metin: "Zarfın üstündeki adres neresiydi?", secenekler: [{id: A, metin: "Deniz Kıyısı, Kırmızı Çatılı Ev"}, {id: B, metin: "Güney Vadisi, Mavi Pencereli Ev"}, {id: C, metin: "Kuzey Tepesi, Mavi Pencereli Ev"}, {id: D, metin: "Kuzey Tepesi, Kırmızı Çatılı Ev"}], dogru: C, aciklama: "Zarfın üstünde Kuzey Tepesi, Mavi Pencereli Ev yazıyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, dayanak: "Pusulanın oku kuzeyi gösteriyordu ama kendisi güneye ilerliyordu.", metin: "Postacı yolunu şaşırdığını hangi bilgiyle anladı?", secenekler: [{id: A, metin: "Pusula başka yönü gösteriyordu"}, {id: B, metin: "Çantası aniden hafiflemişti"}, {id: C, metin: "Yağmur Bulutu yolunu kesmişti"}, {id: D, metin: "Kuşlar ona geri dönmesini söylemişti"}], dogru: A, aciklama: "Pusulanın oku kuzeyi gösteriyordu, postacı ise güneye gidiyordu."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, dayanak: "Yıldız yön göstermiyordu; yalnızca pulun süsüydü.", metin: "Pulun üstündeki yıldız postacıya neden yol göstermedi?", secenekler: [{id: A, metin: "Yağmurda silinmişti"}, {id: B, metin: "Çok küçük kalmıştı"}, {id: C, metin: "Kuşlar saklamıştı"}, {id: D, metin: "Yalnızca bir süstü"}], dogru: D, aciklama: "Yıldız yön göstermiyordu; pulun süsüydü."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, dayanak: "İkisi birlikte {kelime:hr024_yon} değiştirdi.", metin: "“İkisi birlikte yön değiştirdi” cümlesinde yön ne demektir?", secenekler: [{id: A, metin: "Zarfın üstündeki resim"}, {id: B, metin: "Gidilecek doğrultu"}, {id: C, metin: "Bulutun rengi"}, {id: D, metin: "Mektubun kâğıdı"}], dogru: B, aciklama: "Yön, bir yere giderken izlenen doğrultudur."}
 deyim_cumleleri:
   hr024_gozleri_parladi: "Zarfı açınca gözleri parladı."
 ---
 @omurga
-Bulutlar Şehri'nde herkesin bir görevi vardı. Yağmur Bulutu bahçeleri sular, {yoldas:yalin|bir arkadaş} yelkenlere yardım eder, Postacı {kahraman} ise mektupları götürürdü. O sabah {kahraman:ilgi} çantasında yalnızca bir zarf kalmıştı. Üzerinde şu {kelime:hr024_adres} yazıyordu: Kuzey Tepesi, Mavi Pencereli Ev.
+Bulutlar Şehri'nde herkesin bir görevi vardı. Yağmur Bulutu bahçeleri sular, {yoldas:yalin|bir arkadaş} yelkenlere yardım eder, Postacı {kahraman} ise mektupları götürürdü. Sabah güneşi bulutların kenarlarını pembeye boyamıştı. O sabah {kahraman:ilgi} çantasında yalnızca bir zarf kalmıştı. Zarfın üstünde bir {kelime:hr024_adres} ve bir ad yazılıydı: Kuzey Tepesi, Mavi Pencereli Ev, Sevgi Teyze.
 
-{kahraman} kuzeye uçtuğunu sanıyordu. Fakat birkaç dakika sonra altındaki deniz yerine kocaman bir çöl gördü. “Bu işte bir terslik var,” diye mırıldandı. Çantasındaki {kelime:hr024_pusula} çıkardı. İbre kuzeyi gösterirken kendisi güneye ilerliyordu.
+{kahraman} kuzeye uçtuğunu sanıyordu. Birkaç dakika sonra altında deniz yerine kocaman bir çöl gördü. “Bu işte bir terslik var,” diye mırıldandı. Çantasından {kelime:hr024_pusula} çıkardı. Pusulanın oku kuzeyi gösteriyordu ama kendisi güneye ilerliyordu.
 
-{yoldas:yalin|bir arkadaş} yanına sokuldu. “Ben seni sürükledim, özür dilerim.”
+{yoldas:yalin|bir arkadaş} yanına sokuldu. “Yelkenleri çevirirken seni yanlış yöne ben ittim, özür dilerim.”
 
-“Önemli değil,” dedi {kahraman}. “Ama mektup sahibini bekletmeyelim.”
+“Sorun değil,” dedi {kahraman}. “Ama mektup sahibini bekletmeyelim.”
 ---
 @omurga
-İkisi birlikte {kelime:hr024_yon} düzeltti. Derken birbirine benzeyen iki tepe gördüler. Birinde kırmızı çatılı, diğerinde mavi pencereli ev vardı. {kahraman} hemen aşağı inecekti ki bir ayrıntıyı fark etti: Mavi pencere güneş ışığından mı mavi görünüyordu, yoksa gerçekten maviye mi boyanmıştı?
+İkisi birlikte {kelime:hr024_yon} değiştirdi. Pusulanın okunu izleyip kuzeye döndüler. Aşağıda mısır tarlaları, küçük köyler ve kıvrılan bir dere görünüyordu. {kahraman} her tepeye bakıp pusulayla karşılaştırdı. Derken birbirine benzeyen iki tepe gördüler. Birinde kırmızı çatılı, ötekinde mavi pencereli bir ev vardı. {kahraman} hemen aşağı inecekti ama mavi pencere güneş ışığından mı mavi görünüyordu, yoksa gerçekten maviye mi boyanmıştı?
 
-Aşağıdaki kuş sürüsüne seslendi. Kuşların lideri, mavi pencereli evin kuzeydeki ikinci tepede olduğunu söyledi. {kahraman} teşekkür etti; adresin yalnızca renk değil, yön bilgisi de verdiğini anladı.
+Aşağıdaki kuş sürüsüne seslendi. Kuşların lideri, mavi pencereli evin ikinci tepede olduğunu söyledi. {kahraman} teşekkür edip ikinci tepeye doğru süzüldü.
 
-{kahraman} evin çatısına konmadan önce çantasını kontrol etti. Yağmur Bulutu biraz önce yanından geçmişti; zarfın ıslanmaması için onu dikkatle saklamıştı. Zarfın köşesindeki pulun üzerinde küçük bir yıldız vardı. Postacı, yıldızın yön göstermediğini, yalnız süs olduğunu fark etti. Bir resim, her zaman haritadaki bir işaret değildi. {isaret:yildiz}
+Yolda çantasına baktı. Zarfın köşesindeki pulun üstünde küçük bir yıldız vardı. {kahraman} yıldızın yol gösterdiğini düşünüp çevresine bakındı. Yıldız yön göstermiyordu; yalnızca pulun süsüydü. {isaret:yildiz}
 ---
 @omurga
-Tam mektubu bırakacağı sırada evin penceresi açıldı. İçeriden gelen ses, “Mavi pencereyi mi arıyorsun?” diye sordu. {kahraman} adresi bir kez daha okudu ve tepeyi teyit etti. Yanlış bir eve gidip başkasının haberini paylaşmak istemiyordu. Zarfın üzerindeki ismi ve kapıdaki ismi karşılaştırdı. İkisi de aynıydı. Ancak ondan sonra yaklaşarak mektubu verdi.
+Tam mektubu bırakacağı sırada evin penceresi açıldı. İçeriden bir ses, “Mavi pencereyi mi arıyorsun?” diye sordu. {kahraman} adresi bir kez daha okudu. Zarfın üstündeki adı kapının yanındaki levhayla karşılaştırdı. İkisi de Sevgi Teyze yazıyordu. Ancak ondan sonra yaklaşıp mektubu verdi.
 
-Evde yaşlı bir teyze yaşıyordu.
+Yaşlı teyze mektubu titreyen elleriyle aldı. [[deyim:hr024_gozleri_parladi]] Uzakta okuyan torunu, kendi yaptığı bir çizimi göndermişti. Altında şöyle yazıyordu: “Büyüyünce bulut ressamı olacağım.”
 
-Evde yaşlı bir teyze yaşıyordu.[[deyim:hr024_gozleri_parladi]] Uzakta okuyan torunu, kendi yaptığı çizimin fotoğrafını göndermişti. Mektupta Büyüyünce bulut ressamı olacağım yazıyordu.
-
-{kahraman} teyzenin gülümsemesini görünce yorgunluğunu unuttu. “Bir mektup bu kadar önemli olabilir mi?” diye sordu.
+Teyze çizimi pencerenin önündeki saksının yanına dayadı. Pencereden giren güneş kâğıdın üzerine düştü ve çizimdeki bulutlar gerçekmiş gibi parladı.
 ---
 @omurga
-“Elbette,” dedi teyze. “Bazen bir haber, uzağı yakın eder.”
+{kahraman}, dönüş yolunda boş çantasını omzunda sallayarak uçtu. Altından geçen bulutlar ona el salladı. Rüzgâr tüylerini okşadı, çantası hafifçe sallandı.
 
-{kahraman} dönüş yolunda çantasını boş buldu ama kendisini eksik hissetmedi. O gün bir zarfın yalnız kâğıt değil, sevincin taşıyıcısı olduğunu öğrenmişti. Yeni bir mektup geldiğinde adresin yönünü iki kez kontrol edecekti.
-
-Bulutlar Şehri'ne döndüğünde pusulasını girişteki panoya astı. Altına küçük bir not ekledi: Bir yere yetişmek kadar, **doğru yere varmak** da önemlidir. {yoldas:yalin|bir arkadaş} notu okuyup güldü. “Bir dahaki sefere önce birlikte haritaya bakalım!” dedi.
-
-Dil hedefi: kuzey–güney, adres, yön bilgisi; Kavram/değer: sorumluluk, özür, duygusal bağ. İkon önerileri: bulut, zarf, pusula. Okuma sonrası: {kahraman} hangi hatayı fark etti? Mektup neden değerliydi?
+Bulutlar Şehri'ne varınca pusulasını girişteki panoya astı. {yoldas:yalin|bir arkadaş} pusulaya baktı. “Bir dahaki sefere haritayı da birlikte açalım,” dedi. İkisi gülüştü, sonra Yağmur Bulutu'nun bahçeleri suladığı yere doğru yürüdüler.

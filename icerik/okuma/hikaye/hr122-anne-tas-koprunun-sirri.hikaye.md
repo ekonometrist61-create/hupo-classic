@@ -11,7 +11,7 @@ deger_anahtarlari: [D6, D16]
 tanitim: "Kasabanın taş köprüsünde bir çatlak görülür. Köprü mühendisi {kahraman}, ilk tahmini doğru mu diye ölçerek ve kayıtlara bakarak sınar."
 durum: taslak
 uretim_kaynak: llm_taslak
-duzeltme_tarihi: "2026-10-24"
+duzeltme_tarihi: "2026-11-08"
 etiketler:
   ana_sinif: 3
   maarif: {ana_deger: D6, yardimci_deger: D16}
@@ -59,12 +59,12 @@ sorular:
       - {id: C, metin: "Taşın yaşını ve geçmişini"}
       - {id: D, metin: "Taşın biçimini ve kalınlığını"}
     dogru: B
-    dayanak: "Bu taşın dayanıklılığını, yani yüke karşı ne kadar sağlam kaldığını uzman ekip incelemeli"
-    aciklama: "Metinde dayanıklılık, yüke karşı sağlam kalabilme anlamındadır."
+    dayanak: "“Bu taşın dayanıklılığına uzman ekip bakmalı,” dedi {kahraman}. Taş, köprünün ağırlığını yıllarca sağlam taşıyabilecek mi?"
+    aciklama: "Metinde dayanıklılık, köprünün ağırlığını uzun süre taşıyabilme, yani sağlam kalabilme anlamındadır."
   - id: s4
-    beceri: yorumlama
+    beceri: hatirlama
     dayanak_sayfa: 4
-    metin: "Kasabalılar köprü mühendisinin fikrini nasıl değiştirdiğini nereden öğrendi?"
+    metin: "Kasabalılar mühendisin önceki tahmininin neden değiştiğini nereden öğrendi?"
     secenekler:
       - {id: A, metin: "Bir yarışma duyurusundan"}
       - {id: B, metin: "Yazdığı kısa öyküden"}
@@ -75,16 +75,16 @@ sorular:
     aciklama: "Mühendis, değişikliği kasabalılara kendisi anlattı."
 ---
 @omurga
-Kasabanın küçük ırmağı üzerindeki taş köprü uzun yıllardır kullanılıyordu. Bir sabah köprünün yan duvarında ince bir çatlak görüldü. Köprü mühendisi {kahraman} oraya geldi. Çatlak, taşın üzerinde uzanan ince bir çizgi gibiydi. “Belki de su yükseldiği için oluştu,” dedi. Ancak bunun yalnızca bir tahmin, yani henüz doğrulanmamış bir düşünce olduğunu biliyordu. Güvenlik görevlileri köprüyü inceleme bitene kadar kullanıma kapattı.
+Kasabanın küçük ırmağı üzerindeki taş köprü uzun yıllardır kullanılıyordu. Bir sabah köprünün yan duvarında ince bir çatlak görüldü. Köprü mühendisi {kahraman} oraya geldi. Çatlak, taşın üzerinde uzanan ince bir çizgi gibiydi. “Belki de su yükseldiği için oluştu,” dedi. Ancak bunun yalnızca bir tahmin olduğunu biliyordu. Güvenlik görevlileri köprüyü inceleme bitene kadar kullanıma kapattı.
 ---
 @omurga
-{kahraman} ve çizim uzmanı arkadaşı köprünün eski çizimlerini açtı. Çatlağı uzaktan fotoğraflayıp güvenli bir noktadan ölçüm yaptılar. Ölçüm, bir büyüklüğün ne kadar olduğunu belirlemek demekti. Cetvel ve işaretli bir ip kullandılar. Su düzeyinin daha önceki haftalarda yükselmediğini de kayıtlardan öğrendiler. “Demek ki ilk düşüncemiz doğru olmayabilir,” dedi {kahraman}.
+{kahraman} ve çizim uzmanı arkadaşı köprünün eski çizimlerini açtı. Çatlağın fotoğrafını güvenli bir noktadan çektiler. Sonra çatlağın köprü kenarına olan uzaklığını görevlilerin izniyle, yakından cetvel ve bölmeli bir ip kullanarak ölçtüler: çatlak kenara yalnızca iki adım uzaklıktaydı. Su düzeyinin daha önceki haftalarda yükselmediğini de kayıtlardan öğrendiler. “Demek ki ilk düşüncemiz doğru olmayabilir,” dedi {kahraman}.
 ---
 @omurga
-İki arkadaş eski çizimle yeni fotoğrafı yan yana koydu. Çatlağın, köprünün yıllar önce değiştirilmiş bir taşının yakınında olduğunu fark ettiler. “Bu taşın dayanıklılığını, yani yüke karşı ne kadar sağlam kaldığını uzman ekip incelemeli,” dedi {kahraman}. Köprünün neden çatladığını kesin olarak söylemek için daha fazla bilgi gerekiyordu. Ekip, taşın bağlantı noktalarını kontrol etti ve sorunlu bölgeyi belirledi.
+İki arkadaş eski çizimle yeni fotoğrafı yan yana koydu. Çatlağın, köprünün yıllar önce değiştirilmiş bir taşının yakınında olduğunu fark ettiler. “Bu taşın dayanıklılığına uzman ekip bakmalı,” dedi {kahraman}. Taş, köprünün ağırlığını yıllarca sağlam taşıyabilecek mi? Köprünün neden çatladığını kesin olarak söylemek için daha fazla bilgi gerekiyordu. Ekip, taşların birleştiği yerleri kontrol etti ve sorunlu bölgeyi belirledi.
 ---
 @omurga
 Kasabalılar köprünün ne zaman açılacağını merak ediyordu. {kahraman} onlara önceki tahmininin neden değiştiğini anlattı. “Kafa yorduk, ölçtük ve yeni bir iz bulduk,” dedi. Sonra uzmanlarla birlikte onarım planını hazırladı. İşçiler hasarlı taşı güvenli biçimde yeniledi. Kontrol tamamlanınca köprü yeniden açıldı.
 ---
 @omurga
-Köprüden ilk geçenler gülümseyerek birbirlerine el salladı. Arkadaşı, “Herkes senin fikrini değiştirmeni gördü,” dedi. {kahraman} da gülümsedi. “İlk tahminim yanlış olabilir. Önemli olan, elimizdeki bilgilere göre doğru kararı vermek.” Sonra ölçüm defterini kapattı.
+Köprüden ilk geçenler gülümseyerek birbirlerine el salladı. {kahraman} da gülümsedi. Sonra ölçüm defterini kapattı.

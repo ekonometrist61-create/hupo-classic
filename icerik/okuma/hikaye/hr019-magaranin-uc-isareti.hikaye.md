@@ -66,5 +66,3 @@ Rehber çocuklara taş katmanlarının fotoğraflarını gösterdi. En üstte a�
 Çocuklar üç işareti defterlerine sırayla çizdi: kıvrımlı katman, tepe simgesi ve doğal boşluk. Sonra defterleri karıştırıp birbirlerine ne anlama geldiklerini sordular. {yoldas:yalin|bir arkadaş}, “Ben en çok üçüncüsünde yanıldım,” dedi. {kahraman} ise “İlk işaretin de tam anlamını araştırmamız gerek,” diye ekledi.
 
 Dönüş yolunda {yoldas:yalin|bir arkadaş} bir çakıl taşı buldu. Onu cebine koymak yerine ait olduğu yerde bıraktı. “Hatıra olarak fotoğraf ve çizimlerimiz yeter,” dedi. Mağaranın karanlığı ardında kalmıştı; fakat çocukların aklında açılan sorular daha da aydınlıktı.
-
-Dil hedefi: işaret, iz, olay sırası; Kavram/değer: jeolojiye giriş, varsayım–kanıt, koruma. İkon önerileri: kaya, harita, büyüteç. Okuma sonrası: Hangi iz doğal çıktı? Rehber neden mağaraya girişe izin vermedi?

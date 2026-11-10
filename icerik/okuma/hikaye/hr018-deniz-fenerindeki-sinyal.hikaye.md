@@ -66,5 +66,3 @@ Ertesi gün görevli, bakım defterinin bir kopyasını gösterdi. Tarih, saat, 
 “Demek bir sinyal bazen yalnız ışık değildir,” dedi {kahraman}. “Doğru bilgiyi doğru kişiye ulaştırmak da bir işaret olabilir.”
 
 {yoldas:yalin|bir arkadaş} bu sözü çok sevdi. Deniz fenerinin resmini çizdi; altına üç kelime yazdı: **gözle, bildir, güvende kal**. Bir sonraki akşam fener yanarken iki arkadaş ışığa değil, birlikte yaptıkları doğru işe bakıp gülümsedi.
-
-Dil hedefi: ışık–karanlık, neden–sonuç; Kavram/değer: deniz güvenliği, sorumlu bildirim, iş birliği. İkon önerileri: deniz feneri, dalga, telsiz. Okuma sonrası: Çocuklar neden kuleye çıkmadı? Görevliye hangi gözlem yardımcı oldu?

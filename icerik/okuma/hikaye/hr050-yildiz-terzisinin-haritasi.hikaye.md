@@ -13,7 +13,7 @@ deger_anahtarlari: [D6, D3]
 yetiskin_uygun: false
 tanitim: "Gökyüzünden bir düğme düşer. Yıldız Terzisi haritasını yeniden çizebilecek mi?"
 durum: taslak
-uretim_kaynak: llm_taslak
+uretim_kaynak: chatgpt_taslak
 tarih: "2026-10-22"
 etiketler:
   ana_sinif: 5
@@ -33,120 +33,43 @@ etiketler:
     - {id: kavram_hr050, tur: concept, etiket: "Gözlem ile yorum ayrımı", islev: application}
   kanit_duzeyi: C
   program_surumu: "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)"
-  denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
+  denetim: {ajan_a: review_needed, ajan_b: review_needed, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Düğme ne zaman düştü?", secenekler: [{id: A, metin: "Sabah altıda"}, {id: B, metin: "Öğlen"}, {id: C, metin: "Akşam beşte"}, {id: D, metin: "Gece on ikide"}], dogru: D, aciklama: "Saat kulesindeki akrep gece on ikiyi gösterirken düğme düştü."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Kahraman neden rahatladı?", secenekler: [{id: A, metin: "Yıldızların uzak cisimler, hayalî çizgilerin ise desen olduğunu bildiği için"}, {id: B, metin: "Terzinin yıldızları tamir edebileceğine inandığı için"}, {id: C, metin: "Kardeşinin uyandığını ve artık yalnız olmadığını gördüğü için"}, {id: D, metin: "Düğmenin altından yapıldığını ve değerli olduğunu anladığı için"}], dogru: A, aciklama: "Kahraman, astronomi bilgisiyle gökyüzündeki hayalî çizgileri gerçek yıldız bağlantılarından ayırabiliyordu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "Kahramana göre takımyıldızı çizgileri nasıl görülmeli?", secenekler: [{id: A, metin: "Yıldızları fiziksel olarak birbirine bağlayan gerçek yollar olarak"}, {id: B, metin: "Gökyüzünü kirleten, hiç görülmemesi gereken çizgiler olarak"}, {id: C, metin: "Yalnız gündüz ve ışıklı kentlerde görülebilen çizgiler olarak"}, {id: D, metin: "Tek doğru değil, farklı hikâyelerle birleşebilen desenler olarak"}], dogru: D, aciklama: "Takımyıldızları kültürlere göre farklı hikâyelerle anlatılabilir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen pusula ne işe yarar?", secenekler: [{id: A, metin: "Gökyüzüne yeni yıldızlar çizer ve parlatır"}, {id: B, metin: "Yönleri bulmak için gözlemcilere yol gösterir"}, {id: C, metin: "Terzinin düğmelerini gökyüzüne diker ve bağlar"}, {id: D, metin: "Gece gökyüzündeki bulutları dağıtarak açar"}], dogru: B, aciklama: "Pusula, yönleri bulmada kullanılan bir araçtır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, dayanak: "Gece yarısı gökten gümüş bir düğme düştü.", metin: "Yıldız Terzisi’nin haritasından ne kopmuştur?", secenekler: [{id: A, metin: "Mavi bir ip"}, {id: B, metin: "Gümüş bir düğme"}, {id: C, metin: "Kırmızı bir taş"}, {id: D, metin: "Yeşil bir yaprak"}], dogru: B, aciklama: "Gökyüzünden düşen nesne gümüş düğmedir."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, dayanak: "{kahraman}, haritadaki çizgilerin yıldızları birleştiren hayalî yollar olduğunu defterine yazdı.", metin: "Haritadaki çizgiler gökyüzünde gerçekte neyi gösteriyordu?", secenekler: [{id: A, metin: "Gökyüzüne gerilmiş gerçek gümüş iplikleri"}, {id: B, metin: "Rüzgârın bahçede estiği farklı yönleri"}, {id: C, metin: "Düğmenin gökten düştüğü uzun patikayı"}, {id: D, metin: "Yıldızları birleştiren hayalî yolları"}], dogru: D, aciklama: "Yıldızlar arasındaki çizgiler gerçek ip değil, hayalî yollardır."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, dayanak: "Terzi, çizimdeki boşluğu bulmak için teleskopla yıldızların konumunu karşılaştırdı.", metin: "Yıldız Terzisi kayıp noktayı saptamak için neye başvurmuştur?", secenekler: [{id: A, metin: "Gökyüzü gözlemine"}, {id: B, metin: "Renkli kumaşlara"}, {id: C, metin: "Eski masal kitabına"}, {id: D, metin: "Saatin çan sesine"}], dogru: A, aciklama: "Yer tespitinde gökyüzü gözlemi kullanılır."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, dayanak: "Masadaki {kelime:hr050_pusula} kuzeyi gösterince haritayı o yöne çevirdiler.", metin: "“Pusula” bu sahnede hangi işe yaramaktadır?", secenekler: [{id: A, metin: "Parlaklık ölçmeye"}, {id: B, metin: "Sesleri kaydetmeye"}, {id: C, metin: "Yönü belirlemeye"}, {id: D, metin: "Düğme dikmeye"}], dogru: C, aciklama: "Pusula yön belirlemek için kullanılır."}
 deyim_cumleleri:
-  hr050_kafasi_karismak: "Bazen iyi niyetle verilen çok fazla öneri de insanın kafasını karıştırabilirdi."
+  hr050_kafasi_karismak: "Parlayan çiğ taneleri arasında {yoldas:ilgi|bir arkadaşın} kafası karışmıştı."
 ---
 @omurga
-Kasabanın saat kulesindeki akrep, gece on ikiyi gösterirken gökyüzünden bir düğme düştü. Evet, gerçekten bir düğme: mercimek büyüklüğünde, ışıl ışıl, arkasında dört delik bulunan gümüş renkli bir düğme. {isaret:yildiz}
+Gece yarısı gökten gümüş bir düğme düştü. {kahraman}, bahçedeki taş masanın üstüne çarpan küçücük sesi duyunca pencereyi açtı. Düğme, soğuk bir ay ışığı gibi parlıyordu. Arkasında dört delik, önünde de ince bir yıldız deseni vardı. Üst kattaki odada yaşayan {yoldas:yalin|bir arkadaş} da ışığı görüp bahçeye indi. Tam düğmeyi kaldıracakları sırada bir rulo kâğıt masanın üstüne süzüldü.
 
-Düğmeyi bulan {kahraman}, onu bahçelerindeki masanın üzerine koydu. Bir taş kadar soğuktu ama parmaklarını çektiğinde masanın üzerinde ince bir ışık izi bırakıyordu. {kahraman} beşinci sınıfa gidiyordu; yıldızlarla ilgilenmeyi sever, bazen {kelime:hr050_teleskop} olan komşuları Gülseren Hanım'ın gözlemlerine katılırdı. Yine de gökyüzünden düğme düştüğünü hiçbir kitapta okumamıştı.
+Kâğıt, göğün haritasına benziyordu. Bazı noktaların çevresinde gümüş iplikten kıvrımlar vardı; bir noktaysa boş kalmıştı. Kâğıdın altından minik, şapkalı bir adam çıktı. Kendini Yıldız Terzisi diye tanıttı. “Haritamın düğmesi kopunca desen eksildi,” dedi. “Yanlış yere dikersem bütün harita kayar.” {kahraman}, terzinin elindeki {kelime:hr050_teleskop} teleskop çantasını gördü.
 
-“Birileri göğe gömlek mi dikiyor?” diye güldü {yoldas:yalin|bir arkadaş}.
-
-Şaka gibi görünen söz, ertesi gece tuhaf biçimde gerçek oldu. {kahraman} pencereden baktığında karşı apartmanın çatısında uzun şapkalı birinin gümüş ipliklerle uğraştığını gördü. Yabancı kişi yukarı doğru ince bir iğne uzatıyor, yıldızların arasına ışıklı çizgiler örüyordu. Bir an sonra bir yıldız kümesindeki üç nokta yer değiştirdi. {kahraman} gözlerini ovuşturdu. Çizgiler yeniden göründüğünde gökyüzündeki şekil artık bildiği gibi değildi.
+Terzi, kâğıdı taş masaya serdi. “Düğmenin düştüğü yeri biliyorum, fakat ait olduğu noktayı bilmiyorum.” {yoldas:yalin|bir arkadaş}, en parlak yıldızı gösterdi. “Buraya diksek olur.” {kahraman} ışığa baktı; en parlak nokta ötekilerden çok uzaktaydı. “Önce yönümüzü bulalım,” dedi. Terzi ceketinin cebinden küçük bir pusula çıkarıp masanın kenarına koydu.
 ---
 @omurga
-Kardeşini uyandırmak için döndüğünde çatıdan bir ses yükseldi: “Dur! {kelime:hr050_pusula} kaybettim.”
+Yıldız Terzisi, masanın köşesine üç ince renkli iplik koydu. Her iplik ayrı bir yıldızın kâğıttaki yerini işaretlemek içindi. Kırmızı iplik, doğu tarafındaki noktaya; mavi iplik, göğün tepesindeki noktaya uzandı. Fakat üçüncü ipliği bağlayacağı yer belirsiz kaldı. Terzi ipliğin ucunu parmağına doladı, gözlerini kısarak başını yukarı kaldırdı.
 
-{kahraman} koşarak balkona çıktı. Şapkalı adam kendini “Yıldız Terzisi” diye tanıttı. “İnsanların gece vakti bulduğu desenleri tamir ederim,” dedi. “Ama bu kez yıldızları işaretlediğim harita birbirine karıştı. Kaybolmadılar; benim çizgilerim yanlış yerlere gitti.”
+Masadaki {kelime:hr050_pusula} kuzeyi gösterince haritayı o yöne çevirdiler. {kahraman}, gökyüzünün geniş bir bölümünü kâğıtla karşılaştırdı. Üç parlak yıldız neredeyse düz bir sıra oluşturuyor, dördüncü yıldız onların üstünde duruyordu. Kâğıtta aynı dört nokta işaretlenmişti, fakat aralarındaki gümüş dikişler birbirinden kopmuştu. Terzi, kayıp düğmeyi önce dördüncü noktanın yanına tuttu ama düğme ışıldamadı.
 
-{kahraman} önce onun gerçekten yıldızları yerinden oynattığını sandı. Terzi hemen açıkladı: “Ben yıldızların kendisini taşımam. Yeryüzünden bakanların hayalinde onları birleştiren çizgilere yama yaparım. Bu gece rüzgâr yüzünden haritam yanlışlıkla kuzey yerine doğuya döndü.”
+“Belki düğmenin parlaması başka şeye bağlıdır,” dedi {kahraman}. Yıldız Terzisi küçük teleskobunu kurdu. Çocuklar sırayla baktı. Gökyüzündeki şeklin yanında çok sönük bir yıldız daha vardı; çıplak gözle seçilmiyordu. Terzi, çizimdeki boşluğu bulmak için teleskopla yıldızların konumunu karşılaştırdı. Haritanın kenarına yeni bir nokta işaretledi.
 
-Bu açıklama {kahraman:belirtme} rahatlattı. Çünkü astronomi kitaplarından yıldızların gökteki uzak cisimler olduğunu, insanların onlara çizdiği hayalî çizgilerin ise {kelime:hr050_takimyildizi} desenlerini oluşturduğunu biliyordu. Yıldız Terzisi masal dünyasından geliyor olabilirdi ama yıldızların gerçekten bir kumaşa dikili olmadığını o da biliyordu.
+{yoldas:yalin|bir arkadaş} kâğıttaki çizgileri parmağıyla izledi. “Bu ipler gerçekten yıldızların arasında mı?” Terzi, çizgilerin yalnızca hayalî olduğunu söyledi. {kahraman}, haritadaki çizgilerin yıldızları birleştiren hayalî yollar olduğunu defterine yazdı. Çocuk, şeklin yanına {kelime:hr050_takimyildizi} sözcüğünü de ekledi. Terzi, boş noktayı gümüş iğnesiyle çevreledi ama henüz dikişe başlamadı.
 ---
 @omurga
-Terzi, kendi haritasını düzeltene kadar kasabanın meydanında yapılacak “Yıldız Gecesi” etkinliğinde rehberlik edemeyeceğini söyledi. {kahraman} yardım etmeyi kabul etti. Ancak önce ailesine haber verdi. Annesi hayalî görünümlü terziyi pencereden gördüğünde epey şaşırdı. Gülseren Hanım'ı da çağırdılar; birlikte gözlemevindeki açık hava etkinliğine gideceklerdi.
+Birden rüzgâr çıktı. Haritanın bir kenarı havalandı; gümüş düğme masadan yuvarlanıp çiçeklerin arasına düştü. {kahraman} diz çöküp aradı. Çimlerin üzerinde çok sayıda çiğ tanesi vardı; her biri bir düğme gibi parlıyordu. [[deyim:hr050_kafasi_karismak]] {yoldas:yalin|bir arkadaş} sayısız parlak nokta arasında hangisinin düğme olduğunu bir türlü seçemiyordu. Terzi, kâğıdı düzleştirip büyütecini uzattı.
 
-Terzi, kasabanın dışındaki küçük tepeye varınca cebinden yedi ayrı ip makarası çıkardı. Kırmızı ip batıyı, yeşil ip doğuyu, mavi ip kuzeyi, sarı ip güneyi gösteriyordu. Geri kalan renklerin ne anlama geldiğini hatırlamıyordu. “Renkleri yeniden eşleyebiliriz,” dedi {kahraman}. “Ama gökyüzünün yönünü gerçekten nasıl belirleyeceğiz?”
+{kahraman} çiğ tanelerine dokunmadan bakınca, birinin altında dört küçük delik seçti. Düğmeyi nazikçe kaldırıp masaya getirdi. Terzi bu kez dikişten önce haritanın kenarındaki ay işaretini gökyüzündeki Ay'ın konumuyla karşılaştırdı. İşaret, harita döndürülünce yerinden sapmıştı. Pusulaya yeniden baktılar, sonra kâğıdı doğru yöne çevirdiler.
 
-Gülseren Hanım önce pusulayı gösterdi. “Gözlem yaparken bir araca güvenmek iyidir, fakat çevremizdeki işaretleri de anlamak gerekir.” Sonra gökyüzündeki yıldız desenlerinin yıl içinde ve gecenin saatine göre görünüşlerinin değiştiğini anlattı. Kutup Yıldızı'nın kuzey yönünü bulmada kullanılabildiğini, fakat onu bulurken doğru yıldız desenlerinden yararlanmak gerektiğini söyledi.
+Düğmenin konması gereken boşluk artık üç yıldızın hemen altındaydı. Yalnız kâğıtta bu noktanın çevresindeki çizgi kesik kesikti. {kahraman}, defterine bir gözlem daha ekledi: “Dört delikli düğme yalnızca bu kesik çizgiye sığıyor.” Terzi iğneyi kaldırdı, gümüş ipliğin ucunu düğmenin deliğinden geçirdi. Tam ilk dikişi atarken uzaktan gelen saat çanı gecenin sessizliğini yardı.
 ---
 @omurga
-{yoldas:yalin|bir arkadaş} hemen bir yıldızı gösterdi. “En parlak olan kuzey yıldızı değil mi?”
+Rüzgâr dinip bahçeye sessizlik çökünce taş masanın üzerindeki iplikler birbirine karışmadı. {yoldas:yalin|bir arkadaş}, ay ışığında yansıyan çizgilerin duvara düştüğünü gördü. Parmaklarıyla gölgeyi takip etti; kâğıttaki desenle duvardaki desen aynı açıda değildi. Terzi masanın ayaklarından birini küçük bir taşla yükselterek kâğıdı düzleştirdi.
 
-“Her zaman değil,” dedi Gülseren Hanım. “Parlaklıkla yönü karıştırmamalıyız.”
+Saat çanı sustuğunda düğmenin etrafındaki çizgiler hafifçe titreşti. Terzi ipliği çekip düğmeyi sabitledi; haritadaki kesik yollar ince bir ışıkla birleşti. Ancak kâğıdın sağ alt köşesi hâlâ karanlıktı. {yoldas:yalin|bir arkadaş}, terzinin yüzüne baktı. “Demek işimiz bitmedi.” Terzi ışığı elinin tersiyle örttü. Karanlık köşede daha önce göremedikleri çok küçük noktalar belirdi.
 
-Yıldız Terzisi utandı. “Ben de haritamı tam öyle karıştırdım. En ışıklı deseni kuzey sandım.”
+{kahraman}, teleskopla gökyüzünün aynı bölümüne yeniden baktı. Sönük noktalar orada da vardı. Terzi, haritaya bütün yıldızların tek tek işlenmesinin yıllar süreceğini söyledi. “Ben yalnızca bu gecenin desenini tamamlamak istemiştim.” Çocuk, defterindeki iki çizimi yan yana koydu: biri ilk gördüğü şekil, öteki yeni işaretlenen yıldızlar. Terzi çizimlerin tarihine bakıp eski haritaya minicik bir tarih daha attı.
 
-{kahraman}, gökyüzündeki Büyükayı desenini aramaya çalıştı. İlk bakışta bulamadı. Şehrin ışıkları yıldızları görmesini zorlaştırıyordu. Gülseren Hanım, gözlerinin karanlığa alışması için biraz beklemelerini istedi. Telefona bakarak geçen her dakikanın gözlerini yeniden parlak ışığa alıştırdığını fark edince {kahraman} ekranı kapattı. Bir süre sonra daha fazla yıldız seçebildi.
-
-“Demek ki bazen görmek için acele etmemek gerekiyor,” dedi.
-
-{yoldas:yalin|bir arkadaş}, sanki göğün içinden bir kapı açılmış gibi şaşırmıştı. İğnenin ince ışığı yıldızlara dokundukça gökyüzünde kuş, balık ve yolcu biçimleri görünüyordu. Ama bu hayalî çizimler gerçekte yıldızların birbiriyle komşu olduğu anlamına gelmiyordu. {kahraman} iki yıldızın gökyüzünde birbirine yakın görünse bile uzayda çok farklı uzaklıklarda olabileceğini hatırladı.
----
-@omurga
-Terzi, “Haritamı eski hâline çevirirsek herkes aynı şekli görecek,” dedi.
-
-“Belki de farklı yerlerde farklı desenler görürler,” diye karşılık verdi {kahraman}. “İnsanlar gökyüzündeki yıldızları geçmişte başka başka hikâyelerle birleştirmiş. Senin çizgilerin tek doğru hikâye değil.”
-
-Terzi bunu hiç düşünmemişti. Onun işinin her yıldızı tek bir örüntüye zorlamak değil, insanların göğe bakarken kurduğu hayallere alan açmak olabileceğini anladı. İğnesini indirdi ve şapkasından küçük bir defter çıkardı.
-
-İlk sayfada eski bir harita vardı. Yanlış dönen kâğıtta, kuzey işareti sağ kenara gelmişti. {kahraman} sayfayı yere koyup pusula yönüne göre çevirdi. Terzi, çizgileri büyük bir ciddiyetle yeniden çizdi. Ancak bir çizgi hep yanlış yıldızın yanına gidiyordu. {yoldas:yalin|bir arkadaş} bunu fark etti: “Sen ipliği yıldızın üstüne değil, haritadaki işarete bağlıyorsun. Harita dönünce iğnen de yanlış dönüyor.”
----
-@omurga
-“Harita ile gökyüzünü ayrı ayrı doğrulayalım,” önerisinde bulundu Gülseren Hanım.
-
-Bir süre hep birlikte çalıştılar. {kahraman} gözlem yaptığı yıldızları not etti, {yoldas:yalin|bir arkadaş} hayalî çizgileri kâğıda aktardı, terzi ise iplikleri onlara göre düzeltti. Herkesin görevi ayrıydı ama tek bir kişinin hatası diğerlerine anlatılmadan düzeltilemezdi. Terzi kendi karışıklığını kabul ettiğinde iş ilerledi.
-
-Tepeye uzaktan okulun servis aracı geldi. Öğretmenler ve veliler Yıldız Gecesi için teleskopları getiriyordu. {kahraman}, kimsenin gökyüzündeki garip ipliklere çarpıp şaşırmaması için terziden onları toplamasını istedi. Terzi biraz alındı. “Bütün gece diktiğim işleri mi sökeyim?”
-
-“Gerçek yıldızların arasına değil, insanların hayal ettiği çizgilere dokundun,” dedi {kahraman}. “Onların kendi hikâyelerini görebilmeleri için biraz boşluk bırakmak daha güzel olmaz mı?”
-
-Terzi sessizleşti. İğnesini uzatıp fazla ipleri topladı. Gökte geriye yalnız yıldızların ışıkları kaldı. {kahraman}, çıplak göğe bakınca kâğıttaki desenden daha etkileyici olduğunu düşündü. Terzi ise ilk defa bütün yama işlerinin görünür olmak zorunda olmadığını kabul ediyordu.
----
-@omurga
-Etkinliğin başında Gülseren Hanım katılımcılara küçük bir oyun önerdi. Her öğrenci gökyüzünde seçtiği üç yıldızla hayalî bir şekil çizecekti. {kahraman} bir kuş kanadı, {yoldas:yalin|bir arkadaş} minik bir kayık çizdi. Bir arkadaşları bunları bambaşka bir biçimde gördü; yıldızların arasına bir anahtar şekli yerleştirdi. Kimse ötekinin çizimini yanlış saymadı. Yalnız yıldızların gerçek konumlarını kaydederken doğru gözlem yapmak gerektiğini konuştular.
-
-{kahraman} teleskoptan Ay'a baktığında yüzeyindeki gölgelerin ne kadar belirgin olduğunu gördü. Terzi, “Oraya da düğme diksem?” diye sordu. {kahraman} güldü: “Ay'ın yüzeyinde bunlara ihtiyaç yok. Ama belki Ay'a bakarak bir hikâye yazabiliriz.”
-
-Gecenin sonunda terzi {kahraman:yonelme} ilk düşen düğmenin eşini verdi. İki düğmeyi bir araya getirince üzerlerinde aynı dört delik olduğu görüldü. {kahraman} düğmelerin deliklerinden geçen çizgileri saydı. “Bunlarla bir takımyıldızı deseni kurabilir miyiz?” diye sordu.
----
-@omurga
-“Kurabilirsin,” dedi terzi. “Ama çizdiğin desenin hayal gücünün ürünü olduğunu da söyle.”
-
-Bir sonraki hafta sınıfta öğretmenleri, {kahraman:ilgi} gözlem gecesini anlatmasını istedi. {kahraman} sunumuna “**Gökyüzünü okumak iki ayrı iştir**,” diye başladı. “Biri bilimsel gözlem; diğeri hayal kurmak. İkisi de güzeldir ama birbirinin yerine geçmez.” Sınıf, bu ayrımı anlamak için aynı yıldız fotoğrafının üzerine hem gök koordinatlarını hem de yaratıcı desenleri çizdi.
-
-{yoldas:yalin|bir arkadaş} ise eve döndüklerinde kâğıttan bir “yıldız terzisi takımı” yaptı. İçine ip, karton ve küçük pusula koydu. Düğmelerin birini cebinde saklıyor, ötekini {kahraman:yonelme} emanet ediyordu. Her yeni ayda gökyüzünü gözlemek için birlikte bir tarih belirlediler. Bulutlu gecelerde yıldız göremeyince de eski gözlem notlarına dönüp karşılaştırma yapıyorlardı. Hava açık olduğunda aynı yıldızların farklı saatte nasıl yer değiştirmiş gibi göründüğünü fark ettiler.
----
-@omurga
-Bir akşam kasabanın saat kulesinden rüzgârla küçük bir ses geldi. {kahraman} başını kaldırdı. Çatıda hiç kimse yoktu, ama uzaktan birinin iğnesini çantasına yerleştirirken çıkardığına benzeyen bir tıkırtı duyuluyordu. {kahraman} gülümsedi. Gökyüzüne bakmak için artık terzinin dönmesini beklemesi gerekmiyordu. Yıldızlar oradaydı. Kendisi bakmayı öğrenmişti.
-
-Gözleme hazırlık bir önceki haftadan başlamıştı. {kahraman} kütüphaneden gökyüzü atlası almış, haritadaki yıldızlarla telefondaki uygulamanın çizgilerini karşılaştırmıştı. İlk denemesinde doğu ile batıyı ters işaretlediği için gördüğü şekillerin hiçbiri kitaptakilere benzememişti. Üstelik telefonda seçtiği şehir yanlış olduğundan yıldızların konumları tutmuyordu. Bu küçük hata, Yıldız Terzisi'nin yaşadıklarını anlamasını kolaylaştırdı. Bir araç doğru da olsa ona yanlış bilgi verirsen çıkan sonuç da yanlış olabilirdi. {kahraman} not defterine “Araçları kullanmadan önce ayarlarını kontrol et,” diye yazdı. {yoldas:yalin|bir arkadaş} bunu görünce “Sen yıldızlara bile ödev veriyorsun,” diye takıldı. {kahraman} cevap vermedi, yalnız kalemini ona uzatıp bir yön oku çizmesini istedi.
----
-@omurga
-Gülseren Hanım'ın tepesine çıktıklarında havanın serinliğini tahmin etmemişlerdi. {kahraman} ince hırkasıyla titredi, annesi çantasından getirdiği atkıyı verdi. Terzi, yıldız iplerini düzeltme telaşı içinde yerdeki çiğ tanelerine basıyordu. Çimenler kayganlaşmıştı. {kahraman} ona “Biraz yavaşla,” dedi. Terzi ilk kez bir çocuktan uyarı duymaya alışık değildi. “Ben yüzlerce yıldır göğün eteklerini dikerim,” diye söylenince {yoldas:yalin|bir arkadaş}, “O zaman çimende nasıl yürüyeceğini de biliyor olman lazım,” dedi. Terzi kaymamak için durup bastığı yeri inceledi. {kahraman}, bilginin yaşla birlikte artabileceğini ama yeni bir koşulla karşılaşınca herkesin dikkat göstermesi gerektiğini düşündü.
----
-@omurga
-Terzi'nin haritasında en tuhaf şey çizgiler değildi. Bir köşede silinmiş bir isim vardı: “Yolcuların Dostu”. {kahraman} bunun bir takımyıldızı mı, yoksa terzinin kendi koyduğu bir ad mı olduğunu sordu. Terzi uzun süre cevap vermedi. Sonunda küçükken yolunu kaybeden bir yolcuya gökyüzünde bir işaret gösterdiğini, yolcunun da ona bu adı taktığını anlattı. O günden sonra, herkes kendisini gerekli görsün diye göğe daha çok işaret koymaya başlamıştı. Fakat işaretler çoğaldıkça insanların hangisini izleyeceğini bilemediğini fark etmişti. {kahraman} bunun neden üzücü olduğunu anlayabiliyordu.[[deyim:hr050_kafasi_karismak]]
----
-@omurga
-{yoldas:yalin|bir arkadaş}, “Öyleyse haritada en gerekli işaretler kalsın,” dedi. “Herkes bütün çizgileri bilmek zorunda değil.” Terzi buna karşı çıktı: “Birini silersem verdiğim emek boşa gider.” Gülseren Hanım, “Emek değerli,” dedi, “ama yaptığımız bir şeyin yararlı olmadığını öğrenirsek onu düzeltmek de emeğe saygıdır.” Terzi düşünmek için şapkasını çıkardı. Şapkasının içinden yedi renk iplik yerine küçücük yıldız haritaları döküldü. Bazıları aynı yıldızları değişik biçimlerde birleştiriyordu. {kahraman} onları bir araya getirince farklı kültürlerin gökyüzündeki desenlere neden değişik adlar verdiğini konuşmaya başladılar.
-
-Yıldız Gecesi'nin başlamasına yarım saat kala beklenmedik bir olay çıktı. Okuldan gelen öğrenci gruplarından biri karanlıkta yan tepeye yürümek istedi. Görevliler, alanda önceden belirlenmiş güvenli yürüyüş yolunun dışına çıkmamalarını söyledi. Bir çocuk, “Kuzey tarafta daha güzel yıldız görünüyormuş,” diye itiraz etti. {kahraman} ona ışık kirliliğinin etkisini anlattı ama uzaklaşmanın güvenlik riskini değiştirmeyeceğini ekledi. Birlikte tepenin aydınlatması kontrollü bölümünde kaldılar. Yıldızları biraz daha az görseler de grup hâlinde güvenli bir gözlem yapabildiler. {kahraman}, bilimsel merakın bazen sınır tanımamayı değil, sınırları anlayarak araştırmayı gerektirdiğini düşündü.
----
-@omurga
-Gözlem başlamadan önce bulutlar geldi. İncecik sis çizgileri önce doğu ufkunu, sonra yıldızların bir kısmını kapattı. Terzi “Bütün hazırlık boşa gitti!” diye yakındı. Gülseren Hanım, hava olaylarının da gözlem planının bir parçası olduğunu söyledi. {kahraman}, grup için hazırlanan yedek çalışmayı hatırladı: Teleskop kullanılamazsa daha önce çekilmiş gökyüzü görüntüleri üzerinde araştırma yapılacaktı. Öğrenciler sınıfta yaptıkları haritalarla görüntülerdeki yıldızları eşleştirecek, sorularını bir sonraki gözlem tarihine saklayacaktı. {yoldas:yalin|bir arkadaş} bu düşünceyi beğendi. “Bulutların bile bir görevi var; bize B planını hatırlatıyorlar,” dedi.
-
-Bulutlar biraz açıldığında sıra {kahraman:yonelme} geldi. Teleskobun ayarı yetişkin görevli tarafından yapılmıştı. {kahraman} önce baktığı gök cisminin ne olduğunu öğrenmek istedi. Yanında duran öğrenci, “Görüntüyü hemen çekelim,” diyordu. {kahraman} ise fotoğraftan önce çıplak gözle gördüğünü tarif etmeye çalıştı. Küçük parlak bir nokta, etrafında sanki daha zayıf ışıklar… Görevli, parlaklık ve şekil konusunda yanılabileceğini, bir teleskop görüntüsünde gözlem koşullarının önemli olduğunu açıkladı. {kahraman} gördüğünü olduğu gibi yazdı, sonra cihazın gösterdiği cismi öğrendi. Tahmininin tamamı doğru çıkmadı. Ama yanlışın nedenini öğrenmesi, doğru tahmin yapmaktan daha çok aklında kaldı.
----
-@omurga
-Terzi, gösteri bitince kendisine yardım eden üç kişiye birer hayalî sertifika dikti. {kahraman:ilgi} sertifikasında “Sabırlı Gözlemci”, {yoldas:ilgi|bir arkadaşın} sertifikasında “Dikkatli Soru Soran”, Gülseren Hanım'ınkinde “Yol Gösteren” yazıyordu. {kahraman} bu unvanlara güldü. Terzi kendi sertifikasını da hazırladı: “Hatalarını Düzeltmeyi Öğrenen”. Önce yazıyı küçük tuttu, sonra daha görünür bir yere işledi. Yanlış yapmış olmak onu küçültmüyordu. Hatasını saklamak için kurduğu yeni çizgiler ise gerçekten gökyüzünü karıştırmıştı. Onları kaldırdıktan sonra kendisini hafiflemiş hissetti.
-
-Ertesi gün okulda {kahraman:ilgi} anlattıklarına herkes inanmadı. Bazıları yıldız terzisinin bir rüya olduğunu söyledi. {kahraman}, “Terziyi görmediyseniz onu gerçek kabul etmek zorunda değilsiniz,” diye cevap verdi. “Ama beraber gözlediğimiz gökyüzü hakkında soruları araştırabiliriz.” Sonra sınıfın iki sütun hazırlamasını önerdi: “Öyküdeki fantastik olaylar” ve “Gerçek dünyada doğrulayabileceğimiz bilgiler”. Birinci sütuna ışıklı ipliklerle desen çizmek, ikinci sütuna gökyüzünde yön bulma ve ışık kirliliği yazıldı. Öğretmen, hayal gücüyle bilimi birbirine düşman gibi görmemelerine sevindi. Biri soru sorulacak yeni dünyalar açıyor, öteki soruların hangisine nasıl yanıt bulunabileceğini gösteriyordu.
----
-@omurga
-{kahraman:ilgi} defterindeki en son sayfada ise ne harita ne de çizim vardı. Yalnızca küçük bir cümle: “Göğün dikişleri yıldızların arasında değil, onlara baktığımız hikâyelerde.” Kardeşi cümleyi okuyunca biraz kaşlarını çattı. “Yani terzinin gerçek iğnesi yok mu?” {kahraman}, “Masalda var,” dedi. “Gerçekteyse bizim kalemlerimiz ve sorularımız var.” {yoldas:yalin|bir arkadaş} ertesi gece kendi yıldız haritasını çizerken yıldızları yerlerinden oynatmaya kalkmadı. Yalnız kâğıdı çevirdi, yönünü düzeltti ve gökyüzünü yeniden gözledi.
-
-Bahar geldiğinde yıldız gecesini tekrarladılar. Bu kez {kahraman} yeni gelen öğrencilere kendi öğrendiklerini anlattı, ama önce onlara gökyüzünde ne gördüklerini sordu. Bir çocuk üç yıldızı bir çiçek, bir başkası bir taç gibi çizdi. {kahraman} ikisinin resmini de panoya astı. Panonun altına bilimsel bilgilerle hayalî çizimlerin farklı renklerle yazıldığı küçük bir anahtar ekledi. Böylece kimse hangi bilginin gözlem, hangisinin yaratıcı yorum olduğunu karıştırmadı. Gülseren Hanım, “En iyi haritalar bazen nereye baktığını değil, nasıl baktığını da öğretir,” dedi. {kahraman} kuzeyi işaretleyen oku yeniden kontrol etti, sonra başını kaldırdı. Yıldızlar yerindeydi; değişen, onları okuyan gözlerdi.
----
-@omurga
-{yoldas:yalin|bir arkadaş}, defterin sonuna küçük bir yıldız çizip altına şunu yazdı: “Bir sorunun cevabını bulamadığımda onu silmeyeceğim. Daha iyi bir gözlem için saklayacağım.” {kahraman} bu cümleyi görünce gülümsedi.
----
-@omurga
-- Kavramlar: Yön, gökyüzü gözlemi, takımyıldızı, ışık kirliliği. - Dil: “Gökyüzüne yama yapmak” mecazı; gözlem ile yorum ayrımı. - Bilimsel not: Takımyıldızı çizgileri hayalîdir; yıldızların fiziksel olarak birbirine bağlandığı iddia edilmez.
+{yoldas:yalin|bir arkadaş} düğmenin düşerken çıkardığı sesi taklit edince üçü birden güldü. Harita kâğıdının üstündeki ışık, terzinin küçücük makarasına geri dolmaya başladı. Terzi şapkasını düzeltip kâğıdı rulo yaptı. Kapanırken haritanın son çizgisi bir an bahçe duvarına yansıdı. {kahraman}, duvarda beliren yeni noktayı defterine çizip yanına o gecenin saatini yazdı.

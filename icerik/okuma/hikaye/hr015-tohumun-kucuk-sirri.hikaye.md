@@ -74,6 +74,3 @@ Bir hafta sonra yapraklarda yeşillenme görüldü. {yoldas:yalin|bir arkadaş},
 “Bir kısmını,” dedi {kahraman}. “Su, ışık ve uygun ortam önemli. Ama bütün bitkiler aynı mı, onu da araştırmalıyız.”
 
 Defterinin sonuna bir soru daha yazdı: Kaktüsle fasulye aynı miktarda su ister mi? {kahraman} bu sorunun cevabını henüz bilmiyordu. Bilmediğini söylemek onu üzmedi; aksine ertesi gün için heyecanlandırdı. Çünkü küçük bir tohum, kocaman bir merak başlatmıştı.
----
-@omurga
-Dil hedefi: büyümek–küçülmek, gözlem; Kavram/değer: bitki gelişimi, kontrollü karşılaştırma, sabır. İkon önerileri: tohum, filiz, güneş. Okuma sonrası: Hangi koşul farklıydı? Bitkilerin yalnızca uzunluğuna bakarak karar vermek neden yeterli değil?

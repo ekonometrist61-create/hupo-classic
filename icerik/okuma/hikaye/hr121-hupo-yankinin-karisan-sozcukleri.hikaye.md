@@ -9,10 +9,10 @@ sinif_ust: 3
 kahraman_turu: hazir
 deger_anahtarlari: [D12, D3]
 yoldas: "Minik serçe"
-tanitim: "Okul bahçesindeki taş kemer, sözcükleri karıştırarak geri getiren bir yankı. Hupo ve serçe sesleri dikkatle karşılaştırarak gerçeği bulur."
+tanitim: "Okul bahçesindeki taş kemer, sözcükleri karıştırarak geri getiren kurgusal bir yankı. Hupo ve serçe sesleri dikkatle karşılaştırarak gerçeği bulur."
 durum: taslak
 uretim_kaynak: llm_taslak
-duzeltme_tarihi: "2026-10-24"
+duzeltme_tarihi: "2026-11-08"
 etiketler:
   ana_sinif: 3
   maarif: {ana_deger: D12, yardimci_deger: D3}
@@ -48,8 +48,8 @@ sorular:
       - {id: C, metin: "Kemer bir süre sessiz kaldığı için"}
       - {id: D, metin: "Yağmur başladığı için"}
     dogru: B
-    dayanak: "Ama Hupo defterine bakınca bir ayrıntı gördü: Söylediği sözcükteki harflerin hepsi vardı; yalnızca sıraları değişmişti."
-    aciklama: "Hupo, defterdeki ayrıntıyı görünce ilk tahminini bıraktı."
+    dayanak: "Ama Hupo defterindeki “masa–asam” çiftine bakınca bir ayrıntı gördü: “asam” sözcüğünde “masa”nın bütün harfleri vardı; yalnızca sıraları değişmişti."
+    aciklama: "Defterdeki ayrıntı yalnızca harflerin sırasının değiştiğini gösterdi; bu yüzden ilk tahmin yetmedi ve dikkatli dinleme gerekti."
   - id: s3
     beceri: sozcuk_baglami
     dayanak_sayfa: 2
@@ -64,15 +64,13 @@ sorular:
     aciklama: "Metinde eşleştirmek, doğru sözü doğru karşılığıyla bir araya getirmek anlamında kullanılır."
 ---
 @omurga
-Okul bahçesinin sonunda eski bir taş kemer vardı. Hupo, kemerin altına kondu ve neşeyle “Masa!” diye seslendi. Genellikle söylenen sözü geri getiren yankı, bu kez “Asam!” dedi. Hupo şaşırdı. Sesin bir yere çarpıp geri dönmesine yankı dendiğini biliyordu. Ama yankı neden sözcükleri karıştırıyordu? Hupo, “Burada bir tuhaflık var,” diye mırıldandı.
+Okul bahçesinin sonunda eski bir taş kemer vardı. Hupo, kemerin altına geçti ve neşeyle “Masa!” diye seslendi. Genellikle söylenen sözü geri getiren yankı, bu kez “Asam!” dedi. Hupo şaşırdı. Sesin bir yere çarpıp geri dönmesine yankı dendiğini biliyordu. Ama yankı neden sözcükleri karıştırıyordu? Hupo, “Burada bir tuhaflık var,” diye mırıldandı.
 ---
 @omurga
 Ertesi denemede “Kitap!” dedi. Kemerden “Pitak!” cevabı geldi. Hupo, sözcükleri küçük not defterine yazdı: masa–asam, kitap–pitak. O sırada minik serçe yaklaştı. “Belki de harflerin sırası değişiyor,” dedi. İkisi sözcükleri eşleştirmeye, yani doğru sözü doğru karşılığıyla bir araya getirmeye karar verdi.
 ---
 @omurga
-Hupo ilk olarak “asam” sözcüğünün “masa” değil, “sama” olması gerektiğini düşündü. Serçe de buna hemen inandı. Ama Hupo defterine bakınca bir ayrıntı gördü: Söylediği sözcükteki harflerin hepsi vardı; yalnızca sıraları değişmişti. “Tahmin etmek yetmedi,” dedi. “Önce daha dikkatli dinlemeliyiz.” Kemerin önüne döndüler. Hupo bu kez kulak kesildi; hiçbir sesi kaçırmak istemiyordu.
+Hupo ilk olarak “asam” sözcüğünden bir harfin düştüğünü düşündü; kemer “masa”yı tam söyleyememişti. Serçe de buna hemen inandı. Ama Hupo defterindeki “masa–asam” çiftine bakınca bir ayrıntı gördü: “asam” sözcüğünde “masa”nın bütün harfleri vardı; yalnızca sıraları değişmişti. Demek ki asıl mesele harf eksikliği değil, sıraydı. “Bu tahmin tutmadı,” dedi. “Önce daha dikkatli dinlemeliyiz.” Kemerin önüne döndüler. Hupo bu kez kulak kesildi; hiçbir sesi kaçırmak istemiyordu.
 ---
 @omurga
-Hupo sözcükleri yavaşça, hecelerini belirgin söyleyerek yeniden denedi. Serçe duyduğu sesleri tek tek not etti. Kemer “Asam!” dediğinde harfleri sıralayıp “masayı” buldular. “Pitak!” sesini de “kitap” olarak düzelttiler. Kemerden gelen son yankı yine karışıktı, fakat artık hangi sözcüğün söylendiğini anlayabiliyorlardı. Hupo defterinin altına şöyle yazdı: “Dikkatli dinle, karşılaştır, sonra karar ver.”
-
-Not: Gerçek yankıda ses aynen geri döner; hikâyedeki sözcüklerin harflerinin karışması kurgudur.
+Hupo sözcükleri yavaşça, hecelerini belirgin söyleyerek yeniden denedi. Serçe duyduğu sesleri tek tek not etti. Kemer “Asam!” dediğinde serçenin notundaki harfleri yer değiştirip “masayı” buldular. “Pitak!” sesini de “kitap” olarak düzelttiler. Kemerden gelen son yankı yine karışıktı, fakat artık hangi sözcüğün söylendiğini anlayabiliyorlardı. Hupo defterinin altına doğrulanan iki sözcüğü yazdı: masa ve kitap.

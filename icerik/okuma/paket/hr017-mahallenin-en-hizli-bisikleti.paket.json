@@ -72,7 +72,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 214,
+        "kelime_sayisi": 213,
         "tahmini_sure_dk": 4,
         "sayfa_sayisi": 7,
         "soru_sayisi": 4,
@@ -176,7 +176,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Antrenman için okulun yanındaki boş alana gittiler. İlk gün küçük dönüşlerde yavaşladı, ikinci gün daha dengeli sürdü. Bir hafta sonra bir çizginin üzerinden dikkatle geçebiliyordu. Mert ara sıra ona eşlik etti: \"Hızlı olmak zorunda değilsin. Önemli olan kontrolü kaybetmemek.\""
+          "v": "Antrenman için okulun yanındaki boş alana gittiler. İlk gün küçük dönüşlerde yavaşladı, ikinci gün daha dengeli sürdü. Bir hafta sonra bir çizginin üzerinden dikkatle geçebiliyordu. Mert ara sıra ona eşlik etti: \"Yavaş git, düşme yeter!\""
         }
       ]
     },
@@ -210,7 +210,7 @@
         },
         {
           "t": "metin",
-          "v": " etti. "
+          "v": " etti ve bisikleti kısaca kontrol etti. "
         },
         {
           "t": "kahraman",
@@ -218,7 +218,7 @@
         },
         {
           "t": "metin",
-          "v": " babasıyla birlikte"
+          "v": " zincir yerine oturana kadar Mert'in yanında bekledi."
         },
         {
           "t": "ikon",
@@ -226,7 +226,7 @@
         },
         {
           "t": "metin",
-          "v": " kenarda beklerken Mert son anda yarışa yetişti. İkisi yan yana başladı. Mahallede \""
+          "v": " Yarış başlamıştı; ikisi son anda yerlerini alıp geriden başladı. Mert gülerek: \""
         },
         {
           "t": "atasozu",
@@ -234,7 +234,7 @@
         },
         {
           "t": "metin",
-          "v": "\" derlerdi."
+          "v": "\" dedi."
         }
       ]
     },
@@ -272,7 +272,7 @@
         },
         {
           "t": "metin",
-          "v": " çıkartması yapıştırdı. O yıldız ona hızdan çok arkadaşlığı hatırlatıyordu. "
+          "v": " çıkartması yapıştırdı. Yıldıza bakınca Mert'in sarılışı aklına geldi. "
         },
         {
           "t": "isaret",
@@ -293,7 +293,7 @@
         },
         {
           "t": "metin",
-          "v": " kaskını rafına koydu. Bisikletin boyası yine aynıydı. Ama artık her bakışında yarış gününü değil, emeği ve dostluğu hatırlıyordu."
+          "v": " kaskını rafına koydu. Bisikletin boyası yine aynıydı, ama gidondaki yıldız hâlâ oradaydı."
         }
       ]
     }
@@ -327,46 +327,46 @@
     {
       "id": "s2",
       "beceri": "cikarim",
-      "dayanak_sayfa": 4,
-      "metin": "Yarışta birinci olamamasının nedeni neydi?",
+      "dayanak_sayfa": 5,
+      "metin": "Kahraman yarışta neden birinci olamadı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Arkadaşının zincirine yardım etmek için geç başlamak"
+          "metin": "Kaskını takmayı tamamen unutmuş olmak"
         },
         {
           "id": "B",
-          "metin": "Bisikletinin çok eski olması"
+          "metin": "Yarış sırasında frenlerinin tutmaması"
         },
         {
           "id": "C",
-          "metin": "Frenlerinin çalışmaması"
+          "metin": "Arkadaşına yardım için geç başlamak"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Arkadaşının bisikleti için yardım çağırdı ve yarışa geç yetişti."
+      "dogru": "C",
+      "aciklama": "Kahraman, Mert'in zinciri için görevliye seslendi ve zincir düzelene kadar yanında bekleyip geriden başladı. Kaskı ve frenleri ise sayfa 2'de kontrol edilmişti."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 6,
-      "metin": "Yıldız çıkartması kahramana neyi hatırlatıyordu?",
+      "metin": "Kahraman gidondaki yıldıza baktığında neyi hatırlıyordu?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hızdan çok arkadaşlığı"
+          "metin": "Kazandığı bir madalyayı"
         },
         {
           "id": "B",
-          "metin": "Kazanılan bir madalyayı"
+          "metin": "Arkadaşının ona sarıldığı anı"
         },
         {
           "id": "C",
           "metin": "Yeni bir bisiklet alacağını"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Yıldız, ona hızdan çok arkadaşlığı hatırlatıyordu."
+      "dogru": "B",
+      "aciklama": "Yıldıza bakınca Mert'in finişte ona sarıldığı an aklına geldi. Kahraman yarışı kazanmadı, madalya ya da yeni bisiklet metinde yok."
     },
     {
       "id": "s4",
@@ -376,19 +376,19 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Çok önce yapılmış ya da kullanılmış olan"
+          "metin": "Yakın zamanda alınmış olan"
         },
         {
           "id": "B",
-          "metin": "Çok hızlı olan"
+          "metin": "Çok hızlı giden bisiklet"
         },
         {
           "id": "C",
-          "metin": "Renkli olan"
+          "metin": "Uzun süredir kullanılmış"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Eski bisiklet, uzun süredir kullanılan bisikletti."
+      "dogru": "C",
+      "aciklama": "Eski bisiklet, uzun süredir kullanılan bisikletti. Yakın zamanda alınmış olan ise yeni sayılır."
     }
   ],
   "uretim": {

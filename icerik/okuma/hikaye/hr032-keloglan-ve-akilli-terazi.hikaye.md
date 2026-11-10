@@ -82,11 +82,3 @@ Bir müşteri, “Benim aldığım ürünler için de aynı kontrol yapılacak m
 Annesi gülerek, “Akıl terazide tartılır mı hiç?” diye karşılık verdi. {kahraman} sepetini bıraktı. “Tartılmaz ama doğru ölçüyle iş yapmak akıllıca olur.”
 
 Ertesi pazar satıcı, tezgâhına yeni denetlenmiş bir terazi koymuştu. Yanına da küçük bir yazı asmıştı: **Ölçüde doğruluk, alışverişte güven**. {kahraman} bu yazıyı görünce başıyla selam verdi. Satıcı da ona teşekkür etti. Kasabada o gün belki büyük bir hazine bulunmamıştı; ama herkesin hakkını koruyan küçük bir adım atılmıştı.
-
-Dil hedefi: adil–haksız, deyim: ölçüp biçmek; Kavram/değer: ölçme, adalet, dürüstlük ve onarıcı sorumluluk. İkon önerileri: terazi, pazar, sepet. Okuma sonrası: Terazinin hatası nasıl kanıtlandı? Deyimdeki “ölçüp biçmek” gerçek ölçme midir?
----
-@omurga
-1. Kaynak anahtarı mevcut katalogdaki `HR-###` ID’sidir. Tam metin yalnızca eşleşen kayıtların `full_text` alanına taslak olarak eklenmelidir; yeni ID üretilmemeli ve önceki içerik silinmemelidir. 2. Metin gövdesi `<!-- STORY_START:HR-### -->` ile `<!-- STORY_END:HR-### -->` arasında yer alır. Bu işaretlerin dışındaki açıklamalar içerik metnine eklenmemelidir. 3. `grade`, `genre`, `rights_class`, `language`, `concepts`, `icon_suggestions` için ilk katalog kayıtları temel alınmalıdır. Sınıf başına kelime sınırı otomatik doğrulanmalıdır. 4. `status = editorial_review`, `curriculum_verified = false`, `rights_cleared = false` ve `published = false` olarak tut. Özellikle geleneksel tiplere ilişkin yeni metinler için benzerlik/hak kontrolü yapılmalı. 5. Her hikâye için okuduğunu anlama soruları metindeki gerçek olaylara dayalı hazırlanmalı; kelime ve kavram açıklamaları diyalog akışından koparılmamalı. 6. 2–4. sınıf ekranlarında özgün inline ikonlar ve açılır bilgi kartları bulunabilir; ancak metin gövdesine platform emojileri gömmek yerine yapısal etiketler kullan.
----
-@omurga
-Durum özeti: Bu parti 15 metindir. Önceki 17 uzunluk-uygun metinle birlikte 32/120 hikâye uzunluk bakımından tamamlandı; 88 hikâye tam metin üretimi bekliyor. Bu sayı editoryal yayın onayı anlamına gelmez.

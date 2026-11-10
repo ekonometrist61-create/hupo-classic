@@ -1,5 +1,5 @@
 ---
-baslik: "Annem ve Yağmur Bahçesinin Planı"
+baslik: "Yağmur Bahçesinin Planı"
 slug: "hr126-anne-yagmur-bahcesinin-plani"
 fis_kodu: "HR-126"
 tur: bilim
@@ -8,7 +8,8 @@ sinif_alt: 3
 sinif_ust: 3
 kahraman_turu: anne
 deger_anahtarlari: [D16, D20]
-tanitim: "Okul bahçesindeki su birikintisi için öğrencilerin yağmur bahçesi planı yapılır. Köprü mühendisi {kahraman} ölçüleri yeniden alıp planı düzeltir."
+yetiskin_uygun: false
+tanitim: "Okul bahçesindeki su birikintisi için öğrencilerin yağmur bahçesi planı yapılır. Çevre mühendisi {kahraman} ölçüleri yeniden kontrol eder ve planı buna göre düzenler."
 durum: taslak
 uretim_kaynak: llm_taslak
 duzeltme_tarihi: "2026-10-24"
@@ -17,74 +18,76 @@ etiketler:
   maarif: {ana_deger: D16, yardimci_deger: D20}
   kanit_duzeyi: C
   curriculum_status: source_pending
-  denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
+  denetim: {ajan_a: review_needed, ajan_b: review_needed, insan: pending}
   sozluk_tdk: pending
 ogrenme_hedefleri:
   - {id: olcum_hr126, tur: lexeme, etiket: "ölçüm", islev: first_hint}
-  - {id: egim_hr126, tur: lexeme, etiket: "eğim", islev: application}
+  - {id: egim_hr126, tur: lexeme, etiket: "yamaç", islev: application}
   - {id: model_hr126, tur: lexeme, etiket: "model", islev: application}
-  - {id: denetlemek_hr126, tur: lexeme, etiket: "denetlemek", islev: transfer}
+  - {id: denetlemek_hr126, tur: lexeme, etiket: "kontrol", islev: transfer}
 sorular:
   - id: s1
     beceri: hatirlama
     dayanak_sayfa: 1
-    metin: "İlk tahmin neydi?"
+    metin: "Mühendis, su birikintisinin nedenini önce ne sandı?"
     secenekler:
-      - {id: A, metin: "Su borusu tamamen kırılmıştı"}
-      - {id: B, metin: "Çiçekler solmuştu"}
-      - {id: C, metin: "Yol çok genişti"}
-      - {id: D, metin: "Sorun bozuk oluktandı"}
+      - {id: A, metin: "Su borusunun kırıldığını"}
+      - {id: B, metin: "Çiçeklerin solduğunu"}
+      - {id: C, metin: "Yolun çok geniş olduğunu"}
+      - {id: D, metin: "Oluğun bozuk olduğunu"}
     dogru: D
     dayanak: "{kahraman} önce birikintinin yalnızca bozuk bir oluk yüzünden oluştuğunu düşündü."
-    aciklama: "İlk tahmin, birikintinin bozuk bir olukta olduğuydu."
+    aciklama: "İlk tahmin, birikintinin bozuk bir oluktan kaynaklandığıydı."
   - id: s2
-    beceri: cikarim
+    beceri: hatirlama
     dayanak_sayfa: 2
-    metin: "Ölçümlerden sonra hangi bilgi ortaya çıktı?"
+    metin: "Ölçüm sonuçları ve çizim neyi gösterdi?"
     secenekler:
-      - {id: A, metin: "Yağmur o gün hiç yağmamıştı"}
-      - {id: B, metin: "Bahçe planlanandan küçüktü"}
-      - {id: C, metin: "Su taş zeminden akıyordu"}
-      - {id: D, metin: "Oluk kaldırılmıştı"}
+      - {id: A, metin: "Yağmurun o gün hiç yağmadığını"}
+      - {id: B, metin: "Bahçenin planlanandan küçük olduğunu"}
+      - {id: C, metin: "Suyun taş zeminden aktığını"}
+      - {id: D, metin: "Oluğun yerinden kaldırıldığını"}
     dogru: C
     dayanak: "Su, oluğun altından değil, geniş taş zeminin üzerinden akıyordu."
-    aciklama: "Ölçüm ve çizim, suyun taş zeminden aktığını gösterdi."
+    aciklama: "Ölçüm ve çizim, suyun taş zeminin üzerinden aktığını gösterdi."
   - id: s3
-    beceri: hatirlama
-    dayanak_sayfa: 3
-    metin: "Hangi model suyu topladı?"
+    beceri: sozcuk_baglami
+    dayanak_sayfa: 2
+    metin: "“Yolun kenarındaki yamaç, bahçeye doğru eğiliyordu” cümlesinde yamaç ne demektir?"
     secenekler:
-      - {id: A, metin: "Birinci model"}
-      - {id: B, metin: "İkinci model"}
-      - {id: C, metin: "Hiçbir modelde çiçeklik yoktu"}
-      - {id: D, metin: "Eğimi olmayan düz bir çizim"}
-    dogru: B
-    dayanak: "İkinci modelde çiçeklik biraz daha aşağıdaydı ve suyu topladı."
-    aciklama: "Çiçeklik daha aşağıda olan ikinci model suyu topladı."
+      - {id: A, metin: "Eğimli, yüksekçe arazi parçası"}
+      - {id: B, metin: "Çiçeklerin dikildiği küçük çukur"}
+      - {id: C, metin: "Suyun aktığı demir oluk"}
+      - {id: D, metin: "Okulun büyük giriş kapısı"}
+    dogru: A
+    dayanak: "Yolun kenarındaki yamaç, bahçeye doğru eğiliyordu."
+    aciklama: "Yamaç, eğimli ve yüksekçe bir arazi parçasıdır."
   - id: s4
-    beceri: yorumlama
-    dayanak_sayfa: 4
-    metin: "Planın uzmanlarca kontrol edilmesi neden önemliydi?"
+    beceri: cikarim
+    dayanak_sayfa: 3
+    metin: "Suyu toplayan model ilkinden neden farklı çalıştı?"
     secenekler:
-      - {id: A, metin: "Bahçeyi biraz daha süslemek için"}
-      - {id: B, metin: "Planı daha pahalı yapmak için"}
-      - {id: C, metin: "Çiçekleri değiştirmek için"}
-      - {id: D, metin: "Çalışmayı güvenle yapmak için"}
-    dogru: D
-    dayanak: "Çalışmanın güvenli ve uygun biçimde yapılması için uzmanların kontrol edeceği bir plan oluşturdular."
-    aciklama: "Uzman kontrolü, çalışmanın güvenli ve uygun yapılmasını sağlar."
+      - {id: A, metin: "Çiçeklik yolun hemen yanındaydı"}
+      - {id: B, metin: "Çiçeklik biraz daha aşağıdaydı"}
+      - {id: C, metin: "Oluk yeniden yapılmıştı"}
+      - {id: D, metin: "Yağmur o gün hiç yağmamıştı"}
+    dogru: B
+    dayanak: "İkinci modelde çiçeklik biraz daha aşağıdaydı ve suyu topladı. Öğrenciler sevinçle el çırptı. {kahraman} ikinci modelin fotoğrafını çekip deftere yapıştırdı."
+    aciklama: "Çiçeklik daha aşağıda olduğu için su oraya aktı; ilk modelde çiçeklik yolun hemen yanındaydı ve su yürüyüş alanında kaldı."
 ---
 @omurga
-Kasabanın okul bahçesinde yağmurdan sonra büyük su birikintileri oluşuyordu. Köprü mühendisi {kahraman}, öğrencilerin çizdiği bir bahçe planını incelemeye geldi. Öğrenciler, toprağa küçük bir yağmur bahçesi yapmak istiyordu. Böylece suyun bir bölümü çiçeklerin olduğu yerde toplanacak, yürüyüş yolu daha kuru kalacaktı. {kahraman} önce birikintinin yalnızca bozuk bir oluk yüzünden oluştuğunu düşündü.
+Kasabanın okul bahçesinde yağmurdan sonra büyük su birikintileri oluşuyordu. Teneffüste çocuklar ıslak ayakkabılarla sınıfa dönüyordu. Çevre mühendisi {kahraman}, öğrencilerin çizdiği bir bahçe planını incelemeye geldi. Planın bir köşesinde çocukların boyadığı mavi damlalar ve sarı papatyalar vardı. {kahraman} kâğıdı uzun uzun süzdü. Öğrenciler toprağa küçük bir yağmur bahçesi yapmak istiyordu. Yağmur bahçesi, suyun toplandığı ve toprağa çekildiği, çiçek dikilmiş çukur bir yerdi. Böylece suyun bir bölümü çiçeklerin olduğu yerde toplanacak, yürüyüş yolu daha kuru kalacaktı. {kahraman} önce birikintinin yalnızca bozuk bir oluk yüzünden oluştuğunu düşündü.
 ---
 @omurga
-{kahraman}, okul görevlisiyle birlikte bahçeyi ölçtü. Bir cetvelle yolun kenarındaki küçük eğimi, bir iple de planlanan bahçenin sınırını belirlediler. Ölçüm sonuçlarını deftere yazdılar. Öğrencilerden biri, “Birikinti hep aynı yerde oluyor,” dedi. {kahraman}, yağmur suyunun geldiği yönü bir çizimle gösterdi. Su, oluğun altından değil, geniş taş zeminin üzerinden akıyordu.
+“Su neden hep burada duruyor?” diye sordu okul görevlisi. “Önce ölçelim,” dedi {kahraman}. Görevli ipin bir ucunu kapı direğine bağladı, öbür ucunu {kahraman} tuttu. İple yatay bir çizgi kurdular. İp düz durunca ölçüm yanlış çıkmazdı. Cetvelle yolun kenarındaki yükseklik farkına baktılar. Yolun kenarındaki yamaç, bahçeye doğru eğiliyordu. Bir yaprak koparıp yamacın tepesinden bıraktılar; yaprak yavaşça birikintiye doğru kaydı. Görevli başını eğip suyun akışını izledi. “Demek hep aşağı kayıyor,” dedi.
+
+Ölçüm sonuçlarını deftere yazdılar: yükseklik farkı yaklaşık 20 santimetreydi. Aynı iple planlanan bahçenin sınırını da belirlediler. {kahraman}, yağmur suyunun geldiği yönü bir çizimle gösterdi. Su, oluğun altından değil, geniş taş zeminin üzerinden akıyordu.
 ---
 @omurga
-“İlk tahminim doğru çıkmadı,” dedi {kahraman}. Yeni plan için iki küçük model hazırladılar. İlk modelde çiçeklik yolun hemen yanındaydı; su yine yürüyüş alanında kaldı. İkinci modelde çiçeklik biraz daha aşağıdaydı ve suyu topladı. Herkes ikinci modelin neden işe yaradığını konuştu. {kahraman}, “Ölçmeden karar verirsek önemli ayrıntıları gözden kaçırabiliriz,” diye açıkladı.
+“İlk tahminim doğru çıkmadı,” dedi {kahraman}. Yeni plan için iki küçük model hazırladılar. Öğrenciler kutu kapaklarıyla yamacı, kumla da toprağı yaptı; küçük bir kaptan su döktüler. Her modelin yanına küçük bir bayrak diktiler. İlk modelde çiçeklik yolun hemen yanındaydı; su yine yürüyüş alanında kaldı. “Olmadı!” dedi öğrenciler bir ağızdan. İkinci modelde çiçeklik biraz daha aşağıdaydı ve suyu topladı. Öğrenciler sevinçle el çırptı. {kahraman} ikinci modelin fotoğrafını çekip deftere yapıştırdı.
 ---
 @omurga
-Ertesi gün okul yönetimiyle görüştüler. Çalışmanın güvenli ve uygun biçimde yapılması için uzmanların kontrol edeceği bir plan oluşturdular. Öğrenciler çiçek seçimiyle ilgilendi, {kahraman} ölçüleri yeniden denetledi. Böylece herkes yapabileceği işi üstlendi.
+Ertesi gün okul yönetimiyle görüştüler. Müdür planı dikkatle inceledi ve başıyla onayladı. Uzmanların kontrol edeceği bir plan hazırladılar; yağmur bahçesinin yolla arasındaki uzaklığı planın üstüne yazdılar. Öğrenciler çiçek seçimiyle ilgilendi, {kahraman} ölçüleri yeniden denetledi. Küçük bir öğrenci cetveli uzattı. “Ben de sayayım,” dedi. {kahraman} gülümsedi ve rakamları onunla birlikte bir kez daha okudu.
 ---
 @omurga
-Haftalar sonra tamamlanan yağmur bahçesine ilk yağmur düştü. Su, yürüyüş yoluna yayılmadan çiçeklerin bulunduğu alana yöneldi. Öğrenciler pencerenin önünde sevinçle izledi. {kahraman} defterini açıp ilk çizimi ve yeni planı yan yana koydu. İki çizim arasındaki fark, bahçenin neden işe yaradığını açıkça gösteriyordu.
+Haftalar sonra tamamlanan yağmur bahçesine ilk yağmur düştü. Su, yürüyüş yoluna yayılmadan çiçeklerin bulunduğu alana yöneldi. Öğrenciler pencerenin önünde sevinçle izlediler. Yamaçtan inen damlalar çiçeklerin arasında kayboldu. {kahraman} defterini açıp ilk çizimi ve yeni planı yan yana koydu.

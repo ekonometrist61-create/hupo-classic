@@ -77,5 +77,3 @@ Hacivat cevap verdi: “Bazen biri, başka birinin yanında fark edilmez.[[deyim
 Karagöz hemen öne atıldı. “Ben hiç gölgede kalmam! Perdeye çıkınca zaten gölge oluyorum!”
 
 Herkes güldü. {yoldas:yalin|bir arkadaş} defterine iki cümle yazdı: Ağacın gölgesinde dinlendim. Kardeşimin başarısının gölgesinde kalmak istemiyorum. Birinde ışık, ötekinde mecaz vardı. O gün perde, hem kahkaha hem kelime öğretmişti.
-
-Dil hedefi: deyim: gölgede kalmak; gerçek–mecaz; Kavram/değer: ışık ve gölge, dilde bağlam. İkon önerileri: gölge, perde, fener. Okuma sonrası: Karagöz neden ilk başta gölgesini göremedi? Deyimdeki gölge gerçek gölge midir?
