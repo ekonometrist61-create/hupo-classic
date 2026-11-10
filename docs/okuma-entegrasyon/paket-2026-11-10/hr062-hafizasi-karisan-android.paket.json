@@ -1,0 +1,618 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr062-hafizasi-karisan-android",
+    "baslik": "Hafızası Karışan Android",
+    "tur": "bilim_kurgu",
+    "konu": "veri_dogrulama",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "guvenlik"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "algoritma_hr062",
+          "tur": "lexeme",
+          "etiket": "algoritma",
+          "yuva": "hr062_algoritma",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sesteslik_hr062",
+          "tur": "lexeme",
+          "etiket": "sesteşlik",
+          "yuva": "hr062_sesteslik",
+          "islev": "application"
+        },
+        {
+          "id": "dogrulama_hr062",
+          "tur": "lexeme",
+          "etiket": "doğrulama",
+          "yuva": "hr062_dogrulama",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr062",
+          "tur": "concept",
+          "etiket": "Veri, hata ve doğrulama",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pass",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 667,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 10,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Ev robotu kahvaltıya çorap getirdi. Hata nerede: robotta mı, komutta mı, verideki bir eksikte mi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-062"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Robot kahvaltı masasına üç çift çorap bıraktı. “İstenen kahvaltı hazır,” dedi ve metal kollarını iki yana açtı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir an çoraplara baktı, sonra gülmeye başladı. Evdeki yardımcı robot ARO'dan peynirli tost istenmişti. Sepetinde ekmek, peynir ve tabak yerine kalın yün çoraplar bulunuyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", robotun ekranındaki küçük uyarı işaretini gösterdi.\n\nEkranda şöyle yazıyordu: “İşlem tamamlandı. Güven: düşük.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bunun nedenini görmek için kayıt bölümünü açtı. Ekranda "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr062_algoritma"
+        },
+        {
+          "t": "metin",
+          "v": " başlığı altında birkaç adım sıralanmıştı: sesi al, sözcükleri ayır, eşya seç, getir. Ekrandaki algoritma, robotun izleyeceği işlem adımlarını gösteriyordu. Fakat adımların yanındaki ses parçaları birbirine karışmış gibiydi.\n\nSabah mutfakta iki kişi aynı anda konuşmuştu. Biri “tost hazırla” demiş, diğeri koridordan “çorapları getir” diye seslenmişti. Robot, iki farklı ses kaydını tek komut sanmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kayıt çizgisini dinledi; ilk cümlenin sonu ile ikinci cümlenin başı aynı yerde birleşmişti. ARO bu birleşik kaydı uygulamış, yalnızca eşyaları seçerken de kararsız kaldığını bildirmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", robotu yeniden mutfağa göndermek istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce kaydı durdurdu. “Aynı şeyi tekrar duyarsa başka çorap da getirebilir,” dedi. Robotun üzerinde iki küçük mikrofon vardı; mutfaktaki sesleri iki yönden alıyordu. Birinin önüne yanlışlıkla bırakılmış kâğıt poşet sürtünüyordu. Kâğıt hışırdadıkça bazı sözcükler boğuklaşıyordu.\n\nARO'nun ekranında bir sözlük bölümü de vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", robotun “yüz” gibi aynı sesli sözcükleri karıştırmış olabileceğini düşündü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sözlükteki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr062_sesteslik"
+        },
+        {
+          "t": "metin",
+          "v": " örneğini açtı. “Yüz” sözcüğünün insanın yüzü, yüz sayısı ve yüzme eylemiyle ilgili farklı anlamları gösteriliyordu. Kaydı baştan sona taradılar; böyle bir sözcük yoktu. Sorun, iki ayrı cümlenin yanlış birleştirilmesiydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ekrana “Birleşen kayıt” başlıklı bir not ekledi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", robotun kollarının ucundaki kavrama parçasını inceledi. Çorapları masaya düzgünce koymuştu; getirme hareketinde bir arıza görünmüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülerek “Robotun kolları iyi, ama kulağı acele etmiş,” dedi. ARO, “Kulak birimi bulunamadı,” cevabını verince ikisi yeniden güldü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kahvaltı masasının ucunda ince bir defter duruyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterin ilk sayfasına robotun getirdiği nesneleri çizdi: çorap, tabak, ekmek ve peynir. Yanlarına hangi komutun hangi eşyayı getirmesi beklendiğini yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", iki sesin aynı anda kaydedildiği saniyeyi işaretledi. Ekrandaki ses çizgileri, üst üste gelince tek uzun dalga gibi görünüyordu. Sonra aynı kayıtları iki farklı renkle ayırdılar.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve arkadaşı, robotun duyduğu komutu önce ekranda göstermesini sağladı. Yeni "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr062_dogrulama"
+        },
+        {
+          "t": "metin",
+          "v": " adımında ARO, bir işi yapmadan önce hangi görevi duyduğunu soruyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yavaşça “Bir dilim peynirli tost hazırla,” dedi. Robotun ekranına aynı cümle yazıldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Onayla,” düğmesine dokundu. ARO bu kez çorap sepetine değil, mutfak tezgâhındaki ekmek kutusuna yöneldi.\n\nRobot tost hazırlamak için kullanılabilir bir mutfak aleti değildi; yalnızca gerekli malzemeleri güvenle taşıyabiliyordu. Bu yüzden ARO ekmek, peynir ve tabağı masaya getirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sıcak aleti bir yetişkinin kullanacağını söyledi. Robotun ekranında “Malzemeler getirildi” yazısı belirdi. Ardından daha önceki yanlış görevin kaydı da göründü.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", eski kaydı silmek yerine yanında küçük bir uyarı işareti bıraktı. Ekranın üst kısmında ilk ses parçası, altında ikinci ses parçası gösteriliyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bu iki parçayı ayrı ayrı dinleyince seslerin farklı kişilerden geldiğini daha rahat seçti. Yeni işlem adımının nerede devreye girdiğini bulup deftere yazdılar."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "ARO kısa süreliğine kendi kaydını açtı. Ses parçalarından birinde mutfaktaki tabak sesi, diğerinde koridordaki kapı gıcırtısı bulunuyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tabak sesinin sözcüklerin arasına karıştığını gösterdi. Robotun iki mikrofonundan gelen verileri karşılaştırmak için ekranda yeni bir pencere açtılar. Böylece hangi kaydın hangi taraftan geldiği ayrı satırlarda görüntülendi.\n\nKahvaltı masasında tost kokusu yayılırken ARO köşede bekliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", robotun ekranındaki onay kutusunu yeniden kontrol etti. Bu kez tek cümleye tek görev bağlanıyordu. Ancak "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", alçak sesle verilen komutta robotun bazı sözcükleri kaçırabileceğini düşündü. İkisi sessiz bir ortamda ikinci bir deneme hazırladı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " “Masadaki boş bardağı getir,” dedi. Ekrana “Boş bardak getir” yazısı geldi. ARO masadaki bardağı seçti, fakat yanında dolu bir bardak daha vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ekrandaki nesne resimlerinin birbirinden ayırt edilebildiğini kontrol etti. Robot doğru bardağı kavrayıp getirdi. Sonra her iki öğrenci sonuç kartına birer küçük işaret koydu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk sabahın karışık kaydını yeniden dinledi. Tost sözüyle çorap sözü artık ayrı satırlarda görünüyordu. ARO, “Bir sonraki komut için hazırım,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", masadaki çorapları topladı, sepetlerine yerleştirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " robotun ekranında kalan iki ses kaydını farklı renkle işaretledi; ardından kahvaltı tabağını önüne çekip ekmek dilimini aldı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Ev robotu kahvaltı masasına hangi eşyayı getirmiştir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Peynirli tost"
+        },
+        {
+          "id": "B",
+          "metin": "Sıcak çorba"
+        },
+        {
+          "id": "C",
+          "metin": "Üç çift çorap"
+        },
+        {
+          "id": "D",
+          "metin": "Bir kâse meyve"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Getirilen nesneler üç çift çoraptır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 1,
+      "metin": "Robotun yanlış eşyayı getirmesinde ne etkili oldu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İki ayrı kaydın birleşmesi"
+        },
+        {
+          "id": "B",
+          "metin": "Robotun kolundaki arıza"
+        },
+        {
+          "id": "C",
+          "metin": "Mikrofonların fişten çıkması"
+        },
+        {
+          "id": "D",
+          "metin": "Ekmeğin masadan düşmesi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Birleştirilen kayıtlar yanlış komut üretir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Robottan yeniden görev istemeden önce ne yapıldı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Robotun kol parçasını değiştirdiler"
+        },
+        {
+          "id": "B",
+          "metin": "Mutfaktaki mikrofonu çıkarıp sakladılar"
+        },
+        {
+          "id": "C",
+          "metin": "Mutfağın tüm ışıklarını kapattılar"
+        },
+        {
+          "id": "D",
+          "metin": "Komutu ekranda görüp onayladılar"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Robotun duyduğu komut önce ekranda gösterildi ve onaylandı."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "“Algoritma” sözcüğü bu olayda neyi belirtir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Robotun süslerini"
+        },
+        {
+          "id": "B",
+          "metin": "İşlem adımlarını"
+        },
+        {
+          "id": "C",
+          "metin": "Odaların rengini"
+        },
+        {
+          "id": "D",
+          "metin": "Günlük hava durumunu"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Algoritma görev için işlem adımlarıdır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr062_algoritma",
+        "tur": "kelime",
+        "yazim": "algoritma",
+        "anlam": "Bir sorunu çözmek için adım adım izlenen kurallar dizisi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_yontem",
+        "tur": "kelime",
+        "yazim": "yöntem",
+        "anlam": "Bir işi yapmak için izlenen yol.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_rastgelelik",
+        "tur": "kelime",
+        "yazim": "rastgelelik",
+        "anlam": "Kurala bağlı olmadan, tesadüfen gerçekleşme durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_sesteslik",
+        "tur": "kelime",
+        "yazim": "sesteşlik",
+        "anlam": "Yazılışı ve sesi aynı, anlamı farklı sözcüklerin durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_esanlamlilik",
+        "tur": "kelime",
+        "yazim": "eş anlamlılık",
+        "anlam": "Anlamları aynı ya da çok yakın sözcükler arasındaki ilişki.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_zitlik",
+        "tur": "kelime",
+        "yazim": "zıtlık",
+        "anlam": "Anlamları birbirinin karşıtı olan sözcükler arasındaki ilişki.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_dogrulama",
+        "tur": "kelime",
+        "yazim": "doğrulama",
+        "anlam": "Bir bilginin doğruluğunu kontrol etme işi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_kontrol",
+        "tur": "kelime",
+        "yazim": "kontrol",
+        "anlam": "Bir şeyin istenen durumda olup olmadığına bakma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_varsayim",
+        "tur": "kelime",
+        "yazim": "varsayım",
+        "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr062_algoritma",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr062_algoritma"
+          },
+          {
+            "girdi": "hr062_yontem"
+          },
+          {
+            "girdi": "hr062_rastgelelik"
+          }
+        ]
+      },
+      {
+        "ad": "hr062_sesteslik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr062_sesteslik"
+          },
+          {
+            "girdi": "hr062_esanlamlilik"
+          },
+          {
+            "girdi": "hr062_zitlik"
+          }
+        ]
+      },
+      {
+        "ad": "hr062_dogrulama",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr062_dogrulama"
+          },
+          {
+            "girdi": "hr062_kontrol"
+          },
+          {
+            "girdi": "hr062_varsayim"
+          }
+        ]
+      }
+    ]
+  }
+}

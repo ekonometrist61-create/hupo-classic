@@ -13,7 +13,7 @@ deger_anahtarlari: [D6, D9]
 yetiskin_uygun: false
 tanitim: "Orman saati sonbaharda takıldı ama çiçekler açıyor. Saati kim durdurdu?"
 durum: taslak
-uretim_kaynak: chatgpt_taslak
+uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
 etiketler:
   ana_sinif: 5
@@ -45,7 +45,7 @@ deyim_cumleleri:
 @omurga
 Orman saatinin uzun kolu sonbahar yaprağında durmuştu. Saat, büyük meşenin gövdesine asılmış yuvarlak bir tahta levhaydı. Üzerinde sayıların yerine dört mevsimin simgeleri bulunuyordu. Kırlangıçlar güneye doğru uçuş hazırlığı yaparken dere kenarında beyaz çiçekler açmıştı. Sincap Mavi, “Biri mevsimleri birbirine karıştırdı,” diye bağırdı. Sözü duyan tavşan komşusuna, tavşan da kirpiye seslendi. [[deyim:hr051_kulaktan_kulaga]]
 
-{kahraman}, orman okulunun avlusuna vardığında herkes saatin altında toplanmıştı. Bir kirpi saatin yeniden dönmesini bekliyor, küçük bir serçe çiçeklerin gerçekten açıp açmadığını kontrol ediyordu. Baykuş Usta kulaklarını dikip herkesi dinledi. Haber çoktan en uzak kovuğa ulaşmıştı.
+{kahraman}, orman okulunun avlusuna {yoldas:yalin|bir arkadaş} ile birlikte vardığında herkes saatin altında toplanmıştı. Bir kirpi saatin yeniden dönmesini bekliyor, küçük bir serçe çiçeklerin gerçekten açıp açmadığını kontrol ediyordu. Baykuş Usta kulaklarını dikip herkesi dinledi. Haber çoktan en uzak kovuğa ulaşmıştı.
 
 Sincap, çiçeklerin görülmesini bir işaret sayıyordu. “Saat sonbaharda kaldı diye bütün ağaçlar şaşırdı,” dedi. {kahraman} yere eğilip çiçeğin sapını inceledi. Sap sağlamdı; yakınında ılık suyun aktığı küçük bir kaynak vardı. Baykuş, uçan kuşların {kelime:hr051_goc} hazırlığını işaret etti. “Aynı anda iki farklı olay görüyoruz,” dedi. {kahraman}, saatle kaynak arasındaki uzaklığı ölçmek için avludaki ipi aldı.
 ---
@@ -72,6 +72,6 @@ Tavşan, saatin sesini duyabilmek için yerdeki kuru dalları kenara taşıdı. 
 
 Sincap yine çiçeklere baktı. “Saat düzeldi ama bunlar hâlâ burada,” dedi. Kaynağın çevresindeki buğu yerinde duruyordu. Kırlangıçların öncüsü son kez su içmek için dereye indi. Sonra sürü, ağaçların üzerinden dönerek yükseldi. Saatin kolu kendi ritmiyle ilerliyor, kuşlar rüzgârdaki uygun anı kolluyordu.
 
-{kahraman}, defterindeki üç çizime göz gezdirdi: çiçeklerin yeri, nemli tahta parçası ve kuşların uçuş yönü. Sincap ilk sayfanın köşesine kocaman bir saat resmi yaptı. Kirpi de resmin yanına küçük bir kaynak çizdi; suyunu gerçek derenin kıvrımlarına benzetmek için kâğıdı birkaç kez çevirdi.
+{kahraman}, defterindeki üç çizime göz gezdirdi: çiçeklerin yeri, nemli tahta parçası ve kuşların uçuş yönü. {yoldas:yalin|bir arkadaş} çizimlerden kaynağın yerini parmağıyla gösterdi. Sincap ilk sayfanın köşesine kocaman bir saat resmi yaptı. Kirpi de resmin yanına küçük bir kaynak çizdi; suyunu gerçek derenin kıvrımlarına benzetmek için kâğıdı birkaç kez çevirdi.
 
 Baykuş kapağı kapatıp saatin altına bir parça kuru örtü yerleştirdi. {kahraman} kirpiye anahtarı uzattı. Kirpi anahtarı Baykuş'un eline bıraktı; ardından yere düşen sarı yaprağı kaldırıp saatin yanındaki tahtaya iliştirdi.

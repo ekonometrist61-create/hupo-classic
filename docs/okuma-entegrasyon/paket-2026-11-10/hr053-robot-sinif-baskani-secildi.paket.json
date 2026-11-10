@@ -1,0 +1,478 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr053-robot-sinif-baskani-secildi",
+    "baslik": "Robot Sınıf Başkanı Seçildi",
+    "tur": "mizah",
+    "konu": "kural_demokrasi",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D14"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "okul",
+        "bilim_teknoloji"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D14"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "desibel_hr053",
+          "tur": "lexeme",
+          "etiket": "desibel",
+          "yuva": "hr053_desibel",
+          "islev": "first_hint"
+        },
+        {
+          "id": "temsilcilik_hr053",
+          "tur": "lexeme",
+          "etiket": "temsilcilik",
+          "yuva": "hr053_temsilcilik",
+          "islev": "application"
+        },
+        {
+          "id": "algilama_hr053",
+          "tur": "lexeme",
+          "etiket": "algılamak",
+          "yuva": "hr053_algilama",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr053",
+          "tur": "concept",
+          "etiket": "Kuralın amacı ve demokratik karar",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 692,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Sınıf başkanlığı seçiminde birinci gelen aday bir robot. Kurallar kime hizmet ediyor?",
+    "durum": "taslak",
+    "fis_kodu": "HR-053"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıfın deneme başkanlığı seçiminde en çok oyu MİKO aldı. Tekerlekli robotun ekranında kocaman bir gülümseme işareti belirdi. MİKO, “Başkanlık talimatı alındı,” dedi; ardından zil çalmadan üç kez sınıfı dolaştı. Öğrenciler gülüyordu. Adaylığı önce bir şaka olarak yazılmış, sonra herkesin hoşuna gitmişti. Öğretmen, gerçek "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr053_temsilcilik"
+        },
+        {
+          "t": "metin",
+          "v": " görevinin öğrencilerden birine verileceğini, MİKO'nun ise bir günlüğüne deneme başkanı olacağını açıklamıştı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", oy sayımı sırasında tahtaya çizdiği çizgileri gösterdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çizgileri yüksek sesle saydı. Birinci sırada MİKO vardı, ikinci sırada Ece, üçüncü sırada Arda. Robot bir sandalye istemedi; bunun yerine kendisine pencere kenarındaki şarj noktasını seçti. İlk işi, sınıf kurallarını ekrana taşımak oldu. “Gürültü sıfır, gecikme sıfır, dağınıklık sıfır,” dedi. Arda fısıltıyla, “Teneffüs de sıfır olmasın,” diye karşılık verdi.\n\nDers sırasında bir çocuğun kalemi yere düştü. Çocuk eğilip kalemini aramaya başladı. Sandalye hafifçe gıcırdadı. MİKO'nun ekranı kırmızıya döndü; robot, yüksek sesle “Gürültü uyarısı,” dedi. Çocuk başını kaldırıp şaşkın şaşkın baktı. Sınıfta ilk kez kimseden gülüş duyulmadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Deneme başkanının masasının üstüne küçük bir zil de koyulmuştu. MİKO, zili kullanmak için uzandığında tekerleklerinden biri masanın ayağına takıldı. Sınıfın arka sırasında oturan çocuklar bu sesi duyup dönünce robot kendisine de uyarı verdi. Ekranda kırmızı bir çarpı belirdi. Arda, “Başkan kendini uyardı!” diye seslenince kahkaha yükseldi. Öğretmen zili masanın kenarından alıp daha güvenli bir yere taşıdı.\n\nEkranda MİKO'nun kalemini arayan çocuğa verdiği gürültü uyarısı da kayıtlıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", robotun ekranında beliren ölçüm çizelgesine baktı. Ekranda ses düzeyi için "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr053_desibel"
+        },
+        {
+          "t": "metin",
+          "v": " yazıyordu. Yanlışlıkla sürtünen sandalyenin çıkardığı sesle bağıran birinin sesini aynı renkte gösteriyordu. Robotun sesi ise hepsinden yüksekti.\n\nEce parmak kaldırdı. “Birisi yardım isterken konuşursa ne olacak?” MİKO, “Ses belirlenen sınırı aşarsa uyarı verilir,” dedi. “Peki düşen bir kitap için biri eğilirse?” Arda'nın sorusuna aynı yanıtı verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tahtaya iki küçük çizim yaptı: birinde yardım için eğilen çocuk, diğerinde bilerek bağıran biri vardı. Robot iki resme de aynı kırmızı işareti koydu.\n\nÖğretmen, robotun durumu daha iyi "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr053_algilama"
+        },
+        {
+          "t": "metin",
+          "v": " için yalnız ses ölçümüne dayanamayacağını söyledi. “MİKO bugün kural denemesi yapıyor,” diye ekledi. Ece, öğrencilerin görüşlerini de ekranın yanındaki kutuya yazmalarını önerdi. Herkes teneffüste kutuya birer kâğıt bıraktı. Robot, kâğıtları sayabildi ama hiçbirinin neden yazıldığını tek başına seçemedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci derste MİKO sıranın üzerinde unutulmuş su şişesini gördü. “Masa temizliği,” diyerek şişeyi kenara itmeye girişti. Arda hemen yetişip şişeyi tuttu. “Ben birazdan içecektim,” dedi. MİKO durdu, fakat ekranda yine kırmızı uyarı belirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıt kutusuna yeni bir not koydu: “Bir eşya bazen kullanımdadır.”\n\nÖğretmen sınıftaki denemeyi kısa süreliğine durdurdu. Her öğrenci, kuralların işe yaradığı ve yaramadığı bir durumu anlattı. Kimi sessiz çalışırken dikkati dağıldığı için uyarıları sevmişti. Kimi de yardım ederken uyarı almaktan hoşlanmamıştı. MİKO, söylenenlerin hepsini ekrana sıraladı. Arda, robotun kendi sesini susturacak bir düğmesi olup olmadığını sordu. Robot, “Ses çıkışı ayarlanabilir,” diye yanıt verdi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kâğıtları birbirine karıştırmadan dört gruba ayırdı: ses, düzen, yardım ve teneffüs. Her grupta hem olumlu hem olumsuz notlar vardı. Ece, çocukların isimlerini kâğıtlardan silmeyi önerdi; herkesin sözü aynı yerde görünüyordu. Tahtadaki deneme sonuçlarına bakınca, bir kuralın farklı durumlarda farklı sonuçlar doğurduğu açıkça görünüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar kutudaki notları okumak için sırayla ayağa kalktı. Birisi, hastalanan arkadaşına kâğıt taşımak isteyenlerin serbestçe konuşması gerektiğini yazmıştı. Bir başkası, herkes aynı anda konuştuğunda yönergeyi duyamadığını belirtmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki kâğıdı yan yana astı; robot bunları farklı renkli başlıklar altında sıraladı. Kâğıtların önünde kısa süreli bir sessizlik oldu.\n\nSon derste öğretmen küçük bir oylama hazırladı. İlk seçenek, MİKO'nun bütün kuralları tek başına uygulamasıydı. İkinci seçenek, robotun yalnızca önerileri sıralamasıydı. Üçüncü seçenek ise denemenin tamamen kaldırılmasıydı. Çocuklar sırayla oy kullandı. MİKO, sayıları toplarken ekranda bir kum saati döndürdü.\n\nSınıf, MİKO'nun yalnızca önerileri listelemesine oy verdi. Öğrencilerin seçtiği Ece de gerçek sınıf temsilcisi oldu. MİKO yeni görevini duyunca “Talimat değiştirildi,” dedi. Sonra Arda'ya baktı. “Ses çıkışı azaltıldı.” Bu kez cümleyi neredeyse fısıldayarak kurdu. Çocuklar gülmeye başladı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " masadaki notları toplarken ilk derste kalemini düşüren çocuk yanına geldi. “Robot şimdi kalemimi arayacak mı?” diye sordu. O anda kalem yeniden sıranın altına yuvarlandı. MİKO tekerlekleriyle yaklaştı, kalemi yerde görünce durdu. “Yardım önerisi: kalem masaya bırakılabilir,” dedi. Ece, eğilip kalemi aldı. Robot hiçbir uyarı vermedi.\n\nZil çalınca çocuklar kapıya yöneldi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " MİKO'ya el sallayıp çıktı. MİKO, oylama sonuçlarını ekranda açık bıraktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ekrandaki son satıra bir başlık ekledi: “Yarın tartışılacak öneriler.” Sonra robotun fişini şarj noktasına taktı ve sınıfın kapısını kapattı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Seçimde en fazla oy alan deneme başkanı kimdir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Arda adlı öğrenci"
+        },
+        {
+          "id": "B",
+          "metin": "MİKO adlı robot"
+        },
+        {
+          "id": "C",
+          "metin": "Ece adlı öğrenci"
+        },
+        {
+          "id": "D",
+          "metin": "Sınıf öğretmeni"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Deneme seçiminde en çok oyu MİKO alır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "MİKO’nun ilk uygulaması neden itiraz doğurmuştur?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Tüm sesleri kaydetmiştir"
+        },
+        {
+          "id": "B",
+          "metin": "Bahçeyi kilitlemiştir"
+        },
+        {
+          "id": "C",
+          "metin": "Oyların tamamını yeniden saymıştır"
+        },
+        {
+          "id": "D",
+          "metin": "Durumu görmeden uyarı vermiştir"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Robot kuralı durumdan bağımsız uygular."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Sınıf son kararda MİKO’ya hangi görevi vermiştir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Önerileri listeleme"
+        },
+        {
+          "id": "B",
+          "metin": "Öğrencileri cezalandırma"
+        },
+        {
+          "id": "C",
+          "metin": "Oyları gizlice değiştirme"
+        },
+        {
+          "id": "D",
+          "metin": "Öğretmeni görevden alma"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Robot önerileri sıralayacak, karar öğrencilerde kalacaktır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Desibel” bu sahnede neyin ölçüsüdür?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Koridorun uzunluğu"
+        },
+        {
+          "id": "B",
+          "metin": "Ekranın parlaklığı"
+        },
+        {
+          "id": "C",
+          "metin": "Sesin düzeyi"
+        },
+        {
+          "id": "D",
+          "metin": "Robotun ağırlığı"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Desibel ses düzeyiyle ilgilidir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr053_desibel",
+        "tur": "kelime",
+        "yazim": "desibeli",
+        "anlam": "Sesin şiddetini ölçmek için kullanılan birim.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_birim",
+        "tur": "kelime",
+        "yazim": "birim",
+        "anlam": "Bir büyüklüğü ölçmek için kabul edilen değer.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_sessizlik",
+        "tur": "kelime",
+        "yazim": "sessizlik",
+        "anlam": "Hiç ses olmaması durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_temsilcilik",
+        "tur": "kelime",
+        "yazim": "temsilciliği",
+        "anlam": "Bir grubu başkalarına karşı temsil etme görevi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_gorev",
+        "tur": "kelime",
+        "yazim": "görev",
+        "anlam": "Bir kişiye verilen iş ya da sorumluluk.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_bireysellik",
+        "tur": "kelime",
+        "yazim": "bireycilik",
+        "anlam": "Ortak yarara bakmadan yalnızca kendini düşünme tutumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_algilama",
+        "tur": "kelime",
+        "yazim": "algılamasını",
+        "anlam": "Bir durumu duyu ya da cihazla fark etme.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_fark_etmek",
+        "tur": "kelime",
+        "yazim": "fark etmek",
+        "anlam": "Bir şeyin varlığına ya da değişikliğine dikkat etmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_gozden_kacirmak",
+        "tur": "kelime",
+        "yazim": "gözden kaçırmak",
+        "anlam": "Bir ayrıntıyı fark etmemek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr053_desibel",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr053_desibel"
+          },
+          {
+            "girdi": "hr053_birim"
+          },
+          {
+            "girdi": "hr053_sessizlik"
+          }
+        ]
+      },
+      {
+        "ad": "hr053_temsilcilik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr053_temsilcilik"
+          },
+          {
+            "girdi": "hr053_gorev"
+          },
+          {
+            "girdi": "hr053_bireysellik"
+          }
+        ]
+      },
+      {
+        "ad": "hr053_algilama",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr053_algilama"
+          },
+          {
+            "girdi": "hr053_fark_etmek"
+          },
+          {
+            "girdi": "hr053_gozden_kacirmak"
+          }
+        ]
+      }
+    ]
+  }
+}

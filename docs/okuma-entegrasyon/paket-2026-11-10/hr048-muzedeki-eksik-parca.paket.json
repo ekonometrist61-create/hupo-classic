@@ -1,0 +1,590 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr048-muzedeki-eksik-parca",
+    "baslik": "Müzedeki Eksik Parça",
+    "tur": "macera",
+    "konu": "kanit_miras",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D1"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kultur_miras",
+        "gizem"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D1"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "konservasyon_hr048",
+          "tur": "lexeme",
+          "etiket": "konservasyon",
+          "yuva": "hr048_konservasyon",
+          "islev": "first_hint"
+        },
+        {
+          "id": "restorasyon_hr048",
+          "tur": "lexeme",
+          "etiket": "restorasyon",
+          "yuva": "hr048_restorasyon",
+          "islev": "application"
+        },
+        {
+          "id": "vitrin_hr048",
+          "tur": "lexeme",
+          "etiket": "vitrin",
+          "yuva": "hr048_vitrin",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr048",
+          "tur": "idiom",
+          "etiket": "Aklını kurcalamak",
+          "yuva": "hr048_gozunu_kurcalamak",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr048",
+          "tur": "concept",
+          "etiket": "Varsayım ile kanıt ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 704,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 4,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Tabakta bir parça eksik. Hırsızlık mı, yoksa koruma çalışması mı?",
+    "durum": "taslak",
+    "fis_kodu": "HR-048"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Müzede sergilenen seramik tabağın ortasında üçgen biçimli bir boşluk vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sabahki gezi boyunca en çok bu mavi tabağı görmek istemişti. Önceki gün sergi duyurusundaki fotoğrafta, ortasındaki yıldızın bütün parçaları yerli yerindeydi. Şimdiyse yıldızın bir köşesi yoktu. Camın üzerine eğildi; "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr048_vitrin"
+        },
+        {
+          "t": "metin",
+          "v": " vitrin öyle temizdi ki kendi yüzünü tabakla yan yana gördü.\n\n“Biri parçayı almış,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". Sesindeki kesinlik, yanında bekleyen iki ziyaretçinin ve küçük bir çocuğun başını çevirmesine yol açtı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", arkadaşının koluna hafifçe dokundu. “Henüz bilmiyoruz,” diye fısıldadı. Vitrinin altındaki küçük kartta, tabağın on altı parçadan bir araya getirildiği yazıyordu. Kartın bir köşesinde yeni yapıştırılmış soluk bir etiket vardı: “Koruma incelemesi sürüyor.”\n\nYan salondan gelen görevli, çocukların önünde durdu. “Bir şey mi arıyorsunuz?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafı gösterip bugünkü boşluğu işaret etti. Görevli önce fotoğrafa, sonra tabağa baktı. “Dünkü bakım kayıtlarını getireyim,” dedi. Çocukları dokunulmaz şeridin gerisinde beklemeye çağırdı. Giderken vitrinin camında küçücük bir mavi iplik parçası ışıldadı; "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gördüğü şeyi defterine çizdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Müze koridorunda, duvara asılmış başka bir tabak fotoğrafı da vardı. Bu fotoğrafta yıldızın mavi boyası daha koyu görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ışığın renkleri değiştirebildiğini düşündü ve ilk fotoğrafın çekildiği yeri aradı. Müze salonunda iki ayrı pencereden gelen gün ışığı, camın üzerinde farklı yansımalar oluşturuyordu. Fotoğraflar arasında renk farkı bulunması parçanın kaybolduğunu tek başına göstermiyordu.\n\nGörevli, tabağın ne zaman yer değiştirdiğini görmek için taşıma çizelgesini açtı. Çizelgede parçanın sabah dokuzda bakım masasına alındığı yazıyordu. “Belki biri sonradan almıştır,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". Görevli, masaya ikinci bir dosya koydu. Dosyanın ilk sayfasında, tabağın yıldız biçimli bölümünü gösteren ayrıntılı bir çizim vardı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eksik yere benzeyen şeklin çevresindeki kırmızı noktaları saydı. Tam üç nokta vardı; vitrin camının kenarında da üç küçük kırmızı işaret bulunuyordu. “Bu noktalar niçin aynı?” diye sordu. Görevli bunun işlem sırasında kullanılan yer belirleme işareti olduğunu söyledi; parça aynı yerden, kayıtlı bir işlemle çıkarılmıştı. Sonra dosyadaki tarihleri yan yana koydu. Önce fotoğraf çekilmiş, sonra eser geçici olarak bakım masasına taşınmıştı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Demek hırsız yok,” diye atıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı ama defterindeki mavi ipliği gösterdi. “Yine de o parçaya ne olduğunu görmedik.” Görevli, koruma odasının camlı bölümüne bakmalarına izin verdi. Koridorun sonunda, içeri girenlerin eldiven giydiği küçük bir oda görünüyordu. Masadaki büyütecin yanında, tabağın desenine çok benzeyen turkuaz bir parça yatıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Camın ardındaki uzman, çocukların sorusunu duyunca dosyadaki fotoğrafı onlara çevirdi. Bakım fişinde çıkarılan parçanın ölçüsü ve tarihi yazılıydı. Fotoğrafta parçanın kenarında ince bir çatlak görünüyordu; uzman, çatlağın büyümesini engellemek için parçayı geçici olarak ayırdıklarını anlattı. “Bu işin adı "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr048_konservasyon"
+        },
+        {
+          "t": "metin",
+          "v": ",” dedi. Görevli, konservasyon çalışmalarının eseri bozulmaktan korumaya yönelik olduğunu söyledi.\n\nMasada küçük fırçalar, yumuşak destekler ve numaralanmış kaplar vardı. Uzman, başka bir eserin kırık kenarlarını tamamlamak için kullanılan "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr048_restorasyon"
+        },
+        {
+          "t": "metin",
+          "v": " çizimlerini açtı. “Her eksik yer hemen yapıştırılmaz,” dedi. “Önce eski yüzeyin durumu incelenir.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " camın gerisinden çatlağı daha iyi görebilmek için yana kaydı. Çizimdeki çatlak, yıldızın en ince ucuna kadar uzanıyordu.\n\nArkadaşı vitrindeki mavi ipliği sordu. Uzman güldü. “O iplik temizleme bezinden kalmış olabilir, ama emin olmak için bakarım.” Bir fırçanın ucuyla benzer lifleri gösterdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sayfasına iki ayrı sütun çizdi: “Gördüklerimiz” ve “Tahmin ettiklerimiz.” İpliği ilk sütuna, hırsızlık düşüncesini ikinci sütuna yazdı. Araya uzun bir çizgi çekti; bir süre ikisinin de üzerine yeni söz eklemedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Uzman, çıkarılan parçayı geri koymadan önce çatlak kenarının büyüteçle yeniden inceleneceğini belirtti. Masanın üstündeki küçük saate bakıp inceleme için hazırladığı eldivenleri giydi. Ardından camlı pencerenin önüne, yeni fotoğrafın çekileceği beyaz zeminli levhayı yerleştirdi. Çocuklar dışarıdan izlerken levhanın üzerinde eski tabağın şekli belirginleşti.\n\nKoruma odasından çıktıklarında az önceki küçük çocuk hâlâ tabağı izliyordu. “Hırsız bulunmuş mu?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", biraz önce yüksek sesle söylediği sözü hatırlayıp kızardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çocuğa bakım fişindeki tarihi gösterdi. “Parça burada, ama çatlak yüzünden bir süre takılmayacak,” dedi. Küçük çocuk camın arkasındaki çalışma masasına gözlerini dikti.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", girişteki ziyaretçi defterinin yanına geldi. Bir önceki ziyaretçinin yazdığı “Yıldızın ucu nerede?” cümlesini gördü. Kendi sayfasına baktı. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr048_gozunu_kurcalamak"
+        },
+        {
+          "t": "metin",
+          "v": " Çizimin yanına küçük bir soru işareti koydu. Ardından gözlemlerinin tarihlerini yazdı.\n\nGörevli, “İsterseniz yarın bakım masasındaki yeni fotoğrafı da sergileyeceğiz,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce dünün fotoğrafına, sonra bugünün çizimine baktı. İki görüntü aynı tabağa aitti; aralarındaki fark, üstüne yazılan açıklamayla birlikte daha belirginleşmişti. Arkadaşı çıkışa yönelirken dönüp “İplik için de soracak mıyız?” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başıyla onayladı, görevlinin uzattığı ince kalemi aldı ve ziyaretçi defterine iplikle ilgili sorusunu yazdı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr048_gozunu_kurcalamak": [
+      {
+        "t": "kahraman",
+        "hal": "ilgi"
+      },
+      {
+        "t": "metin",
+        "v": " aklını kurcalayan tek şey, tabağın ortasındaki boşluktu."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Tabağın ortasındaki boşluk nasıl bir biçimdeydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Dikdörtgen biçimli"
+        },
+        {
+          "id": "B",
+          "metin": "Üçgen biçimli"
+        },
+        {
+          "id": "C",
+          "metin": "Yuvarlak biçimli"
+        },
+        {
+          "id": "D",
+          "metin": "Yıldız biçimli"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Metinde boşluk, tabağın ortasında üçgen biçimli olarak anlatılır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Görevli neden taşıma çizelgesini açmıştır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yeni biletleri yeniden basmak için"
+        },
+        {
+          "id": "B",
+          "metin": "Gezi saatini uzatmak için"
+        },
+        {
+          "id": "C",
+          "metin": "Şüpheliyi suçlamak için"
+        },
+        {
+          "id": "D",
+          "metin": "Taşınma saatini bulmak için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Çizelge yer değiştirme zamanını gösterir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Çocukların incelemesinde hangi bilgi daha güvenilir sayılabilir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kayıtlı bakım fişi"
+        },
+        {
+          "id": "B",
+          "metin": "Koridordaki söylenti"
+        },
+        {
+          "id": "C",
+          "metin": "Ziyaretçinin tahmini"
+        },
+        {
+          "id": "D",
+          "metin": "Rastgele bir yorum"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Tarihli bakım fişi doğrulanabilir kanıttır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Konservasyon” sözcüğü bu müze sahnesinde hangi işlemi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Eserleri satmayı"
+        },
+        {
+          "id": "B",
+          "metin": "Tabakları boyamayı"
+        },
+        {
+          "id": "C",
+          "metin": "Eserleri korumayı"
+        },
+        {
+          "id": "D",
+          "metin": "Vitrinleri taşımayı"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Konservasyon, eseri korumaya yönelik çalışmadır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr048_konservasyon",
+        "tur": "kelime",
+        "yazim": "konservasyon",
+        "anlam": "Eserin bozulmasını önleyen koruma çalışması.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_koruma",
+        "tur": "kelime",
+        "yazim": "koruma",
+        "anlam": "Bir şeyi zarardan ya da yok olmaktan esirgeme.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_yikim",
+        "tur": "kelime",
+        "yazim": "yıkım",
+        "anlam": "Bir yapının ya da eserin tamamen yok edilmesi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_restorasyon",
+        "tur": "kelime",
+        "yazim": "restorasyon",
+        "anlam": "Bir eseri eski hâline getirmek için yapılan belgeli onarım.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_onarim",
+        "tur": "kelime",
+        "yazim": "onarım",
+        "anlam": "Bozulmuş bir şeyi düzeltme işi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_tahrip",
+        "tur": "kelime",
+        "yazim": "tahrip",
+        "anlam": "Bir şeyi kötü biçimde bozma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_vitrin",
+        "tur": "kelime",
+        "yazim": "vitrinin",
+        "anlam": "Eşyaların sergilendiği camlı dolap.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_sergi_dolabi",
+        "tur": "kelime",
+        "yazim": "sergi dolabı",
+        "anlam": "Müzede eserlerin korunup gösterildiği dolap.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_raf",
+        "tur": "kelime",
+        "yazim": "raf",
+        "anlam": "Eşya koymak için duvara ya da dolaba yerleştirilen tahta ya da metal levha.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_gozunu_kurcalamak",
+        "tur": "deyim",
+        "yazim": "aklını kurcalayan",
+        "anlam": "Zihni meşgul edip rahatsız eden, merak uyandıran.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_gozunu_kapatmak",
+        "tur": "deyim",
+        "yazim": "gözünü kapatmak",
+        "anlam": "Bir şeyi görmezden gelmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr048_konservasyon",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr048_konservasyon"
+          },
+          {
+            "girdi": "hr048_koruma"
+          },
+          {
+            "girdi": "hr048_yikim"
+          }
+        ]
+      },
+      {
+        "ad": "hr048_restorasyon",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr048_restorasyon"
+          },
+          {
+            "girdi": "hr048_onarim"
+          },
+          {
+            "girdi": "hr048_tahrip"
+          }
+        ]
+      },
+      {
+        "ad": "hr048_vitrin",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr048_vitrin"
+          },
+          {
+            "girdi": "hr048_sergi_dolabi"
+          },
+          {
+            "girdi": "hr048_raf"
+          }
+        ]
+      },
+      {
+        "ad": "hr048_gozunu_kurcalamak",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr048_gozunu_kurcalamak"
+          },
+          {
+            "girdi": "hr048_gozunu_kapatmak"
+          }
+        ]
+      }
+    ]
+  }
+}

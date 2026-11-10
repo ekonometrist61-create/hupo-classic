@@ -1,0 +1,563 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr056-takimin-gorunmeyen-oyuncusu",
+    "baslik": "Takımın Görünmeyen Oyuncusu",
+    "tur": "arkadaslik",
+    "konu": "takim_kapsayicilik",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D4",
+      "D20"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "dostluk",
+        "dayanisma"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D4",
+        "yardimci_deger": "D20"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "parkur_hr056",
+          "tur": "lexeme",
+          "etiket": "parkur",
+          "yuva": "hr056_parkur",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sensor_hr056",
+          "tur": "lexeme",
+          "etiket": "sensör",
+          "yuva": "hr056_sensor",
+          "islev": "application"
+        },
+        {
+          "id": "viraj_hr056",
+          "tur": "lexeme",
+          "etiket": "viraj",
+          "yuva": "hr056_viraj",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr056",
+          "tur": "idiom",
+          "etiket": "İçi burkulmak",
+          "yuva": "hr056_ici_burkulmak",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr056",
+          "tur": "concept",
+          "etiket": "Katkıyı görmek ve kapsayıcılık",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pass",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 673,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 5,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Takımın listesinde adı yok. Robotik yarışı, sessiz bir çocuğun fikirleriyle nasıl değişti?",
+    "durum": "taslak",
+    "fis_kodu": "HR-056"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Deniz'in adı yarış listesinde yalnızca yedek bölümünde vardı. Robotik turnuvasına üç gün kala diğer öğrencilerin görevleri belirlenmişti: kodlama, malzeme, sunum ve zaman tutma. Deniz yeni geldiği için çoğu arkadaşı onun neyle ilgilendiğini bilmiyordu. Sessizce oturuyor, teneffüslerde robotun çizimini defterine yapıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise takımın deneme sürüşlerini takip ediyordu.\n\nSalondaki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr056_parkur"
+        },
+        {
+          "t": "metin",
+          "v": ", siyah çizgilerle işaretlenmiş uzun bir yoldu. Çizgi iki kez kıvrılıyor, ardından dar bir kapıdan geçiyordu. Robot, düz yolda hızla ilerleyip ilk dönüşte çizginin dışına çıkıyordu. Takım üç denemede de aynı hatayı görünce motoru değiştirmeyi düşündü. Deniz kalemini defterinin üzerine bıraktı. “Önce dönüşe bakalım,” dedi. Sesini çok az kişi duydu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " saate bakıp “Başka işlerimiz de var,” diye karşılık verdi. Deniz oturduğu yere geri döndü. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr056_ici_burkulmak"
+        },
+        {
+          "t": "metin",
+          "v": " Defterinin açık sayfasında dönüşün başladığı yer işaretliydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", çizimdeki ince kırmızı çizgiyi görünce Deniz'in yanına geldi; sayfanın kenarındaki kırmızı işareti ve çizimi dikkatle inceledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Deniz’in çizim defterinde yalnızca robotun dış görünüşü yoktu. Her sayfada küçük oklar, tarihleri yazılmış deneme sonuçları ve kendi tuttuğu süreler bulunuyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizimleri incelerken bazı okların kırmızı, bazılarının mavi olduğunu gördü. Kırmızılar hatalı dönüşleri, maviler sorunsuz geçen bölümleri gösteriyordu. Deniz bu renkleri kimseye anlatmamış, yalnızca sonraki denemelerde kullanmak için işaretlemişti.\n\nDeniz, robotun her denemede tam aynı noktada çizgiden çıktığını gösterdi. Robot, keskin dönüşe hızlı girince siyah çizginin dışına taşıyordu. Çizimde, dönüşten iki karış önce bir ok vardı. Deniz, motoru değiştirmeden önce bu noktada hızı azaltmayı önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", elindeki kronometreyi masaya bıraktı. “Bir deneme yapalım,” dedi.\n\nTakım robotu başlangıç çizgisine geri koydu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk dönüşün öncesindeki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr056_viraj"
+        },
+        {
+          "t": "metin",
+          "v": " işaretini kalınlaştırdı. Deniz, robottaki çizgi izleme "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr056_sensor"
+        },
+        {
+          "t": "metin",
+          "v": " bölümünü gösterdi. Çizgiyi izleyen sensör, zemindeki koyu şeridi okuyordu. Ancak robot çok hızlı dönerse sensör çizginin dışına çıkıyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", Deniz'in çizdiği yavaşlama noktasını kodlama görevindeki arkadaşına gösterdi. Kod değiştirildi; robot aynı yolun başına bırakıldı. Bu kez dönüşe yaklaşırken kısa süreliğine yavaşladı. İlk virajı geçti. Salondan küçük bir alkış yükseldi. Ne var ki ikinci dönüşte robot tekrar çizgiyi kaybetti. Deniz defterini çevirdi; ikinci dönüşün daha dar olduğunu önceden işaretlemişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Takım ikinci dönüşü ölçmek için yere küçük cetveller koydu. İlk viraj ile ikinci virajın açıları farklıydı. Deniz, aynı yavaşlama süresinin iki dönemeç için yeterli olmayabileceğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tahtaya iki ayrı değer yazdı; takım bu değerleri denemelerde sırayla değiştirdi. Üçüncü denemede robot dar dönüşü de geçince herkes pistin sonunda toplandı.\n\nSunum görevindeki öğrenci, “Peki bunu yarışta kim anlatacak?” diye sordu. Deniz sessizce defterine baktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", defterin sayfalarını açıp çizimlerin altındaki tarihleri gösterdi. Deniz'in sorun üzerinde birkaç gündür çalıştığı belliydi. Takım, Deniz'e rota denetimi görevini verdi. Sunumu hazırlayanlar da robotun farklı dönüşlerdeki hızını gösteren çizimi gösteriye ekledi.\n\nDeniz adının yazıldığı yeni listeyi bir süre inceledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yanına gelip, “İlk söylediğinde seni duymadım,” dedi. “Yarın denemeyi sen başlatır mısın?” Deniz başını salladı. Kronometreyi aldı, başlangıç çizgisine çömeldi. Robotu çalıştırınca herkes gözünü aynı keskin dönüşe çevirdi. Robot siyah çizginin üzerinde ilerledi, ışıkları bir an söndü, ardından yeniden yandı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Takım yarış alanına geldiğinde kalabalığın arasından bitiş çizgisini görmek kolay olmadı. Deniz, çantasındaki defteri çıkarıp pistin kenarına geçti. Önceden hazırladıkları değerlerin yanına boş bir sütun ekledi; yeni dönüşlerin ölçülerini oraya yazacaktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", geçen denemeden kalan küçük siyah bandı cebinden çıkardı. Bandın ucu kıvrılmıştı; bunu malzeme kutusuna geri koydu.\n\nYarış günü salondaki parkur deneme pistinden farklıydı. İlk viraj biraz daha keskin, ikinci dönüşse daha genişti. Takım kurallarda izin verilen hazırlık süresini kullanarak robotun hız değerlerini yeniden kontrol etti. Deniz, pistin kenarında çömelip dönüşleri çizdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona kâğıt uzattı, süreyi birlikte hesapladılar.\n\nBaşlama işareti verildiğinde robot siyah çizgiyi izlemeye koyuldu. İlk dar dönüşe yaklaşırken hafifçe yavaşladı. İkinci dönüşte tekerleklerinden biri çizginin dışına çok az taştı; salonda nefesler tutuldu. Sensör çizgiyi yeniden bulunca robot yoluna devam etti. Son kapıdan geçip bitiş çizgisinde durduğunda takım birbirine sarıldı.\n\nJüri, robotun neden hız değiştirdiğini sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", elindeki çizimi Deniz'e verdi. Deniz, dönüşlerin açılarını ve yaptıkları denemeleri anlattı. Kimse onun sözünü kesmedi. Gösteri bitince malzeme masasındaki görevli, takım listesini son kez kontrol etti. Deniz'in adı bu kez diğerleriyle aynı büyüklükte yazılmıştı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " robotu kutuya kaldırırken küçük defteri de almak istedi. Deniz defteri kendi çantasına koydu, sonra boş bir sayfa açıp yeni parkurun ilk çizgisini çizdi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr056_ici_burkulmak": [
+      {
+        "t": "metin",
+        "v": "Deniz kızmadı ama içi burkuldu."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Deniz başlangıçta yarış takımında hangi roldedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sunum sorumlusu"
+        },
+        {
+          "id": "B",
+          "metin": "Yedek öğrenci"
+        },
+        {
+          "id": "C",
+          "metin": "Takım kaptanı"
+        },
+        {
+          "id": "D",
+          "metin": "Malzeme denetçisi"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Deniz yedek listesine yazılmıştır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Deniz neden virajdan önce hızı azaltmayı önermiştir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Pil sabah daha çok dolsun diye"
+        },
+        {
+          "id": "B",
+          "metin": "Çizgi değişsin diye"
+        },
+        {
+          "id": "C",
+          "metin": "Parkur uzasın diye"
+        },
+        {
+          "id": "D",
+          "metin": "Robot çizgiyi aşmasın diye"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Hızı azaltmak çizgiden çıkmayı önleyebilir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Takım, Deniz’in katkısını nasıl karşıladı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Ona rota denetimi görevini verdi"
+        },
+        {
+          "id": "B",
+          "metin": "Onu yine yedek listesinde bıraktı"
+        },
+        {
+          "id": "C",
+          "metin": "Defterini malzeme kutusuna kaldırdı"
+        },
+        {
+          "id": "D",
+          "metin": "Sunum görevini ondan geri aldı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Deniz’in çalışması fark edildi ve ona rota denetimi görevi verildi."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Sensör” sözcüğü robotun hangi parçasını anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Ekran süsünü"
+        },
+        {
+          "id": "B",
+          "metin": "Tekerlek kapağını"
+        },
+        {
+          "id": "C",
+          "metin": "Çizgiyi algılayan parçayı"
+        },
+        {
+          "id": "D",
+          "metin": "Gövde üzerindeki eski etiketi"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Sensör zemindeki çizgiyi algılar."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr056_parkur",
+        "tur": "kelime",
+        "yazim": "parkur",
+        "anlam": "Yarış için belirlenmiş yol ya da güzergâh.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr056_pist",
+        "tur": "kelime",
+        "yazim": "pist",
+        "anlam": "Koşu ya da yarış için hazırlanmış düz yol.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr056_sensor",
+        "tur": "kelime",
+        "yazim": "sensörün",
+        "anlam": "Ortamdaki bir değişikliği algılayıp ölçen cihaz.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr056_algilayici",
+        "tur": "kelime",
+        "yazim": "algılayıcı",
+        "anlam": "Bir değişikliği fark edip işaretleyen araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr056_motor",
+        "tur": "kelime",
+        "yazim": "motor",
+        "anlam": "Enerjiyi hareket hâline dönüştüren makine.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr056_viraj",
+        "tur": "kelime",
+        "yazim": "viraja",
+        "anlam": "Yolun yön değiştirdiği kıvrım.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr056_donemec",
+        "tur": "kelime",
+        "yazim": "dönemeç",
+        "anlam": "Yolun keskin biçimde dönen kısmı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr056_duzluk",
+        "tur": "kelime",
+        "yazim": "düzlük",
+        "anlam": "Düz ve eğimsiz yer.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr056_ici_burkulmak",
+        "tur": "deyim",
+        "yazim": "içi burkuldu",
+        "anlam": "Üzülmek, incinmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr056_gonlu_kirilmak",
+        "tur": "deyim",
+        "yazim": "gönlü kırılmak",
+        "anlam": "Kırgınlık duymak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr056_ici_rahat",
+        "tur": "deyim",
+        "yazim": "içi rahat etmek",
+        "anlam": "Hiçbir kaygısı olmamak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr056_parkur",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr056_parkur"
+          },
+          {
+            "girdi": "hr056_pist"
+          }
+        ]
+      },
+      {
+        "ad": "hr056_sensor",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr056_sensor"
+          },
+          {
+            "girdi": "hr056_algilayici"
+          },
+          {
+            "girdi": "hr056_motor"
+          }
+        ]
+      },
+      {
+        "ad": "hr056_viraj",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr056_viraj"
+          },
+          {
+            "girdi": "hr056_donemec"
+          },
+          {
+            "girdi": "hr056_duzluk"
+          }
+        ]
+      },
+      {
+        "ad": "hr056_ici_burkulmak",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr056_ici_burkulmak"
+          },
+          {
+            "girdi": "hr056_gonlu_kirilmak"
+          },
+          {
+            "girdi": "hr056_ici_rahat"
+          }
+        ]
+      }
+    ]
+  }
+}

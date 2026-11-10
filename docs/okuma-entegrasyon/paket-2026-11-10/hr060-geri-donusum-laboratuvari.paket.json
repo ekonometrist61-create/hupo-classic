@@ -1,0 +1,570 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr060-geri-donusum-laboratuvari",
+    "baslik": "Geri Dönüşüm Laboratuvarı",
+    "tur": "bilim",
+    "konu": "atik_ayristirma",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D18"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "doga",
+        "okul"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D18"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "ayristirma_hr060",
+          "tur": "lexeme",
+          "etiket": "ayrıştırma",
+          "yuva": "hr060_ayristirma",
+          "islev": "first_hint"
+        },
+        {
+          "id": "geri_donusum_hr060",
+          "tur": "lexeme",
+          "etiket": "geri dönüşüm",
+          "yuva": "hr060_geri_donusum",
+          "islev": "application"
+        },
+        {
+          "id": "ambalaj_hr060",
+          "tur": "lexeme",
+          "etiket": "ambalaj",
+          "yuva": "hr060_ambalaj",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr060",
+          "tur": "concept",
+          "etiket": "Atık azaltma ve yeniden kullanım",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 693,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 7,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Mavi kutuya muz kabuğu, kâğıt kutusuna plastik şişe. Doğru ayrıştırmak neden bu kadar zor?",
+    "durum": "taslak",
+    "fis_kodu": "HR-060"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Mavi kutudan muz kabuğu çıktı. Yanındaki kâğıt kutusunun ağzında ise iki plastik şişe sıkışmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", okul koridorundaki kutulara bakıp şaşırdı. Kutular yeni alınmıştı; üzerlerinde farklı renklerde işaretler vardı. Fakat öğle arasında herkes elindeki şeyi en yakın kutuya atıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", kâğıtların arasında ıslanmış bir peçete buldu.\n\nÇevre kulübü, kutuların önünde küçük bir inceleme masası kurdu. Öğretmen, atıkları çıplak elle karıştırmamalarını, yalnız temiz örneklerle çalışmalarını istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr060_ayristirma"
+        },
+        {
+          "t": "metin",
+          "v": " sözcüğünü inceleme kâğıdının başlığına yazdı. Her kutunun üzerinde hangi tür malzemenin toplanacağı açıklanmıştı, fakat işaretlerin bir bölümü yanlış kutulara takılmıştı.\n\nKulüp üyeleri, temiz örnekleri masaya dizip farklı kutularla eşleştirdi. Plastik şişe, cam kavanoz, karton kutu ve metal kap ayrı ayrı duruyordu. Muz kabuğuna ise masada yer verilmedi; organik atık için hazırlanan kabın gösterge kartına resmini çizdiler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", her kabın üstüne yazılacak kısa sözcükleri belirledi. Ardından okulun hangi malzemeleri ayrı topladığını gösteren listeyi incelediler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüp sabah topladığı kâğıtların bir kısmını yere sererek işaret örnekleri hazırladı. Her resmin altında kısa bir kelime bulunuyordu. Ancak küçük resimlerin bazılarında malzeme türü uzaktan seçilemiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki adım geri gidip resimlere baktı. Kâğıt için sayfa, cam için kavanoz, metal için küçük bir kutu resmi çizdiler. Öğretmen bu çizimleri koridorda kullanmadan önce okulun toplama listesiyle karşılaştırdı.\n\nÇocuklar, kutuların üzerindeki yazıların birbirine karıştırıldığını gördü. Kâğıt kutusunun üstünde plastik şişe resmi, plastik kutusunun üzerinde ise buruşturulmuş kâğıt çizimi vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", yanlış resimlerin yeni kutular kurulurken yerlerinin değişmiş olabileceğini söyledi. Kulüp bu tahmini not etti, sonra kutuları yerleştiren görevliye sordu. Görevli, işaretleri aceleyle taktığını ve yerlerini karıştırmış olabileceğini belirtti.\n\nMasadaki temiz "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr060_ambalaj"
+        },
+        {
+          "t": "metin",
+          "v": " örneklerinden biri karton, biri plastikti. Temiz ambalaj, ürünü saran dış malzeme olarak tanımlandı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", iki örneği aynı anda kaldırdı. “Ürünü koruyan malzeme farklı türde olabiliyor,” dedi. Öğretmen, okulun yerel toplama uygulamasına göre doğru yönlendirme yapacaklarını hatırlattı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", eski bir yoğurt kabını eline aldı. Kabın içi tertemizdi; daha önce küçük boya fırçalarını saklamak için kullanılmıştı. “Bu mutlaka atılacak mı?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", masadaki küçük kavanozu gösterdi. Önce atık oluşmasını azaltmanın başka yollarını tartıştılar; işaretleri düzeltmek için hazırladıkları kâğıtlara “yeniden kullan” başlığı da eklediler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüp koridorda bir deneme alanı hazırladı. Bir tarafta yeniden kullanılabilecek temiz kaplar, diğer tarafta malzeme türlerine göre ayrılmış örnekler vardı. Öğrenciler sırayla masaya gelip hangi işareti izleyeceklerini seçti. İlk iki öğrenci kâğıt resmiyle karton kutuyu doğru eşleştirdi; üçüncü öğrenci parlak bir paketi plastik kutusuna götürdü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", paketin üzerinde birden fazla malzeme bulunduğunu gösterdi.\n\nOkulun "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr060_geri_donusum"
+        },
+        {
+          "t": "metin",
+          "v": " çalışmasında bütün ambalajların aynı biçimde işlenmediği anlatılıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", görevlinin getirdiği toplama çizelgesindeki işaretleri örneklere aktardı. Kimi malzemeler ayrı toplanıyor, kimi kirli nesneler ise bu kutulara uygun görülmüyordu. Çocuklar açıklama kartlarına basit resimler ekledi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", boya fırçalarını temiz kavanoza koyup masaya bıraktı. Yeniden kullanılan kavanoz sayesinde o gün yeni bir saklama kabı atılmadı. Kulüp, bu kavanozun yanına “Tekrar kullanılabilir” yazılı küçük bir kart koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kartları önce uzak mesafeden okudu; bazı harfler seçilmiyordu. Kalın uçlu kalemle başlıkları büyüttü. Koridordan geçen öğrenciler yeni işaretlere bakıp kutuların önünde durmaya başladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Koridorda yeni işaretleri gören iki öğrenci yan yana durup küçük bir kutuyu inceledi. Kutunun dışı karton, içindeki koruyucu bölüm ise plastikti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " farklı parçaları ayırıp ayıramayacaklarını kontrol etmeyi önerdi. Parçalar kolayca ayrılınca iki malzemeyi ayrı örnek kutularına koydular. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", yeni bir görsel hazırlamak için bu iki parçayı masaya yan yana dizdi.\n\nErtesi gün öğle arasında kulüp üyeleri kutuların durumunu yeniden kontrol etti. Kâğıt kutusunda artık daha fazla temiz karton vardı, ancak bir köşede içi dolu içecek bardağı duruyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu görevliye gösterdi; kirli atığı onun güvenli biçimde ayırmasını beklediler. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bardağın üzerindeki açıklama kartının ne kadar uzaktan okunabildiğine baktı.\n\nÖğrenciler boş kaplarla dolu yeniden kullanım masasını da ziyaret etti. Bir çocuk, küçük metal kutuyu kalemlerini saklamak için almak istedi. Kutunun kenarı pürüzlüydü; görevli güvenli olmadığını söyleyince çocuk başka bir kap seçti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kutunun yanındaki uyarı işaretini yeniden çizdi. Çocuklar bu kez sivri kenarları olan örnekleri sergileme masasından kaldırdı.\n\nGünün sonunda yeni işaretlerin yanına küçük bir soru kutusu koydular. Hangi malzemenin nereye gideceğinden emin olmayanlar sorularını oraya bırakabilecekti. Kutuda ilk olarak parlak kâğıtla ilgili bir soru belirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " soruyu aldı, karşılaştırma için toplama listesini açtı.\n\nKoridor boşalırken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " temiz kartonları düzenledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yeni soru kartını listede işaretlenen malzemenin yanına yerleştirdi, sonra panodaki kopmuş eski simgeyi çıkarıp yerine yenisini yapıştırdı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Okuldaki yanlış kutuya ne atılmıştır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Cam kavanoz"
+        },
+        {
+          "id": "B",
+          "metin": "Muz kabuğu"
+        },
+        {
+          "id": "C",
+          "metin": "Kuru yaprak"
+        },
+        {
+          "id": "D",
+          "metin": "Metal kaşık"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Mavi kutuda muz kabuğu vardır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Kutulardaki karışıklığın nedeni neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kutuların renkleri zamanla tamamen solmuştu"
+        },
+        {
+          "id": "B",
+          "metin": "Okulda kutu sayısı çok az olmuştu"
+        },
+        {
+          "id": "C",
+          "metin": "Koridor duvarları yeni boyanmıştı"
+        },
+        {
+          "id": "D",
+          "metin": "İşaretler yanlış kutulara takılmıştı"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Görevli işaretleri aceleyle taktığını söyledi; bu yüzden işaretler yanlış kutulara takılmıştı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Temiz kavanozun yeniden kullanılması hangi sonucu doğurdu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "O gün yeni bir saklama kabı atılmadı"
+        },
+        {
+          "id": "B",
+          "metin": "Kutular okul koridorundan tamamen kaldırıldı"
+        },
+        {
+          "id": "C",
+          "metin": "Bütün kirli atıklar ayrı toplandı"
+        },
+        {
+          "id": "D",
+          "metin": "Koridordaki ambalajlar daha da çoğaldı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kavanoz yeniden kullanıldığı için yeni bir saklama kabı atık olmadı."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Ambalaj” bu hikâyede neyi anlatmaktadır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Paketin içindeki yiyeceği"
+        },
+        {
+          "id": "B",
+          "metin": "Atık kutusunun kapağını"
+        },
+        {
+          "id": "C",
+          "metin": "Ürünü saran dış malzemeyi"
+        },
+        {
+          "id": "D",
+          "metin": "Okulun toplama listesini"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Ambalaj ürünü saran dış malzemedir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr060_ayristirma",
+        "tur": "kelime",
+        "yazim": "ayrıştırma",
+        "anlam": "Karışık bir şeyi türlerine göre ayırma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr060_ayirma",
+        "tur": "kelime",
+        "yazim": "ayırma",
+        "anlam": "Birbirinden ayrı tutma işi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr060_karistirma",
+        "tur": "kelime",
+        "yazim": "karıştırma",
+        "anlam": "Birbirine katma işi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr060_geri_donusum",
+        "tur": "kelime",
+        "yazim": "geri dönüşüm",
+        "anlam": "Atıkların yeniden işlenerek yeni ürünler için kullanılması.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr060_yeniden_kullanim",
+        "tur": "kelime",
+        "yazim": "yeniden kullanım",
+        "anlam": "Bir eşyayı yeni bir işte tekrar kullanma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr060_atma",
+        "tur": "kelime",
+        "yazim": "atma",
+        "anlam": "Bir şeyi kullanılmaz diye bırakma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr060_ambalaj",
+        "tur": "kelime",
+        "yazim": "ambalaj",
+        "anlam": "Bir ürünü saran ve koruyan kap ya da kılıf.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr060_kilif",
+        "tur": "kelime",
+        "yazim": "kılıf",
+        "anlam": "Bir şeyin üzerini örten koruyucu kap.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr060_urun",
+        "tur": "kelime",
+        "yazim": "ürün",
+        "anlam": "Üretilip satılan şey.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr060_ayristirma",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr060_ayristirma"
+          },
+          {
+            "girdi": "hr060_ayirma"
+          },
+          {
+            "girdi": "hr060_karistirma"
+          }
+        ]
+      },
+      {
+        "ad": "hr060_geri_donusum",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr060_geri_donusum"
+          },
+          {
+            "girdi": "hr060_yeniden_kullanim"
+          },
+          {
+            "girdi": "hr060_atma"
+          }
+        ]
+      },
+      {
+        "ad": "hr060_ambalaj",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr060_ambalaj"
+          },
+          {
+            "girdi": "hr060_kilif"
+          },
+          {
+            "girdi": "hr060_urun"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,518 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr057-sessiz-mesajlar-kulubu",
+    "baslik": "Sessiz Mesajlar Kulübü",
+    "tur": "arkadaslik",
+    "konu": "erisilebilirlik_iletisim",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D5",
+      "D20"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "dayanisma",
+        "okul"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D5",
+        "yardimci_deger": "D20"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "erisilebilirlik_hr057",
+          "tur": "lexeme",
+          "etiket": "erişilebilirlik",
+          "yuva": "hr057_erisilebilirlik",
+          "islev": "first_hint"
+        },
+        {
+          "id": "simge_hr057",
+          "tur": "lexeme",
+          "etiket": "simge",
+          "yuva": "hr057_simge",
+          "islev": "application"
+        },
+        {
+          "id": "altyazi_hr057",
+          "tur": "lexeme",
+          "etiket": "altyazı",
+          "yuva": "hr057_altyazi",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr057",
+          "tur": "idiom",
+          "etiket": "Yüzü aydınlanmak",
+          "yuva": "hr057_yuzu_aydinlandi",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr057",
+          "tur": "concept",
+          "etiket": "Çoklu iletişim yolları",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 679,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 3,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Bilim şenliğinde parkurun ipuçları yalnız seslendirilince ne olur? Herkes nasıl katılabilir?",
+    "durum": "taslak",
+    "fis_kodu": "HR-057"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Elvan, kalabalık şenlikte hoparlörün sözlerini seçemedi. Bilim şenliğindeki bulmaca parkurunda her durakta bir ipucu çalınıyor, öğrenciler duydukları kelimeye göre sonraki masaya ilerliyordu. Ancak etraftaki konuşmalar ve müzik, küçük hoparlörün sesini bastırıyordu. Elvan işitme cihazını düzeltti, sonra tekrar dinledi. İpucunun son sözcüğünü yine kaçırdı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", arkadaşının duraksadığını görünce yanına geldi. “İstersen ben söylerim,” dedi. Elvan gülümsedi ama başını salladı. “Bir sonraki turda kendi başıma ilerlemek istiyorum.” Takımın hazırlık masasında "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr057_erisilebilirlik"
+        },
+        {
+          "t": "metin",
+          "v": " başlıklı küçük bir kâğıt vardı. Kâğıtta herkesin bilgiye farklı yollardan ulaşabilmesi için örnekler sıralanmıştı. Ne var ki parkur ipuçları yalnızca sesle hazırlanmıştı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk durağın kaydını yeniden açtı. Hoparlörden ince bir ses yükseldi; yakındaki çocuklar yüksek sesle konuşunca kaydın yarısı duyulmadı. Elvan masanın üstündeki küçük çizimleri gösterdi. “Şu şekiller de ipucunu anlatsa daha kolay olur.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizim defterini açtı, ilk ipucunun yanında boş duran yere kalemini koydu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Elvan ekibe, bazen yüksek bir sesin daha anlaşılır bir konuşma anlamına gelmediğini anlattı. Hoparlörün yanındaki masada iki ayrı deneme yaptılar. Önce ses düzeyini artırdılar; koridordaki uğultu yine cümlelerin sonunu bastırdı. Sonra hoparlörü yaklaştırıp arkasındaki gürültülü oyuncağı kapattılar. Ses biraz netleşti, fakat uzaktaki ziyaretçilerin aynı koşulları bulamayacağı belliydi.\n\nEkip, duyulamayan ipuçlarını ekranda da gösterecek bir yol hazırladı. Önce ses kaydındaki cümleleri tek tek yazdılar. Ardından her cümlenin yanına küçük yön işaretleri koydular. Karttaki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr057_simge"
+        },
+        {
+          "t": "metin",
+          "v": ", sonraki durağın yönünü gösteren bir oktu. Elvan işaretin renkli zeminde yeterince seçilmediğini söyleyince arka planı açık renge çevirdiler.\n\nSıra kısa videoya geldi. Videoda deney masasındaki bir kutu açılıyor ve içinden küçük bir ışık çıkıyordu. Sesli anlatım yalnızca videonun sonunda duyuluyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ekrana "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr057_altyazi"
+        },
+        {
+          "t": "metin",
+          "v": " eklemeyi önerdi. Konuşma cümlelerini doğru anda göstermek için videoyu birkaç kez durdurdular. Elvan, ekrandaki yazının bazen çok hızlı kaybolduğunu gösterdi. Yazının durma süresini biraz uzattılar.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", hazırlanan ilk kartları parkur boyunca dağıttı. Birkaç çocuk yeni işaretleri denemek için geldi. Fakat ikinci masadaki ok, pencereye doğru gösteriyordu; sonraki durak ise kapının yanındaydı. Takım kartı hemen değiştirdi. Elvan, düzeltilen işareti izleyip yeni durağa yürüdü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de arkadan onun izlediği yolu deftere çizdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenliğin başlamasına yarım saat kalmıştı. Ekip her durakta ses, yazı ve işaretin aynı bilgiye götürüp götürmediğini kontrol etti. Bir masada kelime yanlış yazılmıştı; başka masada simge, yandaki masanın yönünü gösteriyordu. Elvan, çizimlerin yerini değiştirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", videodaki yazının rengini yeniden ayarladı. Kısa sürede bütün duraklar aynı düzene kavuştu.\n\nElvan son denemede ses kaydını değil, ekrandaki işareti izlemeyi seçti. Daha önce durduğu masadan yürümeye başlayınca arkadaşları ona yol göstermedi. Çocuk kendi kararını vererek bir sonraki kartı aldı. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr057_yuzu_aydinlandi"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", defterinin kenarına küçük bir güneş çizdi.\n\nYeni parkurda aynı ipucu hem sesle hem yazıyla sunuldu. İlk ziyaretçilerden biri yazıyı okumayı, diğeri kaydı dinlemeyi seçti. İkisi de aynı masaya ulaştı. Ekip, gelenleri tek tek yönlendirmek yerine seçenekleri açık bıraktı. Elvan, sıradaki grup yaklaşırken ses ayarı düğmesinin yerini de kolay erişilebilen bir köşeye taşıdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Görevli öğretmen, parkurun önüne uzun bir sıra oluşunca çocukları küçük gruplara ayırdı. Her gruba aynı süre veriliyordu, fakat kimseye ipucunu nasıl izleyeceği söylenmiyordu. Elvan, başlangıç masasında ses kaydının yanında yazılı kartın da açık durmasını kontrol etti. Bir öğrenci kartı kaldırıp arkadakilere göstermek isteyince masadaki küçük standı ona uzattı.\n\nŞenlik kalabalıklaştığında koridordaki ses daha da yükseldi. Buna rağmen parkur masalarında ilerleyen çocuklar birbirinden kopmadı. Ses kaydını duyanlar dinledi; yazıyı tercih edenler ekrana baktı. Bir çocuk yazılı karttaki oku parmağıyla izleyerek bir sonraki masaya yürüdü. Ekip, bir öğrencinin ekranı görmek için öne eğildiğini görünce tableti biraz yükseltti. Öğretmen çocuklara teşekkür edip masanın ışığını yazılar daha net okunsun diye ayarladı.\n\nElvan, son masa önünde iki çocuğun birbirine yardım ettiğini izledi. Çocuklardan biri harfleri yavaş okuyor, diğeri şekillere bakıyordu. Son kartın üzerindeki kilit resmi, doğru kutunun kapağını gösteriyordu. İkisi birlikte kutuyu açtı, içinden renkli küçük bir bayrak çıkardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bayrağı tekrar kutuya koyup sıradaki ziyaretçiler için kapağı kapattı.\n\nGösteri sona ererken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk hazırladıkları sesli kartı masaya getirdi. Eski sesli kart, yazılı kartın yanında çok sade kalmıştı. Elvan eski kartı atmak istemedi. İki kartı yan yana koydu; ekip hangi değişikliklerin yapıldığını resimlerin kenarına küçük oklarla işaretledi.\n\nKapıdan son bir grup girince Elvan girişteki masaya geçti. Ses düğmesini ayarladı, yazılı kartları düzeltti ve çocuklardan birine ilk yön işaretini uzattı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr057_yuzu_aydinlandi": [
+      {
+        "t": "metin",
+        "v": "Elvan doğru masaya ulaşınca yüzü aydınlandı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Elvan hangi ortamda sesli ipuçlarını kaçırmıştır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sessiz bir sınıfta"
+        },
+        {
+          "id": "B",
+          "metin": "Gürültülü şenlikte"
+        },
+        {
+          "id": "C",
+          "metin": "Boş kütüphanede"
+        },
+        {
+          "id": "D",
+          "metin": "Açık hava spor alanında"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Sesli ipuçlarını gürültülü şenlikte kaçırır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Takım neden ipuçlarını ekrana da yazmıştır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Süreyi uzatmak için"
+        },
+        {
+          "id": "B",
+          "metin": "Puanları azaltmak için"
+        },
+        {
+          "id": "C",
+          "metin": "Masayı renkli resimlerle süslemek için"
+        },
+        {
+          "id": "D",
+          "metin": "Bilgiye başka yoldan ulaşmak için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Yazı sesin duyulamadığı durumda ikinci erişim yoludur."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Güncellenen parkurda ipucuna nasıl ulaşılabiliyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Hem sesle hem yazıyla"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnızca sesli kayıtla"
+        },
+        {
+          "id": "C",
+          "metin": "Yalnızca ekrandaki videoyla"
+        },
+        {
+          "id": "D",
+          "metin": "Yalnızca elle tutulan kartla"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Aynı ipucu hem sesle hem yazıyla sunuldu."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Simge” sözcüğü işaret kartında ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Uzun bir sözlü açıklama"
+        },
+        {
+          "id": "B",
+          "metin": "Müzik parçası"
+        },
+        {
+          "id": "C",
+          "metin": "Anlam taşıyan şekil"
+        },
+        {
+          "id": "D",
+          "metin": "Boş ekran alanı"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Simge anlam taşıyan görsel işarettir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr057_erisilebilirlik",
+        "tur": "kelime",
+        "yazim": "erişilebilirlik",
+        "anlam": "Herkesin kullanabileceği biçimde düzenlenmiş olma durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_kapsayicilik",
+        "tur": "kelime",
+        "yazim": "kapsayıcılık",
+        "anlam": "Herkesi içine alabilen, dışlamayan yaklaşım.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_karmasiklik",
+        "tur": "kelime",
+        "yazim": "karmaşıklık",
+        "anlam": "Karışık ve anlaşılması zor olma durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_simge",
+        "tur": "kelime",
+        "yazim": "simgesi",
+        "anlam": "Bir anlamı ya da kavramı temsil eden işaret.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_isaret",
+        "tur": "kelime",
+        "yazim": "işaret",
+        "anlam": "Bir şeyi belirtmek için kullanılan görünür iz ya da şekil.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_altyazi",
+        "tur": "kelime",
+        "yazim": "altyazının",
+        "anlam": "Filmde konuşmaların ekranın altına yazılan karşılığı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_ceviri_yazisi",
+        "tur": "kelime",
+        "yazim": "çeviri yazısı",
+        "anlam": "Bir metnin başka bir dile çevrilmiş yazılı hâli.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_yuzu_aydinlandi",
+        "tur": "deyim",
+        "yazim": "yüzü aydınlandı",
+        "anlam": "Sevinçle yüzü gülmek, mutlu olmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_yuzu_dusmek",
+        "tur": "deyim",
+        "yazim": "yüzü düşmek",
+        "anlam": "Üzülüp hüzünlenmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_yuzu_gulmek",
+        "tur": "deyim",
+        "yazim": "yüzü gülmek",
+        "anlam": "Sevinçli görünmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr057_erisilebilirlik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr057_erisilebilirlik"
+          },
+          {
+            "girdi": "hr057_kapsayicilik"
+          },
+          {
+            "girdi": "hr057_karmasiklik"
+          }
+        ]
+      },
+      {
+        "ad": "hr057_simge",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr057_simge"
+          },
+          {
+            "girdi": "hr057_isaret"
+          }
+        ]
+      },
+      {
+        "ad": "hr057_altyazi",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr057_altyazi"
+          },
+          {
+            "girdi": "hr057_ceviri_yazisi"
+          }
+        ]
+      },
+      {
+        "ad": "hr057_yuzu_aydinlandi",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr057_yuzu_aydinlandi"
+          },
+          {
+            "girdi": "hr057_yuzu_dusmek"
+          },
+          {
+            "girdi": "hr057_yuzu_gulmek"
+          }
+        ]
+      }
+    ]
+  }
+}

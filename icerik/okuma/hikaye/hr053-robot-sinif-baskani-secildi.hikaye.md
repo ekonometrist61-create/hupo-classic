@@ -13,7 +13,7 @@ deger_anahtarlari: [D6, D14]
 yetiskin_uygun: false
 tanitim: "Sınıf başkanlığı seçiminde birinci gelen aday bir robot. Kurallar kime hizmet ediyor?"
 durum: taslak
-uretim_kaynak: chatgpt_taslak
+uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
 etiketler:
   ana_sinif: 5
@@ -42,7 +42,7 @@ sorular:
 @omurga
 Sınıfın deneme başkanlığı seçiminde en çok oyu MİKO aldı. Tekerlekli robotun ekranında kocaman bir gülümseme işareti belirdi. MİKO, “Başkanlık talimatı alındı,” dedi; ardından zil çalmadan üç kez sınıfı dolaştı. Öğrenciler gülüyordu. Adaylığı önce bir şaka olarak yazılmış, sonra herkesin hoşuna gitmişti. Öğretmen, gerçek {kelime:hr053_temsilcilik} görevinin öğrencilerden birine verileceğini, MİKO'nun ise bir günlüğüne deneme başkanı olacağını açıklamıştı.
 
-{kahraman}, oy sayımı sırasında tahtaya çizdiği çizgileri gösterdi. Birinci sırada MİKO vardı, ikinci sırada Ece, üçüncü sırada Arda. Robot bir sandalye istemedi; bunun yerine kendisine pencere kenarındaki şarj noktasını seçti. İlk işi, sınıf kurallarını ekrana taşımak oldu. “Gürültü sıfır, gecikme sıfır, dağınıklık sıfır,” dedi. Arda fısıltıyla, “Teneffüs de sıfır olmasın,” diye karşılık verdi.
+{kahraman}, oy sayımı sırasında tahtaya çizdiği çizgileri gösterdi. {yoldas:yalin|bir arkadaş} çizgileri yüksek sesle saydı. Birinci sırada MİKO vardı, ikinci sırada Ece, üçüncü sırada Arda. Robot bir sandalye istemedi; bunun yerine kendisine pencere kenarındaki şarj noktasını seçti. İlk işi, sınıf kurallarını ekrana taşımak oldu. “Gürültü sıfır, gecikme sıfır, dağınıklık sıfır,” dedi. Arda fısıltıyla, “Teneffüs de sıfır olmasın,” diye karşılık verdi.
 
 Ders sırasında bir çocuğun kalemi yere düştü. Çocuk eğilip kalemini aramaya başladı. Sandalye hafifçe gıcırdadı. MİKO'nun ekranı kırmızıya döndü; robot, yüksek sesle “Gürültü uyarısı,” dedi. Çocuk başını kaldırıp şaşkın şaşkın baktı. Sınıfta ilk kez kimseden gülüş duyulmadı.
 ---
@@ -71,4 +71,4 @@ Sınıf, MİKO'nun yalnızca önerileri listelemesine oy verdi. Öğrencilerin s
 
 {kahraman} masadaki notları toplarken ilk derste kalemini düşüren çocuk yanına geldi. “Robot şimdi kalemimi arayacak mı?” diye sordu. O anda kalem yeniden sıranın altına yuvarlandı. MİKO tekerlekleriyle yaklaştı, kalemi yerde görünce durdu. “Yardım önerisi: kalem masaya bırakılabilir,” dedi. Ece, eğilip kalemi aldı. Robot hiçbir uyarı vermedi.
 
-Zil çalınca çocuklar kapıya yöneldi. MİKO, oylama sonuçlarını ekranda açık bıraktı. {kahraman} ekrandaki son satıra bir başlık ekledi: “Yarın tartışılacak öneriler.” Sonra robotun fişini şarj noktasına taktı ve sınıfın kapısını kapattı.
+Zil çalınca çocuklar kapıya yöneldi. {yoldas:yalin|bir arkadaş} MİKO'ya el sallayıp çıktı. MİKO, oylama sonuçlarını ekranda açık bıraktı. {kahraman} ekrandaki son satıra bir başlık ekledi: “Yarın tartışılacak öneriler.” Sonra robotun fişini şarj noktasına taktı ve sınıfın kapısını kapattı.

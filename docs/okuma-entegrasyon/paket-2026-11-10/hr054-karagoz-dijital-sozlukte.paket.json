@@ -1,0 +1,556 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr054-karagoz-dijital-sozlukte",
+    "baslik": "Karagöz Dijital Sözlükte",
+    "tur": "mizah",
+    "konu": "deyim_mecaz",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D14",
+      "D15"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "sanat_yaraticilik",
+        "okul"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D15"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozluk_hr054",
+          "tur": "lexeme",
+          "etiket": "sözlük",
+          "yuva": "hr054_sozluk",
+          "islev": "first_hint"
+        },
+        {
+          "id": "perde_hr054",
+          "tur": "lexeme",
+          "etiket": "perde",
+          "yuva": "hr054_perde",
+          "islev": "application"
+        },
+        {
+          "id": "kostum_hr054",
+          "tur": "lexeme",
+          "etiket": "kostüm",
+          "yuva": "hr054_kostum",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr054",
+          "tur": "idiom",
+          "etiket": "Kulak kabartmak",
+          "yuva": "hr054_kulak_kabartmak",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr054",
+          "tur": "concept",
+          "etiket": "Gerçek anlam ile mecaz anlam",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pass",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 664,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 5,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Karagöz deyimleri kelimesi kelimesine okuyunca sahne karışıyor. Dijital sözlük nasıl düzelecek?",
+    "durum": "taslak",
+    "fis_kodu": "HR-054"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Karagöz, “Etekleri zil çalmak” sözünü duyunca gerçek bir zil aradı. Küçük tiyatro salonunun arkasındaki kutuları açtı, ahşap çekmeceleri çekti, hatta Hacivat'ın şapkasını bile salladı. Hacivat telaşla peşinden koşuyordu. “Ben yalnızca çok sevindiğini söyledim!” diye seslendi. Karagöz, “Sevincin sesi zil gibi mi çıkıyor?” dedi ve sandığa yeniden eğildi.\n\nMahallenin tiyatro topluluğu o gün dijital "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr054_sozluk"
+        },
+        {
+          "t": "metin",
+          "v": " ile deyimleri açıklayan bir gösteri hazırlıyordu. Ancak tablet ekranına yazılan ilk açıklamalar, sözcüklerin tek tek anlamından ibaretti. “Etekleri zil çalmak” için “Eteklerin ucundaki metal zillerin ses çıkarması” yazıyordu. Gösteriyi hazırlayan "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ekrandaki cümleyi yüksek sesle okuyunca Karagöz iyice heyecanlandı.\n\nSahnenin önündeki beyaz "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr054_perde"
+        },
+        {
+          "t": "metin",
+          "v": " henüz aydınlatılmamıştı. Hacivat bir kart seçip perdeye yaklaşınca Karagöz arkasından, “Acele et, zilimi bulamadım,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ışıkları açtı, Karagöz'ün gölgesi perdeye düştü. Küçük seyirciler kahkahayı bastı. Fakat tablet, ilk yanlış açıklamayı her yeni kartta yeniden göstermeye başlayınca Hacivat'ın yüzü asıldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tiyatro salonunun girişinde eski gösterilerden kalan küçük el ilanları diziliydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir ilandaki Karagöz resmine bakınca kahramanın elinde gerçekten zil taşıdığını gördü. Hacivat, bir zamanlar aynı şakanın başka bir oyunda da kullanıldığını anlattı. Karagöz bunu duyunca zili olmayan yeleğine bir kez daha baktı. Sonra Hacivat’a yaklaşıp, “Ben niye hep zilsiz kalıyorum?” dedi.\n\nEkrandaki açıklama, deyimi sözcük sözcük tanımlıyordu. Hacivat, “Böyle giderse herkes başka bir şeye inanacak,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", tabletin ayarlarına bakıp açıklamaların ayrı iki kutuda tutulduğunu gördü. Birinci kutu tek tek sözcükleri, ikinci kutu sözün bütün olarak ne anlattığını göstermeliydi. İkinci kutu boş kalmıştı.\n\nKaragöz yeni bir kart çekti: “Kulak kabartmak”. Elini kulağının arkasına koyup dikkatle bekledi. “Kulağım kabarmadı, demek bu kart da bozuk,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kartı tabletin önüne koydu; Hacivat, bu sözün bir konuşmayı dikkatle dinlemek için kullanıldığını gösteren kısa bir sahne hazırladı. Sahnenin kapısının arkasında biri fısıldadı. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr054_kulak_kabartmak"
+        },
+        {
+          "t": "metin",
+          "v": " Karagöz bütün hareketini durdurdu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", Karagöz'e iki yeni açıklama gösterdi. Birinde kulağın gerçekten büyüdüğü resmedilmişti; diğerinde biri kapı aralığındaki konuşmayı dinliyordu. Karagöz ikinci resmi seçti. “Bu benim biraz önce yaptığım şey,” dedi. Hacivat başıyla onayladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ekrandaki boş kutuya ikinci resmin yanına kısa açıklamayı yazdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Açıklamalar düzelince yeni bir sorun çıktı. Karagöz, duyduğu her deyimin sahnede canlandırılması gerektiğini sanıyordu. “İçi içine sığmamak” kartını çektiğinde yeleğinin düğmelerini açmaya kalktı. Hacivat yine araya girdi. “Yeleğe dokunma, sevinçten yerinde duramıyorsun!” dedi. Karagöz bir adım geri çekilip Hacivat'ın yüzüne baktı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", oyuncuların sandığından çıkan eski "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr054_kostum"
+        },
+        {
+          "t": "metin",
+          "v": " parçalarını sıraya dizdi. Karagöz, eski parçalar içinden yamalı yeleği seçti. “Madem sevinçten yerimde duramıyorum, şimdi oynarım,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " tabletin ikinci kutusuna “Çok sevinmek, çok heyecanlanmak” yazdı. Karagöz, yeni açıklamayı okuyunca sevinçle yerinde zıpladı.\n\nGösteriyi bekleyen çocuklar, beyaz perdedeki Karagöz gölgesinin sağa sola sıçrayışını izliyordu. Hacivat, kartların sırasını değiştirdi; önce deyim, sonra iki olası çizim görünüyordu. Seyirciler küçük renkli kartlarla hangi çizimin söze uyduğunu seçiyordu. Bir çocuk, “Kulağı kabaran resim komik ama konuşmayı dinleyen daha uygun,” dedi. Hacivat başparmağını kaldırdı, fakat Karagöz gözlerini kısıp yeni kartları incelemeye başladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sahnenin köşesinde duran küçük sandığın kapağı gıcırdadı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", içinden çıkan eski kartları sıraya dizdi. Önceden kullanılan çizimlerin çoğunda deyimler gerçek nesnelerle gösterilmişti. Bir resimde “Eli açık” için kocaman bir avuç çizilmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun yanına, oyuncaklarını arkadaşlarıyla paylaşan bir çocuğun resmini çizdi. Böylece iki farklı anlatım perdeye yan yana yansıyabilecekti.\n\nSon kartın üzerinde “Dili tutulmak” yazıyordu. Karagöz kendi ağzını iki eliyle kapattı; hiç konuşmayınca salonda sessizlik oldu. Hacivat ona yaklaşarak fısıldadı: “Sözleri şaşkınlıktan söyleyememek demek.” Karagöz ellerini indirdi. “Ben de çok şaşırdım, çünkü bu kez ekranda doğru resim var!” deyince herkes güldü.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tabletin eski açıklamalarını silmedi; onları kenardaki küçük kutuya taşıdı. Böylece gösterinin başındaki yanlış anlaşılmanın nasıl oluştuğu görülebiliyordu. Yeni kutuda ise her deyim için kısa bir sahne ve bütün anlamı anlatan bir cümle yer alıyordu. Hacivat, oynayacakları son bölümü seçip Karagöz'e uzattı. Karagöz de kâğıdı ters tutunca kendisini baş aşağı gören küçük seyirciler yeniden gülmeye başladı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ışıkları biraz azalttı. Perde önünde yalnız iki gölge kalmıştı. Karagöz, elinde olmayan zili arıyormuş gibi bir kez daha sandığa uzandı. Hacivat ona yeleğinin cebini gösterdi; cebinden gerçek bir küçük zil çıktı. Karagöz bu kez hiç konuşmadı. Zili salladı, sonra perde arkasına koşup onu gösterinin son sesine bağladı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr054_kulak_kabartmak": [
+      {
+        "t": "metin",
+        "v": "Kapının arkasından gelen fısıltıya Karagöz kulak kabarttı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Karagöz “Etekleri zil çalmak” sözünü nasıl yorumladı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Gerçekten zil aramıştır"
+        },
+        {
+          "id": "B",
+          "metin": "Sahneyi terk etmiştir"
+        },
+        {
+          "id": "C",
+          "metin": "Şarkı söylemiştir"
+        },
+        {
+          "id": "D",
+          "metin": "Kostümünü değiştirmiştir"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Sözdeki zili gerçek nesne sanmıştır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Ekip dijital sözlüğün ilk açıklamasını neden yeniden düzenledi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Eski ekran tamamen bozulduğu için"
+        },
+        {
+          "id": "B",
+          "metin": "Işık azaldığı için"
+        },
+        {
+          "id": "C",
+          "metin": "Seyirci ayrıldığı için"
+        },
+        {
+          "id": "D",
+          "metin": "Deyim yanlış açıklandığı için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Sözlüğün açıklaması deyimi gerçek anlamına indirmiştir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Sahnede ikinci açıklamanın işe yaradığını ne göstermiştir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Işıkların sönmesi"
+        },
+        {
+          "id": "B",
+          "metin": "Hacivat’ın sahneden çıkması"
+        },
+        {
+          "id": "C",
+          "metin": "Karagöz’ün sevinci oynaması"
+        },
+        {
+          "id": "D",
+          "metin": "Perdenin aşağı indirilmesi"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Karagöz deyimin kastedilen anlamını canlandırır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Kostüm” sözcüğü tiyatro sahnesinde neyi belirtir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sahne arkasındaki kapı"
+        },
+        {
+          "id": "B",
+          "metin": "Oyuncunun sahne giysisi"
+        },
+        {
+          "id": "C",
+          "metin": "Gösterinin giriş için ayrılmış bileti"
+        },
+        {
+          "id": "D",
+          "metin": "Salondaki seyirci yeri"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Kostüm oyuncunun sahnede giydiği kıyafettir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr054_sozluk",
+        "tur": "kelime",
+        "yazim": "sözlüğü",
+        "anlam": "Sözcüklerin anlamlarını gösteren kitap ya da dijital araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_lugat",
+        "tur": "kelime",
+        "yazim": "lügat",
+        "anlam": "Sözcüklerin anlamlarının alfabetik sıralandığı kitap.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_ansiklopedi",
+        "tur": "kelime",
+        "yazim": "ansiklopedi",
+        "anlam": "Konuları ayrıntılı açıklayan çok ciltli eser.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_perde",
+        "tur": "kelime",
+        "yazim": "perdesinin",
+        "anlam": "Gölge oyununda gösterimin yansıdığı beyaz yüzey.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_ekran",
+        "tur": "kelime",
+        "yazim": "ekran",
+        "anlam": "Görüntünün yansıdığı yüzey.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_kostum",
+        "tur": "kelime",
+        "yazim": "kostüm",
+        "anlam": "Bir karakteri canlandırmak için giyilen özel giysi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_giysi",
+        "tur": "kelime",
+        "yazim": "giysi",
+        "anlam": "İnsanın vücuduna giydiği her türlü kıyafet.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_uniforma",
+        "tur": "kelime",
+        "yazim": "üniforma",
+        "anlam": "Bir kurum ya da grubun ortak giysisi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_kulak_kabartmak",
+        "tur": "deyim",
+        "yazim": "kulak kabartmak",
+        "anlam": "Bir konuşmayı dikkatle dinlemeye çalışmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_kulak_asmak",
+        "tur": "deyim",
+        "yazim": "kulak asmamak",
+        "anlam": "Söylenene önem vermeyip dinlememek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_kulak_vermek",
+        "tur": "deyim",
+        "yazim": "kulak vermek",
+        "anlam": "Dikkatle dinlemek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr054_sozluk",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr054_sozluk"
+          },
+          {
+            "girdi": "hr054_lugat"
+          },
+          {
+            "girdi": "hr054_ansiklopedi"
+          }
+        ]
+      },
+      {
+        "ad": "hr054_perde",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr054_perde"
+          },
+          {
+            "girdi": "hr054_ekran"
+          }
+        ]
+      },
+      {
+        "ad": "hr054_kostum",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr054_kostum"
+          },
+          {
+            "girdi": "hr054_giysi"
+          },
+          {
+            "girdi": "hr054_uniforma"
+          }
+        ]
+      },
+      {
+        "ad": "hr054_kulak_kabartmak",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr054_kulak_kabartmak"
+          },
+          {
+            "girdi": "hr054_kulak_asmak"
+          },
+          {
+            "girdi": "hr054_kulak_vermek"
+          }
+        ]
+      }
+    ]
+  }
+}

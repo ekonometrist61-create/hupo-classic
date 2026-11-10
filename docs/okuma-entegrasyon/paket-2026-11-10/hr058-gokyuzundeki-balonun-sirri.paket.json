@@ -1,0 +1,608 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr058-gokyuzundeki-balonun-sirri",
+    "baslik": "Gökyüzündeki Balonun Sırrı",
+    "tur": "bilim",
+    "konu": "isi_yogunluk",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D5"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D5"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "bruloer_hr058",
+          "tur": "lexeme",
+          "etiket": "brülör",
+          "yuva": "hr058_bruloer",
+          "islev": "first_hint"
+        },
+        {
+          "id": "kaldirma_hr058",
+          "tur": "lexeme",
+          "etiket": "kaldırma kuvveti",
+          "yuva": "hr058_kaldirma_kuvveti",
+          "islev": "application"
+        },
+        {
+          "id": "yogunluk_hr058",
+          "tur": "lexeme",
+          "etiket": "yoğunluk",
+          "yuva": "hr058_yogunluk",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr058",
+          "tur": "idiom",
+          "etiket": "Kaşlarını çatmak",
+          "yuva": "hr058_kaslarini_catti",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr058",
+          "tur": "concept",
+          "etiket": "Benzer görüntü, aynı neden değildir",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 682,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 5,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Balon neden yükselir? {kahraman} rengin mi, ısının mı etkisini araştırdı.",
+    "durum": "taslak",
+    "fis_kodu": "HR-058"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sabah meydanına gelen sıcak hava balonu, henüz yerden ayrılmadan kocaman bir renkli kubbeye dönüştü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kırmızı, sarı ve mavi parçalarına bakıp en çok kırmızının ısındığını düşündü. Yanındaki "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise “Balonun renginden değil, içindeki sıcak havadan olabilir,” dedi. Uçuşu yöneten deneyimli görevli, ziyaretçileri güvenli çizginin ardında topladı.\n\nBalonun içindeki hava "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr058_bruloer"
+        },
+        {
+          "t": "metin",
+          "v": " ile ısıtılıyordu. Görevli, brülörü yalnız kendisinin kullanacağını söyleyip kontrol kolunu gösterdi. Balonun ağzından sıcak havanın yükseldiği görülüyordu. Sepet yere bağlıyken kumaşın biçimi değişti, kubbe yavaş yavaş dikleşti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine iki çizim yaptı: biri balon sönükken, öteki kumaş havayla doluyken.\n\nGörevli, yükselme gösterisine başlamadan önce ipin bağlı olduğu noktaları tek tek kontrol etti. “Renkler dikkat çekici ama bizi yukarı taşıyan başka bir şey,” dedi. Çocuklar büyük balonun yanındaki kapalı eğitim çadırına geçti. Çadırda balonun çalışma biçimini gösteren küçük modeller vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kırmızı modelin altında da mavi modelin altında da aynı ısı göstergesinin bulunduğunu gördü. Renk tahminiyle modeli karşılaştırmak için ikisini yan yana bıraktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Eğitim çadırının duvarında, eskiden uçmuş bir balonun kesit resmi asılıydı. Sepetin üstünde geniş bir ağız, onun çevresinde kumaşın gerildiği dikişler görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " resimdeki büyük boşluğun yalnızca havayla dolduğunu görünce şaşırdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bir ucu açık olan böyle büyük bir kubbenin neden hemen sönmediğini sordu. Görevli, ısınan havanın içeriye sürekli gönderildiği sırada kubbenin biçimini koruduğunu gösterdi.\n\nEğitim masasında ısıtıcıya bağlı olmayan, şeffaf iki kap duruyordu. Görevli bunların içindeki havanın sıcaklık farkını güvenli bir düzenekle göstereceğini söyledi. Ekranda iki ayrı gösterge belirdi. Daha sıcak olan kaptaki hava, aynı basınç koşullarında daha az yoğun hale geliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr058_yogunluk"
+        },
+        {
+          "t": "metin",
+          "v": " sözcüğünü defterinin kenarına yazdı. Görevli, yoğunluk sözcüğünü belirli bir hacimde ne kadar madde bulunduğunu anlatırken kullandı.\n\nMasadaki şemada hava dolu balonun ağırlığı aşağı, havanın sağladığı "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr058_kaldirma_kuvveti"
+        },
+        {
+          "t": "metin",
+          "v": " yukarı yönlü okla gösteriliyordu. Isınan iç havanın yoğunluğu azalınca balona etki eden yukarı yönlü kuvvet ağırlığını aşabildi. Görevli, kumaşın, sepetin ve yolcuların ağırlığının da bu karşılaştırmada yer aldığını açıkladı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " önceki kırmızı modelin yanına maviyi koydu. İki küçük modelin altındaki göstergeler aynı ayardaydı. Başka bir yetişkin, eğitim düzeneğini çalıştırdı. Ekranda modellerin hareketleri yan yana gösterildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", her iki çizgiyi aynı sayfaya kopyaladı. Çizgilerin yüksekliğindeki küçük fark, modellerin renklerinden çok, kumaşlarının ağırlığıyla ilişkili olabilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İki farklı renkli küçük model aynı koşulda benzer biçimde yükseldi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kırmızı modelin daha hızlı çıkacağı tahmininin yanına küçük bir soru işareti koydu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bir kez daha deneyelim,” dedi. Görevli, ölçüm yapmak için modelin rengi dışında diğer özellikleri aynı tutmaya çalıştıklarını söyledi.\n\nMeydandaki büyük balon için uçuş saati yaklaşırken rüzgâr biraz hızlandı. Görevli güvenlik iplerini kontrol ettirdi ve koşullar uygun olana kadar bekleme kararı aldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hava durumunu gösteren küçük ekrana baktı. Göstergedeki rüzgâr işareti önce yana, sonra biraz geriye döndü. Bu değişiklik, çocukların defterlerindeki renk çizimlerinde görünmüyordu.\n\nRüzgâr bir türlü yatışmıyordu. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr058_kaslarini_catti"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine küçük bir surat çizdi. Görevli, rüzgâr yeniden uygun olduğunda balonun yalnız bağlı ipler üzerinde kısa bir gösteri yapacağını söyledi. Çocuklar güvenlik çizgisinin gerisine çekildi. Sepetin altındaki gölge, güneşin yer değiştirmesiyle meydanın taşları boyunca uzadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Meydanda güvenlik çizgisini gösteren sarı şerit düzeltilmişti. Görevli, balonun yükselişi sırasında kimsenin iplerin yakınına geçmemesini istedi. Küçük izleyicilerden biri çantasını çizginin gerisinde yere bıraktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sepetin altına düşen gölgeyi izlerken rüzgârın yönünü gösteren bayrağı da defterinin köşesine çizdi. Bu işaret, az sonra gözlemleyecekleri hareketin hangi koşulda gerçekleştiğini kaydetmelerine yardımcı olacaktı.\n\nRüzgâr yatışınca balonun kumaşı yeniden dikleşti. Görevli, ipleri tutan ekibe işaret verdi. Brülör kısa bir süre çalıştı; bağlı balon yerden biraz yükseldi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", defterindeki aşağı ve yukarı okları hatırlayıp yükselişi izledi. Sepetin altındaki gölge küçük bir alanda kayıyor, renkli kumaşın parlaklığı güneşle birlikte değişiyordu.\n\nGörevli, balonun birkaç dakika sonra yeniden yere indirileceğini duyurdu. Çocuklar, iplerin nasıl gevşetilip yeniden gerildiğini uzaktan gördü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sarı ve mavi kumaşların gölgede neredeyse aynı koyulukta durduğunu söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterinde farklı tarihlerde çekilmiş iki balon fotoğrafını açtı; birinde kırmızı renk çok koyu, diğerinde soluktu. Fotoğrafların çekildiği ışık da farklıydı.\n\nGösteri bittiğinde görevli sepetin yanına geldi, balonun ağzını kapatan düzenekleri kontrol etti. Çocuklar eğitim masasına dönerek şemadaki okları defterlerinde tamamladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kırmızı modelin üzerindeki küçük kâğıdı kaldırdı, yanına mavi modelin kâğıdını yerleştirdi. İkisine de aynı sıcaklık değerini yazdı. Görevli gösteri için hazırlanan halatları toplarken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", iki modelin sonuç çizgilerini tek sayfada birleştirdi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr058_kaslarini_catti": [
+      {
+        "t": "yoldas",
+        "hal": "yalin",
+        "yedek": "bir arkadaş"
+      },
+      {
+        "t": "metin",
+        "v": " beklemenin uzadığını görünce kaşlarını çattı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Sıcak hava balonunun içindeki havayı hangi araç ısıtmaktadır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Güneş aynası"
+        },
+        {
+          "id": "B",
+          "metin": "Brülör düzeneği"
+        },
+        {
+          "id": "C",
+          "metin": "Elektrik pervanesi"
+        },
+        {
+          "id": "D",
+          "metin": "Rüzgâr çarkı"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Brülör balon içindeki havayı ısıtır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Balona etki eden yukarı yönlü kuvvet ağırlığını ne zaman aştı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kumaşın rengi koyulaşıp parlayınca"
+        },
+        {
+          "id": "B",
+          "metin": "Sepet yere bağlanınca"
+        },
+        {
+          "id": "C",
+          "metin": "Halatlar gevşetilince"
+        },
+        {
+          "id": "D",
+          "metin": "İç havanın yoğunluğu azalınca"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Isınan iç havanın yoğunluğu azalınca yukarı yönlü kuvvet ağırlığı aştı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Çocuk renk açıklamasını hangi gözlemle sınadı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İki modeli yan yana izleyerek"
+        },
+        {
+          "id": "B",
+          "metin": "Gölgenin boyunu ölçüp not alarak"
+        },
+        {
+          "id": "C",
+          "metin": "Brülörün sesini dinleyerek"
+        },
+        {
+          "id": "D",
+          "metin": "Rüzgâr bayrağını çizerek"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "İki renkli modelin benzer yükselmesi rengin tek neden olmadığını gösterir."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Yoğunluk” bu balon sahnesinde neyi belirtir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Balon kumaşının renk tonunu"
+        },
+        {
+          "id": "B",
+          "metin": "Rüzgârın estiği yönün adını"
+        },
+        {
+          "id": "C",
+          "metin": "Belirli hacimdeki madde miktarını"
+        },
+        {
+          "id": "D",
+          "metin": "Sepete bağlı ipin toplam uzunluğunu"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Yoğunluk, belirli bir hacimde ne kadar madde bulunduğunu anlatır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr058_bruloer",
+        "tur": "kelime",
+        "yazim": "brülörle",
+        "anlam": "Sıcak hava balonunun içindeki havayı ısıtan alev veren araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_ocak",
+        "tur": "kelime",
+        "yazim": "ocak",
+        "anlam": "Yakıt yakılarak ısı üreten yer.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_soba",
+        "tur": "kelime",
+        "yazim": "soba",
+        "anlam": "Odada ısınmak için kullanılan araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_kaldirma_kuvveti",
+        "tur": "kelime",
+        "yazim": "kaldırma kuvveti",
+        "anlam": "Bir sıvı ya da gaz içindeki cismi yukarı itmeye çalışan kuvvet.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_itme_kuvveti",
+        "tur": "kelime",
+        "yazim": "itme kuvveti",
+        "anlam": "Bir cismi ileri ya da geri doğru iten kuvvet.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_agirlik",
+        "tur": "kelime",
+        "yazim": "ağırlık",
+        "anlam": "Bir cismin yer çekimi nedeniyle aşağı doğru çektiği kuvvet.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_yogunluk",
+        "tur": "kelime",
+        "yazim": "yoğunluk",
+        "anlam": "Belli bir hacimdeki maddenin kütlesi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_hafiflik",
+        "tur": "kelime",
+        "yazim": "hafiflik",
+        "anlam": "Ağır olmama durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_kaslarini_catti",
+        "tur": "deyim",
+        "yazim": "kaşlarını çattı",
+        "anlam": "Hoşnutsuzluğunu yüzünü buruşturarak belli etmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_alnini_kirisitirmak",
+        "tur": "deyim",
+        "yazim": "alnını kırıştırmak",
+        "anlam": "Düşünceli ya da endişeli görünmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_gulumsemek_b",
+        "tur": "kelime",
+        "yazim": "gülümsemek",
+        "anlam": "Yüzünde hoşnutluk ifadesiyle hafifçe gülmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr058_bruloer",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr058_bruloer"
+          },
+          {
+            "girdi": "hr058_ocak"
+          },
+          {
+            "girdi": "hr058_soba"
+          }
+        ]
+      },
+      {
+        "ad": "hr058_kaldirma_kuvveti",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr058_kaldirma_kuvveti"
+          },
+          {
+            "girdi": "hr058_itme_kuvveti"
+          },
+          {
+            "girdi": "hr058_agirlik"
+          }
+        ]
+      },
+      {
+        "ad": "hr058_yogunluk",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr058_yogunluk"
+          },
+          {
+            "girdi": "hr058_hafiflik"
+          }
+        ]
+      },
+      {
+        "ad": "hr058_kaslarini_catti",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr058_kaslarini_catti"
+          },
+          {
+            "girdi": "hr058_alnini_kirisitirmak"
+          },
+          {
+            "girdi": "hr058_gulumsemek_b"
+          }
+        ]
+      }
+    ]
+  }
+}

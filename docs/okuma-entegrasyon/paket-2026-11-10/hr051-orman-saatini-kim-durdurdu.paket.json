@@ -1,0 +1,581 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr051-orman-saatini-kim-durdurdu",
+    "baslik": "Orman Saatini Kim Durdurdu?",
+    "tur": "doga",
+    "konu": "mevsim_gozlem",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "masalsi",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayvan",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D9"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "doga",
+        "hayvanlar"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D9"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "goc_hr051",
+          "tur": "lexeme",
+          "etiket": "göç",
+          "yuva": "hr051_goc",
+          "islev": "first_hint"
+        },
+        {
+          "id": "nem_hr051",
+          "tur": "lexeme",
+          "etiket": "nem",
+          "yuva": "hr051_nem",
+          "islev": "application"
+        },
+        {
+          "id": "mecaz_hr051",
+          "tur": "lexeme",
+          "etiket": "mecaz",
+          "yuva": "hr051_mecaz",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr051",
+          "tur": "idiom",
+          "etiket": "Kulaktan kulağa yayılmak",
+          "yuva": "hr051_kulaktan_kulaga",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr051",
+          "tur": "concept",
+          "etiket": "Gözlem ile çıkarım ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pass",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 695,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Orman saati sonbaharda takıldı ama çiçekler açıyor. Saati kim durdurdu?",
+    "durum": "taslak",
+    "fis_kodu": "HR-051"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Orman saatinin uzun kolu sonbahar yaprağında durmuştu. Saat, büyük meşenin gövdesine asılmış yuvarlak bir tahta levhaydı. Üzerinde sayıların yerine dört mevsimin simgeleri bulunuyordu. Kırlangıçlar güneye doğru uçuş hazırlığı yaparken dere kenarında beyaz çiçekler açmıştı. Sincap Mavi, “Biri mevsimleri birbirine karıştırdı,” diye bağırdı. Sözü duyan tavşan komşusuna, tavşan da kirpiye seslendi. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr051_kulaktan_kulaga"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", orman okulunun avlusuna "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ile birlikte vardığında herkes saatin altında toplanmıştı. Bir kirpi saatin yeniden dönmesini bekliyor, küçük bir serçe çiçeklerin gerçekten açıp açmadığını kontrol ediyordu. Baykuş Usta kulaklarını dikip herkesi dinledi. Haber çoktan en uzak kovuğa ulaşmıştı.\n\nSincap, çiçeklerin görülmesini bir işaret sayıyordu. “Saat sonbaharda kaldı diye bütün ağaçlar şaşırdı,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yere eğilip çiçeğin sapını inceledi. Sap sağlamdı; yakınında ılık suyun aktığı küçük bir kaynak vardı. Baykuş, uçan kuşların "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr051_goc"
+        },
+        {
+          "t": "metin",
+          "v": " hazırlığını işaret etti. “Aynı anda iki farklı olay görüyoruz,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", saatle kaynak arasındaki uzaklığı ölçmek için avludaki ipi aldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ormanın en yaşlı kaplumbağası, saatin altındaki taşta duran bir sepet gösterdi. Sepetin içinde önceki mevsimlerden toplanmış yaprak örnekleri vardı. Sarı bir yaprak neredeyse kâğıt gibi kurumuştu; yeşil olanı ise hâlâ esnekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunları saatin çevresindeki ağaçların yapraklarıyla karşılaştırdı. Kırlangıçlar yükselirken uçuş yönüne savrulan yapraklar da rüzgârın değiştiğini gösteriyordu.\n\nKuşlar, uçuş kararını saatin koluna değil rüzgâra ve yiyeceğe göre veriyordu. Sürünün öncüsü, bu sabah dere boyunca daha az böcek gördüklerini söyledi. Kırlangıçlar dallardaki yaprakların sararmasına da bakmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", duyduklarını küçük defterine sırayla yazdı. Saatin durmuş olması başka, kuşların uçmaya hazırlanması başka olaydı.\n\nDerenin kenarındaki çiçekler saatten uzaktaydı. Toprağa yakın bir yerde sıcak su kabarcıkları yükseliyor, suyun üstünde ince bir buğu oluşuyordu. Tavşan, “Demek bütün orman ısındı,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kaynağın hemen ilerisindeki toprağa dokundu; orası soğuktu. İki noktaya da birer tahta çubuk diktiler. Kaynağın yanındaki çiçekler açıktı, uzak çubuğun dibinde ise yalnız tomurcuk bulunuyordu.\n\nBaykuş, gözlemleri yazdığı kâğıdı saat levhasına astı. Sincap kâğıdı okurken gözlerini büyüttü. “Çiçekler yalnız sıcak suyun yanında açmış!” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sırtını meşe gövdesine yasladı; saatten hafif bir gıcırtı geliyordu. Sesi duyan kirpi, kulaklarını gövdeye yaklaştırdı. Gıcırtı her rüzgâr esişinde tekrarlanıyor, sonra birden kesiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kirpi, saatin altındaki küçük tahta kapağı gösterdi. Kapağın içinden dişlilerin bir bölümü görünüyordu. Baykuş, saat sahibinin bıraktığı anahtarı getirip kapağı açtı. "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr051_nem"
+        },
+        {
+          "t": "metin",
+          "v": " yüzünden şişen tahta parçası dişlinin arasına sıkışmıştı. Parçanın üstünde ince su damlacıkları vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", nem sözcüğünü not defterine yazarken Baykuş, yağıştan sonra ahşabın su alıp genişleyebileceğini anlattı.\n\nSincap hemen parçayı çekmek istedi. Baykuş elini durdurdu. “Dişliyi zedeleyebiliriz,” dedi. İnce bir tahta kamayı gevşetip küçük parçayı kenara aldı. Saatin kolu bir anda dönmedi; çünkü yay gerginliğini yitirmişti. Kirpi, saati kurmak için kullanılan pirinç anahtarı buldu. Usta, anahtarı çevirmeye hazırlanırken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eski tahta parçanın nereye takıldığını bir çizimle kaydetti.\n\nTam o sırada ağaçtan bir yaprak düşüp saatin önüne kondu. Sincap, “Orman uyandı!” diye seslendi. Baykuş, “orman uyandı” sözünün "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr051_mecaz"
+        },
+        {
+          "t": "metin",
+          "v": " olduğunu söyledi. Tavşan güldü; meşenin gözlerini açıp esnediğini hayal etmişti. Usta yayı yavaşça çevirdi. Saatin içinden üç düzenli tıkırtı duyuldu, fakat ibre bir yaprak kadar ilerleyip yeniden durdu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tavşan, saatin sesini duyabilmek için yerdeki kuru dalları kenara taşıdı. Birkaç sincap meşe gövdesine tırmanıp dallarda beklemeye başladı. Herkes sessizleşince mekanizmanın içindeki ince sürtünme sesi daha açık işitildi. Kirpi sesin kapağın alt bölümünden geldiğini söyledi; "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizimini bu bölgeyi de gösterecek biçimde genişletti.\n\n“Bir yerde daha sürtünüyor,” dedi Baykuş. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk çizimde işaretlediği dişliye baktı. Tahta kıymıklarından biri alttaki küçük yuvada kalmıştı. Usta kıymığı yumuşak bir fırçayla çıkardı. Bu kez saat kurulduğunda kol sonbahar yaprağından kış simgesine doğru ağır ağır yürüdü. Meşe gövdesine yaslanan çocuklar, düzgün tıkırtıyı işitince gülümsedi.\n\nSincap yine çiçeklere baktı. “Saat düzeldi ama bunlar hâlâ burada,” dedi. Kaynağın çevresindeki buğu yerinde duruyordu. Kırlangıçların öncüsü son kez su içmek için dereye indi. Sonra sürü, ağaçların üzerinden dönerek yükseldi. Saatin kolu kendi ritmiyle ilerliyor, kuşlar rüzgârdaki uygun anı kolluyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", defterindeki üç çizime göz gezdirdi: çiçeklerin yeri, nemli tahta parçası ve kuşların uçuş yönü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çizimlerden kaynağın yerini parmağıyla gösterdi. Sincap ilk sayfanın köşesine kocaman bir saat resmi yaptı. Kirpi de resmin yanına küçük bir kaynak çizdi; suyunu gerçek derenin kıvrımlarına benzetmek için kâğıdı birkaç kez çevirdi.\n\nBaykuş kapağı kapatıp saatin altına bir parça kuru örtü yerleştirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kirpiye anahtarı uzattı. Kirpi anahtarı Baykuş'un eline bıraktı; ardından yere düşen sarı yaprağı kaldırıp saatin yanındaki tahtaya iliştirdi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr051_kulaktan_kulaga": [
+      {
+        "t": "metin",
+        "v": "Mevsimlerin karıştığı haberi kulaktan kulağa yayıldı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Orman saatinin kolu hangi mevsimde durmuştur?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İlkbaharda"
+        },
+        {
+          "id": "B",
+          "metin": "Sonbaharda"
+        },
+        {
+          "id": "C",
+          "metin": "Yaz başında"
+        },
+        {
+          "id": "D",
+          "metin": "Kış sonunda"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Saatin kolu sonbahar yaprağındadır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Kuşların uçuşa hazırlanma kararı neye dayanıyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Saatin koluna ve çan sesine"
+        },
+        {
+          "id": "B",
+          "metin": "Kirpinin ve tavşanın uyarısına"
+        },
+        {
+          "id": "C",
+          "metin": "Dere kenarında açan çiçeklere"
+        },
+        {
+          "id": "D",
+          "metin": "Rüzgâra ve yiyecek miktarına"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Kuşlar kararlarını saate değil, rüzgâra ve yiyeceğe göre verdi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "İnceleme sonunda hangi durum saatin kolunu sıkıştırmıştır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Nemlenen tahta parçası"
+        },
+        {
+          "id": "B",
+          "metin": "Kırılan cam bardak"
+        },
+        {
+          "id": "C",
+          "metin": "Yuvarlanan küçük çakıl taşı"
+        },
+        {
+          "id": "D",
+          "metin": "Kopan çiçek yaprağı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Nemle şişen tahta dişliyi sıkıştırmıştır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Mecaz” sözcüğü bu olayda hangi kullanımı anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kesin sayılarla yapılan bir ölçüm"
+        },
+        {
+          "id": "B",
+          "metin": "Kapıya asılan gizli işaret"
+        },
+        {
+          "id": "C",
+          "metin": "Gerçek anlamının dışında kullanım"
+        },
+        {
+          "id": "D",
+          "metin": "Resmî yazıyla yapılan sözleşme"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "“Orman uyandı” sözü gerçek anlamının dışında, benzetmeli kullanılmıştır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr051_goc",
+        "tur": "kelime",
+        "yazim": "göç",
+        "anlam": "Canlıların uygun koşullar için yer değiştirmesi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_gocmen",
+        "tur": "kelime",
+        "yazim": "göçmen",
+        "anlam": "Göç eden, bir yerden başka bir yere giden canlı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_yerlesme",
+        "tur": "kelime",
+        "yazim": "yerleşme",
+        "anlam": "Bir yerde kalıcı olarak oturma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_nem",
+        "tur": "kelime",
+        "yazim": "nemini",
+        "anlam": "Havada ya da toprakta bulunan su miktarı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_rutubet",
+        "tur": "kelime",
+        "yazim": "rutubet",
+        "anlam": "Bir yerdeki nem ve ıslaklık.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_kuraklik",
+        "tur": "kelime",
+        "yazim": "kuraklık",
+        "anlam": "Uzun süre yağmurun az yağdığı durum.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_mecaz",
+        "tur": "kelime",
+        "yazim": "mecaz",
+        "anlam": "Bir sözcüğü gerçek anlamından farklı, ama ilişkili bir anlamda kullanma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_benzetme",
+        "tur": "kelime",
+        "yazim": "benzetme",
+        "anlam": "İki şeyi bir özellik bakımından karşılaştırma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_gercek_anlam",
+        "tur": "kelime",
+        "yazim": "gerçek anlam",
+        "anlam": "Sözcüğün ilk ve olağan anlamı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_kulaktan_kulaga",
+        "tur": "deyim",
+        "yazim": "kulaktan kulağa haber yaydı",
+        "anlam": "Bir haberi ağızdan ağıza yaymak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_agizdan_agiza",
+        "tur": "deyim",
+        "yazim": "ağızdan ağıza",
+        "anlam": "Bir sözün birçok kişiye yayılması.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_gizli_kalmak",
+        "tur": "kelime",
+        "yazim": "gizli kalmak",
+        "anlam": "Kimsenin bilmediği, saklı kalan.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr051_goc",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr051_goc"
+          },
+          {
+            "girdi": "hr051_gocmen"
+          },
+          {
+            "girdi": "hr051_yerlesme"
+          }
+        ]
+      },
+      {
+        "ad": "hr051_nem",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr051_nem"
+          },
+          {
+            "girdi": "hr051_rutubet"
+          },
+          {
+            "girdi": "hr051_kuraklik"
+          }
+        ]
+      },
+      {
+        "ad": "hr051_mecaz",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr051_mecaz"
+          },
+          {
+            "girdi": "hr051_benzetme"
+          },
+          {
+            "girdi": "hr051_gercek_anlam"
+          }
+        ]
+      },
+      {
+        "ad": "hr051_kulaktan_kulaga",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr051_kulaktan_kulaga"
+          },
+          {
+            "girdi": "hr051_agizdan_agiza"
+          },
+          {
+            "girdi": "hr051_gizli_kalmak"
+          }
+        ]
+      }
+    ]
+  }
+}

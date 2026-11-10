@@ -13,7 +13,7 @@ deger_anahtarlari: [D6, D4]
 yetiskin_uygun: false
 tanitim: "Kasabanın çeşmesi susmuş. Yeraltında bir masal bahçesi, dört avlu ve üç damla. Bilgelik nedir?"
 durum: taslak
-uretim_kaynak: chatgpt_taslak
+uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
 etiketler:
   ana_sinif: 6
@@ -43,7 +43,7 @@ deyim_cumleleri:
   hr052_araya_girmek: "Leyla iki sesin arasına girip çatlağı gösterdi."
 ---
 @omurga
-Çeşmenin taş ağzından günlerdir su akmıyordu. Kasabanın eski sokağında, kemerin altında yalnızca ıslak bir leke kalmıştı. Leyla, büyükannesinin evine gelir gelmez boş testileri gördü. Büyükannesi, çeşmenin arkasındaki taş yolda küçük bir kapak bulunduğunu, kapağın yıllardır açılmadığını söyledi. Kemerin üzerinde silik harflerle yazılmış bir {kelime:hr052_kitabe} vardı. Çeşmenin kemerindeki kitabe, eski bir yazıyla oyulmuş kısa metindi.
+Çeşmenin taş ağzından günlerdir su akmıyordu. Kasabanın eski sokağında, kemerin altında yalnızca ıslak bir leke kalmıştı. Leyla, büyükannesinin evine {yoldas:yalin|bir arkadaş} ile birlikte gelir gelmez boş testileri gördü. Büyükannesi, çeşmenin arkasındaki taş yolda küçük bir kapak bulunduğunu, kapağın yıllardır açılmadığını söyledi. Kemerin üzerinde silik harflerle yazılmış bir {kelime:hr052_kitabe} vardı. Çeşmenin kemerindeki kitabe, eski bir yazıyla oyulmuş kısa metindi.
 
 Leyla, yazının son satırını parmağıyla izledi. “Dört avlu, üç damla, tek ağız,” diye okudu. Taşın kenarına oyulmuş yılan biçimli küçük bir işaret görünüyordu. Büyükannesi, yeraltındaki bahçeyi koruyan Şahmeran'ın masalını anlattı. Leyla, bunların eski bir hikâye olduğunu biliyordu; yine de çatlamış kapağın altından gelen su sesini merak ediyordu.
 
@@ -76,4 +76,4 @@ Dördüncü avlunun kapısında üç boş damla yuvası bulunuyordu. Leyla birin
 
 Galerinin duvarında, köy halkının yıllar önce açtığı su yolunu gösteren kabartmalar vardı. Taşlar arasında uzun bir kanal kazılmış, sonra üzeri kemerlerle örtülmüştü. Leyla, suyun bu kanalda ilerlediğini izlerken masalsı siluetin gölgesi yavaşça kayboldu. Geride yalnız duvara işlenmiş yılan deseni kaldı. Merdivenin yukarısından büyükannesinin sesi geldi: “Leyla, çeşmeden bir ses duyuyorum!”
 
-Leyla kapıya doğru koştu ama son basamakta durup arkasına baktı. Üç damla yuvasının önünde, taş halkalar yeniden eski yerine dönmüştü. Yukarı çıktığında büyükanne testiyle çeşmenin başında bekliyordu. İnce bir su akışı taş oluğa düşüyor, sokak boyunca taze bir ses yayılıyordu. Leyla testiyi büyükannesine uzattı, ardından avucundaki çamurlu kök parçasını çeşmenin yanındaki boş sepete bıraktı.
+Leyla kapıya doğru koştu ama son basamakta durup arkasına baktı. Üç damla yuvasının önünde, taş halkalar yeniden eski yerine dönmüştü. Yukarı çıktığında büyükanne testiyle çeşmenin başında bekliyordu. İnce bir su akışı taş oluğa düşüyor, sokak boyunca taze bir ses yayılıyordu. {yoldas:yalin|bir arkadaş} da çeşmenin başına koşup elini suya tuttu. Leyla testiyi büyükannesine uzattı, ardından avucundaki çamurlu kök parçasını çeşmenin yanındaki boş sepete bıraktı.

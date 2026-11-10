@@ -1,0 +1,607 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr050-yildiz-terzisinin-haritasi",
+    "baslik": "Yıldız Terzisinin Haritası",
+    "tur": "bilim",
+    "konu": "gokyuzu_gozlem",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "masalsi",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D3"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D3"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "teleskop_hr050",
+          "tur": "lexeme",
+          "etiket": "teleskop",
+          "yuva": "hr050_teleskop",
+          "islev": "first_hint"
+        },
+        {
+          "id": "pusula_hr050",
+          "tur": "lexeme",
+          "etiket": "pusula",
+          "yuva": "hr050_pusula",
+          "islev": "application"
+        },
+        {
+          "id": "takimyildizi_hr050",
+          "tur": "lexeme",
+          "etiket": "takımyıldızı",
+          "yuva": "hr050_takimyildizi",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr050",
+          "tur": "idiom",
+          "etiket": "Kafası karışmak",
+          "yuva": "hr050_kafasi_karismak",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr050",
+          "tur": "concept",
+          "etiket": "Gözlem ile yorum ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 677,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 7,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Gökyüzünden bir düğme düşer. Yıldız Terzisi haritasını yeniden çizebilecek mi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-050"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gece yarısı gökten gümüş bir düğme düştü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bahçedeki taş masanın üstüne çarpan küçücük sesi duyunca pencereyi açtı. Düğme, soğuk bir ay ışığı gibi parlıyordu. Arkasında dört delik, önünde de ince bir yıldız deseni vardı. Üst kattaki odada yaşayan "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da ışığı görüp bahçeye indi. Tam düğmeyi kaldıracakları sırada bir rulo kâğıt masanın üstüne süzüldü.\n\nKâğıt, göğün haritasına benziyordu. Bazı noktaların çevresinde gümüş iplikten kıvrımlar vardı; bir noktaysa boş kalmıştı. Kâğıdın altından minik, şapkalı bir adam çıktı. Kendini Yıldız Terzisi diye tanıttı. “Haritamın düğmesi kopunca desen eksildi,” dedi. “Yanlış yere dikersem bütün harita kayar.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", terzinin elindeki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr050_teleskop"
+        },
+        {
+          "t": "metin",
+          "v": " teleskop çantasını gördü.\n\nTerzi, kâğıdı taş masaya serdi. “Düğmenin düştüğü yeri biliyorum, fakat ait olduğu noktayı bilmiyorum.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", en parlak yıldızı gösterdi. “Buraya diksek olur.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ışığa baktı; en parlak nokta ötekilerden çok uzaktaydı. “Önce yönümüzü bulalım,” dedi. Terzi ceketinin cebinden küçük bir pusula çıkarıp masanın kenarına koydu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yıldız Terzisi, masanın köşesine üç ince renkli iplik koydu. Her iplik ayrı bir yıldızın kâğıttaki yerini işaretlemek içindi. Kırmızı iplik, doğu tarafındaki noktaya; mavi iplik, göğün tepesindeki noktaya uzandı. Fakat üçüncü ipliği bağlayacağı yer belirsiz kaldı. Terzi ipliğin ucunu parmağına doladı, gözlerini kısarak başını yukarı kaldırdı.\n\nMasadaki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr050_pusula"
+        },
+        {
+          "t": "metin",
+          "v": " kuzeyi gösterince haritayı o yöne çevirdiler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", gökyüzünün geniş bir bölümünü kâğıtla karşılaştırdı. Üç parlak yıldız neredeyse düz bir sıra oluşturuyor, dördüncü yıldız onların üstünde duruyordu. Kâğıtta aynı dört nokta işaretlenmişti, fakat aralarındaki gümüş dikişler birbirinden kopmuştu. Terzi, kayıp düğmeyi önce dördüncü noktanın yanına tuttu ama düğme ışıldamadı.\n\n“Belki düğmenin parlaması başka şeye bağlıdır,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". Yıldız Terzisi küçük teleskobunu kurdu. Çocuklar sırayla baktı. Gökyüzündeki şeklin yanında çok sönük bir yıldız daha vardı; çıplak gözle seçilmiyordu. Terzi, çizimdeki boşluğu bulmak için teleskopla yıldızların konumunu karşılaştırdı. Haritanın kenarına yeni bir nokta işaretledi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıttaki çizgileri parmağıyla izledi. “Bu ipler gerçekten yıldızların arasında mı?” Terzi, çizgilerin yalnızca hayalî olduğunu söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", haritadaki çizgilerin yıldızları birleştiren hayalî yollar olduğunu defterine yazdı. Çocuk, şeklin yanına "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr050_takimyildizi"
+        },
+        {
+          "t": "metin",
+          "v": " sözcüğünü de ekledi. Terzi, boş noktayı gümüş iğnesiyle çevreledi ama henüz dikişe başlamadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birden rüzgâr çıktı. Haritanın bir kenarı havalandı; gümüş düğme masadan yuvarlanıp çiçeklerin arasına düştü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " diz çöküp aradı. Çimlerin üzerinde çok sayıda çiğ tanesi vardı; her biri bir düğme gibi parlıyordu. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr050_kafasi_karismak"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sayısız parlak nokta arasında hangisinin düğme olduğunu bir türlü seçemiyordu. Terzi, kâğıdı düzleştirip büyütecini uzattı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çiğ tanelerine dokunmadan bakınca, birinin altında dört küçük delik seçti. Düğmeyi nazikçe kaldırıp masaya getirdi. Terzi bu kez dikişten önce haritanın kenarındaki ay işaretini gökyüzündeki Ay'ın konumuyla karşılaştırdı. İşaret, harita döndürülünce yerinden sapmıştı. Pusulaya yeniden baktılar, sonra kâğıdı doğru yöne çevirdiler.\n\nDüğmenin konması gereken boşluk artık üç yıldızın hemen altındaydı. Yalnız kâğıtta bu noktanın çevresindeki çizgi kesik kesikti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", defterine bir gözlem daha ekledi: “Dört delikli düğme yalnızca bu kesik çizgiye sığıyor.” Terzi iğneyi kaldırdı, gümüş ipliğin ucunu düğmenin deliğinden geçirdi. Tam ilk dikişi atarken uzaktan gelen saat çanı gecenin sessizliğini yardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rüzgâr dinip bahçeye sessizlik çökünce taş masanın üzerindeki iplikler birbirine karışmadı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ay ışığında yansıyan çizgilerin duvara düştüğünü gördü. Parmaklarıyla gölgeyi takip etti; kâğıttaki desenle duvardaki desen aynı açıda değildi. Terzi masanın ayaklarından birini küçük bir taşla yükselterek kâğıdı düzleştirdi.\n\nSaat çanı sustuğunda düğmenin etrafındaki çizgiler hafifçe titreşti. Terzi ipliği çekip düğmeyi sabitledi; haritadaki kesik yollar ince bir ışıkla birleşti. Ancak kâğıdın sağ alt köşesi hâlâ karanlıktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", terzinin yüzüne baktı. “Demek işimiz bitmedi.” Terzi ışığı elinin tersiyle örttü. Karanlık köşede daha önce göremedikleri çok küçük noktalar belirdi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", teleskopla gökyüzünün aynı bölümüne yeniden baktı. Sönük noktalar orada da vardı. Terzi, haritaya bütün yıldızların tek tek işlenmesinin yıllar süreceğini söyledi. “Ben yalnızca bu gecenin desenini tamamlamak istemiştim.” Çocuk, defterindeki iki çizimi yan yana koydu: biri ilk gördüğü şekil, öteki yeni işaretlenen yıldızlar. Terzi çizimlerin tarihine bakıp eski haritaya minicik bir tarih daha attı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " düğmenin düşerken çıkardığı sesi taklit edince üçü birden güldü. Harita kâğıdının üstündeki ışık, terzinin küçücük makarasına geri dolmaya başladı. Terzi şapkasını düzeltip kâğıdı rulo yaptı. Kapanırken haritanın son çizgisi bir an bahçe duvarına yansıdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", duvarda beliren yeni noktayı defterine çizip yanına o gecenin saatini yazdı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr050_kafasi_karismak": [
+      {
+        "t": "metin",
+        "v": "Parlayan çiğ taneleri arasında "
+      },
+      {
+        "t": "yoldas",
+        "hal": "ilgi",
+        "yedek": "bir arkadaşın"
+      },
+      {
+        "t": "metin",
+        "v": " kafası karışmıştı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Yıldız Terzisi’nin haritasından ne kopmuştur?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Mavi bir ip"
+        },
+        {
+          "id": "B",
+          "metin": "Gümüş bir düğme"
+        },
+        {
+          "id": "C",
+          "metin": "Kırmızı bir taş"
+        },
+        {
+          "id": "D",
+          "metin": "Yeşil bir yaprak"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Gökyüzünden düşen nesne gümüş düğmedir."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Haritadaki çizgiler gökyüzünde gerçekte neyi gösteriyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Gökyüzüne gerilmiş gerçek gümüş iplikleri"
+        },
+        {
+          "id": "B",
+          "metin": "Rüzgârın bahçede estiği farklı yönleri"
+        },
+        {
+          "id": "C",
+          "metin": "Düğmenin gökten düştüğü uzun patikayı"
+        },
+        {
+          "id": "D",
+          "metin": "Yıldızları birleştiren hayalî yolları"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Yıldızlar arasındaki çizgiler gerçek ip değil, hayalî yollardır."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 2,
+      "metin": "Yıldız Terzisi kayıp noktayı saptamak için neye başvurmuştur?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Gökyüzü gözlemine"
+        },
+        {
+          "id": "B",
+          "metin": "Renkli kumaşlara"
+        },
+        {
+          "id": "C",
+          "metin": "Eski masal kitabına"
+        },
+        {
+          "id": "D",
+          "metin": "Saatin çan sesine"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Yer tespitinde gökyüzü gözlemi kullanılır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Pusula” bu sahnede hangi işe yaramaktadır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Parlaklık ölçmeye"
+        },
+        {
+          "id": "B",
+          "metin": "Sesleri kaydetmeye"
+        },
+        {
+          "id": "C",
+          "metin": "Yönü belirlemeye"
+        },
+        {
+          "id": "D",
+          "metin": "Düğme dikmeye"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Pusula yön belirlemek için kullanılır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr050_teleskop",
+        "tur": "kelime",
+        "yazim": "teleskobu",
+        "anlam": "Uzaktaki gök cisimlerini büyüterek gösteren optik araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr050_durbun",
+        "tur": "kelime",
+        "yazim": "dürbün",
+        "anlam": "Uzaktaki nesneleri yakından göstermeye yarayan araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr050_mikroskop",
+        "tur": "kelime",
+        "yazim": "mikroskop",
+        "anlam": "Çok küçük cisimleri büyüterek gösteren araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr050_pusula",
+        "tur": "kelime",
+        "yazim": "pusula",
+        "anlam": "Mıknatıslı iğnesiyle yönleri gösteren araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr050_harita_c",
+        "tur": "kelime",
+        "yazim": "harita",
+        "anlam": "Yeryüzünün küçültülmüş çizimi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr050_takimyildizi",
+        "tur": "kelime",
+        "yazim": "takımyıldızı",
+        "anlam": "Gökyüzündeki yıldızların birleştirilerek oluşturulan hayalî desen.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr050_yildiz_kumesi",
+        "tur": "kelime",
+        "yazim": "yıldız kümesi",
+        "anlam": "Birbirine yakın görünen yıldızların topluluğu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr050_gezegen",
+        "tur": "kelime",
+        "yazim": "gezegen",
+        "anlam": "Bir yıldızın çevresinde dönen büyük gök cismi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr050_kafasi_karismak",
+        "tur": "deyim",
+        "yazim": "kafasını karıştırabilirdi",
+        "anlam": "Ne yapacağını bilememek, düşüncesi dağılmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr050_akli_basina",
+        "tur": "deyim",
+        "yazim": "aklı başına gelmek",
+        "anlam": "Yanlış bir davranıştan sonra akıllanmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr050_kafasi_dagilmak",
+        "tur": "deyim",
+        "yazim": "kafası dağılmak",
+        "anlam": "Dikkatini toplayamamak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr050_teleskop",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr050_teleskop"
+          },
+          {
+            "girdi": "hr050_durbun"
+          },
+          {
+            "girdi": "hr050_mikroskop"
+          }
+        ]
+      },
+      {
+        "ad": "hr050_pusula",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr050_pusula"
+          },
+          {
+            "girdi": "hr050_harita_c"
+          }
+        ]
+      },
+      {
+        "ad": "hr050_takimyildizi",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr050_takimyildizi"
+          },
+          {
+            "girdi": "hr050_yildiz_kumesi"
+          },
+          {
+            "girdi": "hr050_gezegen"
+          }
+        ]
+      },
+      {
+        "ad": "hr050_kafasi_karismak",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr050_kafasi_karismak"
+          },
+          {
+            "girdi": "hr050_akli_basina"
+          },
+          {
+            "girdi": "hr050_kafasi_dagilmak"
+          }
+        ]
+      }
+    ]
+  }
+}

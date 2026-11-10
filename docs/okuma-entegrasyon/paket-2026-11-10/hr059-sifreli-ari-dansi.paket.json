@@ -1,0 +1,555 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr059-sifreli-ari-dansi",
+    "baslik": "Şifreli Arı Dansı",
+    "tur": "bilim",
+    "konu": "ari_iletisim",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayvan"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D9"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "doga",
+        "hayvanlar"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D9"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "tozlasma_hr059",
+          "tur": "lexeme",
+          "etiket": "tozlaşma",
+          "yuva": "hr059_tozlasma",
+          "islev": "first_hint"
+        },
+        {
+          "id": "nektar_hr059",
+          "tur": "lexeme",
+          "etiket": "nektar",
+          "yuva": "hr059_nektar",
+          "islev": "application"
+        },
+        {
+          "id": "polen_hr059",
+          "tur": "lexeme",
+          "etiket": "polen",
+          "yuva": "hr059_polen",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr059",
+          "tur": "concept",
+          "etiket": "Birden çok etkenle açıklama",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pass",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 722,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 6,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Bahçedeki ayçiçekleri neden az büyüdü? Arılar çiçeği nasıl buluyor?",
+    "durum": "taslak",
+    "fis_kodu": "HR-059"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bu yıl bahçedeki ayçiçeklerinin yarısı eskisi kadar büyümemişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", dedesinin bahçesinde yan yana duran iki sıraya baktı. Bir sıradaki başlar iri, ötekindekiler küçük ve seyrek tohumluydu. Dedesi her iki sırayı da aynı gün ekmişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Belki arılar hiç gelmedi,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen karar vermek istemedi; defterine bitkilerin boyunu yazdı.\n\nBahçenin kenarındaki kovandan birkaç arı çıkıyordu. Dedesi arıların davranışlarını uzaktan izlemeleri için çocuklara güvenli bir yer gösterdi. Çiçeklerin arasında dolaşan arılar, sarı başların içinden "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr059_nektar"
+        },
+        {
+          "t": "metin",
+          "v": " topluyordu. Arı, çiçeğin içindeki nektar denen şekerli sıvıyı topluyordu. Bir başka arının bacaklarında sarı tozlar görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bu tozların "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr059_polen"
+        },
+        {
+          "t": "metin",
+          "v": " olduğunu not etti.\n\nDedesi, arıların bir çiçekten diğerine polen taşımasının "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr059_tozlasma"
+        },
+        {
+          "t": "metin",
+          "v": " sürecine katkı verebildiğini söyledi. Fakat bütün bitkilerin gelişmesini tek başına buna bağlamadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki sıranın arasındaki toprağı eline aldı. Bir taraf daha kuru, diğer taraf daha nemliydi. Dedenin eski sulama kabı, bahçenin güneşli tarafında duruyordu. Çocuklar ölçümler için ayrı bir sayfa açtı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve arkadaşı, bitki sıralarını küçük karelere ayırıp gözlem yaptı. İlk karenin toprağı gevşekti; ikinci karede toprak sertleşmişti. Üçüncü kareye komşu ağacın gölgesi düşüyordu. Aynı bahçede su, ışık ve böcek ziyaretleri de farklılık gösteriyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", arıların geçtiği çiçeklerin yanına küçük noktalar koydu.\n\nDedesi kovanın camlı gözlem bölümünü gösterdi. İçerideki arıların bir kısmı hareket ederek diğerlerinin yanına geliyor, sonra yeniden uzaklaşıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir arının gövdesini sallayarak yaptığı hareketi defterine çizdi. Hareketin açısını ve ne kadar sürdüğünü tam ölçememişti. Dedesi, arıların bu hareketlerle yiyeceğin yeri hakkında bilgi iletebildiğini anlattı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", dansın yönüyle bahçedeki çiçeklerin yerini karşılaştırmak istedi. Güneşin bulunduğu yönü kâğıtta işaretlediler. Kovanın dışına çıkıp çiçek sıralarına doğru uçan arıları uzaktan izlediler. Bazıları iri ayçiçeklerine yöneliyor, bazıları bahçenin dışındaki küçük mor çiçekleri seçiyordu. Çocuklar her uçuşun aynı sonuca varmadığını görünce kayıtlarına ayrı işaretler koydu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Arının sallanarak yaptığı dans, besin kaynağının yönüyle ilgili ipucu taşıyordu. Kovanın camında arı sallanarak kısa bir çizgi çiziyor, sonra başa dönüp aynı çizgiyi yeniden yürüyordu. Dedesi, çizginin yönünün çiçeğin güneşe göre yerini gösterdiğini söyledi. Sallanma ne kadar uzun sürerse çiçek o kadar uzaktaydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez arıyı saniye sayarak izledi: Kısa sallanma yakındaki ayçiçeklerini, uzun sallanma bahçenin dışındaki mor çiçekleri gösteriyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu bilgiyi, kendi gözlemlediği arıları tek tek saymakla karıştırmadı; gördüklerini ve okuduklarını ayrı satırlara yazdı. Kovanın önündeki gölgede kalıp arıların uçuşunu bir süre daha izlediler.\n\nÇocuklar, güneşin konumunu göstermek için bahçe çitinin üstündeki gölgeyi çizdi. Sabah gölgenin altında kalan yapraklar öğleye doğru ışık alıyordu. Komşu ağacın dallarıysa küçük ayçiçeklerinin üzerine uzun süre gölge düşürüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dalları koparmadan önce bu gözlemi yalnızca çizimle kaydetti. Dedesi, eski bir fotoğraf çıkardı; fotoğraftaki ağaç dallarının bugünkünden daha kısa olduğu görülüyordu.\n\nBahçenin küçük kalan ayçiçekleri için başka bir kayıt daha vardı. Dedesi geçen hafta sulama hortumunun bir ucunun tıkandığını gösterdi. Hortumun ucundaki delikler kuru sıraya bakıyordu, fakat su oraya ulaşmamıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kuruyan toprağın yanına bir çizgi çekti. Daha az suyun, gelişmeyi etkileyebileceğini yazdı. Arkadaşı, gölge yapan ağacın dalını da ölçüm çizimine ekledi.\n\nÇocuklar çiçeklerin üstüne konan böcekleri sayarken bir arı uzun süre aynı yerde durdu. Bacaklarındaki sarı yük belirginleşmişti. Ardından başka bir çiçeğe geçti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bu kısa hareketi görmeden önce bir tohumun oluşmasında nelerin etkili olabileceğini yalnızca tahmin ediyordu. Şimdi defterinde sulama, ışık ve böcek ziyaretleri için üç ayrı sütun bulunuyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kovanın çevresinde çiçek kokusu artmıştı. Dedesi, bazı arıların bahçeden daha uzak alanlara uçtuğunu gösterdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bütün arıları tek tek takip edemeyeceğini söyleyince "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " izledikleri alanı küçük bir kareyle sınırladı. Bu karenin içinde belirli bir süre boyunca yapılan ziyaretleri saydılar. Ardından sayıları kâğıda geçirip ölçmedikleri yerler için boşluk bıraktılar.\n\nÖğleden sonra bahçenin kenarındaki su kabının gölgesi uzadı. Dedesi tıkalı hortumu temizleyip suyu kuru sıraya yönlendirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", iki sıraya verilen su miktarının kayıtlarını tuttu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " gün boyunca ziyaret edilen çiçekleri işaretlediği haritayı getirdi. Haritada bazı çiçeklerin çevresinde çok, bazılarında az nokta vardı.\n\nDedesi küçük tohumları ayırmak için boş bir tabağı masaya koydu. Çocuklar iri ve küçük başlardan alınmış tohum örneklerini ayrı kaplara yerleştirdi. Aynı ağırlıkta olup olmadıklarını görmek için teraziyi kullandılar. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ayçiçeklerinin hepsinin yalnızca arı ziyaretlerine bağlı olmadığını düşünüyordu; ama arıların taşıdığı polenin de göz ardı edilmesini istemiyordu.\n\nBahçenin üstünden geçen birkaç arı, komşu taraftaki çiçeklere doğru uçtu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", kuşların uçuşuyla arıların uçuşunun ne kadar farklı göründüğünü söyledi. Çocuklar kovanın önünden uzaklaşıp toprağın yanına döndü. Dedesi, yeni sulama düzeninin sonuçlarını birkaç gün sonra karşılaştırmayı önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", defterindeki ilk güne ait tarihi yuvarlak içine aldı, ayçiçeği çiziminin altına yeni ölçüm için boş bir satır açtı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Bahçedeki hangi bitkiler beklenenden küçük kalmıştır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Gül çalıları"
+        },
+        {
+          "id": "B",
+          "metin": "Fesleğenler"
+        },
+        {
+          "id": "C",
+          "metin": "Ayçiçekleri"
+        },
+        {
+          "id": "D",
+          "metin": "Nane yaprakları"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Küçük kalan bitkiler ayçiçekleridir."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Ayçiçeklerinin küçük kalmasında ne etkili olmuş olabilir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yalnızca arıların hiç gelmemesi"
+        },
+        {
+          "id": "B",
+          "metin": "Su, ışık ve arı ziyaretlerinin farkı"
+        },
+        {
+          "id": "C",
+          "metin": "Tohumların başka yerden alınması"
+        },
+        {
+          "id": "D",
+          "metin": "Toprağın bütün sıralarda aynı olması"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Su, ışık ve böcek ziyaretleri sıralar arasında farklıydı; tek bir sebep yoktu."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Bir arının sallanması çok uzun sürerse çiçek hakkında ne söylenebilir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çiçek kovanın hemen yanındadır"
+        },
+        {
+          "id": "B",
+          "metin": "Çiçek yalnızca sabah açmıştır"
+        },
+        {
+          "id": "C",
+          "metin": "Çiçekte hiç nektar kalmamıştır"
+        },
+        {
+          "id": "D",
+          "metin": "Çiçek kovandan uzaktadır"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Sallanma ne kadar uzun sürerse çiçek o kadar uzaktadır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "“Nektar” sözcüğü çiçekte neyi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Şekerli çiçek sıvısı"
+        },
+        {
+          "id": "B",
+          "metin": "Kuru taç yaprağı"
+        },
+        {
+          "id": "C",
+          "metin": "Sert odun kabuğu"
+        },
+        {
+          "id": "D",
+          "metin": "İnce bir toprak tanesi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Nektar çiçeğin şekerli sıvısıdır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr059_tozlasma",
+        "tur": "kelime",
+        "yazim": "tozlaşmasına",
+        "anlam": "Polenin bir çiçekten başka bir çiçeğe taşınması.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr059_ureme",
+        "tur": "kelime",
+        "yazim": "üreme",
+        "anlam": "Canlıların yeni bireyler oluşturması.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr059_nektar",
+        "tur": "kelime",
+        "yazim": "nektar",
+        "anlam": "Çiçeklerin özünden salgılanan tatlı sıvı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr059_bal",
+        "tur": "kelime",
+        "yazim": "bal",
+        "anlam": "Arıların nektardan ürettiği tatlı besin.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr059_tohum",
+        "tur": "kelime",
+        "yazim": "tohum",
+        "anlam": "Yeni bitki oluşturabilen bitki parçası.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr059_polen",
+        "tur": "kelime",
+        "yazim": "polen",
+        "anlam": "Çiçeklerin erkek kısmında bulunan, tozlaşmayı sağlayan toz.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr059_kovan",
+        "tur": "kelime",
+        "yazim": "kovan",
+        "anlam": "Arıların yaşadığı ve petekleri bulunan yuva.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr059_petek",
+        "tur": "kelime",
+        "yazim": "petek",
+        "anlam": "Arıların altıgen gözlerden oluşan yapısı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr059_tozlasma",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr059_tozlasma"
+          },
+          {
+            "girdi": "hr059_ureme"
+          }
+        ]
+      },
+      {
+        "ad": "hr059_nektar",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr059_nektar"
+          },
+          {
+            "girdi": "hr059_bal"
+          },
+          {
+            "girdi": "hr059_tohum"
+          }
+        ]
+      },
+      {
+        "ad": "hr059_polen",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr059_polen"
+          },
+          {
+            "girdi": "hr059_kovan"
+          },
+          {
+            "girdi": "hr059_petek"
+          }
+        ]
+      }
+    ]
+  }
+}

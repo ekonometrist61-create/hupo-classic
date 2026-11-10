@@ -13,7 +13,7 @@ deger_anahtarlari: [D6, D15]
 yetiskin_uygun: false
 tanitim: "Eşikte yedi anahtar var. Her kapının ardında bir değer, bir seçim."
 durum: taslak
-uretim_kaynak: chatgpt_taslak
+uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
 etiketler:
   ana_sinif: 5
@@ -45,7 +45,7 @@ deyim_cumleleri:
 @omurga
 Keloğlan sabah kapının eşiğinde yedi küçük anahtar buldu. Biri tahtadandı, biri cam gibi saydamdı, sonuncusu da incecik bir yaprağa benziyordu. Kapının altına sıkıştırılmış kâğıtta, “Yedi Söz Kapısı'nı geçen dileğini kendi eliyle kurar,” yazıyordu. Keloğlan, {kelime:hr049_esik} eşik taşının dibindeki yedi çizgiyi saydı. Çizgiler, köyün dışındaki terk edilmiş değirmene uzanan patikayı gösteriyordu.
 
-Annesi ona yola çıkarken yarım somun ekmek ve küçük bir su kabı verdi. Keloğlan, iki gözlü {kelime:hr049_heybe} içine ekmekle su kabını yerleştirdi. Değirmenin arkasında birbirini izleyen yedi kapı vardı. İlk kapının önünde, yük taşıyan bir tüccar diz çökmüş, yere saçılan eşyasını topluyordu. Keloğlan, tüccarın düşürdüğü keseyi açmadan sahibine uzattı. İlk anahtar avucunda ısındı; kapı kendiliğinden aralandı.
+Annesi ona yola çıkarken yarım somun ekmek ve küçük bir su kabı verdi. {yoldas:yalin|bir arkadaş} da kapıya kadar ona eşlik etti. Keloğlan, iki gözlü {kelime:hr049_heybe} içine ekmekle su kabını yerleştirdi. Değirmenin arkasında birbirini izleyen yedi kapı vardı. İlk kapının önünde, yük taşıyan bir tüccar diz çökmüş, yere saçılan eşyasını topluyordu. Keloğlan, tüccarın düşürdüğü keseyi açmadan sahibine uzattı. İlk anahtar avucunda ısındı; kapı kendiliğinden aralandı.
 
 Tüccar arkasından seslendi: “Kesede ne olduğunu merak etmedin mi?” Keloğlan omzunu silkti. “Senin kesen olduğu belliydi.” İkinci kapıda masanın üstüne iki kâse konmuştu. Birinde on iri hurma, ötekinde iki küçük hurma vardı. Masanın başında bekleyen iki yolcu, açlıktan karınlarını tutuyordu. Keloğlan hangi kâsenin kime ait olduğunu ararken kapı üzerindeki yazının silinmiş olduğunu gördü.
 ---
@@ -72,6 +72,6 @@ Keloğlan altı anahtarı sırayla deliğe soktu; hiçbiri dönmedi. Yedinci ana
 
 Keloğlan çuvalı açtı. İçinde yalnızca birkaç buğday tanesi kalmıştı. Köydeki fırının o sabah unu bittiğini, komşuların ekmek beklediğini düşündü. Değirmenin çarkı dışarıda dönüyor, fakat un taşının üzerinden kimse buğday geçirmiyordu. Keloğlan, sandığın içine anahtar yerine buğday tanelerini bıraktı. Keloğlan’ın cebindeki yedinci anahtarın üzerinde buğday başağı belirdi.
 
-Kapıyı açınca karşısına bir hazine odası çıkmadı. Eski değirmenin un taşları ve uzun zamandır boş duran ambarı vardı. Keloğlan çarkın bağlı olduğu kayışı yerine geçirdi. Değirmenciye ulaşmak için penceredeki çanı çaldı. Biraz sonra tüccar, yaşlı kadın ve iki kardeş patikada göründü; hepsi duydukları çanı izliyordu.
+Kapıyı açınca karşısına bir hazine odası çıkmadı. Eski değirmenin un taşları ve uzun zamandır boş duran ambarı vardı. Keloğlan çarkın bağlı olduğu kayışı yerine geçirdi. Değirmenciye ulaşmak için penceredeki çanı çaldı. Biraz sonra tüccar, yaşlı kadın ve iki kardeş patikada göründü; hepsi duydukları çanı izliyordu. {yoldas:yalin|bir arkadaş} da en önde koşuyordu.
 
 “Dileğin ne?” diye sordu tüccar. Keloğlan un çuvalının ağzını açtı. “Köyde bu akşam ekmek pişsin.” Tüccar buğdayını getirdi, kardeşler çuvalları kaldırdı. Keloğlan yedi anahtarı sandığın içine bıraktı ve değirmenin taşına ilk avuç buğdayı döktü.

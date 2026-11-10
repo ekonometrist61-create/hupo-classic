@@ -1,0 +1,683 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr061-marsa-giden-sessiz-mesaj",
+    "baslik": "Mars'a Giden Sessiz Mesaj",
+    "tur": "bilim_kurgu",
+    "konu": "uzay_iletisim_gecikme",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "gecikme_hr061",
+          "tur": "lexeme",
+          "etiket": "gecikme",
+          "yuva": "hr061_gecikme",
+          "islev": "first_hint"
+        },
+        {
+          "id": "simulasyon_hr061",
+          "tur": "lexeme",
+          "etiket": "simülasyon",
+          "yuva": "hr061_simulasyon",
+          "islev": "application"
+        },
+        {
+          "id": "protokol_hr061",
+          "tur": "lexeme",
+          "etiket": "protokol",
+          "yuva": "hr061_protokol",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr061",
+          "tur": "idiom",
+          "etiket": "Gözleri parlamak",
+          "yuva": "hr061_gozleri_parladi",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr061",
+          "tur": "concept",
+          "etiket": "Zaman damgası ve doğrulama",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 836,
+        "tahmini_sure_dk": 8,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 9,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Mars'tan gelen mesaj 'şimdi' diyor. Ama mesaj on bir dakika önce gönderilmiş. Kapı şimdi mi açılmalı?",
+    "durum": "taslak",
+    "fis_kodu": "HR-061"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ekranda “Kapıyı şimdi aç” mesajı belirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kontrol düğmesinin üstündeki kapağı kaldırmak için elini uzattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ekranın sol köşesindeki küçük saate işaret etti. Mesajın altında, gönderildiği andaki zaman yazıyordu. Mesajın gönderildiği an ile alındığı an arasında on bir dakika vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " elini düğmeden çekti; laboratuvar maketinin camı arkasında kırmızı bir ışık yanıp sönüyordu.\n\nİkisi, uzak bir gezegendeki araştırma istasyonunu canlandıran eğitim merkezinde görevliydi. Burada gerçek bir uzay aracını yönetmiyorlardı; büyük bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr061_simulasyon"
+        },
+        {
+          "t": "metin",
+          "v": " odasında, Mars'taki hava kilidi maketinin komutlarını çalışıyorlardı. Dışarıda Mars yüzeyini gösteren kırmızı bir görüntü, içeride ise kapının basınç göstergeleri vardı. Kumanda odası Dünya'yı, maket Mars'ı temsil ediyordu. Mars'tan gelen yazılı mesajlar on bir dakika gecikmeli ulaşıyordu; maketin basınç göstergeleri ise odaya doğrudan bağlıydı ve canlı çalışıyordu. Eğitim için kapı komutunun maket kapıya hemen ulaşması kabul edilmişti.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", iletişimde "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr061_gecikme"
+        },
+        {
+          "t": "metin",
+          "v": " kaydını açtı. İletişimde gecikme, mesajın gönderilmesinden sonra alıcıya ulaşana dek geçen süreydi. “Oradaki ekip ‘şimdi’ derken başka bir anı söylüyordu,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ekranda en son kaydedilen basınç değerini buldu; değer mesajdan daha yeni görünüyordu. Kapı henüz açılmamıştı ama dış bölümdeki ışık değişmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Simülasyon odasının duvarındaki büyük haritada Dünya ve Mars birbirinden ayrı noktalarda gösteriliyordu. Aralarında ince bir ışık çizgisi vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", yerdeki uzun çizginin iki ucuna yürüyüp hangi noktanın mesaj göndericiyi temsil ettiğini kontrol etti. Uzakta bekleyen küçük gezgin araç maketi, kapıyla aynı ölçekte çizilmişti. Bu düzen, odanın içinde saatler süren bir görevi birkaç ekranda görmeyi sağlıyordu.\n\nKontrol masasında üç ayrı ekran bulunuyordu. Birincisi geçmiş mesajları, ikincisi maketin içindeki basıncı, üçüncüsü de gönderilecek komutları gösteriyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", düğmeyi açmak yerine ekranların saatlerini karşılaştırdı. İkinci ekrandaki son değerin birkaç saniye önce güncellendiği görülüyordu. İlk ekrandaki komut ise on bir dakika önce yazılmıştı. İki kayıt aynı anda gerçekleşmiş olayları anlatmıyordu.\n\nMasada, önceki görevlerden kalma kalın bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr061_protokol"
+        },
+        {
+          "t": "metin",
+          "v": " dosyası duruyordu. Dosyada kapı açılmadan önce hangi göstergelerin kontrol edileceği adım adım yazılmıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", dosyayı açıp ilk maddeyi okudu: “Her komutun gönderim zamanını denetle.” İkinci maddede, iç ve dış bölüm basınçlarının uygun aralıkta olması isteniyordu. Üçüncü maddede, komutu göndermeden önce kapının son durumunun doğrulanması bulunuyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", maketin dış kamerasını büyüttü. Hava kilidinin önündeki küçük gezgin araç geri geri hareket ediyordu; tekerleklerinden biri kapının önündeki çizgiye çok yaklaşmıştı. Kapı açılırsa araçla arasında yeterince boşluk kalmayabilirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bu gözlemi kontrol çizelgesinin kenarına yazdı. Eğitmen, kararlarını aceleye getirmeden sürdürebileceklerini söyledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ekip, kapı komutundan önce güncel basınç göstergesini ve zaman damgasını karşılaştırdı. İç bölümün basıncı izin verilen aralığa yakındı ama dış bölümün göstergesinde kırmızı çizgi duruyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", eğitmenin verdiği maket krokisine baktı. Basınç eşitlenmeden kapının açılması, puan kaybıyla sonuçlanacaktı. Geçmişte gönderilmiş bir mesajı şimdiki duruma uygulamak da aynı hataya yol açabilirdi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", gezgin aracın kamera görüntüsünün hangi zamanda çekildiğini kontrol etti. Görüntü günceldi. Araç, kapının önünden güvenli bölgeye geçince ekranda yeni bir işaret belirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sonraki komutu yazmaya hazırlanıyordu, ancak basınç hâlâ eşitlenmemişti. Önce basınç ayarlama işlemine ilişkin simülasyon komutunu seçti. Maketteki küçük fanlar çalışmaya başladı.\n\nBasınç göstergelerindeki fark yavaşça azaldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " her değişimi kayıt defterine yazdı; yanında oturan arkadaşı da sistemin verdiği yanıtları kontrol etti. Fark uygun aralığa düştüğünde ekranın kırmızı ışığı sarıya döndü. Bu sırada eski mesajlar kutusuna yeni bir ileti daha geldi. Metin kısaydı: “Araç kapıdan uzaklaşıyor.” Altındaki saat yine on bir dakika önceyi gösteriyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", yeni mesajı okuyunca derin bir nefes aldı. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr061_gozleri_parladi"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " defterin kenarına küçük bir yıldız çizdi. Ancak düğme hâlâ kapalıydı. Ekrandaki “araç kapıdan uzaklaşıyor” yazısı ile canlı kamera görüntüsü arasında uyuşma olup olmadığını kontrol ettiler.\n\nMaketin canlı görüntüsünde araç gerçekten çizginin gerisinde duruyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " son basınç değerlerini yeniden okudu. İki gösterge de protokolde yazılı aralıktaydı. Öğretmen, “Artık kararınızı kayda alabilirsiniz,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", komut ekranının yanındaki küçük açıklama kutusuna “Güncel görüntü ve basınç kontrol edildi” yazdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sonra kapı açma komutunu seçti.\n\nHava kilidi maketinin iç kapısı yavaşça hareket etti. Kapı tamamen açılınca ışıklar yeşile döndü. Salondaki diğer öğrenciler camın arkasından alkışladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ekranın sağ üst köşesindeki komut saatiyle açılma saatini karşılaştırdı. İkisi arasında kısa bir işlem süresi vardı; bu, on bir dakikalık uzak iletişim bekleyişiyle aynı değildi. Ekranda iki sürenin ayrı ayrı kaydedildiği küçük bir tablo oluştu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Görev bittiğinde eğitmen, çocuklara iki görüntü gösterdi. İlkinde kapı açılır açılmaz gezgin aracın tekerleği kapıya çarpıyor, ikincisinde araç güvenli alanda bekliyordu. Birinci görüntü, komutun zamanına bakmadan verilmesi durumunda oluşabilecek sonucu gösteren kayıtlı bir senaryoydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kendi yürüttükleri görevin ekranını ikinci görüntünün yanına getirdi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", eski mesajlar kutusunda en üstte duran “şimdi” sözcüğünü işaret etti. “Ekran onu en yeni mesaj gibi gösteriyordu,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sıralama ayarını açtı; mesajların geliş saatine ve gönderim saatine göre farklı biçimlerde dizilebildiğini gördü. İki dizilişi bir kâğıda çizdi. Aynı mesaj, iki listede farklı yerde görünüyordu.\n\nÖğretmen, gerçek uzay görevlerinde ışık hızının bile uzaklık yüzünden bekleme süresi oluşturduğunu anlattı. Çocuklar masanın üzerindeki küçük Mars ve Dünya maketlerini birbirinden uzaklaştırdı. Araya daha uzun bir çizgi çizdiler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kendi görevindeki on bir dakikalık sürenin yanına “örnek senaryo” yazdı; uzaklık değiştikçe iletişim süresinin de değişeceğini belirtti.\n\nÇıkış zili çalınca "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çizimlerin kopyasını aldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kontrol masasının üstündeki kırmızı düğmenin koruyucu kapağını indirdi, görev dosyasını kapattı ve son kayıt saatini defterine işledi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr061_gozleri_parladi": [
+      {
+        "t": "kahraman",
+        "hal": "ilgi"
+      },
+      {
+        "t": "metin",
+        "v": " gözleri parladı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Mars maketinden ekrana gelen komut hangisidir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Robotu geri döndür"
+        },
+        {
+          "id": "B",
+          "metin": "Kapıyı şimdi aç"
+        },
+        {
+          "id": "C",
+          "metin": "Örneği dışarı çıkar"
+        },
+        {
+          "id": "D",
+          "metin": "Işıkları tamamen kapat"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Gelen komut kapının açılmasıdır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 1,
+      "metin": "Mesajdaki “şimdi” sözü neden güvenilir sayılmadı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kumanda ekranı bir süre kararmıştı"
+        },
+        {
+          "id": "B",
+          "metin": "Mesajı gönderen kişi emin görünmüyordu"
+        },
+        {
+          "id": "C",
+          "metin": "Kapının dış kolları kırılmış görünüyordu"
+        },
+        {
+          "id": "D",
+          "metin": "Mesaj eski bir durumu anlatıyordu"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Mesaj on bir dakika önce gönderilmişti; “şimdi” sözü o andaki durumu anlatıyordu."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Kapıyı açmadan önce ekip neyi doğruladı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Basınç ve zaman damgasını"
+        },
+        {
+          "id": "B",
+          "metin": "Kapının dış rengini ve boyunu"
+        },
+        {
+          "id": "C",
+          "metin": "Gezgin aracın tekerlek sayısını"
+        },
+        {
+          "id": "D",
+          "metin": "Mesajı yazan ekibin adını"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Açma kararı güncel durum doğrulamasına dayanır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "“Gecikme” bu görevde hangi durumu anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Pilin yeniden dolmasını"
+        },
+        {
+          "id": "B",
+          "metin": "Robotun yön değiştirmesini"
+        },
+        {
+          "id": "C",
+          "metin": "Mesajın geç ulaşmasını"
+        },
+        {
+          "id": "D",
+          "metin": "Haritanın yenilenmesini"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Gecikme mesajın ulaşma süresidir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr061_gecikme",
+        "tur": "kelime",
+        "yazim": "gecikmesiyle",
+        "anlam": "Bir şeyin beklenenden sonra ulaşması ya da olması.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_erteleme",
+        "tur": "kelime",
+        "yazim": "erteleme",
+        "anlam": "Bir işi sonraki zamana bırakma.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_zamaninda",
+        "tur": "kelime",
+        "yazim": "zamanında",
+        "anlam": "Beklenen vakitte, tam zamanında.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_simulasyon",
+        "tur": "kelime",
+        "yazim": "simülasyon",
+        "anlam": "Gerçek bir durumu model üzerinde canlandırma.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_canlandirma",
+        "tur": "kelime",
+        "yazim": "canlandırma",
+        "anlam": "Bir durumu gösterme ya da yeniden oluşturma.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_deney",
+        "tur": "kelime",
+        "yazim": "deney",
+        "anlam": "Bir varsayımı sınamak için yapılan uygulama.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_protokol",
+        "tur": "kelime",
+        "yazim": "protokollerinin",
+        "anlam": "İletişimde uyulan ortak kurallar dizisi.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_kural",
+        "tur": "kelime",
+        "yazim": "kural",
+        "anlam": "Uyulması gereken düzen.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_karisiklik",
+        "tur": "kelime",
+        "yazim": "karmaşa",
+        "anlam": "Düzensiz, karışık durum.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_gozleri_parladi",
+        "tur": "deyim",
+        "yazim": "gözleri parladı",
+        "anlam": "Çok sevinmek ya da heyecanlanmak.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_gozu_dolmak_b",
+        "tur": "deyim",
+        "yazim": "gözü dolmak",
+        "anlam": "Duygulanıp ağlamaklı olmak.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr061_gozleri_kapandi",
+        "tur": "deyim",
+        "yazim": "gözleri kapandı",
+        "anlam": "Uykuya dalmak ya da bir şeye kayıtsız kalmak.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr061_gecikme",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr061_gecikme"
+          },
+          {
+            "girdi": "hr061_erteleme"
+          },
+          {
+            "girdi": "hr061_zamaninda"
+          }
+        ]
+      },
+      {
+        "ad": "hr061_simulasyon",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr061_simulasyon"
+          },
+          {
+            "girdi": "hr061_canlandirma"
+          },
+          {
+            "girdi": "hr061_deney"
+          }
+        ]
+      },
+      {
+        "ad": "hr061_protokol",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr061_protokol"
+          },
+          {
+            "girdi": "hr061_kural"
+          },
+          {
+            "girdi": "hr061_karisiklik"
+          }
+        ]
+      },
+      {
+        "ad": "hr061_gozleri_parladi",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr061_gozleri_parladi"
+          },
+          {
+            "girdi": "hr061_gozu_dolmak_b"
+          },
+          {
+            "girdi": "hr061_gozleri_kapandi"
+          }
+        ]
+      }
+    ]
+  }
+}
