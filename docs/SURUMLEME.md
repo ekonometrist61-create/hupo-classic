@@ -38,6 +38,17 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.7.2 · 2026-11-10
+
+Düzeltme (PATCH: yayın kapısı arayüzü; veri sözleşmesi değişmez, migration bu sürümde yok).
+- Hikâye yayın adımı artık yalnız insan onayına bakar ("İnsan onayladı" + "Yayınla"). Önceden panel Ajan A ve Ajan B pass olmadan yayın düğmesini kapatıyordu; sunucu kuralıyla (20261201, kullanıcı kararı 2026-11-10) uyumsuzdu. Ajan sonuçları kaydedilir ve görünür, yayını engellemez.
+- Yayın süzgeci ve toplu onay yalnız insan kararına bakar. TR/EN metinler güncellendi.
+- Commit: a3eff78 (2055be8'den cherry-pick; feature dalının tamamı alınmadı).
+
+**Migration:** 20261201000000 (dosya bu sürümde; uzak veritabanında zaten uygulanmış, `db:status` ile doğrulandı).
+
+**Uyumluluk:** Panel 0.7.2 yalnız 20261201 uzak veritabanında uygulanmışken doğru çalışır. Migration yoksa sunucu eski kuralı (ajan A ve B pass) uygular ve yeni panelde ajan geçmeyen sürüm yayınlanamaz.
+
 ### panel 0.7.1 · 2026-11-10
 
 Düzeltme (PATCH: metin ve görünüm; veri değişmez, migration yok).
