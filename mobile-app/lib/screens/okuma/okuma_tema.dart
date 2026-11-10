@@ -226,6 +226,8 @@ class OkumaMetin {
   static String hikayeAlt(String kahraman) =>
       '$kahraman için hikâyeler seçtim.';
   static const hikayeHepsi = 'Hepsi';
+  static const turDahaFazla = 'Daha fazla tür';
+  static const turDigerBaslik = 'Diğer türler';
   static const hikayeBasla = 'Hikâyeye başla';
   static const hikayeBos = 'Bu filtrede hikâye yok.';
   static const hikayeBosIpucu = 'Konu ya da türü değiştirerek bak.';
