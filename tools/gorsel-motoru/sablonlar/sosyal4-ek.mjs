@@ -21,7 +21,7 @@ export function surecKur({ R, karistir, sec, konum, ekle }) {
     const s = sec(SURECLER), A = s.adimlar, n = A.length;
     const spec = { tip_id: 'a7-akis', parametreler: { baslik: s.baslik, adimlar: A } };
     const ortak = { kod: 'SB.4.5.3', konu: 'Üretim, Dağıtım ve Tüketim', alt_konu: 'Bir ürünün üretimden tüketime kadar süreçleri', spec };
-    const tur = sec(['sonraki', 'onceki', 'son']);
+    const tur = sec(['sonraki', 'onceki', 'konum']);
 
     if (tur === 'sonraki' || tur === 'onceki') {
       // sonraki: i ∈ [0, n-2], doğru A[i+1]; onceki: i ∈ [1, n-1], doğru A[i-1]
@@ -38,22 +38,22 @@ export function surecKur({ R, karistir, sec, konum, ekle }) {
           : `${A[x]} aşaması "${ad}" aşamasından önce gelir; ancak hemen önceki aşama değildir.`;
       });
       const kok = tur === 'sonraki'
-        ? `Yukarıdaki akış şemasına göre "${ad}" aşamasından hemen sonra hangi aşama gelir?`
-        : `Yukarıdaki akış şemasına göre "${ad}" aşamasından hemen önce hangi aşama gelir?`;
+        ? `Yukarıdaki akış şemasında numarası ${i + 1} olan aşamadan hemen sonra hangi aşama gelir?`
+        : `Yukarıdaki akış şemasında numarası ${i + 1} olan aşamadan hemen önce hangi aşama gelir?`;
       return ekle({ ...ortak, zorluk: 1, dogru: A[j], celdirici: kalan.map((x) => A[x]), gerekce, kok,
         ipucu: tur === 'sonraki' ? 'Okun gittiği numaralı kutuya bak.' : 'Okun geldiği numaralı kutuya bak.',
         cozum: [`Şemada "${ad}" aşaması ${i + 1}. sırada yer alır.`, `${tur === 'sonraki' ? 'Hemen sonra' : 'Hemen önce'} gelen aşama ${j + 1}. sırada olan "${A[j]}" aşamasıdır.`],
         dogrulama: [{ yol: ['sira', ad], beklenen: i + 1 }, { yol: ['sira', A[j]], beklenen: j + 1 }] });
     }
 
-    // son: en son aşama (n. sıra) doğru; diğer üç aşama önceki sıralarda
-    const diger = karistir(A.slice(0, n - 1)).slice(0, 3);
-    const idx = (t) => A.indexOf(t);
-    return ekle({ ...ortak, zorluk: 1, dogru: A[n - 1], celdirici: diger, gerekce: diger.map((t) => `${t} akışta ${idx(t) + 1}. sırada yer alır; son aşama değildir.`),
-      kok: 'Yukarıdaki akış şemasında en son hangi aşama yer alır?',
-      ipucu: 'Okların bittiği numaralı kutuya bak.',
-      cozum: [`Akış "${A[0]}" aşamasıyla başlar ve ok zinciriyle ilerler.`, `En son, ${n}. sırada yer alan "${A[n - 1]}" aşamasıdır.`],
-      dogrulama: [{ yol: ['sira', A[n - 1]], beklenen: n }] });
+    // konum: verilen numaralı kutudaki aşama doğru; diğer üç şık başka sıralardaki aşamalar
+    const p = Math.floor(R() * n), idx = (t) => A.indexOf(t);
+    const diger = karistir(A.filter((_, x) => x !== p)).slice(0, 3);
+    return ekle({ ...ortak, zorluk: 1, dogru: A[p], celdirici: diger, gerekce: diger.map((t) => `${t} akışta ${idx(t) + 1}. sırada yer alır; ${p + 1}. sıra değildir.`),
+      kok: `Yukarıdaki akış şemasında numarası ${p + 1} olan aşama hangisidir?`,
+      ipucu: 'Numaralı kutuların sırasına ve içindeki yazıya bak.',
+      cozum: [`Şemada ${p + 1} numaralı kutuda "${A[p]}" yazar.`],
+      dogrulama: [{ yol: ['sira', A[p]], beklenen: p + 1 }] });
   }
   return { surecSorusu };
 }
@@ -109,18 +109,15 @@ export function tabloKur({ R, karistir, sec, konum, ekle }) {
 
     // bugun / eski: değişen satırın bugünkü ya da çocukluk dönemi değeri
     const t = satirlar.find((r) => r.degisti);
-    const digerler = karistir(satirlar.filter((r) => r !== t)).slice(0, 2);
+    // şıklar yalnız istenen sütundan gelir; öteki sütunun değeri (sızıntı) şıklara girmez
+    const digerler = satirlar.filter((r) => r !== t);
     const bugun = tur === 'bugun';
     const dogru = bugun ? t.yeni : t.eski;
-    const kendi = bugun ? t.eski : t.yeni;
     const kok = bugun
       ? `Tabloya göre "${t.etiket}" koşulunun bugünkü durumu aşağıdakilerden hangisidir?`
       : `Tabloya göre "${t.etiket}" koşulunun çocukluk dönemindeki durumu aşağıdakilerden hangisidir?`;
-    const celdirici = [kendi, ...digerler.map((r) => (bugun ? r.yeni : r.eski))];
-    const gerekce = [
-      bugun ? `Bu değer "${t.etiket}" koşulunun çocukluk dönemindeki durumudur; bugünkü durum değildir.` : `Bu değer "${t.etiket}" koşulunun bugünkü durumudur; çocukluk döneminde değildir.`,
-      ...digerler.map((r) => `Bu değer "${r.etiket}" koşuluna aittir; "${t.etiket}" koşulunun değeri değildir.`),
-    ];
+    const celdirici = digerler.map((r) => (bugun ? r.yeni : r.eski));
+    const gerekce = digerler.map((r) => `Bu değer "${r.etiket}" koşuluna aittir; "${t.etiket}" koşulunun değeri değildir.`);
     return ekle({ ...ortak, zorluk: 1, dogru, celdirici, gerekce, kok,
       ipucu: 'Soruda istenen koşulun satırını bul ve doğru sütundaki hücreye bak.',
       cozum: [`"${t.etiket}" satırında çocukluk dönemi "${t.eski}", bugün "${t.yeni}" olarak yazılmıştır.`, `İstenen sütundaki değer "${dogru}" olur.`],
@@ -129,7 +126,6 @@ export function tabloKur({ R, karistir, sec, konum, ekle }) {
   return { tabloSorusu };
 }
 
-export const KAYIT = [
-  { id: 'sb4-surec-akis', ders: 'Sosyal Bilgiler', sinif: 4, idOnek: 'SB4-SRC', mufredat_surum: MUFREDAT, kodlar: ['SB.4.5.3'], fabrika: surecKur, uret: (f) => f.surecSorusu() },
-  { id: 'sb4-kosul-cizelge', ders: 'Sosyal Bilgiler', sinif: 4, idOnek: 'SB4-KSL', mufredat_surum: MUFREDAT, kodlar: ['SB.4.6.2'], fabrika: tabloKur, uret: (f) => f.tabloSorusu() },
-];
+// SB.4.5.3 ve SB.4.6.2 şimdilik şablonsuz (karar 2026-11-10: metin-yalnız ölçüm geçemedi;
+// sıra/sütun değerleri sağduyuyla çözülüyor). Fonksiyonlar, geri dönüş için kalır; KAYIT'ta yoktur.
+export const KAYIT = [];

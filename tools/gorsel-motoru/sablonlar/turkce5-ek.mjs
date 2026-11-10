@@ -46,9 +46,10 @@ function kapakKur({ sec, karistir, ekle }) {
 function siirKur({ R, sec, karistir, konum, ekle: ekleOrj }) {
   const ekle = tekilEkle(ekleOrj);
   function siir() {
-    const tur = sec(['n4', 'n2', 'toplam', 'sonrasi', 'sonIki', 'son']), k = konum();
+    // kıta sayısı soruları çıkarıldı: metin-yalnız ölçümde 12/13 metinle çözüldü (2026-11-10)
+    const tur = sec(['toplam', 'sonrasi', 'sonIki', 'son']), k = konum();
     // 2 ve 4 dizelik kıtalar karışık; hem 2 hem 4 dizelik kıta bulunur
-    const f = sec([1, 2]), t = sec([1, 2, 3]);
+    const f = sec([2, 3]), t = sec([2, 3]);
     if (f + t < 3) throw new Error('kita_az');
     const boyutlar = karistir([...Array(f).fill(4), ...Array(t).fill(2)]);
     const havuz = karistir(COUPLET); const kitalar = [];
@@ -63,21 +64,23 @@ function siirKur({ R, sec, karistir, konum, ekle: ekleOrj }) {
     const spec = { tip_id: 'b3-siir', parametreler: { kitalar } };
     const ortak = { kod: 'T.O.5.17', konu: 'Şiir', alt_konu: 'Şiirin kıta ve dize özelliklerini belirleme', spec, zorluk: 2 };
     const dz = kitalar.flat(), toplam = dz.length, n = kitalar.length;
-    const say = (b) => boyutlar.filter((x) => x === b).length;
+    // şıklar art arda değil, dağınık aralıklı değerlerdir; doğru değer k. konumda durur.
+    // Çeldiricilerin kaçı altta kaçı üstte olacağı rastgeledir; doğru değerin sırası (1–4) sayıdan bağımsız dağılır.
+    // Adımlar çifttir: kıtalar 2 ya da 4 dizelik olduğu için her toplam çift sayıdır; tek adım parite ipucu verir.
+    const yayilim = (d) => {
+      const alt = karistir([-2, -4, -6].filter((o) => d + o >= 0)), ust = karistir([2, 4, 6, 8]);
+      const b = sec([0, 1, 2, 3].filter((x) => x <= alt.length && 3 - x <= ust.length));
+      const diger = [...alt.slice(0, b), ...ust.slice(0, 3 - b)].map((o) => d + o);
+      diger.splice(k, 0, d); return diger;
+    };
     const sayisal = (kok, dogru, dogrulama, atif, cozum, ipucu) => {
-      const s = pencere(dogru, k, 1); if (!s) throw new Error('pencere');
+      const s = yayilim(dogru);
       return ekle({ ...ortak, kok, sirali: s.map(String), dogru: String(dogru),
         gerekce: s.map((v) => `Şekildeki şiirde bu değer ${v} değildir; ${atif}`),
         ipucu, cozum, dogrulama: [{ yol: dogrulama.yol, beklenen: dogrulama.beklenen }] });
     };
-    if (tur === 'n4' || tur === 'n2') {
-      const b = tur === 'n4' ? 4 : 2, d = say(b);
-      return sayisal(`Şekildeki şiirde ${b} dizeden oluşan kaç kıta vardır?`, d, { yol: ['kita_dize'], beklenen: boyutlar },
-        `${b} dizelik kıtalar şekilde tek tek sayılmalıdır.`,
-        ['Şekilde boşluklarla ayrılmış kıtalar ayırt edilir.', `Her kıtanın dizeleri sayılır ve ${b} dizelik olanlar toplanır.`], 'Önce kıtaları ayır, sonra her kıtanın satırlarını say.');
-    }
     if (tur === 'toplam') {
-      const s = pencere(toplam, k, 2); if (!s) throw new Error('pencere');
+      const s = yayilim(toplam);
       return ekle({ ...ortak, kok: sec(['Şekildeki şiirde bütün kıtalardaki dizeler toplam kaç tanedir?', 'Şekildeki şiir toplam kaç dizeden (mısradan) oluşmaktadır?']), sirali: s.map(String), dogru: String(toplam),
         gerekce: s.map((v) => `Şekildeki şiirin bütün satırları sayıldığında bu değer ${v} çıkmaz.`),
         ipucu: 'Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır.', cozum: ['Şekildeki bütün kıtaların satırları tek tek sayılır.', 'Elde edilen sayı toplam dize sayısıdır.'], dogrulama: [{ yol: ['dize_sayisi'], beklenen: toplam }] });
