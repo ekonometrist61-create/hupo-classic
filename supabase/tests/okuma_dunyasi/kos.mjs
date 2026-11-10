@@ -39,6 +39,8 @@ const migrasyonlar = [
   mig('20261071000000_okuma_sayfa_siniri_40.sql'),
   mig('20261075000000_okuma_anket_yildiz_istege_bagli.sql'),
   mig('20261076000000_okuma_paket_sozluk_ikon.sql'),
+  // 2026-11-10: hikâye yayın kapısı yalnız insan onayı (ajan şartı kaldırıldı); testler.sql bölüm C bunu bekler
+  mig('20261201000000_okuma_hikaye_insan_onayi_yeter.sql'),
 ];
 const paketDizini = process.env.OKUMA_PAKET_DIZINI || 'C:\\Dev\\Senin Hikayen - HupoRead\\atolye\\cikti';
 

@@ -232,10 +232,10 @@ begin
   select string_agg(p.proname, ',' order by p.proname) into t from pg_proc p join pg_namespace ns on ns.oid = p.pronamespace
    where ns.nspname = 'public' and p.proname like 'okuma\_%' and not has_function_privilege('authenticated', p.oid, 'execute');
   -- Envanter kilidi: yeni okuma_* RPC eklenince sayı bilinçli olarak güncellenir.
-  -- 27 = önceki RPC'ler; +2 = okuma_fis_ice_aktar, okuma_fis_listele (20261057000000); +3 = okuma_surum_sil, okuma_hikaye_sil, okuma_yonetim_istatistik (20261064000000); +2 = okuma_ogretmen_ogrenci_ozeti, okuma_ogretmen_sinif_ogrencileri (20261065000000).
-  perform pg_temp.k('34 RPC authenticated için açık (envanter)',
+  -- 27 = önceki RPC'ler; +2 = okuma_fis_ice_aktar, okuma_fis_listele (20261057000000); +3 = okuma_surum_sil, okuma_hikaye_sil, okuma_yonetim_istatistik (20261064000000); +2 = okuma_ogretmen_ogrenci_ozeti, okuma_ogretmen_sinif_ogrencileri (20261065000000); +1 = okuma_toplu_yayin (20261201 ile yeniden tanımlanır; harness'te ilk kez yüklenir).
+  perform pg_temp.k('35 RPC authenticated için açık (envanter)',
     t is null and (select count(*) from pg_proc p join pg_namespace ns on ns.oid = p.pronamespace
-                    where ns.nspname = 'public' and p.proname like 'okuma\_%') = 34,
+                    where ns.nspname = 'public' and p.proname like 'okuma\_%') = 35,
     coalesce(t, 'kapalı yok') || ' / toplam ' || (select count(*) from pg_proc p join pg_namespace ns on ns.oid = p.pronamespace where ns.nspname = 'public' and p.proname like 'okuma\_%'));
 
   select string_agg(c.relname, ',') into t from pg_class c join pg_namespace ns on ns.oid = c.relnamespace
@@ -406,20 +406,21 @@ begin
   sk := (r ->> 'surum_id')::uuid; hk := (r ->> 'hikaye_id')::uuid;
   perform pg_temp.k('taslak doğrudan yayına geçemez', pg_temp.h(adm2, format('public.okuma_surum_durum_degistir(%L,%L,null)', sk, 'yayinda'), 'GECERSIZ_GECIS'), pg_temp.son_hata());
   perform pg_temp.c(adm1, format('public.okuma_surum_durum_degistir(%L,%L,null)', sk, 'incelemede'));
-  perform pg_temp.k('denetim eksik: incelemedeki sürüm yayına geçemez (YAYIN_KAPISI)',
+  perform pg_temp.k('insan onayı eksik: incelemedeki sürüm yayına geçemez (YAYIN_KAPISI)',
     pg_temp.h(adm2, format('public.okuma_surum_durum_degistir(%L,%L,null)', sk, 'yayinda'), 'YAYIN_KAPISI'), pg_temp.son_hata());
   r := pg_temp.c(adm1, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"insan":"approved"}'));
   perform pg_temp.k('üç göz: oluşturan yönetici insan onayını verebilir (inceleyen = adm1)', (r -> 'denetim' ->> 'insan') = 'approved' and (select inceleyen_id from public.okuma_hikaye_surumleri where id = sk) = adm1, r::text);
   perform pg_temp.k('geçersiz denetim değeri / anahtarı reddedilir',
     pg_temp.h(adm2, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"insan":"belki"}'), 'BAD_DENETIM')
     and pg_temp.h(adm2, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"baska":"pass"}'), 'BAD_DENETIM'), pg_temp.son_hata());
-  perform pg_temp.c(adm2, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"ajan_a":"pass","insan":"approved"}'));
-  perform pg_temp.k('ajan_b pending iken yayın kapısı kapalı',
+  -- 2026-11-10: yalnız insan onayı yayını açar; ajan sonuçları yayını engellemez
+  perform pg_temp.c(adm2, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"ajan_a":"pass","ajan_b":"pass","insan":"pending"}'));
+  perform pg_temp.k('ajanlar geçse de insan onayı yoksa yayın kapısı kapalı',
     pg_temp.h(adm2, format('public.okuma_surum_durum_degistir(%L,%L,null)', sk, 'yayinda'), 'YAYIN_KAPISI'), pg_temp.son_hata());
-  perform pg_temp.c(adm2, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"ajan_b":"pass"}'));
+  perform pg_temp.c(adm2, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"ajan_a":"fail","ajan_b":"review_needed","insan":"approved"}'));
   r := pg_temp.c(adm2, format('public.okuma_surum_durum_degistir(%L,%L,null)', sk, 'yayinda'));
   select count(*) into n from public.okuma_hikaye_surumleri where id = sk and durum = 'yayinda' and inceleyen_id = adm2 and yayin_at is not null;
-  perform pg_temp.k('admin2 üç onayla yayınlar (inceleyen = adm2)', n = 1, r::text);
+  perform pg_temp.k('ajan A fail / B review_needed iken insan onayıyla yayınlanır (inceleyen = adm2)', n = 1, r::text);
 
   -- tablo düzeyi kapı (RPC atlanırsa)
   perform pg_temp.c(adm1, format('public.okuma_surum_durum_degistir(%L,%L,null)', s1, 'incelemede'));

@@ -32,7 +32,8 @@ const denetimUyar = (d: DenetimDurumu | null, f: DenetimSuzgeci) => {
   if (f === "ajanBekliyor") return !ajanlarGecti(d);
   if (f === "insanOnayli") return x.insan === "approved";
   if (f === "insanBekliyor") return x.insan !== "approved";
-  return ajanlarGecti(d) && x.insan === "approved";
+  // Yayın kapısı yalnız insan onayıdır (ajan sonuçları yayını engellemez).
+  return x.insan === "approved";
 };
 // Yalnız taslak/incelemedeki sürümün denetimi değişebilir (sunucu da böyle zorlar).
 const denetimDuzenlenebilir = (s: SurumSatiri) => s.durum === "taslak" || s.durum === "incelemede";
@@ -119,7 +120,7 @@ export default function ListeSekmesi() {
       (s) =>
         secimIdleri.has(s.hikaye_id) &&
         denetimDuzenlenebilir(s) &&
-        (onayla ? ajanlarGecti(s.denetim) && tamDenetim(s.denetim).insan !== "approved" : tamDenetim(s.denetim).insan !== "pending"),
+        (onayla ? tamDenetim(s.denetim).insan !== "approved" : tamDenetim(s.denetim).insan !== "pending"),
     );
     setOnayMesaji(null);
     setOnayHatalari(null);

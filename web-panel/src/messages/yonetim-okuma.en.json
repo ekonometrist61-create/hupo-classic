@@ -10,7 +10,7 @@
     },
     "hikayeAtolyesi": {
       "title": "Story Workshop",
-      "giris": "Stories are not written in the panel; packages prepared in the workshop pipeline are imported, reviewed and published here. Publishing needs two AI reviews and a human approval, and the person who created a story cannot publish it.",
+      "giris": "Stories are not written in the panel; packages prepared in the workshop pipeline are imported, reviewed and published here. Publishing needs only a human approval; the AI review results are recorded and do not block publishing. The person who created a story cannot publish it.",
       "sekmeler": "Story Workshop sections",
       "sekme": {
         "liste": "Stories",
@@ -28,7 +28,7 @@
         "demo": "Nothing can be saved in demo mode.",
         "yetki": "Administrator permission is required for this action.",
         "genel": "The action could not be completed. Try again later; if it persists, check the record.",
-        "YAYIN_KAPISI": "To publish, Agent A and Agent B reviews must be \"pass\" and the human decision \"approved\". Save the review and try again.",
+        "YAYIN_KAPISI": "To publish, the human decision must be \"approved\". Save the review and try again.",
         "ZATEN_YAYINDA": "The story has no new fully approved version besides the one already published.",
         "YAYINDA_DEGIL": "The story has no published version to withdraw.",
         "DORT_GOZ": "Four-eyes rule: the creator cannot publish or approve their own record. Another administrator must do it.",
@@ -117,7 +117,7 @@
           "ajanBekliyor": "An agent has not passed yet",
           "insanOnayli": "Human approved",
           "insanBekliyor": "Awaiting human approval",
-          "yayinaHazir": "Ready to publish (A + B + human)"
+          "yayinaHazir": "Ready to publish (human approved)"
         },
         "kolonBaslik": "Story",
         "soru": "Questions",
@@ -130,8 +130,8 @@
         "kapat": "Close",
         "denetimBaslik": "Review",
         "dortGoz": "Four eyes: creator {olusturan}, reviewer {inceleyen}. The creator and the publisher cannot be the same person; the server enforces this.",
-        "yayinaHazir": "All three reviews are complete; ready to publish.",
-        "yayinaHazirDegil": "To publish, Agent A must be \"Pass\", Agent B \"Pass\" and the human decision \"Approved\".",
+        "yayinaHazir": "Human approval is given; ready to publish.",
+        "yayinaHazirDegil": "To publish, the human decision must be \"Approved\". Agent A and Agent B results are for information and do not block publishing.",
         "denetimiKaydet": "Save review",
         "denetimKilitli": "The review of a published or archived version cannot be changed.",
         "durumBaslik": "Status flow",
@@ -142,7 +142,7 @@
         "durumDegisti": "Status updated: {durum}.",
         "onizlemeBaslik": "Preview (with sample names)",
         "icerikYukle": "Load content for editing, deleting and preview",
-        "yayinAdimlari": "To publish, in order: 1) Move the draft to review with \"Move to review\". 2) Set Agent A and Agent B review to \"Passed\". 3) Set human approval to \"Approved\". 4) Press \"Save review\". 5) \"Publish\" becomes available. The published version stays unchanged until the new one is published; then the old one is archived.",
+        "yayinAdimlari": "To publish, in order: 1) Move the draft to review with \"Move to review\". 2) Record Agent A and Agent B results (for information; they do not block publishing). 3) Set human approval to \"Approved\". 4) Press \"Save review\". 5) \"Publish\" becomes available. The published version stays unchanged until the new one is published; then the old one is archived.",
         "icerikYukleNot": "The story package is large, so this section loads on request."
       },
       "onizleme": {
@@ -435,9 +435,9 @@
         "secilen": "{n} stories selected",
         "onaylaDugme": "Approve selected",
         "onayKaldirDugme": "Remove approval from selected",
-        "onayliSoru": "Give human approval to {n} versions? Only draft/in-review versions where Agent A and B both passed are approved; others are skipped.",
+        "onayliSoru": "Give human approval to {n} versions? Only draft and in-review versions are approved; agent results do not change.",
         "onayKaldirSoru": "Remove human approval from {n} versions? The decision returns to Pending; published versions are untouched.",
-        "onayYok": "None of the selected versions qualify (must be draft/in review with Agent A and B passed).",
+        "onayYok": "None of the selected versions qualify (must be draft or in review).",
         "onaySonuc": "{yapilan} versions updated, {atlanan} skipped.",
         "onayHata": "{baslik}: {hata}",
         "yayinaAlDugme": "Publish selected",
@@ -453,7 +453,7 @@
           "sil": "Delete {n} stories?"
         },
         "aciklama": {
-          "yayina_al": "For each story, the newest draft or in-review version where Agent A and Agent B both passed and the human decision is approved is published; a draft is first moved to review. The previous published version goes to the archive. Stories without a complete review are skipped, with the reason shown.",
+          "yayina_al": "For each story, the newest draft or in-review version with human approval is published; a draft is first moved to review. The previous published version goes to the archive. Stories without human approval are skipped, with the reason shown.",
           "yayindan_cek": "The published version of the selected stories moves to the archive; children can no longer see it. Reading sessions and report cards are kept.",
           "arsiv": "All non-archived versions of the selected stories (including published ones) move to the archive and are hidden from children. Reading sessions and report cards are kept.",
           "sil": "Stories that meet the rule are deleted with all their versions. The linked production slip returns to a draft brief."

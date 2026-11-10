@@ -1,7 +1,7 @@
 "use client";
 
 // Seçili sürümün denetimi, durum akışı ve önizlemesi.
-// Dört göz ve yayın kapısı sunucuda zorlanır; burada yalnızca gösterilir, hata nazikçe iletilir.
+// Yayın kapısı (insan onayı) sunucuda zorlanır; burada yalnızca gösterilir, hata nazikçe iletilir.
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -63,7 +63,8 @@ export default function SurumDetay({ satir, onKapat, onDegisti }: Props) {
   const denetim: DenetimDurumu = { ajan_a: "pending", ajan_b: "pending", insan: "pending", ...sunucuDenetim, ...(duzenleme ?? {}) };
   const durum: OkumaDurum = yerel.durum ?? icerik.data?.durum ?? satir.durum;
   const denetimDuzenlenebilir = durum === "taslak" || durum === "incelemede";
-  const yayinaHazir = denetim.ajan_a === "pass" && denetim.ajan_b === "pass" && denetim.insan === "approved";
+  // Yayın yalnız insan onayıyla açılır; ajan sonuçları bilgi amaçlıdır ve yayını engellemez.
+  const yayinaHazir = denetim.insan === "approved";
 
   const calistir = async (hedef: OkumaDurum, denetimGonder: DenetimDurumu | null, basari: string) => {
     setIslemde(true);
