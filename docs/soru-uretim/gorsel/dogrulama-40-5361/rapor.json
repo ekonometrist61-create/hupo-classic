@@ -45,7 +45,45 @@
   "hata": null
  },
  "kontak": true,
- "kor": null,
+ "kor": {
+  "n": 40,
+  "n_yeterli": true,
+  "gecti": true,
+  "karar": "KOR_GECTI",
+  "gorselli": {
+   "uyum": 40,
+   "oran": 1,
+   "eksik": 0,
+   "sorunlu": []
+  },
+  "gorselsiz": {
+   "uyum": 11,
+   "oran": 0.275,
+   "eksik": 0,
+   "cozulen": [
+    "MAT5-GEO-S2-004",
+    "MAT5-GEO-S2-006",
+    "MAT5-GEO-S2-007",
+    "MAT5-GEO-S2-009",
+    "MAT5-GEO-S2-013",
+    "MAT5-GEO-S2-018",
+    "MAT5-GEO-S2-026",
+    "MAT5-GEO-S2-028",
+    "MAT5-GEO-S2-029",
+    "MAT5-GEO-S2-034",
+    "MAT5-GEO-S2-039"
+   ]
+  },
+  "esik": {
+   "gorselli": 0.95,
+   "gorselsiz": 0.4,
+   "n_min": 40
+  },
+  "cevap_dosyalari": [
+   "gorselli_cevap.json",
+   "gorselsiz_cevap.json"
+  ]
+ },
  "durum": "beklemede",
- "karar": "KOR_BEKLIYOR"
+ "karar": "KOR_GECTI"
 }
