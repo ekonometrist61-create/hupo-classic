@@ -1,0 +1,16 @@
+# HR-049 · Keloğlan ve Yedi Söz Kapısı · Ajan B (uygunluk ve kalite) · kör-2
+Karar: review_needed
+Özet: Uzunluk (yaklaşık 704 kelime) ve sözcük düzeyi 5. sınıfa uygun, güvenlik sorunu yok; fakat s3'ün doğru cevabı metinle desteklenmiyor, taşa yazılan özdeyişler ve final cümlesi açık öğüt veriyor, deyim yerleşimi bozuk. Kritik ve yüksek bulgu yok.
+Bulgular:
+- [orta] s3 doğru cevap : Metinde çocuğa büyük dilimin verilme gerekçesi "en ağır sepeti taşımak" (emek); soru ise nedeni "ihtiyacı gözetmek" olarak soruyor. Doğru şık metinden çıkarılamıyor, aynı veriyle "emeğe karşılık vermek" de savunulabilir. Ayrıca sahne kurgusu hurma kâseleri üzerinden başlayıp ekmek dilimine geçiyor, hangi çocuğun yorgun, hangisinin sepet taşıdığı belirsiz. Alıntı: "Kadın, en ağır sepeti taşıyan çocuğa daha büyük ekmek dilimini verdi." Öneri: Metni "yorgun çocuğa" olarak netleştir veya kökü "emeğini karşılığını görmek" gerekçesine uyarla; sahneyi hurma ile tutarlı kur.
+- [orta] Vaaz/öğüt : Taşa yazılan kalıp ve son yazı doğrudan ders veriyor; deyim cümlesi "…yalnız sesi duymak değildir" tanım/öğüt tadında. Alıntı: "Kulak vermek, yalnız sesi duymak değildir." ve "Dileğin kapının ardında değil," Öneri: Dersi eylemden çıkar; yazıları kaldır ya da sahnenin içine doğal bir olay olarak göm.
+- [orta] Deyim yerleşimi : Deyim yer tutucusu cümleyle değişirse ("Yolun sonunda küçük bir not buldu: Kulak vermek...") sonrasındaki "Kulak vermek," yazıyordu taşa ifadesiyle çift söyleniyor ve tırnak içindeki konuşma bozuluyor. Alıntı: "“[[deyim:hr049_kulak_vermek]] Kulak vermek,” yazıyordu taşa." Öneri: Deyimi anlatıcı cümlesinde doğal kullan ("Keloğlan sese kulak verdi"); "taşa yazı" mekanizmasını bırak.
+- [düşük] s2 beceri/çeldirici : Cevap metinde açıkça yazıyor (çıkarım değil, hatırlama); metinde güven kazanıldığı veya kesenin içinde "para" olduğu söylenmiyor; üç çeldirici saçma. Alıntı: "Keloğlan hangi davranışıyla tüccarın güvenini kazanmıştır?" Öneri: Etiketi hatırlama yap ya da gerçek çıkarım gerektiren bir kök kur ("Keloğlan keseyi neden açmadı?").
+- [düşük] s1 : Kök "ilk anahtarı" diyor, metinde yedi anahtarın hepsi eşikte bulunuyor; "ev eşiği" metinde geçmiyor ("kapının eşiği"). Alıntı: "Keloğlan sabah kapının eşiğinde yedi küçük anahtar buldu." Öneri: Kökü "Keloğlan anahtarları nerede buldu?" yap, metinde "evinin kapısının eşiğinde" yaz.
+- [düşük] Başlık/kurgu : Başlıkta "Söz" var, kapılar ise söz değil eylem sınavları; ikinci kapıdaki on/iki hurma ve iki yolcu sorunu çözülmeden bırakılıyor; son bölüm başında "şekil farklarını yeniden saydı" dolgu. Alıntı: "aralarındaki şekil farklarını yeniden saydı." Öneri: Başlığı gözden geçir, hurma sahnesini somut paylaşımla kapat.
+- [düşük] Etiket : izinli_turler "ben" içeriyor fakat metinde {kahraman} yok, sabit Keloğlan anlatılıyor. Öneri: izinli_turler'ı metinle hizala.
+Doğrulanamayan iddialar: Maarif D6/D15 kodlarının anlamı; "Kulak vermek" deyiminin sözlük kaydı (doğru görünüyor); "Dürüstlük ve paylaşma" etiketinin program kazanımı.
+Güçlü yanlar:
+- Yedi sınav kapısı eylem ve somut nesnelerle (kese, hurma, pelerin, buğday) kurulmuş, temel değer sözle anlatılmıyor.
+- Yaklaşık 704 kelime, cümleler kısa ve açık; "eşik", "heybe", "kurnazlık" bağlamdan anlaşılıyor.
+- Güvenlik, ayrımcılık ve mahremiyet sorunu yok; yetiskin_uygun tutarlı.

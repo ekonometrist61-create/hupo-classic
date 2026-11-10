@@ -1,0 +1,12 @@
+# HR-021 · Kayıp Sandığın Şifresi · Ajan B (uygunluk ve kalite)
+Karar: review_needed
+Özet: Sandık, albüm ve şiir kurgusu 4. sınıf için özgün ve merak uyandırıcı. Ancak ipucu zinciri metinde tutarlı kurulmamış (ortak sözcük iddiası yanlış, bazı eşleşmeler kanıtsız) ve s2'nin doğru cevabı metinde desteklenmiyor.
+Bulgular:
+- [yüksek] Soru s2 (p.5), cevabın kanıtı: Yoldaş'ın altın beklediği metinde hiçbir yerde yazmıyor; "altın" sözcüğü ilk kez p.4'te, çıkmadığı bilgisiyle geçiyor. Doğru şık bu beklentiye dayanıyor. Alıntı: "Sandıkta altın çıkmadığı için"; "Yoldaş altın bekliyordu". Öneri: p.1 ya da p.3'e Yoldaş'ın altın beklentisini ekle ya da soruyu metinde açıkça dayanağı olan bir cevaba çevir.
+- [yüksek] p.2 ve p.3, ipucu zinciri: Metin, sandık notundaki sözcüklerle albüm yazılarının aynı olduğunu söylüyor; oysa ortak sözcük yok. "Uzakları yakın eden" ve "gece yol gösteren" için albümde karşılık bulunmuyor ve p.4'te dalga eşleşmesinin "kesin olmadığı" ifade ediliyor. Sıra ise şiirden (p.5) çıkarılıyor. Alıntı: "Sanki biri hatırlamamızı istemiş"; "Ama dalganın doğrudan uzakları yakın ettiği kesin değildi". Öneri: Not ile albüm yazılarını ortak sözcüklerle birebir kur ya da çözüm yolunu tek bir açık kanıta bağla.
+- [orta] p.2, dilbilgisi: "albüm" sözcüğü yer tamlaması olmadan kullanılmış; cümle bozuk. Alıntı: "Okulun eski fotoğraf {albüm} aynı dört simgenin bulunduğu bir sayfa keşfettiler." Öneri: "Okulun eski fotoğraf albümünde ... bir sayfa keşfettiler" biçimine getir.
+- [orta] p.5 ve s3, vaaz: Kapanış hem düz bir ahlak cümlesi hem de yazılı mesaj olarak tekrar ediliyor; s3 aynı cümleyi soruyor. Alıntı: "Bir sandığın en değerli şifresi, insanların birlikte biriktirdiği anılardır." Öneri: Kapanış cümlesini kaldır ya da sorudan ayır.
+- [orta] Sorular s1, s3, s4, şık uzunluğu: Doğru şık üç sorudan üçünde en uzun (s1: 28 karakter, s3: 38'e karşı 14-16, s4: 31'e karşı 15-19). s2'de istisna. Öneri: Yanlış şıkları doğru şıkla dengele.
+- [düşük] Karakter adlandırması: Kahraman ve Yoldaş yer tutucu, Defne ve Kerem ise ad olarak geçiyor. Öneri: Karakter adlandırmasını tutarlı yap.
+Doğrulanamayan iddialar: "Önceki program (4. sınıf)" resmi eşleştirmesi bu denetimde yapılamadı (program_surumu notu insan editörüne bırakılmış). Tohum ve albüm nesnelerinin tarihsel tutarlılığı doğrulanmadı.
+Güçlü yanlar: Dört yuvalı sandık ve dört cümle kurgusu, sınıf hatıra albümüyle birleşerek özgün bir gizem yaratıyor. s4 (albüm sözcüğü) ve s3 metin bağlamıyla iyi eşleşiyor.

@@ -1,0 +1,8 @@
+# HR-045 · Kütüphanenin On Üçüncü Rafı · Ajan A (olgu ve doğruluk)
+Karar: pass
+Özet: Dört sorunun dogru cevabı metinle destekleniyor; dayanak sayfaları doğru. İki düşük düzeyde iyileştirme var: s2 dogru şıkkının gerekçesi aciklamayla tam hizalı değil; eldiven ifadesi arşiv uygulamasıyla netleştirilebilir.
+Bulgular:
+- [düşük] s2 dogru şık (C), sayfa 4: Ferit'in künyeye bakma nedeni, başlığın farklı yazılmasıyla aynı kitap sanılma riskidir. Dogru şık bunu "aynı kitabın farklı yazılmış iki kaydı" diye veriyor; aciklama ise "farklı kitapları ya da aynı kitabı iki kez" diye genişletiyor. Alıntı: "Ferit aynı kitap sanıp numarayı işaretleyecekti." Öneri: dogru şık aciklamayla aynı kapsamda yazılsın (örn. "Farklı yazımların iki ayrı kitabı ya da aynı kitabı iki kez gösterebileceği için").
+- [düşük] sayfa 9, eldiven ifadesi: "Sevim Hanım önce uygun eldiven ve temiz çalışma yüzeyi hazırladı." Kâğıt belgeler için arşiv uygulamalarında çoğu zaman temiz kuru el ya da nitril eldiven önerilir; pamuklu eldiven genellikle önerilmez. Öneri: "uygun eldiven" yerine kurumun uygulamasına uygun somut bir ifade kullanılsın ya da arşiv uzmanı teyidi alınsın.
+Doğrulanamayan iddialar: Eski belgelerde kullanılacak eldiven türü arşiv uzmanı teyidi gerektirir (eldiven ifadesi). Mürekkebin zamanla solması metinde de teyit edilemediği olarak işaretlenmiş (doğru sınırlandırma).
+Güçlü yanlar: Raf 12 ile Raf 14 arasındaki boşluk (s1) doğrudan metinde ve doğru. "Emanet" tanımı sayfa 3'te doğru verilmiş. Kişisel bilgi içeren eski kayıtların paylaşılmadan önce dikkatle ele alınması (sayfa 9) pedagojik ve etik olarak doğru bir mesaj.

@@ -1,0 +1,10 @@
+# HR-030 · Ormanın Kaybolan Patikası · Ajan B (uygunluk ve kalite)
+Karar: review_needed
+Özet: Doğa ve güvenlik teması, kroki/güzergâh/ölçek kavramlarının olay örgüsü içinde işlenişi ve sınıf düzeyi uygun. Ancak gövdede editör notu kalmış, dört sorunun doğru şıkkı her seferinde D ve en uzun şık, kapanış ahlaki bir cümleyle bitiyor.
+Bulgular:
+- [yüksek] gövde, son paragraf: editör notu ve "Okuma sonrası" soruları hikâye metninin içinde. Alıntı: "Dil hedefi: rota, yön, uyarı; çözüm önerme; Kavram/değer: kroki, güvenli güzergâh, doğayı koruma." Öneri: Bu paragrafı gövdeden çıkar, yönetim notu olarak ayrı bir alanda tut.
+- [yüksek] sorular s1–s4: dört sorunun doğru şıkkı D ve her birinde en uzun şık (s1 "Yağmur yüzünden toprak kaymıştı" diğerleri 15–21 karakter; s3 "Güvenle ulaştırmalı" diğerleri 11–13). Alıntı: s2 D "Kısa yol her zaman güvenli değildi; güncel levha ve görevliler daha doğru bilgi veriyordu". Öneri: doğru şıkları A/B/C'ye dağıt, çeldiricileri doğru şıkla aynı uzunluğa getir; s2 ve s4 doğru şıklarını metindeki cümlelerden kopya olmayacak biçimde yeniden yaz.
+- [orta] son paragraf: hikâye ahlaki cümleyle bitiyor. Alıntı: "Defterinin altına şu cümleyi yazdı: İyi bir yol bulmak, yalnızca hedefe varmak değil, oraya güvenle ulaşmaktır." Öneri: cümleyi kaldır, kahramanın somut bir eylemiyle (iki haritayı karşılaştırması gibi) bitir. Ayrıca gövdede "öğrendi" kalıbı var: "yaklaşık sonuçları kesin ölçüm sanmamaları gerektiğini de öğrendi"; bu bilgiyi diyaloğa taşı.
+- [düşük] gövde, dilbilgisi: "görevliden alternatif yolun {kroki} aldı" ve "yalnızca açık {güzergâh} izleyecek". Öneri: "krokisini aldı" ve "güzergâhı izleyecek" biçiminde tamlama ekini düzelt.
+Doğrulanamayan iddialar: D5 ve D16 değer kodlarının karşılığı (değer sözlüğü bu kapsamda verilmedi); dayanak_sayfa numaraları (sayfa bölümü yok); program eşleştirmesi (insan editörünün işi); kelime sayısı sınırı (sınır verilmedi).
+Güçlü yanlar: Kroki, güzergâh ve ölçek kavramları gerçek bir olay örgüsünün içinde doğal biçimde öğretiliyor. İçerik güvenlik açısından temiz; kahraman, Nisa ve yoldaş konuşma tarzlarıyla ayırt edilebiliyor.

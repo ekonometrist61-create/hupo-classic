@@ -1,0 +1,9 @@
+# HR-043 · Kuledeki Son Işık · Ajan A (olgu ve doğruluk)
+Karar: pass
+Özet: Dört sorunun dogru cevabı metinle destekleniyor; dayanak sayfaları doğru. Asıl sorun, "el kaldırmak" deyiminin metinde deyimsel değil düz anlamıyla kullanılması.
+Bulgular:
+- [orta] deyim işareti, sayfa 8 ve deyim_cumleleri: "el kaldırmak" deyim olarak etiketlenmiş, ama deyim cümlesi düz anlamlı ("{yoldaş} elini kaldırdı"). Sayfadaki replikler de deyimsel anlamı göstermiyor. Alıntı: "{yoldas:yalin|bir arkadaş} elini kaldırdı." Öneri: deyimsel anlamı (TDK tanımlarına göre oy ya da söz talebi, ya da vurmak) bağlamda gösteren bir cümle yazılsın; ya da etiket "deyim" yerine düz anlamlı bir ifade olarak düzeltilsin.
+- [düşük] s2 dogru şık aciklaması, sayfa 2: "Yenilenen sensörler, kulenin hava ölçümü için kullanıldığını gösterdi." Sayfa 2'de yalnızca sensörlerin yenilendiği öğreniliyor; kulenin işlevi ancak sayfa 14'te belediye yanıtıyla netleşiyor. Alıntı: "Kulede bazı meteoroloji sensörlerinin yenilendiğini öğrenince". Öneri: "gösterdi" yerine "düşündürdü" gibi daha yumuşak bir fiil.
+- [düşük] s4 dayanak sayfa 5: "sağanak" sözcüğünün tanımı metinde yok; sayfa 5 yalnızca "gök gürültülü sağanak olasılığı" kullanımını veriyor. Alıntı: "gök gürültülü {sağanak} {olasılık}". Öneri: tanım sözlükle teyit edilsin; dogru şık ("kısa süreli, şiddetli yağmur") genel sözlük bilgisiyle doğru.
+Doğrulanamayan iddialar: "Sağanak" tanımı metin dışı sözlük bilgisi (sözlükle teyit edilmeli). Diğer iddialar (termometrenin güneşte yüksek değer göstermesi, tahminin olasılık ve kesinlik derecesi taşıması, ölçüm yerinin önemi) doğru.
+Güçlü yanlar: Tahmin ile gözlem ayrımı (sayfa 4 ve 8) bilimsel olarak doğru ve yaşa uygun. Termometrenin güneşte yanlış ölçmesi ve ölçüm koşullarının karşılaştırılabilirliği doğru bir bilgi olarak işlenmiş.

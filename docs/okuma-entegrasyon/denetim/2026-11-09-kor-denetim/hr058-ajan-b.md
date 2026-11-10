@@ -1,0 +1,18 @@
+# HR-058 · Gökyüzündeki Balonun Sırrı · Ajan B (uygunluk ve kalite) · kör-2026-11-09
+Karar: fail
+Özet: Bilimsel içerik özenli ve güvenli; fakat metin 5. sınıf için yaklaşık 2000 kelime, olay örgüsü yok denecek kadar az, aynı ders sürekli yeni sahnelerle tekrarlanıyor ve vaaz yoğun.
+Bulgular:
+- [yüksek] Metin geneli / uzunluk : 5. sınıf için ~2010 kelime (hedef ~650). 6. sayfadan sonrası aynı mesajı (tek neden yok, kaynak kontrol et, soru sor) başka örneklerle yineliyor. Alıntı: "Bir olayın gerçekleşmesi bazen birden fazla koşula bağlı olabilirdi." Öneri: Balonun yükselişi, rüzgâr nedeniyle bekleme ve kısa bir keşfe odaklanan 600-800 kelimelik bir metne indir.
+- [yüksek] Vaaz : Açık ders ve beyan cümleleri çok ("fark etti/anladı/öğrendi", öğretmen ve baba repliği ile ders). Alıntı: "Hayal kurmak çok güzeldi; hayallerin güvenle gerçekleşmesi içinse bilgi, emek ve dikkat gerekiyordu." ve "Bildiklerinin sınırını kabul etmek, merakını azaltmamıştı." Öneri: Dersleri sahnenin içine göm, öğüt repliklerini ve kapanış özetini kaldır.
+- [yüksek] Yapı / sahne tekrarı : Sunum, fotoğraf bakışı, "defterine yazdı" sahneleri birkaç kez baştan başlıyor; zaman çizgisi tutarsız (sunum yapılmış, sonra sunum "başlangıcına yazılıyor"). Alıntı: "Bir hafta sonra {kahraman} sınıfta sunum yaptı." ... "{kahraman} bu sözü sınıf sunumunun başlangıcına yazdı." ... "Bir sonraki sınıf sunumunda {kahraman} arkadaşlarına kendi hazırladığı üç soruyu sordu." Öneri: Tek sunum sahnesi bırak, tekrarlayan sahneleri sil.
+- [orta] Soru s3 : Kök kendi başına anlaşılmıyor; hangi düşünceden söz edildiği belirsiz. Alıntı: "Kahramanın bu düşüncesi neyi gösterir?" Öneri: Kökü, ilgili cümleyi ya da sahneyi anarak yeniden yaz; ayrıca cevap metinde aynen verildiği için gerçek bir yorumlama sorusu yaz.
+- [orta] Anlatım tonu : Kesintisiz belgesel/ders anlatımı; karakterler (pilot, görevli, baba) yetişkin anlatıcı gibi konuşuyor, olay yerine açıklama var. Alıntı: "Önemli olan, balonun içindeki sıcak havayla dışarıdaki havanın oluşturduğu yoğunluk farkının kaldırma kuvvetine etkisiydi." Öneri: Bilgiyi gözlem ve çocuk diyaloğu içinde ver, cümleleri kısalt.
+- [düşük] Soru s2 : "Çıkarım" etiketli ama cevap pilotun doğrudan söylediği bilgi; doğru şık en uzun (C ile eşit). Alıntı: "İç hava ile dış hava arasındaki yoğunluk farkı ve kaldırma kuvveti". Öneri: Etiketi hatırlama yap veya şık uzunluklarını dengele.
+- [düşük] Soru s4 : Sözcüğün tanımı metinde kahramanın defterine aynen yazılıyor; bağlamdan çıkarım gerekmiyor. Alıntı: "Sıcak hava balonunun içindeki havayı ısıtan araç," diye not düştü. Öneri: Tanımı vermeden bağlam ipucu bırak.
+- [düşük] Belirsiz sahiplik : "Babası" kimin babası belli değil. Alıntı: "{yoldas:yalin|bir arkadaş} başlangıçta üzülmüş olsa da babasıyla birlikte beklemeyi kabul etti." Öneri: Kişiyi açıkça belirt.
+- [düşük] Tanıtım / etiket : Tanıtımda "rengin mi, ısının mı etkisini araştırdı" deniyor; metinde bir araştırma yok, renk sorusu tek paragrafta pilota soruluyor. Öğrenme hedefi "Benzer görüntü, aynı neden değildir", metinde "demek değildir". Alıntı: "Balon neden yükselir? {kahraman} rengin mi, ısının mı etkisini araştırdı." Öneri: Tanıtımı metinle eşle.
+Doğrulanamayan iddialar: "Zarf" sözcüğünün balon gövdesi için Türkçedeki teknik kullanımı; balon yönlendirmesine dair genel bilgiler ve ısıtılmış havanın kütle/yoğunluk açıklaması (genel olarak makul, uzman onayı yok); D6/D5 eşleşmesi.
+Güçlü yanlar:
+- Güvenlik mesajları (brülöre dokunmama, uzman kararı, güvenlik çizgisi) doğru ve doğal biçimde işleniyor.
+- Bilimsel kavramlar ihtiyatlı ve hatasız ifade ediliyor; "sıcak hava yükselir" yanılgısı ele alınıyor.
+- Etiketler (tur: bilim, konu, temalar) metinle uyumlu; yetiskin_uygun tutarlı.

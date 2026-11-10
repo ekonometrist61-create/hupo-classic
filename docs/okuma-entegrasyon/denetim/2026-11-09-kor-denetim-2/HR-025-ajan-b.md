@@ -1,0 +1,19 @@
+﻿# HR-025 · Bremen Yolcularının Yeni Şarkısı · Ajan B (uygunluk ve kalite) · kör-2
+Karar: review_needed
+Özet: Uzunluk (~373 sözcük) ve içerik güvenliği uygun; ancak birkaç kopuk/anlamsız cümle, bağlam dışı deyim cümlesi, ders kalıpları ve şık uzunluğu sorunları var.
+Bulgular:
+- [orta] Sayfa 4, Türkçe : Anlamsız cümle. Alıntı: "{yoldas:yalin|bir arkadaş} zaman zaman hızlanmak istediğinde arkadaşları ona yetişmeleri için biraz durmasını söyledi." Mantık ters (yetişmek için kendisi durmalı); ayrıca bu parça ana akışla ilgisiz. Öneri: "Arkadaşları ona biraz yavaşlamasını söyledi" biçiminde sadeleştir ya da paragrafı sil.
+- [orta] Sayfa 2, akış : Eşeğin ritmi kaçırması ve köpeğin adımları tutarsız. Alıntı: "Köpek önce dört eşit adım attı, sonra ayak izlerini yerde gösterdi." "Ayak izlerini yerde göstermek" anlamsız; "herkes aynı ritmi duymuyor" cümlesi de sonraki çözümle bağlanmıyor. Öneri: Bu paragrafı sadeleştir: köpek adımlarıyla ritmi göstersin, sessizlik fikri yeter.
+- [orta] Sayfa 4, deyim : "Kulak vermek" cümlesi bağlamdan kopuk ve gerçek anlamda (duvara kulak) kullanılıyor; hemen ardından "dedi" öznesi belirsiz. Alıntı: "[[deyim:hr025_kulak_vermek]] Sesler artık birbirine karışmıyordu; ortaya bir {kelime:hr025_uyum} çıkmıştı. “Bence yolculuğumuzun bir şarkısı oldu,” dedi." Öneri: Deyimi mecaz anlamda ("Eşek arkadaşlarının sesine kulak verdi") kullan, konuşanı belirt.
+- [orta] Genel, vaaz : Ders kalıpları ve açık öğütler. Alıntı: "Gücünü doğru zamanda kullansan yeter." ; "Kendi sesinin kıymetini kaybetmemiş, yalnız diğerlerine yer açmıştı." ; "Güzel olan zaten farklı seslerimiz." ; "Köpek, değirmende öğrendikleri ritmi unutmamak için adımlarını saydı." ; "Artık hepimiz aynı sesle mi şarkı söyleyeceğiz?" Öneri: Açık dersi söyleten replikleri azalt (kedinin "Hayır" cevabı kalabilir), "öğrendikleri" ve özet cümlelerini sil, sonu eylemle (çan sesi) bırak.
+- [orta] s4 : Doğru şık B belirgin uzun ve "örüntü" 3. sınıf için ağır; A ve C bağlam dışı. Alıntı: "Düzenli tekrar eden ses ve zaman örüntüsü". Öneri: "Düzenli tekrar eden vuruşlar" gibi kısalt, çeldiricileri aynı uzunlukta ve ses/müzikle ilgili yaz.
+- [düşük] s1 : Doğru şık C en uzun ve tek tam doğru liste; çeldiriciler hayali. Öneri: Hayvan listelerini üç/dört sözcükle eşitle (örn. "Eşek, köpek, kedi ve keçi").
+- [düşük] s3 ve açıklaması : Beceri "yorumlama" ama cevap kedinin sözünde birebir geçiyor; açıklama bozuk. Alıntı: "Kedi, farklı seslerinin güzel olduğunu söyledi." Öneri: "farklı seslerimizin" ya da "farklı seslerin" yap; etiketi hatırlama yap veya yorum gerektiren soru yaz.
+- [düşük] Sayfa 2, Türkçe : "Çünkü" ile başlayan tek cümlelik parça. Alıntı: "Bir süre sonra eşek ritmi kaçırdı. Çünkü çatıdan damlayan suyun sesi hızlanmıştı." Öneri: Cümleleri birleştir.
+- [düşük] Karakter belirsizliği : "{yoldas}" muhtemelen horoz; ama aynı sahnede "Önce horoz ritim tuttu" ayrıca geçiyor, yoldaş ayrı bir karakter gibi okunabiliyor. Öneri: Yoldaşı açıkça horozla eşle.
+- [düşük] Not/ek : Gövdenin sonunda yer alan telif ve uyarlama notu hikâye metni gibi okunuyor. Alıntı: "Not: Bu hikâye, Grimm Kardeşler’in derlediği Bremen Mızıkacıları masalından esinlenen özgün bir uyarlamadır." Öneri: Künye alanına taşı.
+Doğrulanamayan iddialar: {kelime:...} işaretlerinin ekli çıktısı ("değirmen sığındı" biçiminde kalıyor olabilir); D4/D14 değer kodlarının içeriği; "Kulak vermek" deyim cümlesinin yayın aşamasında nasıl yerleştirildiği.
+Güçlü yanlar:
+- Uyum teması somut bir sahneyle (ritim, sessizlik, sıra) işleniyor; bölüm sonlarında ses taklitleri canlı.
+- Güvenlik/içerik sorunu yok; etiketler (tur, konu, tema) uyumlu; uzunluk 3. sınıf bandında.
+- Eşeğin alınganlığı ve çözümü hayvan karakterlerine uygun, duygusal olarak inandırıcı.

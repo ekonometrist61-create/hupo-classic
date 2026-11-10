@@ -1,0 +1,12 @@
+# HR-093 · Sahte Ay Fotoğrafı · Ajan B (uygunluk ve kalite)
+Karar: review_needed
+Özet: Görsel doğrulama, kaynak arama ve kırpmanın bağlamı değiştirmesi konusu somut bir olayla iyi kurulmuş. Ancak metin çok sayıda slogan biçiminde ders cümlesi içeriyor, bir cümlede teleskop sözcüğü çekimsiz kalmış ve soru kökü "Kahramanın" biçiminde sabit kalmış.
+Bulgular:
+- [yüksek] satır 86, 188, 214, 237, 272 ve 275 (vaaz): Ders ve slogan cümleleri sahneleri açıklıyor. Alıntı: "Merak değerli; ama merakın yolu bazen durup sormaktan geçer." ve "Görmediğimiz her boşluğu kesin bir haberle doldurmak zorunda değildik." Öneri: Slogan niteliğindeki cümlelerin çoğunu kaldır; gazete başlığı ve köşe notunu sahnenin içine değil, metnin dışında bir öğe olarak sun.
+- [orta] satır 62 (dilbilgisi): Teleskop sözcüğü çekimsiz kalmış. Alıntı: "görüntünün bir uzay {kelime:hr093_teleskop} geldiği söyleniyordu". Öneri: "bir uzay teleskobundan geldiği" biçimini kullan ve işaretçinin çekimli çıktı verdiğini kontrol et.
+- [orta] satır 214 (kalın tez vurgusu): Kalın yazılmış cümle okura doğrudan sonuç veriyor. Alıntı: "**Bir resim, gerçek diye sunulmadan da insanı mutlu edebilirdi**". Öneri: Kalın yazımı kaldır; düşünceyi Kahraman'ın kendi sözünde bırak.
+- [orta] bütün metin (uzunluk): Yaklaşık 3.500 sözcük ve 405 cümle; kırpma, kaynak, görsel analiz ve etik konuları aynı metinde yoğun. 7. sınıf okuma bandında tek oturumluk yük yüksek. Öneri: Etik tartışma bölümünü kısalt ya da ayrı bir metne taşı.
+- [düşük] soru s2 (kök): "Kahramanın" biçimi sabit kalmış; seçilen kahraman adıyla tutarsız okunabilir. Alıntı: "Kahramanın “Beğeni, fotoğrafı kaç kişinin beğendiğini gösterir” sözünden". Öneri: Kökü genel bir ifadeyle yaz ya da çekim işaretçisini kullan.
+- [düşük] soru s4 (kelime örtüşmesi): Kökteki "hayalî" sözcüğü doğru şıkta "hayal ürünü" olarak tekrar ediliyor. Öneri: Doğru şıkkı kelime tekrarı olmadan yaz (örneğin "Gerçekte var olmayan").
+Doğrulanamayan iddialar: Astronomi bilgileri (uydu, dalga boyu ile görüntü işleme) yalnız genel düzeyde kontrol edildi. Kurgusal sanatçı ve gözlemevi isimlerinin gerçek kurumlarla çakışmadığı ayrıca doğrulanmadı. Sınıf yük eşiği norm belgesiyle karşılaştırılmadı. Çekim işaretçilerinin render davranışı doğrulanamadı.
+Güçlü yanlar: Kaynak arama, sanatçı bağlantısı ve kırpma karşılaştırması adım adım ve doğrulanabilir biçimde anlatılıyor. Hata düzeltme ve özgün eserin izinsiz yeniden yayımlanmaması gibi etik ayrıntılar yaşa uygun biçimde yer alıyor.

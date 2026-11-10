@@ -1,0 +1,16 @@
+# HR-051 · Orman Saatini Kim Durdurdu? · Ajan B (uygunluk ve kalite) · kör-2
+Karar: review_needed
+Özet: Gözlem odaklı, vaazsız ve sınıfa uygun bir hikâye (yaklaşık 691 kelime); ancak s2'nin doğru şıkkı belirsiz, s4'te "değişmeceli anlatım" terimi hedef sözcükten daha zor ve kesin değil, deyim yerleşimi bozuk. Kritik ve yüksek bulgu yok.
+Bulgular:
+- [orta] s2 doğru şık : "Hava koşulları farklıydı" belirsiz ve metinde yok; metindeki gerçek gerekçe "rüzgâr ve yiyecek". Kök de "saatin durmasını göç işareti kabul etmemiştir" diyor, oysa hiçbir karakter bunu önermiyor. Alıntı: "Kuşlar, uçuş kararını saatin koluna değil rüzgâra ve yiyeceğe göre veriyordu." Öneri: Doğru şık "Kararı rüzgâr ve yiyeceğe göre veriyorlardı" olsun; kök "Kuşların göçe hazırlanma kararı neye dayanıyordu?" olsun.
+- [orta] s4 terimi : Doğru şık "Değişmeceli anlatım" hedef sözcük "mecaz"dan daha ağır/teknik bir terim; "orman uyandı" için en uygun karşılık gerçek anlam dışı kullanım. Çeldiriciler ("Kesin ölçüm", "Resmî sözleşme") bariz. Alıntı: "Değişmeceli anlatım" Öneri: "Gerçek anlamının dışında, benzetmeli kullanım" gibi çocuğun anlayacağı bir ifade; çeldiricileri güçlendir.
+- [orta] Deyim yerleşimi : Deyim levhaya yazılı etiket olarak sunuluyor ("sözünün yazıldığı levha"), bu yapay; deyim cümlesindeki "bunu" öncülsüz kalıyor ve tırnak içindeki ikinci "Kulaktan kulağa haber yaymak" sözüyle çift/bozuk biçime dönüşüyor. "Kulaktan kulağa haber yaymak" bilinen kalıp "kulaktan kulağa yayılmak"tan farklı. Alıntı: "Baykuş Usta, “[[deyim:hr051_kulaktan_kulaga]] Kulaktan kulağa haber yaymak” sözünün yazıldığı tahta levhayı gösterdi." Öneri: Deyimi anlatıcı cümlesinde doğal kullan; TDK'da doğrula.
+- [düşük] s3 : Dayanak cümlesi ile cevap aynı; çeldiriciler ("cam bardak", "çakıl", "çiçek yaprağı") saçma; beceri yorumlama değil hatırlama. Alıntı: "Nemlenen tahta parçası" Öneri: Gerçek bir yorum gerektiren kök kur ("Çiçeklerin açması saatin durmasıyla ilgili midir?").
+- [düşük] Bilimsel tutarlılık : Kırlangıçların uçuş kararında yaprak sararmasına bakması dayanaksız; kaynak suyu bir yerde "ılık", başka yerde "sıcak"; ölçüm için alınan ip hiç kullanılmıyor. Alıntı: "Kırlangıçlar dallardaki yaprakların sararmasına da bakmıştı." / "yakınında ılık suyun aktığı küçük bir kaynak" / "sıcak su kabarcıkları" Öneri: Gözlemleri tek tutarlı biçimde yaz.
+- [düşük] Akış : "Orman uyandı!" repliği ile yaprağın düşmesi arasında bağ zayıf; son iki bölüm dolgu ayrıntılarla (kaynak resmi, kâğıdı çevirmek) bitiyor. Alıntı: "suyunu gerçek derenin kıvrımlarına benzetmek için kâğıdı birkaç kez çevirdi." Öneri: Dolguyu kes, sonuçta çiçeklerin nedenini tek cümleyle gözleme bağla.
+- [düşük] Karakter adı : "Sincap Mavi" sonra yalnız "Sincap", "Baykuş Usta" sonra "Baykuş/Usta" olarak değişiyor. Öneri: Tek ad kullan.
+Doğrulanamayan iddialar: "Kulaktan kulağa haber yaymak" deyiminin sözlük karşılığı; "değişmece" teriminin MEB 5. sınıf Türkçe terimleriyle uyumu; ahşabın nemle şişip dişliyi sıkıştırması (makul ama masalsı).
+Güçlü yanlar:
+- Çubuklarla yapılan karşılaştırma ve defter çizimleri, gözlem-çıkarım ayrımını eylemle gösteriyor, ders cümlesi yok.
+- Yaklaşık 691 kelime, sade ve yaşa uygun anlatım; güvenlik ve içerik sorunu yok.
+- Başlıktaki sorunun cevabı (nem) ve ayrı bir gizem (çiçekler) iki katmanlı, ilgi çekici kurulmuş.

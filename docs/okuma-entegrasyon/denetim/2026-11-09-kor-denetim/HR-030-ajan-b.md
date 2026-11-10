@@ -1,0 +1,16 @@
+﻿# HR-030 · Ormanın Kaybolan Patikası · Ajan B (uygunluk ve kalite) · kör-2026-11-09
+Karar: review_needed
+Özet: Metin 4. sınıf için uzunluk ve sözcük düzeyinde uygun (~450 kelime), güvenlik mesajı sağlıklı. Soru şıklarında uzunluk dengesizliği, bir sorunun yanıtının tartışmalı olması ve öğretmenin açık ders cümlesi orta düzey bulgulardır.
+Bulgular:
+- [orta] Sayfa 3, öğretmen replikleri ve sayfa 6 son cümle : Açık ders/vaaz. Hem öğretmen hem kahraman genellemeyi söylüyor ve son cümle ahlak özeti. Alıntı: "“**Çünkü kısa yol her zaman güvenli yol değildir**,” dedi öğretmeni." ve "İyi bir yol bulmak, yalnızca hedefe varmak değil, oraya güvenle ulaşmaktır." Öneri: Dersi bir eylemle göster (kahraman iki haritayı karşılaştırıp sessizce açık yolu işaretler); özdeyiş cümlelerinden en az birini çıkar.
+- [orta] s2 : Doğru şık (D) diğerlerinden bariz uzun ve yapısı farklı (tek kelimelik şıklar yanında iki yan cümle). Ayrıca sorunun gerçek yanıtı metinde patikanın kapalı olması (toprak kayması); doğru şık ise öğretmenin genelleme cümlesi. Alıntı: "Kısa yol her zaman güvenli değildi; güncel levha ve görevliler daha doğru bilgi veriyordu". Öneri: Şıkları aynı uzunlukta kur; doğru şık "Patika toprak kaymasıyla kapatılmıştı" gibi metne dayalı kısa bir ifade olsun.
+- [orta] s4 : Doğru şık (D) bariz en uzun ve tanım biçiminde, çeldiriciler tek parça kısa isimler; uzunluktan tahmin edilebilir. Alıntı: "Haritada gerçek uzaklığı küçülterek gösteren oran". Öneri: Çeldiricileri de benzer uzunlukta ve aynı sözcük türünde yaz.
+- [orta] Sayfa 2 sonu - sayfa 3 başı : Akış tutarsızlığı. Çocuklar patikanın kapalı olduğunu ilk sayfada öğrenmişken terasta masum bir soruyla yeniden soruyorlar. Alıntı: "“Eski patika haritada daha kısa. Neden orayı kullanmıyoruz?” diye sordu." Öneri: Soruyu "Kapalı patika neden hâlâ haritada duruyor?" biçiminde değiştir ya da kısa-yol/güvenli-yol karşıtlığını başka bir olayla (kavşakta kısa ama bakımsız yol) göster.
+- [düşük] s3 : Beceri etiketi yorumlama, ancak yanıt defter cümlesinde doğrudan yazılı (hatırlamaya yakın). Alıntı: "Kahramanın defterine yazdığı cümleye göre iyi bir yol nasıl olmalı?" Öneri: Kök, metindeki bir olayın anlamını yorumlatacak şekilde yeniden kurulsun.
+- [düşük] Sayfa 3 : Anlatıcı "öğrendi" kalıbı ve kroki/harita karışıklığı. Alıntı: "yaklaşık sonuçları kesin ölçüm sanmamaları gerektiğini de öğrendi." ve "krokideki küçük karelerin ne işe yaradığını". Öneri: "öğrendi" yerine bir sayma eylemi göster; kroki ile harita ayrımını netleştir.
+- [düşük] Sayfa 4-5 : Simge+yazı önerisi iki kez tekrar ediliyor. Alıntı: "Nisa ise hem simge hem yazı bulunmasının daha anlaşılır olacağını söyledi." ve "Levhalara ok, kısa sözcük ve kolay tanınan simgeler koymayı kararlaştırdılar." Öneri: Tek sahnede birleştir.
+Doğrulanamayan iddialar: Önceki program 4. sınıf kazanım eşlemesi (frontmatter'da insan editöre bırakılmış); "kroki/güzergâh/ölçek" sözcüklerinin 4. sınıf sözcük listesindeki konumu.
+Güçlü yanlar:
+- Güvenlik ve kapsayıcılık (renk körlüğü, okuma güçlüğü) doğal biçimde işlenmiş; levhaya dokunmama davranışı çocuk için uygun.
+- Uzunluk (~450) ve cümle yapısı 4. sınıfa uygun; olay akışı (kavşak, terasa varış) açık.
+- Dört soru dört beceriyi kapsıyor ve dayanak sayfaları doğru.

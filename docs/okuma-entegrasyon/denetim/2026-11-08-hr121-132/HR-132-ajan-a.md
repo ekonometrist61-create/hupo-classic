@@ -1,0 +1,9 @@
+# HR-132 · Araç ve İki Zaman Çizelgesi · Ajan A (olgu ve doğruluk)
+Karar: pass
+Özet: Yürürlük tarihi, geçici talimatla bekleme ve tarih etiketi fikri doğru ve sınıf düzeyine uygun; sorular metinle uyumlu. Tek önemli kurgu tutarsızlığı, istasyon panosunun kalkış ile son durakta iki farklı yerde görünmesidir.
+Bulgular:
+- [orta] sayfa 1 ve sayfa 6 (kurgu tutarlılığı): Pano, sayfa 1'de kalkış istasyonunda asılıdır; sayfa 6'da son durakta "panodaki iki çizelge" üzerine etiket konuyor ve sahne bu panoyu "ertesi gün gelecek yolcular" için kullanıyor. Panonun aynı olup olmadığı ve hangi istasyonda olduğu açıklanmıyor. Alıntı: "Son durakta istasyon görevlisi panodaki iki çizelgenin üzerine açık tarih etiketleri koydu." Öneri: sayfa 6'da pano açıkça son durağın panosu olarak tanıtılsın ya da son sahne kalkış istasyonuna taşınsın.
+- [düşük] tanıtım: "Gece treni, hangi çizelgenin geçerli olduğunu tarihlere bakarak belirler." cümlesinde karar treni yapıyormuş gibi okunuyor; metinde tarihleri karşılaştıran {kahraman} ve kararı bildiren kontrol merkezi var. Öneri: "{kahraman}, hangi çizelgenin geçerli olduğunu tarihlere bakarak anlar." biçiminde düzeltilsin.
+- [düşük] s4 aciklama: "Görevli talimatı gerekliydi" doğru cevap, ancak sayfa 3 bekleme kararının kontrol merkezinden bildirilen bilgiye bağlandığını da söylüyor. Aciklama bu zinciri ("merkez bilgisi ve görevli talimatı") tam yansıtmıyor. Öneri: aciklama iki kaynağı da anacak biçimde genişletilsin; doğru şık değişmez.
+Doğrulanamayan iddialar: yok. Tren işletmesi (yürürlük tarihi, kontrol merkezi, geçici teknik inceleme, duraklama talimatı) genel olarak makul; kurgusal bir hat olduğu için gerçek bir kuruma ait bilgi iddiası yok.
+Güçlü yanlar: s1, s2, s3 ve s5 dayanakları birebir ve sayfa numaraları doğru. Tarih karşılaştırması ile eski ve yeni çizelgenin ayrılması hikâyenin ana fikrini açık ve doğru işliyor.

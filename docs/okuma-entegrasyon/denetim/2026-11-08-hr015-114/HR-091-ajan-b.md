@@ -1,0 +1,12 @@
+# HR-091 · Anka'nın Kayıp Rotası · Ajan B (uygunluk ve kalite)
+Karar: review_needed
+Özet: Anlatı, harita ve efsane ayrımını sahnelerle iyi kuruyor; ancak metin sonunda bir editör notu kalmış ve ders cümleleri (özellikle sonda "öğrendiği için mutluydu") sahneleri açıklamaya dönüşüyor. Uzunluk de sınıf düzeyi için yüksek.
+Bulgular:
+- [yüksek] satır 271 (metin içi editör notu): Hikâyenin son satırından sonra meta bir not kalmış. Alıntı: "Not: Bu bir masaldır; gerçek dünyaya ilişkin bilimsel veya dinî bir iddia taşımaz." Öneri: Notu gövdeden çıkar; gerekiyorsa kaynak ya da tür bilgisi olarak ayrı bir alanda göster.
+- [yüksek] satır 269 (sonda ders): Son paragraf öğrenme sonucunu cümleyle açıklıyor. Alıntı: "{kahraman} bunu öğrendiği için mutluydu." Öneri: Son cümleyi bir eylemle bitir (örneğin defterdeki kuş yokluğu notu) ve sonucu okura bırak.
+- [yüksek] satır 155 ve 174 (vaaz): Ders cümleleri sahnelere yapışık. Alıntı: "Haritadan silinen çizgi ile doğadan kaybolan yaşam aynı şey değildir." ve "Bazen bilgiyi dikkatle paylaşmak, sır saklamak değildir; canlıları korumaktır." Öneri: Bu iki cümleyi sahnedeki somut ayrıntıya indir; sergi etiketi olarak ayrı bir alana taşı.
+- [orta] satır 146 (kalın tez vurgusu): Kalın yazılmış cümle metnin tezini doğrudan okura veriyor. Alıntı: "**Bir yeri geniş açıdan görmekle yakından incelemek farklı şey**". Öneri: Kalın yazımı kaldır; bunu Sude'nin "biz o kadar yüksekten bakamıyoruz" sözüyle birlikte bırak.
+- [orta] bütün metin (uzunluk): Yaklaşık 3.500 sözcük ve 411 cümle; 7. sınıf okuma bandında tek oturumluk yük yüksek. Öneri: Sergi, röportaj ve söyleşi bölümlerinden birkaçını birleştirerek kısalt.
+- [düşük] soru s4 (sözcük bağlamı): "simge" sözcüğü metinde harita simgesi ve kültür simgesi olarak iki farklı anlamda geçiyor; kökteki bağlam bunu ayırmıyor. Öneri: Kökü "Anka'nın kültür simgesi" gibi bağlamla daralt.
+Doğrulanamayan iddialar: Kuş göçü, verici kayıtları ve sulak alan değişimine dair ifadeler yalnız genel düzeyde kontrol edildi; kaynaklı doğrulama yapılmadı. Sınıf yük eşiği norm belgesiyle karşılaştırılmadı. Çekim işaretçilerinin render davranışı doğrulanamadı.
+Güçlü yanlar: "Masalın gücü simgede, bilimin gücü ölçülebilir soruda" ayrımı ve "gözlem noktası ile verici kaydı farkı" açık biçimde işleniyor. Hassas yuva konumlarının yayımlanmaması ve sözlü anlatı için izin alınması gibi etik ayrıntılar yaşa uygun biçimde yer alıyor.

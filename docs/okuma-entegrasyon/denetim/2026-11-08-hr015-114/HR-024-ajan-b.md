@@ -1,0 +1,15 @@
+# HR-024 · Bulut Postacısının Son Mektubu · Ajan B (uygunluk ve kalite)
+Karar: review_needed
+Özet: Yön ve adres temalı hikâye sınıf düzeyine uygun ve içerik olarak temiz, ancak metinde bir paragraf iki kez geçiyor, sorularda sabit ad ({kahraman} yerine "Pofuduk") var ve doğru şıklar belirgin biçimde en uzun. Sonda ahlaki bir cümle ve editör notu gövdede bırakılmış.
+Bulgular:
+- [yüksek] Gövde, bölüm sınırı (satır 64 ve 66): aynı cümle ardarda iki kez yazılmış. Alıntı: "Evde yaşlı bir teyze yaşıyordu." Öneri: ikinci tekrarı sil; deyim işaretleyicisini tek cümleye bağla.
+- [yüksek] Sorular s2 ve s3 (s1 de hafif): doğru şık bariz biçimde en uzun. s2 doğru şık 49 karakter, yanlışlar 17 ve 16; s3 doğru şık 45 karakter, yanlışlar 14 ve 9; s1 doğru şık 31 karakter, yanlışlar 24 ve 12. Alıntı: "Pusula kuzeyi gösterirken kendisi güneye gidiyordu". Öneri: doğru şıkları kısalt, yanlış şıkları benzer uzunlukta yaz.
+- [yüksek] Sorular s1–s3 ve tanıtım: kahraman sabit "Pofuduk" olarak yazılmış, gövde ise {kahraman} yer tutucusu kullanıyor; çocuk kahramanı seçerse sorular uymaz. Alıntı: "Pofuduk'un bir terslik olduğunu anlamasının nedeni neydi?" Öneri: soru ve tanıtım metinlerinde {kahraman} kullan.
+- [yüksek] Gövde sonu, editör notu: "Dil hedefi: kuzey–güney, adres, yön bilgisi; ... Okuma sonrası: ..." metin gövdesinde yer alıyor. Uygulama bunu gösteriyorsa çocuk metnine sızar. Öneri: notu gövdeden çıkar, ayrı alana taşı.
+- [yüksek] Son bölüm, vaaz: ahlaki cümle ve "öğrenmişti" kalıbı. Alıntı: "Bir yere yetişmek kadar, **doğru yere varmak** da önemlidir." ve "sevincin taşıyıcısı olduğunu öğrenmişti". Öneri: ders cümlesini sil; sonu pusulanın panoya asılması gibi somut bir eylemle bitir.
+- [orta] Deyim hedefi (deyim_hr024, "Gözleri parlamak"): deyim_cumleleri içindeki "Zarfı açınca gözleri parladı." cümlesi metinde hiç geçmiyor; işaretleyici teyze cümlesine konmuş. Alıntı: "Evde yaşlı bir teyze yaşıyordu.[[deyim...]]". Öneri: cümleyi metne yerleştir ya da işaretleyiciyi karşılık gelen yere taşı.
+- [orta] Dilbilgisi, gövde: nesne eki eksik. Alıntı: "Çantasındaki {kelime:hr024_pusula} çıkardı." Öneri: "pusulayı çıkardı".
+- [orta] Anlatım, belirsiz özne ve tutarsızlık: "Yağmur Bulutu ... onu dikkatle saklamıştı" cümlesinde saklayanın kim olduğu belirsiz; "zarfın üzerindeki ismi" denirken zarfta yalnızca adres vardı. Alıntı: "Zarfın üzerindeki ismi ve kapıdaki ismi karşılaştırdı." Öneri: cümleleri sadeleştir; isim yerine adresi karşılaştır.
+- [düşük] Dil: "yelkenlere yardım eder" tuhaf bir ifade; "yelken açan"/"yelkenleri ayarlar" gibi daha doğal bir kullanım tercih edilebilir.
+Doğrulanamayan iddialar: D16/D5 değer kodlarının içerik karşılığı ("sorumluluk, özür, duygusal bağ") bu dosyada tanımlı değil; program kazanımı bu dosyadan doğrulanamadı; cümle ve sözcük sayımı nicel olarak yapılmadı, sınıf düzeyi değerlendirmesi niteldir.
+Güçlü yanlar: Yön, pusula ve adres bilgisi kuzey-güney bağlamında somut ve yaşa uygun işlenmiş; "yıldız süstür, yön göstermez" düşüncesi metinle sorular arasında tutarlı bir ipucu oluşturuyor.

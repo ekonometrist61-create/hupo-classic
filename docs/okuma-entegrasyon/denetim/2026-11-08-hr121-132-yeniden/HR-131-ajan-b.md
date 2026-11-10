@@ -1,0 +1,12 @@
+# HR-131 · Babam ve Kayıp Başlığın İzinde · Ajan B (uygunluk ve kalite) · yeniden denetim
+Karar: review_needed
+Özet: Kanıt izleme (fotoğraf, tarih, defter, kaynak etiketi) adım adım kurulmuş ve vaaz içermiyor. Ancak s1'in kök-cevap örtüşmesi ile soru setinin hatırlama ağırlığı, iki orta sorunu birlikte oluşturuyor.
+Bulgular:
+- [orta] soru s1 (sayfa 1, hatırlama): kökte ve doğru şıkta aynı sözcük var; doğru şık da en uzun şık. Alıntı kök: "Fotoğrafın hangi bölümü eksikti?" / doğru şık: "Fotoğrafın altındaki başlık" (yaklaşık 27 karakter; diğer şıklar 20–24). Öneri: kökü "Eksik olan neydi?" biçiminde değiştirin ve doğru şıkkı diğer şıklarla aynı uzunluğa getirin.
+- [orta] beceri dağılımı: 4 sorunun 3'ü hatırlama (s1, s3, s4), yalnız 1'i çıkarım (s2). s3 ve s4'ün doğru şıkları dayanak cümlesinin neredeyse aynısı. Öneri: s3 ya da s4'ü çıkarım veya yorumlama becerisine çevirin (ör. kaynak etiketine neden tarih ve belge eklendiğini soran bir soru).
+- [düşük] soru s2 açıklaması: açıklama "fotoğraftaki sepet de farklıydı" diyerek ikinci bir neden veriyor, ama şıklarda bu neden yok; "neden" kökü tek cevap bekliyor. Öneri: açıklamadaki ikinci nedeni çıkarın ya da bir şık olarak ekleyin.
+- [düşük] soru s2 çeldiricisi D ("Fotoğraflar tamamen renksizdi") metinde ne doğrulanıyor ne yalanlanıyor; eleme için mantık dışı bir şık. Öneri: metinde karşılığı olan bir yanlış neden (ör. farklı bir etkinlik afişi) ile değiştirin.
+- [düşük] metin, sayfa 3: "İlk fotoğrafın tarihini gazetenin tarih bilgisinden biliyordu." Başlığı yırtık fotoğrafın tarihinin nereden geldiği tek cümleyle netleşmiyor. Öneri: "gazete sayısının tarihinden" gibi açık bir ifade.
+- [düşük] etiket: tur "gizem" olarak işaretli, ancak gerilim düşük; çözüm tek bir tarih karşılaştırmasına dayanıyor. Öneri: etiket "bilim" ya da "kanıt" yönünde gözden geçirilebilir (karar insanda).
+Doğrulanamayan iddialar: okuma_bandi, okuma_zorlugu, kavram_zorlugu, ilgi_egilimi alanları yok. onceki_program: true bayrağı sınıf 4 ile tutarlı (sınıf 4 önceki programda). yetiskin_uygun=false alanının anlamı belirsiz; metinde yetişkin teması yok. deger_anahtarlari (D6, D16) ve maarif kodlarının içerik karşılığı doğrulanamadı.
+Güçlü yanlar: Kanıt zinciri (fotoğraf ayrıntısı, tarih karşılaştırması, duyuru defteri, sergi etiketi) okurun takip edebileceği sırada kurulmuş. Son sahnede öğrencinin kaynak açıklamasını okuması, kanıt kaynağını göstermeyi vaaz olmadan ele alıyor.

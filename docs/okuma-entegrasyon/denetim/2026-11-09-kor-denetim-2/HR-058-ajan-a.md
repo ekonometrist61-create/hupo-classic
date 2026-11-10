@@ -1,0 +1,14 @@
+# HR-058 · Gökyüzündeki Balonun Sırrı · Ajan A (olgu ve doğruluk) · kör-2
+Karar: review_needed
+Özet: Bilimsel çerçeve (ısınan havanın yoğunluğu azalır, kaldırma kuvveti artar, renk tek neden değil) doğru ve cevap anahtarları metinle destekleniyor. Tek orta bulgu, "yoğunluk" tanımının metinde gevşek verilmesi ve doğru şıktaki "birim hacimdeki kütle" ifadesiyle birebir örtüşmemesi.
+Bulgular:
+- [orta] s4 dayanak / sayfa 2 : Metindeki tanım ("belirli bir hacimde bulunan madde miktarı") ile doğru şık ("Birim hacimdeki kütleyi") ve açıklama aynı şey değil; "birim", "kütle" sözcükleri metinde yok, "madde miktarı" fizikte ayrı bir büyüklüğü de çağrıştırır. Alıntı: "Görevli, yoğunluk sözcüğünü belirli bir hacimde bulunan madde miktarını anlatırken kullandı." Öneri: Metni "birim hacimdeki kütle, yani belirli bir hacimde ne kadar madde bulunduğu" gibi birebir eşleşecek biçimde düzelt ya da şıkkı "Belirli hacimdeki madde miktarını" yap.
+- [düşük] s3 şıklar / sayfa 3 : Doğru şık "İki balonu karşılaştırarak" diyor, metinde karşılaştırılan şey iki küçük modeldir (büyük balon değil). Alıntı: "İki farklı renkli küçük model aynı koşulda benzer biçimde yükseldi." Öneri: Şıkkı "İki modeli karşılaştırarak" yap.
+- [düşük] s2 / sayfa 2 : Doğru şık dayanak cümlesindeki ifadeyi neredeyse aynen yineliyor ("iç havanın yoğunluğu"); çıkarım sorusu fiilen kelime eşlemesi. Çeldiriciler (sepet rengi, kumaş deseni, halat uzunluğu) bariz alakasız. Alıntı: "Isınan iç havanın yoğunluğu azalınca balona etki eden yukarı yönlü kuvvet ağırlığını aşabildi." Öneri: Daha akla yatkın çeldirici ekle (ör. kumaşın ağırlığı, rüzgâr hızı).
+- [düşük] sayfa 1 : Sıcak havanın "görüldüğü" iddiası fiziksel olarak sorunlu, sıcak hava görünmez. Alıntı: "Balonun ağzından sıcak havanın yükseldiği görülüyordu." Öneri: "hissediliyordu" ya da "alevin ısısı hissediliyordu" yap.
+- [düşük] sayfa 2, ogrenme_hedefleri : {kelime:...} işaretleri sözcüğü kendisi basıyorsa "yoğunluk yoğunluk sözcüğünü" ve "kaldırma kaldırma kuvveti" biçiminde tekrar oluşur. Alıntı: "{kahraman}, {kelime:hr058_yogunluk} yoğunluk sözcüğünü defterinin kenarına yazdı." Öneri: Oluşturucu çıktısını kontrol et, gerekiyorsa sözcüğü tek kez yaz. "Kaşlarını çatmak" kullanımı doğal ("beklemenin uzamasına kaşlarını çattı"); ardından gelen "Kaşlarını çatmak sözünü not etmişti" kısmı üstkurmaca.
+Doğrulanamayan iddialar: Yok (balonun işleyişi ve yoğunluk-kaldırma ilişkisi genel bilimle uyumlu). Eğitim çadırındaki gösteri düzeneği kurgusaldır.
+Güçlü yanlar:
+- "Benzer görüntü, aynı neden değildir" kavramı kontrollü karşılaştırma (aynı ısı göstergesi, farklı renk) ve üçüncü modelin dışarıda bırakılmasıyla tutarlı işleniyor.
+- Dayanak cümleleri sayfa numaralarıyla (1, 2, 3, 2) metinde birebir bulunuyor.
+- Kök ve açıklamalar metinle uyumlu, tek doğru şık var.

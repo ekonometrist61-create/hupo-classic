@@ -1,0 +1,17 @@
+# HR-026 · Kelime Makinesinin Karışıklığı · Ajan B (uygunluk ve kalite) · kör-2026-11-09
+Karar: fail
+Özet: Çokanlamlılık konusu 3. sınıfa uygun ve eğlenceli, fakat kalın yazılmış ders cümlesi sahneye bağlanmamış, "yüz sayfasını" cümlesi belirsiz, kâr/kar örneği çokanlamlılık konusuyla çelişiyor ve sorularda ipucu/uzunluk sorunları var.
+Bulgular:
+- [yüksek] 3. bölüm : Kalın yazılmış ders cümlesi öğüt gibi duruyor ve sahnede hazırlanmamış (hiç soru sorulmamış); ardından "fark etti" kalıbı ve kural kartı geliyor. Alıntı: "Sorular bazen cevaptan daha işe yarar" ve "{kahraman} bütün cümlelerin küçük bir ipucu taşıdığını fark etti." Öneri: Maksimi çıkarın; çocukların makineye sorular sorarak hatayı bulduğunu bir sahneyle gösterin, ipucu çıkarımını diyalogla verin.
+- [orta] 1. bölüm / s1 : "Dedem yüz sayfasını okudu" cümlesi ikili okunabilir ve Türkçe olarak sayı anlamını güçlü vermiyor ("yüz sayfa" olmalı); s1 bu yüzden belirsiz. Alıntı: "“Dedem {kelime:hr026_yuz} sayfasını okudu.”" Öneri: "Dedem yüz sayfa okudu." yazın.
+- [orta] 1. bölüm : Deyim cümlesinin enjekte edileceği yer, konuşmayı ve konuşanı bölüyor. Alıntı: "Makine masaya yüz tane yüz resmi çizdi.[[deyim:hr026_iki_buklum]] “Ben sayıyı söyledim!”" Öneri: Deyimi konuşmadan önceki ayrı bir cümleye koyun; "Ben sayıyı söyledim" repliğini açıkça kimin söylediğiyle belirtin.
+- [orta] s4 / 2. bölüm : "kâr" için bağlam ipucu yok; kartta tek başına "Bize kâr kaldı" duruyor, "Kışın kar yağdı" ile karşılaştırılıyor ve metin kendisi bunların aynı yazılmadığını söylüyor, yani çokanlamlılık değil eş sesliye yakın bir ayrım. Alıntı: "“Bize kâr kaldı”" ve "“Bunlar aynı yazılmıyor; sesleri de tam aynı değil,”" Öneri: Kâr örneğini tutarlı bir cümleyle ("Satışlardan kâr elde ettik") verin ya da s4'ü gül/yaz/çay gibi bağlamı olan bir örneğe çevirin.
+- [orta] Sorular s1–s4 : Doğru şık çoğunlukla en uzun; s2 ve s3 çeldiricileri bariz ve metne aykırı; s1 aslında sözcük bağlamı becerisi; s3 yorumlama cevabı sahneye dayanmıyor. Alıntı: "Kelimenin yanındaki sözcüklerden yararlanarak" (s2 C), "Kazanç, para artışı" (s4 C), "Dedenin hiç cevap vermediğini" (s3 C). Öneri: Çeldiricileri benzer uzunluk ve yapıda yazın; s1 etiketini sozcuk_baglami yapın; s3 için metindeki bir davranışa bağlı yorum sorusu kurun.
+- [düşük] Son bölüm : Makinenin duygu sorusu çokanlamlılıktan kopuk ve sondaki cümle kapanış öğüdü gibi. Alıntı: "Bir kelime oyunu, o gün yeni bir konuşmanın kapısını açmıştı." Öneri: Çay örneğinin sevinciyle bitirin, duygu sorusunu çıkarın.
+- [düşük] Sorular : Soru kökleri "Yoldaşın", "Kahraman" gibi yer tutucularla, s1 açıklaması metinde olmayan bir isimle yazılmış. Alıntı: "Mert'in cümlesinde yüz sayı anlamında kullanılıyor." Öneri: Soru kökünde kişi adı yerine "kardeşi" kullanın; "Mert" ifadesini kaldırın.
+- [düşük] Etiketler : temalar "okul" iken hikâye evde, dede ile geçiyor; kâr sözcük işareti "Kışın {kelime:hr026_kar} yağdı" cümlesindeki kar'a bağlı, etiket ise "kâr". Alıntı: "Kışın {kelime:hr026_kar} yağdı" Öneri: Temayı "aile" yapın; sözcük yuvasını kâr cümlesine taşıyın.
+Doğrulanamayan iddialar: deger_anahtarlari (D14, D6) eşleşmesi; "Bize kâr kaldı" kalıbının doğal kullanımı kaynak teyidi olmadan doğrulanamadı; kâr/kar ayrımının TYMM 3. sınıf kazanımıyla ilişkisi görülmedi.
+Güçlü yanlar:
+- Gül, yüz, yaz, çay örnekleri çocuğun gündelik dilinden ve mizahla işlenmiş.
+- Makine, dede ve kardeş üçlüsü sıcak; "ipucu olarak çevre sözcükler" fikri 3. sınıfa uygun.
+- Güvenlik ve mahremiyet sorunu yok; yetiskin_uygun: false tutarlı.

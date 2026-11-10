@@ -1,0 +1,17 @@
+# HR-061 · Mars'a Giden Sessiz Mesaj · Ajan B (uygunluk ve kalite) · kör-2026-11-09
+Karar: fail
+Özet: Açılış çok güçlü ve konu 6. sınıf için uygun; ancak metin ~3030 kelimeye uzuyor (hedefin çok üstünde), kamp süresi ve görev sırası çelişiyor, ders cümleleri ve vaaz yoğun.
+Bulgular:
+- [yüksek] Metin geneli / uzunluk : 6. sınıf için ~3030 kelime (5. sınıf hedefi ~650'nin ~4,5 katı). Doğrulama, kayıt ve rol paylaşımı aynı şekilde defalarca yeniden anlatılıyor. Alıntı: "Bir uyarıyı görüp gereğini yapmak önemliydi; ama uyarının anlamını doğru okumak da o kadar gerekliydi." Öneri: İlk üç sayfadaki sahneyi koruyup 800-1000 kelimeye indir.
+- [yüksek] Vaaz : Açık ders ve "artık biliyordu" kalıpları; son iki sahne kişisel ders ve metaforla bitiyor. Alıntı: "Daha önce hızlı karar vermeyi cesaret sanırdı. Artık bilgiyi beklemenin ve komutları doğrulamanın da bazen en cesur davranış olduğunu biliyordu." ve "Uzak bir gezegenden gelen tek cümle, ona yakınındaki arkadaşlarını daha iyi dinlemeyi ve karar vermeden önce en doğru soruyu zamanında sormayı öğretmişti." Öneri: Kapanış sahnesini kaldır ve dersleri sahnelere yedir.
+- [yüksek] Yapı / zaman çizgisi : Görev "bir gün" olarak kurulup bir günlük görev tamamlanıyor ve ödüllendiriliyor; sonra 2., 3. ve son gün olarak yeniden başlıyor. Alıntı: "Öğrencilerin görevi bir gün boyunca kesintisiz görev yürütmekti." sonra: "Kampın ikinci gününde öğrencilere uzaklık kavramını canlandıran bir düzenek gösterildi." Ayrıca "Asya Hanım simülasyonu durdurdu. “En önemli keşfiniz neydi?” diye sordu." sonrasında "Kampın en heyecanlı görevi son gün başladı." Öneri: Tek günlük, tek akışlı bir kronoloji kur.
+- [orta] Soru s3 : Doğru şık metindeki ders cümlesinin aynısı (hatırlama) ve en uzun; "yorumlama" etiketi uyuşmuyor. Alıntı: "Bir komutun şimdi gelmesi, şimdi uygulanması gerektiği anlamına gelmez" Öneri: Gerçek bir yorumlama sorusu yaz, şıkları dengele.
+- [orta] Senaryo mantığı : Mars'tan gelen "kapıyı aç" mesajının kim tarafından kime gönderildiği belirsiz; kahramanın komutunun da Mars'a ulaşması için ek 11 dakika gerekeceği baştan söylenmiyor (yalnız sonradan "gidiş-dönüş" anılıyor). Alıntı: "On bir dakika önce kapının açılması uygun olabilirdi; şimdi durum değişmişti." Öneri: İletişim yönünü ve gidiş süresini ilk sahnede netleştir.
+- [düşük] Soru s2 : Cevap metinde yoldaşın repliği ile aynen veriliyor; çeldiriciler metne yabancı yeni olgular ("bakım modu", "uyku modu"). Alıntı: "Mesajdaki “şimdi” ifadesi on bir dakika önceki bir durumu anlatıyordu" Öneri: Çeldiricileri metindeki gerçek bilgilerden türet.
+- [düşük] Soru s4 : "gecikme" 6. sınıf için çok bilinen sözcük; bağlam ayırt edici bir ipucu sunmuyor. Alıntı: "mesajların {kelime:hr061_gecikme} başa çıkacaktı". Öneri: Daha seçici bir sözcük (protokol gibi) seç.
+- [düşük] Etiket : tur bilim_kurgu ama dunya_tipi gercekci ve metin gerçekçi simülasyon; çelişkili. Öneri: tur'u bilim veya bilim_kurgu'ya göre netleştir.
+Doğrulanamayan iddialar: Dünya-Mars sinyal süresi (11 dakika simülasyon değeri; gerçekte yörüngeye göre yaklaşık 3-22 dk), "çıplak gözle Mars" ifadesi, ışık hızını aşan haberleşme bulunmaması; D6/D16 eşleşmesi.
+Güçlü yanlar:
+- Açılış (zaman damgası, "onların on bir dakika önceki şimdisi") özgün ve çocuğa uygun merak uyandırıyor.
+- Hata yapma ve savunmaya geçmeme kültürü güvenli ve olgun; kişi suçlama yok.
+- Bilimsel ihtiyat iyi: simülasyon ile gerçek, bilim ile bilim kurgu ayrılıyor.

@@ -1,0 +1,11 @@
+# HR-035 · Ay'a Giden İlk Posta · Ajan B (uygunluk ve kalite)
+Karar: review_needed
+Özet: Uzay iletişimi ve veri aktarımı, maket ve gecikme gibi kavramlar somut sahnelerle anlatılıyor; gerilim iyi kurulmuş. Ancak son bölüm "anladı" kalıbı ve ahlaki cümlelerle bitiyor, karakter ilişkileri (kardeş/arkadaş) tutarsız ve bir şık aşırı uzun.
+Bulgular:
+- [yüksek] son iki paragraf: ahlaki sonuç açıkça yazılmış. Alıntılar: "{kahraman}, postanın yalnızca zarf ve pul olmadığını anladı." ve "Yine de en önemli şey, karşıdaki insanı hatırlamaktı." Metnin son cümlesi de "dikkatli iletişim küçük ama önemli adımlarla başlıyordu" ile dersi tekrar ediyor. Öneri: "anladı" cümlesini ve son ders cümlesini kaldır; bitişi teyzenin mesajı ya da "Biz de buradan seni görüyoruz!" replikiyle yap.
+- [orta] sorular s2: doğru şık D "Mesajın kopyası güvende olduğu için bağlantının yeniden kurulmasını bekledi" yaklaşık 75 karakter; diğer şıklar 40–65 karakter, A ve C ise absürt. Öneri: doğru şıkkı kısalt, çeldiricileri benzer uzunlukta yap.
+- [orta] karakter ilişkileri ve cümle yapısı: metin "İki kardeş" diyor, fakat yoldaş yer tutucusu "bir arkadaş" olarak geçiyor. Ayrıca "Mektup Ay'da çalışan teyzeleri Selin'e gönderilecekti." cümlesinde hangi teyzenin kim olduğu belirsiz; "Teyzeleri Ay Üssü'ndeki yazıcıdan aynı mektubu alacaktı" ile birlikte okununca kafa karıştırıcı. Öneri: kardeş ilişkisini açıkça belirt (ya da yoldaşı kardeş olmayan biri yap) ve Selin teyzeyi ilk geçtiği yerde tanıt.
+- [düşük] etiketler: tür "bilim_kurgu" iken dunya_tipi "gercekci" işaretlenmiş; Ay Üssü senaryosu için bu iki etiket birbirini tam desteklemiyor. Öneri: dunya_tipi'ni sınıflama kurallarına göre gözden geçir.
+- [düşük] gövde: "Mesajın güvenli iletimi artık ikisinin de zihninde bir bilmecenin çözümü gibiydi." cümlesi anlamı belirsiz. Öneri: cümleyi sadeleştir ya da çıkar.
+Doğrulanamayan iddialar: Maarif değer kodları (D5, D16) ve dayanak_sayfa numaraları kontrol edilemedi; kavram_zorlugu 4 etiketinin band 2 ile uyumu için bir referans tablo verilmedi; kelime sınırı doğrulanmadı.
+Güçlü yanlar: Maket ve şema sahnesi ile uydu-gecikme kavramları çocuğun gözünden somut biçimde anlatılıyor. Görevlinin "Mesajın kopyası burada güvende" açıklaması gerilimi çözen, sorusu metinde kanıtlanan iyi bir ipucu.

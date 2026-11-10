@@ -1,0 +1,11 @@
+# HR-019 · Mağaranın Üç İşareti · Ajan A (olgu ve doğruluk)
+Karar: review_needed
+Özet: Katman, aşınma ve doğal oyuk kavramları genel olarak doğru ve sınıf düzeyine uygun anlatılmış; tahmin-kanıt teması güçlü. Ancak metnin kendi kurgusundaki "üç işaret" mantığı (hangi işaretin doğal, hangisinin insan yapımı olduğu) tutarsız ve bu, hikâyenin ana öğrenme hedefini zayıflatıyor.
+Bulgular:
+- [orta] Sayfa 2 ve sayfa 4: Üçgen işaretin harita üzerindeki bir tepeyle eşleşmesi ("aynı üçgenin bir tepeyi gösterdiğini") bu işaretin doğal bir oluşum mu yoksa insan işareti mi olduğunu çözmüyor; sonra çocuklar bu işareti "tepe simgesi" olarak adlandırıyor. Bu, metnin "her iz insan izi değildir" mesajıyla çelişen bir çıkarım. Alıntı: "aynı üçgenin bir tepeyi gösterdiğini fark etti" / "tepe simgesi". Öneri: Üçgen işaretin doğal mı insan yapımı mı olduğunu açıkça yazın ya da çocukların bunu belirsiz bırakıp soru olarak kaydettiği bir cümle ekleyin.
+- [orta] Sayfa 1 ve sayfa 4: İlk işaret ("dalgaya benzeyen kıvrımlı çizgi") önce nehir sanılıyor, sonra yanındaki taş katmanlarıyla ilişkilendiriliyor; ancak çizginin kendisinin katman mı yoksa katmanların yanında bir çizim mi olduğu belli değil. Sayfa 4'te "kıvrımlı katman" olarak geçiyor. Ayrıca metin başta "üç eski işaret" diyor; bu nitelemeyle doğal oluşumlar arasındaki ayrım karışıyor. Alıntı: "üç eski işaret görünüyordu"; "kıvrımlı katman". Öneri: İlk işaretin ne olduğunu (doğal katman sınırı ya da çizim) netleştirin; "eski işaret" nitelemesini "iz" ile değiştirin.
+- [düşük] Sayfa 2 s2 açıklaması: "Daireler kayadaki doğal yuvarlak boşluklardı" kesin ifadesi, sayfa 3'teki rehberin "başka nedenlerin de olabileceği" uyarısıyla tam örtüşmüyor. Öneri: Açıklamayı "büyük olasılıkla doğal boşluklar" biçiminde yumuşatın.
+Doğrulanamayan iddialar: Suyun aşındırmasıyla yuvarlak oyukların oluşabilmesi ve taş katmanlarının "pasta katları" benzetmesi genel jeoloji bilgisi olarak doğru kabul edilebilir; mağara ve işaret türlerinin belirli bir yerdeki durumu metinde tanımlı olmadığı için kurgu dışında doğrulanamaz.
+Güçlü yanlar:
+- Tahmin ile kanıt ayrımı ve yeni bilgiyle düşünceyi güncelleme, rehberin tutumuyla iyi işlenmiş.
+- Koruma ilkesi (çakıl taşını yerinde bırakma, mağaraya girmeme) doğru ve olumlu bir mesaj.

@@ -1,0 +1,10 @@
+# HR-031 · Müzede Sessiz Alarm · Ajan B (uygunluk ve kalite)
+Karar: review_needed
+Özet: Alarm gizemi ve kanıt-varsayım ayrımı 4. sınıf için uygun ve takip edilebilir. Ancak metin "fark etti" kalıbıyla ahlaki bir sonuçla bitiyor, gövdede editör notu kalmış ve dört sorunun doğru şıkkı tek tip (D) ve en uzun şık.
+Bulgular:
+- [yüksek] son paragraf: ahlaki sonuç "fark etti" kalıbıyla yazılmış. Alıntı: "müzedeki en ilginç şeyin ... bugün kullanılan bilimsel düşünme biçimi olduğunu fark etti." Öneri: bu cümleyi kaldır; bitişi kahramanın defter sözcükleri ya da müzeden gelen teşekkür mesajıyla yap. Ayrıca "hangi düşüncenin kanıtlandığını anlamanın tahmin sayısını çoğaltmaktan daha önemli olduğunu söyledi" ve "bir sorunun çözülmesinin yalnız aleti onarmak değil ... olduğunu düşündü" cümleleri aynı dersi tekrarlıyor; birini çıkar.
+- [yüksek] gövde, son paragraf: editör notları hikâye metninin içinde. Alıntı: "Dil hedefi: kanıt–varsayım, neden–sonuç" ve "Okuma sonrası: ... Neden bunu önce yalnız tahmin saydı?" Öneri: gövdeden çıkar, ayrı bir yönetim alanına taşı.
+- [yüksek] sorular s1–s4: dört doğru şık D; her birinde en uzun şık (s1 "Havalandırma çalışmaya başladığında" 33 karakter, diğerleri 15–25; s4 "Hareket, sıcaklık gibi değişimleri algılar" 42, diğerleri 14–33). s3'te kökteki "acele hüküm vermemek" ifadesi doğru şıkla neredeyse aynı anlamda, cevap kökten çıkıyor. Öneri: doğru şıkları dağıt, uzunlukları dengele; s3 kökünü, cevabı tahmin ettirmeyecek biçimde yeniden kur.
+- [düşük] gövde, dialog etiketi: "“Bilmiyoruz,” dedi arkadaşları {kahraman}." Öneri: "dedi {kahraman}, arkadaşlarına." gibi açık bir yapıya çevir.
+Doğrulanamayan iddialar: D6 ve D16 değer kodlarının karşılığı; dayanak_sayfa numaraları; program eşleştirmesi; kelime sayısı sınırı.
+Güçlü yanlar: Kanıt ile varsayım ayrımı, iki bağımsız kaynağın (not defteri ve kontrol kaydı) karşılaştırılmasıyla olay örgüsü içinde öğretiliyor. Sensör ve algılamak kavramları ilk ipucu olarak tanıtılıp metinde tekrar kullanılıyor.

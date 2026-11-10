@@ -1,0 +1,12 @@
+# HR-126 · Yağmur Bahçesinin Planı · Ajan B (uygunluk ve kalite) · yeniden-2
+Karar: review_needed
+Özet: Ölçüm ve plan akışı (ilk tahmin, ölçüm, düzeltme, yeniden deneme) tutarlı, ancak 3. sınıf için bir cümle ve kavram yükü fazla; bir soruda şıkların türü karışık. İki orta bulgu yeniden denetim gerektirir.
+Bulgular:
+- [orta] Bölüm 2 (2. paragraf): tek cümlede çok sayıda eylem ve yan ifade var; 3. sınıf için cümle yükü yüksek (21 sözcük). Alıntı: "İple yatay bir çizgi kurup cetvelle yolun kenarındaki yükseklik farkını, yani eğimi (yamacı) ölçtüler; aynı iple planlanan bahçenin sınırını da belirlediler." Öneri: İkiye böl: "İple yatay bir çizgi kurdular. Cetvelle yolun kenarındaki yükseklik farkını, yani eğimi (yamacı) ölçtüler."
+- [orta] s3 (dayanak_sayfa 3): şıklar farklı türde; A ve B model adı, C ve D cümle biçiminde iddia. C "Hiçbir modelde çiçeklik yoktu" metinle çelişiyor (her iki modelde de çiçeklik vardı) ve kategori dengesini bozuyor. Alıntı: "Hiçbir modelde çiçeklik yoktu". Öneri: Dört şıkı aynı türde kur (ör. "Birinci model", "İkinci model", "İkisinde de su toplanmadı", "İkisinde de çiçeklik yoktu" gibi) ve metinle çelişen şıkkı kaldır.
+- [düşük] s4 beceri etiketi "hatirlama", ama soru "hangi amaca hizmet etti" diye yorum istiyor. Alıntı: "Planın uzmanlarca kontrol edilmesi hangi amaca hizmet etti?" Öneri: beceri alanını "yorumlama" yap.
+- [düşük] Kavram yükü: "eğim", "model", "uzman" ve transfer hedefi "denetlemek" 3. sınıf için yoğun; "denetlemek" metinde yalnızca "denetledi" olarak geçiyor. Öneri: Transfer sözcüğünü metinde daha açık bir bağlamda kullan ya da hedefi değiştir.
+- [düşük] "{kahraman}" yer tutucusu tanıtım ve dayanak alanlarında da geçiyor. Alıntı: "{kahraman} önce birikintinin yalnızca bozuk bir oluk yüzünden oluştuğunu düşündü." Öneri: Yayın öncesi render sırasında yer tutucunun doldurulduğu kontrol edilsin (bu denetimde render kontrol edilmedi).
+- [düşük] Bölüm 4: "Uzmanların kontrol edeceği bir plan hazırladılar. Böylece çalışma güvenli yapılabilecekti." açık ders cümlesi; sahneye bağlı değil. Öneri: Uzman kontrolünü bir sahneyle göster (ör. planın bir yerini işaretlemesi) ve "böylece" cümlesini kaldır.
+Doğrulanamayan iddialar: Yağmur bahçesi ve ip-cetvelle eğim ölçümü yönteminin fen açısından doğruluğu bu denetimde bir kaynakla doğrulanmadı. Sınıf düzeyi değerlendirmesi yalnızca metinden yapıldı.
+Güçlü yanlar: İlk tahmin, ölçüm, düzeltme ve yeniden deneme akışı bilimsel düşünmeyi somut biçimde gösteriyor. s1, s2 ve s4 metinden doğrudan bulunabiliyor; s1 ve s2 şıkları kısa ve dengeli.

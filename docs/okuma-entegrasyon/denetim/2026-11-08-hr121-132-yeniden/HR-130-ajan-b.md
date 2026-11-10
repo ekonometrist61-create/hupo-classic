@@ -1,0 +1,11 @@
+# HR-130 · Annem ve Şaşırtan Cetvel · Ajan B (uygunluk ve kalite) · yeniden denetim
+Karar: pass
+Özet: Ölçüm hatasının fark edilip düzeltilmesi somut adımlarla anlatılıyor; vaaz yok ve sorular metne dayanıyor. Kalan sorunlar düşük önemde: bir çeldirici metinde zaten reddedilen davranışla aynı, birkaç sözcük 3. sınıf için zor.
+Bulgular:
+- [düşük] soru s3 (sayfa 3): çeldirici metnin reddettiği davranışın aynısı, bu yüzden eleme ile kolay bir cevap oluşuyor. Alıntı: "Raf zorla boşluğa itildi" / dayanak: "Eski rafı zorlayarak yerleştirmek yerine uygun boydaki rafı seçtiler." Öneri: çeldiriciyi metinde geçmeyen başka bir işlemle değiştirin.
+- [düşük] soru s1 (çıkarım, sayfa 2): dayanak, ilk ölçümün yanlış olduğunu doğrudan söylemiyor; bu bilgi yalnız "yeniden ölçmeye başladı" ifadesinden çıkıyor. Alıntı: "{kahraman}, görevliyle birlikte duvarı yeniden ölçmeye başladı." Öneri: dayanağa bu cümleyi de ekleyin.
+- [düşük] soru s4 (yorumlama, sayfa 2): doğru şık "Hatalı bilginin düzelmesini" metinde "hatalı bilgi" olarak geçmiyor; açıklama ("hatalı bilgiyi düzeltti") çıkarım. Alıntı: "Sağlam cetvelle genişliği bir kez daha ölçtü." Öneri: dayanağı, yeni sonucun eski ölçümle çeliştiğini gösteren bir cümleyle güçlendirin.
+- [düşük] sözcük düzeyi (3. sınıf): "hizalayıp" (sayfa 5), "alçak", "gönüllü" ve "sıfır noktası" kavramı bu sınıf için zor olabilir. Alıntı: "cetvelin ucunu duvardaki işaretle hizalayıp". Öneri: "hizalayıp" yerine "yan yana getirip" gibi bir karşılık.
+- [düşük] beceri dağılımı: 2 hatırlama, 1 çıkarım, 1 yorumlama; dengeli. Hedef sözcüklerden "tahmin" ve "yerleşim" hiçbir soruda test edilmiyor (isteğe bağlı).
+Doğrulanamayan iddialar: okuma_bandi, okuma_zorlugu, kavram_zorlugu, ilgi_egilimi alanları frontmatter'da yok; sınıf–bant uyumu doğrulanamadı. yetiskin_uygun=false alanının anlamı belirsiz; metinde yetişkin teması yok. deger_anahtarlari (D6, D3) ve maarif kodlarının içerik karşılığı kod kitabı olmadan doğrulanamadı. Cümle ve sözcük ölçüleri elle tahmini.
+Güçlü yanlar: Kahramanın mühendis olarak ölçüm adımları (kırık cetvel, sağlam cetvel, yeni raf ölçüsü) sırayla ve somut anlatılıyor. Görevlinin "gözden kaçırmışız" repliği vaaz değil, doğal bir itiraf olarak kurulmuş.

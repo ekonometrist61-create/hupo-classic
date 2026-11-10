@@ -1,0 +1,18 @@
+﻿# HR-048 · Müzedeki Eksik Parça · Ajan B (uygunluk ve kalite) · kör-2026-11-09
+Karar: fail
+Özet: İlk altı-yedi sayfa güçlü bir gizem/kanıt kurgusu sunuyor; ancak metin yaklaşık 2040 kelimeye uzamış (5. sınıf hedefi ~650'nin üç katı), son sayfalar ana akışa eklenmiş tekrar eden, vaaz ağırlıklı parçalardan oluşuyor.
+Bulgular:
+- [yüksek] Bütün metin, özellikle sayfa 10-16 : Uzunluk ve yapı. ~2040 kelime, 5. sınıf editoryal ölçütünün (~650) yaklaşık üç katı. Sayfa 9'da hikâye doğal biçimde bitiyor; sonra mülkiyet tartışması, seramik videosu, katalog numarası, yemek molası, bilgi levhası, anneanne fincanı ve teşekkür mektubu gibi bağımsız bölümler ekleniyor. Alıntı: "O günkü gezi aslında iki hafta önce sınıfta başlayan bir tartışmanın devamıydı." Öneri: Sayfa 9 sonrasındaki bölümleri kes ya da tek, kısa bir son sahneye indir; hedef ~650-800 kelime.
+- [yüksek] Sayfa 3, 8, 10-16 : Vaaz ve "anladı/fark etti/öğrendi" kalıpları yoğun; varsayım-kanıt dersi en az on kez açıkça söyleniyor. Alıntı: "Önemli olan geçmişe ve kullanılan nesnelere düşünmeden davranmamaktı." ; "sorumluluk duygusunun yalnızca büyük hatalarla ilgili olmadığını o gün anladı." ; "**Kanıt, cevabın sağlam basacağı yerdir**". Öneri: Ders cümlelerinin çoğunu sil; kanıtı eylemle (numara eşleştirme, kopya parçanın uymaması) göster.
+- [orta] s2 : Beceri etiketi çıkarım, ama yanıt metinde aynen yazılı ("yalnızca düşünceyle kanıtın farklı olduğunu hatırlattı"); "yoldaş" ifadesi çocuk dilinde yapay; çeldirici A anlamsız. Alıntı: "Öğretmen neden yoldaşı susturmadı?" Öneri: Kökü "arkadaşı" ile yaz; kanıt için olayı yorumlatan bir çıkarım sorusu kur.
+- [orta] s3 : Doğru şık (C) metindeki cümleyle birebir ve en uzun; çeldirici D ("satmalıdır") komik ve açıkça yanlış. Alıntı: "En heyecanlı açıklama yerine en güçlü kanıtı seçmelidir". Öneri: Üç anlamlı çeldirici ve benzer uzunlukta şıklar yaz.
+- [orta] Sayfa 1 ve sayfa 11 : Kronoloji çelişkisi: açılışta tabağın "dün tam" olduğu ve fotoğrafın öğretmenden geldiği söylenirken, sayfa 11'de aynı görüntünün "geçen yılki katalogdan" olduğu belirtiliyor. Alıntı: "Müzedeki seramik tabak dün tamdı." ve "Öğretmeninin gönderdiği görüntü geçen yılki katalogdan alınmıştı." Öneri: Fotoğrafın kaynağı ve tarihi tek biçimde belirle.
+- [orta] Sayfa 4 : Mantık boşluğu: "Girilmez" kapısına girilmediği halde çalışanların ne yaptığı bilinir gibi anlatılıyor. Alıntı: "Gizli oda sandığı yerde çalışanların uzun uzun ölçüm yaptığı, fotoğraf çektiği ve rapor yazdığı anlaşılıyordu." Öneri: Bilgiyi Aslı Hanım'ın anlatımına bağla.
+- [düşük] s4 : Dayanak sayfa 3 verilmiş; tanım asıl sayfa 4'te ("korumanın eserin bozulmasını önlemeye..."). Alıntı: "Metinde geçen konservasyon ne demektir?" Öneri: dayanak_sayfa'yı 4 yap.
+- [düşük] Etiket : tur macera, ancak metin ve tanıtım gizem/kanıt temelli; ayrıca s1-s4 sorularında "yoldaş" kullanımı hikâye dilinden farklı. Alıntı: "yoldaşın". Öneri: tur'u gizem yap, "arkadaş" kullan.
+- [düşük] Sayfa 15 : Ana temayı bozan yan çizgi (anneanne fincanı) ve "müzelik" yorumu. Alıntı: "Her eski eşya müzelik değildi, her kırık eşya da çöpe gidecek değildi." Öneri: Sil.
+Doğrulanamayan iddialar: Konservasyon/restorasyon ayrımının müzecilik uygulamasındaki ayrıntıları; "TYMM 5. sınıf okuma evresi" eşlemesi (frontmatter insan editöre bırakmış).
+Güçlü yanlar:
+- Açılış ve ilk yedi sayfa (tabaktaki boşluk, "Olabilir... bu sadece varsayım", kopya parçayla atölye) kanıt-varsayım ayrımını olaylarla gösteriyor.
+- Çocuk karakterin suçlamaktan kaçınması ve yetişkine sorarak doğru bilgi araması güvenli bir örnek.
+- Sözcük hedefleri (konservasyon, restorasyon, vitrin) bağlam içinde ve dayanaklı.

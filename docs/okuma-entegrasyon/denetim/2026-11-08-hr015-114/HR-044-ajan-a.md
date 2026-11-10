@@ -1,0 +1,9 @@
+# HR-044 · Buz Gölünün Haritası · Ajan A (olgu ve doğruluk)
+Karar: review_needed
+Özet: Dört sorunun dogru cevabı metinle destekleniyor ve buz/kar güvenliği mesajı doğru. İki orta sorun var: s3'ün C çeldiricisi metinle kısmen uyuşuyor; "öne atılmak" deyiminin metindeki yerleşimi ve açıklaması çelişiyor.
+Bulgular:
+- [orta] s3 çeldirici C, sayfa 8 ile ilişkili: "Grubun tek bir kişinin kararıyla yönetildiğini ve sorumluluğu üstlendiğini" şıkkı tamamen yanlış sayılamaz; metinde dönüş kararını rehber Ceren Hanım veriyor. Alıntı: "Ceren Hanım grubun geri dönmesine karar verdi." Öneri: çeldirici metinle açıkça çelişen bir ifadeye çevrilsin (örn. "Grubun dönüş kararının kimseye ait olmadığını ve herkesin kendi kararını verdiğini").
+- [orta] deyim işareti, sayfa 8 ve deyim_cumleleri: "öne atılmak" deyimi metinde hiç geçmiyor; deyim cümlesi "cevap vermedi" diyor, oysa aynı yerde {yoldaş} "Hepimiz beraber gidersek yavaş kalırız," diye konuşuyor. Alıntı (deyim cümlesi): "cevap vermedi ama öne atılmak yerine grubun yanında kaldı." Öneri: deyim cümlesi sayfa 8'in akışıyla uyumlu hale getirilsin ve deyimin metinde geçtiği bir replik eklensin.
+- [düşük] s4 dogru şık (C), sayfa 11: "Uzun süre yorulmadan zorlukla başa çıkarak devam edebilme" tanımı metinde yok; sayfa 11 yalnızca "doğa yürüyüşünde dayanıklılık ... önemliydi" diyor. Öneri: tanım sözlükle teyit edilsin.
+Doğrulanamayan iddialar: "Dayanıklılık" sözcüğünün tanımı sözlükle teyit edilmedi. Diğer olgusal iddialar (buzun görünüşten kalınlığının anlaşılamayacağı; su buharının soğukta buhar gibi görünmesi; koyu renkli buzun kalın olduğu yanılgısının düzeltilmesi) doğru.
+Güçlü yanlar: Güvenlik mesajı net ve doğru: buzun kalınlığı görünüşten anlaşılmaz, yetişkin rehber ve güncel rota gerekir. Sayfa 17'deki "doğru zamanda geri dönmek" cümlesi s3'ün dogru şıkkını doğrudan destekliyor; pusula (sayfa 1) ve eski harita (sayfa 7) soruları metinle uyumlu.

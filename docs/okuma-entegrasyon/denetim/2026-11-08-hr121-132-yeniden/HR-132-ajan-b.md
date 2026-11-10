@@ -1,0 +1,11 @@
+# HR-132 · Araç ve İki Zaman Çizelgesi · Ajan B (uygunluk ve kalite) · yeniden denetim
+Karar: pass
+Özet: Bilgi güncelliği ve tarih karşılaştırma fikri metin boyunca tutarlı biçimde kurulmuş ve sorular sıraya uygun dağılmış. Ana sorun, kahramanın hem araç hem de insan benzeri bir görevli gibi davranmasının anlatıda gerekçelendirilmemesi; kalan bulgular düşük önemde.
+Bulgular:
+- [orta] anlatı tutarlılığı (kahraman türü "arac"): tren hem kararları makinist ve kontrol merkezine bağlı bir araç, hem de yolculara soru soran, rapor ekleyen bir karakter. Alıntı: "{kahraman}, bağlantısı olan her yolcuya kendi güzergâhını ve sonraki aktarmasını ayrı ayrı sordu." ve "{kahraman} sefer raporuna yaşanan beklemeyi ve yapılan duyuruları ekledi." Öneri: bu eylemleri bir görevliye ya da yolcuya aktarın, ya da kahramanın insan benzeri rolünü bir cümleyle açıkça kurun.
+- [düşük] son paragraf: ders özeti niteliğinde. Alıntı: "Böylece ertesi gün gelecek yolcular hangi bilgiyi kullanacaklarını anlayacaklardı." ve "sabaha kadar kimse yanlış bilgiyle yola çıkmadı." Öneri: bilgi güncelliği vurgusunu bu iki cümlede tekrar etmeyin; sahneyi panodaki etiketle bitirin.
+- [düşük] sayfa 5 dolgu: "Kalan yolculuk boyunca {kahraman}, eski ve yeni çizelgeleri zihninde karşılaştırdı." Sayfa 2'deki karşılaştırmayı tekrar ediyor ve somut bir ayrıntı taşımıyor. Öneri: silin ya da yolculukta yapılan somut bir kontrol ekleyin.
+- [düşük] beceri ve hedef sözcükler: 5 sorunun 3'ü hatırlama. Hedef sözcüklerden "aktarma", "telafi" ve "güzergâh" hiçbir soruda test edilmiyor. Öneri: "telafi" ya da "aktarma" ile bağlantılı bir soru eklenebilir.
+- [düşük] etiket: tur "bilim" olarak işaretli; bilimsel içerik sınırlı (tarih karşılaştırması ve teknik inceleme bilgisi). Öneri: tür etiketinin gözden geçirilmesi (karar insanda).
+Doğrulanamayan iddialar: okuma_bandi, okuma_zorlugu, kavram_zorlugu, ilgi_egilimi alanları yok. deger_anahtarlari (D16, D1) ve maarif kodlarının içerik karşılığı kod kitabı olmadan doğrulanamadı. yetiskin_uygun=false alanının anlamı belirsiz; metinde yetişkin teması yok. Cümle ve sözcük ölçüleri elle tahmini.
+Güçlü yanlar: Doğru cevap "eski çizelge" metinde açıkça geçiyor ve tarih ayırt ediciliği s2'de net kurulmuş. Yanlış şıklardan "Makinist bu kararı vermişti" metinle çelişiyor, eleme yapılabiliyor.

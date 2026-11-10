@@ -1,0 +1,15 @@
+# HR-061 · Mars'a Giden Sessiz Mesaj · Ajan B · kör-3
+Karar: review_needed
+Özet: 6. sınıf bandına uygun (~835 kelime), vaazsız ve güvenli; ancak simülasyon kurgusu (gecikmeli mesaj, canlı basınç göstergesi, "hemen ulaşan" komut) kavramı bulandırıyor, s3'ün çeldiricileri zayıf ve bazı yerlerde açık ders cümleleri var.
+Bulgular:
+- [orta] Sayfa 1 (kavramsal kurgu) : Mars'tan gelen mesajın gecikmesi, ama basınç göstergelerinin "canlı" olması, komutun "hemen ulaşması" kabulüyle birlikte okuru karıştırıyor; gerçek Mars görevinde tüm veriler gecikmeli olur. Ayrıca yön belirsiz: Mars'tan gelen "kapıyı şimdi aç" komutunu kim, kime veriyor. Alıntı: "maketin basınç göstergeleri ise odaya doğrudan bağlıydı ve canlı çalışıyordu. Eğitim için kapı komutunun maket kapıya hemen ulaşması kabul edilmişti." Öneri: Gecikmeyi tek yönlü ve sadeleştirilmiş anlat (tüm veriler gecikmeli, tek canlı kamera ayrıca belirtilsin) ya da mesajın kimden kime gittiğini açık yaz.
+- [orta] s3 (çeldirici ve etiket) : Çeldiriciler absürt ve metinle ilgisiz; doğru şık tek makul seçenek. Doğrulanan şeyler arasında kamera görüntüsü ve araç konumu da var, şık eksik. Alıntı: "Kapının dış rengini ve boyunu" . Öneri: Çeldiricilere gerçekten kontrol edilen ama yeterli olmayan öğeler koy (ör. yalnız mesaj metnini, yalnız kamera görüntüsünü); etiketi hatirlama düzeyini aşan bir soruya çevir.
+- [orta] Sayfa 3-4 (yapay/ağır anlatı) : Protokol ve ekran ayrıntıları uzun, cümleler tekrarlı, "puan" gibi oyun sözcüğü simülasyon çerçevesini bozuyor. Alıntı: "Basınç eşitlenmeden kapının açılması, puan kaybıyla sonuçlanacaktı." Öneri: "gerçek görevde kapıyı zarara uğratabilirdi" gibi işlevsel bir sonuç yaz; üç ekran ayrıntısını kısalt.
+- [düşük] Sayfa 3 (ders cümlesi) : Açık sonuç cümlesi vaaza yaklaşıyor. Alıntı: "Geçmişte gönderilmiş bir mesajı şimdiki duruma uygulamak da aynı hataya yol açabilirdi." Öneri: Çıkar; okur kayıtlı senaryodan görsün.
+- [düşük] Sayfa 6 (özetleyici sahne) : Eğitmenin gösterdiği iki görüntü sonuçları baştan özetliyor. Alıntı: "Birinci görüntü, komutun zamanına bakmadan verilmesi durumunda oluşabilecek sonucu gösteren kayıtlı bir senaryoydu." Öneri: Kısalt veya çocuğun kendi çıkarımına bırak.
+- [düşük] Başlık/deyim : Başlık "Mars'a Giden" derken mesaj Mars'tan geliyor; deyim cümlesi derin nefes sonrasında biraz zorlama. Alıntı: "{kahraman}, yeni mesajı okuyunca derin bir nefes aldı." Öneri: Başlığı "Mars'tan Gelen Eski Mesaj" gibi düzelt; deyimi sevinç anına taşı.
+Doğrulanamayan iddialar: Mars-Dünya iletişim gecikmesinin bir örnek olarak 11 dakika verilmesi gerçekçi (yaklaşık 3-22 dk) ama kaynakla doğrulanmadı; "ışık hızı bile bekleme süresi oluşturur" bilgisi doğru, kaynak yok; yetiskin_uygun ve D16 eşlemesi doğrulanamadı.
+Güçlü yanlar:
+- Zaman damgası ve doğrulama kavramı somut bir görevle, kayıtlı sonuç tablosu ve iki sürenin ayrı gösterilmesiyle işleniyor.
+- Güvenli kurgu: gerçek görev değil simülasyon, aracın tekerleğini koruyan karar süreci.
+- Sözcük yükü (simülasyon, protokol, gecikme) 6. sınıf için uygun ve bağlamda açıklanıyor.
