@@ -126,7 +126,8 @@ Kaynak: `docs/soru-uretim/GERI_BILDIRIM_2026-10-24.md`.
 - Kararlar: `pass` / `review_needed` / `fail`. `pass` = kritik ve yüksek bulgu yok; birden fazla orta bulgu varsa `review_needed`.
 - Denetim kör yapılır; denetçi kaynak dosyayı değiştirmez; raporlar `docs/okuma-entegrasyon/denetim/` altına yazılır.
 - Kullanıcı üçüncü göz olarak son okumayı yapar (4 göz yerine 3 göz kararı).
-- Yayın için: iki ajan `pass` + insan onayı `approved`. İnsan örneklemi (REHBER §15) yapılmadan yayınlanan sorular `kalite_durumu='sari'` kalır.
+- Hikâye yayın için yalnız insan onayı `approved` gerekir (2026-11-10). Ajan A / B sonuçları bilgi amaçlıdır ve yayını engellemez; insan onayı onları geçersiz kılabilir.
+- Soru yayın için: iki ajan `pass` + insan onayı `approved` (değişmedi). İnsan örneklemi (REHBER §15) yapılmadan yayınlanan sorular `kalite_durumu='sari'` kalır.
 
 ## Yasaklar
 - Metin okunmadan A verme; toplu eşleme yapma.

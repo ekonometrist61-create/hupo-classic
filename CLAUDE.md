@@ -22,6 +22,7 @@ App (mobile-app/pubspec.yaml) ve panel (web-panel/package.json) sürüm numaras�
 Hikâye, soru, sözcük, deyim veya kazanım işinde önce `meb-soru-sozcuk-uzmani` skill'ini kullan; sınıfa özel skill'ler ve pedagoji paketi `docs/pedagoji-paketi/` içindedir.
 - Program yılı: 2026–27'de TYMM 1, 2, 3, 5, 6, 7; **4 ve 8 önceki program**. Bu sınıflar için TYMM kodu yürürlükte sayılmaz.
 - Kanıt: kazanım kodu yalnız kaynakta görülürse yazılır; görülmediyse `source_pending`. Metin okunmadan A verilmez.
-- Yayın kapısı: iki bağımsız denetçi `pass` + insan onayı olmadan `published=true` yapılmaz. Varsayılan `published=false`.
+- Hikâye yayın kapısı (2026-11-10 kararı): yalnız insan onayı (`insan = approved`, inceleyen dolu) yayını açar. Ajan A / Ajan B sonuçları kaydedilir ve panelde görünür, yayını engellemez; insan onayı ajan sonucunu geçersiz kılabilir. Üç onayın hepsi aranmaz.
+- Soru yayın kapısı değişmedi: iki ajan `pass` + insan onayı olmadan `published=true` yapılmaz. Varsayılan `published=false`.
 - Kırmızı çizgiler: 2026 MEB hikâye yarışması AI kullanımını yasaklar; MEB veya yayınevi sorusu metni çoğaltılmaz (blueprint olarak kullanılır, benzerlik kontrolünden geçmeyen soru yayınlanmaz); OYSS'yi Hupo MEB havuzu diye sunmaz.
 - Öğrenci verisi kişisel tanımlayıcı olmadan tutulur; çocuğun gerçek adı, konumu veya fotoğrafı içerikte kullanılmaz.

@@ -10,7 +10,7 @@
     },
     "hikayeAtolyesi": {
       "title": "Hikâye Atölyesi",
-      "giris": "Hikâyeler panelde yazılmaz; atölye hattında hazırlanan paketler burada içe aktarılır, denetlenir ve yayınlanır. Yayın için iki yapay zekâ denetimi ve insan onayı gerekir; hikâyeyi oluşturan kişi yayınlayamaz.",
+      "giris": "Hikâyeler panelde yazılmaz; atölye hattında hazırlanan paketler burada içe aktarılır, denetlenir ve yayınlanır. Yayın için yalnız insan onayı gerekir; yapay zekâ denetim sonuçları kayıt altında tutulur ve yayını engellemez. Hikâyeyi oluşturan kişi yayınlayamaz.",
       "sekmeler": "Hikâye Atölyesi bölümleri",
       "sekme": {
         "liste": "Hikâyeler",
@@ -28,7 +28,7 @@
         "demo": "Demo modunda kayıt yapılamaz.",
         "yetki": "Bu işlem için yönetici yetkisi gerekir.",
         "genel": "İşlem tamamlanamadı. Bir süre sonra yeniden dene; sorun sürerse kaydı kontrol et.",
-        "YAYIN_KAPISI": "Yayın için Ajan A ve Ajan B denetimi \"geçti\", insan kararı \"onaylandı\" olmalı. Denetimi kaydedip yeniden dene.",
+        "YAYIN_KAPISI": "Yayın için insan kararı \"onaylandı\" olmalı. Denetimi kaydedip yeniden dene.",
         "ZATEN_YAYINDA": "Hikâyenin yayındaki sürümünden başka, denetimi tamam yeni bir sürüm yok.",
         "YAYINDA_DEGIL": "Hikâyenin yayında sürümü yok; çekilecek bir şey bulunmadı.",
         "DORT_GOZ": "Dört göz kuralı: Oluşturan kişi kendi kaydını yayınlayamaz veya onaylayamaz. Başka bir yönetici yapmalı.",
@@ -117,7 +117,7 @@
           "ajanBekliyor": "Bir ajan henüz geçmedi",
           "insanOnayli": "İnsan onayladı",
           "insanBekliyor": "İnsan onayı bekliyor",
-          "yayinaHazir": "Yayına hazır (A + B + insan)"
+          "yayinaHazir": "Yayına hazır (insan onaylı)"
         },
         "kolonBaslik": "Hikâye",
         "soru": "Soru",
@@ -130,8 +130,8 @@
         "kapat": "Kapat",
         "denetimBaslik": "Denetim",
         "dortGoz": "Dört göz: oluşturan {olusturan}, inceleyen {inceleyen}. Oluşturan ve yayınlayan aynı kişi olamaz; sunucu bunu denetler.",
-        "yayinaHazir": "Üç denetim de tamam; yayına hazır.",
-        "yayinaHazirDegil": "Yayın için Ajan A \"Geçti\", Ajan B \"Geçti\" ve insan kararı \"Onaylandı\" olmalı.",
+        "yayinaHazir": "İnsan onayı verildi; yayına hazır.",
+        "yayinaHazirDegil": "Yayın için insan kararı \"Onaylandı\" olmalı. Ajan A ve Ajan B sonuçları bilgi amaçlıdır, yayını engellemez.",
         "denetimiKaydet": "Denetimi kaydet",
         "denetimKilitli": "Yayındaki veya arşivdeki sürümün denetimi değiştirilemez.",
         "durumBaslik": "Durum akışı",
@@ -142,7 +142,7 @@
         "durumDegisti": "Durum güncellendi: {durum}.",
         "onizlemeBaslik": "Önizleme (örnek adlarla)",
         "icerikYukle": "Düzenle, sil ve önizleme için içeriği yükle",
-        "yayinAdimlari": "Yayına almak için sırayla: 1) Taslağı \"İncelemeye al\" ile incelemeye al. 2) Ajan A ve Ajan B denetimini \"Geçti\" yap. 3) İnsan onayını \"Onaylandı\" yap. 4) \"Denetimi kaydet\"e bas. 5) \"Yayınla\" düğmesi açılır. Yayındaki sürüm değişmez; yeni sürüm yayına alınınca eskisi arşive geçer.",
+        "yayinAdimlari": "Yayına almak için sırayla: 1) Taslağı \"İncelemeye al\" ile incelemeye al. 2) Ajan A ve Ajan B sonuçlarını kaydet (bilgi amaçlı; yayını engellemez). 3) İnsan onayını \"Onaylandı\" yap. 4) \"Denetimi kaydet\"e bas. 5) \"Yayınla\" düğmesi açılır. Yayındaki sürüm değişmez; yeni sürüm yayına alınınca eskisi arşive geçer.",
         "icerikYukleNot": "Hikâye paketi büyük olduğu için bu bölüm istenince yüklenir."
       },
       "onizleme": {
@@ -435,9 +435,9 @@
         "secilen": "{n} hikâye seçili",
         "onaylaDugme": "Seçilenleri onayla",
         "onayKaldirDugme": "Seçilenlerin onayını kaldır",
-        "onayliSoru": "{n} sürüme insan onayı verilsin mi? Yalnız Ajan A ve Ajan B \"Geçti\" olan taslak/incelemedeki sürümler onaylanır; diğerleri atlanır.",
+        "onayliSoru": "{n} sürüme insan onayı verilsin mi? Yalnız taslak ve incelemedeki sürümler onaylanır; ajan sonuçları değişmez.",
         "onayKaldirSoru": "{n} sürümün insan onayı kaldırılsın mı? Karar \"Bekliyor\"a döner; yayındaki sürümlere dokunulmaz.",
-        "onayYok": "Seçilenler arasında bu işleme uygun sürüm yok (taslak/incelemede, Ajan A ve B geçmiş olmalı).",
+        "onayYok": "Seçilenler arasında bu işleme uygun sürüm yok (taslak veya incelemede olmalı).",
         "onaySonuc": "{yapilan} sürüm güncellendi, {atlanan} atlandı.",
         "onayHata": "{baslik}: {hata}",
         "yayinaAlDugme": "Seçilenleri yayına al",
@@ -453,7 +453,7 @@
           "sil": "{n} hikâye silinsin mi?"
         },
         "aciklama": {
-          "yayina_al": "Her hikâyenin Ajan A ve Ajan B \"geçti\", insan kararı \"onaylandı\" olan en yeni taslak veya incelemedeki sürümü yayına alınır; taslaktaki önce incelemeye geçer. Önceki yayındaki sürüm arşive gider. Denetimi tamam olmayan hikâyeler atlanır ve nedeni gösterilir.",
+          "yayina_al": "Her hikâyenin insan kararı \"onaylandı\" olan en yeni taslak veya incelemedeki sürümü yayına alınır; taslaktaki önce incelemeye geçer. Önceki yayındaki sürüm arşive gider. İnsan onayı olmayan hikâyeler atlanır ve nedeni gösterilir.",
           "yayindan_cek": "Seçilen hikâyelerin yayındaki sürümü arşive alınır; çocuklar artık göremez. Okuma oturumları ve karneler korunur.",
           "arsiv": "Seçilen hikâyelerin arşivde olmayan tüm sürümleri (yayındaki dahil) arşive alınır; çocuklara gösterilmez. Okuma oturumları ve karneler korunur.",
           "sil": "Kurala uyan hikâyeler tüm sürümleriyle silinir. Bağlı üretim fişi taslak brife döner."

@@ -28,6 +28,8 @@ const migrasyonlar = [
   mig('20261068000000_okuma_uc_goz_yayin_kurali.sql'),
   mig('20261079000000_okuma_toplu_islem.sql'),
   mig('20261094000000_okuma_toplu_yayin.sql'),
+  // 2026-11-10: yalnız insan onayı yayını açar (ajan şartı kaldırıldı)
+  mig('20261201000000_okuma_hikaye_insan_onayi_yeter.sql'),
 ];
 
 const db = new PGlite();
@@ -248,23 +250,31 @@ try {
   const yHazir = await ice(A1, paket('yayin-hazir'));
   await durum(A1, yHazir.surum_id, 'incelemede', { ajan_a: 'pass', ajan_b: 'pass', insan: 'approved' });
   const yHazirH = (await db.query("select id from public.okuma_hikayeleri where slug = 'yayin-hazir'")).rows[0].id;
-  // Denetimi eksik: Ajan B review_needed → kapı kapalı
+  // İnsan onayı eksik (ajanlar geçmiş olsa da) → kapı kapalı
   const yEksik = await ice(A1, paket('yayin-eksik'));
-  await durum(A1, yEksik.surum_id, 'incelemede', { ajan_a: 'pass', ajan_b: 'review_needed', insan: 'approved' });
+  await durum(A1, yEksik.surum_id, 'incelemede', { ajan_a: 'pass', ajan_b: 'pass', insan: 'pending' });
   const yEksikH = (await db.query("select id from public.okuma_hikayeleri where slug = 'yayin-eksik'")).rows[0].id;
+  // 2026-11-10: yalnız insan onayı yayını açar; Ajan A fail / Ajan B review_needed iken insan onaylıysa yayına alınır
+  const yAjanRed = await ice(A1, paket('yayin-ajan-red'));
+  await durum(A1, yAjanRed.surum_id, 'incelemede', { ajan_a: 'fail', ajan_b: 'review_needed', insan: 'approved' });
+  const yAjanRedH = (await db.query("select id from public.okuma_hikayeleri where slug = 'yayin-ajan-red'")).rows[0].id;
   // Taslakta onaylı: önce incelemeye alınıp sonra yayına geçmeli
   const yTaslak = await ice(A1, paket('yayin-taslak'));
   await durum(A1, yTaslak.surum_id, 'taslak', { ajan_a: 'pass', ajan_b: 'pass', insan: 'approved' });
   const yTaslakH = (await db.query("select id from public.okuma_hikayeleri where slug = 'yayin-taslak'")).rows[0].id;
 
   const yKuru = await yayin(A1, [yHazirH, yEksikH, yTaslakH, yokId], 'yayina_al', true);
-  k('toplu yayına al (kuru): onaylılar başarılı, denetimi eksik YAYIN_KAPISI, olmayan HIKAYE_BULUNAMADI',
+  k('toplu yayına al (kuru): onaylılar başarılı, insan onayı eksik YAYIN_KAPISI, olmayan HIKAYE_BULUNAMADI',
     !yKuru.hata && yKuru.veri.kuru === true && bulY(yKuru, yHazirH)?.sonuc === 'basarili' && bulY(yKuru, yTaslakH)?.sonuc === 'basarili'
       && bulY(yKuru, yEksikH)?.neden === 'YAYIN_KAPISI' && bulY(yKuru, yokId)?.neden === 'HIKAYE_BULUNAMADI'
       && yKuru.veri.basarili === 2 && yKuru.veri.atlanan === 2, JSON.stringify(yKuru));
   k('toplu yayına al (kuru): hiçbir sürüm değişmedi',
     (await say('okuma_hikaye_surumleri', `hikaye_id in ('${yHazirH}','${yTaslakH}') and durum = 'yayinda'`)) === 0
       && (await say('okuma_hikaye_surumleri', `hikaye_id = '${yTaslakH}' and durum = 'taslak'`)) === 1);
+
+  const yAjanRedKuru = await yayin(A1, [yAjanRedH], 'yayina_al', true);
+  k('toplu yayına al (kuru): ajan sonuçları kötü ama insan onaylı hikâye başarılı (yalnız insan onayı kapısı)',
+    bulY(yAjanRedKuru, yAjanRedH)?.sonuc === 'basarili', JSON.stringify(yAjanRedKuru));
 
   const yGercek = await yayin(A1, [yHazirH, yEksikH, yTaslakH], 'yayina_al', false);
   k('toplu yayına al (gerçek): onaylılar yayında (taslak önce incelemeye geçer), eksik incelemede kalır',
