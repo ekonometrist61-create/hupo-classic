@@ -140,6 +140,14 @@ Son sayım: 2026-11-08. Açık işler, bir sonraki adımı kimin attığına gö
 
 ## B. Kayıtlar (en yeni üstte)
 
+### K-0238 · 2026-11-10 · VT/DEN · Hikâye yayın kapısı yalnız insan onayı ve denetim sonuçları güncellemesi uzak DB'ye uygulandı
+
+- **Uygulandı (`db:preview` yalnız bu iki dosyayı gösterdi, `db:deploy` hatasız):** `20261201000000_okuma_hikaye_insan_onayi_yeter` (hikâye yayın kapısı yalnız `insan = approved` + inceleyen; ajan A/B bilgi amaçlı; soru ve sözlük kuralları değişmedi) ve `20261210000000_okuma_denetim_guncelle` (HR-017 ve HR-024–062 arası 18 hikâye için güncel paketler yeni taslak sürüm olarak, Ajan A/B kararları kör denetim-3 raporlarından; insan `pending`). Sonrasında `db:preview`: uzak veritabanı güncel.
+- **Katı kip:** `20261210` geçersiz pakette hata verecek şekilde yazıldı; hata vermedi, yani 19 paket DB'de (yeni eklendi ya da aynı sha256 vardı).
+- **Doğrulanamayan:** `20261200` (K-0234) sessiz atlamalıydı; derlenemeyen eski paketlerden bazıları (ör. 3 şık kuralı, HR-055 sözlük yuvası) DB'ye girmemiş olabilir. DB okunamadığı için kaç sürümün eklendiği bilinmiyor. Kontrol: SQL Editor'de `select h.slug, s.id, s.durum, s.sha256, s.denetim from okuma_hikaye_surumleri s join okuma_hikayeleri h on h.id = s.hikaye_id order by h.slug, s.surum_no;`
+- **Kayıt farkları:** HR-062 Ajan A: rapor `review_needed`, `ozet.md` `pass`; rapor esas alındı. HR-024/025/026/028/049/051/052/053 soru şıkları denetimden sonra düzeltildi, hikâye metni aynı.
+- **Deploy bekleyen başka iş yok / bilerek yapılmayan:** Edge fonksiyonlar uzakta güncel görünüyor (`telefon-kod-gonder` 10-17 commit'i dosyanın ilk commit'iydi, v1 daha önce yayında). `payments-callback` ve `payments-checkout` uzakta yok (ödeme hesapları en son kararı). Web paneli: `feature/crm-growth-2026-10` master'dan 73 commit önde, 17 geride; üretime çıkış birleştirme ve sürüm notu gerektirir (docs/SURUMLEME.md), bu turda yapılmadı.
+
 ### K-0237 · 2026-11-10 08:00 · GÖR-017/087/096 · Kullanıcı kararları uygulandı: rozet deploy, MAT 5.3.6 kaydı, içe aktarma zarfı
 - **Tür:** Karar
 - **Konu:** WEB, DEN
