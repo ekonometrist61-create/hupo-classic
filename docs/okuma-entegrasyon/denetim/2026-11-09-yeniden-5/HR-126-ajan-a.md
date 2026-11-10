@@ -1,0 +1,15 @@
+# HR-126 · Yağmur Bahçesinin Planı · Ajan A (olgu ve doğruluk)
+Karar: review_needed
+Özet: Hikâyenin olgusal iddiaları (yağmur suyunun alçak yerde toplanması, ip ve cetvelle ölçüm, bozuk oluk tahmininin yanlışlanması) genel olarak tutarlı ve metinle uyumlu; s1, s2 ve s4 cevap anahtarları dayanak sayfalarıyla destekleniyor. Ancak s3'te ikinci bir makul şık var, bir öğrenme hedefi ("yamaç") metinde geçmiyor ve ölçme yöntemi yatay çizgi iddiası için eksik bırakılmış; bunlar yazar teyidi gerektiriyor.
+
+Bulgular:
+- [orta] Soru s3 (sayfa 3): Çeldirici A, ikinci modelin neden farklı çalıştığına dair makul bir cevap gibi okunabiliyor. Alıntı: "Çiçeklik yolun hemen yanındaydı". Metinde bu ifade ilk modelin özelliği olarak geçiyor (sayfa 3: "İlk modelde çiçeklik yolun hemen yanındaydı"), yani doğru cevabın karşıtı olarak mantıklı; ancak "neden farklı çalıştı" sorusuna yanıt olarak B ile birlikte iki şık da mantıksal olarak savunulabilir. Öneri: A şıkkı, "birinci modelin yerleşimi" olarak açıkça ayırt edilmeli ya da çeldirici B'nin karşıtı olan başka bir yanlış neden yazılmalı; B'nin tek doğru olduğu sayfa 3 cümlesiyle netleştirilmeli.
+- [orta] ogrenme_hedefleri (egim_hr126, "yamaç"): Hedef sözcük metinde ve sorularda geçmiyor. Alıntı: "{id: egim_hr126, tur: lexeme, etiket: "yamaç", islev: application}". Öneri: ya metne "yamaç" (eğimli alan) sözcüğü, ör. sayfa 2 ölçüm cümlesinde, eklenmeli ya da hedef listeden çıkarılmalı; paket dosyası yoksa sözcük kullanımı kontrol edilemiyor.
+- [düşük] Sayfa 2 (ölçme yöntemi): Yatay ip ile düzlem kurulduğu söyleniyor ("ip, ölçümün düz bir hat üzerinde yapılmasını sağlıyordu"). Su terazisi ya da eşdeğeri yoksa ipin yatay olduğu garanti edilmez; 3. sınıf için yaklaşık ölçüm kabul edilebilir ama ölçme anlatımı yanıltıcı olabilir. Alıntı: "İple yatay bir çizgi kurdular". Öneri: "su terazisiyle" eklenmesi ya da "gerilmiş ip" ifadesine dönülmesi.
+- [düşük] Soru s2 ve s3 çeldiricileri: "Yağmur o gün hiç yağmamıştı" şıkkı hem s2 (A) hem s3 (D) içinde tekrarlanıyor; metinle çelişen, doğru olamayacak bir şık olarak iki soruda da aynı. Alıntı: "Yağmur o gün hiç yağmamıştı". Öneri: s3 D şıkkı farklı, metinle çelişen bir çeldiriciyle değiştirilmeli (Ajan B'nin soru tekrarı kontrolüyle de örtüşür).
+
+Doğrulanamayan iddialar: Paket dosyası (`icerik/okuma/paket/hr126-*.paket.json`) bulunamadı; sözlük girdileri ve `sozluk_tdk` alanı (pending) bu nedenle kontrol edilemedi. `curriculum_status: source_pending` olduğundan müfredat/kazanım eşlemesi bu denetimde doğrulanmadı. WebSearch kullanılmadı; genel fen olgusu (yağmur suyu alçak noktalarda birikir) doğrulama gerektirmeyecek düzeyde kabul edildi.
+
+Güçlü yanlar:
+- s1, s2 ve s4 cevap anahtarları dayanak sayfalarıyla birebir uyumlu (sayfa 1, 2 ve 4 cümleleri alıntılanan dayanakla eşleşiyor); çeldiricilerin çoğu metinle açıkça çelişiyor.
+- Olay sırası ve kurgu içi tutarlılık iyi: birinci tahmin → ölçüm → iki model → uzman planı → ilk yağmur akışı, sayfalar arası çelişki yok; "çiçeklik yüksekliği" nedeni hem metinde hem açıklamada aynı.
