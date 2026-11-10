@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../models/okuma_kahraman.dart';
 import '../../models/okuma_models.dart';
 import '../../providers/okuma_akis.dart';
 import '../../providers/okuma_providers.dart';
@@ -136,6 +137,10 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
           geriDonusMesaji: geriDonusGerekli(sonOkuma: son, simdi: simdi)
               ? geriDonusMetni(simdi.difference(son!).inDays)
               : null,
+          // Zaten Hazır Hupo ise düğme gereksiz; aksi halde aynı kahramanı "Hupo" olarak seçer.
+          onHazirHupo: d.kahraman?.tur == KahramanTuru.hazir
+              ? null
+              : () => _akis.kahramanSec(const KahramanSecimi(tur: KahramanTuru.hazir, ad: kHazirKahramanAdi)),
         );
       case OkumaAsama.yukleniyor:
         ekran = _Bekleme(

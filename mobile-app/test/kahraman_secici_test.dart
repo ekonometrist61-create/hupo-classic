@@ -12,7 +12,12 @@ class _Kayit {
   String? isim;
 }
 
-Future<_Kayit> _ac(WidgetTester tester, {double yaziOlcegi = 1.0, Size boyut = const Size(390, 844)}) async {
+Future<_Kayit> _ac(
+  WidgetTester tester, {
+  double yaziOlcegi = 1.0,
+  Size boyut = const Size(390, 844),
+  Set<KahramanTuru> kilitli = const {},
+}) async {
   final kayit = _Kayit();
   tester.view.devicePixelRatio = 1.0;
   tester.view.physicalSize = boyut;
@@ -30,6 +35,7 @@ Future<_Kayit> _ac(WidgetTester tester, {double yaziOlcegi = 1.0, Size boyut = c
             builder: (context, setState) => KahramanSecici(
               secili: kayit.tur,
               secilenAlt: kayit.alt,
+              kilitliTurler: kilitli,
               onSec: (tur, {alt, isim}) => setState(() {
                 kayit
                   ..tur = tur
@@ -104,6 +110,29 @@ void main() {
     await tester.pump();
     expect(k.tur, KahramanTuru.baba);
     expect(k.isim, isNull, reason: 'aile üyesinin adını çocuk yazar');
+  });
+
+  testWidgets('kilitli tür seçilemez, "Yakında" ve kilitli semantik etiketi gösterir', (tester) async {
+    final semantik = tester.ensureSemantics();
+    // Kardeşim açık kalır: Ailem kartı yalnız üç aile türü de kilitliyse kilitlenir.
+    final k = await _ac(tester, kilitli: {KahramanTuru.arac, KahramanTuru.anne, KahramanTuru.baba, KahramanTuru.hazir});
+    expect(find.text('Yakında'), findsOneWidget, reason: 'yalnız Araçlar kilitli; Ailem kardeş nedeniyle açık');
+    expect(find.bySemanticsLabel('Araçlar, yakında, seçilemez'), findsOneWidget);
+    expect(find.bySemanticsLabel('Kahraman: Hupo'), findsOneWidget, reason: 'Hazır Hupo hiçbir zaman kilitlenmez');
+
+    await _dokun(tester, find.text('Araçlar'));
+    await tester.pump();
+    expect(k.tur, isNull, reason: 'kilitli kart dokunmaya yanıt vermez');
+
+    await _dokun(tester, find.text('Ailem'));
+    await tester.pump();
+    await _dokun(tester, find.text('Annem'));
+    await tester.pump();
+    expect(k.tur, isNull, reason: 'kilitli alt kart seçilmez');
+    await _dokun(tester, find.text('Kardeşim'));
+    await tester.pump();
+    expect(k.tur, KahramanTuru.kardes, reason: 'açık aile türü seçilebilir kalır');
+    semantik.dispose();
   });
 
   testWidgets('Diğer seçenekler açılır: Hayalî karakter ve Başka biri', (tester) async {

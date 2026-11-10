@@ -25,6 +25,7 @@ class HikayeSecimEkrani extends StatefulWidget {
     this.onYenidenDene,
     this.onOkuduklarim,
     this.geriDonusMesaji,
+    this.onHazirHupo,
   });
 
   final List<OkumaKatalogSatiri> katalog;
@@ -45,6 +46,9 @@ class HikayeSecimEkrani extends StatefulWidget {
 
   /// Uzun süre okumayan çocuk için nazik geri dönüş mesajı (null ise gösterilmez).
   final String? geriDonusMesaji;
+
+  /// Verilirse, hikâye bulunamayan durumda "Hazır Hupo ile oku" düğmesi gösterilir (null ise gizli).
+  final VoidCallback? onHazirHupo;
 
   @override
   State<HikayeSecimEkrani> createState() => _HikayeSecimEkraniState();
@@ -158,6 +162,8 @@ class _HikayeSecimEkraniState extends State<HikayeSecimEkrani> {
               aciklama: OkumaMetin.hikayeKahramanYok,
               birincilEtiket: OkumaMetin.kahramanDegistir,
               birincil: widget.onGeri,
+              ikincilEtiket: OkumaMetin.hikayeHazirHupoIle,
+              ikincil: widget.onHazirHupo,
             )
           else if (liste.isEmpty)
             DurumEkrani(

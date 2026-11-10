@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:ogrenci_hazirlik/models/okuma_kahraman.dart';
 import 'package:ogrenci_hazirlik/models/okuma_models.dart';
 import 'package:ogrenci_hazirlik/providers/app_providers.dart';
 import 'package:ogrenci_hazirlik/providers/okuma_providers.dart';
@@ -39,6 +40,7 @@ Future<_Ortam> _ac(
   bool hareketAzalt = false,
   Map<String, Object> onceki = const {},
   OkumaKatalogSatiri? baslangic,
+  List<Override> ek = const [],
 }) async {
   SharedPreferences.setMockInitialValues(onceki);
   final prefs = await SharedPreferences.getInstance();
@@ -54,6 +56,7 @@ Future<_Ortam> _ac(
         currentUserIdProvider.overrideWithValue('u1'),
         okumaPdfUreticiProvider.overrideWithValue((istek) async => pdfler.add(istek)),
         okumaCikisAkisiProvider.overrideWithValue(const Stream<void>.empty()),
+        ...ek,
       ],
       child: MaterialApp(
         theme: buildAppTheme(),
@@ -156,7 +159,8 @@ void main() {
       await _kahramanSec(tester);
       expect(find.text('Hangi hikâyeyi okuyalım?'), findsOneWidget);
       expect(find.text('Feneri Kim Yakıyor?'), findsOneWidget);
-      expect(repo.cagrilar.firstWhere((c) => c.$1 == 'okuma_katalog_filtre').$2['p_kahraman_turu'], 'hayvan');
+      // Kahraman ekranı tür başına kapsam sorgusu yapar; hikâye listesi son katalog çağrısıdır.
+      expect(repo.cagrilar.lastWhere((c) => c.$1 == 'okuma_katalog_filtre').$2['p_kahraman_turu'], 'hayvan');
       expect(tester.takeException(), isNull);
 
       await _hikayeAc(tester);
@@ -403,7 +407,7 @@ void main() {
     expect(find.text('Kahramanlarım'), findsOneWidget);
     await _tikla(tester, find.text('Pati'));
     expect(find.text('Hangi hikâyeyi okuyalım?'), findsOneWidget);
-    expect(repo.cagrilar.first.$2['p_kahraman_turu'], 'hayvan');
+    expect(repo.cagrilar.lastWhere((c) => c.$1 == 'okuma_katalog_filtre').$2['p_kahraman_turu'], 'hayvan');
   });
 
   testWidgets('başka hesabın rafı görünmez', (tester) async {
@@ -483,7 +487,8 @@ void main() {
 
   testWidgets('bu kahramana uygun hikâye yoksa nazik boş durum', (tester) async {
     final repo = FakeOkumaRepository(katalogSatirlari: []);
-    await _ac(tester, repo);
+    // Kahraman türleri açık sayılır (kapsam kilidi bu testin konusu değil); hikâye listesi boştur.
+    await _ac(tester, repo, ek: [okumaKahramanKapsamProvider.overrideWith((ref) async => KahramanTuru.values.toSet())]);
     await _kahramanSec(tester);
     expect(find.text('Hikâyeler hazırlanıyor'), findsOneWidget);
     expect(find.text('Kahramanı değiştir'), findsOneWidget);

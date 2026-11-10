@@ -70,11 +70,21 @@ const _kenarSecili = OkumaTema.kenarSecili;
 typedef KahramanSecildi = void Function(KahramanTuru tur, {String? alt, String? isim});
 
 class KahramanSecici extends StatefulWidget {
-  const KahramanSecici({super.key, required this.secili, required this.secilenAlt, required this.onSec});
+  const KahramanSecici({
+    super.key,
+    required this.secili,
+    required this.secilenAlt,
+    required this.onSec,
+    this.kilitliTurler = const {},
+  });
 
   final KahramanTuru? secili;
   final String? secilenAlt;
   final KahramanSecildi onSec;
+
+  /// Katalogda hikâyesi olmayan türler. Kilitli tür seçilemez ve "Yakında" gösterir.
+  /// Boşsa (katalog yükleniyor ya da okunamadı) hiçbir tür kilitlenmez.
+  final Set<KahramanTuru> kilitliTurler;
 
   @override
   State<KahramanSecici> createState() => _KahramanSeciciState();
@@ -88,6 +98,12 @@ class _KahramanSeciciState extends State<KahramanSecici> {
   void _grubuAc(String grup) => setState(() => _grup = _grup == grup ? null : grup);
 
   bool _aileSecili(KahramanTuru? t) => t == KahramanTuru.anne || t == KahramanTuru.baba || t == KahramanTuru.kardes;
+
+  /// Hazır Hupo hiçbir zaman kilitlenmez.
+  bool _kilit(KahramanTuru t) => t != KahramanTuru.hazir && widget.kilitliTurler.contains(t);
+
+  /// Ailem kartı yalnız üç aile türü de kilitliyse kilitlenir; değilse açık kalır ve tek tek kilitlenir.
+  bool get _ailemKilitli => _kilit(KahramanTuru.anne) && _kilit(KahramanTuru.baba) && _kilit(KahramanTuru.kardes);
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +132,8 @@ class _KahramanSeciciState extends State<KahramanSecici> {
                       alt: _benAlt,
                       zemin: OkumaTema.primarySoft,
                       secili: t == KahramanTuru.ben,
-                      onTap: () => widget.onSec(KahramanTuru.ben),
+                      kilitli: _kilit(KahramanTuru.ben),
+                      onTap: _kilit(KahramanTuru.ben) ? null : () => widget.onSec(KahramanTuru.ben),
                       gorsel: const Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -154,7 +171,8 @@ class _KahramanSeciciState extends State<KahramanSecici> {
                     yol: '${_karakterler}insan_anne.webp',
                     secili: _aileSecili(t),
                     acik: _grup == _aileGrubu,
-                    onTap: () => _grubuAc(_aileGrubu),
+                    kilitli: _ailemKilitli,
+                    onTap: _ailemKilitli ? null : () => _grubuAc(_aileGrubu),
                   ),
                 ),
                 SizedBox(
@@ -165,7 +183,8 @@ class _KahramanSeciciState extends State<KahramanSecici> {
                     zemin: OkumaTema.mintSoft,
                     yol: '${_karakterler}insan_arkadas_sapkali.webp',
                     secili: t == KahramanTuru.arkadas,
-                    onTap: () => widget.onSec(KahramanTuru.arkadas),
+                    kilitli: _kilit(KahramanTuru.arkadas),
+                    onTap: _kilit(KahramanTuru.arkadas) ? null : () => widget.onSec(KahramanTuru.arkadas),
                   ),
                 ),
                 SizedBox(
@@ -177,10 +196,13 @@ class _KahramanSeciciState extends State<KahramanSecici> {
                     yol: '${_kahramanlar}aslan.png',
                     secili: t == KahramanTuru.hayvan,
                     acik: _grup == _hayvanGrubu,
-                    onTap: () {
-                      widget.onSec(KahramanTuru.hayvan);
-                      _grubuAc(_hayvanGrubu);
-                    },
+                    kilitli: _kilit(KahramanTuru.hayvan),
+                    onTap: _kilit(KahramanTuru.hayvan)
+                        ? null
+                        : () {
+                            widget.onSec(KahramanTuru.hayvan);
+                            _grubuAc(_hayvanGrubu);
+                          },
                   ),
                 ),
                 SizedBox(
@@ -192,10 +214,13 @@ class _KahramanSeciciState extends State<KahramanSecici> {
                     yol: '${_karakterler}arac_otomobil.webp',
                     secili: t == KahramanTuru.arac,
                     acik: _grup == _aracGrubu,
-                    onTap: () {
-                      widget.onSec(KahramanTuru.arac);
-                      _grubuAc(_aracGrubu);
-                    },
+                    kilitli: _kilit(KahramanTuru.arac),
+                    onTap: _kilit(KahramanTuru.arac)
+                        ? null
+                        : () {
+                            widget.onSec(KahramanTuru.arac);
+                            _grubuAc(_aracGrubu);
+                          },
                   ),
                 ),
               ],
@@ -215,6 +240,7 @@ class _KahramanSeciciState extends State<KahramanSecici> {
                 },
                 secilenAlt: widget.secilenAlt,
                 secili: t,
+                kilitliTurler: widget.kilitliTurler,
                 onSec: (a) => widget.onSec(
                   a.tur,
                   alt: a.id,
@@ -265,7 +291,8 @@ class _KahramanSeciciState extends State<KahramanSecici> {
                       zemin: OkumaTema.sunSoft,
                       yol: '${_karakterler}fantastik_macera_kasifi.webp',
                       secili: t == KahramanTuru.hayali,
-                      onTap: () => widget.onSec(KahramanTuru.hayali),
+                      kilitli: _kilit(KahramanTuru.hayali),
+                      onTap: _kilit(KahramanTuru.hayali) ? null : () => widget.onSec(KahramanTuru.hayali),
                     ),
                   ),
                   SizedBox(
@@ -276,7 +303,8 @@ class _KahramanSeciciState extends State<KahramanSecici> {
                       zemin: OkumaTema.line,
                       yol: '${_karakterler}insan_genc_kiz_modern.webp',
                       secili: t == KahramanTuru.baskaBiri,
-                      onTap: () => widget.onSec(KahramanTuru.baskaBiri),
+                      kilitli: _kilit(KahramanTuru.baskaBiri),
+                      onTap: _kilit(KahramanTuru.baskaBiri) ? null : () => widget.onSec(KahramanTuru.baskaBiri),
                     ),
                   ),
                 ],
@@ -304,6 +332,26 @@ const _digerBaslik = 'Diğer kahraman seçenekleri';
 const _aileSecBaslik = 'Ailenden kim olsun?';
 const _hayvanSecBaslik = 'Hangi hayvan olsun?';
 const _aracSecBaslik = 'Hangi araç olsun?';
+
+/// Kilitli türün küçük etiketi. Metin ekran okuyucuya kart etiketinin içinde zaten geçer.
+class _YakindaEtiketi extends StatelessWidget {
+  const _YakindaEtiketi();
+
+  @override
+  Widget build(BuildContext context) => ExcludeSemantics(
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk8, vertical: 2),
+          decoration: BoxDecoration(
+            color: OkumaTema.line,
+            borderRadius: BorderRadius.circular(OkumaTema.koseCip),
+          ),
+          child: Text(
+            OkumaMetin.kahramanYakinda,
+            style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu),
+          ),
+        ),
+      );
+}
 
 /// Karakter görseli. Yüklenemezse boş kutu kalır (yedek ikon kartta zaten vardır).
 class _Gorsel extends StatelessWidget {
@@ -343,20 +391,25 @@ class _BuyukKart extends StatelessWidget {
     required this.secili,
     required this.onTap,
     required this.gorsel,
+    this.kilitli = false,
   });
 
   final String etiket;
   final String alt;
   final Color zemin;
   final bool secili;
-  final VoidCallback onTap;
+  final bool kilitli;
+
+  /// Kilitliyken null: dokunma etkisiz kalır.
+  final VoidCallback? onTap;
   final Widget gorsel;
 
   @override
   Widget build(BuildContext context) => Semantics(
         button: true,
         selected: secili,
-        label: 'Kahraman: $etiket',
+        enabled: !kilitli,
+        label: kilitli ? OkumaMetin.kahramanKilitliEtiket(etiket) : 'Kahraman: $etiket',
         onTap: onTap,
         child: ExcludeSemantics(
           child: Material(
@@ -385,6 +438,7 @@ class _BuyukKart extends StatelessWidget {
                             style: OkumaTema.yazi(OkumaTema.yaziKartBaslik, kalinlik: OkumaTema.kalinlikBaslik),
                           ),
                         ),
+                        if (kilitli) const _YakindaEtiketi(),
                         if (secili) const Icon(Icons.check_circle_rounded, color: OkumaTema.primary),
                       ],
                     ),
@@ -408,6 +462,7 @@ class _KompaktKart extends StatelessWidget {
     required this.secili,
     required this.onTap,
     this.acik = false,
+    this.kilitli = false,
   });
 
   final String etiket;
@@ -416,14 +471,18 @@ class _KompaktKart extends StatelessWidget {
   final String yol;
   final bool secili;
   final bool acik;
-  final VoidCallback onTap;
+  final bool kilitli;
+
+  /// Kilitliyken null: dokunma etkisiz kalır.
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) => Semantics(
         button: true,
         selected: secili,
         expanded: acik ? true : null,
-        label: 'Kahraman: $etiket',
+        enabled: !kilitli,
+        label: kilitli ? OkumaMetin.kahramanKilitliEtiket(etiket) : 'Kahraman: $etiket',
         onTap: onTap,
         child: ExcludeSemantics(
           child: Material(
@@ -449,6 +508,7 @@ class _KompaktKart extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
+                            if (kilitli) ...[const _YakindaEtiketi(), const SizedBox(height: OkumaTema.bosluk4)],
                             // Tek kelimede kelime ortadan bölünmez (küçülerek sığar); çok kelimede satır sarar.
                             if (etiket.contains(' '))
                               Text(
@@ -494,6 +554,7 @@ class _AltSecenekler extends StatelessWidget {
     required this.secilenAlt,
     required this.secili,
     required this.onSec,
+    this.kilitliTurler = const {},
   });
 
   final String baslik;
@@ -501,6 +562,7 @@ class _AltSecenekler extends StatelessWidget {
   final String? secilenAlt;
   final KahramanTuru? secili;
   final void Function(KahramanAlt) onSec;
+  final Set<KahramanTuru> kilitliTurler;
 
   @override
   Widget build(BuildContext context) => Container(
@@ -533,7 +595,8 @@ class _AltSecenekler extends StatelessWidget {
                           alt: a,
                           // Hayvan ve araçta alt seçenek kimliği eşleşmeli; ailede kimlik zaten tür kodudur.
                           secili: a.tur == secili && (secilenAlt == a.id || a.id == a.tur.kod),
-                          onTap: () => onSec(a),
+                          kilitli: a.tur != KahramanTuru.hazir && kilitliTurler.contains(a.tur),
+                          onTap: a.tur != KahramanTuru.hazir && kilitliTurler.contains(a.tur) ? null : () => onSec(a),
                         ),
                       ),
                   ],
@@ -546,17 +609,21 @@ class _AltSecenekler extends StatelessWidget {
 }
 
 class _AltKart extends StatelessWidget {
-  const _AltKart({required this.alt, required this.secili, required this.onTap});
+  const _AltKart({required this.alt, required this.secili, required this.onTap, this.kilitli = false});
 
   final KahramanAlt alt;
   final bool secili;
-  final VoidCallback onTap;
+  final bool kilitli;
+
+  /// Kilitliyken null: dokunma etkisiz kalır.
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) => Semantics(
         button: true,
         selected: secili,
-        label: alt.etiket,
+        enabled: !kilitli,
+        label: kilitli ? OkumaMetin.kahramanKilitliEtiket(alt.etiket) : alt.etiket,
         onTap: onTap,
         child: ExcludeSemantics(
           child: Material(
@@ -588,6 +655,7 @@ class _AltKart extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                         style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, satir: 1.15),
                       ),
+                      if (kilitli) ...[const SizedBox(height: OkumaTema.bosluk4), const _YakindaEtiketi()],
                     ],
                   ),
                 ),

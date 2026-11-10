@@ -5,6 +5,7 @@ import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../models/okuma_kahraman.dart';
 import '../models/okuma_models.dart';
 import '../services/okuma_cihaz_deposu.dart';
 import '../services/okuma_pdf_hizmeti.dart';
@@ -95,6 +96,20 @@ final okumaDevamProvider = Provider.autoDispose<OkumaDevam?>((ref) => ref.watch(
 final okumaVitrinKatalogProvider = FutureProvider.autoDispose<List<OkumaKatalogSatiri>>(
   (ref) => ref.watch(okumaRepositoryProvider).katalog(limit: 48),
 );
+
+/// Kahraman türlerinden hikâyesi olanlar (Hazır Hupo hariç; o her hikâyeye uygundur).
+/// Genel katalog (üst sınır 48) türleri kaçırabileceği için her tür ayrı sorulur; tür başına
+/// tek kayıt yeter. Bir çağrı başarısızsa sağlayıcı hata verir ve ekran hiçbir türü kilitlemez.
+final okumaKahramanKapsamProvider = FutureProvider.autoDispose<Set<KahramanTuru>>((ref) async {
+  final repo = ref.watch(okumaRepositoryProvider);
+  final turler = [for (final t in KahramanTuru.values) if (t != KahramanTuru.hazir) t];
+  final sonuc = await Future.wait([for (final t in turler) repo.katalog(kahramanTuru: t.kod, limit: 1)]);
+  // Sıra: turler ile aynı indeks; boş liste = o türde hikâye yok.
+  return {
+    for (var i = 0; i < turler.length; i++)
+      if (sonuc[i].isNotEmpty) turler[i],
+  };
+});
 
 /// Öğrencinin sınıfı (`my_sinif()`; sunucu belirler). Okunamazsa null: görseller varsayılan
 /// (2–4. sınıf) dilinde kalır.

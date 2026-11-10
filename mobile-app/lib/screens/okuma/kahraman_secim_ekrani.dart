@@ -47,6 +47,16 @@ class _KahramanSecimEkraniState extends ConsumerState<KahramanSecimEkrani> {
     super.dispose();
   }
 
+  /// Katalogda hikâyesi olmayan türler. Katalog yükleniyorsa ya da okunamadıysa boş: hiçbir tür kilitlenmez.
+  Set<KahramanTuru> get _kilitliTurler {
+    final kapsam = ref.watch(okumaKahramanKapsamProvider).valueOrNull;
+    if (kapsam == null) return const {};
+    return {
+      for (final t in KahramanTuru.values)
+        if (t != KahramanTuru.hazir && !kapsam.contains(t)) t,
+    };
+  }
+
   /// Çocuğun profil adının ilk sözcüğü (öneri için; yalnız cihazda kullanılır).
   String get _profilAdi {
     final tam = ref.watch(profileProvider).valueOrNull?.fullName?.trim() ?? '';
@@ -54,9 +64,10 @@ class _KahramanSecimEkraniState extends ConsumerState<KahramanSecimEkrani> {
   }
 
   /// Devam engelinin nedeni; null ise seçim tamamdır. Pasif düğmenin yanında gösterilir.
-  String? get _neden {
+  String? _neden(Set<KahramanTuru> kilitli) {
     final t = _tur;
     if (t == null) return OkumaMetin.kahramanDevamPasif;
+    if (kilitli.contains(t)) return OkumaMetin.kahramanKilitliNeden;
     if (t.adIster) {
       final hata = adKontrol(_ad.text, tur: t);
       if (hata != null) return hata;
@@ -92,7 +103,7 @@ class _KahramanSecimEkraniState extends ConsumerState<KahramanSecimEkrani> {
   @override
   Widget build(BuildContext context) {
     final t = _tur;
-    final neden = _neden;
+    final neden = _neden(_kilitliTurler);
     final profil = _profilAdi;
     return OkumaEkranIskeleti(
       baslik: OkumaMetin.uygulamaAdi,
@@ -107,6 +118,7 @@ class _KahramanSecimEkraniState extends ConsumerState<KahramanSecimEkrani> {
         KahramanSecici(
           secili: t,
           secilenAlt: _alt,
+          kilitliTurler: _kilitliTurler,
           onSec: (tur, {alt, isim}) {
             setState(() {
               _tur = tur;

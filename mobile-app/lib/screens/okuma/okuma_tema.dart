@@ -220,6 +220,9 @@ class OkumaMetin {
       'Bu cihaza kaydettiklerin. Dokununca hemen devam edersin.';
   static String kahramanSilEtiket(String ad) => '$ad kahramanını sil';
   static const kahramanSilindi = 'Kahraman silindi.';
+  static const kahramanYakinda = 'Yakında';
+  static String kahramanKilitliEtiket(String etiket) => '$etiket, yakında, seçilemez';
+  static const kahramanKilitliNeden = 'Bu kahraman için henüz hikâye yok. Başka bir kahraman seç.';
 
   // ── Hikâye seçimi ─────────────────────────────────────────────────────────
   static const hikayeBaslik = 'Hangi hikâyeyi okuyalım?';
@@ -235,6 +238,7 @@ class OkumaMetin {
   static const hikayeKahramanYok =
       'Bu kahraman için hikâyeler hazırlanıyor. Yakında yeni hikâyeler eklenecek; başka bir kahraman da deneyebilirsin.';
   static const hikayeKahramanYokBaslik = 'Hikâyeler hazırlanıyor';
+  static const hikayeHazirHupoIle = 'Hazır Hupo ile oku';
   static const hikayeYukleniyor = 'Hikâyeler hazırlanıyor…';
   static const hikayeAciliyor = 'Hikâyen hazırlanıyor…';
   static const hikayeYeni = 'Yeni';
