@@ -405,6 +405,16 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 
 ## B. Kayıtlar (en yeni üstte)
 
+### K-0234 · 2026-11-09 · VT/DEN · Hikâye denetim sonuçları panelde görünür kılındı (94 paket, taslak sürüm)
+
+- **Neden:** Yönetim panelinin denetim filtresi veritabanındaki sürüm kaydını okur. 2026-11-08 ve 2026-11-09 turlarının sonuçları veritabanına yazılmamıştı; yalnız 2026-10-24 turu (`20261092`) yazılmıştı.
+- **Doğrulama:** Veritabanı `icerik` alanı `.paket.json` dosyasıdır (`jsonb::text` sha256 eşleşmesi, 145 sürüm). Yerel paketlerin 12'si birebir eşleşti; 82'si farklıydı.
+- **Yapılan:** Migrasyon `20261200000000_okuma_denetim_gorunur.sql`: 94 yerel paket yeni TASLAK sürüm olarak eklendi, ajan_a/ajan_b son tur kararlarından yazıldı (yeniden-5 > kor-denetim > 2026-11-08 hr015-114). İnsan kararı `pending`; yayındaki ve eski sürümler değişmedi. HR-016 ve HR-017 için rapor yok, `pending`. HR-121–132 için yerel paket yok, içe alınmadı.
+- **Uygulandı:** `db:preview` yalnız bu migrasyonu gösterdi; `db:deploy` hatasız tamamlandı. Yabancı `20261161000000_test_gorselli_cevap.sql` `docs/migrasyon-disi/` altına taşındı (onaylı öneri); sürüm çakışması vardı.
+- **Doğrulanmadı:** Migrasyon içindeki `_okuma_paket_hatalari` doğrulaması bazı paketleri reddetmiş olabilir; bu durumda o paket `RED` notice ile atlanır ve hata vermez. Eklenen sürüm sayısı ve panel görünümü DB'den okunamadı; panelde kontrol edilmeli.
+- **Kural notu:** Migrasyon `require_admin` kapısını atladı (20261092 ile aynı yöntem). Sonraki içe aktarmalar yine panelden yapılmalı.
+- **Commit'lenmedi:** `PROJE_GUNLUGU.md` ve yeni migrasyon yalnız çalışma ağacında.
+
 ### K-0231 · 2026-11-08 · VT/GÜV · Drift kaynağı: 20260927000120 uzakta revoke olmadan uygulanmış (GÖR-095)
 - **Tür:** Teşhis
 - **Konu:** VT / GÜV (GÖR-095 drift maddesi)
