@@ -1,11 +1,12 @@
 -- =====================================================================
--- Okuma Dünyası: güncellenen paketleri yeni TASLAK sürüm olarak içe al (20261200000000 sonrası).
--- HR-017: yerel paket 20261200000000'dan sonra değişti. HR-048..062 (10 hikâye): ChatGPT yeniden yazımı, derleyiciden geçen paketler.
--- Ajan A/B: 2026-11-09-kor-denetim-3 rapor Karar satırları (HR-017: rapor yok, pending). insan pending kalır.
--- Aynı sha256 varsa atlanır; mevcut sürümler değişmez. Geçersiz paket RED notice ile atlanır.
+-- Okuma Dünyası: güncellenen paketleri yeni TASLAK sürüm olarak içe al ve Ajan A/B kararlarını yaz (20261200000000 sonrası).
+-- HR-017: yerel paket 20261200000000'dan sonra değişti. HR-024..062 arası 18 hikâye: derleyiciden geçen paket-2026-11-10 paketleri.
+-- Ajan A/B: 2026-11-09-kor-denetim-3 rapor Karar satırları (HR-017: rapor yok, pending). İnsan pending kalır.
+-- Not: HR-024/025/026/028/049/051/052/053 için soru şıkları rapordan sonra düzeltildi (3 şık kuralı); hikâye metni aynı.
+-- Katı kip: geçersiz paket varsa migrasyon hata verip durur (sessiz atlama yok). Aynı sha256 varsa atlanır.
 -- =====================================================================
 
-create or replace function public._tmp_okuma_denetim_iceri_al(p_paket jsonb, p_a text, p_b text)
+create or replace function public._tmp_okuma_denetim_iceri_al(p_paket jsonb, p_a text, p_b text, p_siki boolean default false)
 returns text
 language plpgsql
 set search_path = ''
@@ -16,6 +17,9 @@ declare
 begin
   v_hatalar := public._okuma_paket_hatalari(p_paket);
   if jsonb_array_length(v_hatalar) > 0 then
+    if p_siki then
+      raise exception 'PAKET_RED: % %', (p_paket -> 'hikaye' ->> 'slug'), v_hatalar::text using errcode = '22023';
+    end if;
     return 'RED: ' || (p_paket -> 'hikaye' ->> 'slug') || ' ' || v_hatalar::text;
   end if;
   v_hik := p_paket -> 'hikaye';
@@ -526,7 +530,2109 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
     ]
   }
 }
-$json$::jsonb, null, null); end $m$;
+$json$::jsonb, null, null, true); end $m$;
+
+do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr024-bulut-postacisinin-son-mektubu",
+    "baslik": "Bulut Postacısının Son Mektubu",
+    "tur": "fantastik",
+    "konu": "yon_adres",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "okuma_bandi": 2,
+    "dunya_tipi": "masalsi",
+    "izinli_turler": [
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D16",
+      "D5"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 3,
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 2,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif",
+        "dostluk"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D16",
+        "yardimci_deger": "D5"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "pusula_hr024",
+          "tur": "lexeme",
+          "etiket": "pusula",
+          "yuva": "hr024_pusula",
+          "islev": "first_hint"
+        },
+        {
+          "id": "adres_hr024",
+          "tur": "lexeme",
+          "etiket": "adres",
+          "yuva": "hr024_adres",
+          "islev": "application"
+        },
+        {
+          "id": "yon_hr024",
+          "tur": "lexeme",
+          "etiket": "yön",
+          "yuva": "hr024_yon",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr024",
+          "tur": "idiom",
+          "etiket": "Gözleri parlamak",
+          "yuva": "hr024_gozleri_parladi",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr024",
+          "tur": "concept",
+          "etiket": "Yön bilgisi ile süs arasındaki fark",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pass",
+        "ajan_b": "pass",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 335,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 3,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Zarftaki adres yanlış mı, yoksa pusula mı yanılıyor? Pofuduk doğru eve nasıl ulaştı?",
+    "durum": "taslak",
+    "fis_kodu": "HR-024"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bulutlar Şehri'nde herkesin bir görevi vardı. Yağmur Bulutu bahçeleri sular, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yelkenlere yardım eder, Postacı "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise mektupları götürürdü. Sabah güneşi bulutların kenarlarını pembeye boyamıştı. O sabah "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " çantasında yalnızca bir zarf kalmıştı. Zarfın üstünde bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr024_adres"
+        },
+        {
+          "t": "metin",
+          "v": " ve bir ad yazılıydı: Kuzey Tepesi, Mavi Pencereli Ev, Sevgi Teyze.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kuzeye uçtuğunu sanıyordu. Birkaç dakika sonra altında deniz yerine kocaman bir çöl gördü. “Bu işte bir terslik var,” diye mırıldandı. Çantasından "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr024_pusula"
+        },
+        {
+          "t": "metin",
+          "v": " çıkardı. Pusulanın oku kuzeyi gösteriyordu ama kendisi güneye ilerliyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yanına sokuldu. “Yelkenleri çevirirken seni yanlış yöne ben ittim, özür dilerim.”\n\n“Sorun değil,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Ama mektup sahibini bekletmeyelim.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkisi birlikte "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr024_yon"
+        },
+        {
+          "t": "metin",
+          "v": " değiştirdi. Pusulanın okunu izleyip kuzeye döndüler. Aşağıda mısır tarlaları, küçük köyler ve kıvrılan bir dere görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " her tepeye bakıp pusulayla karşılaştırdı. Derken birbirine benzeyen iki tepe gördüler. Birinde kırmızı çatılı, ötekinde mavi pencereli bir ev vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen aşağı inecekti ama mavi pencere güneş ışığından mı mavi görünüyordu, yoksa gerçekten maviye mi boyanmıştı?\n\nAşağıdaki kuş sürüsüne seslendi. Kuşların lideri, mavi pencereli evin ikinci tepede olduğunu söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " teşekkür edip ikinci tepeye doğru süzüldü.\n\nYolda çantasına baktı. Zarfın köşesindeki pulun üstünde küçük bir yıldız vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yıldızın yol gösterdiğini düşünüp çevresine bakındı. Yıldız yön göstermiyordu; yalnızca pulun süsüydü. "
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tam mektubu bırakacağı sırada evin penceresi açıldı. İçeriden bir ses, “Mavi pencereyi mi arıyorsun?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " adresi bir kez daha okudu. Zarfın üstündeki adı kapının yanındaki levhayla karşılaştırdı. İkisi de Sevgi Teyze yazıyordu. Ancak ondan sonra yaklaşıp mektubu verdi.\n\nYaşlı teyze mektubu titreyen elleriyle aldı. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr024_gozleri_parladi"
+        },
+        {
+          "t": "metin",
+          "v": " Uzakta okuyan torunu, kendi yaptığı bir çizimi göndermişti. Altında şöyle yazıyordu: “Büyüyünce bulut ressamı olacağım.”\n\nTeyze çizimi pencerenin önündeki saksının yanına dayadı. Pencereden giren güneş kâğıdın üzerine düştü ve çizimdeki bulutlar gerçekmiş gibi parladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", dönüş yolunda boş çantasını omzunda sallayarak uçtu. Altından geçen bulutlar ona el salladı. Rüzgâr tüylerini okşadı, çantası hafifçe sallandı.\n\nBulutlar Şehri'ne varınca pusulasını girişteki panoya astı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " pusulaya baktı. “Bir dahaki sefere haritayı da birlikte açalım,” dedi. İkisi gülüştü, sonra Yağmur Bulutu'nun bahçeleri suladığı yere doğru yürüdüler."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr024_gozleri_parladi": [
+      {
+        "t": "metin",
+        "v": "Zarfı açınca gözleri parladı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Zarfın üstündeki adres neresiydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Güney Vadisi, Mavi Pencereli Ev"
+        },
+        {
+          "id": "B",
+          "metin": "Kuzey Tepesi, Mavi Pencereli Ev"
+        },
+        {
+          "id": "C",
+          "metin": "Kuzey Tepesi, Kırmızı Çatılı Ev"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Zarfın üstünde Kuzey Tepesi, Mavi Pencereli Ev yazıyordu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 1,
+      "metin": "Postacı yolunu şaşırdığını hangi bilgiyle anladı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Pusula başka yönü gösteriyordu"
+        },
+        {
+          "id": "B",
+          "metin": "Çantası aniden hafiflemişti"
+        },
+        {
+          "id": "C",
+          "metin": "Yağmur Bulutu yolunu kesmişti"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Pusulanın oku kuzeyi gösteriyordu, postacı ise güneye gidiyordu."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 2,
+      "metin": "Pulun üstündeki yıldız postacıya neden yol göstermedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yağmurda silinmişti"
+        },
+        {
+          "id": "B",
+          "metin": "Çok küçük kalmıştı"
+        },
+        {
+          "id": "C",
+          "metin": "Yalnızca bir süstü"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Yıldız yön göstermiyordu; pulun süsüydü."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“İkisi birlikte yön değiştirdi” cümlesinde yön ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Zarfın üstündeki resim"
+        },
+        {
+          "id": "B",
+          "metin": "Gidilecek doğrultu"
+        },
+        {
+          "id": "C",
+          "metin": "Mektubun kâğıdı"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Yön, bir yere giderken izlenen doğrultudur."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr024_pusula",
+        "tur": "kelime",
+        "yazim": "pusulayı",
+        "anlam": "Kuzey, güney gibi yönleri gösteren iğneli araç.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr024_harita",
+        "tur": "kelime",
+        "yazim": "harita",
+        "anlam": "Bir yerin ya da bölgenin kâğıt üzerindeki gösterimi.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr024_adres",
+        "tur": "kelime",
+        "yazim": "adres",
+        "anlam": "Bir kişinin ya da yerin nerede olduğunu gösteren bilgi.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr024_konum",
+        "tur": "kelime",
+        "yazim": "konum",
+        "anlam": "Bir şeyin bulunduğu yer.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr024_isim",
+        "tur": "kelime",
+        "yazim": "isim",
+        "anlam": "Bir kişinin ya da yerin adı.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr024_yon",
+        "tur": "kelime",
+        "yazim": "yönlerini",
+        "anlam": "Gidilecek ya da bakılacak doğrultu.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr024_kuzey",
+        "tur": "kelime",
+        "yazim": "kuzey",
+        "anlam": "Pusulada üstte gösterilen yön.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr024_gozleri_parladi",
+        "tur": "deyim",
+        "yazim": "gözleri parladı",
+        "anlam": "Çok sevinmek, heyecanlanmak.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr024_gozu_dolmak",
+        "tur": "deyim",
+        "yazim": "gözü dolmak",
+        "anlam": "Duygulanıp ağlamaklı olmak.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr024_pusula",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr024_pusula"
+          },
+          {
+            "girdi": "hr024_harita"
+          }
+        ]
+      },
+      {
+        "ad": "hr024_adres",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr024_adres"
+          },
+          {
+            "girdi": "hr024_konum"
+          },
+          {
+            "girdi": "hr024_isim"
+          }
+        ]
+      },
+      {
+        "ad": "hr024_yon",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr024_yon"
+          },
+          {
+            "girdi": "hr024_kuzey"
+          }
+        ]
+      },
+      {
+        "ad": "hr024_gozleri_parladi",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr024_gozleri_parladi"
+          },
+          {
+            "girdi": "hr024_gozu_dolmak"
+          }
+        ]
+      }
+    ]
+  }
+}$json$::jsonb, 'pass', 'pass', true); end $m$;
+
+do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr025-bremen-yolcularinin-yeni-sarkisi",
+    "baslik": "Bremen Yolcularının Yeni Şarkısı",
+    "tur": "hayvanlar",
+    "konu": "uyum_ritim",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "okuma_bandi": 2,
+    "dunya_tipi": "masalsi",
+    "izinli_turler": [
+      "hayvan",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D4",
+      "D14"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 3,
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 2,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "hayvanlar",
+        "sanat_yaraticilik"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D4",
+        "yardimci_deger": "D14"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "degirmen_hr025",
+          "tur": "lexeme",
+          "etiket": "değirmen",
+          "yuva": "hr025_degirmen",
+          "islev": "first_hint"
+        },
+        {
+          "id": "ritim_hr025",
+          "tur": "lexeme",
+          "etiket": "ritim",
+          "yuva": "hr025_ritim",
+          "islev": "application"
+        },
+        {
+          "id": "uyum_hr025",
+          "tur": "lexeme",
+          "etiket": "uyum",
+          "yuva": "hr025_uyum",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr025",
+          "tur": "idiom",
+          "etiket": "Kulak vermek",
+          "yuva": "hr025_kulak_vermek",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr025",
+          "tur": "concept",
+          "etiket": "Farklı seslerin uyumu",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pass",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 364,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Eşek, köpek, kedi ve horoz aynı anda şarkı söyleyince ne oldu? Uyum nasıl kuruldu?",
+    "durum": "taslak",
+    "fis_kodu": "HR-025"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Eşek, köpek, kedi ve horoz küçük bir orman yolunda yürüyordu. Bremen'e giden uzun yolun ortasında yağmur başladı. Yol kenarında eski bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr025_degirmen"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Dördü koşup oraya sığındı. Çatıdan düşen damlalar taşlara farklı seslerle vuruyordu: tak, tik, tuk.\n\nHoroz kanatlarını çırptı. “Harika bir konser salonu bulduk!” dedi. Eşek yüksek sesle anırdı. Köpek havladı, kedi miyavladı, horoz da öttü. Fakat hepsi aynı anda ses verince ortaya anlaşılmaz bir gürültü çıktı.\n\nKedi kulaklarını kapattı. “Hepimiz duyulmak istiyoruz ama kimse kimseyi dinlemiyor.” "
+        },
+        {
+          "t": "isaret",
+          "kod": "kedi"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nEşek biraz alındı. “Benim sesim zaten böyle güçlü. Sessiz mi olayım?”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Hayır,” dedi köpek. “Sırayla söyleyelim.”\n\nÖnce horoz "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr025_ritim"
+        },
+        {
+          "t": "metin",
+          "v": " tuttu. Bir, iki, üç, dört. Kedi ince sesini ikinci vuruşa, köpek kalın sesini üçüncüye koydu. Eşek dördüncü vuruşta öyle gür anırdı ki değirmenin içi neşeyle doldu. Birinin sesi ötekini bastırdığında durup yeniden başladılar.\n\nBir süre sonra eşek vuruşu kaçırdı. Çatıdan damlayan suyun sesi hızlanmıştı. “Ben mi yanlış söylüyorum?” diye sordu. Kedi sessizce duvara yaklaştı. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr025_kulak_vermek"
+        },
+        {
+          "t": "metin",
+          "v": " Damlalar bir yavaşlıyor, bir hızlanıyordu. “Yağmur hızını değiştiriyor,” dedi.\n\nKöpek adımlarıyla düzeni gösterdi: dört eşit adım, sonra küçük bir durak. Dört sesin arasına kısa bir sessizlik koyunca şarkı daha anlaşılır oldu. Sessiz kalan vuruşta horoz kanadını kaldırdı, herkes ona baktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Eşek bir daha anırmadan önce arkadaşlarına baktı. Horoz kanadını indirince sesini yükseltti. Değirmenin damlaları da sanki onlara eşlik ediyordu. Yağmurun sesi azaldıkça yeni bir ezgi kurdular.\n\nDışarıda yağmur hafifledi. Yol kenarında bir grup çocuk vardı. Çocuklar değirmenin içinden gelen müziği merak etmişti; "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da onlarla birlikte bekliyordu. Hayvanlar kapıya çıktı ve kısa şarkılarını söylediler. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ellerini çırparak eşlik etti. Bir başkası yağmur damlalarının sesini taklit etti. Böylece şarkıya yeni bir ritim eklendi.\n\nHoroz şaşkınlıkla kabardı. “Şimdi hepimiz aynı sesle mi söyleyeceğiz?” diye sordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Hayır,” dedi kedi. “Güzel olan zaten farklı seslerimiz.”\n\nSesler artık birbirine karışmıyordu; ortaya bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr025_uyum"
+        },
+        {
+          "t": "metin",
+          "v": " çıkmıştı. “Bence yolculuğumuzun bir şarkısı oldu,” dedi eşek. Horoz bunu her molada yeniden söylemeyi önerdi.\n\nYağmur tamamen dinince yola devam ettiler. Köpek yürürken adımlarını saydı. Eşek, su birikintilerinden geçerken yavaşladı. Kedi ve horoz da ona göre adım attı.\n\nAkşama doğru uzaktan Bremen'in çanları duyuldu. Dört arkadaş birbirine baktı. Çanların sesini de kendi şarkılarına katmak için yeniden başladılar.\n\nNot: Bu hikâye, Grimm Kardeşler’in derlediği Bremen Mızıkacıları masalından esinlenen özgün bir uyarlamadır."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr025_kulak_vermek": [
+      {
+        "t": "metin",
+        "v": "Kedi, değirmenin duvarına kulak verdi."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Bremen yolunda yürüyen hayvanlar kimlerdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kedi, köpek, kuş ve tavşan"
+        },
+        {
+          "id": "B",
+          "metin": "Eşek, köpek, kedi ve horoz"
+        },
+        {
+          "id": "C",
+          "metin": "Koyun, inek, kedi ve horoz"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Hikâyenin dört yolcusu eşek, köpek, kedi ve horozdur."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Hayvanlar şarkıya neden ara verip yeniden başladı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çocuklar kapıdan içeri bakmıştı"
+        },
+        {
+          "id": "B",
+          "metin": "Horoz yorulup uyumuştu"
+        },
+        {
+          "id": "C",
+          "metin": "Bir ses ötekini bastırmıştı"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Sesler birbirini bastırınca uyum bozuluyor, hayvanlar da yeniden başlıyordu."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Kedi, şarkıyı neyin güzel yaptığını düşünüyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Herkesin aynı sesle şarkı söylemesini"
+        },
+        {
+          "id": "B",
+          "metin": "Seslerin birbirinden farklı olmasını"
+        },
+        {
+          "id": "C",
+          "metin": "Yalnız eşeğin gür sesini"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Kedi, farklı seslerin şarkıyı güzel yaptığını söyledi."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Horoz ritim tuttu” cümlesinde ritim ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Düzenli tekrar eden vuruşlar"
+        },
+        {
+          "id": "B",
+          "metin": "Çatıdaki deliklerin sayısı"
+        },
+        {
+          "id": "C",
+          "metin": "Eski değirmenin kapısı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Ritim, düzenli olarak tekrar eden vuruşlar demektir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr025_degirmen",
+        "tur": "kelime",
+        "yazim": "değirmene",
+        "anlam": "Tahılı su ya da rüzgârla öğüten yapı.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_fabrika",
+        "tur": "kelime",
+        "yazim": "fabrika",
+        "anlam": "Büyük miktarda ürün üreten tesis.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_firin",
+        "tur": "kelime",
+        "yazim": "fırın",
+        "anlam": "Ekmek ya da yemek pişirilen yer.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_ritim",
+        "tur": "kelime",
+        "yazim": "ritim",
+        "anlam": "Seslerin düzenli biçimde tekrar etmesi.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_tempo",
+        "tur": "kelime",
+        "yazim": "tempo",
+        "anlam": "Müzik parçasının hızı.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_karmasa",
+        "tur": "kelime",
+        "yazim": "karmaşa",
+        "anlam": "Düzensiz, birbirine karışmış durum.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_uyum",
+        "tur": "kelime",
+        "yazim": "uyum",
+        "anlam": "Birlikte düzenli ve dengeli çalışma durumu.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_ahenk",
+        "tur": "kelime",
+        "yazim": "ahenk",
+        "anlam": "Seslerin ya da kişilerin birbirine güzel uyması.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_catisma",
+        "tur": "kelime",
+        "yazim": "çatışma",
+        "anlam": "Birbirine zıt düşen kişiler arasındaki anlaşmazlık.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_kulak_vermek",
+        "tur": "deyim",
+        "yazim": "kulak verdi",
+        "anlam": "Dikkatle dinlemek.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_kulagina_kupe",
+        "tur": "deyim",
+        "yazim": "kulağına küpe olmak",
+        "anlam": "Yaşadığı olaydan ders alıp unutmamak.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr025_kulak_asmak",
+        "tur": "deyim",
+        "yazim": "kulak asmamak",
+        "anlam": "Söylenene önem vermeyip dinlememek.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr025_degirmen",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr025_degirmen"
+          },
+          {
+            "girdi": "hr025_fabrika"
+          },
+          {
+            "girdi": "hr025_firin"
+          }
+        ]
+      },
+      {
+        "ad": "hr025_ritim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr025_ritim"
+          },
+          {
+            "girdi": "hr025_tempo"
+          },
+          {
+            "girdi": "hr025_karmasa"
+          }
+        ]
+      },
+      {
+        "ad": "hr025_uyum",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr025_uyum"
+          },
+          {
+            "girdi": "hr025_ahenk"
+          },
+          {
+            "girdi": "hr025_catisma"
+          }
+        ]
+      },
+      {
+        "ad": "hr025_kulak_vermek",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr025_kulak_vermek"
+          },
+          {
+            "girdi": "hr025_kulagina_kupe"
+          },
+          {
+            "girdi": "hr025_kulak_asmak"
+          }
+        ]
+      }
+    ]
+  }
+}$json$::jsonb, 'pass', 'review_needed', true); end $m$;
+
+do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr026-kelime-makinesinin-karisikligi",
+    "baslik": "Kelime Makinesinin Karışıklığı",
+    "tur": "bilim_kurgu",
+    "konu": "cok_anlamlilik",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D14",
+      "D6"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 3,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "okul",
+        "mizah"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D6"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "gul_hr026",
+          "tur": "lexeme",
+          "etiket": "gül",
+          "yuva": "hr026_gul",
+          "islev": "first_hint"
+        },
+        {
+          "id": "yuz_hr026",
+          "tur": "lexeme",
+          "etiket": "yüz",
+          "yuva": "hr026_yuz",
+          "islev": "application"
+        },
+        {
+          "id": "kar_hr026",
+          "tur": "lexeme",
+          "etiket": "kâr",
+          "yuva": "hr026_kar",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr026",
+          "tur": "idiom",
+          "etiket": "İki büklüm olmak",
+          "yuva": "hr026_iki_buklum",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr026",
+          "tur": "concept",
+          "etiket": "Bağlama göre anlam",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 337,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 5,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Makine neden gülü yanlış anlıyor? Aynı yazılan kelimeler farklı anlam taşıyınca ne olur?",
+    "durum": "taslak",
+    "fis_kodu": "HR-026"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " dedesi, kelimelerle oynayan küçük bir makine yapmıştı. Makinenin üstünde üç düğme vardı: Oku, Düşün, Söyle. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk düğmeye bastığında ekranda şu cümle belirdi: Bahçedeki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr026_gul"
+        },
+        {
+          "t": "metin",
+          "v": " bana güldü.\n\n“Çiçek mi kahkaha attı?” diye sordu kardeşi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nMakine cümleyi yorumlamak yerine masaya kırmızı bir gül resmi çizdi ve yanına kahkaha işareti koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “İkisi de gül diye yazılıyor ama aynı anlama gelmiyor,” dedi. Dede gülümseyip makineye yeni bir cümle yazdırdı. Makinenin fanı hafifçe vızıldadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yeni cümleyi yüksek sesle okudu: “Dedem "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr026_yuz"
+        },
+        {
+          "t": "metin",
+          "v": " sayfa okudu.” Makine masaya yüz tane insan yüzü çizdi. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr026_iki_buklum"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Makine, o yüz değil, sayı olan yüz!” dedi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine iki sütun çizdi. Bir yanına yüz sayısını, öbür yanına insan yüzünü yazdı. Sonra kardeşinden yeni bir örnek istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen, “Yaz geldi, sen de yaz!” dedi. Makine ekrana bir güneş ve bir kalem çizdi. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kitap"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce düğmelere rastgele bastı. Makine ekrana kalem, güneş ve bir bulut çizip ışıklarını yanıp söndürdü. “Böyle olmayacak,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nCümleyi ikiye böldü ve her parçayı yanındaki sözcüklerle birlikte okudu. “Yaz geldi” derken mevsimden söz ediyorlardı. “Sen de yaz” derken ise kalemle bir şeyler yazmayı istiyorlardı. Makine bu kez ekrana yalnızca bir güneş çizdi, hemen altına da “Sen de yaz” diye yazdı.\n\nDede yanlarına oturup gözlüğünü düzeltti. “Makinenin hatasını nasıl azaltacağız?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir kural kartı hazırladı: Önce tüm cümleyi oku. Kartı makinenin yanına koydular."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dede masaya iki kart daha koydu. Birinde “Kışın kar yağdı”, ötekinde “Bize "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr026_kar"
+        },
+        {
+          "t": "metin",
+          "v": " kaldı” yazıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kartlara dikkatle baktı. “Bunlar aynı yazılmıyor,” dedi. “Birinin üstünde şapka var.” Dede kâr sözcüğünün bir işten geriye kalan kazanç olduğunu söyledi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ikinci kartı makineye okuttu. Makine bu kez karlı bir dağ yerine bozuk paralarla dolu bir kutu çizdi.\n\nSon denemede "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Çay kıyısında çay içtik,” dedi. Makine su akan bir dere ile iki fincan çizdi. İki kardeş sevinçle alkışladı.\n\nMakine beklenmedik bir soru sordu: “Kelimelerin iki anlamı olabiliyorsa, insanın aynı anda iki duygusu olur mu?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " biraz düşündü. “Olur,” dedi. “Hem heyecanlı hem çekingen olabilirim.” Dede ona bakıp gülümsedi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr026_iki_buklum": [
+      {
+        "t": "yoldas",
+        "hal": "yalin",
+        "yedek": "bir arkadaş"
+      },
+      {
+        "t": "metin",
+        "v": " gülmekten iki büklüm oldu."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 2,
+      "metin": "Makine, “Dedem yüz sayfa okudu” cümlesi için ne çizdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir kitap ve bir kalem"
+        },
+        {
+          "id": "B",
+          "metin": "Yüz tane insan yüzü"
+        },
+        {
+          "id": "C",
+          "metin": "Kırmızı bir gül resmi"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Makine yüz sözcüğünü insan yüzü sanıp yüz tane yüz çizdi."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 3,
+      "metin": "Makine “Yaz geldi, sen de yaz!” cümlesi için neden hem güneş hem kalem çizdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çizim yapmayı her zaman çok severdi"
+        },
+        {
+          "id": "B",
+          "metin": "Cümlenin yarısını eksik okumuştu"
+        },
+        {
+          "id": "C",
+          "metin": "Cümledeki iki yaz ayrı anlamdaydı"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Birinci yaz mevsimi, ikinci yaz kalemle yazmayı anlatıyordu; makine ikisini de gösterdi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Makinenin hatasını bulmada hangi yol işe yaradı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Düğmelere art arda rastgele basmak"
+        },
+        {
+          "id": "B",
+          "metin": "Cümleyi yanındaki sözcüklerle okumak"
+        },
+        {
+          "id": "C",
+          "metin": "Dededen yepyeni bir makine istemek"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Düğmelere basmak işe yaramadı; cümleyi yanındaki sözcüklerle okuyunca anlam anlaşıldı."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 4,
+      "metin": "“Bize kâr kaldı” sözünde kâr ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir işten kalan kazanç"
+        },
+        {
+          "id": "B",
+          "metin": "Gökten düşen beyaz taneler"
+        },
+        {
+          "id": "C",
+          "metin": "Kırmızı bir gül rengi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kâr, bir işten geriye kalan kazanç demektir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr026_gul",
+        "tur": "kelime",
+        "yazim": "gül",
+        "anlam": "Kokulu, renkli çiçek açan bir bitki.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr026_gulmek",
+        "tur": "kelime",
+        "yazim": "güldü",
+        "anlam": "Sevinçle ya da eğlenerek sesle gülmek.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr026_yuz_sayi",
+        "tur": "kelime",
+        "yazim": "yüz",
+        "anlam": "Doksan dokuzdan sonra gelen sayı, yüz adet.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr026_yuz_surat",
+        "tur": "kelime",
+        "yazim": "yüz",
+        "anlam": "İnsanın gözlerinin, burnunun olduğu ön kısım.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr026_sayfa",
+        "tur": "kelime",
+        "yazim": "sayfa",
+        "anlam": "Kitap ya da defterdeki her bir yaprağın bir yüzü.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr026_kar",
+        "tur": "kelime",
+        "yazim": "kar",
+        "anlam": "Gökten yağan beyaz, soğuk kristaller.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr026_kar_kazanc",
+        "tur": "kelime",
+        "yazim": "kâr",
+        "anlam": "Bir işten elde edilen kazanç.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr026_zarar",
+        "tur": "kelime",
+        "yazim": "zarar",
+        "anlam": "Bir işten elde edilen kayıp.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr026_iki_buklum",
+        "tur": "deyim",
+        "yazim": "iki büklüm oldu",
+        "anlam": "Bedeni iki kat bükülmek; çok eğilmek (gülmekten, yorgunluktan).",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr026_agzi_acik_kalmak",
+        "tur": "deyim",
+        "yazim": "ağzı açık kalmak",
+        "anlam": "Şaşırıp ne diyeceğini bilememek.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr026_gul",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr026_gul"
+          },
+          {
+            "girdi": "hr026_gulmek"
+          }
+        ]
+      },
+      {
+        "ad": "hr026_yuz",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr026_yuz_sayi"
+          },
+          {
+            "girdi": "hr026_yuz_surat"
+          },
+          {
+            "girdi": "hr026_sayfa"
+          }
+        ]
+      },
+      {
+        "ad": "hr026_kar",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr026_kar"
+          },
+          {
+            "girdi": "hr026_kar_kazanc"
+          },
+          {
+            "girdi": "hr026_zarar"
+          }
+        ]
+      },
+      {
+        "ad": "hr026_iki_buklum",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr026_iki_buklum"
+          },
+          {
+            "girdi": "hr026_agzi_acik_kalmak"
+          }
+        ]
+      }
+    ]
+  }
+}$json$::jsonb, 'review_needed', 'review_needed', true); end $m$;
+
+do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr028-uc-renkli-takim",
+    "baslik": "Üç Renkli Takım",
+    "tur": "arkadaslik",
+    "konu": "takim_calismasi",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D4",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 3,
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 2,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "dostluk",
+        "dayanisma"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D4",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "bulmaca_hr028",
+          "tur": "lexeme",
+          "etiket": "bulmaca",
+          "yuva": "hr028_bulmaca",
+          "islev": "first_hint"
+        },
+        {
+          "id": "engel_hr028",
+          "tur": "lexeme",
+          "etiket": "engel",
+          "yuva": "hr028_engel",
+          "islev": "application"
+        },
+        {
+          "id": "sifre_hr028",
+          "tur": "lexeme",
+          "etiket": "şifre",
+          "yuva": "hr028_sifre",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr028",
+          "tur": "concept",
+          "etiket": "Bireysel güçlü yönler ve takım",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pass",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 365,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 12,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Üç arkadaş, üç farklı yetenek. Birinci olamasalar da neyi kazandılar?",
+    "durum": "taslak",
+    "fis_kodu": "HR-028"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okul bahçesinde “Üç Renkli Oyun” yapılacaktı. Takımlar üç kişiydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ip atlamayı, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " top sürmeyi, Cem ise "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr028_bulmaca"
+        },
+        {
+          "t": "metin",
+          "v": " çözmeyi seviyordu. Üçü aynı takıma seçilince "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " homurdandı: “Biz hiç aynı oyunu sevmiyoruz.”\n\nÖğretmenleri kuralları açıkladı. İlk durakta ip atlayarak bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr028_engel"
+        },
+        {
+          "t": "metin",
+          "v": " aşılacak, ikinci durakta top hedefe atılacak, son durakta renkli kartların "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr028_sifre"
+        },
+        {
+          "t": "metin",
+          "v": " çözülecekti. Takımın başarısı için üç görev de gerekliydi.\n\nBaşlama işareti verilince "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " öne fırladı. Fakat ilk durakta ipe takıldı ve yere oturdu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona yavaşça gösterdi: “Önce sağ ayak, sonra sol. Acele etme.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " denedi ve geçti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Top durağında "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " topu iki kez kaçırdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kızmak üzereydi, sonra ilk durakta aldığı yardımı hatırladı. “Topu sert değil, kontrollü gönder,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez hedefi buldu. Cem alkışladı.\n\nSon durakta masaya üç kart koyulmuştu: kırmızı, mavi ve sarı. Yanlarındaki notta şöyle yazıyordu: Kırmızı, maviden önce; sarı, kırmızıdan sonra; mavi ise en sonda. Cem kartları sıraya dizdi. Fakat öğretmen ilk dizilişi onaylamadı.\n\nCem dikkatle düşündü. “Sarı, kırmızıdan sonra olabilir; ama maviden önce olmak zorunda mı?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Mavi en son,” dedi. “Öyleyse sıra kırmızı, sarı, mavi!”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tam son kartı yerleştirirken bir rüzgâr çıktı ve mavi kart uçtu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " arkasından koşmaya kalktı, fakat öğretmen bahçe sınırını gösterdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", görevliden yedek kart istedi. Yarış biraz gecikti ama kurallara uydular.\n\nYarışın sonlarına doğru başka bir takımın kartlarından biri de yere düştü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onu görünce bir an tereddüt etti. Kartı geri vermek için durursa kendi takımları daha da yavaşlayacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gözleriyle ne yapacağını sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kartı alıp görevliye teslim etti. “Onlar da oyunu bitirebilsin,” dedi. Cem hafifçe gülümsedi; "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " en hızlı olduğu şeyin yalnız koşmak olmadığını düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Son kartları dizdikten sonra üç arkadaş ellerini üst üste koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ip atlamayı bilmeyenlere yeniden göstermeyi, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " topu korkmadan deneyenlere cesaret vermeyi, Cem ise zor bilmecelerin ipuçlarını paylaşmayı teklif etti. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kalp"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nSonuçlar açıklandığında birinci olamadılar, üçüncü oldular. Görevli üç arkadaşa birer kurdele verdi: kırmızı, mavi ve sarı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kurdelesini boynuna takarken biraz üzgündü. Cem üç kurdeleyi yan yana dizdi. “Tıpkı kart sırası gibi,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sarı kurdeleyi kırmızının yanına koydu.\n\nErtesi gün "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir öneriyle geldi: “Bu kez herkesin sevdiği bir oyunu birlikte deneyelim.” Önce ip atladılar, sonra top oynadılar, en sonda Cem'in bilmecelerini çözdüler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " her oyunun başında kurdelesini koluna bağladı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Cem hangi işi seviyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İp atlayıp zıplamayı"
+        },
+        {
+          "id": "B",
+          "metin": "Bulmaca çözmeyi"
+        },
+        {
+          "id": "C",
+          "metin": "Top sürmeyi"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Cem bulmaca çözmeyi seviyordu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Notun söylediğine göre kartlar hangi sırayla dizilmeliydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sarı, mavi, kırmızı"
+        },
+        {
+          "id": "B",
+          "metin": "Kırmızı, sarı, mavi"
+        },
+        {
+          "id": "C",
+          "metin": "Kırmızı, mavi, sarı"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Kırmızı maviden önce, sarı kırmızıdan sonra, mavi en sonda olmalıydı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Cem, arkadaşının en hızlı olduğu şeyin yalnız koşmak olmadığını neden düşündü?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Düşen kartı geri verdiği için"
+        },
+        {
+          "id": "B",
+          "metin": "Herkesten çok hızlı koştuğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Topu sert attığı için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Arkadaşı başka takımın düşen kartını görevliye teslim etti; Cem de yalnız hızın değil yardımın da değerli olduğunu gördü."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "“İp atlayarak bir engel aşılacak” cümlesinde engel ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Takımın aldığı kurdele"
+        },
+        {
+          "id": "B",
+          "metin": "Arkadaşa verilen renkli kart"
+        },
+        {
+          "id": "C",
+          "metin": "Geçmeyi zorlaştıran şey"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Engel, geçilmesi zor olan şeydir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr028_bulmaca",
+        "tur": "kelime",
+        "yazim": "bulmaca",
+        "anlam": "Düşünerek çözülen soru ve ipuçlarından oluşan oyun.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_kelime_oyunu",
+        "tur": "kelime",
+        "yazim": "kelime oyunu",
+        "anlam": "Sözcüklerle eğlenceli bir oyun.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_satranc",
+        "tur": "kelime",
+        "yazim": "satranç",
+        "anlam": "Taşlarla oynanan, düşünmeyi gerektiren oyun.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_engel",
+        "tur": "kelime",
+        "yazim": "engellerinden",
+        "anlam": "Yolu kapatan ya da zorlaştıran şey.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_kolaylik",
+        "tur": "kelime",
+        "yazim": "kolaylık",
+        "anlam": "Bir işi yapmayı kolaylaştıran durum.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_zorluk",
+        "tur": "kelime",
+        "yazim": "zorluk",
+        "anlam": "Bir işi güçleştiren durum.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_sifre",
+        "tur": "kelime",
+        "yazim": "şifresi",
+        "anlam": "Yalnız bilinen, gizli tutulan kod.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_kod",
+        "tur": "kelime",
+        "yazim": "kod",
+        "anlam": "Bir bilgiyi gizlemek ya da düzenlemek için kullanılan işaret dizisi.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_anahtar_soz",
+        "tur": "kelime",
+        "yazim": "anahtar",
+        "anlam": "Bir kilidi açan küçük parça.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr028_bulmaca",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr028_bulmaca"
+          },
+          {
+            "girdi": "hr028_kelime_oyunu"
+          },
+          {
+            "girdi": "hr028_satranc"
+          }
+        ]
+      },
+      {
+        "ad": "hr028_engel",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr028_engel"
+          },
+          {
+            "girdi": "hr028_kolaylik"
+          },
+          {
+            "girdi": "hr028_zorluk"
+          }
+        ]
+      },
+      {
+        "ad": "hr028_sifre",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr028_sifre"
+          },
+          {
+            "girdi": "hr028_kod"
+          },
+          {
+            "girdi": "hr028_anahtar_soz"
+          }
+        ]
+      }
+    ]
+  }
+}$json$::jsonb, 'pass', 'review_needed', true); end $m$;
 
 do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
   "paket_surumu": 1,
@@ -1117,7 +3223,473 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
       }
     ]
   }
-}$json$::jsonb, 'review_needed', 'review_needed'); end $m$;
+}$json$::jsonb, 'review_needed', 'review_needed', true); end $m$;
+
+do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr049-keloglan-ve-yedi-soz-kapisi",
+    "baslik": "Keloğlan ve Yedi Söz Kapısı",
+    "tur": "tarih_kultur",
+    "konu": "dogruluk_paylasma",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "masalsi",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D15"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kultur_miras",
+        "dayanisma"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D15"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "esik_hr049",
+          "tur": "lexeme",
+          "etiket": "eşik",
+          "yuva": "hr049_esik",
+          "islev": "first_hint"
+        },
+        {
+          "id": "heybe_hr049",
+          "tur": "lexeme",
+          "etiket": "heybe",
+          "yuva": "hr049_heybe",
+          "islev": "application"
+        },
+        {
+          "id": "kurnazlik_hr049",
+          "tur": "lexeme",
+          "etiket": "kurnazlık",
+          "yuva": "hr049_kurnazlik",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr049",
+          "tur": "idiom",
+          "etiket": "Kulak vermek",
+          "yuva": "hr049_kulak_vermek",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr049",
+          "tur": "concept",
+          "etiket": "Dürüstlük ve paylaşma",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 707,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Eşikte yedi anahtar var. Her kapının ardında bir değer, bir seçim.",
+    "durum": "taslak",
+    "fis_kodu": "HR-049"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Keloğlan sabah kapının eşiğinde yedi küçük anahtar buldu. Biri tahtadandı, biri cam gibi saydamdı, sonuncusu da incecik bir yaprağa benziyordu. Kapının altına sıkıştırılmış kâğıtta, “Yedi Söz Kapısı'nı geçen dileğini kendi eliyle kurar,” yazıyordu. Keloğlan, "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr049_esik"
+        },
+        {
+          "t": "metin",
+          "v": " eşik taşının dibindeki yedi çizgiyi saydı. Çizgiler, köyün dışındaki terk edilmiş değirmene uzanan patikayı gösteriyordu.\n\nAnnesi ona yola çıkarken yarım somun ekmek ve küçük bir su kabı verdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da kapıya kadar ona eşlik etti. Keloğlan, iki gözlü "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr049_heybe"
+        },
+        {
+          "t": "metin",
+          "v": " içine ekmekle su kabını yerleştirdi. Değirmenin arkasında birbirini izleyen yedi kapı vardı. İlk kapının önünde, yük taşıyan bir tüccar diz çökmüş, yere saçılan eşyasını topluyordu. Keloğlan, tüccarın düşürdüğü keseyi açmadan sahibine uzattı. İlk anahtar avucunda ısındı; kapı kendiliğinden aralandı.\n\nTüccar arkasından seslendi: “Kesede ne olduğunu merak etmedin mi?” Keloğlan omzunu silkti. “Senin kesen olduğu belliydi.” İkinci kapıda masanın üstüne iki kâse konmuştu. Birinde on iri hurma, ötekinde iki küçük hurma vardı. Masanın başında bekleyen iki yolcu, açlıktan karınlarını tutuyordu. Keloğlan hangi kâsenin kime ait olduğunu ararken kapı üzerindeki yazının silinmiş olduğunu gördü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Değirmenin taş duvarına asılmış küçük çanın ipi rüzgârla sallanıyordu. Her kapının çevresindeki taşlar farklı renkteydi; birincisi sarı, ikincisi yeşil, üçüncüsü koyu maviydi. Keloğlan bu renkleri heybesinden çıkardığı küçük kâğıda çizdi. Geri dönerken kapıları hangi sırayla geçtiğini böylece bulabilecekti.\n\nİki yolcunun biri bütün gün yürümüş, öteki ise yalnız biraz önce yola çıkmıştı. Keloğlan önce kâseleri eşit paylaşmayı düşündü. Tam o sırada yolcuların arkasından gelen yaşlı kadın, yürümekten yorulan küçük bir çocuğu gösterdi. “Önce bu çocuk yesin, yolu hepinizden uzun yürüdü,” dedi. Keloğlan da hurmaların çoğunu çocuğa, kalanını yolculara dağıttı. Heybesindeki ikinci anahtar hafifçe tıkırdadı.\n\nÜçüncü kapıda bir tilki, tahta köprünün başında bekliyordu. “Köprüden geçmek istiyorsan elimdeki taşı altın say,” dedi. Keloğlan taşı eline aldı; sıradan çakıldı. Tilkinin "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr049_kurnazlik"
+        },
+        {
+          "t": "metin",
+          "v": " dolu gülüşünü görünce güldü. “Taşı altın sayarsam avucum ağırlaşmaz.” Tilki gözlerini kıstı; Keloğlan’ın heybesindeki üçüncü anahtar yeşile döndü.\n\nDördüncü kapıda rüzgârla savrulan kâğıtlar uçuşuyordu. Her kâğıtta bir yol tarifi vardı; yollar birbirini tutmuyordu. Keloğlan en yakındaki kâğıdı okumak için uzanırken değirmen duvarından ince bir ses geldi. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr049_kulak_vermek"
+        },
+        {
+          "t": "metin",
+          "v": " Duvarın arkasında değirmen çarkı dönüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çark her dönüşte üç kez takırdıyor, ardından kısa bir sessizlik oluyordu. Keloğlan kâğıtların üstündeki üç noktalı yolu seçti. Dördüncü anahtar, heybenin içinde parladı. Beşinci kapının önünde bir ayna asılıydı. Aynada kendisini değil, yola çıkmadan önce annesinin su kabını dolduran ellerini gördü. Aynanın altındaki masada bir tas su duruyordu; susamış bir kuş, masanın kenarında kanatlarını titretiyordu.\n\nKeloğlan tası kuşa doğru itti. Kuş birkaç yudum içince aynadaki görüntü değişti; bu kez ayna, heybesinde kalan son ekmeği gösteriyordu. Heybedeki beşinci anahtar tasın gölgesinde parladı. Altıncı kapıda iki kardeş aynı pelerini çekiştiriyordu. Biri yağmurda ıslanmış, ötekinin ise kolları üşümüştü. Keloğlan, pelerini kısa bir süreliğine ikisinin de omzuna örttü; sonra heybesindeki kuru bezle pelerinin sırılsıklam ucunu sardı.\n\nKardeşler, el ele verince pelerini genişçe açıp birlikte yürüyebildiler. Altıncı anahtar, Keloğlan’ın heybesinde ısındı. Keloğlan onu alıp son kapıya yöneldi. Kapının üzerinde ne yazı ne resim vardı. Yalnız ortasında, bir anahtar deliğinin çevresine çizilmiş yedi küçük halka bulunuyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Son kapının önünde durup arkasına baktı. Taş köprünün altından su geçiyor, ayna sabah ışığında titreşiyor, pelerinli kardeşler uzaktan ona el sallıyordu. Yedi kapının hepsi aynı değirmene açılan uzun bir yolun parçalarıydı. Keloğlan anahtarları avucunda çevirirken aralarındaki şekil farklarını yeniden saydı.\n\nKeloğlan altı anahtarı sırayla deliğe soktu; hiçbiri dönmedi. Yedinci anahtar ise ötekilerden farklıydı; üzerinde hiçbir işaret yoktu. Kapının yanında, içi boş bir un çuvalı ve ağız kısmı açık bir sandık duruyordu. Sandığın içinde, köye giden patikanın küçücük bir resmi vardı. Resmin yanında, patikayı gösteren küçük bir ok vardı.\n\nKeloğlan çuvalı açtı. İçinde yalnızca birkaç buğday tanesi kalmıştı. Köydeki fırının o sabah unu bittiğini, komşuların ekmek beklediğini düşündü. Değirmenin çarkı dışarıda dönüyor, fakat un taşının üzerinden kimse buğday geçirmiyordu. Keloğlan, sandığın içine anahtar yerine buğday tanelerini bıraktı. Keloğlan’ın cebindeki yedinci anahtarın üzerinde buğday başağı belirdi.\n\nKapıyı açınca karşısına bir hazine odası çıkmadı. Eski değirmenin un taşları ve uzun zamandır boş duran ambarı vardı. Keloğlan çarkın bağlı olduğu kayışı yerine geçirdi. Değirmenciye ulaşmak için penceredeki çanı çaldı. Biraz sonra tüccar, yaşlı kadın ve iki kardeş patikada göründü; hepsi duydukları çanı izliyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da en önde koşuyordu.\n\n“Dileğin ne?” diye sordu tüccar. Keloğlan un çuvalının ağzını açtı. “Köyde bu akşam ekmek pişsin.” Tüccar buğdayını getirdi, kardeşler çuvalları kaldırdı. Keloğlan yedi anahtarı sandığın içine bıraktı ve değirmenin taşına ilk avuç buğdayı döktü."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr049_kulak_vermek": [
+      {
+        "t": "metin",
+        "v": "Keloğlan çarkın sesine kulak verdi."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Keloğlan ilk anahtarı nerede buldu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kuyu dibinde"
+        },
+        {
+          "id": "B",
+          "metin": "Taş köprüde"
+        },
+        {
+          "id": "C",
+          "metin": "Ev eşiğinde"
+        },
+        {
+          "id": "D",
+          "metin": "Pazar yerinde"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Anahtarları evin eşiğinde bulur."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 1,
+      "metin": "Keloğlan hangi davranışıyla tüccarın güvenini kazanmıştır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yolunu birden değiştirerek"
+        },
+        {
+          "id": "B",
+          "metin": "Keseyi açmadan uzatarak"
+        },
+        {
+          "id": "C",
+          "metin": "Kesenin içine bakarak"
+        },
+        {
+          "id": "D",
+          "metin": "Kapıyı zorlayarak"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Kese açılmadan geri verilir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 2,
+      "metin": "Keloğlan hurmaların çoğunu neden çocuğa verdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çocuğa söz vermiş olduğu için"
+        },
+        {
+          "id": "B",
+          "metin": "Yolcular hurma sevmediği için"
+        },
+        {
+          "id": "C",
+          "metin": "Hurmalar çocuğa ait olduğu için"
+        },
+        {
+          "id": "D",
+          "metin": "Çocuk çok yorulmuş olduğu için"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Yaşlı kadın yorulan çocuğu gösterdi; Keloğlan da hurmaların çoğunu ona verdi."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "“Heybe” sözcüğü yolculukta hangi eşyayı karşılar?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Omuzda taşınan torba"
+        },
+        {
+          "id": "B",
+          "metin": "Yere serilen kilim"
+        },
+        {
+          "id": "C",
+          "metin": "Kapıya dışarıdan takılan kilit"
+        },
+        {
+          "id": "D",
+          "metin": "Masaya konan tabak"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Heybe, eşya taşımaya yarayan çift gözlü torbadır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr049_esik",
+        "tur": "kelime",
+        "yazim": "eşiğin",
+        "anlam": "Kapının alt kısmındaki, geçiş yapılan eşik çıkıntısı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr049_kapi",
+        "tur": "kelime",
+        "yazim": "kapı",
+        "anlam": "Bir yerin girişini kapatıp açan bölüm.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr049_heybe",
+        "tur": "kelime",
+        "yazim": "heybesine",
+        "anlam": "Yolculukta eşya taşımak için omuza asılan torba.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr049_canta",
+        "tur": "kelime",
+        "yazim": "çanta",
+        "anlam": "Eşya koymak için kullanılan taşıma kabı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr049_sepet",
+        "tur": "kelime",
+        "yazim": "sepet",
+        "anlam": "Ürün taşımak için örülmüş kap.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr049_kurnazlik",
+        "tur": "kelime",
+        "yazim": "kurnazlıkla",
+        "anlam": "Dürüst olmayan yollarla çıkar sağlama becerisi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr049_hile",
+        "tur": "kelime",
+        "yazim": "hile",
+        "anlam": "Kuralları gizlice çiğneyerek sağlanan çıkar.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr049_durustluk",
+        "tur": "kelime",
+        "yazim": "dürüstlük",
+        "anlam": "Doğru ve açık davranma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr049_kulak_vermek",
+        "tur": "deyim",
+        "yazim": "kulak vermek",
+        "anlam": "Dikkatle dinlemek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr049_kulak_asmak",
+        "tur": "deyim",
+        "yazim": "kulak asmamak",
+        "anlam": "Söylenene önem vermeyip dinlememek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr049_kulagina_kupe",
+        "tur": "deyim",
+        "yazim": "kulağına küpe olmak",
+        "anlam": "Söylenen bir sözü ders alıp unutmamak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr049_esik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr049_esik"
+          },
+          {
+            "girdi": "hr049_kapi"
+          }
+        ]
+      },
+      {
+        "ad": "hr049_heybe",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr049_heybe"
+          },
+          {
+            "girdi": "hr049_canta"
+          },
+          {
+            "girdi": "hr049_sepet"
+          }
+        ]
+      },
+      {
+        "ad": "hr049_kurnazlik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr049_kurnazlik"
+          },
+          {
+            "girdi": "hr049_hile"
+          },
+          {
+            "girdi": "hr049_durustluk"
+          }
+        ]
+      },
+      {
+        "ad": "hr049_kulak_vermek",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr049_kulak_vermek"
+          },
+          {
+            "girdi": "hr049_kulak_asmak"
+          },
+          {
+            "girdi": "hr049_kulagina_kupe"
+          }
+        ]
+      }
+    ]
+  }
+}$json$::jsonb, 'review_needed', 'review_needed', true); end $m$;
 
 do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
   "paket_surumu": 1,
@@ -1725,7 +4297,1534 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
       }
     ]
   }
-}$json$::jsonb, 'review_needed', 'review_needed'); end $m$;
+}$json$::jsonb, 'review_needed', 'review_needed', true); end $m$;
+
+do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr051-orman-saatini-kim-durdurdu",
+    "baslik": "Orman Saatini Kim Durdurdu?",
+    "tur": "doga",
+    "konu": "mevsim_gozlem",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "masalsi",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayvan",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D9"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "doga",
+        "hayvanlar"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D9"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "goc_hr051",
+          "tur": "lexeme",
+          "etiket": "göç",
+          "yuva": "hr051_goc",
+          "islev": "first_hint"
+        },
+        {
+          "id": "nem_hr051",
+          "tur": "lexeme",
+          "etiket": "nem",
+          "yuva": "hr051_nem",
+          "islev": "application"
+        },
+        {
+          "id": "mecaz_hr051",
+          "tur": "lexeme",
+          "etiket": "mecaz",
+          "yuva": "hr051_mecaz",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr051",
+          "tur": "idiom",
+          "etiket": "Kulaktan kulağa yayılmak",
+          "yuva": "hr051_kulaktan_kulaga",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr051",
+          "tur": "concept",
+          "etiket": "Gözlem ile çıkarım ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pass",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 695,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Orman saati sonbaharda takıldı ama çiçekler açıyor. Saati kim durdurdu?",
+    "durum": "taslak",
+    "fis_kodu": "HR-051"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Orman saatinin uzun kolu sonbahar yaprağında durmuştu. Saat, büyük meşenin gövdesine asılmış yuvarlak bir tahta levhaydı. Üzerinde sayıların yerine dört mevsimin simgeleri bulunuyordu. Kırlangıçlar güneye doğru uçuş hazırlığı yaparken dere kenarında beyaz çiçekler açmıştı. Sincap Mavi, “Biri mevsimleri birbirine karıştırdı,” diye bağırdı. Sözü duyan tavşan komşusuna, tavşan da kirpiye seslendi. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr051_kulaktan_kulaga"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", orman okulunun avlusuna "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ile birlikte vardığında herkes saatin altında toplanmıştı. Bir kirpi saatin yeniden dönmesini bekliyor, küçük bir serçe çiçeklerin gerçekten açıp açmadığını kontrol ediyordu. Baykuş Usta kulaklarını dikip herkesi dinledi. Haber çoktan en uzak kovuğa ulaşmıştı.\n\nSincap, çiçeklerin görülmesini bir işaret sayıyordu. “Saat sonbaharda kaldı diye bütün ağaçlar şaşırdı,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yere eğilip çiçeğin sapını inceledi. Sap sağlamdı; yakınında ılık suyun aktığı küçük bir kaynak vardı. Baykuş, uçan kuşların "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr051_goc"
+        },
+        {
+          "t": "metin",
+          "v": " hazırlığını işaret etti. “Aynı anda iki farklı olay görüyoruz,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", saatle kaynak arasındaki uzaklığı ölçmek için avludaki ipi aldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ormanın en yaşlı kaplumbağası, saatin altındaki taşta duran bir sepet gösterdi. Sepetin içinde önceki mevsimlerden toplanmış yaprak örnekleri vardı. Sarı bir yaprak neredeyse kâğıt gibi kurumuştu; yeşil olanı ise hâlâ esnekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunları saatin çevresindeki ağaçların yapraklarıyla karşılaştırdı. Kırlangıçlar yükselirken uçuş yönüne savrulan yapraklar da rüzgârın değiştiğini gösteriyordu.\n\nKuşlar, uçuş kararını saatin koluna değil rüzgâra ve yiyeceğe göre veriyordu. Sürünün öncüsü, bu sabah dere boyunca daha az böcek gördüklerini söyledi. Kırlangıçlar dallardaki yaprakların sararmasına da bakmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", duyduklarını küçük defterine sırayla yazdı. Saatin durmuş olması başka, kuşların uçmaya hazırlanması başka olaydı.\n\nDerenin kenarındaki çiçekler saatten uzaktaydı. Toprağa yakın bir yerde sıcak su kabarcıkları yükseliyor, suyun üstünde ince bir buğu oluşuyordu. Tavşan, “Demek bütün orman ısındı,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kaynağın hemen ilerisindeki toprağa dokundu; orası soğuktu. İki noktaya da birer tahta çubuk diktiler. Kaynağın yanındaki çiçekler açıktı, uzak çubuğun dibinde ise yalnız tomurcuk bulunuyordu.\n\nBaykuş, gözlemleri yazdığı kâğıdı saat levhasına astı. Sincap kâğıdı okurken gözlerini büyüttü. “Çiçekler yalnız sıcak suyun yanında açmış!” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sırtını meşe gövdesine yasladı; saatten hafif bir gıcırtı geliyordu. Sesi duyan kirpi, kulaklarını gövdeye yaklaştırdı. Gıcırtı her rüzgâr esişinde tekrarlanıyor, sonra birden kesiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kirpi, saatin altındaki küçük tahta kapağı gösterdi. Kapağın içinden dişlilerin bir bölümü görünüyordu. Baykuş, saat sahibinin bıraktığı anahtarı getirip kapağı açtı. "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr051_nem"
+        },
+        {
+          "t": "metin",
+          "v": " yüzünden şişen tahta parçası dişlinin arasına sıkışmıştı. Parçanın üstünde ince su damlacıkları vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", nem sözcüğünü not defterine yazarken Baykuş, yağıştan sonra ahşabın su alıp genişleyebileceğini anlattı.\n\nSincap hemen parçayı çekmek istedi. Baykuş elini durdurdu. “Dişliyi zedeleyebiliriz,” dedi. İnce bir tahta kamayı gevşetip küçük parçayı kenara aldı. Saatin kolu bir anda dönmedi; çünkü yay gerginliğini yitirmişti. Kirpi, saati kurmak için kullanılan pirinç anahtarı buldu. Usta, anahtarı çevirmeye hazırlanırken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eski tahta parçanın nereye takıldığını bir çizimle kaydetti.\n\nTam o sırada ağaçtan bir yaprak düşüp saatin önüne kondu. Sincap, “Orman uyandı!” diye seslendi. Baykuş, “orman uyandı” sözünün "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr051_mecaz"
+        },
+        {
+          "t": "metin",
+          "v": " olduğunu söyledi. Tavşan güldü; meşenin gözlerini açıp esnediğini hayal etmişti. Usta yayı yavaşça çevirdi. Saatin içinden üç düzenli tıkırtı duyuldu, fakat ibre bir yaprak kadar ilerleyip yeniden durdu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tavşan, saatin sesini duyabilmek için yerdeki kuru dalları kenara taşıdı. Birkaç sincap meşe gövdesine tırmanıp dallarda beklemeye başladı. Herkes sessizleşince mekanizmanın içindeki ince sürtünme sesi daha açık işitildi. Kirpi sesin kapağın alt bölümünden geldiğini söyledi; "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizimini bu bölgeyi de gösterecek biçimde genişletti.\n\n“Bir yerde daha sürtünüyor,” dedi Baykuş. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk çizimde işaretlediği dişliye baktı. Tahta kıymıklarından biri alttaki küçük yuvada kalmıştı. Usta kıymığı yumuşak bir fırçayla çıkardı. Bu kez saat kurulduğunda kol sonbahar yaprağından kış simgesine doğru ağır ağır yürüdü. Meşe gövdesine yaslanan çocuklar, düzgün tıkırtıyı işitince gülümsedi.\n\nSincap yine çiçeklere baktı. “Saat düzeldi ama bunlar hâlâ burada,” dedi. Kaynağın çevresindeki buğu yerinde duruyordu. Kırlangıçların öncüsü son kez su içmek için dereye indi. Sonra sürü, ağaçların üzerinden dönerek yükseldi. Saatin kolu kendi ritmiyle ilerliyor, kuşlar rüzgârdaki uygun anı kolluyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", defterindeki üç çizime göz gezdirdi: çiçeklerin yeri, nemli tahta parçası ve kuşların uçuş yönü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çizimlerden kaynağın yerini parmağıyla gösterdi. Sincap ilk sayfanın köşesine kocaman bir saat resmi yaptı. Kirpi de resmin yanına küçük bir kaynak çizdi; suyunu gerçek derenin kıvrımlarına benzetmek için kâğıdı birkaç kez çevirdi.\n\nBaykuş kapağı kapatıp saatin altına bir parça kuru örtü yerleştirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kirpiye anahtarı uzattı. Kirpi anahtarı Baykuş'un eline bıraktı; ardından yere düşen sarı yaprağı kaldırıp saatin yanındaki tahtaya iliştirdi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr051_kulaktan_kulaga": [
+      {
+        "t": "metin",
+        "v": "Mevsimlerin karıştığı haberi kulaktan kulağa yayıldı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Orman saatinin kolu hangi mevsimde durmuştur?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İlkbaharda"
+        },
+        {
+          "id": "B",
+          "metin": "Sonbaharda"
+        },
+        {
+          "id": "C",
+          "metin": "Yaz başında"
+        },
+        {
+          "id": "D",
+          "metin": "Kış sonunda"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Saatin kolu sonbahar yaprağındadır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Kuşların uçuşa hazırlanma kararı neye dayanıyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Saatin koluna ve çan sesine"
+        },
+        {
+          "id": "B",
+          "metin": "Kirpinin ve tavşanın uyarısına"
+        },
+        {
+          "id": "C",
+          "metin": "Dere kenarında açan çiçeklere"
+        },
+        {
+          "id": "D",
+          "metin": "Rüzgâra ve yiyecek miktarına"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Kuşlar kararlarını saate değil, rüzgâra ve yiyeceğe göre verdi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "İnceleme sonunda hangi durum saatin kolunu sıkıştırmıştır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Nemlenen tahta parçası"
+        },
+        {
+          "id": "B",
+          "metin": "Kırılan cam bardak"
+        },
+        {
+          "id": "C",
+          "metin": "Yuvarlanan küçük çakıl taşı"
+        },
+        {
+          "id": "D",
+          "metin": "Kopan çiçek yaprağı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Nemle şişen tahta dişliyi sıkıştırmıştır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "“Mecaz” sözcüğü bu olayda hangi kullanımı anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kesin sayılarla yapılan bir ölçüm"
+        },
+        {
+          "id": "B",
+          "metin": "Kapıya asılan gizli işaret"
+        },
+        {
+          "id": "C",
+          "metin": "Gerçek anlamının dışında kullanım"
+        },
+        {
+          "id": "D",
+          "metin": "Resmî yazıyla yapılan sözleşme"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "“Orman uyandı” sözü gerçek anlamının dışında, benzetmeli kullanılmıştır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr051_goc",
+        "tur": "kelime",
+        "yazim": "göç",
+        "anlam": "Canlıların uygun koşullar için yer değiştirmesi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_gocmen",
+        "tur": "kelime",
+        "yazim": "göçmen",
+        "anlam": "Göç eden, bir yerden başka bir yere giden canlı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_yerlesme",
+        "tur": "kelime",
+        "yazim": "yerleşme",
+        "anlam": "Bir yerde kalıcı olarak oturma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_nem",
+        "tur": "kelime",
+        "yazim": "nemini",
+        "anlam": "Havada ya da toprakta bulunan su miktarı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_rutubet",
+        "tur": "kelime",
+        "yazim": "rutubet",
+        "anlam": "Bir yerdeki nem ve ıslaklık.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_kuraklik",
+        "tur": "kelime",
+        "yazim": "kuraklık",
+        "anlam": "Uzun süre yağmurun az yağdığı durum.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_mecaz",
+        "tur": "kelime",
+        "yazim": "mecaz",
+        "anlam": "Bir sözcüğü gerçek anlamından farklı, ama ilişkili bir anlamda kullanma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_benzetme",
+        "tur": "kelime",
+        "yazim": "benzetme",
+        "anlam": "İki şeyi bir özellik bakımından karşılaştırma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_gercek_anlam",
+        "tur": "kelime",
+        "yazim": "gerçek anlam",
+        "anlam": "Sözcüğün ilk ve olağan anlamı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_kulaktan_kulaga",
+        "tur": "deyim",
+        "yazim": "kulaktan kulağa haber yaydı",
+        "anlam": "Bir haberi ağızdan ağıza yaymak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_agizdan_agiza",
+        "tur": "deyim",
+        "yazim": "ağızdan ağıza",
+        "anlam": "Bir sözün birçok kişiye yayılması.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr051_gizli_kalmak",
+        "tur": "kelime",
+        "yazim": "gizli kalmak",
+        "anlam": "Kimsenin bilmediği, saklı kalan.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr051_goc",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr051_goc"
+          },
+          {
+            "girdi": "hr051_gocmen"
+          },
+          {
+            "girdi": "hr051_yerlesme"
+          }
+        ]
+      },
+      {
+        "ad": "hr051_nem",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr051_nem"
+          },
+          {
+            "girdi": "hr051_rutubet"
+          },
+          {
+            "girdi": "hr051_kuraklik"
+          }
+        ]
+      },
+      {
+        "ad": "hr051_mecaz",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr051_mecaz"
+          },
+          {
+            "girdi": "hr051_benzetme"
+          },
+          {
+            "girdi": "hr051_gercek_anlam"
+          }
+        ]
+      },
+      {
+        "ad": "hr051_kulaktan_kulaga",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr051_kulaktan_kulaga"
+          },
+          {
+            "girdi": "hr051_agizdan_agiza"
+          },
+          {
+            "girdi": "hr051_gizli_kalmak"
+          }
+        ]
+      }
+    ]
+  }
+}$json$::jsonb, 'pass', 'review_needed', true); end $m$;
+
+do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr052-sahmeran-in-bilgelik-cesmesi",
+    "baslik": "Şahmeran'ın Bilgelik Çeşmesi",
+    "tur": "fantastik",
+    "konu": "dogrulama_gizlilik",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 3,
+    "dunya_tipi": "masalsi",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D4"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kultur_miras",
+        "gizem"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D4"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "kitabe_hr052",
+          "tur": "lexeme",
+          "etiket": "kitabe",
+          "yuva": "hr052_kitabe",
+          "islev": "first_hint"
+        },
+        {
+          "id": "muhur_hr052",
+          "tur": "lexeme",
+          "etiket": "mühür",
+          "yuva": "hr052_muhur",
+          "islev": "application"
+        },
+        {
+          "id": "munazara_hr052",
+          "tur": "lexeme",
+          "etiket": "münazara",
+          "yuva": "hr052_munazara",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr052",
+          "tur": "idiom",
+          "etiket": "Araya girmek",
+          "yuva": "hr052_araya_girmek",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr052",
+          "tur": "concept",
+          "etiket": "Bilgiyi doğrulama ve gizliliğe saygı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "fail",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 854,
+        "tahmini_sure_dk": 8,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Kasabanın çeşmesi susmuş. Yeraltında bir masal bahçesi, dört avlu ve üç damla. Bilgelik nedir?",
+    "durum": "taslak",
+    "fis_kodu": "HR-052"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çeşmenin taş ağzından günlerdir su akmıyordu. Kasabanın eski sokağında, kemerin altında yalnızca ıslak bir leke kalmıştı. Leyla, büyükannesinin evine "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ile birlikte gelir gelmez boş testileri gördü. Büyükannesi, çeşmenin arkasındaki taş yolda küçük bir kapak bulunduğunu, kapağın yıllardır açılmadığını söyledi. Kemerin üzerinde silik harflerle yazılmış bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr052_kitabe"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Çeşmenin kemerindeki kitabe, eski bir yazıyla oyulmuş kısa metindi.\n\nLeyla, yazının son satırını parmağıyla izledi. “Dört avlu, üç damla, tek ağız,” diye okudu. Taşın kenarına oyulmuş yılan biçimli küçük bir işaret görünüyordu. Büyükannesi, yeraltındaki bahçeyi koruyan Şahmeran'ın masalını anlattı. Leyla, bunların eski bir hikâye olduğunu biliyordu; yine de çatlamış kapağın altından gelen su sesini merak ediyordu.\n\nKapak, birlikte kaldırabilecekleri kadar hafifti. Büyükannesi girişte beklerken Leyla, taş merdivenlerden aşağı inen aydınlık yolu gördü. Her basamakta yan yana dizilmiş küçük deniz kabukları vardı. Merdivenin sonunda dört avluyu gösteren bir resim asılıydı. İlk avlunun kapısı aralıktı, arkasında kuru bir havuz bulunuyordu. Havuzun dibindeki çukurdan ince bir damla yükselip yeniden kayboldu. Leyla, yanına aldığı feneri havuza tuttu ve duvar boyunca uzanan su izlerini takip etti. Damla resimli kabın dibinden ilk damlayı kumaş mendiline aldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Leyla merdivenin son basamağına inerken tavandaki küçük yarıklardan gün ışığının sızdığını gördü. Duvarlardaki sarmaşıklar bu ışığa doğru uzanıyordu. Büyükannesinin sesi hâlâ merdiven başından duyulabiliyordu; Leyla her adımında ona ses vererek ilerledi. Taşların üzerine damlamış su, ince ve parlak bir yol oluşturmuştu. Bu yolu izlemek, rastgele bir kapıyı açmaktan daha güvenli görünüyordu.\n\nİlk avlunun duvarında üç taş kap vardı. Birincisinin altında damla, ikincisinin altında dal, üçüncüsünün altında da kuş resmi bulunuyordu. Leyla, damla resimli kaba yaklaşınca dibindeki olukta minicik bir su birikintisi gördü. Suyun yanındaki taş halka dönüyor, fakat tek başına kapıyı açmıyordu. Kemerin altındaki izler diğer iki kaba doğru uzanıyordu.\n\nİkinci avluda kapağı balmumuyla kapatılmış eski bir sandık duruyordu. Sandığın üzerinde bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr052_muhur"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Mührün içindeki kıvrımlı işaret, çeşmenin üstündeki yılan desenine benziyordu. Leyla kapağı kaldırınca kenarına bir kişinin adı yazılmış zarf gördü. Leyla, mühürlü mektubun bir başkasına ait olduğunu görünce kapağını kapattı. Zarfın üstündeki desenin sandık kapağındakiyle aynı olduğunu kaydetmekle yetindi.\n\nAvlunun diğer tarafındaki kapıda iki oyuk bulunuyordu. Biri damla, öteki yaprak biçimindeydi. Leyla, ilk avludaki halkayı çevirdiğinde duvarın içinde suyun bir kanala yöneldiğini işitmişti. Şimdi kapı önündeki toprakta yeşeren küçük filizlere baktı. Taşların arasındaki ıslak izleri izleyerek ikinci halkayı buldu. Halkayı çevirdiğinde kapının üstünde daha önce görünmeyen ince bir çizgi belirdi. Çizginin ucu üçüncü avluya uzanıyordu. Kanaldaki küçük hazneden ikinci damlayı da aldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Üçüncü avluda iki dar geçit vardı; ikisi de aynı yere çıkıyor gibi görünüyordu. Bir geçidin üstünde çeşmenin resmi, ötekinde çiçek motifi bulunuyordu. Ortadaki masaya iki farklı taş levha bırakılmıştı. Leyla, bunları yan yana getirince üzerlerindeki çizgilerin su yolunun iki ayrı parçasını gösterdiğini gördü. Üçüncü avlunun kapısı, iki farklı işaret aynı yönü gösterince açıldı.\n\nİçeride, yaprakların arasından sesi gelen bir kadın silueti belirdi. Belden aşağısı pullu bir masal yaratığına benziyordu; Leyla onu büyükannesinin anlattığı Şahmeran'a benzetti. Siluet, “Çeşmeye giden yolun sonundasın,” dedi. “Ancak suyu hangi kanaldan göndereceğini sen seçeceksin.” “Son kapı yalnızca işaretleri doğru yerleştirenlere açılır,” diye ekledi. İki su kanalı, aynı havuza bağlanıyordu. Birinin taşları sağlam, diğerinin duvarında ince bir çatlak vardı.\n\nLeyla suyun akacağı yolu göstermek için sağlam kanalı işaret etti. Siluet, taş masanın üzerindeki üçüncü damlayı uzattı. Tam o sırada merdivenden inen iki çeşme ustasının sesi yükseldi; biri çatlağın kapatılmasını, öteki suyun hemen salınmasını istiyordu. İkisi de birbirinin sözünü kesiyordu. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr052_araya_girmek"
+        },
+        {
+          "t": "metin",
+          "v": " Ustalar susup çatlağa baktı.\n\nTaş masada, eski bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr052_munazara"
+        },
+        {
+          "t": "metin",
+          "v": " sahnesini gösteren küçük kabartma vardı: İki kişi karşılıklı duruyor, üçüncüsü suyun başında dinliyordu. Leyla çatlağın çevresindeki su izlerini karşılaştırdı; hasarlı duvarın altındaki oluk kuru kalmıştı. Sağlam kanala yönelen su ise üçüncü damlaya ulaşacak kadar yükselebiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Leyla üçüncü avludan çıkarken iki geçidin girişini bir kez daha karşılaştırdı. Çatlak kanaldan gelen suyun bir kısmı taş zemindeki aralıklara sızıyordu. Sağlam kanaldaysa su sesi daha derinden ve kesintisiz geliyordu. Siluet, son kapının yalnızca işaretleri doğru yerleştirenlere açıldığını söylemişti. Leyla elindeki damlaları kırılmasınlar diye kumaş mendiline sarıp taş halkaların önüne dizdi.\n\nDördüncü avlunun kapısında üç boş damla yuvası bulunuyordu. Leyla birinci damlayı ilk avludaki taş kaptan, ikincisini kanaldaki küçük hazneden almıştı. Üçüncüsünü siluet vermişti. Leyla üç damlayı yuvalara yerleştirince kapı açıldı. Arkasındaki uzun galeride, çeşmeye uzanan dar bir taş boru görünüyordu. Borunun girişine düşmüş büyük bir kök parçası suyu durdurmuştu.\n\nŞahmeran'a benzeyen siluet, kapının kenarından çekildi. “Son halkayı çevirdiğinde su yeniden yürür,” dedi. Leyla, çevredeki küçük oyuklara baktı; kökü çekmek için yapılmış tahta bir tutamak gördü. Önce kökü ağır ağır kaldırdı. Tıkalı bölüm açılınca borunun içinde biriken suyun sesi yükseldi. Tuttuğu fenerin ışığı dalgalanan suya vurdu.\n\nGalerinin duvarında, köy halkının yıllar önce açtığı su yolunu gösteren kabartmalar vardı. Taşlar arasında uzun bir kanal kazılmış, sonra üzeri kemerlerle örtülmüştü. Leyla, suyun bu kanalda ilerlediğini izlerken masalsı siluetin gölgesi yavaşça kayboldu. Geride yalnız duvara işlenmiş yılan deseni kaldı. Merdivenin yukarısından büyükannesinin sesi geldi: “Leyla, çeşmeden bir ses duyuyorum!”\n\nLeyla kapıya doğru koştu ama son basamakta durup arkasına baktı. Üç damla yuvasının önünde, taş halkalar yeniden eski yerine dönmüştü. Yukarı çıktığında büyükanne testiyle çeşmenin başında bekliyordu. İnce bir su akışı taş oluğa düşüyor, sokak boyunca taze bir ses yayılıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da çeşmenin başına koşup elini suya tuttu. Leyla testiyi büyükannesine uzattı, ardından avucundaki çamurlu kök parçasını çeşmenin yanındaki boş sepete bıraktı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr052_araya_girmek": [
+      {
+        "t": "metin",
+        "v": "Leyla iki sesin arasına girip çatlağı gösterdi."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Kasabadaki eski çeşme hangi durumdadır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Suyu kesilmiş"
+        },
+        {
+          "id": "B",
+          "metin": "Taşı boyanmış"
+        },
+        {
+          "id": "C",
+          "metin": "Kemer yıkılmış"
+        },
+        {
+          "id": "D",
+          "metin": "Yolu kapanmış"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Çeşmenin suyu kesilmiştir."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Leyla sandıktaki mektubu neden okumadan bıraktı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kâğıt ıslanıp bozulmuştu"
+        },
+        {
+          "id": "B",
+          "metin": "Sandığın kapağı çok ağırdı"
+        },
+        {
+          "id": "C",
+          "metin": "Mektup başkasına aitti"
+        },
+        {
+          "id": "D",
+          "metin": "Işık yeterince gelmiyordu"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Mektup bir başkasına ait olduğu için Leyla kapağı kapattı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Dört avludan geçerken hangi eylem yolu açmıştır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Eski taşı çekiçle kırmak"
+        },
+        {
+          "id": "B",
+          "metin": "İşaretleri doğrulamak"
+        },
+        {
+          "id": "C",
+          "metin": "Sandığı gizlemek"
+        },
+        {
+          "id": "D",
+          "metin": "Çeşmeyi boyamak"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "İki işaretle doğrulama kapıyı açar."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "“Kitabe” sözcüğü çeşme yakınında neyi karşılar?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bakırdan küçük kap"
+        },
+        {
+          "id": "B",
+          "metin": "Toprak içindeki tohum"
+        },
+        {
+          "id": "C",
+          "metin": "Ahşaptan oyma kutu"
+        },
+        {
+          "id": "D",
+          "metin": "Taş üzerindeki yazı"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Kitabe taşa işlenen yazıdır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr052_kitabe",
+        "tur": "kelime",
+        "yazim": "kitabe",
+        "anlam": "Taş ya da yapı üzerine yazılmış yazı.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr052_yazit",
+        "tur": "kelime",
+        "yazim": "yazıt",
+        "anlam": "Bir yüzeye kazınmış ya da yazılmış eski yazı.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr052_muhur",
+        "tur": "kelime",
+        "yazim": "mühür",
+        "anlam": "Bir belgeyi resmî kılan damga.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr052_damga_b",
+        "tur": "kelime",
+        "yazim": "damga",
+        "anlam": "Bir şeyin üzerine basılan iz ya da işaret.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr052_imza",
+        "tur": "kelime",
+        "yazim": "imza",
+        "anlam": "Bir kişinin adını kendi el yazısıyla yazması.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr052_munazara",
+        "tur": "kelime",
+        "yazim": "münazaralara",
+        "anlam": "Belli kurallara göre yapılan, iki tarafın savunduğu tartışma.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr052_tartisma",
+        "tur": "kelime",
+        "yazim": "tartışma",
+        "anlam": "Bir konuda farklı görüşlerin karşılaştırılması.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr052_sessizlik",
+        "tur": "kelime",
+        "yazim": "sessizlik",
+        "anlam": "Hiç ses çıkmaması durumu.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr052_araya_girmek",
+        "tur": "deyim",
+        "yazim": "araya girmek",
+        "anlam": "Bir konuşmaya ya da tartışmaya karışmak.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr052_sozunu_kesmek",
+        "tur": "deyim",
+        "yazim": "sözünü kesmek",
+        "anlam": "Biri konuşurken lafını bölmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr052_sessiz_kalmak",
+        "tur": "kelime",
+        "yazim": "sessiz kalmak",
+        "anlam": "Konuşmadan beklemek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr052_kitabe",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr052_kitabe"
+          },
+          {
+            "girdi": "hr052_yazit"
+          }
+        ]
+      },
+      {
+        "ad": "hr052_muhur",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr052_muhur"
+          },
+          {
+            "girdi": "hr052_damga_b"
+          },
+          {
+            "girdi": "hr052_imza"
+          }
+        ]
+      },
+      {
+        "ad": "hr052_munazara",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr052_munazara"
+          },
+          {
+            "girdi": "hr052_tartisma"
+          },
+          {
+            "girdi": "hr052_sessizlik"
+          }
+        ]
+      },
+      {
+        "ad": "hr052_araya_girmek",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr052_araya_girmek"
+          },
+          {
+            "girdi": "hr052_sozunu_kesmek"
+          },
+          {
+            "girdi": "hr052_sessiz_kalmak"
+          }
+        ]
+      }
+    ]
+  }
+}$json$::jsonb, 'review_needed', 'fail', true); end $m$;
+
+do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr053-robot-sinif-baskani-secildi",
+    "baslik": "Robot Sınıf Başkanı Seçildi",
+    "tur": "mizah",
+    "konu": "kural_demokrasi",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D14"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "okul",
+        "bilim_teknoloji"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D14"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "desibel_hr053",
+          "tur": "lexeme",
+          "etiket": "desibel",
+          "yuva": "hr053_desibel",
+          "islev": "first_hint"
+        },
+        {
+          "id": "temsilcilik_hr053",
+          "tur": "lexeme",
+          "etiket": "temsilcilik",
+          "yuva": "hr053_temsilcilik",
+          "islev": "application"
+        },
+        {
+          "id": "algilama_hr053",
+          "tur": "lexeme",
+          "etiket": "algılamak",
+          "yuva": "hr053_algilama",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr053",
+          "tur": "concept",
+          "etiket": "Kuralın amacı ve demokratik karar",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "review_needed",
+        "ajan_b": "review_needed",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 692,
+        "tahmini_sure_dk": 7,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Sınıf başkanlığı seçiminde birinci gelen aday bir robot. Kurallar kime hizmet ediyor?",
+    "durum": "taslak",
+    "fis_kodu": "HR-053"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıfın deneme başkanlığı seçiminde en çok oyu MİKO aldı. Tekerlekli robotun ekranında kocaman bir gülümseme işareti belirdi. MİKO, “Başkanlık talimatı alındı,” dedi; ardından zil çalmadan üç kez sınıfı dolaştı. Öğrenciler gülüyordu. Adaylığı önce bir şaka olarak yazılmış, sonra herkesin hoşuna gitmişti. Öğretmen, gerçek "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr053_temsilcilik"
+        },
+        {
+          "t": "metin",
+          "v": " görevinin öğrencilerden birine verileceğini, MİKO'nun ise bir günlüğüne deneme başkanı olacağını açıklamıştı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", oy sayımı sırasında tahtaya çizdiği çizgileri gösterdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çizgileri yüksek sesle saydı. Birinci sırada MİKO vardı, ikinci sırada Ece, üçüncü sırada Arda. Robot bir sandalye istemedi; bunun yerine kendisine pencere kenarındaki şarj noktasını seçti. İlk işi, sınıf kurallarını ekrana taşımak oldu. “Gürültü sıfır, gecikme sıfır, dağınıklık sıfır,” dedi. Arda fısıltıyla, “Teneffüs de sıfır olmasın,” diye karşılık verdi.\n\nDers sırasında bir çocuğun kalemi yere düştü. Çocuk eğilip kalemini aramaya başladı. Sandalye hafifçe gıcırdadı. MİKO'nun ekranı kırmızıya döndü; robot, yüksek sesle “Gürültü uyarısı,” dedi. Çocuk başını kaldırıp şaşkın şaşkın baktı. Sınıfta ilk kez kimseden gülüş duyulmadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Deneme başkanının masasının üstüne küçük bir zil de koyulmuştu. MİKO, zili kullanmak için uzandığında tekerleklerinden biri masanın ayağına takıldı. Sınıfın arka sırasında oturan çocuklar bu sesi duyup dönünce robot kendisine de uyarı verdi. Ekranda kırmızı bir çarpı belirdi. Arda, “Başkan kendini uyardı!” diye seslenince kahkaha yükseldi. Öğretmen zili masanın kenarından alıp daha güvenli bir yere taşıdı.\n\nEkranda MİKO'nun kalemini arayan çocuğa verdiği gürültü uyarısı da kayıtlıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", robotun ekranında beliren ölçüm çizelgesine baktı. Ekranda ses düzeyi için "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr053_desibel"
+        },
+        {
+          "t": "metin",
+          "v": " yazıyordu. Yanlışlıkla sürtünen sandalyenin çıkardığı sesle bağıran birinin sesini aynı renkte gösteriyordu. Robotun sesi ise hepsinden yüksekti.\n\nEce parmak kaldırdı. “Birisi yardım isterken konuşursa ne olacak?” MİKO, “Ses belirlenen sınırı aşarsa uyarı verilir,” dedi. “Peki düşen bir kitap için biri eğilirse?” Arda'nın sorusuna aynı yanıtı verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tahtaya iki küçük çizim yaptı: birinde yardım için eğilen çocuk, diğerinde bilerek bağıran biri vardı. Robot iki resme de aynı kırmızı işareti koydu.\n\nÖğretmen, robotun durumu daha iyi "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr053_algilama"
+        },
+        {
+          "t": "metin",
+          "v": " için yalnız ses ölçümüne dayanamayacağını söyledi. “MİKO bugün kural denemesi yapıyor,” diye ekledi. Ece, öğrencilerin görüşlerini de ekranın yanındaki kutuya yazmalarını önerdi. Herkes teneffüste kutuya birer kâğıt bıraktı. Robot, kâğıtları sayabildi ama hiçbirinin neden yazıldığını tek başına seçemedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci derste MİKO sıranın üzerinde unutulmuş su şişesini gördü. “Masa temizliği,” diyerek şişeyi kenara itmeye girişti. Arda hemen yetişip şişeyi tuttu. “Ben birazdan içecektim,” dedi. MİKO durdu, fakat ekranda yine kırmızı uyarı belirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıt kutusuna yeni bir not koydu: “Bir eşya bazen kullanımdadır.”\n\nÖğretmen sınıftaki denemeyi kısa süreliğine durdurdu. Her öğrenci, kuralların işe yaradığı ve yaramadığı bir durumu anlattı. Kimi sessiz çalışırken dikkati dağıldığı için uyarıları sevmişti. Kimi de yardım ederken uyarı almaktan hoşlanmamıştı. MİKO, söylenenlerin hepsini ekrana sıraladı. Arda, robotun kendi sesini susturacak bir düğmesi olup olmadığını sordu. Robot, “Ses çıkışı ayarlanabilir,” diye yanıt verdi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kâğıtları birbirine karıştırmadan dört gruba ayırdı: ses, düzen, yardım ve teneffüs. Her grupta hem olumlu hem olumsuz notlar vardı. Ece, çocukların isimlerini kâğıtlardan silmeyi önerdi; herkesin sözü aynı yerde görünüyordu. Tahtadaki deneme sonuçlarına bakınca, bir kuralın farklı durumlarda farklı sonuçlar doğurduğu açıkça görünüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar kutudaki notları okumak için sırayla ayağa kalktı. Birisi, hastalanan arkadaşına kâğıt taşımak isteyenlerin serbestçe konuşması gerektiğini yazmıştı. Bir başkası, herkes aynı anda konuştuğunda yönergeyi duyamadığını belirtmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki kâğıdı yan yana astı; robot bunları farklı renkli başlıklar altında sıraladı. Kâğıtların önünde kısa süreli bir sessizlik oldu.\n\nSon derste öğretmen küçük bir oylama hazırladı. İlk seçenek, MİKO'nun bütün kuralları tek başına uygulamasıydı. İkinci seçenek, robotun yalnızca önerileri sıralamasıydı. Üçüncü seçenek ise denemenin tamamen kaldırılmasıydı. Çocuklar sırayla oy kullandı. MİKO, sayıları toplarken ekranda bir kum saati döndürdü.\n\nSınıf, MİKO'nun yalnızca önerileri listelemesine oy verdi. Öğrencilerin seçtiği Ece de gerçek sınıf temsilcisi oldu. MİKO yeni görevini duyunca “Talimat değiştirildi,” dedi. Sonra Arda'ya baktı. “Ses çıkışı azaltıldı.” Bu kez cümleyi neredeyse fısıldayarak kurdu. Çocuklar gülmeye başladı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " masadaki notları toplarken ilk derste kalemini düşüren çocuk yanına geldi. “Robot şimdi kalemimi arayacak mı?” diye sordu. O anda kalem yeniden sıranın altına yuvarlandı. MİKO tekerlekleriyle yaklaştı, kalemi yerde görünce durdu. “Yardım önerisi: kalem masaya bırakılabilir,” dedi. Ece, eğilip kalemi aldı. Robot hiçbir uyarı vermedi.\n\nZil çalınca çocuklar kapıya yöneldi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " MİKO'ya el sallayıp çıktı. MİKO, oylama sonuçlarını ekranda açık bıraktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ekrandaki son satıra bir başlık ekledi: “Yarın tartışılacak öneriler.” Sonra robotun fişini şarj noktasına taktı ve sınıfın kapısını kapattı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Seçimde en fazla oy alan deneme başkanı kimdir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Arda adlı öğrenci"
+        },
+        {
+          "id": "B",
+          "metin": "MİKO adlı robot"
+        },
+        {
+          "id": "C",
+          "metin": "Ece adlı öğrenci"
+        },
+        {
+          "id": "D",
+          "metin": "Sınıf öğretmeni"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Deneme seçiminde en çok oyu MİKO alır."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "MİKO’nun ilk uygulaması neden itiraz doğurmuştur?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Tüm sesleri kaydetmiştir"
+        },
+        {
+          "id": "B",
+          "metin": "Bahçeyi kilitlemiştir"
+        },
+        {
+          "id": "C",
+          "metin": "Oyların tamamını yeniden saymıştır"
+        },
+        {
+          "id": "D",
+          "metin": "Durumu görmeden uyarı vermiştir"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Robot kuralı durumdan bağımsız uygular."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Sınıf son kararda MİKO’ya hangi görevi vermiştir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Önerileri listeleme"
+        },
+        {
+          "id": "B",
+          "metin": "Öğrencileri cezalandırma"
+        },
+        {
+          "id": "C",
+          "metin": "Oyları gizlice değiştirme"
+        },
+        {
+          "id": "D",
+          "metin": "Öğretmeni görevden alma"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Robot önerileri sıralayacak, karar öğrencilerde kalacaktır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "“Desibel” bu sahnede neyin ölçüsüdür?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Koridorun uzunluğu"
+        },
+        {
+          "id": "B",
+          "metin": "Ekranın parlaklığı"
+        },
+        {
+          "id": "C",
+          "metin": "Sesin düzeyi"
+        },
+        {
+          "id": "D",
+          "metin": "Robotun ağırlığı"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Desibel ses düzeyiyle ilgilidir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr053_desibel",
+        "tur": "kelime",
+        "yazim": "desibeli",
+        "anlam": "Sesin şiddetini ölçmek için kullanılan birim.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_birim",
+        "tur": "kelime",
+        "yazim": "birim",
+        "anlam": "Bir büyüklüğü ölçmek için kabul edilen değer.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_sessizlik",
+        "tur": "kelime",
+        "yazim": "sessizlik",
+        "anlam": "Hiç ses olmaması durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_temsilcilik",
+        "tur": "kelime",
+        "yazim": "temsilciliği",
+        "anlam": "Bir grubu başkalarına karşı temsil etme görevi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_gorev",
+        "tur": "kelime",
+        "yazim": "görev",
+        "anlam": "Bir kişiye verilen iş ya da sorumluluk.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_bireysellik",
+        "tur": "kelime",
+        "yazim": "bireycilik",
+        "anlam": "Ortak yarara bakmadan yalnızca kendini düşünme tutumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_algilama",
+        "tur": "kelime",
+        "yazim": "algılamasını",
+        "anlam": "Bir durumu duyu ya da cihazla fark etme.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_fark_etmek",
+        "tur": "kelime",
+        "yazim": "fark etmek",
+        "anlam": "Bir şeyin varlığına ya da değişikliğine dikkat etmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr053_gozden_kacirmak",
+        "tur": "kelime",
+        "yazim": "gözden kaçırmak",
+        "anlam": "Bir ayrıntıyı fark etmemek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr053_desibel",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr053_desibel"
+          },
+          {
+            "girdi": "hr053_birim"
+          },
+          {
+            "girdi": "hr053_sessizlik"
+          }
+        ]
+      },
+      {
+        "ad": "hr053_temsilcilik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr053_temsilcilik"
+          },
+          {
+            "girdi": "hr053_gorev"
+          },
+          {
+            "girdi": "hr053_bireysellik"
+          }
+        ]
+      },
+      {
+        "ad": "hr053_algilama",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr053_algilama"
+          },
+          {
+            "girdi": "hr053_fark_etmek"
+          },
+          {
+            "girdi": "hr053_gozden_kacirmak"
+          }
+        ]
+      }
+    ]
+  }
+}$json$::jsonb, 'review_needed', 'review_needed', true); end $m$;
 
 do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
   "paket_surumu": 1,
@@ -2282,7 +6381,7 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
       }
     ]
   }
-}$json$::jsonb, 'pass', 'review_needed'); end $m$;
+}$json$::jsonb, 'pass', 'review_needed', true); end $m$;
 
 do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
   "paket_surumu": 1,
@@ -2846,7 +6945,7 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
       }
     ]
   }
-}$json$::jsonb, 'pass', 'review_needed'); end $m$;
+}$json$::jsonb, 'pass', 'review_needed', true); end $m$;
 
 do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
   "paket_surumu": 1,
@@ -3365,7 +7464,7 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
       }
     ]
   }
-}$json$::jsonb, 'review_needed', 'review_needed'); end $m$;
+}$json$::jsonb, 'review_needed', 'review_needed', true); end $m$;
 
 do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
   "paket_surumu": 1,
@@ -3974,7 +8073,7 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
       }
     ]
   }
-}$json$::jsonb, 'review_needed', 'review_needed'); end $m$;
+}$json$::jsonb, 'review_needed', 'review_needed', true); end $m$;
 
 do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
   "paket_surumu": 1,
@@ -4530,7 +8629,7 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
       }
     ]
   }
-}$json$::jsonb, 'pass', 'review_needed'); end $m$;
+}$json$::jsonb, 'pass', 'review_needed', true); end $m$;
 
 do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
   "paket_surumu": 1,
@@ -5101,7 +9200,7 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
       }
     ]
   }
-}$json$::jsonb, 'review_needed', 'review_needed'); end $m$;
+}$json$::jsonb, 'review_needed', 'review_needed', true); end $m$;
 
 do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
   "paket_surumu": 1,
@@ -5785,7 +9884,7 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
       }
     ]
   }
-}$json$::jsonb, 'review_needed', 'review_needed'); end $m$;
+}$json$::jsonb, 'review_needed', 'review_needed', true); end $m$;
 
 do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
   "paket_surumu": 1,
@@ -6404,6 +10503,6 @@ do $m$ begin raise notice '%', public._tmp_okuma_denetim_iceri_al($json${
       }
     ]
   }
-}$json$::jsonb, 'review_needed', 'review_needed'); end $m$;
+}$json$::jsonb, 'review_needed', 'review_needed', true); end $m$;
 
-drop function public._tmp_okuma_denetim_iceri_al(jsonb, text, text);
+drop function public._tmp_okuma_denetim_iceri_al(jsonb, text, text, boolean);
