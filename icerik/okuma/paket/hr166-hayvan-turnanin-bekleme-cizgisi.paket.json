@@ -70,7 +70,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 662,
+        "kelime_sayisi": 660,
         "tahmini_sure_dk": 6,
         "sayfa_sayisi": 5,
         "soru_sayisi": 4,
@@ -158,7 +158,7 @@
         },
         {
           "t": "metin",
-          "v": ", "
+          "v": " sürünün daha sakin bir bölgeye yönelmesini işaret etti. "
         },
         {
           "t": "yoldas",
@@ -167,7 +167,7 @@
         },
         {
           "t": "metin",
-          "v": " ile birlikte sürünün daha sakin bir bölgeye yönelmesini işaret etti. Kuşlar acele etmeden hareket etti. Sazlıkta dinlenirken "
+          "v": " ve kuşlar acele etmeden hareket etti. Sazlıkta dinlenirken "
         },
         {
           "t": "kahraman",
@@ -447,7 +447,7 @@
   ],
   "uretim": {
     "kaynak": "llm_taslak",
-    "tarih": "2026-11-10"
+    "tarih": "2026-11-11"
   },
   "sozluk": {
     "sozluk_surumu": 1,
