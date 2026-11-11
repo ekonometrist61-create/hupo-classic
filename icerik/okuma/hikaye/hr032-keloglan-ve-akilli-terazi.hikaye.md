@@ -51,7 +51,7 @@ Satıcı kaşlarını kaldırdı. “Bunca yıldır tartıyorum. Sen mi öğrete
 
 {kahraman} tartışmak istemedi. “Ben de öğrenmeye çalışıyorum,” dedi. “Aynı ağırlığı başka terazide ölçebilir miyiz?”
 
-Yan tezgahta çalışan {yoldas:yalin|bir arkadaş}, herkesin kullanabildiği {kelime:hr032_denetim} {kelime:hr032_agirlik} gösterdi. {kahraman}, pazardaki belediye görevlisinden de yardım istedi. Görevli önce terazinin dengeli bir zemine oturup oturmadığını kontrol etti. Ardından standart ağırlıkla bir deneme yaptı. İlk terazinin ayarının bozulduğu ortaya çıktı.
+Yan tezgâhta çalışan {yoldas:yalin|bir arkadaş}, herkesin kullanabildiği {kelime:hr032_denetim} {kelime:hr032_agirlik} gösterdi. {kahraman}, pazardaki belediye görevlisinden de yardım istedi. Görevli önce terazinin dengeli bir zemine oturup oturmadığını kontrol etti. Ardından standart ağırlıkla bir deneme yaptı. İlk terazinin ayarının bozulduğu ortaya çıktı.
 ---
 @omurga
 Satıcının yüzü kızardı. “Demek müşterilere eksik vermiş olabilirim,” dedi. “Kasten yapmadım, ama yine de sorun var.”

@@ -151,7 +151,7 @@ Deniz Hanım onlara küçük bir uyarı yaptı: “Kaynağa bağlantı vermek iy
 Kütüphane sergisi açıldığında rehberleri de küçük bir masada dağıtıldı. Gelen ziyaretçilerden biri kılavuza bakıp, “Bu kadar soru sorarsanız hiçbir şeye inanamazsınız,” dedi. {kahraman} cevap vermeden önce düşündü. “Amacımız hiçbir şeye inanmamak değil,” dedi. “Neye, neden güvendiğimizi daha iyi anlayabilmek.” Bu cümle serginin en çok konuşulan notlarından biri oldu.
 ---
 @omurga
-AĞAÇ sistemindeki onarım ilerledikçe binlerce sayısal kayıt yeniden erişilebilir hale geldi. Fakat bazı belgelerin özgün kaynağı bulunamıyordu. Sistem bunları geçici olarak eksik kabul edip kullanıcılara bildirmeye başladı. {kahraman} bir arama sonucunda kocaman bir boşluk görünce önce sinirlendi. Sonra boşluğun üzerindeki açıklamayı okudu: Bu metnin kaynağı doğrulanamadığı için kesin bilgi olarak sunulmuyor.
+AĞAÇ sistemindeki onarım ilerledikçe binlerce sayısal kayıt yeniden erişilebilir hâle geldi. Fakat bazı belgelerin özgün kaynağı bulunamıyordu. Sistem bunları geçici olarak eksik kabul edip kullanıcılara bildirmeye başladı. {kahraman} bir arama sonucunda kocaman bir boşluk görünce önce sinirlendi. Sonra boşluğun üzerindeki açıklamayı okudu: Bu metnin kaynağı doğrulanamadığı için kesin bilgi olarak sunulmuyor.
 
 {yoldas:yalin|bir arkadaş}, “Belki de boşluk hiç işaretlenmemiş olsaydı daha kötüydü,” dedi.
 
@@ -169,7 +169,7 @@ Serginin son haftasında Son Kütüphane'yi ziyaret eden yaşlı bir denizci, k�
 
 Öğrenciler önce şaşırdı. Bilgiyi korumak için kayıt yapmak gerektiğini sanmışlardı. Suna, sözlü tarihin de kişinin iradesine ve açık izinlerine saygı göstererek yürütülmesi gerektiğini anlattı. Denizci neyin kaydedilebileceğine kendisi karar verdi. Fenerlerle ilgili genel anılarını anlattı, ailesine ilişkin özel bölümleri kayıt dışında bıraktı.
 
-{kahraman} bu görüşmeden sonra arşivin yalnızca dosyalarla dolu bir yer olmadığını anladı. Her belgenin arkasında yaşayan insanlar, seçimler ve ilişkiler vardı. Suna bazı {kelime:hr114_taniklik} başka kaynaklarla doğrulanmasının önemini de ekledi. Bir insanın deneyimi değerliydi; fakat bir geminin hangi gün limana ulaştığı gibi tarihsel ayrıntılar, başka kayıtlarla karşılaştırıldığında daha sağlam hale gelebilirdi.
+{kahraman} bu görüşmeden sonra arşivin yalnızca dosyalarla dolu bir yer olmadığını anladı. Her belgenin arkasında yaşayan insanlar, seçimler ve ilişkiler vardı. Suna bazı {kelime:hr114_taniklik} başka kaynaklarla doğrulanmasının önemini de ekledi. Bir insanın deneyimi değerliydi; fakat bir geminin hangi gün limana ulaştığı gibi tarihsel ayrıntılar, başka kayıtlarla karşılaştırıldığında daha sağlam hâle gelebilirdi.
 ---
 @omurga
 Emir denizcinin izin verdiği bölümü düzenlemek için ses kaydına baktı. Konuşmadaki duraksamaları silmek istiyordu; metnin akıcı görünmesini istiyordu. {kahraman}, “O zaman anlatıcının söylediğiyle bizim hazırladığımız metin birbirine karışır mı?” diye sordu. Suna gerektiğinde anlaşılabilirlik için düzenleme yapılabileceğini, ama bunun açıklanması ve anlamın korunması gerektiğini belirtti. Öğrenciler ham kayıtla düzenlenmiş okuma metnini ayrı tutmaya karar verdi.
@@ -221,7 +221,7 @@ Açılış günü ziyaretçiler kütüphanenin girişinde yeni bir pano gördü:
 Emir ona, “Kütüphanenin geleceğini bir binaya sığdırabilir miyiz?” diye sordu. {kahraman} başını salladı. “Hayır. Ama burası insanlara o geleceği nasıl kurabileceklerini gösterebilir.” Dışarıda yağmur bulutları dağılırken binanın pencerelerine gün ışığı vuruyordu. Son Kütüphane artık yalnızca geçmişten kalan bir yer değil, geleceğin bilgi alışkanlıklarını sınayan bir sınıf olmuştu.
 ---
 @omurga
-Öğrenciler astronomi kulübüne geri döndüklerinde beklenmedik bir soruyla karşılaştı. Sınıf arkadaşları yeni bulunan tarihin artık tartışmasız doğru olup olmadığını öğrenmek istiyordu. {kahraman}, “Belge zinciri daha güçlü hale geldi,” dedi. “Ama her yeni bilgi, sonucu yeniden gözden geçirmemizi sağlayabilir.” Bunu söylerken eskisi gibi kararsız görünmekten korkmadı. Çünkü koşulları ve kaynakları açık bir sonucun değerini biliyordu.
+Öğrenciler astronomi kulübüne geri döndüklerinde beklenmedik bir soruyla karşılaştı. Sınıf arkadaşları yeni bulunan tarihin artık tartışmasız doğru olup olmadığını öğrenmek istiyordu. {kahraman}, “Belge zinciri daha güçlü hâle geldi,” dedi. “Ama her yeni bilgi, sonucu yeniden gözden geçirmemizi sağlayabilir.” Bunu söylerken eskisi gibi kararsız görünmekten korkmadı. Çünkü koşulları ve kaynakları açık bir sonucun değerini biliyordu.
 
 Bir öğrenci, basılı defterdeki gözlemin neden yıllarca gözden kaçtığını sordu. {yoldas:yalin|bir arkadaş} eski katalog kartının yanlış konu başlığı altında saklandığını anlattı. Emir ise dijital arama sonuçlarının belli sözcükleri öne çıkarırken başka bağlantıları görünmez kılabileceğini ekledi. {kahraman} bütün bunları bir hata zinciri olarak yorumladı. Tek bir kahramanın bütün sorunu çözmediğini, farklı zamanlarda çalışan birçok kişinin katkısının bulunduğunu vurguladı.
 

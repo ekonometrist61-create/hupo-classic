@@ -185,7 +185,7 @@ Bu konuşmadan sonra {kahraman} günlüğünün ilk sayfasını açtı. “Buzla
 Ertesi sabah istasyonun görevlilerine teşekkür ederken işlerinin görünen kısmından çok görünmeyen kısmını düşündü: cihazların bakımı, kayıtların düzenlenmesi, güvenlik kararları ve yanlış bir verinin açıklanması. Bilimsel bir sonuç bazen bir insanın “Emin değilim” diyebilmesiyle mümkün oluyordu. {kahraman} kuzeyden bunu da yanında götürüyordu.
 ---
 @omurga
-Hava koşulları yüzünden ertelenen program ekibin içinde de tartışmaya yol açtı. Bazı yetişkin araştırmacılar, belirli çalışmalar için pencerenin kısa süre açık olabileceğini değerlendiriyordu. Başka bir ekip, koşulların güvenli olmadığını düşünüyordu. {kahraman} bu tartışmayı duyunca şaşırdı; uzmanların her zaman aynı fikirde olacağını sanırdı. Lina, “Farklı görüşler olabilir,” dedi, “ama karar resmi güvenlik prosedürleri ve güncel ölçümlerle verilir.”
+Hava koşulları yüzünden ertelenen program ekibin içinde de tartışmaya yol açtı. Bazı yetişkin araştırmacılar, belirli çalışmalar için pencerenin kısa süre açık olabileceğini değerlendiriyordu. Başka bir ekip, koşulların güvenli olmadığını düşünüyordu. {kahraman} bu tartışmayı duyunca şaşırdı; uzmanların her zaman aynı fikirde olacağını sanırdı. Lina, “Farklı görüşler olabilir,” dedi, “ama karar resmî güvenlik prosedürleri ve güncel ölçümlerle verilir.”
 
 {kahraman} uzmanların konuşmasını izlemek için izin istedi. Bilgiyi bir tartışma yarışması gibi görmeden dinledi. Bir kişi rüzgâr tahmininin belirsizliğini, diğeri araçların hareket sınırlarını, üçüncüsü iletişim ve geri dönüş planını anlatıyordu. Hepsi aynı hedefi paylaşıyordu: Araştırmayı güvenli biçimde yürütmek. Aralarındaki fark, hangi riskin hangi koşulda kabul edilebileceğini değerlendirmeleriydi.
 

@@ -106,7 +106,7 @@ Görüntüyü gönderen öğrenciye kaynağını sordular. Öğrenci onu başka 
 {kahraman} önce bütün gruba “Sahte fotoğraf” yazmayı düşündü. Sonra vazgeçti. Fotoğrafın kendisi gerçekti. Yanlış olan, bağlamı koparılmış fotoğrafa yüklenen anlamdı. {yoldas:yalin|bir arkadaş} ile birlikte görüntünün kaynak zincirini ve eksik kalan kadrajı gösteren kısa bir açıklama hazırladılar. Yorumlarda kimseyi küçük düşürmediler; herkesin aynı hatayı yapabileceğini biliyorlardı.
 ---
 @omurga
-Ne var ki ertesi gün başka bir sorun çıktı. Okuldan iki öğrenci, kapının bulunduğu tahmini yeri bulmak için bilim merkezindeki koridorları dolaşmış, görevlinin yönlendirmesini dinlememişti. Kimseye zarar gelmemişti ama görevli ziyaretçilerin teknik bölümlere yaklaşmasının risk oluşturabileceğini anlattı. {kahraman} bu haberi duyunca rahatsız oldu. “Biz bir sayının ne olduğunu merak ettik,” dedi. “Başkaları bu merakı tehlikeli bir oyuna çevirdi.”
+Ne var ki ertesi gün başka bir sorun çıktı. Okuldan iki öğrenci, kapının bulunduğu tahminî yeri bulmak için bilim merkezindeki koridorları dolaşmış, görevlinin yönlendirmesini dinlememişti. Kimseye zarar gelmemişti ama görevli ziyaretçilerin teknik bölümlere yaklaşmasının risk oluşturabileceğini anlattı. {kahraman} bu haberi duyunca rahatsız oldu. “Biz bir sayının ne olduğunu merak ettik,” dedi. “Başkaları bu merakı tehlikeli bir oyuna çevirdi.”
 
 {yoldas:yalin|bir arkadaş}, araştırmalarına yeni bir kural koymayı önerdi: Merakın bedeli başkasının güvenliğine yüklenmemeliydi. {kahraman} kabul etti. Soracakları sorular için randevu alacak, ziyaretçilere açık olmayan yerlere yönelmeyeceklerdi.
 ---
@@ -238,7 +238,7 @@ Bilim merkezi, okulun araştırmasını küçük bir dijital okuryazarlık köş
 
 {kahraman}, sergi açılırken arkadaşlarına bir soru yöneltti: “Bina gerçekten değişti mi, yoksa bizim onu anlatışımız mı?” {yoldas:yalin|bir arkadaş}, “Bazen ikisi de değişir,” dedi. “Ama burada asıl karışan şey kodlama ile tabela.” Çocuklar bu cevabı yazılı bir kartta açıkladı. Kullanıcılara hangi katın hangi bölüm olduğunu net gösteren bir tablo hazırladılar.
 
-Okul grubunda hâlâ gizli laboratuvar şakaları yapılıyordu. {kahraman} artık buna kızmıyordu. Yeter ki şaka olduğu belli olsun ve gerçek bilgiyle karıştırılmasın.[[deyim:hr104_omuz]] “Olabilir demek {kelime:hr104_kanit} değildir,” diye cevap verdi. {yoldas:yalin|bir arkadaş} de “Bize gerçekten neyin bulunduğunu açıklayan resmi planı gördük,” diye ekledi.
+Okul grubunda hâlâ gizli laboratuvar şakaları yapılıyordu. {kahraman} artık buna kızmıyordu. Yeter ki şaka olduğu belli olsun ve gerçek bilgiyle karıştırılmasın.[[deyim:hr104_omuz]] “Olabilir demek {kelime:hr104_kanit} değildir,” diye cevap verdi. {yoldas:yalin|bir arkadaş} de “Bize gerçekten neyin bulunduğunu açıklayan resmî planı gördük,” diye ekledi.
 ---
 @omurga
 Bir gün yeni ziyaretçilerden biri asansör ekranındaki G harfini gösterip “G ne demek?” diye sordu. {kahraman} ona giriş katı olduğunu anlattı. Küçük çocuk, “Neden sıfır değil?” dedi. {kahraman} biraz düşündü. “Çünkü farklı sistemler aynı yeri farklı biçimde adlandırabilir,” dedi. “Ama kullanan herkesin anlayacağı bir açıklama gerekir.” Çocuk başını sallayıp düğmeye bastı.

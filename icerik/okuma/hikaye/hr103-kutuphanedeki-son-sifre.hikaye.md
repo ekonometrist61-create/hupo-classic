@@ -81,7 +81,7 @@ Nevin Hanım bu ayrım üzerine küçük bir deneme yaptırdı. Öğrencilere �
 {yoldas:yalin|bir arkadaş} o akşam eve dönerken gizli oda fikrinin neden bu kadar çekici geldiğini düşündü. Çocukken okuduğu bütün macera kitaplarında gizli bir kapı açılır, ardından değerli bir şey bulunurdu. Bu mektupta da aynı kalıbı arıyordu. Oysa gerçek insanlar nesnelerini bazen yalnızca korumak veya başkalarına aktarmak için saklardı. Kendi okuma alışkanlığını fark etmesi, metne daha dikkatli bakmasını sağladı.
 ---
 @omurga
-Kütüphanedeki gönüllülerden biri, “Dijital arşivde okunmayan yerleri otomatik olarak tamamlasak işimiz hızlanır,” dedi. Bu fikir bazılarına iyi geldi; çünkü yüzlerce belge bekliyordu. Nevin Hanım, “Tamamlanmış metinle özgün metin farklı dosyalarda bulunmalı,” diye cevap verdi. “Üstelik tahmini tamamlamaların kim tarafından, hangi yöntemle yapıldığı da açık olmalı.”
+Kütüphanedeki gönüllülerden biri, “Dijital arşivde okunmayan yerleri otomatik olarak tamamlasak işimiz hızlanır,” dedi. Bu fikir bazılarına iyi geldi; çünkü yüzlerce belge bekliyordu. Nevin Hanım, “Tamamlanmış metinle özgün metin farklı dosyalarda bulunmalı,” diye cevap verdi. “Üstelik tahminî tamamlamaların kim tarafından, hangi yöntemle yapıldığı da açık olmalı.”
 
 {kahraman} bu tartışmayı dinlerken bir proje önerisi geliştirdi. Ekranın yanında üç düğme olacaktı: Orijinal tarama, insan tarafından yapılan okuma, belirsizlik notları. Kullanıcı hangi metne baktığını anlayacaktı. {yoldas:yalin|bir arkadaş}, “Buna bir de ‘öneri gönder’ düğmesi ekleyelim,” dedi. Böylece başka araştırmacılar daha iyi okunuşlar önerebilirdi. Nevin Hanım, önerilerin doğrudan yayımlanmaması, önce uzman incelemesinden geçmesi gerektiğini söyledi.
 

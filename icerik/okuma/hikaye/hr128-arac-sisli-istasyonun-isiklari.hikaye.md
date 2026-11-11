@@ -69,11 +69,11 @@ sorular:
     secenekler:
       - {id: A, metin: "Yan hattın o gece açık olduğunu"}
       - {id: B, metin: "Makinistin değiştiğini"}
-      - {id: C, metin: "Tahmini varış saatini"}
+      - {id: C, metin: "Tahminî varış saatini"}
       - {id: D, metin: "Gecikmenin yalnızca bakımdan olduğunu"}
     dogru: C
-    dayanak: "Makinist dikkatle ilerledi, görevli de tahmini varış saatini yolculara duyurdu."
-    aciklama: "Görevli, tahmini varış saatini yolculara duyurdu."
+    dayanak: "Makinist dikkatle ilerledi, görevli de tahminî varış saatini yolculara duyurdu."
+    aciklama: "Görevli, tahminî varış saatini yolculara duyurdu."
   - id: s5
     beceri: yorumlama
     dayanak_sayfa: 6
@@ -97,7 +97,7 @@ Bir iş insanı, ertesi sabah yapılacak bir toplantıya yetişmek için erken v
 Arka vagondaki yolculardan biri, “Eski yan hattı kullansak daha çabuk gideriz,” dedi. {kahraman} yan hattın o gece açık olup olmadığını bilmiyordu. Makinist, hat kontrol merkezinden doğrulama istedi. “Bilmeden yan hattı açmayalım,” dedi. Merkez, yan hattın bakım için kapalı olduğunu bildirdi.
 ---
 @omurga
-{kahraman}, güvenli güzergâhta devam etmek için verilen talimata uydu. Makinist dikkatle ilerledi, görevli de tahmini varış saatini yolculara duyurdu. {kahraman} bu yeni saatin bir öngörü olduğunu açıkladı. Her yolcu gecikmenin nedenini öğrendi. Toplantıya yetişecek kişi, yeni saate göre planını değiştirmek için haber gönderdi.
+{kahraman}, güvenli güzergâhta devam etmek için verilen talimata uydu. Makinist dikkatle ilerledi, görevli de tahminî varış saatini yolculara duyurdu. {kahraman} bu yeni saatin bir öngörü olduğunu açıkladı. Her yolcu gecikmenin nedenini öğrendi. Toplantıya yetişecek kişi, yeni saate göre planını değiştirmek için haber gönderdi.
 ---
 @omurga
 Sis gittikçe yoğunlaştı, ancak hat kontrolü ve işaretler izlenerek yolculuk sürdü. Yolcular pencereden yalnızca yakındaki ışıkları seçebiliyordu. {kahraman}, her işaretten sonra hat kontrolüne yeniden bildirdi. Gecikme can sıkıcıydı.

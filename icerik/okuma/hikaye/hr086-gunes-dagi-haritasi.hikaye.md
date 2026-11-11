@@ -44,7 +44,7 @@ deyim_cumleleri:
 @omurga
 Güneş Dağı'nın zirvesi sabahları gerçekten güneşe benziyordu. Yakındaki köyde yaşayanlar, ilk ışıkların dağın tepesindeki açık renk kayalara düşmesini öyle tarif ederdi. Yedinci sınıftan {kahraman} ise bu ismi fazla romantik buluyordu. Ona göre dağın asıl ilginç yanı, yamacında birbirinden çok farklı üç yürüyüş rotası bulunmasıydı. {isaret:gunes}
 
-Okulun doğa kulübü, rehber eşliğinde yapılan bir gündüz gezisine hazırlanıyordu. Amaç zirveye çıkmak değildi; orman sınırındaki seyir terasına ulaşmak, bölgede görülen bitkileri fotoğraflamak ve yer şekillerini incelemekti. Kulübün danışmanı Nihan Öğretmen, yürüyüşün herkes için güvenli ve erişilebilir biçimde planlanacağını açıklamıştı. Öğrencilerin görevi, uzmanların seçtiği resmi rotanın neden uygun olduğunu anlamaktı.
+Okulun doğa kulübü, rehber eşliğinde yapılan bir gündüz gezisine hazırlanıyordu. Amaç zirveye çıkmak değildi; orman sınırındaki seyir terasına ulaşmak, bölgede görülen bitkileri fotoğraflamak ve yer şekillerini incelemekti. Kulübün danışmanı Nihan Öğretmen, yürüyüşün herkes için güvenli ve erişilebilir biçimde planlanacağını açıklamıştı. Öğrencilerin görevi, uzmanların seçtiği resmî rotanın neden uygun olduğunu anlamaktı.
 
 {kahraman} bilgisayar başında üç renkli çizgiyi karşılaştırıyordu. Mavi rota kısa ama dik, yeşil rota uzun fakat yumuşak {kelime:hr086_egim} görünüyordu. Kırmızı rotanın yanında ise “Toplam yükselme: 120 metre” yazıyordu. Eğer bu değer doğruysa kırmızı yol hem kısa hem kolay olabilirdi.
 ---

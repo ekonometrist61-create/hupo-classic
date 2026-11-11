@@ -45,7 +45,7 @@ deyim_cumleleri:
   hr111_soz: "İpek söz istedi."
 ---
 @omurga
-Cam Şehir'de kimse başkasının aklından ne geçtiğini sormazdı. Buna gerek yoktu. Bir insan bir şeyi yeterince güçlü düşündüğünde düşüncesi yakınındaki duvara renkli yazılar halinde düşerdi. Sevince sarı, korkunca lacivert, kuşkulanınca soluk yeşil görünürdü. Şehrin girişindeki büyük kemerde bu düzenin adı yazılıydı: Açıklık, güvenin başlangıcıdır.
+Cam Şehir'de kimse başkasının aklından ne geçtiğini sormazdı. Buna gerek yoktu. Bir insan bir şeyi yeterince güçlü düşündüğünde düşüncesi yakınındaki duvara renkli yazılar hâlinde düşerdi. Sevince sarı, korkunca lacivert, kuşkulanınca soluk yeşil görünürdü. Şehrin girişindeki büyük kemerde bu düzenin adı yazılıydı: Açıklık, güvenin başlangıcıdır.
 
 On dört yaşındaki {kahraman} bu cümleyi, aynı kemerin altından her geçişinde okurdu. Çocukken ona hoş gelmişti. Kardeşiyle oyun oynarken ikisinin de aynı yere saklanmayı düşündüğünü duvardan görüp gülerlerdi. Şimdi ise her sözcüğün, söylendiği yerde başka bir anlamı olabileceğini fark ediyordu. Geçen hafta arkadaşı {yoldas:ilgi|bir arkadaşın} matematik sınavından korktuğu, koridorun camına kocaman harflerle yazılmıştı. Sınıfın yarısı onu teselli etmeye çalışmış, öteki yarısı alay etmişti. {yoldas:yalin|bir arkadaş} ertesi gün okula gelmemişti.
 
@@ -139,7 +139,7 @@ Arda Bey, “Korkuyu ciddiye almak doğrudur,” dedi, “ama korkuyla kesin teh
 @omurga
 Arda Bey, iki kızın önerisiyle okulda gönüllü bir gözlem çalışması yapılmasını kabul etti. Ama bunun sınıf arkadaşlarının zihnini izleyen gizli bir deney olmayacağını özellikle söyledi. Çalışmaya katılacak öğrenciler bilgilendirilecek, istemeyenler dışarıda kalabilecek ve hiçbir özel düşünce kaydedilmeyecekti. Araştırmanın amacı, farklı uyarı sistemlerinin çocuklar üzerindeki etkisini anlamaktı.
 
-{kahraman} ile İpek üç pano hazırladı. Birincisi eskisi gibi tüm duyguları gösteriyordu. İkincisi yalnızca kişinin kendi isteğiyle verdiği yardım çağrısını, üçüncüsü ise ortak alandaki doğrulanmış tehlike bildirimlerini gösteriyordu. Panolar gerçek düşünce akışına bağlanmamıştı; öğrenciler hazırlanan hayali senaryoları kullanıyordu. Böylece kimsenin mahremiyetine dokunmadan tasarımın mantığını sınayabildiler.
+{kahraman} ile İpek üç pano hazırladı. Birincisi eskisi gibi tüm duyguları gösteriyordu. İkincisi yalnızca kişinin kendi isteğiyle verdiği yardım çağrısını, üçüncüsü ise ortak alandaki doğrulanmış tehlike bildirimlerini gösteriyordu. Panolar gerçek düşünce akışına bağlanmamıştı; öğrenciler hazırlanan hayalî senaryoları kullanıyordu. Böylece kimsenin mahremiyetine dokunmadan tasarımın mantığını sınayabildiler.
 
 İlk senaryoda bir öğrenci sınavdan önce “Yapamayacağım” diyordu. Eski düzende bu cümle herkesin önüne düşüyordu. Gönüllü yardım panosunda ise öğrenci isterse rehberlik servisine mesaj gönderebiliyordu. İkinci senaryoda koridorda duman görülüyordu. Bu durumda kişisel düşünceye ihtiyaç duymadan, duman sensöründen gelen doğrulanmış uyarı panoya aktarılıyordu. Üçüncü senaryo en zorlusuydu: Bir çocuk kendini tehdit altında hissediyor ama korkusunu açıklamak istemiyordu.
 ---

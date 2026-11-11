@@ -11,7 +11,9 @@
     "dunya_tipi": "gercekci",
     "izinli_turler": [
       "ben",
-      "arkadas"
+      "arkadas",
+      "kardes",
+      "baska_biri"
     ],
     "deger_anahtarlari": [
       "D6",
@@ -498,7 +500,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Ne var ki ertesi gün başka bir sorun çıktı. Okuldan iki öğrenci, kapının bulunduğu tahmini yeri bulmak için bilim merkezindeki koridorları dolaşmış, görevlinin yönlendirmesini dinlememişti. Kimseye zarar gelmemişti ama görevli ziyaretçilerin teknik bölümlere yaklaşmasının risk oluşturabileceğini anlattı. "
+          "v": "Ne var ki ertesi gün başka bir sorun çıktı. Okuldan iki öğrenci, kapının bulunduğu tahminî yeri bulmak için bilim merkezindeki koridorları dolaşmış, görevlinin yönlendirmesini dinlememişti. Kimseye zarar gelmemişti ama görevli ziyaretçilerin teknik bölümlere yaklaşmasının risk oluşturabileceğini anlattı. "
         },
         {
           "t": "kahraman",
@@ -1312,7 +1314,7 @@
         },
         {
           "t": "metin",
-          "v": " de “Bize gerçekten neyin bulunduğunu açıklayan resmi planı gördük,” diye ekledi."
+          "v": " de “Bize gerçekten neyin bulunduğunu açıklayan resmî planı gördük,” diye ekledi."
         }
       ]
     },

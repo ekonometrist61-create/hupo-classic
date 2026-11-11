@@ -59,7 +59,7 @@ Tren hareket edince pencereden tarlalar, dereler ve küçük istasyonlar akmaya 
 @omurga
 Eskişehir'den ayrılırken {kahraman} pazarda çalışan bir kadına yöresel bir sözcüğün anlamını sormuştu. Kadın, onun merakını görünce gülümseyerek açıklamış, sonra başka şehirlerde de farklı söyleyişler duyabileceğini anlatmıştı. {kahraman} aynı nesnenin farklı yerlerde bazen farklı adlarla anılmasına şaşırdı. "Demek kelimeler de yolculuk ediyor," dedi. Annesi, "Evet, insanlarla birlikte taşınıyor ve değişiyor," diye cevap verdi. {kahraman} defterinde sözcüklere yeni bir sayfa ayırdı.
 
-İkinci gün Konya'ya vardılar. Mehmet amca onları tarihi bir sokakta gezdirdi. Taş binaları, eski kapıları ve avluları gösterdi. Öğle yemeğinde etli ekmek vardı. {kahraman} bu kez yemeğin yanında anlatılan aile hikâyeleriyle de ilgilendi.
+İkinci gün Konya'ya vardılar. Mehmet amca onları tarihî bir sokakta gezdirdi. Taş binaları, eski kapıları ve avluları gösterdi. Öğle yemeğinde etli ekmek vardı. {kahraman} bu kez yemeğin yanında anlatılan aile hikâyeleriyle de ilgilendi.
 ---
 @omurga
 Mehmet amca, "Eskiden akşam yemekleri ailece uzun sürerdi," dedi. "Herkes gününü anlatırdı."

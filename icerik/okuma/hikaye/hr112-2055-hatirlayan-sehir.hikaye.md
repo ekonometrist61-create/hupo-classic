@@ -75,7 +75,7 @@ Okul çıkışında HAFIZA'nın bilgi merkezini ziyaret ettiler. Görevli, harek
 {kahraman} de öyle düşünüyordu. Fakat hatanın nasıl düzeltileceği sorulduğunda görevli uzun bir kılavuza yönlendirdi. Kılavuzda hangi kaydın ne kadar saklandığına ilişkin açık bir cümle bulamadılar.
 ---
 @omurga
-Araştırmanın üçüncü günü okul gezisinde küçük bir olay yaşandı. Sekizinci sınıflar tarihi bilim merkezine gidecekti. HAFIZA, kalabalığı azaltmak için öğrencileri farklı duraklara yönlendirdi. Sistem yalnızca önceki yolculuk kayıtlarını dikkate almış, öğretmenlerin yeni buluşma planını tam olarak işlememişti. Bazı öğrenciler doğru noktaya ulaşırken bir grup, kapalı bir servis girişine yöneldi.
+Araştırmanın üçüncü günü okul gezisinde küçük bir olay yaşandı. Sekizinci sınıflar tarihî bilim merkezine gidecekti. HAFIZA, kalabalığı azaltmak için öğrencileri farklı duraklara yönlendirdi. Sistem yalnızca önceki yolculuk kayıtlarını dikkate almış, öğretmenlerin yeni buluşma planını tam olarak işlememişti. Bazı öğrenciler doğru noktaya ulaşırken bir grup, kapalı bir servis girişine yöneldi.
 
 Kimse kaybolmadı; öğretmenleri öğrencileri sayıp kapalı girişin yanındaki bekleme alanında topladı. Ancak buluşma gecikince ziyaretin bir bölümü iptal edildi. Deniz Hanım, “Teknolojik öneri yararlı olabilir,” dedi, “ama okul gezisinin güvenliğini ona bırakamayız.” Öğrencilerin konumları okulun doğrulanmış gezi planına göre yeniden kontrol edildi. {kahraman} bir önerinin resmî bilgi gibi sunulmasının tehlikesini ilk kez bu kadar açık gördü.
 

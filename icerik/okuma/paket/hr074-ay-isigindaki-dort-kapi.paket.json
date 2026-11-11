@@ -11,7 +11,9 @@
     "dunya_tipi": "masalsi",
     "izinli_turler": [
       "ben",
-      "arkadas"
+      "arkadas",
+      "kardes",
+      "baska_biri"
     ],
     "deger_anahtarlari": [
       "D6",
@@ -1032,7 +1034,7 @@
         },
         {
           "id": "B",
-          "metin": "Ölçmeden, tahmini olarak"
+          "metin": "Ölçmeden, tahminî olarak"
         },
         {
           "id": "C",
@@ -1106,7 +1108,7 @@
         "id": "hr074_goz_karari",
         "tur": "deyim",
         "yazim": "göz kararı",
-        "anlam": "Ölçmeden, tahmini olarak.",
+        "anlam": "Ölçmeden, tahminî olarak.",
         "sinif_alt": 5,
         "sinif_ust": 7
       },

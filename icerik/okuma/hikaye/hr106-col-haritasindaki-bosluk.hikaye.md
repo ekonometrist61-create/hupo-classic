@@ -152,7 +152,7 @@ Hazırlıkların son haftasında okulun teknoloji kulübünden bir öğrenci, ha
 Asya resmi sergide kullanmaya karşı çıktı. Teknoloji kulübündeki arkadaşı alındı. “Ben yalnızca güzel bir görsel istedim.” Asya onun emeğini küçümsemedi. Görselin tasarım amaçlı kullanılabileceğini, ancak altına açıkça kurgu olduğunu yazmak gerektiğini söyledi. Tarihî kanıt gibi sunulmasını ise kabul etmiyordu.
 ---
 @omurga
-Arkadaşları ikinci bir tasarım hazırladı. Bu kez yüzeydeki eski yazı işaretlerini kaldırdılar, çizgilerin yanına “temsili çizim” notu koydular. Sergide karşılaştırma için iki görsel yer alacaktı: kaynağı bilinen çalışma haritası ve yorumlayıcı sanat görseli. Öğrenciler ziyaretçilere hangi resmin hangi soruyu cevaplayabileceğini sormayı planladı.
+Arkadaşları ikinci bir tasarım hazırladı. Bu kez yüzeydeki eski yazı işaretlerini kaldırdılar, çizgilerin yanına “temsilî çizim” notu koydular. Sergide karşılaştırma için iki görsel yer alacaktı: kaynağı bilinen çalışma haritası ve yorumlayıcı sanat görseli. Öğrenciler ziyaretçilere hangi resmin hangi soruyu cevaplayabileceğini sormayı planladı.
 
 O akşam {yoldas:yalin|bir arkadaş}, bilgisayar ekranına uzun süre baktı. Güzel görünen sahte haritanın hâlâ güçlü bir çekiciliği vardı. “Bir görüntünün bana ne kadar ikna edici geldiğiyle ne kadar doğru olduğu ayrı şeylermiş,” dedi. Asya gülümsedi. Kendi ilk tahminlerinin de bir zamanlar ona çok ikna edici geldiğini hatırladı.
 ---
@@ -220,7 +220,7 @@ Sunum sırasında arkadaşlarından biri, “Madem kesin rota belli değil, bunc
 @omurga
 Bir hafta sonra sergiyi gezen küçük bir çocuk, “Bu kervanlar hep aynı eşyayı mı taşırdı?” diye sordu. Asya cevap vermeden önce dönemi ve bölgeyi sınırlamaya çalıştı. Müzedeki bir görevli ona farklı malların çeşitli güzergâhlarda ve farklı zamanlarda taşındığını anlattı; tek bir kervanın bütün ticareti temsil etmediğini vurguladı. Asya bu açıklamayı çocukların anlayacağı kısa bir dile çevirdi.
 
-{yoldas:yalin|bir arkadaş} bir kutu hazırladı. İçine resimlerden oluşan temsili kartlar koydu: kumaş, seramik, baharat, metal eşya. Kartların yanında “Her yolculukta hepsi taşınırdı” yazmıyordu. Oyunun başında yer alan açıklama, bu kartların farklı ticaret ve değiş tokuş örneklerini düşündürmek için seçildiğini belirtiyordu.
+{yoldas:yalin|bir arkadaş} bir kutu hazırladı. İçine resimlerden oluşan temsilî kartlar koydu: kumaş, seramik, baharat, metal eşya. Kartların yanında “Her yolculukta hepsi taşınırdı” yazmıyordu. Oyunun başında yer alan açıklama, bu kartların farklı ticaret ve değiş tokuş örneklerini düşündürmek için seçildiğini belirtiyordu.
 
 Çocuk kartları haritaya yerleştirirken bir şey fark etti. “Bunları taşımak zor olmalı,” dedi. {yoldas:yalin|bir arkadaş} ona hayalî kervan sahnesindeki yük hesaplarını gösterdi. Daha fazla yük, daha fazla kazanç anlamına gelebilirdi; ama yolculuk koşullarını ve konaklama ihtiyacını da etkileyebilirdi. Çocuk, kısa rotayı seçmekten vazgeçti. İpek Yolu artık ona yalnızca uzun çizgilerden oluşan bir coğrafya bilmecesi gibi görünmüyordu.
 ---

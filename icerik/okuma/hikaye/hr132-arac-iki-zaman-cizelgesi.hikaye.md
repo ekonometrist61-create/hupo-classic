@@ -97,7 +97,7 @@ Makinist, kontrol merkeziyle görüştü. Merkez, yeni çizelgenin ertesi sabah 
 Sefer başladıktan sonra hattın ilerleyen bölümünde beklenmedik bir durum ortaya çıktı. Kontrol merkezi, geçici teknik inceleme nedeniyle trenin bir istasyonda daha uzun beklemesi gerektiğini duyurdu. Bazı yolcular, kaybedilen zamanı sonraki durakta daha az bekleyerek telafi etmeyi önerdi. Duraklama sürelerinin görevli talimatlarına bağlı olduğu biliniyordu. Bu yüzden {kahraman} önerileri uygulamadı; makinistin merkezden bilgi almasını bekledi.
 ---
 @omurga
-Görevliler yolculuğun kalan bölümünü yeniden planladı. Güncel tahmini varış saati vagonda duyuruldu. Bir yolcu sonraki bağlantısını kontrol etmek için istasyon görevlisinden yardım istedi; başka biri kendisini karşılayacak kişiye haber gönderdi. Görevliler, bağlantısı olan her yolcuya kendi güzergâhını ve sonraki aktarmasını ayrı ayrı sordu.
+Görevliler yolculuğun kalan bölümünü yeniden planladı. Güncel tahminî varış saati vagonda duyuruldu. Bir yolcu sonraki bağlantısını kontrol etmek için istasyon görevlisinden yardım istedi; başka biri kendisini karşılayacak kişiye haber gönderdi. Görevliler, bağlantısı olan her yolcuya kendi güzergâhını ve sonraki aktarmasını ayrı ayrı sordu.
 ---
 @omurga
 Son durakta istasyon görevlisi, aynı iki çizelgenin asılı olduğu panoya açık tarih etiketleri koydu. Sefer raporuna yaşanan beklemeyi ve yapılan duyuruları görevliler ekledi. Gece boyunca iki çizelge de panoda, üzerlerindeki açık tarih etiketleriyle kaldı.

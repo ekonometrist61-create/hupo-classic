@@ -241,7 +241,7 @@ Köye döndüğünde topluluğa bir plan sundu: Yetkililerden geçici yönlendir
 @omurga
 Ertesi gün köy meydanında herkes aynı fikirde değildi. Tüccar Timur yolu mümkün olduğunca çabuk açmak istiyor, taş ustası güvenlik denetiminin tamamlanmasını savunuyordu. Dumrul içinden Timur'u susturmak geçtiğini hissetti. Eskiden bir tartışmada karşı tarafı susturabilirse kazandığını sanırdı. Bu kez sabırla sordu: “Dükkânına ürün ulaşmazsa ne olur?” Timur depodaki unun azalacağını anlattı. “Peki köprü erken açılır ve taş çökerse?” diye sordu Umay. Sessizlik oldu.
 
-Birlikte mal taşımak için izinli ve güvenli bir düzen kurulmasını araştırmaya karar verdiler. Dumrul hiçbirini yapabileceğinden emin olmadığı bir şeyi olmuş bitmiş gibi vaat etmedi. Taş ustası da hava ve onarım koşullarına göre tahmini zamanı açıklayacağını söyledi. Köyün ihtiyacı güçlü bir sesin tek cevabı değildi; farklı ihtiyaçların anlaşılır biçimde duyulmasıydı.
+Birlikte mal taşımak için izinli ve güvenli bir düzen kurulmasını araştırmaya karar verdiler. Dumrul hiçbirini yapabileceğinden emin olmadığı bir şeyi olmuş bitmiş gibi vaat etmedi. Taş ustası da hava ve onarım koşullarına göre tahminî zamanı açıklayacağını söyledi. Köyün ihtiyacı güçlü bir sesin tek cevabı değildi; farklı ihtiyaçların anlaşılır biçimde duyulmasıydı.
 
 Gün sonunda Dumrul köprünün yanına geldi. Korkulukta yıllar önce taşıdığı taşın küçük bir çiziği vardı. Parmaklarını o izin üstünde gezdirdi. Gurur duyduğu emeğin varlığı değişmemişti. Değişen, bu emeğin kendisine köprü üzerinde yaşayan herkes adına konuşma hakkı vermediğini anlamasıydı. Bir işi yapmış olmak değerliydi; o işin kimi etkileyeceğini dinlemeye devam etmek başka bir ustalıktı.
 ---

@@ -11,7 +11,9 @@
     "dunya_tipi": "gercekci",
     "izinli_turler": [
       "ben",
-      "arkadas"
+      "arkadas",
+      "kardes",
+      "baska_biri"
     ],
     "deger_anahtarlari": [
       "D6",
@@ -1420,7 +1422,7 @@
         },
         {
           "t": "metin",
-          "v": " bu soruyu beğendi. “Masalda baştan kurmaca bir dünyaya girdiğimizi biliyoruz,” dedi. “Sorun hayal kurmakta değil, hayali kanıt diye sunmakta.” O günden sonra meydandaki duvarın önünden her geçtiğinde aynı şeyi düşündü: İnsan gölgesinden korkabilir; fakat gölge hakkında kurduğu hikâyenin sorumluluğunu da taşır."
+          "v": " bu soruyu beğendi. “Masalda baştan kurmaca bir dünyaya girdiğimizi biliyoruz,” dedi. “Sorun hayal kurmakta değil, hayalî kanıt diye sunmakta.” O günden sonra meydandaki duvarın önünden her geçtiğinde aynı şeyi düşündü: İnsan gölgesinden korkabilir; fakat gölge hakkında kurduğu hikâyenin sorumluluğunu da taşır."
         }
       ]
     },
@@ -1535,7 +1537,7 @@
         },
         {
           "id": "D",
-          "metin": "Hayal kurmak tek başına sorun değildir; sorun hayali kanıt gibi sunmaktır"
+          "metin": "Hayal kurmak tek başına sorun değildir; sorun hayalî kanıt gibi sunmaktır"
         }
       ],
       "dogru": "D",

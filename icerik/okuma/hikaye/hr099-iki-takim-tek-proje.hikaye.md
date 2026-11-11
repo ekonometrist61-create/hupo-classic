@@ -172,7 +172,7 @@ Efe kayıtlara baktı. Denemede kullandıkları {kelime:hr099_veri} dosyasında 
 {kahraman} başını salladı. “En küçük sayıyı seçmek, elimizdeki bilgiyi olduğundan kesin göstermek olur.”
 ---
 @omurga
-Atlas “Tahmini süre” yazısını ekledi. Nisan ise yanına küçük bir soru işareti koydu; dokunulduğunda bilginin nasıl hesaplandığı sade biçimde açıklanacaktı. Sesli uyarı da “Yaklaşık altı dakika” diyecekti.
+Atlas “Tahminî süre” yazısını ekledi. Nisan ise yanına küçük bir soru işareti koydu; dokunulduğunda bilginin nasıl hesaplandığı sade biçimde açıklanacaktı. Sesli uyarı da “Yaklaşık altı dakika” diyecekti.
 
 Bir başka sorun daha vardı. Maket, “Erişilebilir araç” bilgisini yalnızca yeşil renkle gösteriyordu. Renkleri ayırt etmekte zorlanan birinin bu işareti kaçırabileceğini fark ettiler. Yeşil simgenin yanına belirgin bir rampa şekli ve metin eklediler.
 

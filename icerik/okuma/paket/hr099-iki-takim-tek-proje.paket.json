@@ -11,7 +11,9 @@
     "dunya_tipi": "gercekci",
     "izinli_turler": [
       "ben",
-      "arkadas"
+      "arkadas",
+      "kardes",
+      "baska_biri"
     ],
     "deger_anahtarlari": [
       "D6",
@@ -422,7 +424,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Atlas “Tahmini süre” yazısını ekledi. Nisan ise yanına küçük bir soru işareti koydu; dokunulduğunda bilginin nasıl hesaplandığı sade biçimde açıklanacaktı. Sesli uyarı da “Yaklaşık altı dakika” diyecekti.\n\nBir başka sorun daha vardı. Maket, “Erişilebilir araç” bilgisini yalnızca yeşil renkle gösteriyordu. Renkleri ayırt etmekte zorlanan birinin bu işareti kaçırabileceğini fark ettiler. Yeşil simgenin yanına belirgin bir rampa şekli ve metin eklediler.\n\n"
+          "v": "Atlas “Tahminî süre” yazısını ekledi. Nisan ise yanına küçük bir soru işareti koydu; dokunulduğunda bilginin nasıl hesaplandığı sade biçimde açıklanacaktı. Sesli uyarı da “Yaklaşık altı dakika” diyecekti.\n\nBir başka sorun daha vardı. Maket, “Erişilebilir araç” bilgisini yalnızca yeşil renkle gösteriyordu. Renkleri ayırt etmekte zorlanan birinin bu işareti kaçırabileceğini fark ettiler. Yeşil simgenin yanına belirgin bir rampa şekli ve metin eklediler.\n\n"
         },
         {
           "t": "kahraman",

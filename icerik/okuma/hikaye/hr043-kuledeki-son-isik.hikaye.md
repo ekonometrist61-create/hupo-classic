@@ -76,7 +76,7 @@ Okuldaki hava köşesinin termometresi güneş altında kaldığında daha yüks
 @omurga
 O gün okulun küçük bahçe şenliğinin duyurusu yapılacaktı. Sınıf süslemeleri hazırlıyordu. Nehir hava tahmini sitesinde akşam için gök gürültülü {kelime:hr043_sagnak} {kelime:hr043_olasilik} gördü. Arkadaşı Tuna, "Burada güneş var, yağmur gelmez," dedi. Defne buna itiraz etti: "Bir yerde güneş olması, birkaç saat sonra başka bir hava olayı yaşanmayacağını göstermez."
 
-Çocuklar öğretmenlerinden resmi tahmin ve uyarıların nereden takip edildiğini öğrendi. Başka kaynaklarda farklı ifadeler görünce de tek bir videoya bakarak karar vermemeleri gerektiğini anladılar. O akşam notlarını gözden geçirirken "hava durumu" ile "hava tahmini" sözcüklerini aynıymış gibi kullanmış olduğunu gördü. Öğretmeninin anlattıklarını hatırladı: Biri belirli bir zamanda gözlenen durumu, diğeri geleceğe ilişkin değerlendirmeyi anlatıyordu. Defterindeki iki cümleyi düzeltti. Bu küçük ayrım, sonraki günün sorularını daha açık sormasına yardım edecekti.
+Çocuklar öğretmenlerinden resmî tahmin ve uyarıların nereden takip edildiğini öğrendi. Başka kaynaklarda farklı ifadeler görünce de tek bir videoya bakarak karar vermemeleri gerektiğini anladılar. O akşam notlarını gözden geçirirken "hava durumu" ile "hava tahmini" sözcüklerini aynıymış gibi kullanmış olduğunu gördü. Öğretmeninin anlattıklarını hatırladı: Biri belirli bir zamanda gözlenen durumu, diğeri geleceğe ilişkin değerlendirmeyi anlatıyordu. Defterindeki iki cümleyi düzeltti. Bu küçük ayrım, sonraki günün sorularını daha açık sormasına yardım edecekti.
 ---
 @omurga
 Nehir akşamki kule ışıklarının havayla ilişkili olabileceğini düşünmeye başladı.

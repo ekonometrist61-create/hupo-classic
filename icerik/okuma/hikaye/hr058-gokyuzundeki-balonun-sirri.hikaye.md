@@ -52,7 +52,7 @@ Görevli, yükselme gösterisine başlamadan önce ipin bağlı olduğu noktalar
 @omurga
 Eğitim çadırının duvarında, eskiden uçmuş bir balonun kesit resmi asılıydı. Sepetin üstünde geniş bir ağız, onun çevresinde kumaşın gerildiği dikişler görünüyordu. {kahraman} resimdeki büyük boşluğun yalnızca havayla dolduğunu görünce şaşırdı. {yoldas:yalin|bir arkadaş}, bir ucu açık olan böyle büyük bir kubbenin neden hemen sönmediğini sordu. Görevli, ısınan havanın içeriye sürekli gönderildiği sırada kubbenin biçimini koruduğunu gösterdi.
 
-Eğitim masasında ısıtıcıya bağlı olmayan, şeffaf iki kap duruyordu. Görevli bunların içindeki havanın sıcaklık farkını güvenli bir düzenekle göstereceğini söyledi. Ekranda iki ayrı gösterge belirdi. Daha sıcak olan kaptaki hava, aynı basınç koşullarında daha az yoğun hale geliyordu. {kahraman}, {kelime:hr058_yogunluk} sözcüğünü defterinin kenarına yazdı. Görevli, yoğunluk sözcüğünü belirli bir hacimde ne kadar madde bulunduğunu anlatırken kullandı.
+Eğitim masasında ısıtıcıya bağlı olmayan, şeffaf iki kap duruyordu. Görevli bunların içindeki havanın sıcaklık farkını güvenli bir düzenekle göstereceğini söyledi. Ekranda iki ayrı gösterge belirdi. Daha sıcak olan kaptaki hava, aynı basınç koşullarında daha az yoğun hâle geliyordu. {kahraman}, {kelime:hr058_yogunluk} sözcüğünü defterinin kenarına yazdı. Görevli, yoğunluk sözcüğünü belirli bir hacimde ne kadar madde bulunduğunu anlatırken kullandı.
 
 Masadaki şemada hava dolu balonun ağırlığı aşağı, havanın sağladığı {kelime:hr058_kaldirma_kuvveti} yukarı yönlü okla gösteriliyordu. Isınan iç havanın yoğunluğu azalınca balona etki eden yukarı yönlü kuvvet ağırlığını aşabildi. Görevli, kumaşın, sepetin ve yolcuların ağırlığının da bu karşılaştırmada yer aldığını açıkladı.
 

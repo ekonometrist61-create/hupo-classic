@@ -58,7 +58,7 @@ Kırmızı noktanın adı K-17 idi. Küçük bir metal parçasını temsil ediyo
 
 Ceyda tek bir soru sordu: “Kırmızı noktanın tam yerinden emin miyiz?”
 
-Diğerleri durdu. Ekranın altında küçük bir ibare vardı: Tahmini konum — ölçüm belirsizliği içerir. İlk kararları henüz verilmemişti ama ilk hatalarını yapmaya çok yaklaşmışlardı: Bir işareti, bütün gerçeğin kendisi sanmışlardı.
+Diğerleri durdu. Ekranın altında küçük bir ibare vardı: Tahminî konum — ölçüm belirsizliği içerir. İlk kararları henüz verilmemişti ama ilk hatalarını yapmaya çok yaklaşmışlardı: Bir işareti, bütün gerçeğin kendisi sanmışlardı.
 ---
 @omurga
 Selçuk Bey öğrencilere üç ayrı veri görünümü açtı. İlkinde cisimlerin yörünge çizgileri, ikincisinde hızları ve zamanları, üçüncüsünde ise konumların belirsizlik aralıkları gösteriliyordu. Gökyüzüne tek fotoğrafmış gibi bakıldığında birbirine dokunacak sanılan iki nokta, farklı zamanlarda farklı yerlerden geçebilirdi. Tersi de mümkündü: Haritada ayrı duran iki işaret, ileride aynı bölgeye yaklaşabilirdi.
@@ -223,7 +223,7 @@ Bir öğleden sonra Selçuk Bey ekranları kapattı. Öğrenciler şaşkınlıkl
 
 {kahraman} ilk çizdiği resimde Dünya'nın çevresine kusursuz iki çember yerleştirdi. {yoldas:yalin|bir arkadaş}, “Gerçekte bütün yörüngeleri böyle göstermek doğru değil,” diye uyardı. Eğitmenleri çizimin yalnızca temel fikirleri anlatacağını, gerçek uzay hareketinin bundan çok daha karmaşık olduğunu hatırlattı. Böylece altına ölçekli değildir; öğretici şemadır yazdılar. Küçük bir uyarının, resmi inceleyenlerin onu yanlış anlamasını önleyebileceğini gördüler.
 
-Ceyda bir ipin üzerine iki renkli düğüm bağladı. “Bunlar araçların belli andaki konumları olsun,” dedi. “Şimdi biri aynı noktadan erken, diğeri geç geçerse çarpışırlar mı?” Aras ipleri kaydırdı. “Hayır, yalnızca yolların kesiştiğini göstermek yetmez.” {kahraman} bu basit denemeyi sevdi. Ekranda sayılarla boğuşurken anlamını kaybettiği bir düşünce, kartonun üzerinde yeniden açık hale gelmişti.
+Ceyda bir ipin üzerine iki renkli düğüm bağladı. “Bunlar araçların belli andaki konumları olsun,” dedi. “Şimdi biri aynı noktadan erken, diğeri geç geçerse çarpışırlar mı?” Aras ipleri kaydırdı. “Hayır, yalnızca yolların kesiştiğini göstermek yetmez.” {kahraman} bu basit denemeyi sevdi. Ekranda sayılarla boğuşurken anlamını kaybettiği bir düşünce, kartonun üzerinde yeniden açık hâle gelmişti.
 ---
 @omurga
 Öğretmenleri sıradaki soruyu sordu: “İkinci ipin düğümünün yeri tam bilinmiyorsa?” Ceyda düğümün yanına renkli bir bant bağladı. Bu, kesin konum değil, belirsizliği anlatan görsel bir işaretti. {kahraman} karar notunda yalnızca bir sayı değil, belirsizlik açıklaması da kullanacaklarını hatırladı.
@@ -272,7 +272,7 @@ Kardeşi yüzünü buruşturdu. “Bu pek heyecanlı değilmiş.”
 “Ekranda olunca heyecanlıydı,” dedi {kahraman}. “Ama güvenilir karar vermek için heyecanı bir süre kenara koymak gerekiyor.”
 ---
 @omurga
-Kampın son akşamında {kahraman} kendine küçük bir defter aldı. Kapağına İhtimaller yazdı. İlk sayfada “Kesinlikle olacak” diye düşündüğü fakat gerçekleşmeyen üç olay sıraladı: sınavda başarısız olacağı korkusu, arkadaşlarının onu dinlemeyeceği kuşkusu ve simülasyondaki kırmızı noktanın uyduya mutlaka çarpacağı düşüncesi. Sonra gerçekleşeceğinden emin olduğu halde değişen iki olayı yazdı. Hiçbirinin gerçekleşmemesi diğerlerini anlamsız kılmıyordu. Tahminler, ancak koşullarıyla ve sonuçlarıyla birlikte değerlendirildiğinde öğreticiydi.
+Kampın son akşamında {kahraman} kendine küçük bir defter aldı. Kapağına İhtimaller yazdı. İlk sayfada “Kesinlikle olacak” diye düşündüğü fakat gerçekleşmeyen üç olay sıraladı: sınavda başarısız olacağı korkusu, arkadaşlarının onu dinlemeyeceği kuşkusu ve simülasyondaki kırmızı noktanın uyduya mutlaka çarpacağı düşüncesi. Sonra gerçekleşeceğinden emin olduğu hâlde değişen iki olayı yazdı. Hiçbirinin gerçekleşmemesi diğerlerini anlamsız kılmıyordu. Tahminler, ancak koşullarıyla ve sonuçlarıyla birlikte değerlendirildiğinde öğreticiydi.
 
 Ceyda yanına gelip defteri gördü. “Bunun bir matematik defteri olacağını sanmıştım,” dedi. {kahraman}, “Biraz da öyle,” diye yanıtladı. “Ama rakamları doğru kullanabilmek için kendi aceleciliğimi de tanımam gerekiyor.”
 
