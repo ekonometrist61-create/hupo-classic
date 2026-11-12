@@ -94,7 +94,9 @@ export default function SurveysManager() {
       aria-selected={tab === id}
       onClick={() => setTab(id)}
       className={`${dokunmaHedefi} rounded-md px-3 text-theme-xs font-medium ${
-        tab === id ? "bg-white shadow-theme-xs dark:bg-gray-800" : "text-gray-500"
+        tab === id
+          ? "bg-white shadow-theme-xs dark:bg-gray-800 dark:text-white/90"
+          : "text-gray-500 dark:text-gray-400"
       }`}
     >
       {label}
