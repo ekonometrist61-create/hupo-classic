@@ -38,6 +38,20 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.9.0 · 2026-11-12
+
+Yeni kullanıcı yüzeyi (MINOR: yeni sayfa ve iki yeni landing bölümü).
+- Landing: "Onlarca Hikâye" (yayındaki hikâyelerin özeti, tür çipleri) ve "Senin Hikâyen" (kahramanı çocuğun seçtiği deneyim, üç adım, gerçek uygulama ekranı) ayrı bölümler oldu. Hupo kuşu bu iki bölümden kaldırıldı.
+- Yeni sayfa `/hikaye-demo?sinif=3…7`: her sınıf için yayında ve insan onaylı bir hikâye parçası, deyim kartı, bir anlama sorusu ve cevaba geri bildirim. Yazılan kahraman ve yol arkadaşı adları yalnız sayfa belleğinde kalır; kaydedilmez.
+- Sınıf 7 demosunda yol arkadaşı adı sabittir (soru metni "Nehir" adına bağlı).
+- Landing okuma özeti çağrısı ortak yardımcıya taşındı (`lib/okuma/site-ozeti.ts`).
+
+**Migration:** yok.
+
+**Uyumluluk:** Veri sözleşmesi değişmedi. Yeni sayfa yalnız `okuma_site_ozeti` RPC'sini kullanır; demo parçaları statik içeriktir ve yayın sürümü değişince güncellenmelidir.
+
+**Bilinen sınır:** 72 yayın hikâyesinin 13'ünde kahraman adı yoktur; landing "çoğu hikâyede" der. Bu hikâyelerin düzenlenmesi editör onayına bağlı ve bu sürümde yoktur.
+
 ### panel 0.8.1 · 2026-11-12
 
 Düzeltme (PATCH: metin ve görünüm; veri ve migration değişmedi). Satış temas noktaları (FK-006, K-0258, yalnız web kısmı).

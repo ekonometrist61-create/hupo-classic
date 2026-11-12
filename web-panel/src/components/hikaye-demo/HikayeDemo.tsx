@@ -23,7 +23,7 @@ export default function HikayeDemo({ baslangicSinif }: { baslangicSinif: number 
 
   const demo = HIKAYE_DEMOLARI.find((d) => d.sinif === sinif) ?? HIKAYE_DEMOLARI[0];
   const adGoster = ad.trim() || VARSAYILAN_AD;
-  const yolGoster = yol.trim() || demo.varsayilanYol || "Deniz";
+  const yolGoster = demo.sabitYol ?? (yol.trim() || demo.varsayilanYol || "Deniz");
   const yerTutucuVar = /\{(ad|yol)\}/.test(`${demo.parca} ${demo.deyim.cumle}`);
   const dogruMu = secim !== null && secim === demo.soru.dogru;
 
@@ -78,7 +78,9 @@ export default function HikayeDemo({ baslangicSinif }: { baslangicSinif: number 
                 className="mt-1 h-12 w-full rounded-xl border-2 border-cream-dark bg-white px-4 font-semibold dark:border-gray-600 dark:bg-gray-900"
               />
             </div>
-            {demo.parca.includes("{yol}") || demo.deyim.cumle.includes("{yol}") ? (
+            {demo.sabitYol ? (
+              <p className="self-end text-sm text-navy-muted dark:text-gray-400">{t("yolSabit", { ad: demo.sabitYol })}</p>
+            ) : demo.parca.includes("{yol}") || demo.deyim.cumle.includes("{yol}") ? (
               <div>
                 <label htmlFor={`${id}-yol`} className="block text-sm font-bold text-navy dark:text-gray-200">
                   {t("yol")} <span className="font-normal text-navy-muted dark:text-gray-400">({t("istege")})</span>

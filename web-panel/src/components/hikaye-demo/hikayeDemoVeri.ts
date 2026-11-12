@@ -18,8 +18,10 @@ export interface HikayeDemo {
     aciklama: string;
     yanlis: string;
   };
-  // Parçada geçen adların varsayılanı (kullanıcı ad yazmazsa). Soru metninde özel bir ad varsa o korunur.
+  // Parçada geçen adların varsayılanı (kullanıcı ad yazmazsa).
   varsayilanYol?: string;
+  // Soru metni belirli bir karakter adına bağlıysa, yol arkadaşı adı sabittir ve kullanıcı değiştiremez.
+  sabitYol?: string;
 }
 
 export const HIKAYE_DEMOLARI: HikayeDemo[] = [
@@ -152,7 +154,7 @@ export const HIKAYE_DEMOLARI: HikayeDemo[] = [
       aciklama: "Bir yolun haritada görünmemesi, o yolun hiç olmadığını kanıtlamaz.",
       yanlis: "Bu kez olmadı. Haritada görünmeyen bir şeyin var olup olmadığını bir kez daha düşünelim.",
     },
-    // Soru metni "Nehir" adına bağlı; yol arkadaşı varsayılanı bu adla tutarlı kalır.
-    varsayilanYol: "Nehir",
+    // Soru metni "Nehir" adına bağlı; yol arkadaşı adı sabit tutulur ki soru ile parça tutarlı kalsın.
+    sabitYol: "Nehir",
   },
 ];
