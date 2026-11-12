@@ -8,6 +8,7 @@ import { type Locale, routing } from "@/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Outfit } from "next/font/google";
+import { connection } from "next/server";
 import "../globals.css";
 
 const outfit = Outfit({
@@ -18,9 +19,8 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-// CMS (site_icerik) değişiklikleri yayına çıksın diye statik sayfalar 60 sn'de bir yeniden üretilir.
-// Dinamik işaretlenen sayfalarda bu ayar etkisizdir; o durumda metin verisi 60 sn önbellekten gelir
-// (bkz. lib/cms/icerik-sunucu.ts). Yeniden derleme gerekmez.
+// CMS (site_icerik) değişiklikleri yayına çıksın diye 60 sn önbellek kullanılır
+// (bkz. lib/cms/icerik-sunucu.ts, unstable_cache). Yeniden derleme gerekmez.
 export const revalidate = 60;
 
 export default async function RootLayout({
@@ -33,6 +33,10 @@ export default async function RootLayout({
   // localePrefix "never" olduğu için istek /yonetim gelir; middleware bunu
   // /tr/yonetim olarak yeniden yazar. params.locale tanımsız gelirse
   // (yoksa Next.js 404 döner) varsayılan dile düşüyoruz.
+  // CSP nonce'u her istekte farklı olmalı; sayfa istek anında işlenir (Next.js CSP belgesi,
+  // "Forcing dynamic rendering"). Bu satır olmadan statik HTML'deki inline script'ler nonce'suz kalır.
+  await connection();
+
   const raw = (await params).locale;
   const locale: Locale = routing.locales.includes(raw as Locale)
     ? (raw as Locale)

@@ -6,11 +6,8 @@ import { STUDENT_APP_URL } from "./src/lib/app-url";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 // ── Güvenlik başlıkları ─────────────────────────────────────────────────────
-// Çocuk verisi işleyen bir platform olduğu için sıkı CSP zorunlu.
-// 'unsafe-inline' kaldırmak için Tailwind/Next.js nonce entegrasyonu gerekir;
-// şimdilik inline script'lere izin veriliyor, ileriki sürümde nonce'a geçilecek.
-// Geliştirme (HMR) dışında 'unsafe-eval' açılmaz (TASKS.md §11.3).
-const isDev = process.env.NODE_ENV === "development";
+// CSP bu dosyada DEĞİL: istek başına nonce ürettiği için src/proxy.ts içinde üretilir (GÖR-102).
+// Buradaki başlıklar tüm yanıtlara eklenir.
 
 // Görsel optimizasyonu yalnızca kendi Supabase projemizin alan adını kabul eder.
 const supabaseHost = (() => {
@@ -46,27 +43,6 @@ const securityHeaders = [
   {
     key: "Strict-Transport-Security",
     value: "max-age=63072000; includeSubDomains; preload",
-  },
-  {
-    key: "Content-Security-Policy",
-    value: [
-      "default-src 'self'",
-      // Supabase API + Realtime
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://eu.i.posthog.com https://eu-assets.i.posthog.com https://challenges.cloudflare.com",
-      // Next.js hot reload için 'unsafe-eval' yalnızca geliştirmede açık
-      `script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com${isDev ? " 'unsafe-eval'" : ""}`,
-      // Cloudflare Turnstile widget'ı iframe içinde çalışır (bot doğrulaması)
-      "frame-src https://challenges.cloudflare.com",
-      // Yazı tipleri next/font ile derleme sırasında kendi alanımıza alınır; tarayıcı Google'a istek atmaz.
-      "style-src 'self' 'unsafe-inline'",
-      "font-src 'self'",
-      // Uygulama logoları ve kullanıcı avatarları (ileriki sürümde kısıtlanacak)
-      "img-src 'self' data: blob: https://*.supabase.co",
-      "frame-ancestors 'none'",
-      "object-src 'none'",
-      "base-uri 'self'",
-      "form-action 'self'",
-    ].join("; "),
   },
 ];
 
