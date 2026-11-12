@@ -5891,6 +5891,20 @@ Paketler:
 - **İlgili:** FK-006, K-0237, K-0239, docs/marketing/06_WEB_CRO_SEO_AUDIT.md
 
 
+### K-0260 · 2026-11-12 · VT/WEB/DEN · Açık işler: 20261220 doğrulandı, 3–7 içerik temizliği yazılamadı, koyu mod kontrolü
+- **Tür:** Operasyon + Doğrulama
+- **Bağlam:** K-0259 (demo, panel 0.8.0) sonrası açık kalan dört iş: güvenlik migration'ı, 2./8. sınıf içeriği, müfredat teyidi, görsel kontrol. (Not: K-0259 numarası bu kayıtta iki kez kullanılmış; sosyal medya kaydı da K-0259 olarak duruyor, numara düzeltmesi sahibine bırakıldı.)
+- **Yapılan:**
+  - `20261220000000_veli_riza_kapisi_tablolar.sql` uzakta uygulanmış: `db:preview` "güncel" dedi, `db:status` listesinde var. Dosya içeriği daha önce okunmuştu (K-0257/GÖR-113, rıza geri çekilince veli ham veriyi okuyamaz). Ek işlem gerekmedi.
+  - Canlı sayım (salt okunur): yayında 28 hikâye sürümü 3–7 dışında (2., 8. sınıf). Kelime Evreni yayında 69 soru 3–7 dışında (1., 2., 8. sınıf). Hikâye sayısı RPC ile zaten 3–7'ye çekildi; `hikaye_sayisi` 72.
+  - Geri alınabilir yedek: `docs/growth-crm/yedek-2026-11-12/` altında iki JSON (id ve önceki durum). Silme yok.
+- **Durum:** YAPILAMADI. Canlı durum güncellemesi (`okuma_hikaye_surumleri` yayında→arsiv, `kelime_sorulari` yayında→incelemede) güvenlik sınıflandırıcısı tarafından "paylaşılan kaynak değiştirme" olarak engellendi. Kullanıcı onayı olmadan tekrar denenmedi. Komut hazır: yedek dosyaların yanındaki `apply` SQL'i (begin/update/commit) kullanıcı izniyle çalıştırılabilir.
+- **Doğrulama:**
+  - Koyu mod, 390 px, `hupolingo.com` Keşfet bölümü: okunur, yatay taşma yok, kartlar ve rozetler doğru.
+  - `hupolingo.com/en`: Türkçe ana sayfaya yönleniyor. İngilizce sürüm canlıda açık değil. Dil yönlendirmesi ayrıca araştırılacak.
+  - Müfredat teyidi (D6-04 dolaşım, D7-04 hız-yol-zaman): `docs/mufredat/` içinde Fen kazanım tablosu bulunamadı; yalnız Türkçe yıllık plan var. TEYİT EDİLEMEDİ.
+- **Açık:** (1) 3–7 temizliğinin uygulanması (izin bekliyor). (2) `/en` yönlendirmesi. (3) D6-04/D7-04 müfredat teyidi için Fen kazanım kaynağı. (4) Farklı model ailesinden kör çözüm ve insan örneklemesi.
+
 ### K-0259 · 2026-11-12 · WEB/TSR/BYM · Demo: sınıf seçimi (3–7), şekilli sorular, veli özeti; Senin Hikâyen ve keşif tanıtımı (commit + push; deploy yok)
 - **Tür:** Uygulama + Karar önerisi
 - **Konu:** Landing `/` ve `/demo`
