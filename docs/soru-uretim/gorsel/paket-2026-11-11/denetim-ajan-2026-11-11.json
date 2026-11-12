@@ -1,0 +1,888 @@
+﻿{
+    "tarih":  "2026-11-11",
+    "kapsam":  "docs/soru-uretim/gorsel/paket-2026-11-11 (3 paket, 120 soru)",
+    "yontem":  {
+                   "ajan_a":  "Kör çözüm: soru, şıklar ve şekil (PNG/çizelge/SVG metni) verildi; cevap anahtarı görülmeden çözüldü. Aynı oturumda, aynı model tarafından yürütüldü; bağımsız ikinci oturum değildir.",
+                   "ajan_b":  "Mekanik kalite: şık sayısı/tekrar, doğru şık - çözüm metni uyumu, geri bildirim, kazanım kodunun pilot kaynakta varlığı, harf dağılımı, metin tekrarı, uzunluk işareti."
+               },
+    "sonuc":  {
+                  "ajan_a_pass":  120,
+                  "ajan_b_pass":  120,
+                  "uzunluk_isareti_toplam":  35,
+                  "ajan_a_anahtar_uyumu":  "120/120",
+                  "db_yazimi":  "YAPILMADI (servis anahtarı/DB parolası bu ortamda yok)",
+                  "insan_onayi":  "BEKLIYOR (yayın kararı kullanıcıda)"
+              },
+    "paketler":  [
+                     {
+                         "paket":  "turkce5-t-o-5-17",
+                         "kazanim":  "T.O.5.17",
+                         "n":  40,
+                         "ajan_a_pass":  40,
+                         "ajan_b_pass":  40,
+                         "uzunluk_isareti":  15,
+                         "sonuclar":  [
+                                          {
+                                              "soru_id":  "tr5-sir-s7-001",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-002",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-003",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-004",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-005",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-006",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-007",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-008",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-009",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-010",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-011",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-012",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-013",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-014",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-015",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-016",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-017",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-018",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-019",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-020",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-021",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-022",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-023",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-024",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-025",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-026",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-027",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-028",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-029",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-030",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-031",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-032",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-033",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-034",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-035",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-036",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-037",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-038",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-039",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr5-sir-s7-040",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          }
+                                      ]
+                     },
+                     {
+                         "paket":  "sosyal5-sb-5-2-2",
+                         "kazanim":  "SB.5.2.2",
+                         "n":  40,
+                         "ajan_a_pass":  40,
+                         "ajan_b_pass":  40,
+                         "uzunluk_isareti":  10,
+                         "sonuclar":  [
+                                          {
+                                              "soru_id":  "sb5-deg-s7-001",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-002",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-003",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-004",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-005",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-006",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-007",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-008",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-009",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-010",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-011",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-012",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-013",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-014",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-015",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-016",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-017",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-018",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-019",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-020",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-021",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-022",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-023",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-024",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-025",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-026",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-027",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-028",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-029",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-030",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-031",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-032",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-033",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-034",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-035",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-036",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-037",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-038",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-039",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "sb5-deg-s7-040",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          }
+                                      ]
+                     },
+                     {
+                         "paket":  "turkce4-t-4-3-34",
+                         "kazanim":  "T.4.3.34",
+                         "n":  40,
+                         "ajan_a_pass":  40,
+                         "ajan_b_pass":  40,
+                         "uzunluk_isareti":  10,
+                         "sonuclar":  [
+                                          {
+                                              "soru_id":  "tr4-czl-s7-001",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-002",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-003",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-004",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-005",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-006",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-007",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-008",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-009",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-010",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-011",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-012",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-013",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-014",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-015",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-016",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-017",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-018",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-019",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-020",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-021",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-022",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-023",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-024",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-025",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-026",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-027",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-028",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-029",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-030",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-031",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-032",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-033",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-034",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-035",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-036",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-037",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "B",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-038",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "A",
+                                              "ajan_b":  "pass",
+                                              "not":  "uzunluk işareti: doğru şık en uzun ya da ortalamadan %30+ sapıyor (kural: tek başına red değil)"
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-039",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "C",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          },
+                                          {
+                                              "soru_id":  "tr4-czl-s7-040",
+                                              "ajan_a":  "pass",
+                                              "ajan_a_cevap":  "D",
+                                              "ajan_b":  "pass",
+                                              "not":  ""
+                                          }
+                                      ]
+                     }
+                 ]
+}

@@ -1,0 +1,633 @@
+{
+  "hikaye": {
+    "tur": "bilim",
+    "konu": "gunes_enerjisi",
+    "slug": "hr029-minik-mucit-ve-gunes-firini",
+    "durum": "taslak",
+    "baslik": "Minik Mucit ve Güneş Fırını",
+    "tanitim": "İki kutu, iki termometre ve bir bulut: Güneşin ısısını göstermek sanıldığından zor!",
+    "fis_kodu": "HR-029",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D3",
+        "yardimci_deger": "D16"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 5,
+        "sayfa_sayisi": 7,
+        "simge_sayisi": 18,
+        "kelime_sayisi": 375,
+        "tahmini_sure_dk": 5,
+        "yoldas_yer_sayisi": 5,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 2,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "bilim_teknoloji",
+        "kesif",
+        "okul"
+      ],
+      "ana_sinif": 3,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk_termometre_hr029",
+          "tur": "lexeme",
+          "yuva": "pb_termometre",
+          "islev": "first_hint",
+          "etiket": "termometre"
+        },
+        {
+          "id": "sozcuk_enerji_hr029",
+          "tur": "lexeme",
+          "yuva": "pb_enerji",
+          "islev": "application",
+          "etiket": "enerji"
+        },
+        {
+          "id": "sozcuk_olcum_hr029",
+          "tur": "lexeme",
+          "yuva": "pb_olcum",
+          "islev": "application",
+          "etiket": "ölçüm"
+        },
+        {
+          "id": "kavram_hr029",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Güneş enerjisi ve ısınma; adil karşılaştırma ve ölçüm"
+        }
+      ]
+    },
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 2,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "baska_biri"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D3",
+      "D16"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pb_termometre",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pb_termometre"
+          }
+        ]
+      },
+      {
+        "ad": "pb_enerji",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pb_enerji"
+          }
+        ]
+      },
+      {
+        "ad": "pb_olcum",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pb_olcum"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pb_termometre",
+        "tur": "kelime",
+        "anlam": "Sıcaklığı ölçmeye yarayan alet.",
+        "yazim": "termometre",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "pb_enerji",
+        "tur": "kelime",
+        "anlam": "Isıtmak, ışık vermek ya da hareket ettirmek gibi işleri yapabilen güç.",
+        "yazim": "enerji",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "pb_olcum",
+        "tur": "kelime",
+        "anlam": "Bir şeyin boyunu, sıcaklığını ya da ağırlığını bir araçla öğrenme işi.",
+        "yazim": "ölçüm",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "Çocuk iki kutuyu nerede bekletmeyi planladı?",
+      "beceri": "hatirlama",
+      "aciklama": "Çocuk birini güneşte, birini gölgede bekleteceklerini söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İkisini de güneşte"
+        },
+        {
+          "id": "B",
+          "metin": "Birini güneşte, birini gölgede"
+        },
+        {
+          "id": "C",
+          "metin": "Birini sınıfta, birini bahçede yağmurda"
+        }
+      ],
+      "dayanak_sayfa": 2
+    },
+    {
+      "id": "s2",
+      "dogru": "C",
+      "metin": "Bulutlu saatte iki kutu arasındaki fark neden azaldı?",
+      "beceri": "cikarim",
+      "aciklama": "Bulutlar güneşi kapatınca güneşteki kutu daha az ısındı; hava durumu sonucu etkiledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çünkü termometreler bozuldu"
+        },
+        {
+          "id": "B",
+          "metin": "Çünkü kutular yer değiştirdi"
+        },
+        {
+          "id": "C",
+          "metin": "Çünkü bulutlar güneşin önünü kapatıp kutuya gelen enerjiyi azalttı"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Ölçüm zamanlarını önceden belirlemek neden iyi bir fikirdi?",
+      "beceri": "yorumlama",
+      "aciklama": "Kapağın her açılışında içerdeki koşullar değişebileceği için ölçüm saatleri baştan belirlendi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kapağı sık sık açmak koşulları değiştirebilirdi; plan sonuçları daha güvenilir yaptı"
+        },
+        {
+          "id": "B",
+          "metin": "Böylece deney daha çabuk bitti"
+        },
+        {
+          "id": "C",
+          "metin": "Böylece kutuyu hiç açmaya gerek kalmadı"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s4",
+      "dogru": "B",
+      "metin": "Metinde geçen enerji sözcüğü bu cümlede neyi anlatır: ‘Güneşten gelen enerji kutuyu ısıtıyor olabilir’?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Güneşten gelen enerji, kutunun ısınmasını sağlayan güçtür; kutuda ateş yoktur.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kutunun içindeki bir ateşi"
+        },
+        {
+          "id": "B",
+          "metin": "Isıtma gibi işleri yapabilen güç"
+        },
+        {
+          "id": "C",
+          "metin": "Kutunun rengini"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s5",
+      "dogru": "A",
+      "metin": "Öğretmen ısınan kutu yüzeyleri için çocuklara ne yapmalarını söyledi?",
+      "beceri": "hatirlama",
+      "aciklama": "Öğretmen, ölçüm için termometreyi kullanmalarını ve ısınan yüzeylere dokunmamalarını söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yüzeye dokunmak yerine termometreyi kullanmalarını"
+        },
+        {
+          "id": "B",
+          "metin": "Kutuyu elleriyle yoklamalarını"
+        },
+        {
+          "id": "C",
+          "metin": "Kapağı çıkarıp içine bakmalarını"
+        }
+      ],
+      "dayanak_sayfa": 3
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", okulun bilim gününde güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " enerjisini anlatmak istiyordu. Ama güneşi bir kavanoza dolduramayacağına göre, onun ısısını nasıl gösterecekti? Öğretmeniyle birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " bir kutu modeli hazırlamaya karar verdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " iki eş boy karton kutunun içini aynı koyu renkli kâğıtla kapladı. İkisine de aynı tür saydam kapak yerleştirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ikisinin içine de "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_termometre"
+        },
+        {
+          "t": "metin",
+          "v": " koydu. Hiçbirine yiyecek koymadılar; amaç yalnız sıcaklığı gözlemekti. “Birini güneşte, birini gölgede bekleteceğiz,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Başka koşulları mümkün olduğunca aynı tutmalıyız.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ilk ölçümü deftere yazdı. Her iki termometre de yaklaşık aynı değeri gösteriyordu. On dakika"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " sonra güneşte duran kutunun sıcaklığı daha yüksek çıktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " hemen bağırdı: “Süper! Kutunun içinde ateş"
+        },
+        {
+          "t": "ikon",
+          "v": "fire"
+        },
+        {
+          "t": "metin",
+          "v": " var!” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. “Ateş yok. Ama güneşten gelen "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_enerji"
+        },
+        {
+          "t": "metin",
+          "v": " kutuyu ısıtıyor olabilir.” Öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": ", saydam kapağın ışığın bir kısmını içeri aldığını ve kutunun ısı kaybını azaltmaya yardımcı olduğunu anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " elini kutuya uzatınca öğretmeni uyardı: “Ölçüm için termometreyi kullanalım. Isınan yüzeylere dokunmak gerekmiyor.” "
+        },
+        {
+          "t": "isaret",
+          "kod": "gunes"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Deneyin başında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " güneşteki kutuyu daha sık açmak istemişti. Öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": ", kapağın her açılışında içerdeki koşulların değişebileceğini hatırlattı. Bunun üzerine ölçüm zamanlarını önceden belirlediler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizdiği tabloya saatleri, iki sıcaklığı ve havanın durumunu yazdı. Böylece yalnız “sıcak” veya “soğuk” demek yerine sayıları karşılaştırabildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci ölçümde "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", gölgede duran kutunun da biraz ısındığını görünce şaşırdı. “O kutuya doğrudan güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " gelmedi,” dedi. Öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": ", havanın sıcaklığının da değişebileceğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Öyleyse iki kutunun farkına birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " bakmalıyız,” diyerek her ikisinin değerini yeniden okudu. Bir deneyde tek bir sonucun her şeyi anlatmayacağını fark etmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğleye doğru bulutlar güneşin önünü kapattı. Sonraki ölçüm bekledikleri kadar yüksek çıkmadı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Deney"
+        },
+        {
+          "t": "ikon",
+          "v": "microscope"
+        },
+        {
+          "t": "metin",
+          "v": " bozuldu,” diye üzüldü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterdeki önceki değerleri gösterdi. “Hayır, yeni bir bilgi öğrendik. Hava durumu da sonucu etkileyebiliyor.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " deney başında yazdığı tahmini okudu. Sonuç tam beklediği gibi değildi; özellikle bulutlu saatte fark azalmıştı. Bu kez defterine bir sonuç cümlesi yerine yeni bir soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " yazdı: “Farklı günlerde ölçsek aynı sonuç çıkar mı?”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bilim gününde çocuklar kutuları masaya yerleştirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ziyaretçilere hangi kutunun nerede durduğunu sordu; sonra ölçümleri gösterdi. Küçük bir öğrenci “Bununla yemek pişirebilir miyiz?” diye sorunca "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dikkatli cevap verdi: “Güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " ısısından yararlanan gerçek düzenekler var. Bizim yaptığımız ise öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " gözetiminde kullanılan bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_olcum"
+        },
+        {
+          "t": "metin",
+          "v": " modeli.” Sergi sonunda öğretmen ona bir yıldız"
+        },
+        {
+          "t": "ikon",
+          "v": "star"
+        },
+        {
+          "t": "metin",
+          "v": " çıkartması verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yıldızı defterine yapıştırmadı; kutuların fotoğrafının yanına koydu. Çünkü en çok, ilk tahminlerini ölçerek karşılaştırabilmiş olmasına seviniyordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

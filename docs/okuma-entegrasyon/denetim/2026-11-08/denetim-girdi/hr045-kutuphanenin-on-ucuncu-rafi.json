@@ -1,0 +1,1682 @@
+{
+  "hikaye": {
+    "tur": "gizem",
+    "konu": "kutuphane_kayip_raf",
+    "slug": "hr045-kutuphanenin-on-ucuncu-rafi",
+    "durum": "taslak",
+    "baslik": "Kütüphanenin On Üçüncü Rafı",
+    "tanitim": "Rafların numarası 12'den 14'e atlıyor. On üçüncü raf nerede? Cevap eski kayıtlarda saklı.",
+    "fis_kodu": "HR-045",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D8"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 7,
+        "sayfa_sayisi": 24,
+        "simge_sayisi": 40,
+        "kelime_sayisi": 2068,
+        "tahmini_sure_dk": 20,
+        "yoldas_yer_sayisi": 39,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 3
+        }
+      },
+      "temalar": [
+        "gizem",
+        "okuma_kitap",
+        "kultur_miras"
+      ],
+      "ana_sinif": 5,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk_emanet_hr045",
+          "tur": "lexeme",
+          "yuva": "pd_emanet",
+          "islev": "first_hint",
+          "etiket": "emanet"
+        },
+        {
+          "id": "sozcuk_bagis_hr045",
+          "tur": "lexeme",
+          "yuva": "pd_bagis",
+          "islev": "application",
+          "etiket": "bağış"
+        },
+        {
+          "id": "sozcuk_arsiv_hr045",
+          "tur": "lexeme",
+          "yuva": "pd_arsiv",
+          "islev": "application",
+          "etiket": "arşiv"
+        },
+        {
+          "id": "kavram_hr045",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Kayıtları karşılaştırarak kanıt aramak; eski belgelerdeki kişisel bilgileri korumak"
+        },
+        {
+          "id": "atasoz_hr045",
+          "tur": "proverb",
+          "yuva": "pd_ata_iyilik",
+          "islev": "application",
+          "etiket": "İyilik eden iyilik bulur"
+        }
+      ]
+    },
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "baska_biri"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D6",
+      "D8"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pd_emanet",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pd_emanet"
+          }
+        ]
+      },
+      {
+        "ad": "pd_bagis",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pd_bagis"
+          }
+        ]
+      },
+      {
+        "ad": "pd_arsiv",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pd_arsiv"
+          }
+        ]
+      },
+      {
+        "ad": "pd_ata_iyilik",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "pd_ata_iyilik"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pd_emanet",
+        "tur": "kelime",
+        "anlam": "Bir kişiye geçici olarak bırakılan ve korunması beklenen şey.",
+        "yazim": "emanet",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "pd_bagis",
+        "tur": "kelime",
+        "anlam": "Karşılık beklemeden verilen kitap, eşya ya da para.",
+        "yazim": "bağış",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "pd_arsiv",
+        "tur": "kelime",
+        "anlam": "Eski belge ve kayıtların düzenli olarak saklandığı yer ya da bu belgelerin tamamı.",
+        "yazim": "arşiv",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "pd_ata_iyilik",
+        "tur": "atasozu",
+        "anlam": "Başkalarına iyilik yapan kişi, zamanı gelince kendi de iyilikle karşılaşır.",
+        "yazim": "İyilik eden iyilik bulur",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "Eski kayıtlara göre “Emanet” yazılı dolap sonunda nerede bulundu?",
+      "beceri": "hatirlama",
+      "aciklama": "Eski ahşap dolap yıllar önce başka bir odaya taşınmıştı; depoda görevli eşliğinde incelendi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Okul bahçesindeki bir kulübede"
+        },
+        {
+          "id": "B",
+          "metin": "Yıllar önce okulun içinde başka bir odaya, depoya taşınmıştı"
+        },
+        {
+          "id": "C",
+          "metin": "Başka bir okulun kütüphanesinde"
+        },
+        {
+          "id": "D",
+          "metin": "Hiçbir zaman bulunamadı"
+        }
+      ],
+      "dayanak_sayfa": 10
+    },
+    {
+      "id": "s2",
+      "dogru": "B",
+      "metin": "Sevim Hanım, bağış defterindeki her sayfanın fotoğraflanıp paylaşılmasının doğru olmadığını neden onayladı?",
+      "beceri": "cikarim",
+      "aciklama": "Defterde insanların isimleri olabileceği için eski kayıtlardaki kişisel bilgilerin dikkatle seçilmesi gerekiyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çünkü defter çok eskiydi ve fotoğraflanamazdı"
+        },
+        {
+          "id": "B",
+          "metin": "Çünkü eski kayıtlarda kişisel bilgiler, örneğin insanların isimleri olabilirdi"
+        },
+        {
+          "id": "C",
+          "metin": "Çünkü defterin sayfaları boştu"
+        },
+        {
+          "id": "D",
+          "metin": "Çünkü kimse fotoğraf makinesi getirmemişti"
+        }
+      ],
+      "dayanak_sayfa": 12
+    },
+    {
+      "id": "s3",
+      "dogru": "D",
+      "metin": "Defterin kenarındaki “Bu kitapları okuyacak çocuklarla hiç tanışmayacağım. Yine de hepsine iyi yolculuklar dilerim” notu neyi gösterir?",
+      "beceri": "yorumlama",
+      "aciklama": "Bağışçı okurlarla hiç tanışmayacağını bilse de onlara iyi yolculuklar dilemişti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bağışçının kitapları geri istediğini"
+        },
+        {
+          "id": "B",
+          "metin": "Bağışçının kütüphaneyi hiç sevmediğini"
+        },
+        {
+          "id": "C",
+          "metin": "Bağışçının defteri yanlışlıkla bıraktığını"
+        },
+        {
+          "id": "D",
+          "metin": "Bağışçının, tanımadığı okurlar için de iyilik düşündüğünü"
+        }
+      ],
+      "dayanak_sayfa": 14
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "“Emanet alınan şeyi dikkatle korumamız gerekir” cümlesinde emanet ne demektir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Kardeşin oyuncağı geri verirken kullanılan ‘emanet’ sözcüğü, korunması gereken geçici bırakılan şey anlamındadır.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Birine geçici olarak bırakılan ve korunması beklenen şey"
+        },
+        {
+          "id": "B",
+          "metin": "Kimsenin istemediği eski eşya"
+        },
+        {
+          "id": "C",
+          "metin": "Kütüphanede satılan kitap"
+        },
+        {
+          "id": "D",
+          "metin": "Çöpe atılan kâğıt"
+        }
+      ],
+      "dayanak_sayfa": 15
+    },
+    {
+      "id": "s5",
+      "dogru": "C",
+      "metin": "“Bağış defteriyle ilgili afiş” ifadesinde bağış ne demektir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Mahalledeki insanlar kütüphaneye karşılık beklemeden kitap göndermişti; defterde bu bağışlar kayıtlıydı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir kitabı ödünç alıp geri getirmek"
+        },
+        {
+          "id": "B",
+          "metin": "Bir kitabı yırtmak"
+        },
+        {
+          "id": "C",
+          "metin": "Karşılık beklemeden kitap ya da eşya vermek"
+        },
+        {
+          "id": "D",
+          "metin": "Bir kitabı satın almak"
+        }
+      ],
+      "dayanak_sayfa": 23
+    },
+    {
+      "id": "s6",
+      "dogru": "A",
+      "metin": "Metindeki arşiv sorumlusu ne işle ilgilenir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Sevim Hanım, eski bina planını okulun arşiv sorumlusundan istedi; arşiv eski belgelerin saklandığı yerdir.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Eski belge ve kayıtların düzenli biçimde saklandığı yerle"
+        },
+        {
+          "id": "B",
+          "metin": "Okulun bahçesindeki ağaçlarla"
+        },
+        {
+          "id": "C",
+          "metin": "Okulun yemek listesiyle"
+        },
+        {
+          "id": "D",
+          "metin": "Okulun spor müsabakalarıyla"
+        }
+      ],
+      "dayanak_sayfa": 10
+    },
+    {
+      "id": "s7",
+      "dogru": "D",
+      "metin": "Afişe “Kayıp Hazine Bulundu!” yerine “On Üçüncü Rafın Unutulan İyiliği” başlığının konması neden daha doğrudur?",
+      "beceri": "degerlendirme",
+      "aciklama": "Ortada bir hazine yoktu; dikkat çekici ama doğru bir başlıkla gerçekler değiştirilmeden anlatıldı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çünkü ilk başlık çok kısaydı"
+        },
+        {
+          "id": "B",
+          "metin": "Çünkü afişlerde başlık olmaması gerekir"
+        },
+        {
+          "id": "C",
+          "metin": "Çünkü hazine gerçekten bulunmuştu"
+        },
+        {
+          "id": "D",
+          "metin": "Çünkü yeni başlık gerçekleri değiştirmeden de dikkat çekiyordu; ilki ise yanıltıcıydı"
+        }
+      ],
+      "dayanak_sayfa": 17
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", okul"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " kütüphanesinin yeni düzenleneceğini duyunca ilk gönüllülerden biri oldu. Kitapları taşımak yerine etiketlerini kontrol etmeyi seviyordu. Çünkü bir kitabın nerede durduğunu bilmek, bazen içindekileri okumak kadar ilginçti. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        },
+        {
+          "t": "metin",
+          "v": " Kütüphane görevlisi Sevim Hanım, rafların yenileneceğini, eski kayıtların bilgisayara aktarılacağını anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bu görevi önce sıkıcı bulmuştu. Okul gazetesinde gizemli olaylar hakkında yazdığı için kendisine daha heyecanlı bir iş verilmesini bekliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise katalogların da şaşırtıcı sorular doğurabileceğini düşünüyordu. “Bir kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " yanlış raftaysa onu arayan biri bulamaz,” dedi. “Bazen doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " hikâyeye ulaşmak, doğru etiketten geçer.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " gülerek “Peki bugün bir sır çıkarsa haber ver,” diye karşılık verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun bu sözünü gün boyunca hatırlayacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " işi, kitapların sırtındaki numaraları raf listesindeki yerleriyle karşılaştırmaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk on iki rafı hızla kontrol etti. Ancak listenin sonraki sayfasında tuhaf bir boşluk vardı: Raf 12'nin ardından Raf 14 geliyordu. “On üçüncü raf nerede?” diye sordu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " omuz silkti. “Belki uğursuz saydıkları için atlamışlardır.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsemedi. Bir okul"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " kütüphanesinin böyle bir nedenle raf atlamasını mantıklı bulmuyordu. Sevim Hanım da şaşırdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Eskiden burada ahşap dolaplar vardı,” dedi. “Yeni sistem kurulurken numaralar değişmiş olabilir. Eski defterlere bakalım.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eski defterin ilk sayfasında bir tarih aradı. Dış kapağın üzerinde yıl yazmıyordu; ama son sayfada mürekkebi biraz solmuş bir mühür vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " büyüteci getirince rakamlar daha kolay okunur oldu. “Demek bu kayıtlar en azından o tarihte kullanılıyormuş,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". Sonra planın üzerine güncel kütüphane çizimini yerleştirdi. İki planın giriş kapıları aynı yerdeydi fakat masa ve dolapların konumları farklıydı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “On üçüncü rafın yerinde şimdi koltuk var,” diye şaşırdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bir odanın değişmesi, içindeki hikâyelerin de değiştiği anlamına gelmez,” dedi. Bu cümleyi tam olarak niçin söylediğini kendisi de bilmiyordu. Belki yıllardır aynı odada başka başka çocukların kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " okuduğunu düşündüğü içindi. İlk defterde rafların el çizimi bir planı vardı. Planın ortasında küçük bir dolap görünüyordu. Yanına yalnızca “Emanet” yazılmıştı. Dolabın numarası ise silinmişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bütün gizem bu kelimede,” diye fısıldadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise hemen sonuç çıkarmadı. Emanet, birine geçici olarak bırakılan şey demekti; ancak burada neyin emanet edildiği belli değildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün iki arkadaş"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " dijital katalogla eski kayıtları karşılaştırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " başlığının iki defterde farklı biçimde yazıldığını fark etti. Birinde “Yolun Rengi”, diğerinde “Yolların Rengi” vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " aynı kitap sanıp numarayı işaretleyecekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu durdurdu. “Yazar adı aynı mı? Baskı yılı aynı mı?” diye sordu. İncelediklerinde bunların farklı kitaplar olduğunu öğrendiler. Küçük bir harf farkı bile kayıtların karışmasına yol açabiliyordu. Bu kez "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " dikkatli çalışmaya başladı. Bir kitabın yalnızca kapağına değil, künyesine de baktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " kayıt defterinin üstünde bir silinti gördü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hemen biri bilgi saklamış olabilir diye düşündü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " silinen yere dikkatle baktı, sonra eski kayıtlarda mürekkeplerin zamanla solabileceğini hatırladı. Sevim Hanım, belge uzmanlığı olmadan bunun nedenini kesinleştiremeyeceklerini söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " iddiasını geri çekti. “Gizemi seviyorum diye kötü bir olay uydurmamalıyım,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " için bu cümle araştırmalarının yönünü belirleyen küçük bir dönüm noktasıydı. Üçüncü defterin arasında eski bir makbuz kopyası buldular. Üzerinde otuz kitaplık bir bağıştan söz ediliyordu. Fakat bağışın kayıt numaraları tam değildi. O akşam "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " evde aile"
+        },
+        {
+          "t": "ikon",
+          "v": "house"
+        },
+        {
+          "t": "metin",
+          "v": " kitaplığının fotoğrafını çekip "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " gönderdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Fotoğrafta bazı kitaplar boylarına göre dizilmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " “Siz kitapları yazarlarına göre mi ayırıyorsunuz?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", hiç düşünmediğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de bütün evlerin aynı düzende olmak zorunda olmadığını fark etti. Ama okul"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " kütüphanesi ortak kullanım içindi; bir öğrenci kitabı aldığı yerde bulabilmeliydi. Bunun için kuralların herkes tarafından anlaşılması gerekiyordu. Sevim Hanım, bazı yıllarda el yazısıyla tutulan kayıtların bilgisayara eksik aktarılabildiğini söyledi. “O zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " on üçüncü raf gerçekten kaybolmuş olabilir,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". “Raf kaybolmaz,” diye karşılık verdi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Belki sadece adı değişmiştir.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tabloyu hazırlarken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bir başka ayrıntı buldu. Bazı numaraların yanına küçük yıldızlar çizilmişti. Önce bunları özel kitapların işareti sandılar. Sevim Hanım, eski görev"
+        },
+        {
+          "t": "ikon",
+          "v": "quest"
+        },
+        {
+          "t": "metin",
+          "v": " çizelgesini getirip bu yıldızların o gün sayımı yapılan kitapları gösterdiğini anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bir an durup “Biz de bu defteri okuyan başka çocuklar için açıklama hazırlamalıyız,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " buna sevindi. Çünkü bir gün defteri başkası açtığında aynı soruları sormak zorunda kalmayabilirdi. İkili basit bir işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " açıklaması sayfası oluşturdu. Emin olduklarını açık yazdılar; emin olamadıklarının yanına soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " işareti koydular."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", sıradan görünen bir sembolün yalnızca kayıt sistemini bilince anlam kazandığını fark etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bir kitaba yıldız"
+        },
+        {
+          "t": "ikon",
+          "v": "star"
+        },
+        {
+          "t": "metin",
+          "v": " koyunca değerli, başka kitaba koymayınca değersiz olmuyor,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Tabii ki. İşaret, onu kullanan kişinin ne anlatmak istediğine bağlı,” diye cevap verdi. Böylece tablolarına “işaretin olası anlamı” sütununu da eklediler. İki arkadaş"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " sorularını bir tabloda topladı. İlk sütunda kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " numaraları, ikinci sütunda kayıt tarihleri, üçüncü sütunda bulunduğu yer yazıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizelgeyi renklendirdiğinde birbirine benzeyen kayıtların aslında farklı dönemlere ait olduğunu gördü. En eski kayıtlar, binanın tadilatından önceki döneme uzanıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sevim Hanım, okulun "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pd_arsiv"
+        },
+        {
+          "t": "metin",
+          "v": " sorumlusundan eski bina planını istedi. Plan geldiğinde üçü birlikte masaya açtı. On üçüncü rafın bulunduğu yerde bugün küçük bir okuma köşesi vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", eski plandaki koltuğun bulunduğu yere yürüdü. Çocukların bugün sessizce kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " okuduğu köşe bir zamanlar farklı bir amaçla kullanılmıştı. Bir mekânın geçmişini bilmek, ona daha dikkatli bakmasını sağladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de köşedeki küçük lambaya baktı. “Kayıp raf yerine okuma koltuğu gelmiş,” dedi. “Aslında burası hâlâ kitaplara hizmet ediyor.” İkisi aynı odayı şimdi daha farklı görüyordu. Eski ahşap dolap ise yıllar önce başka bir odaya taşınmıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hayalindeki gizli koridoru bulamamıştı ama yine de heyecanlandı. Çünkü aradıkları şeyin nereye götürüldüğünü öğrenmişlerdi. Depo okulun içinde, görevli eşliğinde girilen düzenli bir alandı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " kapıda biraz durdu; eski eşyaların üstünde toz olduğunu görünce hapşırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", dolabı hemen açmak istiyordu ama Sevim Hanım önce uygun eldiven ve temiz çalışma yüzeyi hazırladı. “Eski belgeler bazen kırılgan olur,” dedi. “Bulduğumuz şeyi koruyamazsak bilgiyi de kaybedebiliriz.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", araştırmacıların neden acele etmemesi gerektiğini bu kez daha iyi anladı. Meraklarının hızlı koşmasına izin verebilirlerdi ama elleri sakin davranmalıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okul"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " yönetiminin izniyle depodaki eski dolap incelendi. Dolapta birkaç boş çekmece, kullanılmayan kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " destekleri ve üstünde “Bağışlar” yazan kalın bir defter"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Sevim Hanım defteri dikkatle açtı. Sayfalar sararmıştı ama kayıtların çoğu okunuyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Büyük hazineyi bulduk!” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defteri eline almadan önce durdu. “Burada insanların isimleri olabilir. Her şeyi fotoğraflayıp paylaşmamalıyız,” dedi. Sevim Hanım onu onayladı. Eski kayıtların da kişisel bilgiler içerebileceğini, kullanılacak bilgilerin dikkatle seçilmesi gerektiğini anlattı. Sayfaları çevirirken kitap türlerinin zamanla nasıl değiştiğini gördüler. En eski kayıtlarda masal ve ansiklopedi çoktu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Daha sonraki yıllarda bilim"
+        },
+        {
+          "t": "ikon",
+          "v": "microscope"
+        },
+        {
+          "t": "metin",
+          "v": " dergileri, çizgi romanlar ve çocuk romanları artmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " türünü diğerinden üstün saymadı. Farklı zamanlarda, farklı çocukların farklı merakları olabileceğini düşündü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Büyükbabamın sevdiği hikâyeyle benim sevdiğim aynı olmak zorunda değil,” dedi. Sevim Hanım başını salladı. “Önemli olan doğru kitapla doğru okurun buluşması.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözleri küçük bir kartın üzerine yazdı; kütüphane düzenlenince görünür bir yere asmak istiyordu. Defterde, yıllar önce mahallede yaşayan insanların okul"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " kütüphanesine kitap gönderdiği yazıyordu. Bazı bağışlar tek kitaptı; bazıları ise bir sınıf dolusu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir sayfanın kenarına şu not düşülmüştü: “Bu kitapları okuyacak çocuklarla hiç tanışmayacağım. Yine de hepsine iyi yolculuklar dilerim.” Sevim Hanım usulca bir atasözü söyledi: “"
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pd_ata_iyilik"
+        },
+        {
+          "t": "metin",
+          "v": ".” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi akşam kütüphanedeki gönüllü çalışmalarını anlatırken annesi ona kendi çocukluğunda okuduğu bir kitabın adını söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kitabı aradığında yeni raflarda bulamadı. Sevim Hanım'a danışınca kitabın başka bir kütüphanede bulunabileceğini öğrendi. O an her kitabın tek bir rafta bulunmayacağını, kütüphanelerin birbirine bilgi sağlayabileceğini düşündü. Araştırması onu yalnızca geçmişe değil, farklı okuma yollarına da götürmüştü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " notu okuyunca gözleri doldu. Bir kitabı hiç tanımadığı başka bir çocuğa gönderen kişinin ne kadar umutlu olması gerektiğini düşündü. On üçüncü rafın gizemi, ona bir odadan daha büyük bir şey göstermişti: Okulun zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " içinde büyüyen ortak hafızasını. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " akşam evde kardeşine araştırmalarını anlatırken “Emanet” kelimesini kullandı. Kardeşi, “Bana emanet ettiğin oyuncağı geri verdiğimde de aynı kelimeyi söylüyorsun,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. “Evet, çünkü "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pd_emanet"
+        },
+        {
+          "t": "metin",
+          "v": " alınan şeyi dikkatle korumamız gerekir.” Sonra kütüphanedeki eski kitapları düşündü. Kitaplar, onları daha sonra okuyacak çocuklara kadar uzanan bir emanet gibiydi. Evinin rafındaki kitabı yerine koyarken yıpranmış bir sayfanın köşesini düzeltti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bu küçük hareket, ertesi gün kütüphanede yapacağı işin anlamını değiştirmişti. Artık yalnızca bir gizemi çözmüyor, kitapları gelecek okurlar için koruyordu. Kayıtları incelerken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " yeni bir sorun fark etti. Bağış defterindeki bir kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": ", dijital katalogda hiç görünmüyordu. Acaba kayıp mıydı? "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kitabın adını yeniden kontrol etti, yazarı ve sayfa sayısını not aldı. Sonra arama sonuçlarında farklı bir yazımla benzer bir kayıt buldu. Kitap vardı; yalnızca başlığı sisteme yanlış geçirilmişti. “Bu durumda kimse onu aradığında bulamaz,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". Sevim Hanım, eski ve yeni bilgileri karşılaştırarak düzeltme yapılabileceğini söyledi. Çocuklar kitabı rafında buldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sırtını düzeltti, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " kaydın doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " kitapla eşleştiğini işaretledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Afişi tasarlamak da kolay olmamıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ilk taslağa “Kayıp Hazine"
+        },
+        {
+          "t": "ikon",
+          "v": "chest"
+        },
+        {
+          "t": "metin",
+          "v": " Bulundu!” başlığını atmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun eğlenceli fakat yanıltıcı olduğunu söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " önce “Kimse sıradan bağış defterini okumaz,” diye itiraz etti. Sonra Sevim Hanım onlara eski defterdeki güzel dileği yeniden gösterdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bence asıl ilginç olan bu,” dedi. İkili sonunda afişe “On Üçüncü Rafın Unutulan İyiliği” adını verdi. Böylece dikkat çekici bir başlığın gerçekleri değiştirmeden de yazılabileceğini gördüler. O gün pek çok çocuk kütüphaneye geldiğinde yeni bir afiş gördü: “Bir kitabın yolculuğunu merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " ettiniz mi?” Afişte kişisel bilgi bulunmuyordu. Yalnızca okul kütüphanesine yıllar boyunca yapılan bağışların sayısı, kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " türleri ve okuma köşesinin geçmişi anlatılıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birinci sınıftan bir öğrenci afişin önünde durup sordu: “Bütün bu kitapları kim getirmiş?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Çok farklı insanlar,” diye cevap verdi. “Bazıları kendi adını bırakmış, bazıları yalnızca kitaplarını. Ama hepsi bir gün birinin okumasını istemiş.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yeni düzende bir başka yenilik önerdi: Her rafta yalnızca numara değil, türün adı da yazılacaktı. Böylece özellikle küçük öğrenciler aradıkları kitapları daha kolay bulabilecekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " renkli etiketlerin tasarımını yaptı. Sevim Hanım deneme için üç küçük öğrenciyi davet etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar en sevdikleri masal türünü birkaç dakika içinde bulabildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Araştırmamız başka okurların işini de kolaylaştırdı,” diye sevindi. On üçüncü rafın hikâyesi yeni düzenlemenin arkasında gizli kalmamış, kütüphaneyi daha kullanışlı kılmıştı. Haftanın sonunda yeni raf numaraları yerleştirildi. Bu kez hiçbir boşluk yoktu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " eski on üçüncü rafın yerine küçük bir işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " hazırladı: “Bir zamanlar burada bağış kitaplarının emanet dolabı bulunuyordu.” Sevim Hanım işareti okuma köşesine astı. Sevim Hanım küçük bir kütüphane etkinliği düzenlemelerini istedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ile "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", öğrencilere eski raf planını gösterip güncel planla karşılaştırmalarını önerdi. Küçük bir grup boş olan on üçüncü numarayı hemen fark etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " soruya doğrudan cevap vermek yerine “Sizce neden boş?” diye sordu. Çocuklar farklı fikirler üretti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", eski dolabın fotoğrafını gösterince hep birlikte bu değişimin nedenini konuştular. Oyun sonunda öğrenciler bir kütüphanedeki düzenin de zamanla gelişebileceğini fark etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " eski raf planının bir kopyasını yeni planla yan yana astı. Böylece gelen ziyaretçiler iki farklı dönemi karşılaştırabiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir öğrenci “Peki sonraki yıllarda bu köşe yine değişir mi?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Değişebilir,” dedi. “Önemli olan değişirken geçmişi de anlamak.” Sevim Hanım onların hazırladığı açıklama kartlarını görünce her ikisine de teşekkür etti. Çocukların merakı kütüphanenin yalnızca geçmişini değil, bugünkü kullanımını da güzelleştirmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", gizemi çözdükleri için sevinçliydi ama buldukları defterin korunmasına daha çok önem veriyordu. Kaybolmuş bir kayıt, eski bir eşyanın yok olması anlamına gelmiyordu. Bazen doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " soruyu sormak, insanlara geçmişin izlerini yeniden görme fırsatı veriyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sevim Hanım onları kapıdan uğurlarken iki küçük teşekkür kartı verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kartta “Titizliğiniz sayesinde eski kayıtlar daha anlaşılır oldu” yazısını gördü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Kitapların içinde sır ararken işimizin bu kadar işe yarayacağını düşünmemiştim,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de aynı duygudaydı. Sır çözmek"
+        },
+        {
+          "t": "ikon",
+          "v": "lightning-idea"
+        },
+        {
+          "t": "metin",
+          "v": " güzel bir başlangıçtı; ortaya çıkan bilgiyi başkalarıyla paylaşmak ise hikâyeyi tamamlıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " çıkışta, “Bir gün başka kayıp raf bulursak birlikte araştıralım mı?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. “Önce gerçekten kayıp mı diye kontrol ederiz.” “Peki kayıp değilse?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " kütüphaneyi artık yalnızca macera aradığı bir yer değil, başkalarıyla paylaşabileceği bir çalışma alanı olarak gördüğünü fark etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İki arkadaş"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " gelecek hafta küçük öğrencilere kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " seçmede yardımcı olmaya söz verdi. “O zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " da neden öyle göründüğünü öğreniriz.” Bir sonraki hafta kütüphaneye gelen çocukların sayısı biraz arttı. Özellikle "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pd_bagis"
+        },
+        {
+          "t": "metin",
+          "v": " defteriyle ilgili afiş, okuma köşesine yeni ziyaretçiler çekiyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bunu okul gazetesi için bir habere dönüştürdü. Haberde kimin hangi kitabı bağışladığını değil, eski rafın nasıl bulunduğunu ve kayıtların neden korunduğunu anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yazıyı okuduğunda hoşuna giden bir cümle vardı: “Kütüphaneler yalnızca kitapları değil, okurların birbirlerine bıraktığı yolları da saklar.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " artık gizem bulmak kadar onu doğru anlatmaktan da zevk alıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " artık kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " iade tarihi geldiğinde bunu bir yük olarak görmeyecekti. Kitabı zamanında geri getirirse başka bir okur onu beklediği yerde bulabilecekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir kitabın üzerine yazılmış eski numaranın bile ona ait bir yolculuğu anlatabileceğini düşünüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ile birlikte buldukları defter"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": ", onu kitaplara daha yakından bakmaya davet etmişti. Artık kütüphaneye girdiğinde yalnızca yeni hikâye değil, eski bir iz"
+        },
+        {
+          "t": "ikon",
+          "v": "footprint"
+        },
+        {
+          "t": "metin",
+          "v": " de görebiliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " o gün eve giderken çantasındaki kitabı biraz daha dikkatli taşıdı. Bir kitabın yalnızca içindeki hikâyeyi değil, onu yazanın, bağışlayanın, koruyanın ve okuyanın yolculuklarını da taşıyabileceğini anlamıştı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kitap"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

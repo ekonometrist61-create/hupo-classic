@@ -1,0 +1,602 @@
+{
+  "hikaye": {
+    "tur": "tarih_kultur",
+    "konu": "gorunus_ve_saygi",
+    "slug": "hr033-ye-kurkum-ye-peki-neden",
+    "durum": "taslak",
+    "baslik": "Ye Kürküm Ye, Peki Neden?",
+    "tanitim": "Hoca eski cübbesiyle kapıda bekletildi. Kürkünü giyince herkes koştu. Çorbayı kim içmeliydi?",
+    "fis_kodu": "HR-033",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D1"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 6,
+        "sayfa_sayisi": 8,
+        "simge_sayisi": 10,
+        "kelime_sayisi": 475,
+        "tahmini_sure_dk": 6,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 2,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "kultur_miras",
+        "mizah"
+      ],
+      "ana_sinif": 4,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "ikram_hr033",
+          "tur": "lexeme",
+          "yuva": "pc_ikram",
+          "islev": "first_hint",
+          "etiket": "ikram"
+        },
+        {
+          "id": "gosterisli_hr033",
+          "tur": "lexeme",
+          "yuva": "pc_gosterisli",
+          "islev": "application",
+          "etiket": "gösterişli"
+        },
+        {
+          "id": "itiraf_hr033",
+          "tur": "lexeme",
+          "yuva": "pc_itiraf",
+          "islev": "application",
+          "etiket": "itiraf"
+        },
+        {
+          "id": "kavram_hr033",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Görünüş ile değer; önyargı ve saygı"
+        },
+        {
+          "id": "atasoz_hr033",
+          "tur": "proverb",
+          "yuva": "pc_ata_parlayan",
+          "islev": "application",
+          "etiket": "Her parlayan altın değildir"
+        }
+      ]
+    },
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D14",
+      "D1"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pc_ikram",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_ikram"
+          }
+        ]
+      },
+      {
+        "ad": "pc_gosterisli",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_gosterisli"
+          }
+        ]
+      },
+      {
+        "ad": "pc_itiraf",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_itiraf"
+          }
+        ]
+      },
+      {
+        "ad": "pc_ata_parlayan",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "pc_ata_parlayan"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pc_ikram",
+        "tur": "kelime",
+        "anlam": "Konuğa yemek, içecek gibi bir şey sunma.",
+        "yazim": "ikram",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_gosterisli",
+        "tur": "kelime",
+        "anlam": "Dikkat çekecek kadar süslü ve pahalı görünen.",
+        "yazim": "gösterişli",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_itiraf",
+        "tur": "kelime",
+        "anlam": "Yaptığı bir şeyi ya da düşündüğünü açıkça söyleme.",
+        "yazim": "itiraf",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_ata_parlayan",
+        "tur": "atasozu",
+        "anlam": "Dışarıdan güzel ya da değerli görünen her şey gerçekten değerli olmayabilir.",
+        "yazim": "Her parlayan altın değildir",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "Hoca davete ilk geldiğinde görevli ona ne dedi?",
+      "beceri": "hatirlama",
+      "aciklama": "Görevli tabakları toplamakla meşguldü ve Hoca'ya başını kaldırmadan \"Biraz bekleyin\" dedi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "En güzel yeri gösterdi"
+        },
+        {
+          "id": "B",
+          "metin": "Başını kaldırmadan \"Biraz bekleyin\" dedi"
+        },
+        {
+          "id": "C",
+          "metin": "Hemen önüne çorba getirdi"
+        },
+        {
+          "id": "D",
+          "metin": "Davetin bittiğini söyledi"
+        }
+      ],
+      "dayanak_sayfa": 2
+    },
+    {
+      "id": "s2",
+      "dogru": "D",
+      "metin": "Hoca çorbayı neden kürkünün koluna doğru uzattı?",
+      "beceri": "cikarim",
+      "aciklama": "Hoca eski cübbesiyle kapıda bekletilmiş, kürkle ise baş köşeye oturtulmuştu; bunu çocuklara göstermek istedi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Gerçekten acıktığı için"
+        },
+        {
+          "id": "B",
+          "metin": "Kürkünü ıslatmak istediği için"
+        },
+        {
+          "id": "C",
+          "metin": "Çorbayı beğenmediği için"
+        },
+        {
+          "id": "D",
+          "metin": "Gösterilen saygının kendisine değil, giysisine olduğunu göstermek için"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s3",
+      "dogru": "C",
+      "metin": "Metinde geçen ikram sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Çorba önce kürke ikram edilmişti; yani konuğa sunulmuştu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Birine kızma"
+        },
+        {
+          "id": "B",
+          "metin": "Bir şeyi satın alma"
+        },
+        {
+          "id": "C",
+          "metin": "Konuğa yemek ya da içecek sunma"
+        },
+        {
+          "id": "D",
+          "metin": "Bir yerden uzaklaşma"
+        }
+      ],
+      "dayanak_sayfa": 5
+    },
+    {
+      "id": "s4",
+      "dogru": "B",
+      "metin": "Efe'nin \"Ben de bazen dış görünüşe bakıyorum\" demesi neyi gösterir?",
+      "beceri": "yorumlama",
+      "aciklama": "Efe arkadaşının eski ayakkabılarıyla alay ettiğini anımsadı, yüzü kızardı ve hatasını itiraf etti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Hocayı hiç tanımadığını"
+        },
+        {
+          "id": "B",
+          "metin": "Yaptığı yanlışı fark edip açıkça kabul ettiğini"
+        },
+        {
+          "id": "C",
+          "metin": "Arkadaşıyla yarıştığını"
+        },
+        {
+          "id": "D",
+          "metin": "Yeni ayakkabılarıyla övünmek istediğini"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s5",
+      "dogru": "A",
+      "metin": "Hasan, görevliyi herkesin önünde azarlamadı. Bu davranış neden yerindedir?",
+      "beceri": "degerlendirme",
+      "aciklama": "Hasan görevliyi azarlamak yerine daha iyi bir karşılama düzenini birlikte kurmayı önerdi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Hatayı birlikte çözmeyi seçmek, hem görevliye saygıyı korur hem de düzeni düzeltir"
+        },
+        {
+          "id": "B",
+          "metin": "Görevlinin hiç hata yapmadığını gösterir"
+        },
+        {
+          "id": "C",
+          "metin": "Böylece kimse hatadan haberdar olmaz"
+        },
+        {
+          "id": "D",
+          "metin": "Hasan'ın yemeğe gelen konuklarla ilgilenmediğini gösterir"
+        }
+      ],
+      "dayanak_sayfa": 7
+    },
+    {
+      "id": "s6",
+      "dogru": "D",
+      "metin": "Yamalı yelekli küçük misafir masanın ortasına ne koydu?",
+      "beceri": "hatirlama",
+      "aciklama": "Küçük misafir elindeki çiçeği masanın ortasına koydu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir tabak çorba"
+        },
+        {
+          "id": "B",
+          "metin": "Şarkı notaları"
+        },
+        {
+          "id": "C",
+          "metin": "Bir kürk"
+        },
+        {
+          "id": "D",
+          "metin": "Bir çiçek"
+        }
+      ],
+      "dayanak_sayfa": 7
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kasabanın meydanında o sabah"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " her zamankinden büyük bir telaş vardı. Değirmenci Hasan, yeni değirmeninin açılışı için herkesi yemeğe çağırmıştı. Kapıya rengârenk fenerler asılmış, avluda uzun bir sofra kurulmuştu. Nasreddin Hoca, pazardan dönerken daveti hatırladı. Üzerinde günlük, eski cübbesi vardı. Eve uğramadan avluya girdi. Masaların yanından geçerken kimse ona yer göstermedi. Bir görevli, önündeki tabakları toplamakla meşguldü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hoca, \"Kolay gelsin evladım, boş bir yer var mı?\" diye sordu. Görevli başını kaldırmadan, \"Biraz bekleyin,\" dedi. Avlunun öbür ucunda, yeni ve "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_gosterisli"
+        },
+        {
+          "t": "metin",
+          "v": " giysili bir misafiri iki kişi kapıya kadar karşılamıştı. Hoca olanları izledi. Hasan'ın onu fark etmemiş olabileceğini düşünerek hemen alınmadı. Yine de insanların birbirine giysisine göre davranması içine sinmedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Avludan ayrılırken yolda eski ayakkabılarıyla koşturan bir çocuk gördü. Çocuğun elinde, değirmenin açılışında şarkı"
+        },
+        {
+          "t": "ikon",
+          "v": "music"
+        },
+        {
+          "t": "metin",
+          "v": " söyleyecek topluluğun notaları vardı. Sayfalar rüzgârda uçuşunca Hoca eğilip yardımcı oldu. Çocuk, \"Beni kimse fark etmez sanmıştım,\" dedi. Hoca gülümsedi: \"İnsan bazen dikkat edilmediğini hisseder. Ama yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " etmek için kimsenin bizi tanıması gerekmez.\" Bu küçük karşılaşma, Hoca'nın aklındaki soruyu daha da büyüttü: Bir davette insanları görünür kılan şey gerçekten neydi?"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sessizce evine gitti. Dolabından işlemeli, temiz kürkünü aldı ve yeniden davete döndü. Bu kez kapıdaki görevli doğruldu. \"Hoş geldiniz efendim! Şöyle buyurun. En güzel yer sizin.\" Hoca, önüne getirilen çorbanın kaşığını kaldırmadı. Kürkünün kolunu kâseye doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " uzatıp, \"Ye kürküm ye!\" dedi. Yan masadaki çocuklardan "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülmeye başladı. Fakat ardından kaşlarını çattı. \"Hocam, kürk çorba içebilir mi?\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"İçemez elbette. Peki sizce neden"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " çorba önce bana değil de kürküme "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_ikram"
+        },
+        {
+          "t": "metin",
+          "v": " edildi?\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " arkadaşı Efe cevap verdi: \"Çünkü kürkü görünce sizi önemli sandılar.\" \"Benim değerim, eve gidip kürk giyince mi arttı?\" diye sordu Hoca. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce cevap vermekte zorlandı. Sabah"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " pazarda taşıdığı sepet ağır olduğu için onu evine kadar götüren komşuyu hatırladı. Komşunun giysileri de eskiydi ama içten davranışı gün boyu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "belirtme"
+        },
+        {
+          "t": "metin",
+          "v": " mutlu etmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Biri bana yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " ettiğinde üstündeki giysiyi hiç düşünmüyorum,\" dedi. Efe ise geçen hafta yeni ayakkabıları olduğu için arkadaşının eskileriyle alay ettiğini anımsadı. O an yüzü kızardı. \"Ben de bazen dış görünüşe bakıyorum,\" diye "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_itiraf"
+        },
+        {
+          "t": "metin",
+          "v": " etti. Hoca, \"Farkına varmak, değiştirmek için "
+        },
+        {
+          "t": "vurgu",
+          "v": "ilk adımdır"
+        },
+        {
+          "t": "metin",
+          "v": ",\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bir süre düşündü. Hasan da konuşmaları duyup yanlarına geldi. Hocanın sabahki gelişini öğrenince görevliyi çağırdı. Onu herkesin önünde azarlamadı; birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " daha iyi bir karşılama düzeni kurabileceklerini söyledi. Çocuklar da kapıda sırayla konukları karşılamayı önerdi. Öğleden sonra küçük bir misafir geldi. Üzerinde yamalı bir yelek, elinde çiçek"
+        },
+        {
+          "t": "ikon",
+          "v": "flower"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen koştu, ona sandalye çekti; "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de bir tabak getirdi. Çocuk, çiçeği masanın ortasına koyarken gülümsedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hoca fısıldadı: \"İşte şimdi soframız gerçekten zenginleşti.\" Dönüş yolunda Efe, \"Bugün bir deyimi de öğrendim,\" dedi. \"Dış görünüşe aldanmak, insanı tanımadan karar vermekmiş.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. \"Birini tanımak için ne giydiğine değil, nasıl davrandığına bakmalı.\" Efe gülümsedi: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pc_ata_parlayan"
+        },
+        {
+          "t": "metin",
+          "v": "\" Hoca, çocukların elindeki çiçeğe baktı. \"Üstelik bazen en güzel hediyeyi en gösterişsiz misafir getirir,\" diye ekledi. Artık avlu yalnızca yemek kokusuyla değil, herkesin eşit karşılandığı bir neşeyle doluydu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kalp"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

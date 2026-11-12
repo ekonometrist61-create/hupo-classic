@@ -1,0 +1,805 @@
+{
+  "hikaye": {
+    "tur": "fantastik",
+    "konu": "yedi_renkli_kopru",
+    "slug": "hr036-yedi-renkli-koprunun-koruyucusu",
+    "durum": "taslak",
+    "baslik": "Yedi Renkli Köprünün Koruyucusu",
+    "tanitim": "Köprünün mor ışığı söndü. Işığı geri getirebilecek tek şey, kimseye söylenmemiş bir korkuydu.",
+    "fis_kodu": "HR-036",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D5",
+        "yardimci_deger": "D2"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 6,
+        "sayfa_sayisi": 9,
+        "simge_sayisi": 25,
+        "kelime_sayisi": 468,
+        "tahmini_sure_dk": 6,
+        "yoldas_yer_sayisi": 3,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 2,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "dostluk",
+        "aile",
+        "dayanisma"
+      ],
+      "ana_sinif": 4,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 4,
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "cesaret_hr036",
+          "tur": "lexeme",
+          "yuva": "pc_cesaret",
+          "islev": "first_hint",
+          "etiket": "cesaret"
+        },
+        {
+          "id": "destek_hr036",
+          "tur": "lexeme",
+          "yuva": "pc_destek",
+          "islev": "application",
+          "etiket": "destek"
+        },
+        {
+          "id": "prova_hr036",
+          "tur": "lexeme",
+          "yuva": "pc_prova",
+          "islev": "application",
+          "etiket": "prova"
+        },
+        {
+          "id": "kavram_hr036",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Öz farkındalık ve cesaret"
+        },
+        {
+          "id": "atasoz_hr036",
+          "tur": "proverb",
+          "yuva": "pc_ata_el",
+          "islev": "application",
+          "etiket": "Bir elin nesi var iki elin sesi var"
+        }
+      ]
+    },
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "dunya_tipi": "masalsi",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D5",
+      "D2"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pc_cesaret",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_cesaret"
+          }
+        ]
+      },
+      {
+        "ad": "pc_destek",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_destek"
+          }
+        ]
+      },
+      {
+        "ad": "pc_prova",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_prova"
+          }
+        ]
+      },
+      {
+        "ad": "pc_ata_el",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "pc_ata_el"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pc_cesaret",
+        "tur": "kelime",
+        "anlam": "Korkulan bir durumda bile doğru olanı yapabilme gücü.",
+        "yazim": "cesaret",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_destek",
+        "tur": "kelime",
+        "anlam": "Birine yardım ederek ona güç verme.",
+        "yazim": "destek",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_prova",
+        "tur": "kelime",
+        "anlam": "Bir işi başkalarının karşısında yapmadan önce deneme.",
+        "yazim": "prova",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_ata_el",
+        "tur": "atasozu",
+        "anlam": "İnsanlar işi birlikte yapınca daha güçlü ve başarılı olur.",
+        "yazim": "Bir elin nesi var iki elin sesi var",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "C",
+      "metin": "Bekçiye göre hangi taşın rengi solmuştu?",
+      "beceri": "hatirlama",
+      "aciklama": "Bekçi, korku taşının renginin solduğunu söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sevinç taşının"
+        },
+        {
+          "id": "B",
+          "metin": "Öfke taşının"
+        },
+        {
+          "id": "C",
+          "metin": "Korku taşının"
+        },
+        {
+          "id": "D",
+          "metin": "Umut taşının"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s2",
+      "dogru": "B",
+      "metin": "Çocuk \"Ben hiçbir şeyden korkmam!\" derken gerçekte neyi yapıyor olabilir?",
+      "beceri": "cikarim",
+      "aciklama": "Çocuk yıllardır yükseklik korkusunu arkadaşlarından saklıyordu; bunu kabul etmek istemedi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bekçiyi güldürmeye çalışıyor"
+        },
+        {
+          "id": "B",
+          "metin": "Yüksekten korktuğunu kabul etmekten çekiniyor"
+        },
+        {
+          "id": "C",
+          "metin": "Köprüden hiç geçmemiş olduğunu söylüyor"
+        },
+        {
+          "id": "D",
+          "metin": "Kardeşine kızgın olduğunu belirtiyor"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s3",
+      "dogru": "D",
+      "metin": "Metinde geçen cesaret sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Metinde cesaret, korkmamak değil; korkuyu tanıyıp güvenli ve doğru olanı yapmak olarak anlatılıyor.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Hiçbir şeyden korkmama"
+        },
+        {
+          "id": "B",
+          "metin": "Başkalarına kızma"
+        },
+        {
+          "id": "C",
+          "metin": "Hızlı koşabilme"
+        },
+        {
+          "id": "D",
+          "metin": "Korktuğu hâlde doğru olanı yapabilme gücü"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Bekçi \"Cesaret bazen yardım istemektir\" derken neyi anlatmak istedi?",
+      "beceri": "yorumlama",
+      "aciklama": "Bekçi cesaretin yalnızca atılgan olmak olmadığını, yardım istemenin ve doğru zamanı beklemenin de cesaret olduğunu söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yardım istemenin de güçlü ve akıllıca bir davranış olabileceğini"
+        },
+        {
+          "id": "B",
+          "metin": "Kimsenin kimseye yardım etmemesi gerektiğini"
+        },
+        {
+          "id": "C",
+          "metin": "Köprüde hiç beklememek gerektiğini"
+        },
+        {
+          "id": "D",
+          "metin": "Korkunun hiç olmadığını"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s5",
+      "dogru": "C",
+      "metin": "Mert sis varken rastgele koşmak yerine beklemeyi seçti. Bu karar için ne söylenebilir?",
+      "beceri": "degerlendirme",
+      "aciklama": "Mert, rastgele koşarsa kayabileceğini bildiği için olduğu yerde güvenle bekledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yanlıştı, çünkü hemen koşmalıydı"
+        },
+        {
+          "id": "B",
+          "metin": "Önemsizdi, çünkü köprü zaten güvenliydi"
+        },
+        {
+          "id": "C",
+          "metin": "Akıllıcaydı, çünkü rastgele koşmak kaymasına neden olabilirdi"
+        },
+        {
+          "id": "D",
+          "metin": "Gereksizdi, çünkü kimse onu almaya gelmeyecekti"
+        }
+      ],
+      "dayanak_sayfa": 7
+    },
+    {
+      "id": "s6",
+      "dogru": "B",
+      "metin": "Sınıf önünde şiir okumaktan çekinen arkadaşına çocuk ne önerdi?",
+      "beceri": "hatirlama",
+      "aciklama": "Çocuk, \"İstersen önce bana oku\" diyerek arkadaşına destek oldu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Şiiri hiç okumamasını"
+        },
+        {
+          "id": "B",
+          "metin": "Önce kendisine okumasını"
+        },
+        {
+          "id": "C",
+          "metin": "Şiiri öğretmene vermesini"
+        },
+        {
+          "id": "D",
+          "metin": "Başka bir şiir seçmesini"
+        }
+      ],
+      "dayanak_sayfa": 9
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " kasabasındaki eski taş köprü"
+        },
+        {
+          "t": "ikon",
+          "v": "bridge"
+        },
+        {
+          "t": "metin",
+          "v": " her akşam yedi farklı renkte parlardı. Kasabalılar bu ışığın nereden geldiğini bilmiyordu. Köprünün başında yaşayan bekçi ise yalnızca şunu söylerdi: \"Renkler"
+        },
+        {
+          "t": "ikon",
+          "v": "rainbow"
+        },
+        {
+          "t": "metin",
+          "v": ", insanların unuttuğu duyguları hatırlatır.\" O gece"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tuhaf bir rüya görmüştü. Köprünün taşlarının üzerinde yürürken her biri ona bir anısını fısıldıyordu: ilk bisiklet sürüşündeki sevinç, kaybolan kedisini ararken duyduğu üzüntü, arkadaşına kızdığı günün öfkesi. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kalp"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Uyandığında bunların hepsinin kendi duyguları olduğunu hatırladı. Yine de korku"
+        },
+        {
+          "t": "ikon",
+          "v": "fear"
+        },
+        {
+          "t": "metin",
+          "v": " taşına gelince rüyadaki ses kesilmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun nedenini merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " etti. Birkaç gün sonra köprünün mor ışığı kayboldu. Ardından sarı, mavi ve yeşil ışıklar da sönükleşti. Nehrin karşı kıyısındaki çocukların okula gitmesi zorlaştı; sis çöktüğünde köprü"
+        },
+        {
+          "t": "ikon",
+          "v": "bridge"
+        },
+        {
+          "t": "metin",
+          "v": " neredeyse görünmez oluyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çözüm bulmak için bekçiye koştu. Bekçi ona yedi taş gösterdi: sevinç"
+        },
+        {
+          "t": "ikon",
+          "v": "joy"
+        },
+        {
+          "t": "metin",
+          "v": ", üzüntü, öfke, şaşkınlık, sevgi"
+        },
+        {
+          "t": "ikon",
+          "v": "heart"
+        },
+        {
+          "t": "metin",
+          "v": ", umut ve korku"
+        },
+        {
+          "t": "ikon",
+          "v": "fear"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Korku taşının rengi solmuş,\" dedi bekçi. \"Onu yeniden parlatacak olan, korkmadığını söyleyen değil, korkusunu tanıyandır.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen, \"Ben hiçbir şeyden korkmam!\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O sırada köprünün öbür ucundan küçük kardeşi Mert'in sesi geldi. \"Sis başladı!\" diye bağırıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " kalbi hızlandı. Aslında yükseklikten korkuyordu. Köprü"
+        },
+        {
+          "t": "ikon",
+          "v": "bridge"
+        },
+        {
+          "t": "metin",
+          "v": " güvenliydi ama aşağıdaki suyu görünce elleri terliyordu. Yıllardır bu korkusunu arkadaşlarından saklamıştı. Bekçi acele etmedi. \"Korkmak utanılacak bir şey değil,\" dedi. \"Bir şeyi nasıl"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " güvenle yapacağını düşünmene yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " edebilir.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " derin bir nefes aldı. \"Evet, yüksekten korkuyorum,\" dedi. \"Ama kardeşimin yanına da gitmek istiyorum.\" Bekçiyle birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " korkulukları kontrol ettiler. Sis hafifleyene kadar beklediler. Sonra "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", köprünün ortasına kadar yürüdü. Mert de bulunduğu yerde güvenle bekliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " adımlarını saydı. Bir, iki, üç... Ortaya geldiğinde nehrin uğultusunu duydu ama geri dönmedi. Bekçi yanındaydı. Birlikte Mert'e ulaştılar."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O anda köprünün mor taşı parladı. Ardından diğer renkler"
+        },
+        {
+          "t": "ikon",
+          "v": "rainbow"
+        },
+        {
+          "t": "metin",
+          "v": " de usulca yerine döndü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Demek "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_cesaret"
+        },
+        {
+          "t": "metin",
+          "v": " korkmamak değilmiş,\" dedi. Bekçi gülümsedi. \"Cesaret"
+        },
+        {
+          "t": "ikon",
+          "v": "courage"
+        },
+        {
+          "t": "metin",
+          "v": " bazen yardım istemektir. Bazen de tehlikeyi fark edip doğru zamanı beklemek"
+        },
+        {
+          "t": "ikon",
+          "v": "hourglass"
+        },
+        {
+          "t": "metin",
+          "v": ".\" Mert akşam "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Beni almaya geldiğin için teşekkür ederim,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise onu beklediği yerde kalmayı başardığı için kutladı. \"Sen de korkmuş olabilirsin,\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Mert başını salladı. \"Korktum ama rastgele koşarsam kayabilirdim. O yüzden seni bekledim.\" İki kardeş birbirlerine sarıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " anladı ki cesaret"
+        },
+        {
+          "t": "ikon",
+          "v": "courage"
+        },
+        {
+          "t": "metin",
+          "v": " gösteren yalnızca kendisi değildi; güvenli biçimde beklemek"
+        },
+        {
+          "t": "ikon",
+          "v": "patience"
+        },
+        {
+          "t": "ikon",
+          "v": "hourglass"
+        },
+        {
+          "t": "metin",
+          "v": " de bazen cesur bir karardı. Ertesi gün "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", okulda korkusunu arkadaşlarına anlattı. Kimse onunla alay etmedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hatta "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " karanlıktan, Arda ise kalabalık önünde konuşmaktan çekindiğini söyledi. Çocuklar birbirlerine "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_destek"
+        },
+        {
+          "t": "metin",
+          "v": " olmak için küçük bir söz verdiler: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pc_ata_el"
+        },
+        {
+          "t": "metin",
+          "v": "\" Köprü"
+        },
+        {
+          "t": "ikon",
+          "v": "bridge"
+        },
+        {
+          "t": "metin",
+          "v": " o gece"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": " yine yedi renkte parladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ne zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " mor ışığı görse kendine aynı cümleyi hatırlattı: \"Korkumu adlandırınca onu daha iyi anlayabiliyorum.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birkaç hafta sonra "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " sınıf"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " önünde şiir okumak"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " için çekindi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yanına oturup \"İstersen önce bana oku,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " küçük bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_prova"
+        },
+        {
+          "t": "metin",
+          "v": " yaptı; sonra arkadaşlarının karşısına çıktı. Her kelimesi kusursuz değildi ama sonunda gülümsedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " o an köprüde öğrendiği şeyin yalnızca kendisine ait olmadığını fark etti: İnsanlar birbirlerinin korkularına saygı duyduğunda, dünyada görünmez köprüler de kuruluyordu."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

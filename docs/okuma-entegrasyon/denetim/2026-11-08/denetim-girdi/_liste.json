@@ -1,0 +1,653 @@
+[
+  {
+    "kod": "hr013-kirilan-oyuncak-kopru",
+    "slug": "hr013-kirilan-oyuncak-kopru",
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "surum_id": "95c0803c-a45e-4666-9213-e49fa5a4dd52"
+  },
+  {
+    "kod": "hr017-mahallenin-en-hizli-bisikleti",
+    "slug": "hr017-mahallenin-en-hizli-bisikleti",
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "surum_id": "8b3c3760-d5d0-421e-9273-e0958aa393a2"
+  },
+  {
+    "kod": "hr019-magaranin-uc-isareti",
+    "slug": "hr019-magaranin-uc-isareti",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "surum_id": "23d8eeaf-1f29-4a7e-8c5d-3f8434ac1aa4"
+  },
+  {
+    "kod": "hr021-kayip-sandigin-sifresi",
+    "slug": "hr021-kayip-sandigin-sifresi",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "fc152a6c-6bfd-4374-a33f-f4f7463d5f5a"
+  },
+  {
+    "kod": "hr023-hoca-ve-gorunmeyen-misafir",
+    "slug": "hr023-hoca-ve-gorunmeyen-misafir",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "surum_id": "7ac9b53f-6c35-42fd-a7bc-ed24f5118966"
+  },
+  {
+    "kod": "hr024-bulut-postacisinin-son-mektubu",
+    "slug": "hr024-bulut-postacisinin-son-mektubu",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "surum_id": "6df22e4c-0924-4b5e-b88d-04829c7b31cf"
+  },
+  {
+    "kod": "hr025-bremen-yolcularinin-yeni-sarkisi",
+    "slug": "hr025-bremen-yolcularinin-yeni-sarkisi",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "surum_id": "64b3fc68-7025-4772-aa30-57499ebcad46"
+  },
+  {
+    "kod": "hr027-karagozun-kayip-golgesi",
+    "slug": "hr027-karagozun-kayip-golgesi",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "surum_id": "c519af4c-0ba6-4580-92cb-e93216f3613e"
+  },
+  {
+    "kod": "hr028-uc-renkli-takim",
+    "slug": "hr028-uc-renkli-takim",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "surum_id": "44d9f533-2038-4268-b65b-7c373ae9c00c"
+  },
+  {
+    "kod": "hr029-minik-mucit-ve-gunes-firini",
+    "slug": "hr029-minik-mucit-ve-gunes-firini",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "surum_id": "b327331c-26ce-48f6-97df-3e03b97b4dd5"
+  },
+  {
+    "kod": "hr030-ormanin-kaybolan-patikasi",
+    "slug": "hr030-ormanin-kaybolan-patikasi",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "fa74a028-5663-4b8d-95e7-3faf2091302b"
+  },
+  {
+    "kod": "hr031-muzede-sessiz-alarm",
+    "slug": "hr031-muzede-sessiz-alarm",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "ebe5db30-c071-49e8-bc0b-480352944f3e"
+  },
+  {
+    "kod": "hr032-keloglan-ve-akilli-terazi",
+    "slug": "hr032-keloglan-ve-akilli-terazi",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "ef4fa4bc-baab-43d3-9248-f7439e2bc256"
+  },
+  {
+    "kod": "hr033-ye-kurkum-ye-peki-neden",
+    "slug": "hr033-ye-kurkum-ye-peki-neden",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "400f0ed0-c2da-4fc3-b3de-6f4a2276f3e9"
+  },
+  {
+    "kod": "hr034-2040-in-konusan-okul-cantasi",
+    "slug": "hr034-2040-in-konusan-okul-cantasi",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "00f4f1b6-08b2-40ac-a362-cfa6f2cc17d0"
+  },
+  {
+    "kod": "hr034-2040-konusan-okul-cantasi",
+    "slug": "hr034-2040-konusan-okul-cantasi",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "20b1e315-95c6-421c-96e2-c3b3ceb97786"
+  },
+  {
+    "kod": "hr035-aya-giden-ilk-posta",
+    "slug": "hr035-aya-giden-ilk-posta",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "3fa9b284-5f68-44db-b70b-74f349cfc651"
+  },
+  {
+    "kod": "hr036-yedi-renkli-koprunun-koruyucusu",
+    "slug": "hr036-yedi-renkli-koprunun-koruyucusu",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "7449a97b-dd57-4a03-a3c0-252057608e1d"
+  },
+  {
+    "kod": "hr036-yedi-renkli-kopruun-koruyucusu",
+    "slug": "hr036-yedi-renkli-kopruun-koruyucusu",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "124bcc04-d687-41e0-8ffe-e0b5f531ef7f"
+  },
+  {
+    "kod": "hr037-son-pasin-hikayesi",
+    "slug": "hr037-son-pasin-hikayesi",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "867941ee-ec95-465b-888b-9841722ccf22"
+  },
+  {
+    "kod": "hr038-muzik-kutusunun-sifresi",
+    "slug": "hr038-muzik-kutusunun-sifresi",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "c9f099f5-8f1b-41b8-9af6-8aa98ce0947b"
+  },
+  {
+    "kod": "hr039-anka-nin-kaybolan-tuyu",
+    "slug": "hr039-anka-nin-kaybolan-tuyu",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "a268612d-5a69-414f-aba7-a406938a4685"
+  },
+  {
+    "kod": "hr039-ankanin-kaybolan-tuyu",
+    "slug": "hr039-ankanin-kaybolan-tuyu",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "b1054c87-7d3d-4911-8faa-0363145d139b"
+  },
+  {
+    "kod": "hr040-trenin-penceresindeki-turkiye",
+    "slug": "hr040-trenin-penceresindeki-turkiye",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "surum_id": "f39ccf6f-28fe-4098-8cc5-0e080974a8fd"
+  },
+  {
+    "kod": "hr041-yedi-adimda-kayip-ada",
+    "slug": "hr041-yedi-adimda-kayip-ada",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "fd8896a6-5cc6-4346-84fa-b4131cc972cb"
+  },
+  {
+    "kod": "hr042-kapadokya-nin-gizli-gecidi",
+    "slug": "hr042-kapadokya-nin-gizli-gecidi",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "32521ac5-2c96-40fc-b9a8-e37d2a43c885"
+  },
+  {
+    "kod": "hr042-kapadokyanin-gizli-gecidi",
+    "slug": "hr042-kapadokyanin-gizli-gecidi",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "258d588f-b6be-4ba5-a30b-a720884fae49"
+  },
+  {
+    "kod": "hr043-kuledeki-son-isik",
+    "slug": "hr043-kuledeki-son-isik",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "c89dff19-1a87-4ce2-b28a-6a199b6eab56"
+  },
+  {
+    "kod": "hr044-buz-golunun-haritasi",
+    "slug": "hr044-buz-golunun-haritasi",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "59ec1055-e753-42ec-8911-66095d538254"
+  },
+  {
+    "kod": "hr045-kutuphanenin-on-ucuncu-rafi",
+    "slug": "hr045-kutuphanenin-on-ucuncu-rafi",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "9a8bc801-2aba-4545-88d5-e8dc0846d8b4"
+  },
+  {
+    "kod": "hr046-bilinmeyen-posta-pulu",
+    "slug": "hr046-bilinmeyen-posta-pulu",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "a9ce8f75-108f-415c-a57c-d786523f50f1"
+  },
+  {
+    "kod": "hr047-kirmizi-defterin-sifresi",
+    "slug": "hr047-kirmizi-defterin-sifresi",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "4d7f3d3a-e472-4d8d-9b59-f8c0466e0d5f"
+  },
+  {
+    "kod": "hr048-muzedeki-eksik-parca",
+    "slug": "hr048-muzedeki-eksik-parca",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "911eb87c-e385-418f-a6db-1522892613ca"
+  },
+  {
+    "kod": "hr049-keloglan-ve-yedi-soz-kapisi",
+    "slug": "hr049-keloglan-ve-yedi-soz-kapisi",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "c8c206d3-cb7a-4186-9b20-3e665d184aa5"
+  },
+  {
+    "kod": "hr050-yildiz-terzisinin-haritasi",
+    "slug": "hr050-yildiz-terzisinin-haritasi",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "b91b600b-2115-419e-b667-1a20503c2f5a"
+  },
+  {
+    "kod": "hr051-orman-saatini-kim-durdurdu",
+    "slug": "hr051-orman-saatini-kim-durdurdu",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "130daa4f-5394-49a9-8b5a-c58f0329d50c"
+  },
+  {
+    "kod": "hr052-sahmeran-in-bilgelik-cesmesi",
+    "slug": "hr052-sahmeran-in-bilgelik-cesmesi",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "2983e37c-9907-4919-ad08-3ee27d6d3cdf"
+  },
+  {
+    "kod": "hr053-robot-sinif-baskani-secildi",
+    "slug": "hr053-robot-sinif-baskani-secildi",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "413e55a3-22ee-4ba8-abcb-b5b580bf24b6"
+  },
+  {
+    "kod": "hr054-karagoz-dijital-sozlukte",
+    "slug": "hr054-karagoz-dijital-sozlukte",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "db6fc1e8-bcb9-40b7-b061-aba0f08ca95f"
+  },
+  {
+    "kod": "hr055-deyim-dedektifleri-kulubu",
+    "slug": "hr055-deyim-dedektifleri-kulubu",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "aca49c43-25df-4a57-b98b-278634b1cc11"
+  },
+  {
+    "kod": "hr056-takimin-gorunmeyen-oyuncusu",
+    "slug": "hr056-takimin-gorunmeyen-oyuncusu",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "23d280d2-7c17-460f-8318-f5e89e8cf89a"
+  },
+  {
+    "kod": "hr057-sessiz-mesajlar-kulubu",
+    "slug": "hr057-sessiz-mesajlar-kulubu",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "7beb04ee-04c9-484e-9179-77a3e9995f69"
+  },
+  {
+    "kod": "hr058-gokyuzundeki-balonun-sirri",
+    "slug": "hr058-gokyuzundeki-balonun-sirri",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "840dec0e-a8be-453e-bbc9-12e33c044ff5"
+  },
+  {
+    "kod": "hr060-geri-donusum-laboratuvari",
+    "slug": "hr060-geri-donusum-laboratuvari",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "dea9f9eb-d2b8-468d-9e14-930e908d5cef"
+  },
+  {
+    "kod": "hr061-marsa-giden-sessiz-mesaj",
+    "slug": "hr061-marsa-giden-sessiz-mesaj",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "7970ce69-64d0-4ce2-a7c3-ed8bf7913394"
+  },
+  {
+    "kod": "hr062-hafizasi-karisan-android",
+    "slug": "hr062-hafizasi-karisan-android",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "0b324565-c65c-4088-8e55-d5330ee60bb4"
+  },
+  {
+    "kod": "hr063-hocanin-tersine-giden-saati",
+    "slug": "hr063-hocanin-tersine-giden-saati",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "510b1545-36d0-461d-a677-f62b3e1224c9"
+  },
+  {
+    "kod": "hr064-cinili-kutunun-yolculugu",
+    "slug": "hr064-cinili-kutunun-yolculugu",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "f242825c-0a34-4f1b-bca0-fda91db2e9bc"
+  },
+  {
+    "kod": "hr065-ruzgara-karsi-son-tur",
+    "slug": "hr065-ruzgara-karsi-son-tur",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "14fb092a-352f-42f7-8c73-fdd5fbcc760e"
+  },
+  {
+    "kod": "hr066-uc-ulkenin-tek-sofrasi",
+    "slug": "hr066-uc-ulkenin-tek-sofrasi",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "surum_id": "6ec8b79c-acae-4484-808b-24a7fd9c0f97"
+  },
+  {
+    "kod": "hr067-golgeler-vadisinin-rotasi",
+    "slug": "hr067-golgeler-vadisinin-rotasi",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "c15fb04c-d480-4506-9e84-06103d069b8f"
+  },
+  {
+    "kod": "hr068-kayip-geminin-gunlugu",
+    "slug": "hr068-kayip-geminin-gunlugu",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "f53964c7-d859-433c-ad19-92e0451c22d4"
+  },
+  {
+    "kod": "hr069-sular-altindaki-sehir",
+    "slug": "hr069-sular-altindaki-sehir",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "1f20f260-249c-4b9a-aa7a-bbfcb15c84f2"
+  },
+  {
+    "kod": "hr070-uc-dakikalik-kesinti",
+    "slug": "hr070-uc-dakikalik-kesinti",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "2abed330-998a-4ef9-9bcc-64e8eae32e6d"
+  },
+  {
+    "kod": "hr071-tarihi-yanlis-yazan-heykel",
+    "slug": "hr071-tarihi-yanlis-yazan-heykel",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "336815af-2d0a-44da-b0b6-f3365f041099"
+  },
+  {
+    "kod": "hr072-sinifin-gorunmez-yazari",
+    "slug": "hr072-sinifin-gorunmez-yazari",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "69307097-ca5f-4eba-b844-6176ebfccbc9"
+  },
+  {
+    "kod": "hr073-bogacin-adil-karari",
+    "slug": "hr073-bogacin-adil-karari",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "eb5d0f24-2fea-4b87-9a24-5c43c1a57093"
+  },
+  {
+    "kod": "hr074-ay-isigindaki-dort-kapi",
+    "slug": "hr074-ay-isigindaki-dort-kapi",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "61747e43-5ff0-4044-8dfb-feef94118e93"
+  },
+  {
+    "kod": "hr075-okulun-yanlis-anlayan-yapay-zekasi",
+    "slug": "hr075-okulun-yanlis-anlayan-yapay-zekasi",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "ae90b4dc-2e07-40df-97cd-0a47d78ee413"
+  },
+  {
+    "kod": "hr076-mizah-gazetesinin-ilk-sayisi",
+    "slug": "hr076-mizah-gazetesinin-ilk-sayisi",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "7d312062-a5d2-4686-8a25-217bb41411d9"
+  },
+  {
+    "kod": "hr077-yarim-kalan-takim-oyunu",
+    "slug": "hr077-yarim-kalan-takim-oyunu",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "836cf504-e0e7-4807-b424-483a5332cb3f"
+  },
+  {
+    "kod": "hr078-golun-sessiz-alarmi",
+    "slug": "hr078-golun-sessiz-alarmi",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "25172f0f-9ae3-4b69-b090-3cdcaaaedda8"
+  },
+  {
+    "kod": "hr079-zaman-kapsulunun-sifresi",
+    "slug": "hr079-zaman-kapsulunun-sifresi",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "eb2b0230-8b7a-48c5-bf68-1be405c4b178"
+  },
+  {
+    "kod": "hr080-robot-kentin-son-agaci",
+    "slug": "hr080-robot-kentin-son-agaci",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "surum_id": "72c8d625-a21c-467b-834a-12073d86fcdb"
+  },
+  {
+    "kod": "hr081-kacis-odasinin-sahte-kapisi",
+    "slug": "hr081-kacis-odasinin-sahte-kapisi",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "2d49d546-a490-4148-bfac-1ab78f47efba"
+  },
+  {
+    "kod": "hr082-aynali-koridordaki-yedinci-iz",
+    "slug": "hr082-aynali-koridordaki-yedinci-iz",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "9db1b49e-25c2-409a-8d30-984c14123818"
+  },
+  {
+    "kod": "hr083-kayip-kodun-ardindaki-insan",
+    "slug": "hr083-kayip-kodun-ardindaki-insan",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "342c6af5-aa78-4631-af0d-828cbba5041e"
+  },
+  {
+    "kod": "hr084-cevrilmeyen-son-sayfa",
+    "slug": "hr084-cevrilmeyen-son-sayfa",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "8b1668aa-52b7-47a0-8686-8c261820b0ff"
+  },
+  {
+    "kod": "hr085-firtina-oncesi-son-sefer",
+    "slug": "hr085-firtina-oncesi-son-sefer",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "2be110fc-3043-41b5-9d34-72a53f523143"
+  },
+  {
+    "kod": "hr086-gunes-dagi-haritasi",
+    "slug": "hr086-gunes-dagi-haritasi",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "dc51166b-d69d-4fb2-a3aa-165b149b65da"
+  },
+  {
+    "kod": "hr087-buzulun-kalbindeki-kayit",
+    "slug": "hr087-buzulun-kalbindeki-kayit",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "91d6c613-7380-4d69-9416-21676e10d5c5"
+  },
+  {
+    "kod": "hr088-sahmeranin-sakladigi-ikinci-soru",
+    "slug": "hr088-sahmeranin-sakladigi-ikinci-soru",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "cd8a1282-8daf-49a7-88df-834d4a2c17cb"
+  },
+  {
+    "kod": "hr089-beyrekin-sozunun-agirligi",
+    "slug": "hr089-beyrekin-sozunun-agirligi",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "e006ce85-3c66-41aa-a910-040a67527972"
+  },
+  {
+    "kod": "hr090-gece-kutuphanesinin-nobetcileri",
+    "slug": "hr090-gece-kutuphanesinin-nobetcileri",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "b53b4e50-ffbe-46ee-97fd-5b31e944097d"
+  },
+  {
+    "kod": "hr091-ankanin-kayip-rotasi",
+    "slug": "hr091-ankanin-kayip-rotasi",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "7a7f8e8f-71eb-447d-859b-3a86346e6392"
+  },
+  {
+    "kod": "hr092-denizalti-09dan-mesaj",
+    "slug": "hr092-denizalti-09dan-mesaj",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "c84329d3-8fa6-4f9a-b109-e5314420d123"
+  },
+  {
+    "kod": "hr093-sahte-ay-fotografi",
+    "slug": "hr093-sahte-ay-fotografi",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "dfd51109-6ffe-4c00-a235-baabfed8fd29"
+  },
+  {
+    "kod": "hr099-iki-takim-tek-proje",
+    "slug": "hr099-iki-takim-tek-proje",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "44129b29-d795-4b6f-9671-8fa026fb8208"
+  },
+  {
+    "kod": "hr100-son-turda-yon-degistirmek",
+    "slug": "hr100-son-turda-yon-degistirmek",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "surum_id": "2931475c-e6e0-4e0e-9d27-54aca90654fc"
+  },
+  {
+    "kod": "hr101-kayip-arsivin-yedi-tanigi",
+    "slug": "hr101-kayip-arsivin-yedi-tanigi",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "9f911983-fce7-478f-baa1-12c006b4ad76"
+  },
+  {
+    "kod": "hr102-golgenin-sahibi-kim",
+    "slug": "hr102-golgenin-sahibi-kim",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "522c4c23-aa9a-4d1d-8baf-c14e0cfced27"
+  },
+  {
+    "kod": "hr103-kutuphanedeki-son-sifre",
+    "slug": "hr103-kutuphanedeki-son-sifre",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "dd4e2565-1a45-43a8-9d8b-4f05540d0b9c"
+  },
+  {
+    "kod": "hr104-sifirinci-katin-sirri",
+    "slug": "hr104-sifirinci-katin-sirri",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "96491ac6-a9e3-457b-8f27-7616b8587227"
+  },
+  {
+    "kod": "hr105-kuzey-ruzgarinin-pesinde",
+    "slug": "hr105-kuzey-ruzgarinin-pesinde",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "70e43535-f781-412f-8698-01ed7478ffd2"
+  },
+  {
+    "kod": "hr106-col-haritasindaki-bosluk",
+    "slug": "hr106-col-haritasindaki-bosluk",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "87d01d93-2e8d-43a8-a3c6-b3069ff8bdb6"
+  },
+  {
+    "kod": "hr107-seksen-gunde-bir-durak",
+    "slug": "hr107-seksen-gunde-bir-durak",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "0f5d14b4-2774-433a-bd77-880c75578e3a"
+  },
+  {
+    "kod": "hr108-dumrulun-zor-sorusu",
+    "slug": "hr108-dumrulun-zor-sorusu",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "ffa4fecd-2038-4265-9000-483f44887db7"
+  },
+  {
+    "kod": "hr109-karanliktaki-filin-bes-yorumu",
+    "slug": "hr109-karanliktaki-filin-bes-yorumu",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "9c974d9d-a60a-44fd-9795-096fbb0b3803"
+  },
+  {
+    "kod": "hr110-yitik-zamanin-haritacilari",
+    "slug": "hr110-yitik-zamanin-haritacilari",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "888c3405-be60-4110-95b1-9691cde41e9b"
+  },
+  {
+    "kod": "hr111-cam-sehrin-kirik-yasasi",
+    "slug": "hr111-cam-sehrin-kirik-yasasi",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "0a092bc7-c2ba-483e-b23e-5dc661fdb193"
+  },
+  {
+    "kod": "hr112-2055-hatirlayan-sehir",
+    "slug": "hr112-2055-hatirlayan-sehir",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "e31d1b71-cd18-49a9-8a67-78cb046dc932"
+  },
+  {
+    "kod": "hr113-yorunge-disi",
+    "slug": "hr113-yorunge-disi",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "42ef1bff-9eb9-4bc0-95d7-c5a9ed936b5e"
+  },
+  {
+    "kod": "hr114-dunyanin-son-kutuphanesi",
+    "slug": "hr114-dunyanin-son-kutuphanesi",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "surum_id": "5a3ac220-0c29-4717-a0c9-9db369b2f12d"
+  }
+]

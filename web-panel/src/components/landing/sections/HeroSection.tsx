@@ -1,14 +1,15 @@
-import { IconArrowRight, IconInfo } from "@/components/landing/Icons";
+import { IconArrowRight } from "@/components/landing/Icons";
 import { landingPrimaryBtn } from "@/components/landing/buttons";
 import { TrackedLink } from "@/components/analytics/TrackedLink";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
 // Örnek veli raporu: gerçek bir öğrenciye ait değildir, etiketiyle birlikte gösterilir.
+// Düşük oranlı derste kırmızı damga yerine nötr çubuk ve "Tekrar önerilir" notu kullanılır.
 const SAMPLE_SUBJECTS = [
-  { label: "Türkçe", pct: 82, bar: "bg-success-500" },
-  { label: "Matematik", pct: 58, bar: "bg-warning-500" },
-  { label: "Fen Bilimleri", pct: 44, bar: "bg-error-500" },
+  { label: "Türkçe", pct: 82, review: false },
+  { label: "Matematik", pct: 58, review: true },
+  { label: "Fen Bilimleri", pct: 44, review: true },
 ];
 
 export async function HeroSection() {
@@ -18,6 +19,9 @@ export async function HeroSection() {
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-12 pt-10 sm:px-6 sm:pb-14 sm:pt-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-8 lg:pb-16 lg:pt-14">
       <div>
+        <p className="mb-4 inline-flex rounded-full bg-gold-100 px-3 py-1 text-sm font-bold text-gold-900 dark:bg-gold-900/30 dark:text-gold-200">
+          {t("hero.badge")}
+        </p>
         <h1 className="text-balance text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl lg:text-[3.4rem]">
           {t("hero.title")}
         </h1>
@@ -44,10 +48,6 @@ export async function HeroSection() {
           </TrackedLink>
         </div>
         <p className="mt-4 text-sm text-navy-muted dark:text-gray-400">{t("hero.note")}</p>
-        <p className="mt-6 inline-flex items-start gap-2 rounded-xl bg-white/70 px-4 py-3 text-sm text-navy-muted ring-1 ring-cream-dark dark:bg-gray-900 dark:text-gray-300 dark:ring-gray-700">
-          <IconInfo className="mt-0.5 h-4 w-4 shrink-0 text-brand-600 dark:text-brand-300" />
-          {t("hero.pilot")}
-        </p>
       </div>
 
       <div className="relative mx-auto w-full max-w-sm pb-2 pt-12 sm:pb-6 sm:pt-0 lg:max-w-none">
@@ -111,10 +111,15 @@ export async function HeroSection() {
               <li key={s.label}>
                 <div className="flex justify-between text-xs font-semibold text-navy dark:text-gray-200">
                   <span>{s.label}</span>
-                  <span>%{s.pct}</span>
+                  <span>
+                    {s.review && (
+                      <span className="me-2 font-bold text-navy-muted dark:text-gray-400">{t("hero.sampleReview")}</span>
+                    )}
+                    %{s.pct}
+                  </span>
                 </div>
                 <div className="mt-1 h-2 overflow-hidden rounded-full bg-cream-dark dark:bg-gray-700">
-                  <div className={`h-full rounded-full ${s.bar}`} style={{ width: `${s.pct}%` }} />
+                  <div className="h-full rounded-full bg-brand-500" style={{ width: `${s.pct}%` }} />
                 </div>
               </li>
             ))}

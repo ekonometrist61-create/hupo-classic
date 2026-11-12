@@ -81,7 +81,7 @@ class _KilitliKart extends StatelessWidget {
             ),
             const SizedBox(height: 6),
             Text(
-              'Tekrar listen ve temel derslerin açık. Bu bölüm için veli panelinden devam edebilirsin.',
+              'Tekrar listen ve temel derslerin açık. Bu bölüm veli planıyla açılır; velin, veli panelinden inceleyebilir.',
               textAlign: TextAlign.center,
               style: appText(size: 14, weight: FontWeight.w700),
             ),

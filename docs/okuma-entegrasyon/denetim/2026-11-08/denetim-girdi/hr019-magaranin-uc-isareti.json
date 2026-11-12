@@ -1,0 +1,570 @@
+{
+  "hikaye": {
+    "tur": "macera",
+    "konu": "magara",
+    "slug": "hr019-magaranin-uc-isareti",
+    "durum": "taslak",
+    "baslik": "Mağaranın Üç İşareti",
+    "tanitim": "Mağara girişindeki üç gizemli işaret hazineyi mi gösteriyor? İzleri doğru okumak sanıldığından zor.",
+    "fis_kodu": "HR-019",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D5",
+        "yardimci_deger": "D14"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 5,
+        "sayfa_sayisi": 7,
+        "simge_sayisi": 11,
+        "kelime_sayisi": 359,
+        "tahmini_sure_dk": 5,
+        "yoldas_yer_sayisi": 7,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 2,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "kesif",
+        "doga",
+        "gizem"
+      ],
+      "ana_sinif": 3,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "iz_hr019",
+          "tur": "lexeme",
+          "yuva": "pa_iz",
+          "islev": "first_hint",
+          "etiket": "iz"
+        },
+        {
+          "id": "katman_hr019",
+          "tur": "lexeme",
+          "yuva": "pa_katman",
+          "islev": "application",
+          "etiket": "katman"
+        },
+        {
+          "id": "tahmin_hr019",
+          "tur": "lexeme",
+          "yuva": "pa_tahmin",
+          "islev": "application",
+          "etiket": "tahmin"
+        },
+        {
+          "id": "kavram_hr019",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Varsayım ve kanıt"
+        }
+      ]
+    },
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 2,
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D5",
+      "D14"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pa_iz",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pa_iz"
+          }
+        ]
+      },
+      {
+        "ad": "pa_katman",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pa_katman"
+          }
+        ]
+      },
+      {
+        "ad": "pa_tahmin",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pa_tahmin"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pa_iz",
+        "tur": "kelime",
+        "anlam": "Bir şeyin ya da birinin geçtiği yerde bıraktığı belirti.",
+        "yazim": "iz",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "pa_katman",
+        "tur": "kelime",
+        "anlam": "Üst üste duran tabakalardan her biri.",
+        "yazim": "katman",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      },
+      {
+        "id": "pa_tahmin",
+        "tur": "kelime",
+        "anlam": "Kesin bilmeden, ipuçlarına bakarak düşünülen sonuç.",
+        "yazim": "tahmin",
+        "sinif_alt": 3,
+        "sinif_ust": 3
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "Üçüncü işaretin gerçekte ne olduğu anlaşıldı?",
+      "beceri": "hatirlama",
+      "aciklama": "Büyüteçle bakınca dairelerin kayanın içindeki doğal boşluklar olduğunu gördüler.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir çift göz resmi"
+        },
+        {
+          "id": "B",
+          "metin": "Kayanın içindeki doğal yuvarlak boşluklar"
+        },
+        {
+          "id": "C",
+          "metin": "Hazinenin yerini gösteren daireler"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s2",
+      "dogru": "C",
+      "metin": "Çocuk bilgi levhasını okuyunca neden utandı?",
+      "beceri": "cikarim",
+      "aciklama": "Levhada boşlukların suyun kayaları aşındırmasıyla oluştuğu yazıyordu; çocuk hazine sandığı için utandı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Mağaraya girmek istediği için"
+        },
+        {
+          "id": "B",
+          "metin": "Rehberi dinlemediği için"
+        },
+        {
+          "id": "C",
+          "metin": "Hazine olduğunu sanmış, ama boşlukların suyla oluştuğunu öğrenmişti"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Rehberin \"Önemli olan yeni bilgi geldiğinde düşüncemizi değiştirebilmek\" sözü neyi anlatır?",
+      "beceri": "yorumlama",
+      "aciklama": "Rehber, tahmin etmenin kötü olmadığını, önemli olanın yeni bilgiyle düşünceyi değiştirmek olduğunu söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yeni şeyler öğrendikçe fikrimizi gözden geçirmemiz gerektiğini"
+        },
+        {
+          "id": "B",
+          "metin": "İlk tahminimizde hep ısrar etmemiz gerektiğini"
+        },
+        {
+          "id": "C",
+          "metin": "Rehberlerin hiç yanılmadığını"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s4",
+      "dogru": "C",
+      "metin": "Metinde geçen katman sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Taş katmanları üst üste duran açık ve koyu renkli tabakalardı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir tür harita"
+        },
+        {
+          "id": "B",
+          "metin": "Kayanın içindeki boşluk"
+        },
+        {
+          "id": "C",
+          "metin": "Üst üste duran tabakalardan her biri"
+        }
+      ],
+      "dayanak_sayfa": 5
+    },
+    {
+      "id": "s5",
+      "dogru": "B",
+      "metin": "Çocuk dönüş yolunda bulduğu çakıl taşını ne yaptı?",
+      "beceri": "hatirlama",
+      "aciklama": "Taşı almadı; hatıra olarak fotoğraf ve çizimlerin yeteceğini söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Cebine koydu"
+        },
+        {
+          "id": "B",
+          "metin": "Ait olduğu yerde bıraktı"
+        },
+        {
+          "id": "C",
+          "metin": "Defterine yapıştırdı"
+        }
+      ],
+      "dayanak_sayfa": 7
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rehber Zeynep Hanım, gezi grubunu mağaranın önünde durdurdu. Girişte serin bir hava hissediliyor, kayalıkların üzerinde üç eski işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"İçeri girsek ne güzel olur!\" dedi. Rehber başını salladı: \"Burası koruma altında. Bugün mağaraya girmeden çevresindeki izleri okuyacağız.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": ", dalgaya benzeyen kıvrımlı bir çizgiydi. Çocuklar bunun bir nehir resmi olduğunu düşündü. Zeynep Hanım, çizginin yanında üst üste duran taş katmanlarını gösterdi. \"Sizce bu kayalar bir günde mi oluştu?\" diye sordu. \"Hayır,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Belki çok uzun zamanda.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": ", üçgen biçimindeydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun hazineyi gösterdiğini iddia etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ise rehberin dağıttığı haritada aynı üçgenin bir tepeyi gösterdiğini fark etti. İkisi haritayı çevirdi; çevredeki tepelerin yerini işaretlediler. Üçüncü işaret en küçüğüydü: Yan yana iki daire. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun iki göz olduğunu söyledi. Rehber büyüteci "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " uzattı. Dairelerin aslında kayanın içindeki doğal yuvarlak boşluklar olduğunu gördüler. \"Her "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_iz"
+        },
+        {
+          "t": "metin",
+          "v": " bir insanın bıraktığı işaret değildir,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Grup, mağaranın önüne konan bilgi levhasını okudu. Burada geçmişte suyun kayaları aşındırdığı, bazı boşlukların böyle oluştuğu anlatılıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " biraz utandı. \"Hazine"
+        },
+        {
+          "t": "ikon",
+          "v": "chest"
+        },
+        {
+          "t": "metin",
+          "v": " var sandım,\" diye mırıldandı. Zeynep Hanım gülümsedi. \""
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_tahmin"
+        },
+        {
+          "t": "metin",
+          "v": " etmek kötü değil. Önemli olan yeni bilgi geldiğinde düşüncemizi değiştirebilmek.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rehber çocuklara taş katmanlarının fotoğraflarını gösterdi. En üstte açık renkli ince bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_katman"
+        },
+        {
+          "t": "metin",
+          "v": ", altında koyu renkli daha kalın bir katman vardı. \"Pastanın katları gibi,\" dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". Zeynep Hanım benzetmeyi sevdi ama ekledi: \"Kayaların nasıl"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " oluştuğunu anlamak"
+        },
+        {
+          "t": "ikon",
+          "v": "lightning-idea"
+        },
+        {
+          "t": "metin",
+          "v": " için bilim"
+        },
+        {
+          "t": "ikon",
+          "v": "microscope"
+        },
+        {
+          "t": "metin",
+          "v": " insanları daha çok gözlem yapar. Tek fotoğrafla bütün geçmişi bilemeyiz.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " taşların yüzeyindeki küçük delikleri merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " etti. Rehber, bazılarını suyun ve zamanla gerçekleşen aşınmanın oluşturabileceğini anlattı; başka nedenlerin de olabileceğini söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Öyleyse her deliğe eski insan işareti dememeliyiz,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk tahminine yeniden baktı. Hazine"
+        },
+        {
+          "t": "ikon",
+          "v": "chest"
+        },
+        {
+          "t": "metin",
+          "v": " beklerken kayaların kendi öyküsünü dinlemek ona daha ilginç gelmeye başlamıştı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar üç işareti defterlerine sırayla çizdi: kıvrımlı katman, tepe"
+        },
+        {
+          "t": "ikon",
+          "v": "mountain"
+        },
+        {
+          "t": "metin",
+          "v": " simgesi ve doğal boşluk. Sonra defterleri karıştırıp birbirlerine ne anlama geldiklerini sordular. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Ben en çok üçüncüsünde yanıldım,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ise \"İlk işaretin de tam anlamını araştırmamız gerek,\" diye ekledi. Dönüş yolunda "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir çakıl taşı buldu. Onu cebine koymak yerine ait olduğu yerde bıraktı. \"Hatıra olarak fotoğraf ve çizimlerimiz yeter,\" dedi. Mağaranın karanlığı ardında kalmıştı; fakat çocukların aklında açılan sorular daha da aydınlıktı."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

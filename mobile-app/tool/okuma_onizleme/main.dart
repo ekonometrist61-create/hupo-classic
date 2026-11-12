@@ -15,7 +15,7 @@ import 'package:ogrenci_hazirlik/providers/okuma_providers.dart';
 import 'package:ogrenci_hazirlik/services/okuma_repository.dart';
 import 'package:ogrenci_hazirlik/settings/app_settings.dart';
 import 'package:ogrenci_hazirlik/theme/app_theme.dart';
-import 'package:ogrenci_hazirlik/widgets/okuma/okuma_bugun_karti.dart';
+import 'package:ogrenci_hazirlik/widgets/okuma/okuma_vitrin.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'onizleme_veri.dart';
@@ -73,7 +73,7 @@ class _Onizleme extends ConsumerWidget {
                   children: [
                     Text('Öğren (önizleme)', style: appText(size: 30, weight: FontWeight.w900)),
                     const SizedBox(height: 24),
-                    const OkumaBugunKarti(),
+                    const OkumaVitrin(),
                     Text('Dersler', style: appText(size: 19, weight: FontWeight.w900)),
                   ],
                 ),
@@ -125,6 +125,10 @@ class OnizlemeOkumaRepository implements OkumaRepository {
   @override
   Future<List<OkumaKatalogSatiri>> katalog({String? kahramanTuru, int limit = 24}) async =>
       [if (kahramanTuru == null || _satir.izinliTurler.contains(kahramanTuru)) _satir];
+
+  // Sunucu sözlüğü yok: akış paket sözlüğüyle devam eder (test sahte deposuyla aynı).
+  @override
+  Future<Map<String, dynamic>?> sozlukGetir(String hikayeId) async => null;
 
   @override
   Future<OkumaPaketi> hikayeGetir(String hikayeId) async {

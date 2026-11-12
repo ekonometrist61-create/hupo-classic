@@ -87,6 +87,24 @@ const var_ = new Set(fn.rows.map((r) => r.proname));
 console.log('\nFonksiyon varlığı:');
 for (const ad of beklenen) console.log(`  ${var_.has(ad) ? 'VAR ' : 'YOK '} ${ad}`);
 
+// Bilinen taban çizgisi: aşağıdaki 15 dosya boş PGlite zincirinde (stub'lar eksik sütun/yönetici profili
+// içerdiği için) hata verir; uzak veritabanında zaten uygulanmışlardır. Bunlar dışında yeni bir HATA
+// çıkarsa koşucu 1 koduyla biter, böylece yeni migration regresyonu fark edilir.
+const BILINEN_HATALAR = new Set([
+  '20261015120000_site_gorselleri.sql', '20261034000000_telefon_dogrulama.sql',
+  '20261059000000_okuma_pilot2_icerik.sql', '20261061000000_okuma_pilot2_guncelleme.sql',
+  '20261062000000_okuma_pilot3_4_icerik.sql', '20261067000000_okuma_pilot4_6_icerik.sql',
+  '20261069000000_okuma_test_yayini.sql', '20261072000000_okuma_uzun_hikayeler_bolunmus.sql',
+  '20261077000000_okuma_ikon_sozluk_taslak.sql', '20261081000000_search_path_standart.sql',
+  '20261082000000_okuma_canli_duzeltme.sql', '20261087000000_okuma_yerel_hikaye_taslak.sql',
+  '20261089000000_okuma_sozluk_yukle.sql', '20261091000000_okuma_ajan_denetim_isle.sql',
+  '20261092000000_okuma_ajan_denetim_surum_bazli.sql',
+]);
+const yeniHatalar = hatali.filter((s) => !BILINEN_HATALAR.has(s.dosya));
+console.log(`\nBilinen taban çizgisi dışı yeni HATA: ${yeniHatalar.length}`);
+for (const s of yeniHatalar) console.log(`  YENI ${s.dosya}: ${s.mesaj}`);
+if (yeniHatalar.length > 0) process.exitCode = 1;
+
 // Sonuç dosyası (scratchpad'e değil, koşucunun yanına yazılır; .gitignore'a girmesin diye JSON değil metin).
 fs.writeFileSync(path.join(here, 'SONUC.txt'), [
   `Zincir: ${sonuclar.length} dosya, ${sonuclar.length - hatali.length} OK, ${hatali.length} HATA`,

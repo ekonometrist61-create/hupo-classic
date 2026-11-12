@@ -34,7 +34,7 @@ function tarihFormatla(iso: string) {
 export default function AbonelikKarti() {
   const t = useTranslations("veliPaneli.abonelik");
   const [abonelik, setAbonelik] = useState<Abonelik | null | "yukleniyor">("yukleniyor");
-  const [hata, setHata] = useState<string | null>(null);
+  const [hata, setHata] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -53,7 +53,8 @@ export default function AbonelikKarti() {
         .maybeSingle();
 
       if (cancelled) return;
-      if (error) { setHata(error.message); setAbonelik(null); return; }
+      // Ham sunucu iletisi gösterilmez; kullanıcı dostu metin kullanılır.
+      if (error) { setHata(true); setAbonelik(null); return; }
       if (!data) { setAbonelik(null); return; }
 
       setAbonelik({
@@ -78,6 +79,12 @@ export default function AbonelikKarti() {
     };
   };
 
+  // K-0256: web planları (iyzico/paytr/param/manuel) tek seferlik; mağaza abonelikleri için bilgi yok.
+  const webPlani =
+    abonelik !== null &&
+    abonelik !== "yukleniyor" &&
+    ["iyzico", "paytr", "param", "manuel"].includes(abonelik.saglayici || "manuel");
+
   return (
     <div className="min-w-0 rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 dark:border-gray-800 dark:bg-white/3">
       <h3 className="mb-4 text-lg font-semibold text-gray-800 dark:text-white/90">
@@ -89,7 +96,7 @@ export default function AbonelikKarti() {
       )}
 
       {hata && (
-        <p role="alert" className="text-sm text-error-500">{hata}</p>
+        <p role="alert" className="text-sm text-error-500">{t("hata")}</p>
       )}
 
       {abonelik === null && !hata && (
@@ -135,11 +142,11 @@ export default function AbonelikKarti() {
             <dl className="mt-2 space-y-1 text-sm text-gray-700 dark:text-gray-300">
               <div>
                 <dt className="inline font-medium">{t("yenileme")}: </dt>
-                <dd className="inline">{t("bilinmiyor")}</dd>
+                <dd className="inline">{webPlani ? t("yenilenmez") : t("bilinmiyor")}</dd>
               </div>
             </dl>
             <p className="mt-2 text-theme-xs text-gray-500 dark:text-gray-400">
-              {t("iptalNot")}
+              {webPlani ? t("iptalNotWeb") : t("iptalNot")}
             </p>
           </div>
         </div>

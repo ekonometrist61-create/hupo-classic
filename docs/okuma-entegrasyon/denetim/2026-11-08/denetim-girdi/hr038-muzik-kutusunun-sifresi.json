@@ -1,0 +1,679 @@
+{
+  "hikaye": {
+    "tur": "gizem",
+    "konu": "muzik_kutusu",
+    "slug": "hr038-muzik-kutusunun-sifresi",
+    "durum": "taslak",
+    "baslik": "Müzik Kutusunun Şifresi",
+    "tanitim": "Kilidi anahtarsız bir müzik kutusu. Şifre dört notada saklı mı, yoksa başka bir yerde mi?",
+    "fis_kodu": "HR-038",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D2",
+        "yardimci_deger": "D5"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 6,
+        "sayfa_sayisi": 8,
+        "simge_sayisi": 19,
+        "kelime_sayisi": 522,
+        "tahmini_sure_dk": 6,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 2,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "aile",
+        "gizem",
+        "sanat_yaraticilik"
+      ],
+      "ana_sinif": 4,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "nota_hr038",
+          "tur": "lexeme",
+          "yuva": "pc_nota",
+          "islev": "first_hint",
+          "etiket": "nota"
+        },
+        {
+          "id": "duraklama_hr038",
+          "tur": "lexeme",
+          "yuva": "pc_duraklama",
+          "islev": "application",
+          "etiket": "duraklama"
+        },
+        {
+          "id": "armagan_hr038",
+          "tur": "lexeme",
+          "yuva": "pc_armagan",
+          "islev": "application",
+          "etiket": "armağan"
+        },
+        {
+          "id": "kavram_hr038",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Ritim, çıkarım ve aile belleği"
+        },
+        {
+          "id": "atasoz_hr038",
+          "tur": "proverb",
+          "yuva": "pc_ata_acele",
+          "islev": "application",
+          "etiket": "Acele işe şeytan karışır"
+        }
+      ]
+    },
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D2",
+      "D5"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pc_nota",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_nota"
+          }
+        ]
+      },
+      {
+        "ad": "pc_duraklama",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_duraklama"
+          }
+        ]
+      },
+      {
+        "ad": "pc_armagan",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_armagan"
+          }
+        ]
+      },
+      {
+        "ad": "pc_ata_acele",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "pc_ata_acele"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pc_nota",
+        "tur": "kelime",
+        "anlam": "Müzikte bir sesi göstermek için kullanılan işaret ya da o ses.",
+        "yazim": "nota",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_duraklama",
+        "tur": "kelime",
+        "anlam": "Bir işin ya da sesin kısa bir süre durması.",
+        "yazim": "duraklama",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_armagan",
+        "tur": "kelime",
+        "anlam": "Sevgi ya da saygı göstermek için birine verilen hediye.",
+        "yazim": "armağan",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_ata_acele",
+        "tur": "atasozu",
+        "anlam": "Aceleyle yapılan işte hata yapma olasılığı artar.",
+        "yazim": "Acele işe şeytan karışır",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "C",
+      "metin": "Müzik kutusunun üzerinde kaç küçük düğme vardı?",
+      "beceri": "hatirlama",
+      "aciklama": "Kutunun üzerinde dört küçük düğme vardı; her biri başka bir nota çalıyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İki"
+        },
+        {
+          "id": "B",
+          "metin": "Üç"
+        },
+        {
+          "id": "C",
+          "metin": "Dört"
+        },
+        {
+          "id": "D",
+          "metin": "Beş"
+        }
+      ],
+      "dayanak_sayfa": 1
+    },
+    {
+      "id": "s2",
+      "dogru": "B",
+      "metin": "Fotoğrafın kenarındaki \"Sonunda hep birlikte sus\" cümlesinden ne anlaşılır?",
+      "beceri": "cikarim",
+      "aciklama": "Çocuklar son işaretin bir ses değil, duraklama olduğunu anladı ve kilit açıldı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kutunun hiç çalınmaması gerektiği"
+        },
+        {
+          "id": "B",
+          "metin": "Son düğmeden sonra bir an sessiz beklemek gerektiği"
+        },
+        {
+          "id": "C",
+          "metin": "Bütün düğmelere aynı anda basılması gerektiği"
+        },
+        {
+          "id": "D",
+          "metin": "Kutunun yalnızca geceleri açılacağı"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s3",
+      "dogru": "D",
+      "metin": "Metinde geçen duraklama sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Çocuk son düğmeden sonra bir an bekledi; kilit bu sessizlikten sonra açıldı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çok yüksek ses"
+        },
+        {
+          "id": "B",
+          "metin": "Müziği hızlandırma"
+        },
+        {
+          "id": "C",
+          "metin": "Bir çalgıyı kırma"
+        },
+        {
+          "id": "D",
+          "metin": "Seslerin arasında kısa bir süre susup beklemek"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Çocuk \"Kutunun şifresi yalnızca nota değil, bir hatıraymış\" derken neyi anlatmak istedi?",
+      "beceri": "yorumlama",
+      "aciklama": "Kutuyu açan melodi, büyükannenin çocukluk arkadaşıyla paylaştığı bir hatıraydı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kutuyu açan şeyin yalnız sesler değil, geçmişten gelen bir anı ve bir dostluk olduğunu"
+        },
+        {
+          "id": "B",
+          "metin": "Kutunun içinde altın bulunduğunu"
+        },
+        {
+          "id": "C",
+          "metin": "Notaların hiç önemli olmadığını"
+        },
+        {
+          "id": "D",
+          "metin": "Kutunun artık çalışmayacağını"
+        }
+      ],
+      "dayanak_sayfa": 7
+    },
+    {
+      "id": "s5",
+      "dogru": "B",
+      "metin": "Çocukların kapağı açmadan önce bir bez serip kutuyu yavaşça kaldırması neden yerindedir?",
+      "beceri": "degerlendirme",
+      "aciklama": "Metne göre kapakta küçük bir çizik vardı; zorlayarak açmak hatıraya zarar verebilirdi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kutu çok ağır olduğu için"
+        },
+        {
+          "id": "B",
+          "metin": "Eski eşyalara dikkatle davranmak, hatıraya zarar vermemek için önemlidir"
+        },
+        {
+          "id": "C",
+          "metin": "Kapak kendiliğinden açılacağı için"
+        },
+        {
+          "id": "D",
+          "metin": "Bez kutuyu parlak gösterdiği için"
+        }
+      ],
+      "dayanak_sayfa": 5
+    },
+    {
+      "id": "s6",
+      "dogru": "C",
+      "metin": "Kutunun içinden neler çıktı?",
+      "beceri": "hatirlama",
+      "aciklama": "Kutunun içinde altın ya da mücevher yoktu; kart, fotoğraf ve mektup vardı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Altın ve mücevher"
+        },
+        {
+          "id": "B",
+          "metin": "Bir harita ve bir anahtar"
+        },
+        {
+          "id": "C",
+          "metin": "Küçük bir kart, sararmış bir fotoğraf ve sarı kurdeleli bir mektup"
+        },
+        {
+          "id": "D",
+          "metin": "Yeni bir müzik kutusu"
+        }
+      ],
+      "dayanak_sayfa": 6
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Büyükanne Zeliha, eski ceviz sandığını açtığında içinden avuç içi kadar bir müzik"
+        },
+        {
+          "t": "ikon",
+          "v": "music"
+        },
+        {
+          "t": "metin",
+          "v": " kutusu çıktı. Kapağındaki küçük kuşun kanadı kırılmıştı; altındaki kilit"
+        },
+        {
+          "t": "ikon",
+          "v": "lock"
+        },
+        {
+          "t": "metin",
+          "v": " ise anahtarsızdı. \"Bu kutu eskiden şarkı söylerdi,\" dedi Zeliha. \"Ama nasıl açıldığını unuttum.\" Torunları "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve Aras kutuyu incelemeye başladılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de not almak için küçük bir kâğıt çıkardı. Kutunun üzerinde dört küçük düğme vardı. Her düğmeye basınca başka bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_nota"
+        },
+        {
+          "t": "metin",
+          "v": " duyuluyordu: do, re, mi, sol."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " daha önce okulun müzik"
+        },
+        {
+          "t": "ikon",
+          "v": "music"
+        },
+        {
+          "t": "metin",
+          "v": " dersinde seslerin yüksekliğiyle süresinin aynı şey olmadığını öğrenmişti. İnce ve kalın sesler bir özelliği, kısa ve uzun süreler başka bir özelliği anlatıyordu. Aras, \"Ben en yüksek sesi bulmamız gerektiğini sanmıştım,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Belki notalar doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " ama çalma biçimimiz yanlış,\" diye cevap verdi. Bu yüzden acele etmek yerine duyduklarını küçük işaretlerle yazmaya karar verdiler. Zeliha gülümseyerek, \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pc_ata_acele"
+        },
+        {
+          "t": "metin",
+          "v": "\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Aras düğmelere rastgele bastı. Kutu küçük bir tık sesi çıkardı ama açılmadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kapağın kenarındaki işaretleri gösterdi: iki kısa çizgi, bir uzun çizgi ve küçük bir nokta. \"Bunlar seslerin süresini anlatıyor olabilir,\" dedi. Çocuklar masaya dört renkli kâğıt koydu. Her notaya bir renk verdiler ve duydukları sesleri sırayla yazdılar. İlk deneme başarısızdı. İkinci denemede müzik"
+        },
+        {
+          "t": "ikon",
+          "v": "music"
+        },
+        {
+          "t": "metin",
+          "v": " kutusu dört nota çaldı ama yine kapalı kaldı. \"Belki sırayı doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": ", ritmi yanlış çalıyoruz,\" diye düşündü "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Büyükanne pencerenin yanından eski bir fotoğraf getirdi. Fotoğrafta küçük Zeliha, bir arkadaşıyla birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " piyano başındaydı. Kenarına şu cümle yazılmıştı: *Önce iki kısa, sonra bir uzun. Sonunda hep birlikte sus.* Aras heyecanlandı. \"Sonunda bir ses"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " daha yok. Bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_duraklama"
+        },
+        {
+          "t": "metin",
+          "v": " var!\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " notaları doğru sırayla çaldı; son düğmeden sonra bir an bekledi. Kapağın içinden yumuşak bir çıtırtı duyuldu. Kilit"
+        },
+        {
+          "t": "ikon",
+          "v": "lock"
+        },
+        {
+          "t": "metin",
+          "v": " açılmıştı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Aras, kapağı açmadan hemen önce bir kez daha durdu. \"Büyükanne, ya içindeki şey kırılacak kadar hassassa?\" diye sordu. Zeliha bir bez getirdi ve masanın üzerine serdi. Çocuklar kutuyu onun üstüne koyup kapağını yavaşça kaldırdılar. Sır çözmek"
+        },
+        {
+          "t": "ikon",
+          "v": "lightning-idea"
+        },
+        {
+          "t": "metin",
+          "v": " onları heyecanlandırıyordu fakat eski eşyalara dikkatle davranmak da önemliydi. Sonradan fark ettiler ki kapakta küçük bir çizik vardı; onu zorlayarak açmaya kalksalardı hatıraya zarar verebilirlerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kutunun içinde altın ya da mücevher yoktu. Küçük bir kart, sararmış bir fotoğraf ve sarı kurdeleli bir mektup"
+        },
+        {
+          "t": "ikon",
+          "v": "scroll"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Mektupta, Zeliha'nın çocukluk arkadaşının uzak bir kente taşınmadan önce bu melodiyi armağan"
+        },
+        {
+          "t": "ikon",
+          "v": "gift"
+        },
+        {
+          "t": "metin",
+          "v": " ettiği yazıyordu. \"Çocukken birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " oyun oynardık,\" diye anlattı Zeliha. \"Bir gün bu küçük melodiyi her buluşmamızda çalmaya söz verdik. Sonra taşındılar. Aradan yıllar geçti ama bir melodiyi duyunca sanki arkadaşım yanımdaymış gibi olur.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", müziğin yalnızca notalardan oluşmadığını düşündü. Bir şarkı, insanın belleğinde uzak bir güne açılan kapı da olabilirdi. Aras ise fotoğraftaki iki çocuğun yüzlerini dikkatle inceledi; şimdi büyükannesi olan küçük kızın gülüşünü hemen tanıdı. Büyükanne mektubu okuyunca gözleri doldu. \"Bu melodiyi birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " bestelemiştik,\" dedi. \"Yıllardır nerede sakladığımı düşünürdüm.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Demek kutunun şifresi yalnızca nota değil, bir hatıraymış,\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Aras kutuyu yeniden çaldı. Bu kez duraklamayı unutmadı. Büyükanne de müziğe hafifçe eşlik etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de sessizce dinledi. O akşam aile"
+        },
+        {
+          "t": "ikon",
+          "v": "house"
+        },
+        {
+          "t": "metin",
+          "v": " albümünden başka fotoğraflar çıkardılar. Aras her fotoğrafın arkasına kimlerin bulunduğunu yazmayı önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise büyükanneye anılarını kaydedecek küçük bir defter"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_armagan"
+        },
+        {
+          "t": "metin",
+          "v": " etti. Çünkü bir gün başkalarının da bu hikâyeleri öğrenmesini istiyorlardı. Müzik"
+        },
+        {
+          "t": "ikon",
+          "v": "music"
+        },
+        {
+          "t": "metin",
+          "v": " kutusunun kanadı hâlâ kırıktı. Ama artık onun için önemli olan kusursuz görünüşü değil, içinde sakladığı seslerdi. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kalp"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

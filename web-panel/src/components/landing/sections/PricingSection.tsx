@@ -77,9 +77,12 @@ export async function PricingSection() {
             {t("desc")}
           </p>
           {denemeGun ? (
-            <p className="mt-3 text-sm font-bold text-brand-700 dark:text-brand-300">
-              {t("trialDays", { gun: denemeGun })}
-            </p>
+            <>
+              <p className="mt-3 text-sm font-bold text-brand-700 dark:text-brand-300">
+                {t("trialDays", { gun: denemeGun })}
+              </p>
+              <p className="mt-1 text-sm text-navy-muted dark:text-gray-400">{t("trialNote")}</p>
+            </>
           ) : null}
         </div>
 
@@ -129,7 +132,7 @@ export async function PricingSection() {
 
                 {/* Tüm paketler kayıt ekranına gider; ücretsiz deneme veli hesabı açılınca başlar (migration 20261125000000). */}
                 <TrackedLink
-                  href="/veli-paneli/kayit"
+                  href={`/veli-paneli/kayit?plan=${encodeURIComponent(tip.kod)}`}
                   olay="fiyat_tiklandi"
                   ozellik={{ plan: tip.kod }}
                   className={`mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-bold transition-colors duration-200 ease-hupo-out focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none ${
@@ -154,6 +157,10 @@ export async function PricingSection() {
             </p>
           ))}
         </div>
+
+        {/* Planlar arası ortak kapsam notu ve sakin pilot notu (ilk ekrandan taşındı). */}
+        <p className="mx-auto mt-6 max-w-2xl text-center text-sm text-navy-muted dark:text-gray-400">{t("sharedNote")}</p>
+        <p className="mx-auto mt-2 max-w-2xl text-center text-sm text-navy-muted dark:text-gray-400">{t("pilotNote")}</p>
       </div>
     </section>
   );

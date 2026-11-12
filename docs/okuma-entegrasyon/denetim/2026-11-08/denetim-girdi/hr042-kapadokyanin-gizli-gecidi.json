@@ -1,0 +1,1410 @@
+{
+  "hikaye": {
+    "tur": "macera",
+    "konu": "kapadokya_su_izi",
+    "slug": "hr042-kapadokyanin-gizli-gecidi",
+    "durum": "taslak",
+    "baslik": "Kapadokya'nın Gizli Geçidi",
+    "tanitim": "Kayada bir su damlası işareti var. Gizli bir geçidin ipucu mu, yoksa başka bir hikâye mi?",
+    "fis_kodu": "HR-042",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D6"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 7,
+        "sayfa_sayisi": 24,
+        "simge_sayisi": 47,
+        "kelime_sayisi": 2073,
+        "tahmini_sure_dk": 20,
+        "yoldas_yer_sayisi": 18,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 2,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 2
+        }
+      },
+      "temalar": [
+        "kesif",
+        "kultur_miras",
+        "doga"
+      ],
+      "ana_sinif": 5,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk_oyuk_hr042",
+          "tur": "lexeme",
+          "yuva": "pd_oyuk",
+          "islev": "first_hint",
+          "etiket": "oyuk"
+        },
+        {
+          "id": "sozcuk_kroki_hr042",
+          "tur": "lexeme",
+          "yuva": "pd_kroki",
+          "islev": "application",
+          "etiket": "kroki"
+        },
+        {
+          "id": "sozcuk_asinma_hr042",
+          "tur": "lexeme",
+          "yuva": "pd_asinma",
+          "islev": "application",
+          "etiket": "aşınma"
+        },
+        {
+          "id": "kavram_hr042",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Gözlem ile yorumu ayırmak; tarihî izlere dokunmadan, saygıyla incelemek"
+        },
+        {
+          "id": "atasoz_hr042",
+          "tur": "proverb",
+          "yuva": "pd_ata_damlaya",
+          "islev": "application",
+          "etiket": "Damlaya damlaya göl olur"
+        }
+      ]
+    },
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "kardes",
+      "arkadas",
+      "baska_biri"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D14",
+      "D6"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pd_oyuk",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pd_oyuk"
+          }
+        ]
+      },
+      {
+        "ad": "pd_kroki",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pd_kroki"
+          }
+        ]
+      },
+      {
+        "ad": "pd_asinma",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pd_asinma"
+          }
+        ]
+      },
+      {
+        "ad": "pd_ata_damlaya",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "pd_ata_damlaya"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pd_oyuk",
+        "tur": "kelime",
+        "anlam": "Bir yüzeyin, özellikle kayanın içeri doğru çökük bölümü.",
+        "yazim": "oyuk",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "pd_kroki",
+        "tur": "kelime",
+        "anlam": "Bir yerin ayrıntılara girmeden, el ile çizilmiş basit planı.",
+        "yazim": "kroki",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "pd_asinma",
+        "tur": "kelime",
+        "anlam": "Kayaların rüzgâr ve suyun etkisiyle zamanla yavaş yavaş yıpranması.",
+        "yazim": "aşınma",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "pd_ata_damlaya",
+        "tur": "atasozu",
+        "anlam": "Küçük şeyler birikerek zamanla büyük bir sonuç oluşturur.",
+        "yazim": "Damlaya damlaya göl olur",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "C",
+      "metin": "Broşürün arasından düşen krokinin gerçekte ne olduğu anlaşıldı?",
+      "beceri": "hatirlama",
+      "aciklama": "Broşürün arkasındaki bilgi, krokinin bir okul araştırması için hazırlanmış eğitim görseli olduğunu gösterdi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Tarihî bir hazine haritasının aslı"
+        },
+        {
+          "id": "B",
+          "metin": "Eski bir müzenin planı"
+        },
+        {
+          "id": "C",
+          "metin": "Eski su yollarını anlatmak için öğrencilerce hazırlanmış bir eğitim görseli"
+        },
+        {
+          "id": "D",
+          "metin": "Rehberin çizdiği bir yürüyüş rotası"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Kayadaki işaretle çeşmedeki simge arasında hangi fark fark edildi?",
+      "beceri": "hatirlama",
+      "aciklama": "Mert iki fotoğrafı yan yana açınca kayadaki izin daha yuvarlak, çeşmedekinin üç köşeli olduğu görüldü.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kayadaki iz daha yuvarlaktı, çeşmedeki ise üç köşeliydi"
+        },
+        {
+          "id": "B",
+          "metin": "Kayadaki iz çok daha büyüktü"
+        },
+        {
+          "id": "C",
+          "metin": "Çeşmedeki simge hiç su damlasına benzemiyordu"
+        },
+        {
+          "id": "D",
+          "metin": "İkisi de tıpatıp aynıydı"
+        }
+      ],
+      "dayanak_sayfa": 10
+    },
+    {
+      "id": "s3",
+      "dogru": "D",
+      "metin": "Rehber, benzer görünen iki işareti neden hemen aynı kabul etmedi?",
+      "beceri": "cikarim",
+      "aciklama": "Rehber, işaretlerin benzeyebileceğini ama eş olmak zorunda olmadığını, anlamın kullanıldığı yere göre değerlendirildiğini söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çünkü işaretlerin renkleri farklıydı"
+        },
+        {
+          "id": "B",
+          "metin": "Çünkü fotoğrafları kimse çekmemişti"
+        },
+        {
+          "id": "C",
+          "metin": "Çünkü işaretleri artık görmek mümkün değildi"
+        },
+        {
+          "id": "D",
+          "metin": "Çünkü bir şeklin anlamı, kullanıldığı yere göre değerlendirilir; benzemek aynı olmak demek değildir"
+        }
+      ],
+      "dayanak_sayfa": 10
+    },
+    {
+      "id": "s4",
+      "dogru": "B",
+      "metin": "Çocukların son sayfaya “Kesinleşmeyen sorular” kutusu çizmesi neyi gösterir?",
+      "beceri": "yorumlama",
+      "aciklama": "Rehber, araştırmanın bulamadığını da dürüstçe yazmak olduğunu söyledi; çocuklar da açık kalan soruyu not etti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Araştırmayı yarıda bıraktıklarını"
+        },
+        {
+          "id": "B",
+          "metin": "Bilmediklerini de dürüstçe yazmanın araştırmanın bir parçası olduğunu anladıklarını"
+        },
+        {
+          "id": "C",
+          "metin": "Rehberin kendilerini cezalandırdığını"
+        },
+        {
+          "id": "D",
+          "metin": "Bütün soruların cevabını bulduklarını"
+        }
+      ],
+      "dayanak_sayfa": 19
+    },
+    {
+      "id": "s5",
+      "dogru": "C",
+      "metin": "Bora, defterde ‘oyuk’ sözcüğünün yanına küçük bir çizim ekledi. Bu çizim neyi gösteriyordu?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Bora, oyuk sözcüğünün yanına kayanın içeri doğru çökük bölümünü gösteren bir çizim ekledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kayanın üstünde duran bir bayrak"
+        },
+        {
+          "id": "B",
+          "metin": "Kayadaki bir resim"
+        },
+        {
+          "id": "C",
+          "metin": "Kayanın içeri doğru çökük bölümü"
+        },
+        {
+          "id": "D",
+          "metin": "Kayanın tepesindeki sivri parça"
+        }
+      ],
+      "dayanak_sayfa": 23
+    },
+    {
+      "id": "s6",
+      "dogru": "A",
+      "metin": "Metne göre aşınma ne demektir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Gezi boyunca rüzgâr ve suyun kayaçları zamanla aşındırdığı anlatılmış, aşınma sözcüğü de bu etkiyle açıklanmıştı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kayaların rüzgâr ve suyun etkisiyle zamanla yavaş yavaş yıpranması"
+        },
+        {
+          "id": "B",
+          "metin": "Kayaların bir gecede yerinden oynaması"
+        },
+        {
+          "id": "C",
+          "metin": "Eski yapıların onarılması"
+        },
+        {
+          "id": "D",
+          "metin": "Kaya üzerine işaret çizilmesi"
+        }
+      ],
+      "dayanak_sayfa": 23
+    },
+    {
+      "id": "s7",
+      "dogru": "C",
+      "metin": "Ece, Bora’nın defterine yazdığı “Gizli Geçidi Bulduk!” başlığına neden itiraz etti? Bu itiraz yerinde midir?",
+      "beceri": "degerlendirme",
+      "aciklama": "Bir geçide girmemişlerdi; bu yüzden böyle bir başlık okuyanlar için yanlış anlaşılmaya yol açabilirdi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yerinde değil; çünkü heyecan her şeyden önemlidir"
+        },
+        {
+          "id": "B",
+          "metin": "Yerinde değil; çünkü başlık çok uzundur"
+        },
+        {
+          "id": "C",
+          "metin": "Yerinde; çünkü gerçekte bir geçide girmemişlerdi ve başlık okuyanları yanıltabilirdi"
+        },
+        {
+          "id": "D",
+          "metin": "Yerinde; çünkü Bora yazı yazmayı bilmiyordu"
+        }
+      ],
+      "dayanak_sayfa": 20
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kapadokya'daki ilk sabahlarında "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", otelin terasından yükselen balonları sayıyordu. Yedinci balon kızıl bir kayanın arkasında gözden kaybolunca kardeşi Bora elindeki gezi defterini açtı. “Bugün yer altı şehirlerini görecek miyiz?” diye sordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "gunes"
+        },
+        {
+          "t": "metin",
+          "v": " Anneleri, önce açık hava müzesini ve izinli bir yürüyüş parkurunu gezeceklerini söyledi. Gezi rehberleri Eren Bey otobüste bölgenin coğrafyasını anlattı: Volkanlardan çıkan kül ve başka malzemeler zamanla kayaçlara dönüşmüş, rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " ve su bazı yerleri daha hızlı aşındırmıştı. Sert ve yumuşak katmanların farklı biçimlerde aşınması, bölgenin ilginç kaya şekillerinin ortaya çıkmasına katkıda bulunmuştu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Peribacaları bir gecede mi oluştu?” diye sordu Bora. “Hayır,” dedi Eren Bey. “Doğadaki büyük değişimler çoğu zaman çok uzun zamanlarda gerçekleşir. Bir damla suyun bile zamanla iz"
+        },
+        {
+          "t": "ikon",
+          "v": "footprint"
+        },
+        {
+          "t": "metin",
+          "v": " bırakabileceğini düşünün. Atasözümüz der ki: ‘"
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pd_ata_damlaya"
+        },
+        {
+          "t": "metin",
+          "v": ".’” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " gözü yol kenarındaki levhalardan birine takıldı. Levhada tepe"
+        },
+        {
+          "t": "ikon",
+          "v": "mountain"
+        },
+        {
+          "t": "metin",
+          "v": ", vadi ve oyuğun basit çizimleri vardı. Bir ok ise fotoğraftaki kayaya benzemeyen küçük bir kanala yöneliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bu kanal ne?” diye sordu. Rehber, bunun tarihî su sistemleriyle ilgili bir rota"
+        },
+        {
+          "t": "ikon",
+          "v": "map"
+        },
+        {
+          "t": "metin",
+          "v": " işareti olabileceğini ama levhayı incelemeden kesin konuşamayacağını söyledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yolun ilk bölümünde Eren Bey çocuklara üç fotoğraf gösterdi. Hepsinde farklı boylarda peribacaları vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bazı kaya başlıklarının alttaki bölümü yağmurdan ve rüzgârdan kısmen koruduğunu öğrendi. Bora ise iki fotoğrafın neredeyse aynı görünmesine rağmen yıllar arasında çekildiğini fark etti. “Bunlar sanki durmuş gibi,” dedi. Rehber, “Yavaş"
+        },
+        {
+          "t": "ikon",
+          "v": "turtle"
+        },
+        {
+          "t": "metin",
+          "v": " gerçekleşen değişimleri bir günde görmek"
+        },
+        {
+          "t": "ikon",
+          "v": "glasses"
+        },
+        {
+          "t": "metin",
+          "v": " zordur,” diye açıkladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " örnek bir deneyi hatırladı: Suyun farklı malzemeleri değişik hızlarda aşındırabildiğini göstermek için sınıfta yapılan gözlem. “Ama bir sınıf deneyiyle yüzlerce yılın bütün koşullarını açıklayamayız,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Mert fotoğraf çekerken ışığı farklı açılardan denedi. Aynı kayalık bir açıdan tek kuleye, başka açıdan yan yana durmuş iki sütuna benziyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", gördüğü her şeyin tek bir bakış açısına bağlı kalamayacağını fark etti. Öğleden sonra yürüyüşe çıktıklarında kaya yüzeyinde birbirine paralel iki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pd_oyuk"
+        },
+        {
+          "t": "metin",
+          "v": " buldular. Parkurdan ayrılmadan, uzaktan bakabildiler. Bora hemen “Gizli geçit"
+        },
+        {
+          "t": "ikon",
+          "v": "bridge"
+        },
+        {
+          "t": "metin",
+          "v": "!” diye bağırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu durdurdu. “Her oyuk kapı değildir,” dedi. Yine de ikisinin de kalbi hızlanmıştı. Çünkü kayanın üstünde bir su damlasına benzeyen eski bir işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gezi grubunda "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " arkadaşları "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ve Mert de vardı. Mert manzara fotoğrafı çekmeye meraklıydı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ise müzelerde eserlerin yanındaki açıklamaları okumayı severdi. Kaya üzerindeki işareti görünce birlikte fotoğraf çektiler; konumunu izinli güzergâh haritasına işaretlediler. “Bu işareti birileri yakın zamanda yapmış olabilir,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". “Eski olduğunu yalnızca renginden anlayamayız.” Eren Bey çocukların dikkatine şaşırmıştı. Bir süre sonra onlara yakınlardaki ziyaretçi merkezindeki sergiye bakmayı önerdi. Merkezde kaya oyma mekânların, güvercinliklerin ve eski su yollarının fotoğrafları vardı. Bir panoda “su kanalı” sözcüğü geçiyordu. Kimi yerlerde yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " suyu toplanıyor, uygun yerlere ulaştırılıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendi defterini karıştırırken gezi öncesi kütüphaneden aldığı küçük bir broşürün arasından bir kâğıt düştü. Kâğıtta, geçmişte yaşamış bir öğrencinin hazırladığı çizime benzeyen bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pd_kroki"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Üstte şu cümle yazıyordu: “Köyün çeşmesi susarsa suyun izini takip et.” Bora, “İşte macera başladı!” dedi. “Bir dakika,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". “Bu çizimi kim yapmış, ne zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " yapmış?” Broşürün arkasında yörede yapılan bir okul"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " araştırmasının adı yazıyordu. Kroki, tarihî bir belgenin aslı değil, eski su yollarını anlatmak için öğrencilerce hazırlanmış bir eğitim görseliydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " biraz hayal kırıklığına uğradı. “Demek şifre"
+        },
+        {
+          "t": "ikon",
+          "v": "lock"
+        },
+        {
+          "t": "metin",
+          "v": " değilmiş,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Eren Bey, “Şifre olmaması değersiz olduğu anlamına gelmez. Belki size çok iyi bir araştırma"
+        },
+        {
+          "t": "ikon",
+          "v": "magnifier"
+        },
+        {
+          "t": "metin",
+          "v": " sorusu verdi,” diye karşılık verdi. “Üstelik tarihî yerlerde izinsiz bir kapı aramak yerine, bilgiyi güvenli biçimde inceleyebilirsiniz.” Gece"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": " Bora, gezi defterindeki su damlası"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " simgesinin kopyasını birkaç kâğıda çizmişti. “Belki bunu her gördüğümüzde bir puan kazanırız,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " oyunu kabul etti ama yeni bir kural koydu: Her işaretin yanında neden o simge olduğunu düşündüklerini yazacaklardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bütün damlalar eski su yolu demek değildir,” diye ekledi. Sabah kahvaltısında bir çiftçiyle tanıştılar."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çiftçi eskiden yağışın az olduğu dönemlerde suyu dikkatli kullanmak gerektiğini, bugün de aynı özenin önemli olduğunu anlattı. Bir gün önce Mert'in fotoğraf makinesinin pili tükenmişti. Ona hemen yenisini almak yerine yedek güç kaynağını kullanmasını öğreten "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " olmuştu. Mert bu küçük aksilik yüzünden en güzel manzarayı kaçırdığını sanmıştı. Ancak durup bakınca çizim yapmayı denedi; fotoğraf çekemediği kayanın gölgelerini kalemiyle daha dikkatli inceleyebildi. Bu deneyim, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " araştırma"
+        },
+        {
+          "t": "ikon",
+          "v": "magnifier"
+        },
+        {
+          "t": "metin",
+          "v": " yaparken tek araca güvenmenin neden sorun olabileceğini gösterdi. Her araç başka ayrıntıyı yakalıyordu; bazı sorulara yanıt için birden fazla yönteme ihtiyaç vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " büyük bir kaya oyuntusunun yanında bitmiş su kabını görmüştü; önce onu tarihî bir buluntu sandı, sonra bunun yakın zamanda bırakılmış bir atık olduğunu anladı. Bora, “Demek bir şeyi anlamanın ilk yolu ona isim vermek değil, ne olduğuna dikkatle bakmak,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bu cümleyi not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " aldı; oyunun en değerli puanı ona göre doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " ayrımı yapmaktı. Ertesi sabah grup, eski bir çeşmenin bulunduğu köy meydanına gitti. Meydandaki çeşmeden hâlâ su akıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yakınındaki açıklama panosunda bazı eski su toplama yöntemleri anlatılıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", birinci gün gördüğü damla işaretine benzeyen bir simge buldu. Fakat fotoğraftaki işaretin yönü farklıydı. “İkisi aynı şey mi?” diye sordu. “Benziyorlar ama eş olmak zorunda değiller,” dedi rehber. “Bir şeklin anlamını kullanıldığı yere göre değerlendiririz.” Mert iki fotoğrafı tabletinde yan yana açtı. Kayadaki iz"
+        },
+        {
+          "t": "ikon",
+          "v": "footprint"
+        },
+        {
+          "t": "metin",
+          "v": " daha yuvarlaktı, çeşmenin üzerindeki ise üç köşeliydi. Bora farklılıkları saydı. Saadet Hanım çocuklara bir de çeşmenin eski bir fotoğrafını gösterdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Fotoğrafta musluğun arkasındaki duvar bugünkünden farklıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun nedenini sorunca, yapının yıllar içinde onarım gördüğünü öğrendiler. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Onarım kötü mü?” dedi. “Hayır,” diye cevap verdi Saadet Hanım. “Önemli olan yapının korunması ve yapılan işlemlerin uzmanlarca kayıt altına alınması.” Bora eski fotoğraftaki taşları saydı, güncel fotoğrafla karşılaştırdı. Üç taşın farklı göründüğünü buldu. Böylece çevredeki bir ayrıntının değişmesini her zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " gizli bir kapıyla açıklamanın yanlış olduğunu gördü. Bazen cevap, dikkatli bir bakım çalışmasında saklıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk defa bir sırrı çözmek"
+        },
+        {
+          "t": "ikon",
+          "v": "lightning-idea"
+        },
+        {
+          "t": "metin",
+          "v": " için hızlı davranmak yerine ayrıntıları incelemekten zevk alıyordu. Köy meydanında emekli bir öğretmen olan Saadet Hanım ile tanıştılar. Eren Bey onların sorusunu iletti. Saadet Hanım, eskiden köy çevresinde yağmurun nasıl toplandığını anlatan bir yerel araştırma"
+        },
+        {
+          "t": "ikon",
+          "v": "magnifier"
+        },
+        {
+          "t": "metin",
+          "v": " hazırladıklarını söyledi. Fakat çocukların gördüğü işaretin tam olarak neyi gösterdiğinden emin değildi. “Belge bulursanız beraber bakarız,” dedi. “Siz bilmiyorsanız kim bilir?” diye sordu Bora. “Bilmemek ayıp değil,” dedi Saadet Hanım. “Bilmediğini öğrenmek istememek üzücü olabilir.” Bu cevap "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " hoşuna gitti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Saadet Hanım çocukları belediyenin herkesin ziyaret edebildiği küçük yerel tarih sergisine yönlendirdi. Orada eski su kapları, ölçüm aletleri ve geçmiş yıllardaki kuraklığa ilişkin gazete kupürleri vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", başlıklardan birini defterine geçirdi: “Suyu bulmak"
+        },
+        {
+          "t": "ikon",
+          "v": "idea"
+        },
+        {
+          "t": "metin",
+          "v": " kadar korumak"
+        },
+        {
+          "t": "ikon",
+          "v": "shield"
+        },
+        {
+          "t": "metin",
+          "v": " da önemlidir.” Söyleşiden önce müze salonundaki bir maket dikkatlerini çekti. Makette yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": ", tepelerin yamaçlarından aşağıya akıyor; kimi yerlerde küçük kanallar boyunca birikiyor, kimi yerlerde ise toprağa sızıyordu. Görevli, maketin gerçek bir köyün bütün ayrıntılarını göstermediğini, öğrenmeye yardımcı bir model olduğunu özellikle söyledi. Çocuklardan biri maketteki suyu artırdığında bir kanalın taşıyamayıp taştığı görüldü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Her kanalın bir sınırı var,” dedi. Görevli başını salladı. “Su sistemlerini anlamak için yalnızca suyun nereden geldiğine değil, ne kadar olduğuna ve nereye gittiğine de bakarız.” Bora ikinci denemede kanalların önüne küçük engeller koydu. Su birikti. “Bazen tıkanıklık da sorun yaratıyor,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " sınıfta fen dersinde öğrendikleri akış sözcüğünün burada ne anlama geldiğini yazdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise bir model üzerinde yaptıkları değişikliklerin gerçek tarihî yapıya uygulanmaması gerektiğini düşündü. Geçmişten kalan izler, öğrenmek için incelenirdi; oyun oynamak için bozulmazdı. Öğle sonrası müze görevlisi ile kısa bir söyleşi yaptılar."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " özellikle “yer altı şehri” sözünü merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " etmişti. Müze görevlisi, insanların farklı dönemlerde kayaları oyarak çeşitli amaçlarla mekânlar oluşturduğunu anlattı. Bunların bir kısmının yaşam, depolama ve korunma gibi işlevleri olabiliyordu. Bora hemen “Bütün odalar birbirine gizli geçitle bağlanır mı?” diye sordu. Görevli gülümsedi. “Bunu her yapı için söyleyemeyiz. Yer altı mekânlarını incelemek uzmanların işidir. Bazı alanlar ziyaretçiye açıktır, bazıları değildir.” Çocuklar sonra izinli bir sergi bölümünde yer altı yapılarının kesit çizimlerini gördü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir kesit çiziminin duvarın arkasını hayal etmelerine yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " ettiğini fark etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Görevli, eski yerleşimlerde suya ulaşmanın büyük önem taşıdığını, ancak her oyuk veya tünelin su için yapılmadığını anlattı. Çocuklar hazırladıkları soruları sırayla yöneltti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " “Bir kanalın yaşını nasıl anlarsınız?” diye sordu. Görevli, uzmanların malzeme, yapım tekniği, tarihî kayıtlar ve gerektiğinde bilimsel yöntemleri birlikte değerlendirdiğini söyledi. Mert, “Yalnızca fotoğrafla kesin sonuca varamaz mıyız?” diye sordu. “Çoğu zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğraf bir başlangıçtır,” dedi görevli. “Tek başına bütün soruları cevaplamaz.” Gezi tamamlanırken parkur yakınından su sesi geldi. Bora hemen arkasını döndü. Kayaların arasındaki küçük bir oluğun içinden ince bir akıntı ilerliyordu. Eren Bey bunun son yağışlardan sonra görülebilen yüzey akışı olabileceğini anlattı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " olukla eski broşürdeki çizginin benzerliğini fark etti ama ikisini aynı yapı sanmadı. “Bazen bir doğa"
+        },
+        {
+          "t": "ikon",
+          "v": "leaf"
+        },
+        {
+          "t": "metin",
+          "v": " izi, insan yapımı bir kanala benzeyebilir,” dedi. Eren Bey, “İşte bu yüzden gözlem, karşılaştırma ve kaynak kontrolü yapıyoruz,” diye karşılık verdi. Bir süre sonra suyun bir kısmının küçük bir çukurda biriktiğini gördüler. Çukurun çevresindeki bitkiler daha canlı görünüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Su bitkileri de etkiliyor,” dedi. Mert o an güzel bir fotoğraf çekti: ön planda yeşil yapraklar, arkada güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " altında uzanan sarı kayalar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez küçük bir araştırma tablosu çizdi: Bir satırda su, ötekinde rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": ", üçüncüsünde insan emeği vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kapadokya'nın görünüşünü anlamak için yalnızca bir nedeni bilmenin yeterli olmadığını birlikte gördüler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", Kapadokya'nın yalnızca peri bacalarından ibaret olmadığını anladı. Toprağı, suyu, insanları ve hikâyeleri bir aradaydı. Öğretmenleriyle yapılan kısa değerlendirme toplantısında "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " sordu: “Bir kaya üzerindeki iz"
+        },
+        {
+          "t": "ikon",
+          "v": "footprint"
+        },
+        {
+          "t": "metin",
+          "v": " yüzlerce yıllıksa, ona yanlışlıkla zarar verebileceğimizi nasıl anlarız?” Eren Bey, ziyaretçi olarak en güvenli yaklaşımın işaretlenmiş rotalarda kalmak, tarihi yapılara dokunmamak ve şüpheli bir bulguyu görevlilere bildirmek olduğunu söyledi. Mert, “Fotoğraf çekmek bazen dokunmaktan daha çok şey anlatıyor,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafın yanına çizim de eklemenin yararını anlattı. Bora her şeyi bulmak"
+        },
+        {
+          "t": "ikon",
+          "v": "idea"
+        },
+        {
+          "t": "metin",
+          "v": " isteyen ilk hâlini hatırladı. Şimdi iyi bir kâşifin bazen bir kapıyı açmayan kişi olabileceğini düşünüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Günün sonunda dört arkadaş"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " çizimleri karşılaştırdı. Bora damla işaretini birbirine benzeten dört fotoğraf seçmişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bunlardan ikisinin bambaşka yerlerdeki bilgilendirme levhalarına ait olduğunu fark etti. “Bunları aynı kanıt gibi sunamayız,” dedi. Mert çektiği fotoğrafların saatlerini gösterdi; sabah güneşiyle öğleden sonraki gölgenin kaya üzerindeki çizgiyi farklı belirginleştirdiğini anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " herkesin gözlemini tek bir sayfaya topladı. Başlangıçta tam bir cevap beklemişlerdi. Şimdi farklı bilgi kaynakları arasında bağlantı kurmanın daha değerli olduğunu düşünüyorlardı. Rehberleri Eren Bey deftere bakınca gülümsedi. “Araştırma"
+        },
+        {
+          "t": "ikon",
+          "v": "magnifier"
+        },
+        {
+          "t": "metin",
+          "v": ", yalnızca bulduğunu değil, bulamadığını da dürüstçe yazmaktır,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar son sayfaya küçük bir kutu çizip “Kesinleşmeyen sorular” başlığı açtılar. Altına kaya yüzeyindeki su damlası"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " işaretinin kökenini yazdılar. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bu sorunun bir sonraki uzman araştırmasına bırakılmasından rahatsız olmadı. Çünkü artık her gizemin bir akşamda çözülmek zorunda olmadığını biliyordu. Akşam otelde herkes gezi defterini tamamladı. Bora ilk sayfaya büyük harflerle “Gizli Geçidi Bulduk!” yazmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Ama bir geçide girmedik. Bunu yazarsan okuyanlar yanlış anlayabilir,” dedi. “Bütün heyecanı söndürüyorsun,” diye söylendi Bora. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " araya girdi. “Başlığı değiştirmeden hikâyenin sonunda neyi keşfettiğimizi anlatabiliriz. Belki gizli geçit"
+        },
+        {
+          "t": "ikon",
+          "v": "bridge"
+        },
+        {
+          "t": "metin",
+          "v": ", bizi sorulara götüren yoldu.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bora düşündü. “O zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " “Kapadokya'nın Gizli Geçidi” başlık olur. Ama içeride hayal ile gerçek ayrılır.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu fikri sevdi. Defterini açıp ilk günün haritasını, çeşme fotoğrafını ve su oluğunu yan yana yerleştirdi. Her birinin altına “Kesin bilgi”, “Gözlem” veya “Araştırılması gereken” notunu ekledi. Ertesi sabah dönüş yolunda otobüs bir seyir noktasında durdu. Balonlar yine gökyüzündeydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez onları saymak yerine vadiler arasındaki yolları izledi. İnsanlar yüzlerce yıl boyunca bu coğrafyanın sunduğu imkânları kullanmış, zor koşullara çözümler bulmuştu. Onların izlerine saygı duymak, yalnızca güzel fotoğraflar çekmekten fazlasını gerektiriyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Otobüste Eren Bey çocukların defterlerini sırayla inceledi. Herkesin en az bir kesin bilgi, bir gözlem ve bir yeni soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " yazmasını istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " çeşmenin geçmişiyle ilgili öğrendiği bilgiyi seçti. Mert kayaların ışıkla değişen görünümünü gözlem olarak yazdı. Bora en başta çizdiği hayalî gizli geçidin yanına şimdi bir soru işareti koymuştu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona dönüp “Bu resmi silmeyecek misin?” dedi. Bora başını salladı. “Hayır. Hikâyenin başladığı yer orası. Bilgiyle hayal arasındaki farkı bana hatırlatacak.” Bora yanına oturdu. “Bir daha gelirsek yine gizem arayalım mı?” “Arayalım,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Ama bu defa yanımızda daha çok soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": ", daha az tahmin olsun.” “Hiç tahmin olmasın mı?” “O kadar da değil. Tahmin bizi yola çıkarır. Kanıt nereye gideceğimizi söyler.” Defterdeki son tabloyu birlikte doldurdular. Birinci sütunda gezi sırasında duydukları yeni kelimeler, ikinci sütunda anlamları, üçüncü sütunda ise kullandıkları örnek cümleler vardı. Bora “oyuk” kelimesinin yanına kayanın içeri doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " çökük bölümünü gösteren küçük bir çizim ekledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " “"
+        },
+        {
+          "t": "kelime",
+          "yuva": "pd_asinma"
+        },
+        {
+          "t": "metin",
+          "v": "” sözcüğünü yazdı ve rüzgârla suyun etkisini açıkladı. Mert “kültürel miras” sözcüğüne eski yapıları ve onları koruma sorumluluğunu ekledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", en çok “kanıt” kelimesinin anlamını değiştirdiğini düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çünkü onun için kanıt artık yalnızca gizli bir işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " değil, doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " soruyla incelenen bilgi demekti. Otobüs hareket etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", defterin son sayfasına araştırmada tanıştıkları insanların adlarını da yazdı; bir keşifte yalnız olmamak güzeldi. O su damlası"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " resmine her baktığında Kapadokya'daki kayaların yalnızca güzel görüntüler değil, uzun bir zamanın izleri olduğunu hatırlayacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de sonraki gezilerinde aynı dikkatle gözlem yapmaya söz verdi. Bora defterinin kapağına küçücük bir su damlası çizdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de yanına ok ekledi. Artık o işaret, yalnızca gizemli bir kapıyı değil, araştırmanın yönünü gösteriyordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

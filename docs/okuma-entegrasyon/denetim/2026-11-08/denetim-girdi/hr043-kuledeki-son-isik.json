@@ -1,0 +1,1555 @@
+{
+  "hikaye": {
+    "tur": "gizem",
+    "konu": "kule_isigi_hava_gozlemi",
+    "slug": "hr043-kuledeki-son-isik",
+    "durum": "taslak",
+    "baslik": "Kuledeki Son Işık",
+    "tanitim": "Yıllardır boş denen kulede gece bir ışık yandı. Gizli bir mesaj mı, yoksa hava gözleminin parçası mı?",
+    "fis_kodu": "HR-043",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 7,
+        "sayfa_sayisi": 24,
+        "simge_sayisi": 57,
+        "kelime_sayisi": 2071,
+        "tahmini_sure_dk": 20,
+        "yoldas_yer_sayisi": 20,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 3
+        }
+      },
+      "temalar": [
+        "gizem",
+        "bilim_teknoloji",
+        "guvenlik"
+      ],
+      "ana_sinif": 5,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 4,
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk_tahmin_hr043",
+          "tur": "lexeme",
+          "yuva": "pd_tahmin",
+          "islev": "first_hint",
+          "etiket": "tahmin"
+        },
+        {
+          "id": "sozcuk_olasilik_hr043",
+          "tur": "lexeme",
+          "yuva": "pd_olasilik",
+          "islev": "application",
+          "etiket": "olasılık"
+        },
+        {
+          "id": "sozcuk_uyari_hr043",
+          "tur": "lexeme",
+          "yuva": "pd_uyari",
+          "islev": "application",
+          "etiket": "uyarı"
+        },
+        {
+          "id": "kavram_hr043",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Gözlem ile varsayımı ayırmak; resmî hava uyarılarını doğru kaynaktan takip etmek"
+        },
+        {
+          "id": "atasoz_hr043",
+          "tur": "proverb",
+          "yuva": "pd_ata_sormakla",
+          "islev": "application",
+          "etiket": "Sormakla yol bulunur"
+        }
+      ]
+    },
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "baska_biri"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pd_tahmin",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pd_tahmin"
+          }
+        ]
+      },
+      {
+        "ad": "pd_olasilik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pd_olasilik"
+          }
+        ]
+      },
+      {
+        "ad": "pd_uyari",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pd_uyari"
+          }
+        ]
+      },
+      {
+        "ad": "pd_ata_sormakla",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "pd_ata_sormakla"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pd_tahmin",
+        "tur": "kelime",
+        "anlam": "Eldeki verilere dayanarak henüz olmamış bir durum hakkında yapılan değerlendirme.",
+        "yazim": "tahmin",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "pd_olasilik",
+        "tur": "kelime",
+        "anlam": "Bir olayın olabilme ihtimali; olabilir ama kesin değildir.",
+        "yazim": "olasılık",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "pd_uyari",
+        "tur": "kelime",
+        "anlam": "Dikkat edilmesi gereken bir durumu önceden bildiren haber.",
+        "yazim": "uyarı",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      },
+      {
+        "id": "pd_ata_sormakla",
+        "tur": "atasozu",
+        "anlam": "Bilmediğimiz bir şeyi doğru kişilere sorarak öğrenebiliriz.",
+        "yazim": "Sormakla yol bulunur",
+        "sinif_alt": 5,
+        "sinif_ust": 5
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "Belediyeden gelen yanıta göre kuledeki ışık neydi?",
+      "beceri": "hatirlama",
+      "aciklama": "Belediyenin yanıtı, ışığın bakım sırasında yapılan ekipman kontrolünün parçası olduğunu bildiriyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kasabaya gönderilen gizli bir mesajdı"
+        },
+        {
+          "id": "B",
+          "metin": "Bakım sırasında belirli aralıklarla yapılan bir ekipman kontrolünün parçasıydı"
+        },
+        {
+          "id": "C",
+          "metin": "Halka yönelik bir fırtına alarmıydı"
+        },
+        {
+          "id": "D",
+          "metin": "Kuleye giren birinin fenerinin ışığıydı"
+        }
+      ],
+      "dayanak_sayfa": 19
+    },
+    {
+      "id": "s2",
+      "dogru": "D",
+      "metin": "Hava uzmanı Burcu Hanım, kuledeki ışığın görevini neden kesin söyleyemedi?",
+      "beceri": "cikarim",
+      "aciklama": "Uzman, görüntüye bakarak görevi kesin söyleyemeyeceğini; sistemin kurumdan doğrulanması gerektiğini belirtti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çünkü ışığı hiç görmek istemiyordu"
+        },
+        {
+          "id": "B",
+          "metin": "Çünkü kule artık yıkılmıştı"
+        },
+        {
+          "id": "C",
+          "metin": "Çünkü çocukların sorusu çok kolaydı"
+        },
+        {
+          "id": "D",
+          "metin": "Çünkü yalnızca görüntüye bakarak karar verilemezdi; hangi sistem olduğunun kurumdan doğrulanması gerekiyordu"
+        }
+      ],
+      "dayanak_sayfa": 9
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Tuna’nın “Demek hava tahmini kehanet değil” demesi neyi anlatır?",
+      "beceri": "yorumlama",
+      "aciklama": "Meryem Hanım da tahminin bilimsel verilere dayalı bir değerlendirme olduğunu söyleyerek bu sonucu onayladı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Hava tahmini bilimsel verilere dayanan bir değerlendirmedir; kesinlik değil olasılık bildirir"
+        },
+        {
+          "id": "B",
+          "metin": "Hava tahminleri her zaman tamamen doğru çıkar"
+        },
+        {
+          "id": "C",
+          "metin": "Hava tahminlerine hiç güvenmemek gerekir"
+        },
+        {
+          "id": "D",
+          "metin": "Hava tahmini yalnızca bulutlara bakarak yapılır"
+        }
+      ],
+      "dayanak_sayfa": 12
+    },
+    {
+      "id": "s4",
+      "dogru": "C",
+      "metin": "Hava uzmanı “Biri tahmin, biri gözlem” derken tahmin sözcüğüyle ne anlatmak istedi?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Haritalardan biri yağmur olasılığını gösteren tahmin, diğeri gerçekleşen yağışı gösteren gözlemdi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Geçmişte yaşanmış bir olayın kaydını"
+        },
+        {
+          "id": "B",
+          "metin": "O anda yapılan bir ölçümün sonucunu"
+        },
+        {
+          "id": "C",
+          "metin": "Eldeki verilere dayanarak gelecekte olabilecekler hakkında yapılan değerlendirmeyi"
+        },
+        {
+          "id": "D",
+          "metin": "Bir haritanın başlığını"
+        }
+      ],
+      "dayanak_sayfa": 9
+    },
+    {
+      "id": "s5",
+      "dogru": "A",
+      "metin": "Defne, bir tahminin olasılık bildirdiğini söyledi. Burada olasılık ne demektir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "“Sağanak olasılığı bulunuyor” cümlesi sağanağın olabileceğini söyler ama kesin olduğunu söylemez.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir olayın olması mümkün olsa da kesin olmadığını gösteren durum"
+        },
+        {
+          "id": "B",
+          "metin": "Bir olayın kesinlikle olacağını gösteren durum"
+        },
+        {
+          "id": "C",
+          "metin": "Bir olayın hiç olmayacağını gösteren durum"
+        },
+        {
+          "id": "D",
+          "metin": "Bir olayın çoktan bittiğini gösteren durum"
+        }
+      ],
+      "dayanak_sayfa": 12
+    },
+    {
+      "id": "s6",
+      "dogru": "B",
+      "metin": "“Uyarı varsa önlem almak doğru” cümlesinde uyarı ne demektir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Güncel hava uyarısı görülünce açık hava etkinliği ertelendi ve masalar içeri taşındı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Eğlenceli bir etkinlik duyurusu"
+        },
+        {
+          "id": "B",
+          "metin": "Dikkat edilmesi gereken olası bir durumu önceden bildiren haber"
+        },
+        {
+          "id": "C",
+          "metin": "Okul bahçesindeki bir masa"
+        },
+        {
+          "id": "D",
+          "metin": "Bir kitabın adı"
+        }
+      ],
+      "dayanak_sayfa": 13
+    },
+    {
+      "id": "s7",
+      "dogru": "B",
+      "metin": "Okul gazetesinde “Kulede Gizli Alarm!” başlığının “Eski Kulenin Yeni Görevi” olarak değiştirilmesi neden daha doğrudur?",
+      "beceri": "degerlendirme",
+      "aciklama": "Işığın bir alarm olmadığı öğrenilmişti; abartılı başlık kanıtlanmamış bir korku yaratacaktı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çünkü yeni başlık daha uzundur"
+        },
+        {
+          "id": "B",
+          "metin": "Çünkü ilk başlık gerçekte olmayan bir tehlike duygusu yaratırdı"
+        },
+        {
+          "id": "C",
+          "metin": "Çünkü gazetede başlık kullanılmaz"
+        },
+        {
+          "id": "D",
+          "metin": "Çünkü kule artık hiç ışık vermiyordu"
+        }
+      ],
+      "dayanak_sayfa": 21
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yağmurdan sonraki serin akşamda, kasabanın üzerindeki eski gözlem kulesinin penceresinde üç kez ışık göründü. Beşinci sınıf öğrencisi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", balkonlarında otururken ışığın önce kısa, sonra uzun aralıklarla yandığını fark etti. Herkes kulenin yıllardır kullanılmadığını söylüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise geçen ay"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": " aynı tepede yenilenen bir anten görmüştü. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ay"
+        },
+        {
+          "t": "metin",
+          "v": " “Anne, kulede biri olabilir mi?” diye sordu. Annesi perdeyi açıp baktı. “Olabilir. Ama gece tek başımıza oraya gitmek doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " olmaz. Yarın belediyenin bilgi hattına sorabiliriz.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi sabah okulda gördüklerini en yakın arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " doğa olaylarıyla ilgili videolar izlemeyi severdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Belki gizli bir haberleşme sistemi,” dedi heyecanla. Üçüncü arkadaşları Defne ise hemen karşı çıktı. “Ya bakım lambasıysa? Önce gözlemimizi yazalım.” Öğretmenleri Meryem Hanım bir bilim"
+        },
+        {
+          "t": "ikon",
+          "v": "microscope"
+        },
+        {
+          "t": "metin",
+          "v": " gözlem etkinliği planlıyordu. Çocukların notlarını görünce kulenin bulunduğu tepeyi gösteren eski bir fotoğraf çıkardı. Fotoğrafta kulenin yanında rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " yönünü gösteren bir ok vardı. “Bu yer eskiden hava gözlemleri için kullanılmış,” dedi. “Bugünkü işlevini bilmiyoruz. Birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " araştırabiliriz.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " çantasından çizgili defterini çıkarıp kuleye ait bir resim çizdi. Üzerine üç ışık işareti koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dikkatle baktı. “Ben üç ışık gördüm ama aralarında eşit süre var mıydı, bilmiyorum,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Defne “O zaman aralıklara eşit çizgi koymayalım,” diye önerdi. Çizimin altına “yaklaşık gözlem” yazdılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", bu küçük kelimenin neden önemli olduğunu o an kavradı. Kesin olmayan bir şeyi kesinmiş gibi göstermek, resme bakacak herkesi yanlış yönlendirebilirdi. Bir sonraki gözlem için saat"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " tutmayı, rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " ve hava durumunu da not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " etmeyi planladılar. Her birinin ayrı görevi olacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " görsel kaydı, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " zamanlamayı, Defne notları kontrol edecekti. Böylece aynı olayı üç kişinin farklı bakışla inceleyebileceğini düşündüler. İlk görevleri, kuleye yaklaşmadan güvenilir bilgi bulmaktı. Belediye sayfasındaki duyuruları incelediler. Kulede bazı meteoroloji sensörlerinin yenilendiğini öğrenince "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " gizli haberleşme fikri zayıfladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yine de geceki ışığın ne anlama geldiği açıklanmamıştı. Bir gün önce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " küçük kardeşi rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " gülünü döndürmekte zorlanmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona, “Rüzgâr yoksa dönmez,” demişti. Kardeşi üfleyerek çarkı döndürünce ikisi gülmüştü. Okuldaki gözlem köşesinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu anıyı anlattı. Öğretmenleri hava hareketinin farklı hızlarda olabileceğini, ölçüm araçlarının doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " kullanılmasının önemini açıklarken çocuklardan gözlemlerini basit cümlelerle yazmalarını istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " başlangıçta “çok rüzgârlı” diye not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " aldı. Defne ona “Ne kadar?” diye sordu. Sınıftaki rüzgâr ölçerin değerini ve saati eklediler. Bu küçük değişiklik, bir gözlemden daha karşılaştırılabilir bir kayda geçmelerini sağladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Meryem Hanım, öğrencileri okulun küçük hava köşesine götürdü. Termometre, yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " ölçer ve rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " yönünü gösteren basit bir düzenek vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sabah sıcaklığını deftere yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " gökyüzündeki bulutların şeklini çizdi. Defne ise rüzgârın aniden yön değiştirdiğini fark etti. “Hava tahmini yalnızca bulutlara bakmak mıdır?” diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". “Hayır,” dedi öğretmenleri. “Sıcaklık, basınç, nem, rüzgâr ve daha birçok veri birlikte değerlendirilir. Üstelik tahminin kesinlik derecesi vardır.” Okuldaki hava köşesinin termometresi güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " altında kaldığında daha yüksek değer gösterebiliyordu. Defne, farklı yere taşındığında ölçümün niçin değiştiğini merak etti. Öğretmenleri, ölçümlerin karşılaştırılabilir olması için araçların doğru yere konması ve aynı yöntemle kullanılması gerektiğini anlattı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", evlerinin balkonunda tuttuğu sıcaklık notlarıyla okul kayıtlarının neden farklı olduğunu anladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " ölçerin boşaltılması gerektiğini unuttuğu bir günü hatırladı. “Demek sayı kadar sayının nasıl elde edildiği de önemli,” dedi. Meryem Hanım, “Bunu raporunuzun en üstüne yazın,” diye önerdi. Çocuklar artık meteorolojiyle ilgili bir sözcük öğrendiklerinde onu doğrudan örneklerle ilişkilendirebiliyordu: nem, yağış, basınç ve rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " yalnızca kitapta gördükleri kelimeler değildi. O gün okulun küçük bahçe şenliğinin duyurusu yapılacaktı. Sınıf süslemeleri hazırlıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hava tahmini sitesinde akşam için gök gürültülü sağanak olasılığı gördü. Arkadaşı Tuna, “Burada güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " var, yağmur gelmez,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Defne buna itiraz etti: “Bir yerde güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " olması, birkaç saat"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " sonra başka bir hava olayı yaşanmayacağını göstermez.” Çocuklar öğretmenlerinden resmi tahmin ve uyarıların nereden takip edildiğini öğrendi. Başka kaynaklarda farklı ifadeler görünce de tek bir videoya bakarak karar vermemeleri gerektiğini anladılar. O akşam "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " notlarını gözden geçirirken “hava durumu” ile “hava tahmini” sözcüklerini aynıymış gibi kullanmış olduğunu gördü. Öğretmeninin anlattıklarını hatırladı: Biri belirli bir zamanda gözlenen durumu, diğeri geleceğe ilişkin değerlendirmeyi anlatıyordu. Defterindeki iki cümleyi düzeltti. Bu küçük ayrım, sonraki günün sorularını daha açık sormasına yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " edecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " akşamki kule ışıklarının havayla ilişkili olabileceğini düşünmeye başladı. Öğle arasında duyuru panosuna küçük bir çizelge astılar: “Gözlem, tahmin, gerçekleşen hava”. Sınıftaki diğer öğrenciler de kendi gözlemlerini ekledi. Kimileri bulutları resmetti, kimileri rüzgârı hissettiğini yazdı. Çizelge giderek bir dedektif panosuna benziyordu. Fakat bu kez dedektiflerin peşinde bir insan değil, değişen hava vardı. Meryem Hanım, meteoroloji bölge müdürlüğündeki eski öğrencisi Burcu Hanım'ı çevrim içi görüşmeye davet etti. Burcu Hanım bir hava uzmanıydı. Öğrenciler sırayla sorularını yöneltti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " kuledeki yanıp sönen ışığın gizli bir mesaj"
+        },
+        {
+          "t": "ikon",
+          "v": "scroll"
+        },
+        {
+          "t": "metin",
+          "v": " olup olmadığını sordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Kulede ekipman kontrolü için kullanılan ışıklar olabilir,” dedi uzman. “Ama görüntüye bakarak görevini kesin söyleyemem. Hangi sistem olduğunu kurumdan doğrulamamız gerekir.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bir hava istasyonu tehlikeyi nasıl bildirir?” diye sordu. Burcu Hanım, otomatik istasyonların ölçümleri elektronik yollarla iletebildiğini anlattı. Gözlem verileri uzmanlarca incelenir, uygun görülürse resmî uyarılar yayımlanırdı. Kuledeki ışık tek başına halka yönelik bir alarm anlamına gelmiyordu. Burcu Hanım çevrim içi görüşmede bir örnek de gösterdi. İki haritada aynı bölgenin farklı zamanlardaki hava durumunu simgelerle işaretlemişti. Bir haritada yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " olasılığı görünürken ötekinde yağışın gerçekleştiği alan gösteriliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " iki haritayı ilk anda aynı sandı. Burcu Hanım, “Biri "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pd_tahmin"
+        },
+        {
+          "t": "metin",
+          "v": ", biri gözlem,” dedi. “Birbirine benzeyebilirler ama görevleri farklıdır.” Çocuklar bir tahmini değerlendirirken ne zaman yayımlandığına ve hangi süreyi kapsadığına dikkat etmeleri gerektiğini öğrendi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu çok yararlı buldu; çünkü internette dolaşan eski bir uyarıyı güncel sanmanın da yanlış kararlar doğurabileceğini fark etti. Defne, sınıf panosuna tarihi olmayan hiçbir uyarı"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " resmi asmayacaklarına karar verdi. Görüşme bittikten sonra Meryem Hanım önemli bir soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " sordu: “Bir ipucu gördüğünüzde hikâyeyi kim tamamlıyor?”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " elini kaldırdı. “Bazen biz tamamlıyoruz. Ama kafamızdan.” Sınıf güldü. “O hâlde bilmediğimiz kısmı araştırmadan kesin konuşmayacağız,” dedi öğretmenleri. Sonra tahtaya eski bir atasözü yazdı: “"
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pd_ata_sormakla"
+        },
+        {
+          "t": "metin",
+          "v": ".” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yine de kulenin ışığını unutamıyordu. Ertesi akşam balkondan baktığında ışık bir kez daha yandı. Bu kez saatini not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " etti ve annesiyle birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " görüntünün kısa bir videosunu çekti. Videoda uzaktaki kule görünüyordu ama ışığın niçin yandığı belli değildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kameranın sınırlarını da fark etti: Bir görüntü, her sorunun cevabı değildi. Şenlikten bir gün önce sınıf içinde küçük bir tartışma yaşanmıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tuna, hava tahmininin bazen tutmadığını söyleyerek uyarılara hiç güvenmemeyi savunuyordu. Defne ise bir tahminin "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pd_olasilik"
+        },
+        {
+          "t": "metin",
+          "v": " bildirdiğini, bu yüzden gerçekleşmeyen bir olayın bütün tahmin yöntemlerini geçersiz kılmayacağını anlattı. Meryem Hanım çocuklardan iki cümleyi karşılaştırmalarını istedi: “Mutlaka yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " yağacak” ve “Sağanak olasılığı bulunuyor.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ikinci cümlenin daha doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " olduğunu söyledi; kesinlik bildiren sözcükler farklı kararlar doğurabilirdi. Öğretmenleri bunun üzerine kısa bir etkinlik yaptırdı. Çocuklar meteoroloji bültenlerindeki “olası”, “bekleniyor”, “yerel” gibi sözcükleri işaretledi. Tuna sonunda “Demek hava tahmini kehanet değil,” dedi. Sınıf güldü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Meryem Hanım, “Evet, bilimsel verilere dayalı bir değerlendirme,” diye tamamladı. Cuma sabahı hava açık başladı. Okul bahçesindeki masalara kitaplar dizildi, öğrencilerin yaptığı afişler asıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " görevlilerden biriydi. Ancak öğleye doğru rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " kuvvetlendi. Hafif afişler sallanıyor, bazı bulutlar kısa sürede çoğalıyordu. Meryem Hanım, okul idaresiyle birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " güncel hava uyarılarını kontrol etti. Şenliğin açık hava bölümü ertelendi. Bazı öğrenciler üzüldü. Tuna, “Belki yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " yağmayacak. Boşuna hazırlanmış olduk,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Belki yağmaz,” diye cevap verdi, “ama "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pd_uyari"
+        },
+        {
+          "t": "metin",
+          "v": " varsa önlem almak doğru. Bütün masaları içeri taşıyabiliriz.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Masalardan birinin üzerinde, geçen yılki öğrencilerin hazırladığı çizim kitabı duruyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu almak için geri dönecekti ama öğretmeni bahçedeki görevin sona erdiğini söyledi. Bir görevli kitabı güvenle içeri getirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce kendi başına çıkabileceğini düşünmüştü. Sonra kararın neden yetişkinler tarafından verildiğini hatırladı; sert hava koşullarında kontrolsüz hareket etmek yeni riskler oluşturabilirdi. İçeri girdiklerinde başka bir sınıfın üzgün öğrencileriyle karşılaştılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Şenlik iptal olmadı, sadece yer değiştirdi,” dedi. Tuna ve arkadaşları masaları yeniden kurdu; kitapların yanına bulut"
+        },
+        {
+          "t": "ikon",
+          "v": "cloud"
+        },
+        {
+          "t": "metin",
+          "v": " çizimleri asıp salonu küçük bir bilim"
+        },
+        {
+          "t": "ikon",
+          "v": "microscope"
+        },
+        {
+          "t": "metin",
+          "v": " müzesine çevirdiler. Böylece herkesin emeği değerlendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar öğretmenlerin yönlendirmesiyle kitapları kapalı"
+        },
+        {
+          "t": "ikon",
+          "v": "lock"
+        },
+        {
+          "t": "metin",
+          "v": " salona taşıdı. İçeri taşınan masaların biri diğerlerine göre ağırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce onu tek başına kaldırmayı denedi, sonra öğretmeninden yardım istedi. Birlikte taşırken “Bugün yalnızca hava değil, ekip çalışması da öğrendik,” diye şaka yaptı. Tuna kütüphane kitaplarının ıslanmadığını görünce rahatladı. Çünkü bir ay"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": " boyunca resimledikleri öyküleri ilk kez ziyaretçilere gösterecekti. Kısa süre sonra yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " başladı. Pencereden dışarı bakarken sert damlaların bahçedeki boş masalara vurduğunu gördüler. Eşyalar zarar görmemiş, öğrenciler içeride güvendeydi. Tuna "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " dönüp “Ben yalnızca şimdiki güneşe baktım,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Sen sonraki saatleri de düşündün.” Tuna o gün "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ile birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " salonun penceresinden bahçeyi izledi. Yağmurdan sonra rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " hafifledi, bulutların bir kısmı dağıldı. Tuna “Şimdi dışarı çıkabiliriz,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", etkinliğin yeniden dışarı taşınıp taşınmayacağına öğretmenlerinin karar vereceğini hatırlattı. Çünkü hava yalnızca o anda pencereden görünen manzaradan ibaret değildi. Okul"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " yönetimi etkinliği içeride sürdürmeyi uygun buldu. Bu karar ilk başta bazılarına gereksiz göründü ama içerideki program da çok güzel geçti. Çocuklar çizimlerini korumuş, misafirler rahatça kitapları incelemişti. Tuna, bir günün başarılı olması için bütün planların ilk biçimiyle gerçekleşmesinin gerekmediğini anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Aslında bunu öğretmenimiz ve uzmanların uyarısı sayesinde yaptık,” diye karşılık verdi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". Meryem Hanım çocuklardan günün sonunda bir karşılaştırma yapmalarını istedi. Sabah planlanan şenlikle gerçekleşen şenlik arasında hangi farklar vardı? "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " masaların yerinin değiştiğini, Tuna bazı oyunların içeride oynanabildiğini, Defne ise kimi süslemelerin kaldırıldığını yazdı. Fakat ortak amaç değişmemişti: Öğrencilerin hazırladığı kitapları ve çizimleri paylaşmak. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir planı uyarlamanın vazgeçmek anlamına gelmediğini fark etti. Sınıfın küçük gazetesi için yeni bir başlık buldu: “Yağmurlu Günün Kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " Şenliği.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenlik içeride devam etti. Çocuklar kitaplarını anlattı, hazırladıkları hava gözlem tablosunu misafirlere gösterdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " masaya, “Hava bir sır saklamaz; sadece onu anlamak"
+        },
+        {
+          "t": "ikon",
+          "v": "lightning-idea"
+        },
+        {
+          "t": "metin",
+          "v": " için veri gerekir,” yazılı küçük bir kart koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " belediyeye soruyu yöneltirken annesinin yardımını almıştı. Başvuruda kişisel bir şikâyet değil, gözlemlenen ışığın hangi amaçla kullanıldığını öğrenmek istediklerini açıklamıştı. Yanıt kısa ama anlaşılırdı; ilgili birim, tesisin bakım kontrolleri hakkında genel bilgi vermişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " metni sınıf panosuna olduğu gibi asmak yerine öğretmeniyle birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " özetledi. Kurum adını, yanıtın tarihini ve sorulan soruyu da eklediler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Böylece arkadaşları bilgiyi nereden öğrendiklerini görebilecekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Keşke ışığın mors alfabesiyle mesaj"
+        },
+        {
+          "t": "ikon",
+          "v": "scroll"
+        },
+        {
+          "t": "metin",
+          "v": " verdiği doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " çıksaydı,” diye şaka yaptı. Defne, “O zaman da bunu kanıtlamak gerekirdi,” dedi. Hafta sonunda belediyeden yanıt geldi. Yenilenen kuledeki ışık, bakım sırasında belirli aralıklarla yapılan bir ekipman kontrolünün parçasıydı. Kule, hava verilerini ölçen sistemlerden birini barındırıyordu. Işık, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " düşündüğü gibi insanları doğrudan uyaran bir mesaj değildi. Yine de kule, hava gözlemi için önemliydi. “Aslında çocukken ben de bulutların her şeklini bir işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " sanırdım,” dedi öğretmenleri. “Hayal kurmak güzeldir."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bilim"
+        },
+        {
+          "t": "ikon",
+          "v": "microscope"
+        },
+        {
+          "t": "metin",
+          "v": " yaparken ise hayalimizin hangi bölümünün kanıtlandığını bilmemiz gerekir.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözlere sevindi. Gizemli öyküler yazmaktan vazgeçmeyecekti. Sadece bilim gözlemleriyle kurmaca hikâyeleri birbirine karıştırmamayı öğrenecekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " biraz utanarak, “Ben onu gizli bir istasyon sandım,” dedi. Defne gülümsedi. “Aslında istasyon kısmını doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " tahmin etmişsin. Gizli kısmını kanıtlamamıştık.” Öğretmenleri raporlarını üç bölüme ayırmalarını istedi: “Ne gördük? Ne düşündük? Ne öğrendik?” Defne yazıyı yüksek sesle okuyunca bir cümlede tarih eksik olduğunu fark ettiler. Hemen eklediler; çünkü bir gözlemin ne zaman yapıldığı, ne görüldüğü kadar önemliydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk bölümde gece görülen ışığı, ikinci bölümde olası açıklamaları, üçüncü bölümde ise doğrulanmış bilgiyi yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", kanıtlanmayan fikrini silmek yerine yanına “ilk varsayım” notu düştü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " okul"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " gazetesine bir yazı hazırladı. İlk başlığı “Kulede Gizli Alarm!” olmuştu. Defne bunun gerçekte bulunmayan bir tehlike duygusu yaratacağını söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başlığı “Eski Kulenin Yeni Görevi” olarak değiştirdi. Yazısına ışık hakkında öğrendiklerini, resmî hava uyarılarına nasıl ulaşabileceklerini ve alınan önlemlerin önemini ekledi. Yazı yayımlandığında en çok sorulan soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " “Kuleye nasıl gireriz?” değil, “Hava tahmini ne kadar önce hazırlanır?” olmuştu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sonraki hafta kule yine ışık verdiğinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ışığı gördüğü ilk gün gözlemini kaydetmeseydi hangi ayrıntıları hatırlayıp hangilerini unutacağını düşündü. Küçük notların büyük yanlış anlamaları önleyebildiğini fark etti. Bundan sonra şaşırdığı her şeyi önce dikkatle gözlemlemeye karar verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " artık korkmadı. Ama bu kez yalnızca kuleye bakmadı; telefonundaki resmî hava tahminlerini ve gökyüzündeki bulutları da karşılaştırdı. İnsanların hava hakkında sorular sormasının, geçmişteki basit gözlemlerden bugünkü gelişmiş ölçümlere kadar uzanan büyük bir öğrenme yolculuğu olduğunu düşündü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eve döndüğünde balkonundan kuleyi yeniden gördü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Artık ışığa bakınca aklına yalnızca gizem gelmiyordu; orada çalışan görevlilerin emeğini de düşünüyordu. Bir veri işlenmeden, kontrol edilmeden ve doğru zamanda paylaşılmadan insanların karar vermesine yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " etmeyebilirdi. Bu farkındalıkla sınıf panosunda kendi adının çok büyük yazıldığını fark etti ve yanına "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ile Defne'nin adlarının da aynı boyda yazılmasını istedi. Çünkü bütün araştırmayı birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " yürütmüşlerdi. Hatta kulenin işlevini öğrenmelerini sağlayan uzmanların adını da kaynak bölümüne eklediler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bilimi tek başına parlak bir fikir"
+        },
+        {
+          "t": "ikon",
+          "v": "idea"
+        },
+        {
+          "t": "metin",
+          "v": " bulmak değil, farklı insanların ortak dikkati olarak görmeye başladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Son kez kuleye bakan "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk günkü korkusunu hatırladı. Bir ışığın neden yandığını bilmemek, onu hemen tehlike saymayı gerektirmiyordu. Doğru kaynakları araştırmak, hem merakı koruyor hem de gereksiz korkuyu azaltıyordu. Sınıf arkadaşlarının da bunu anlamasını istiyordu. Defterinin son sayfasına şunu yazdı: “Her ışık bir mesaj"
+        },
+        {
+          "t": "ikon",
+          "v": "scroll"
+        },
+        {
+          "t": "metin",
+          "v": " olabilir; ama hangi mesaj olduğunu ancak doğru kaynaklarla anlayabiliriz.” Altına bir kule, bir bulut"
+        },
+        {
+          "t": "ikon",
+          "v": "cloud"
+        },
+        {
+          "t": "metin",
+          "v": " ve küçük bir soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " işareti çizdi. Çünkü ona göre iyi bir araştırmacının çantasında üç şey bulunmalıydı: dikkatli gözler, sabırlı bir akıl ve yeni sorular. "
+        },
+        {
+          "t": "isaret",
+          "kod": "bulut"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

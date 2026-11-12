@@ -1,0 +1,456 @@
+{
+  "hikaye": {
+    "tur": "spor",
+    "konu": "mahalle",
+    "slug": "hr017-mahallenin-en-hizli-bisikleti",
+    "durum": "taslak",
+    "baslik": "Mahallenin En Hızlı Bisikleti",
+    "tanitim": "Eski bir bisikletle mahalle yarışına katılmak kolay mı? Bir arkadaşın yardımı ne kazandırır?",
+    "fis_kodu": "HR-017",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D3",
+        "yardimci_deger": "D20"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 4,
+        "sayfa_sayisi": 7,
+        "simge_sayisi": 6,
+        "kelime_sayisi": 214,
+        "tahmini_sure_dk": 4,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "dayanisma",
+        "sabir_emek"
+      ],
+      "ana_sinif": 2,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 1,
+      "kavram_zorlugu": 1,
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "eski",
+          "tur": "lexeme",
+          "yuva": "s2_eski",
+          "islev": "first_hint",
+          "etiket": "eski"
+        },
+        {
+          "id": "yeni",
+          "tur": "lexeme",
+          "yuva": "s2_yeni",
+          "islev": "application",
+          "etiket": "yeni"
+        },
+        {
+          "id": "kavram_hr017",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Denge"
+        },
+        {
+          "id": "atasoz_hr017",
+          "tur": "proverb",
+          "yuva": "ata_elin_nesi",
+          "islev": "application",
+          "etiket": "Bir elin nesi var, iki elin sesi var"
+        }
+      ]
+    },
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 1,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "kardes"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D3",
+      "D20"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "s2_eski",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_eski"
+          }
+        ]
+      },
+      {
+        "ad": "s2_yeni",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_yeni"
+          }
+        ]
+      },
+      {
+        "ad": "ata_elin_nesi",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "ata_elin_nesi"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "s2_eski",
+        "tur": "kelime",
+        "anlam": "Çok önce yapılmış ya da kullanılmış olan.",
+        "yazim": "eski",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_yeni",
+        "tur": "kelime",
+        "anlam": "Yakın zamanda yapılmış, az kullanılmış olan.",
+        "yazim": "yeni",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "ata_elin_nesi",
+        "tur": "atasozu",
+        "anlam": "Tek kişinin gücü sınırlıdır; birlikte daha çok şey yapılır.",
+        "yazim": "Bir elin nesi var, iki elin sesi var",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "A",
+      "metin": "Metinde bisikletin boyası nasıldı?",
+      "beceri": "hatirlama",
+      "aciklama": "Bisikletin boyası yer yer dökülmüştü.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yer yer dökülmüştü"
+        },
+        {
+          "id": "B",
+          "metin": "Tamamen yeniydi"
+        },
+        {
+          "id": "C",
+          "metin": "Hiç boyası yoktu"
+        }
+      ],
+      "dayanak_sayfa": 1
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Yarışta birinci olamamasının nedeni neydi?",
+      "beceri": "cikarim",
+      "aciklama": "Arkadaşının bisikleti için yardım çağırdı ve yarışa geç yetişti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Arkadaşının zincirine yardım etmek için geç başlamak"
+        },
+        {
+          "id": "B",
+          "metin": "Bisikletinin çok eski olması"
+        },
+        {
+          "id": "C",
+          "metin": "Frenlerinin çalışmaması"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Yıldız çıkartması kahramana neyi hatırlatıyordu?",
+      "beceri": "yorumlama",
+      "aciklama": "Yıldız, ona hızdan çok arkadaşlığı hatırlatıyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Hızdan çok arkadaşlığı"
+        },
+        {
+          "id": "B",
+          "metin": "Kazanılan bir madalyayı"
+        },
+        {
+          "id": "C",
+          "metin": "Yeni bir bisiklet alacağını"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen eski sözcüğü hangi anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Eski bisiklet, uzun süredir kullanılan bisikletti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çok önce yapılmış ya da kullanılmış olan"
+        },
+        {
+          "id": "B",
+          "metin": "Çok hızlı olan"
+        },
+        {
+          "id": "C",
+          "metin": "Renkli olan"
+        }
+      ],
+      "dayanak_sayfa": 1
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bisikletin boyası yer yer dökülmüştü. Arkadaşlarınınkiler parlaktı ama "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendi "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_eski"
+        },
+        {
+          "t": "metin",
+          "v": " bisikletini çok seviyordu. Mahalle yarışına katılmaya karar verdiğinde babası önce kaskını ve frenleri kontrol etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yarış afişini görünce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gidonu sıkıca tuttu. Mert'in bisikleti "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_yeni"
+        },
+        {
+          "t": "metin",
+          "v": " ve parlaktı. \"Önce bisikletin nasıl"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " göründüğüne değil, güvenli olup olmadığına bakalım,\" dedi babası. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de frenleri denemeye yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " etti. Kaskın tam oturduğundan emin oldular."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Antrenman için okulun yanındaki boş alana gittiler. İlk gün küçük dönüşlerde yavaşladı, ikinci gün daha dengeli sürdü. Bir hafta sonra bir çizginin üzerinden dikkatle geçebiliyordu. Mert ara sıra ona eşlik etti: \"Hızlı olmak zorunda değilsin. Önemli olan kontrolü kaybetmemek.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yarış sabahı start çizgisinde bisikletler yan yana duruyordu. Tam o sırada Mert'in bisikletinin zinciri çıktı. Yüzü asıldı: \"Her şey bitti.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başlama işaretini kaçırmaktan korktu. Ama arkadaşının üzgün hâlini görünce elini kaldırıp görevliye seslendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Görevli zincirin düzeltilmesine yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " babasıyla birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " kenarda beklerken Mert son anda yarışa yetişti. İkisi yan yana başladı. Mahallede \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "ata_elin_nesi"
+        },
+        {
+          "t": "metin",
+          "v": "\" derlerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " birinci olmadı. Finişte Mert ona sarıldı: \"Sen olmasaydın hiç başlayamazdım.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de bu sözü duyunca gülümsedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eski bisikletinin gidonuna küçük bir yıldız"
+        },
+        {
+          "t": "ikon",
+          "v": "star"
+        },
+        {
+          "t": "metin",
+          "v": " çıkartması yapıştırdı. O yıldız ona hızdan çok arkadaşlığı hatırlatıyordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kaskını rafına koydu. Bisikletin boyası yine aynıydı. Ama artık her bakışında yarış gününü değil, emeği ve dostluğu hatırlıyordu."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

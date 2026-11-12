@@ -21,6 +21,8 @@ const MIN_PASSWORD_LENGTH = 8;
 // v2: push kanalı eklendi (metin değişti). Yasal metin onayı ayrıca bekleniyor (TASKS.md §23).
 const ILETISIM_METIN_SURUMU = "hupolingo-ticari-ileti-2026-10-v2";
 
+// Not: fiyat bölümünden gelen ?plan= parametresi bu formda bilerek kullanılmaz (yok sayılır, zararsız).
+// emailRedirectTo'ya eklemek Supabase yönlendirme izin listesini bozabilir; kullanımı ayrı karar.
 export default function SignUpForm() {
   const t = useTranslations("signup");
   const dil = authDilCevir(useLocale());
@@ -130,6 +132,7 @@ export default function SignUpForm() {
           <p role="status" className="text-base text-navy">
             {authMetni("kayitNotr", dil)}
           </p>
+          <p className="mt-3 text-base text-navy-muted">{t("nextStep")}</p>
           <Link
             href="/veli-paneli/giris"
             className="mt-6 inline-flex h-12 w-full items-center justify-center rounded-xl bg-brand-500 px-6 text-base font-semibold text-white transition-colors hover:bg-brand-600 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"

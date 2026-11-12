@@ -44,10 +44,12 @@ export function kur({ R, sec, karistir, ekle, konum }) {
   const H3 = { 3: [[4, 5]], 4: [[3, 5]], 5: [[12, 13]], 6: [[8, 10]], 8: [[6, 10], [15, 17]], 9: [[12, 15]], 12: [[5, 13], [9, 15], [16, 20]], 15: [[8, 17], [20, 25]], 20: [[15, 25]] };
   const cm2 = (v) => `${v} cm²`;
   function adaySec(aday, dogru, n = 3) { const gor = new Set([dogru]), c = []; for (const x of karistir(aday)) { if (Number.isInteger(x.v) && x.v > 0 && !gor.has(x.v)) { gor.add(x.v); c.push(x); } if (c.length === n) break; } if (c.length < n) throw new Error('celdirici_yok'); return c; }
+  // Alan şıkları: arada 2 katı/yarısı ilişkisi olmamalı; yoksa doğru şık şıklardan çıkarılabilir.
+  function adaySecAlan(aday, dogru, n = 3) { const gor = new Set([dogru]), c = []; for (const x of karistir(aday)) { if (Number.isInteger(x.v) && x.v > 0 && !gor.has(x.v) && ![...gor].some((g) => g === 2 * x.v || 2 * g === x.v)) { gor.add(x.v); c.push(x); } if (c.length === n) break; } if (c.length < n) throw new Error('celdirici_yok'); return c; }
   function alanParalelkenar() {
     const h = sec(Object.keys(H3).map(Number)), [d, yan] = sec(H3[h]), b = d + 1 + Math.floor(R() * 8);
     if (b > 20) throw new Error('b_buyuk');
-    const A = b * h, c = adaySec([{ v: b * yan, g: 'Yükseklik yerine yan kenar kullanılmıştır; yükseklik, tabana dik olan uzunluktur.' }, { v: (b * h) / 2, g: 'Üçgenin alan formülü (taban × yükseklik ÷ 2) kullanılmıştır.' }, { v: 2 * (b + yan), g: 'Çevre hesaplanmıştır.' }, { v: b + h, g: 'Taban ile yükseklik toplanmıştır.' }, { v: yan * h, g: 'Yan kenar ile yükseklik çarpılmıştır; taban kullanılmamıştır.' }], A);
+    const A = b * h, c = adaySecAlan([{ v: b * yan, g: 'Yükseklik yerine yan kenar kullanılmıştır; yükseklik, tabana dik olan uzunluktur.' }, { v: (b * h) / 2, g: 'Üçgenin alan formülü (taban × yükseklik ÷ 2) kullanılmıştır.' }, { v: 2 * (b + yan), g: 'Çevre hesaplanmıştır.' }, { v: b + h, g: 'Taban ile yükseklik toplanmıştır.' }, { v: yan * h, g: 'Yan kenar ile yükseklik çarpılmıştır; taban kullanılmamıştır.' }], A);
     ekle({ kod: 'MAT.6.4.2', konu: 'Ölçme', alt_konu: 'Paralelkenarın alanı', zorluk: 2, dogru: cm2(A), celdirici: c.map((x) => cm2(x.v)), gerekce: c.map((x) => `${x.v} cm²: ${x.g}`),
       kok: sec(['Yukarıda ölçüleri verilen paralelkenarın alanı kaç santimetrekaredir?', 'Şekildeki paralelkenarın alanı kaç santimetrekaredir?']),
       ipucu: 'Alan = taban × tabana ait yükseklik. Yükseklik, tabana dik çizilen kesikli doğrudur.', cozum: [`Taban ${b} cm, taban üzerine inen yükseklik ${h} cm’dir.`, `Alan = ${b} × ${h} = ${A} cm².`],
@@ -56,7 +58,7 @@ export function kur({ R, sec, karistir, ekle, konum }) {
   function alanUcgen() {
     const h = sec(Object.keys(H3).map(Number)), [p, s1] = sec(H3[h]), [q, s2] = sec(H3[h]), b = p + q;
     if ((b * h) % 2 || b > 40) throw new Error('alan_tam_degil');
-    const A = (b * h) / 2, c = adaySec([{ v: b * h, g: 'Üçgenin alanı için çarpım 2’ye bölünmemiştir.' }, { v: (b * s1) / 2, g: 'Yükseklik yerine yan kenar kullanılmıştır; yükseklik tabana diktir.' }, { v: (b * s2) / 2, g: 'Yükseklik yerine yan kenar kullanılmıştır; yükseklik tabana diktir.' }, { v: b + s1 + s2, g: 'Çevre hesaplanmıştır.' }, { v: (s1 * h) / 2, g: 'Yan kenar ile yükseklik çarpılmıştır; taban kullanılmamıştır.' }], A);
+    const A = (b * h) / 2, c = adaySecAlan([{ v: b * h, g: 'Üçgenin alanı için çarpım 2’ye bölünmemiştir.' }, { v: (b * s1) / 2, g: 'Yükseklik yerine yan kenar kullanılmıştır; yükseklik tabana diktir.' }, { v: (b * s2) / 2, g: 'Yükseklik yerine yan kenar kullanılmıştır; yükseklik tabana diktir.' }, { v: b + s1 + s2, g: 'Çevre hesaplanmıştır.' }, { v: (s1 * h) / 2, g: 'Yan kenar ile yükseklik çarpılmıştır; taban kullanılmamıştır.' }], A);
     ekle({ kod: 'MAT.6.4.2', konu: 'Ölçme', alt_konu: 'Üçgenin alanı', zorluk: 3, dogru: cm2(A), celdirici: c.map((x) => cm2(x.v)), gerekce: c.map((x) => `${x.v} cm²: ${x.g}`),
       kok: sec(['Yukarıda ölçüleri verilen üçgenin alanı kaç santimetrekaredir?', 'Şekildeki üçgenin alanı kaç santimetrekaredir?']),
       ipucu: 'Alan = taban × tabana ait yükseklik ÷ 2. Yükseklik, tabana dik olan kesikli doğrudur.', cozum: [`Taban ${b} cm, tabana ait yükseklik ${h} cm’dir.`, `Alan = ${b} × ${h} ÷ 2 = ${A} cm².`],

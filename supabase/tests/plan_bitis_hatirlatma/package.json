@@ -1,0 +1,13 @@
+{
+  "name": "plan-bitis-hatirlatma-sql-testleri",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web planı bitiş hatırlatması (20261216000000) için PGlite testi (Docker gerektirmez).",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}

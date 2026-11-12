@@ -1,0 +1,2830 @@
+{
+ "surum": "2",
+ "parti": {
+  "parti_id": "gorsel-t-o-5-17-t7",
+  "aciklama": "Türkçe 5. sınıf T.O.5.17, görselli üretim (tohum 7)"
+ },
+ "kaynaklar": [],
+ "sorular": [
+  {
+   "soru_id": "tr5-sir-s7-001",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde bütün kıtalardaki dizeler toplam kaç tanedir?",
+   "siklar": {
+    "A": "20",
+    "B": "22",
+    "C": "18",
+    "D": "16"
+   },
+   "dogru_sik": "D",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 20 çıkmaz.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 22 çıkmaz.",
+    "C": "Şekildeki şiirin bütün satırları sayıldığında bu değer 18 çıkmaz.",
+    "D": "Doğru."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"158\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"182.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Gece gökte yıldız parlar",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Tatilde dağa çıkarız",
+       "Sesi kulakta doluyor",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Teneffüs zili çalınca",
+       "Kırlar çiçekle süslendi",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Kitap okumak çok güzel",
+       "Bahar bize neşe saçar",
+       "Her kitap bize çok özel"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-002",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "0",
+    "B": "6",
+    "C": "2",
+    "D": "4"
+   },
+   "dogru_sik": "B",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 0 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "B": "Doğru.",
+    "C": "Şekildeki şiirde bu değer 2 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "D": "Şekildeki şiirde bu değer 4 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"368\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"392.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Kış gelince kar yağıyor",
+       "Tatilde dağa çıkarız",
+       "Çocuklar kayak yapıyor",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kitap okumak çok güzel",
+       "Kış gelmeden kuşlar kaçar",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Teneffüs zili çalınca",
+       "Kuşlar şakır ağacında",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Sesi kulakta doluyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-003",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "6",
+    "B": "2",
+    "C": "8",
+    "D": "4"
+   },
+   "dogru_sik": "C",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 6 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "B": "Şekildeki şiirde bu değer 2 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "C": "Doğru.",
+    "D": "Şekildeki şiirde bu değer 4 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Annem masalı okuyor",
+       "Kitap okumak çok güzel",
+       "Sesi kulakta doluyor",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Tatilde dağa çıkarız",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Güneş doğdu dağ başında",
+       "Uykuya dalar çocuklar",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Ağaçlar yeşil giyindi",
+       "Çocuklar kayak yapıyor",
+       "Kırlar çiçekle süslendi"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-004",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 4. kıtanın 2. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "çıkınca",
+    "B": "yağıyor",
+    "C": "başında",
+    "D": "parlar"
+   },
+   "dogru_sik": "A",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 4. kıta ve onun 2. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Doğru.",
+    "B": "\"yağıyor\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "C": "\"başında\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "D": "\"parlar\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Gece gökte yıldız parlar",
+       "Güneş doğdu dağ başında",
+       "Uykuya dalar çocuklar",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelince kar yağıyor",
+       "Kış gelmeden kuşlar kaçar",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Herkes bahçeye çıkınca"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-005",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 2. kıtadan sonra gelen dizelerin sayısı kaçtır?",
+   "siklar": {
+    "A": "0",
+    "B": "4",
+    "C": "2",
+    "D": "6"
+   },
+   "dogru_sik": "B",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 2. kıtanın bitişi bulunur.",
+    "Bu kıtadan sonraki bütün satırlar sayılır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce istenen kıtayı bul, ondan sonraki satırları say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 0 değildir; 2. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır.",
+    "B": "Doğru.",
+    "C": "Şekildeki şiirde bu değer 2 değildir; 2. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır.",
+    "D": "Şekildeki şiirde bu değer 6 değildir; 2. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"193\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"217.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Rüzgârla yapraklar uçar",
+       "Annem masalı okuyor",
+       "Kış gelmeden kuşlar kaçar",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Tatilde dağa çıkarız",
+       "Herkes bahçeye çıkınca",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Her kitap bize çok özel"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-006",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 2. kıtadan sonra gelen dizelerin sayısı kaçtır?",
+   "siklar": {
+    "A": "8",
+    "B": "2",
+    "C": "4",
+    "D": "6"
+   },
+   "dogru_sik": "A",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 2. kıtanın bitişi bulunur.",
+    "Bu kıtadan sonraki bütün satırlar sayılır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce istenen kıtayı bul, ondan sonraki satırları say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Doğru.",
+    "B": "Şekildeki şiirde bu değer 2 değildir; 2. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır.",
+    "C": "Şekildeki şiirde bu değer 4 değildir; 2. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır.",
+    "D": "Şekildeki şiirde bu değer 6 değildir; 2. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Kitap okumak çok güzel",
+       "Dallarda ilk çiçek açar",
+       "Her kitap bize çok özel",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Teneffüs zili çalınca",
+       "Kırlar çiçekle süslendi",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Tatilde dağa çıkarız",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelmeden kuşlar kaçar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-007",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiir toplam kaç dizeden (mısradan) oluşmaktadır?",
+   "siklar": {
+    "A": "8",
+    "B": "20",
+    "C": "16",
+    "D": "12"
+   },
+   "dogru_sik": "D",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 8 çıkmaz.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 20 çıkmaz.",
+    "C": "Şekildeki şiirin bütün satırları sayıldığında bu değer 16 çıkmaz.",
+    "D": "Doğru."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"193\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"217.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Kış gelince kar yağıyor",
+       "Rüzgârla yapraklar uçar",
+       "Çocuklar kayak yapıyor",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Ağaçlar yeşil giyindi",
+       "Uykuya dalar çocuklar",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Her kitap bize çok özel"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-008",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "2",
+    "B": "0",
+    "C": "6",
+    "D": "4"
+   },
+   "dogru_sik": "C",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 2 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "B": "Şekildeki şiirde bu değer 0 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "C": "Doğru.",
+    "D": "Şekildeki şiirde bu değer 4 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Ağaçlar yeşil giyindi",
+       "Herkes bahçeye çıkınca",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Gece gökte yıldız parlar",
+       "Her kitap bize çok özel",
+       "Uykuya dalar çocuklar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-009",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 4. kıtanın 2. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "kaçar",
+    "B": "parlar",
+    "C": "açar",
+    "D": "çıkarız"
+   },
+   "dogru_sik": "A",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 4. kıta ve onun 2. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Doğru.",
+    "B": "\"parlar\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "C": "\"açar\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "D": "\"çıkarız\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"333\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"357.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Tatilde dağa çıkarız",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Dallarda ilk çiçek açar",
+       "Sesi kulakta doluyor",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Gece gökte yıldız parlar",
+       "Herkes bahçeye çıkınca",
+       "Uykuya dalar çocuklar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-010",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiir toplam kaç dizeden (mısradan) oluşmaktadır?",
+   "siklar": {
+    "A": "12",
+    "B": "10",
+    "C": "16",
+    "D": "22"
+   },
+   "dogru_sik": "C",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 12 çıkmaz.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 10 çıkmaz.",
+    "C": "Doğru.",
+    "D": "Şekildeki şiirin bütün satırları sayıldığında bu değer 22 çıkmaz."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Dallarda ilk çiçek açar",
+       "Kitap okumak çok güzel",
+       "Bahar bize neşe saçar",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Güneş doğdu dağ başında",
+       "Herkes bahçeye çıkınca",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Annem masalı okuyor",
+       "Kış gelmeden kuşlar kaçar",
+       "Sesi kulakta doluyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-011",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "14",
+    "B": "8",
+    "C": "12",
+    "D": "6"
+   },
+   "dogru_sik": "D",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 14 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "B": "Şekildeki şiirde bu değer 8 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "C": "Şekildeki şiirde bu değer 12 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "D": "Doğru."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Annem masalı okuyor",
+       "Dallarda ilk çiçek açar",
+       "Sesi kulakta doluyor",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Gece gökte yıldız parlar",
+       "Herkes bahçeye çıkınca",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Tatilde dağa çıkarız",
+       "Kırlar çiçekle süslendi",
+       "Gece ateşi yakarız"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-012",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 3. kıtadan sonra gelen dizelerin sayısı kaçtır?",
+   "siklar": {
+    "A": "10",
+    "B": "6",
+    "C": "12",
+    "D": "14"
+   },
+   "dogru_sik": "B",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 3. kıtanın bitişi bulunur.",
+    "Bu kıtadan sonraki bütün satırlar sayılır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce istenen kıtayı bul, ondan sonraki satırları say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 10 değildir; 3. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır.",
+    "B": "Doğru.",
+    "C": "Şekildeki şiirde bu değer 12 değildir; 3. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır.",
+    "D": "Şekildeki şiirde bu değer 14 değildir; 3. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"368\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"392.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Güneş doğdu dağ başında",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Tatilde dağa çıkarız",
+       "Annem masalı okuyor",
+       "Gece ateşi yakarız",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Kitap okumak çok güzel",
+       "Çocuklar kayak yapıyor",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Teneffüs zili çalınca",
+       "Kış gelmeden kuşlar kaçar",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Bahar bize neşe saçar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-013",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 1. kıtanın 3. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "özel",
+    "B": "süslendi",
+    "C": "yakarız",
+    "D": "çıkarız"
+   },
+   "dogru_sik": "B",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 1. kıta ve onun 3. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "\"özel\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "B": "Doğru.",
+    "C": "\"yakarız\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "D": "\"çıkarız\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"193\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"217.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Ağaçlar yeşil giyindi",
+       "Tatilde dağa çıkarız",
+       "Kırlar çiçekle süslendi",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Annem masalı okuyor",
+       "Bahar bize neşe saçar",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-014",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 5. kıtanın 1. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "doluyor",
+    "B": "yapıyor",
+    "C": "yağıyor",
+    "D": "başında"
+   },
+   "dogru_sik": "C",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 5. kıta ve onun 1. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "\"doluyor\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "B": "\"yapıyor\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "C": "Doğru.",
+    "D": "\"başında\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Güneş doğdu dağ başında",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Annem masalı okuyor",
+       "Kış gelmeden kuşlar kaçar",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Gece gökte yıldız parlar",
+       "Bahar bize neşe saçar",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-015",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiir toplam kaç dizeden (mısradan) oluşmaktadır?",
+   "siklar": {
+    "A": "24",
+    "B": "22",
+    "C": "20",
+    "D": "16"
+   },
+   "dogru_sik": "D",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 24 çıkmaz.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 22 çıkmaz.",
+    "C": "Şekildeki şiirin bütün satırları sayıldığında bu değer 20 çıkmaz.",
+    "D": "Doğru."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Kış gelince kar yağıyor",
+       "Ağaçlar yeşil giyindi",
+       "Çocuklar kayak yapıyor",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Tatilde dağa çıkarız",
+       "Gece gökte yıldız parlar",
+       "Gece ateşi yakarız",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Rüzgârla yapraklar uçar",
+       "Her kitap bize çok özel",
+       "Kış gelmeden kuşlar kaçar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-016",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde bütün kıtalardaki dizeler toplam kaç tanedir?",
+   "siklar": {
+    "A": "12",
+    "B": "16",
+    "C": "14",
+    "D": "18"
+   },
+   "dogru_sik": "A",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Doğru.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 16 çıkmaz.",
+    "C": "Şekildeki şiirin bütün satırları sayıldığında bu değer 14 çıkmaz.",
+    "D": "Şekildeki şiirin bütün satırları sayıldığında bu değer 18 çıkmaz."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"158\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"182.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Teneffüs zili çalınca",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Dallarda ilk çiçek açar",
+       "Uykuya dalar çocuklar",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Tatilde dağa çıkarız",
+       "Güneş doğdu dağ başında",
+       "Gece ateşi yakarız",
+       "Kuşlar şakır ağacında"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-017",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiir toplam kaç dizeden (mısradan) oluşmaktadır?",
+   "siklar": {
+    "A": "16",
+    "B": "12",
+    "C": "18",
+    "D": "14"
+   },
+   "dogru_sik": "B",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 16 çıkmaz.",
+    "B": "Doğru.",
+    "C": "Şekildeki şiirin bütün satırları sayıldığında bu değer 18 çıkmaz.",
+    "D": "Şekildeki şiirin bütün satırları sayıldığında bu değer 14 çıkmaz."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Kitap okumak çok güzel",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Tatilde dağa çıkarız",
+       "Kuşlar şakır ağacında",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Gece gökte yıldız parlar",
+       "Sesi kulakta doluyor",
+       "Uykuya dalar çocuklar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-018",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiir toplam kaç dizeden (mısradan) oluşmaktadır?",
+   "siklar": {
+    "A": "18",
+    "B": "16",
+    "C": "22",
+    "D": "14"
+   },
+   "dogru_sik": "D",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 18 çıkmaz.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 16 çıkmaz.",
+    "C": "Şekildeki şiirin bütün satırları sayıldığında bu değer 22 çıkmaz.",
+    "D": "Doğru."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"158\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"182.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"333\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"357.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Gece gökte yıldız parlar",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Rüzgârla yapraklar uçar",
+       "Her kitap bize çok özel",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Kış gelince kar yağıyor",
+       "Kuşlar şakır ağacında",
+       "Çocuklar kayak yapıyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-019",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde bütün kıtalardaki dizeler toplam kaç tanedir?",
+   "siklar": {
+    "A": "16",
+    "B": "18",
+    "C": "12",
+    "D": "14"
+   },
+   "dogru_sik": "C",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 16 çıkmaz.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 18 çıkmaz.",
+    "C": "Doğru.",
+    "D": "Şekildeki şiirin bütün satırları sayıldığında bu değer 14 çıkmaz."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Güneş doğdu dağ başında",
+       "Teneffüs zili çalınca",
+       "Kuşlar şakır ağacında",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Kış gelince kar yağıyor",
+       "Bahar bize neşe saçar",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Tatilde dağa çıkarız",
+       "Gece ateşi yakarız"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-020",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 1. kıtanın 2. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "yakarız",
+    "B": "çıkarız",
+    "C": "parlar",
+    "D": "yapıyor"
+   },
+   "dogru_sik": "A",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 1. kıta ve onun 2. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Doğru.",
+    "B": "\"çıkarız\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "C": "\"parlar\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "D": "\"yapıyor\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"158\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"182.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"333\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"357.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Tatilde dağa çıkarız",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Teneffüs zili çalınca",
+       "Kırlar çiçekle süslendi",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Kış gelince kar yağıyor",
+       "Bahar bize neşe saçar",
+       "Çocuklar kayak yapıyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-021",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde bütün kıtalardaki dizeler toplam kaç tanedir?",
+   "siklar": {
+    "A": "10",
+    "B": "14",
+    "C": "16",
+    "D": "12"
+   },
+   "dogru_sik": "C",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 10 çıkmaz.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 14 çıkmaz.",
+    "C": "Doğru.",
+    "D": "Şekildeki şiirin bütün satırları sayıldığında bu değer 12 çıkmaz."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"193\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"217.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"368\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"392.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Dallarda ilk çiçek açar",
+       "Kış gelince kar yağıyor",
+       "Bahar bize neşe saçar",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Rüzgârla yapraklar uçar",
+       "Sesi kulakta doluyor",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Kitap okumak çok güzel",
+       "Kuşlar şakır ağacında",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Uykuya dalar çocuklar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-022",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "0",
+    "B": "8",
+    "C": "10",
+    "D": "6"
+   },
+   "dogru_sik": "D",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 0 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "B": "Şekildeki şiirde bu değer 8 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "C": "Şekildeki şiirde bu değer 10 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "D": "Doğru."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Güneş doğdu dağ başında",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Tatilde dağa çıkarız",
+       "Uykuya dalar çocuklar",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Ağaçlar yeşil giyindi",
+       "Bahar bize neşe saçar",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-023",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "8",
+    "B": "6",
+    "C": "4",
+    "D": "2"
+   },
+   "dogru_sik": "A",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Doğru.",
+    "B": "Şekildeki şiirde bu değer 6 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "C": "Şekildeki şiirde bu değer 4 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "D": "Şekildeki şiirde bu değer 2 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Teneffüs zili çalınca",
+       "Kış gelince kar yağıyor",
+       "Herkes bahçeye çıkınca",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Gece gökte yıldız parlar",
+       "Kuşlar şakır ağacında",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Annem masalı okuyor",
+       "Kış gelmeden kuşlar kaçar",
+       "Sesi kulakta doluyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-024",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 1. kıtanın 2. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "başında",
+    "B": "giyindi",
+    "C": "parlar",
+    "D": "özel"
+   },
+   "dogru_sik": "B",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 1. kıta ve onun 2. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "\"başında\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "B": "Doğru.",
+    "C": "\"parlar\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "D": "\"özel\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Tatilde dağa çıkarız",
+       "Ağaçlar yeşil giyindi",
+       "Gece ateşi yakarız",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Kitap okumak çok güzel",
+       "Uykuya dalar çocuklar",
+       "Her kitap bize çok özel"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-025",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 2. kıtanın 2. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "yapıyor",
+    "B": "uçar",
+    "C": "yağıyor",
+    "D": "okuyor"
+   },
+   "dogru_sik": "C",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 2. kıta ve onun 2. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "\"yapıyor\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "B": "\"uçar\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "C": "Doğru.",
+    "D": "\"okuyor\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Güneş doğdu dağ başında",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Kış gelince kar yağıyor",
+       "Uykuya dalar çocuklar",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Rüzgârla yapraklar uçar",
+       "Herkes bahçeye çıkınca",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Sesi kulakta doluyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-026",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde bütün kıtalardaki dizeler toplam kaç tanedir?",
+   "siklar": {
+    "A": "12",
+    "B": "8",
+    "C": "10",
+    "D": "14"
+   },
+   "dogru_sik": "D",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 12 çıkmaz.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 8 çıkmaz.",
+    "C": "Şekildeki şiirin bütün satırları sayıldığında bu değer 10 çıkmaz.",
+    "D": "Doğru."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Gece gökte yıldız parlar",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Annem masalı okuyor",
+       "Her kitap bize çok özel",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Ağaçlar yeşil giyindi",
+       "Kuşlar şakır ağacında",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-027",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 5. kıtanın 1. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "uçar",
+    "B": "açar",
+    "C": "yağıyor",
+    "D": "çıkınca"
+   },
+   "dogru_sik": "B",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 5. kıta ve onun 1. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "\"uçar\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "B": "Doğru.",
+    "C": "\"yağıyor\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "D": "\"çıkınca\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"193\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"217.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"305\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"329.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"368\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"392.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Gece gökte yıldız parlar",
+       "Teneffüs zili çalınca",
+       "Uykuya dalar çocuklar",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Ağaçlar yeşil giyindi",
+       "Her kitap bize çok özel",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Rüzgârla yapraklar uçar",
+       "Çocuklar kayak yapıyor",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Bahar bize neşe saçar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-028",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde bütün kıtalardaki dizeler toplam kaç tanedir?",
+   "siklar": {
+    "A": "12",
+    "B": "8",
+    "C": "6",
+    "D": "10"
+   },
+   "dogru_sik": "A",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Doğru.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 8 çıkmaz.",
+    "C": "Şekildeki şiirin bütün satırları sayıldığında bu değer 6 çıkmaz.",
+    "D": "Şekildeki şiirin bütün satırları sayıldığında bu değer 10 çıkmaz."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Tatilde dağa çıkarız",
+       "Her kitap bize çok özel",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Rüzgârla yapraklar uçar",
+       "Uykuya dalar çocuklar",
+       "Kış gelmeden kuşlar kaçar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-029",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "8",
+    "B": "4",
+    "C": "2",
+    "D": "6"
+   },
+   "dogru_sik": "A",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Doğru.",
+    "B": "Şekildeki şiirde bu değer 4 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "C": "Şekildeki şiirde bu değer 2 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "D": "Şekildeki şiirde bu değer 6 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"158\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"182.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Teneffüs zili çalınca",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Rüzgârla yapraklar uçar",
+       "Sesi kulakta doluyor",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Ağaçlar yeşil giyindi",
+       "Bahar bize neşe saçar",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Tatilde dağa çıkarız",
+       "Kuşlar şakır ağacında",
+       "Gece ateşi yakarız"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-030",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde bütün kıtalardaki dizeler toplam kaç tanedir?",
+   "siklar": {
+    "A": "6",
+    "B": "10",
+    "C": "20",
+    "D": "12"
+   },
+   "dogru_sik": "D",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 6 çıkmaz.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 10 çıkmaz.",
+    "C": "Şekildeki şiirin bütün satırları sayıldığında bu değer 20 çıkmaz.",
+    "D": "Doğru."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"158\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"182.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Tatilde dağa çıkarız",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Ağaçlar yeşil giyindi",
+       "Herkes bahçeye çıkınca",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Güneş doğdu dağ başında",
+       "Kış gelmeden kuşlar kaçar",
+       "Kuşlar şakır ağacında"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-031",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 2. kıtadan sonra gelen dizelerin sayısı kaçtır?",
+   "siklar": {
+    "A": "12",
+    "B": "18",
+    "C": "10",
+    "D": "14"
+   },
+   "dogru_sik": "C",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 2. kıtanın bitişi bulunur.",
+    "Bu kıtadan sonraki bütün satırlar sayılır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce istenen kıtayı bul, ondan sonraki satırları say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 12 değildir; 2. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır.",
+    "B": "Şekildeki şiirde bu değer 18 değildir; 2. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır.",
+    "C": "Doğru.",
+    "D": "Şekildeki şiirde bu değer 14 değildir; 2. kıtadan sonraki kıtaların satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"158\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"182.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"333\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"357.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Ağaçlar yeşil giyindi",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Rüzgârla yapraklar uçar",
+       "Uykuya dalar çocuklar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Kitap okumak çok güzel",
+       "Bahar bize neşe saçar",
+       "Her kitap bize çok özel"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-032",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiir toplam kaç dizeden (mısradan) oluşmaktadır?",
+   "siklar": {
+    "A": "8",
+    "B": "12",
+    "C": "16",
+    "D": "20"
+   },
+   "dogru_sik": "B",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 8 çıkmaz.",
+    "B": "Doğru.",
+    "C": "Şekildeki şiirin bütün satırları sayıldığında bu değer 16 çıkmaz.",
+    "D": "Şekildeki şiirin bütün satırları sayıldığında bu değer 20 çıkmaz."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Kitap okumak çok güzel",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Tatilde dağa çıkarız",
+       "Kırlar çiçekle süslendi",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Annem masalı okuyor",
+       "Bahar bize neşe saçar",
+       "Sesi kulakta doluyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-033",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde bütün kıtalardaki dizeler toplam kaç tanedir?",
+   "siklar": {
+    "A": "10",
+    "B": "12",
+    "C": "16",
+    "D": "24"
+   },
+   "dogru_sik": "C",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekildeki bütün kıtaların satırları tek tek sayılır.",
+    "Elde edilen sayı toplam dize sayısıdır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dize, şiirin her bir satırıdır; kıtalar ayırt edilmeden bütün satırlar sayılır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirin bütün satırları sayıldığında bu değer 10 çıkmaz.",
+    "B": "Şekildeki şiirin bütün satırları sayıldığında bu değer 12 çıkmaz.",
+    "C": "Doğru.",
+    "D": "Şekildeki şiirin bütün satırları sayıldığında bu değer 24 çıkmaz."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"368\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"392.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Ağaçlar yeşil giyindi",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Rüzgârla yapraklar uçar",
+       "Uykuya dalar çocuklar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Teneffüs zili çalınca",
+       "Kuşlar şakır ağacında",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Tatilde dağa çıkarız",
+       "Annem masalı okuyor",
+       "Gece ateşi yakarız",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Bahar bize neşe saçar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-034",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "6",
+    "B": "4",
+    "C": "12",
+    "D": "10"
+   },
+   "dogru_sik": "A",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Doğru.",
+    "B": "Şekildeki şiirde bu değer 4 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "C": "Şekildeki şiirde bu değer 12 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "D": "Şekildeki şiirde bu değer 10 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Ağaçlar yeşil giyindi",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Kış gelince kar yağıyor",
+       "Uykuya dalar çocuklar",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Kitap okumak çok güzel",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Annem masalı okuyor",
+       "Kuşlar şakır ağacında",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Herkes bahçeye çıkınca"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-035",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 3. kıtanın 1. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "doluyor",
+    "B": "saçar",
+    "C": "çıkınca",
+    "D": "giyindi"
+   },
+   "dogru_sik": "D",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 3. kıta ve onun 1. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "\"doluyor\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "B": "\"saçar\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "C": "\"çıkınca\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "D": "Doğru."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"158\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"182.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Teneffüs zili çalınca",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Gece gökte yıldız parlar",
+       "Kırlar çiçekle süslendi",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Kitap okumak çok güzel",
+       "Çocuklar kayak yapıyor",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Annem masalı okuyor",
+       "Kuşlar şakır ağacında",
+       "Sesi kulakta doluyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-036",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "2",
+    "B": "6",
+    "C": "4",
+    "D": "0"
+   },
+   "dogru_sik": "B",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 2 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "B": "Doğru.",
+    "C": "Şekildeki şiirde bu değer 4 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "D": "Şekildeki şiirde bu değer 0 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Kitap okumak çok güzel",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Teneffüs zili çalınca",
+       "Kuşlar şakır ağacında",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Dallarda ilk çiçek açar",
+       "Sesi kulakta doluyor",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Gece gökte yıldız parlar",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Tatilde dağa çıkarız",
+       "Kırlar çiçekle süslendi",
+       "Gece ateşi yakarız"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-037",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "8",
+    "B": "6",
+    "C": "14",
+    "D": "10"
+   },
+   "dogru_sik": "B",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 8 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "B": "Doğru.",
+    "C": "Şekildeki şiirde bu değer 14 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "D": "Şekildeki şiirde bu değer 10 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 429\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"429\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Dallarda ilk çiçek açar",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Kitap okumak çok güzel",
+       "Kırlar çiçekle süslendi",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Teneffüs zili çalınca",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Tatilde dağa çıkarız",
+       "Çocuklar kayak yapıyor",
+       "Gece ateşi yakarız"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Sesi kulakta doluyor"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-038",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 3. kıtanın 2. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "güzel",
+    "B": "kaçar",
+    "C": "çocuklar",
+    "D": "ağacında"
+   },
+   "dogru_sik": "A",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 3. kıta ve onun 2. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Doğru.",
+    "B": "\"kaçar\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "C": "\"çocuklar\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "D": "\"ağacında\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Teneffüs zili çalınca</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Herkes bahçeye çıkınca</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"193\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"217.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"305\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"329.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"368\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"392.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Gece gökte yıldız parlar",
+       "Teneffüs zili çalınca",
+       "Uykuya dalar çocuklar",
+       "Herkes bahçeye çıkınca"
+      ],
+      [
+       "Tatilde dağa çıkarız",
+       "Kış gelince kar yağıyor",
+       "Gece ateşi yakarız",
+       "Çocuklar kayak yapıyor"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Kitap okumak çok güzel",
+       "Kırlar çiçekle süslendi",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Güneş doğdu dağ başında",
+       "Kuşlar şakır ağacında"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-039",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirin son iki kıtası toplam kaç dizeden oluşur?",
+   "siklar": {
+    "A": "12",
+    "B": "10",
+    "C": "14",
+    "D": "8"
+   },
+   "dogru_sik": "D",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde sondan iki kıta belirlenir.",
+    "Bu iki kıtadaki satırlar sayılıp toplanır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Şiirin altından başlayarak iki kıtayı ayır, satırlarını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şekildeki şiirde bu değer 12 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "B": "Şekildeki şiirde bu değer 10 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "C": "Şekildeki şiirde bu değer 14 değildir; şiirin son iki kıtasının satırları şekilde sayılmalıdır.",
+    "D": "Doğru."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 478\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"478\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Güneş doğdu dağ başında</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kuşlar şakır ağacında</text><text x=\"34\" y=\"95\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Dallarda ilk çiçek açar</text><text x=\"34\" y=\"119.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Bahar bize neşe saçar</text><text x=\"34\" y=\"158\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"182.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"207\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"231.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text><text x=\"34\" y=\"270\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"294.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kitap okumak çok güzel</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Her kitap bize çok özel</text><text x=\"34\" y=\"382\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"406.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"431\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"455.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Güneş doğdu dağ başında",
+       "Kuşlar şakır ağacında"
+      ],
+      [
+       "Dallarda ilk çiçek açar",
+       "Bahar bize neşe saçar"
+      ],
+      [
+       "Ağaçlar yeşil giyindi",
+       "Annem masalı okuyor",
+       "Kırlar çiçekle süslendi",
+       "Sesi kulakta doluyor"
+      ],
+      [
+       "Kış gelince kar yağıyor",
+       "Kitap okumak çok güzel",
+       "Çocuklar kayak yapıyor",
+       "Her kitap bize çok özel"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Gece gökte yıldız parlar",
+       "Kış gelmeden kuşlar kaçar",
+       "Uykuya dalar çocuklar"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "soru_id": "tr5-sir-s7-040",
+   "okul": "ortaokul",
+   "sinif": 5,
+   "ders": "Türkçe",
+   "konu": "Şiir",
+   "alt_konu": "Şiirin kıta ve dize özelliklerini belirleme",
+   "soru_metni": "Şekildeki şiirde 3. kıtanın 1. dizesinin son sözcüğü hangisidir?",
+   "siklar": {
+    "A": "süslendi",
+    "B": "yakarız",
+    "C": "uçar",
+    "D": "yapıyor"
+   },
+   "dogru_sik": "C",
+   "zorluk": 2,
+   "cozum_adimlari": [
+    "Şekilde 3. kıta ve onun 1. dizesi bulunur.",
+    "Dizenin en sağdaki sözcüğü okunur.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kıtayı, sonra o kıtadaki dizeyi bul; dizenin en sağdaki sözcüğüne bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "\"süslendi\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "B": "\"yakarız\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir.",
+    "C": "Doğru.",
+    "D": "\"yapıyor\", şekilde başka bir dizenin sonunda yer alır; sorulan dize değildir."
+   },
+   "kazanim_kodu": "T.O.5.17",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "sablon",
+   "gorsel_gerekli": true,
+   "gorsel": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 366\" role=\"img\" aria-label=\"Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.\"><rect width=\"300\" height=\"366\" fill=\"#FFFFFF\"/><text x=\"34\" y=\"32\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelince kar yağıyor</text><text x=\"34\" y=\"56.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece gökte yıldız parlar</text><text x=\"34\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çocuklar kayak yapıyor</text><text x=\"34\" y=\"105.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Uykuya dalar çocuklar</text><text x=\"34\" y=\"144\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Tatilde dağa çıkarız</text><text x=\"34\" y=\"168.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Ağaçlar yeşil giyindi</text><text x=\"34\" y=\"193\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Gece ateşi yakarız</text><text x=\"34\" y=\"217.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kırlar çiçekle süslendi</text><text x=\"34\" y=\"256\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Rüzgârla yapraklar uçar</text><text x=\"34\" y=\"280.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kış gelmeden kuşlar kaçar</text><text x=\"34\" y=\"319\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Annem masalı okuyor</text><text x=\"34\" y=\"343.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Sesi kulakta doluyor</text></svg>",
+    "alt_metin": "Boşluklarla ayrılmış bölümlerden oluşan kısa bir şiir.",
+    "tip_id": "b3-siir"
+   },
+   "gorsel_spec": {
+    "tip_id": "b3-siir",
+    "parametreler": {
+     "kitalar": [
+      [
+       "Kış gelince kar yağıyor",
+       "Gece gökte yıldız parlar",
+       "Çocuklar kayak yapıyor",
+       "Uykuya dalar çocuklar"
+      ],
+      [
+       "Tatilde dağa çıkarız",
+       "Ağaçlar yeşil giyindi",
+       "Gece ateşi yakarız",
+       "Kırlar çiçekle süslendi"
+      ],
+      [
+       "Rüzgârla yapraklar uçar",
+       "Kış gelmeden kuşlar kaçar"
+      ],
+      [
+       "Annem masalı okuyor",
+       "Sesi kulakta doluyor"
+      ]
+     ]
+    }
+   }
+  }
+ ]
+}

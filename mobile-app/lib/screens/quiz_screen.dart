@@ -24,7 +24,6 @@ import '../widgets/quiz_top_bar.dart';
 import '../widgets/result_sheet.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/hupo/hupo.dart';
-import '../widgets/veli_mesaji_sheet.dart';
 import 'result_screen.dart';
 
 // Web / klavye metinleri (const).
@@ -134,7 +133,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       context: context,
       barrierDismissible: false,
       builder: (ctx) => AlertDialog(
-        title: const Text('Bugünlük harikaydın!'),
+        title: const Text('Bugünlük bu kadar'),
         content: const Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -143,17 +142,12 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                 semanticLabel: 'Hupo, seni tebrik ediyor'),
             SizedBox(height: 12),
             Text(
-              'Bugünkü ücretsiz sorularını tamamladın. Yarın yeni sorularla devam edebilirsin.',
+              'Bugünlük bu kadar. Yarın yeni sorular seni bekliyor.',
               textAlign: TextAlign.center,
             ),
           ],
         ),
         actions: [
-          TextButton(
-            // Velinin göreceği mesajı hazırlar; çocuk burada satın almaz.
-            onPressed: () => showVeliMesajiSheet(ctx),
-            child: const Text('Velime mesaj hazırla'),
-          ),
           TextButton(
             autofocus: true, // Enter ile kapanır
             onPressed: () => Navigator.of(ctx).pop(),

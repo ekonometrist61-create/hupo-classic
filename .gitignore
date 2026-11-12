@@ -63,3 +63,13 @@ mobile-app/ios/Runner/GoogleService-Info.plist
 scripts/growth-ajan/__pycache__/
 __pycache__/
 *.pyc
+
+# Gizli anahtar dosyalari
+*.key
+
+# Yerel gorsel uretim betikleri / hata ayiklama artiklari (sahipsiz, izlenmiyor)
+/turkce1-gorsel.mjs
+/turkce2-gorsel.mjs
+/turkce3-gorsel.mjs
+/tools/gorsel-motoru/_dbg.mjs
+/tools/gorsel-motoru/_dbg_uretici.mjs

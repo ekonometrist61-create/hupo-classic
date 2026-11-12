@@ -1,0 +1,704 @@
+{
+  "hikaye": {
+    "tur": "bilim_kurgu",
+    "konu": "ay_postasi",
+    "slug": "hr035-aya-giden-ilk-posta",
+    "durum": "taslak",
+    "baslik": "Ay'a Giden İlk Posta",
+    "tanitim": "Bir mektup Ay'a nasıl gider? Bağlantı kopunca iki kardeş, mesajı kurtarmanın yolunu arar.",
+    "fis_kodu": "HR-035",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D15",
+        "yardimci_deger": "D16"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 6,
+        "sayfa_sayisi": 9,
+        "simge_sayisi": 20,
+        "kelime_sayisi": 487,
+        "tahmini_sure_dk": 6,
+        "yoldas_yer_sayisi": 6,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 2,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "bilim_teknoloji",
+        "aile",
+        "kesif"
+      ],
+      "ana_sinif": 4,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 4,
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "gecikme_hr035",
+          "tur": "lexeme",
+          "yuva": "pc_gecikme",
+          "islev": "first_hint",
+          "etiket": "gecikme"
+        },
+        {
+          "id": "uydu_hr035",
+          "tur": "lexeme",
+          "yuva": "pc_uydu",
+          "islev": "application",
+          "etiket": "uydu"
+        },
+        {
+          "id": "dogrulama_hr035",
+          "tur": "lexeme",
+          "yuva": "pc_dogrulama",
+          "islev": "application",
+          "etiket": "doğrulama"
+        },
+        {
+          "id": "kavram_hr035",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Veri aktarımı ve iletişim gecikmesi"
+        },
+        {
+          "id": "atasoz_hr035",
+          "tur": "proverb",
+          "yuva": "pc_ata_sabreden",
+          "islev": "application",
+          "etiket": "Sabreden derviş muradına ermiş"
+        }
+      ]
+    },
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "dunya_tipi": "masalsi",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D15",
+      "D16"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pc_gecikme",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_gecikme"
+          }
+        ]
+      },
+      {
+        "ad": "pc_uydu",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_uydu"
+          }
+        ]
+      },
+      {
+        "ad": "pc_dogrulama",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_dogrulama"
+          }
+        ]
+      },
+      {
+        "ad": "pc_ata_sabreden",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "pc_ata_sabreden"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pc_gecikme",
+        "tur": "kelime",
+        "anlam": "Bir şeyin beklenenden geç olması.",
+        "yazim": "gecikme",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_uydu",
+        "tur": "kelime",
+        "anlam": "Dünya'nın çevresinde dönen ve haberleşme gibi işler için uzaya gönderilen araç.",
+        "yazim": "uydu",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_dogrulama",
+        "tur": "kelime",
+        "anlam": "Bir şeyin doğru olduğunu kontrol edip onaylama.",
+        "yazim": "doğrulama",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_ata_sabreden",
+        "tur": "atasozu",
+        "anlam": "Sabırla bekleyen kişi, istediğine sonunda ulaşır.",
+        "yazim": "Sabreden derviş muradına ermiş",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "Posta merkezinin ekranı birden kırmızıya dönünce ne yazdı?",
+      "beceri": "hatirlama",
+      "aciklama": "Her şey yolundayken ekran kırmızıya döndü ve \"Bağlantı kesildi\" yazdı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İleti ulaştı"
+        },
+        {
+          "id": "B",
+          "metin": "Bağlantı kesildi"
+        },
+        {
+          "id": "C",
+          "metin": "Mektup kayboldu"
+        },
+        {
+          "id": "D",
+          "metin": "Gönderim tamamlandı"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s2",
+      "dogru": "D",
+      "metin": "Görevli, \"Bütün kanallar aynı anda çalışmayabilir\" derken neyi anlatmak istedi?",
+      "beceri": "cikarim",
+      "aciklama": "Görevli, çocukların önerisini kabul etti ama önce güvenilir kanalın belirlenmesi gerektiğini söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Mektubun kesinlikle kaybolduğunu"
+        },
+        {
+          "id": "B",
+          "metin": "Posta merkezinin kapatılacağını"
+        },
+        {
+          "id": "C",
+          "metin": "Ay Üssü'nde kimsenin olmadığını"
+        },
+        {
+          "id": "D",
+          "metin": "Başka bir kanala geçmeden önce hangisinin güvenilir olduğunu kontrol etmek gerektiğini"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Metinde geçen gecikme sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Sinyaller ışık hızında ilerlese de uzaklık yüzünden cevap birazdan, yani geç gelir.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir şeyin beklenenden geç olması"
+        },
+        {
+          "id": "B",
+          "metin": "Bir şeyin çok hızlı olması"
+        },
+        {
+          "id": "C",
+          "metin": "Bir mektubun kaybolması"
+        },
+        {
+          "id": "D",
+          "metin": "Bir şeyin yok edilmesi"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s4",
+      "dogru": "C",
+      "metin": "Sınıfın bir mesaj göndermeden önce adı, alıcıyı ve içeriği kontrol etmeye karar vermesi neyi gösterir?",
+      "beceri": "yorumlama",
+      "aciklama": "Metin, uzaklık ne kadar büyük olursa olsun dikkatli iletişimin küçük adımlarla başladığını söylüyor.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Mesajların hiç gönderilmemesi gerektiğini"
+        },
+        {
+          "id": "B",
+          "metin": "Uzak mesafelerde mesaj göndermenin imkânsız olduğunu"
+        },
+        {
+          "id": "C",
+          "metin": "Dikkatli iletişimin küçük ama önemli kontrollerle başladığını"
+        },
+        {
+          "id": "D",
+          "metin": "Hızın her zaman en önemli şey olduğunu"
+        }
+      ],
+      "dayanak_sayfa": 9
+    },
+    {
+      "id": "s5",
+      "dogru": "B",
+      "metin": "Mesajı küçük parçalara ayırma fikri neden iyi bir çözümdür?",
+      "beceri": "degerlendirme",
+      "aciklama": "Bağlantı dönünce eksik parça tekrar gönderilip tamamlanabilir; görevli de bunun veri aktarımında kullanılan bir yöntem olduğunu söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Mesaj daha uzun görünür"
+        },
+        {
+          "id": "B",
+          "metin": "Bağlantı yeniden kurulunca yalnızca eksik kısım tamamlanabilir"
+        },
+        {
+          "id": "C",
+          "metin": "Teyze mesajı hiç okuyamaz"
+        },
+        {
+          "id": "D",
+          "metin": "Mesaj Ay'a daha uzun bir yoldan gider"
+        }
+      ],
+      "dayanak_sayfa": 5
+    },
+    {
+      "id": "s6",
+      "dogru": "A",
+      "metin": "Ay'daki teyze mektupla ne yaptı?",
+      "beceri": "hatirlama",
+      "aciklama": "Teyze basılmış mektubu tutuyordu ve sınıfın resmini duvarına astığını söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sınıfın resmini duvarına astı"
+        },
+        {
+          "id": "B",
+          "metin": "Mektubu geri gönderdi"
+        },
+        {
+          "id": "C",
+          "metin": "Mektubu saklamak için kutuya koydu"
+        },
+        {
+          "id": "D",
+          "metin": "Mektubu hiç okumadı"
+        }
+      ],
+      "dayanak_sayfa": 8
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ay"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": " Üssü'ne gidecek ilk özel mektubu yazma hakkını iki kardeş kazanmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", Dünya"
+        },
+        {
+          "t": "ikon",
+          "v": "globe"
+        },
+        {
+          "t": "metin",
+          "v": "'daki sınıfının resmini çizmiş; Can ise altına yalnızca bir cümle yazmıştı: \"Burada sizi merak eden arkadaşlarınız var.\" Mektup"
+        },
+        {
+          "t": "ikon",
+          "v": "scroll"
+        },
+        {
+          "t": "metin",
+          "v": " Ay'da çalışan teyzeleri Selin'e gönderilecekti. Yeni posta sistemi önce kâğıdı görüntüye dönüştürüyor, ardından uzaya veri olarak iletiyordu. Teyzeleri Ay Üssü'ndeki yazıcıdan aynı mektubu alacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Posta merkezinde tavandan Dünya"
+        },
+        {
+          "t": "ikon",
+          "v": "globe"
+        },
+        {
+          "t": "metin",
+          "v": " ve Ay"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": "'ın maketleri sarkıyordu. Can aralarındaki boşluğa baktı. \"Ay şu kadar yakınsa mektup"
+        },
+        {
+          "t": "ikon",
+          "v": "scroll"
+        },
+        {
+          "t": "metin",
+          "v": " çabucak gider,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " iki maketi daha uzağa taşıdı. \"Bunlar gerçeğe göre küçültülmüş. Uzaydaki uzaklıkları maketle göstermek çok zor,\" diye açıkladı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ay"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", mesajın nasıl ilerlediğini daha iyi anlamak"
+        },
+        {
+          "t": "ikon",
+          "v": "lightning-idea"
+        },
+        {
+          "t": "metin",
+          "v": " için kabloları, anteni ve uydunun görevini çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı. Başlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırmızıya döndü: *Bağlantı kesildi.*"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Mektubumuz kayboldu mu?\" diye sordu Can. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Hayır,\" dedi. \"Mesajın kopyası burada güvende. Ancak şimdi göndermiyoruz. Önce bağlantının yeniden kurulması gerek.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " üzülmüştü. Selin teyzesinin doğum gününe yalnızca bir gün kalmıştı. Can bir çözüm"
+        },
+        {
+          "t": "ikon",
+          "v": "puzzle"
+        },
+        {
+          "t": "metin",
+          "v": " önerdi: \"Mektubu aynı anda başka bir kanaldan göndersek?\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. \"İyi düşünce. Fakat bütün kanallar aynı anda çalışmayabilir. Önce hangisinin güvenilir olduğuna bakmalıyız.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar merkezin panosunda çizilmiş küçük bir şemayı inceledi. Bir çizgi Dünya"
+        },
+        {
+          "t": "ikon",
+          "v": "globe"
+        },
+        {
+          "t": "metin",
+          "v": " istasyonundan yörüngedeki uyduya uzanıyor, ikinci çizgi uydudan Ay"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": " Üssü'ne gidiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Mesajı küçük parçalara ayırsak?\" diye sordu. \"Bağlantı dönünce eksik kısmı tamamlarız.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bu da veri aktarımında kullanılan yöntemlerden biridir,\" dedi. Ardından çocuklara mesajın birden fazla parçasının nasıl kontrol edildiğini gösterdi. Kısa bir bekleyişten sonra "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_uydu"
+        },
+        {
+          "t": "metin",
+          "v": " bağlantısı tekrar açıldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ekrana *İleti ulaştı* yazısı düşünce Can zıpladı. Fakat hemen bir soru"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " sordu: \"Ay"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": "'daki teyze cevap verirse onu anında duyar mıyız?\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. \"Hayır, sinyaller ışık hızında ilerlese de Dünya"
+        },
+        {
+          "t": "ikon",
+          "v": "globe"
+        },
+        {
+          "t": "metin",
+          "v": " ile Ay arasındaki uzaklık yüzünden küçük bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_gecikme"
+        },
+        {
+          "t": "metin",
+          "v": " olur.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " çocuklara gönderimden önce yaptıkları iki kontrolü de anlatmıştı: alıcının kimliği doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " muydu ve mesaj gerçekten bütünüyle gelmiş miydi? Can kendi mektubuna bakıp \"Ya çizimimizin yarısı gitseydi?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_dogrulama"
+        },
+        {
+          "t": "metin",
+          "v": " işaretini gösterdi. \"O zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " karşı taraf eksik parçayı isterdi.\" Mesajın güvenli iletimi artık ikisinin de zihninde bir bilmecenin çözümü gibiydi. Eve dönünce mektubun ilk taslağını sakladılar; günün sonunda öğrenilenlerin de bir hatıra olmasını istediler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi akşam evde bir görüntü geldi. Selin teyze, elinde basılmış mektubu tutuyordu. \"Sınıfınızın resmini duvarıma astım,\" dedi. \"Ay"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": "'ın gökyüzünde Dünya"
+        },
+        {
+          "t": "ikon",
+          "v": "globe"
+        },
+        {
+          "t": "metin",
+          "v": " çok güzel görünüyor. Ama sizin yazdıklarınız daha güzel.\" Can, \"Biz de buradan seni görüyoruz!\" diye seslendi. Cevap hemen gelmedi. İki kardeş gülümseyerek bekledi. Can fısıldadı: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pc_ata_sabreden"
+        },
+        {
+          "t": "metin",
+          "v": "\" O küçük gecikme artık onları şaşırtmıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", postanın yalnızca zarf ve pul olmadığını anladı. Bazen sevgi"
+        },
+        {
+          "t": "ikon",
+          "v": "heart"
+        },
+        {
+          "t": "metin",
+          "v": " bir kâğıtta, bazen de uzaklara giden küçük veri parçalarında yolculuk ediyordu. Yine de en önemli şey, karşıdaki insanı hatırlamaktı. Can ertesi gün sınıfta öğrendiklerini arkadaşlarına anlattı. Sınıfça bir mesaj göndermeden önce adını, alıcısını ve içeriğini kontrol etmeye karar verdiler. Çünkü uzaklık ne kadar büyük olursa olsun, dikkatli iletişim küçük ama önemli adımlarla başlıyordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "roket"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

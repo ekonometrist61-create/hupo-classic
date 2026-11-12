@@ -1,0 +1,709 @@
+{
+  "hikaye": {
+    "tur": "gezi_kultur",
+    "konu": "tren_yolculugu",
+    "slug": "hr040-trenin-penceresindeki-turkiye",
+    "durum": "taslak",
+    "baslik": "Trenin Penceresindeki Türkiye",
+    "tanitim": "Üç şehir, üç sofra ve bir defter. Farklı yerlerin ortak yanı ne olabilir?",
+    "fis_kodu": "HR-040",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D19"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 6,
+        "sayfa_sayisi": 9,
+        "simge_sayisi": 13,
+        "kelime_sayisi": 496,
+        "tahmini_sure_dk": 6,
+        "yoldas_yer_sayisi": 3,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 2,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "kultur_miras",
+        "kesif",
+        "aile"
+      ],
+      "ana_sinif": 4,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "yoresel_hr040",
+          "tur": "lexeme",
+          "yuva": "pc_yoresel",
+          "islev": "first_hint",
+          "etiket": "yöresel"
+        },
+        {
+          "id": "miras_hr040",
+          "tur": "lexeme",
+          "yuva": "pc_miras",
+          "islev": "application",
+          "etiket": "miras"
+        },
+        {
+          "id": "durak_hr040",
+          "tur": "lexeme",
+          "yuva": "pc_durak",
+          "islev": "application",
+          "etiket": "durak"
+        },
+        {
+          "id": "kavram_hr040",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Kültürel çeşitlilik ve harita"
+        },
+        {
+          "id": "atasoz_hr040",
+          "tur": "proverb",
+          "yuva": "pc_ata_misafir",
+          "islev": "application",
+          "etiket": "Misafir kısmetiyle gelir"
+        }
+      ]
+    },
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D14",
+      "D19"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pc_yoresel",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_yoresel"
+          }
+        ]
+      },
+      {
+        "ad": "pc_miras",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_miras"
+          }
+        ]
+      },
+      {
+        "ad": "pc_durak",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_durak"
+          }
+        ]
+      },
+      {
+        "ad": "pc_ata_misafir",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "pc_ata_misafir"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pc_yoresel",
+        "tur": "kelime",
+        "anlam": "Yalnızca belli bir yöreye ait olan.",
+        "yazim": "yöresel",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_miras",
+        "tur": "kelime",
+        "anlam": "Geçmişten bugüne kalan değerli bilgi, eşya ya da gelenekler.",
+        "yazim": "miras",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_durak",
+        "tur": "kelime",
+        "anlam": "Bir aracın yolculuk sırasında durduğu yer.",
+        "yazim": "durak",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_ata_misafir",
+        "tur": "atasozu",
+        "anlam": "Eve gelen konuk, kendi nasibiyle gelir; ağırlamak bereket getirir.",
+        "yazim": "Misafir kısmetiyle gelir",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "Eskişehir'de Banu teyze sofraya ne koydu?",
+      "beceri": "hatirlama",
+      "aciklama": "Banu teyze onları evinde karşıladı ve sofraya çibörek koydu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Etli ekmek"
+        },
+        {
+          "id": "B",
+          "metin": "Çibörek"
+        },
+        {
+          "id": "C",
+          "metin": "Baklava"
+        },
+        {
+          "id": "D",
+          "metin": "Mantı"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s2",
+      "dogru": "C",
+      "metin": "Pazardaki kadının başka şehirlerde de farklı söyleyişler duyulabileceğini anlatması neyi gösterir?",
+      "beceri": "cikarim",
+      "aciklama": "Aynı nesne farklı yerlerde farklı adlarla anılabiliyordu; çocuk da kelimelerin insanlarla birlikte yolculuk ettiğini fark etti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sözcüklerin hiç değişmediğini"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnızca Eskişehir'de farklı konuşulduğunu"
+        },
+        {
+          "id": "C",
+          "metin": "Aynı ülkede bile sözcüklerin yöreden yöreye değişebileceğini"
+        },
+        {
+          "id": "D",
+          "metin": "Kimsenin birbirini anlamadığını"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s3",
+      "dogru": "D",
+      "metin": "Metinde geçen yöresel sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Pazardaki kadın, başka şehirlerde de farklı söyleyişler olabileceğini anlattı; yani sözcük o yöreye aitti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çok eski"
+        },
+        {
+          "id": "B",
+          "metin": "Yabancı dilden gelen"
+        },
+        {
+          "id": "C",
+          "metin": "Çok gürültülü"
+        },
+        {
+          "id": "D",
+          "metin": "Belli bir yöreye ait olan"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Ayla teyzenin \"Kültürel miras böyle yaşar\" demesi ne anlama gelir?",
+      "beceri": "yorumlama",
+      "aciklama": "Müzedeki eski tabaktaki çizgilerle ustanın bugünkü desenleri arasında bağ vardı; bilgi kullanılarak ve geliştirilerek yaşıyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Geçmişten gelen bilgiler yalnızca saklanmaz, kullanılıp geliştirilerek sürdürülür"
+        },
+        {
+          "id": "B",
+          "metin": "Eski eşyalar müzede kalmalıdır"
+        },
+        {
+          "id": "C",
+          "metin": "Desenler hiç değişmemelidir"
+        },
+        {
+          "id": "D",
+          "metin": "Yeni şeyler öğrenmek gereksizdir"
+        }
+      ],
+      "dayanak_sayfa": 7
+    },
+    {
+      "id": "s5",
+      "dogru": "B",
+      "metin": "Çocuğun \"Farklılıkları öğrenmek, birbirimize yaklaşmanın başka bir yolu\" sonucuna varması neden yerindedir?",
+      "beceri": "degerlendirme",
+      "aciklama": "Çocuk, farklı sofralar ve gelenekler gördü; ama her yerde misafire yer açıldığını ve sıcak karşılandığını fark etti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çünkü her yerde yemekler aynıdır"
+        },
+        {
+          "id": "B",
+          "metin": "Çünkü her durakta farklılıklar görse de insanların onu aynı sıcaklıkla karşıladığını fark etmiştir"
+        },
+        {
+          "id": "C",
+          "metin": "Çünkü yolculuk çok kısa sürmüştür"
+        },
+        {
+          "id": "D",
+          "metin": "Çünkü hiç soru sormamıştır"
+        }
+      ],
+      "dayanak_sayfa": 8
+    },
+    {
+      "id": "s6",
+      "dogru": "C",
+      "metin": "Gaziantep'teki bakır ustası desenleri yapmayı kimden öğrendi?",
+      "beceri": "hatirlama",
+      "aciklama": "Usta, desenleri önce babasından öğrendiğini, sonra kendi desenlerini geliştirdiğini söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir kitaptan"
+        },
+        {
+          "id": "B",
+          "metin": "Müzedeki bir görevliden"
+        },
+        {
+          "id": "C",
+          "metin": "Babasından"
+        },
+        {
+          "id": "D",
+          "metin": "Okulundaki öğretmeninden"
+        }
+      ],
+      "dayanak_sayfa": 6
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk uzun tren yolculuğuna çıkacağı sabah erkenden uyandı. Annesiyle birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " üç şehirde duracak, her durakta farklı bir aile"
+        },
+        {
+          "t": "ikon",
+          "v": "house"
+        },
+        {
+          "t": "metin",
+          "v": " dostunu ziyaret edeceklerdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " da yolculukta not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " tutmaya hazırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yolculuktan önce atlasını açmış, uğrayacakları şehirleri renkli kalemlerle işaretlemişti. \"İstasyona varınca doğuya mı gitmiş olacağız?\" diye sordu. Annesi güzergâhı gösterdi. \"Her durakta haritayı yeniden inceleyelim,\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " böylece pencerenin dışındaki manzarayla kâğıttaki çizgiler arasında bağlantı kurabilecekti. Aklında bir oyun da vardı: Her şehirden duyduğu yeni bir kelimeyi not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " edecek, sonra benzerlerini arayacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " küçük defterinin ilk sayfasına şunu yazdı: *Aynı ülkede kaç farklı sofra kurulabilir?* "
+        },
+        {
+          "t": "isaret",
+          "kod": "kitap"
+        },
+        {
+          "t": "metin",
+          "v": " Tren"
+        },
+        {
+          "t": "ikon",
+          "v": "train"
+        },
+        {
+          "t": "metin",
+          "v": " hareket edince pencereden tarlalar, dereler ve küçük istasyonlar akmaya başladı. İlk "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_durak"
+        },
+        {
+          "t": "metin",
+          "v": " Eskişehir'di."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Banu teyze onları evinde karşılayıp \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pc_ata_misafir"
+        },
+        {
+          "t": "metin",
+          "v": "\" dedi. Sonra sofraya çibörek koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bizim evdeki böreğe benziyor ama şekli farklı,\" dedi. Banu teyze, \"Yemeklerin yolu da insanların yolu gibi. Bir yerden başka yere taşınırken değişebilir,\" diye anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine iki sütun çizdi: *Benzerlikler* ve *Farklılıklar*. İlk sütuna \"hamur ve paylaşmak\", ikinciye \"şekil ve hazırlanışı\" yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de tabaktaki yemeğin adını defterine geçirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Eskişehir'den ayrılırken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " pazarda çalışan bir kadına "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_yoresel"
+        },
+        {
+          "t": "metin",
+          "v": " bir sözcüğün anlamını sormuştu. Kadın, onun merakını görünce gülümseyerek açıklamış, sonra başka şehirlerde de farklı söyleyişler duyabileceğini anlatmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " aynı nesnenin farklı yerlerde bazen farklı adlarla anılmasına şaşırdı. \"Demek kelimeler de yolculuk ediyor,\" dedi. Annesi, \"Evet, insanlarla birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " taşınıyor ve değişiyor,\" diye cevap verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterinde sözcüklere yeni bir sayfa"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " ayırdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci gün Konya'ya vardılar. Mehmet amca onları tarihi bir sokakta gezdirdi. Taş binaları, eski kapıları ve avluları gösterdi. Öğle yemeğinde etli ekmek"
+        },
+        {
+          "t": "ikon",
+          "v": "seed"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez yemeğin yanında anlatılan aile"
+        },
+        {
+          "t": "ikon",
+          "v": "house"
+        },
+        {
+          "t": "metin",
+          "v": " hikâyeleriyle de ilgilendi. Mehmet amca, \"Eskiden akşam yemekleri ailece uzun sürerdi,\" dedi. \"Herkes gününü anlatırdı.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Biz de bazen telefonu bir kenara koyup konuşuyoruz,\" diye cevap verdi. \"Demek bazı gelenekler bugün de devam ediyor.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Trenin üçüncü durağı Gaziantep'ti. Burada teyzesi Ayla, onlara renkli bir pazar gezdirdi. Baharatların kokusu birbirine karışıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tezgâhlardaki ürünlerin adlarını not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " etti. Bir dükkânda bakır işleyen ustayı izledi. \"Bu desenleri yapmayı kim öğretti?\" diye sordu. Usta, \"Önce babamdan öğrendim, sonra kendi desenlerimi geliştirdim,\" dedi. \"Her yeni usta eski bilgiyi başka biçimde sürdürür.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Üçüncü günün öğleden sonrasında pazarın yanındaki küçük müzeyi de görmüşlerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", camın arkasındaki eski bir bakır tabağın üstünde ustanın desenlerine benzeyen çizgiler buldu. \"Bugünküyle dünkü arasında bir bağ var,\" dedi. Ayla teyze, \"Kültürel "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_miras"
+        },
+        {
+          "t": "metin",
+          "v": " böyle yaşar; insanlar öğrendiklerini yalnızca saklamaz, kullanır ve geliştirir,\" diye açıkladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dönüş treninde gördüğü desenlerin küçük resimlerini yan yana çizdi ve altlarına ortak yanlarını yazdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterini açınca sayfaların yemek adlarıyla dolduğunu gördü. Ama yalnızca yemeklerden söz etmek istemedi. Her durakta insanların onları aynı sıcaklıkla karşıladığını da yazdı. Annesi, \"Peki sorunun cevabını buldun mu?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. \"Sayamadığım kadar farklı sofra var. Ama sofralarda ortak olan bir şey de var: Misafire yer açmak.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yolculuğun son sayfasına küçük bir Türkiye haritası çizdi. Üzerine uğradıkları şehirleri işaretledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " haritanın kenarına küçük bir tren"
+        },
+        {
+          "t": "ikon",
+          "v": "train"
+        },
+        {
+          "t": "metin",
+          "v": " çizdi. Haritanın altına da tek bir cümle yazdı: *Farklılıkları öğrenmek, birbirimize yaklaşmanın başka bir yolu.* "
+        },
+        {
+          "t": "isaret",
+          "kod": "kalp"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

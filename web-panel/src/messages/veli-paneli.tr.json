@@ -383,9 +383,12 @@
     "abonelik": {
       "loading": "Yükleniyor...",
       "bilinmiyor": "bilinmiyor",
+      "hata": "Abonelik bilgisi şu an alınamadı. Sayfayı yenileyip tekrar deneyin.",
       "saglayici": "Ödeme sağlayıcısı",
       "yenilemeBaslik": "Yenileme ve iptal",
       "yenileme": "Yenileme",
+      "yenilenmez": "Kendiliğinden yenilenmez",
+      "iptalNotWeb": "Bu plan bitiş tarihinde kendiliğinden sona erer; ek ödeme alınmaz. Başka bir konuda destek ekibimize ulaşın.",
       "iptalNot": "İptal için destek ekibimize ulaşın."
     },
     "odeme": {

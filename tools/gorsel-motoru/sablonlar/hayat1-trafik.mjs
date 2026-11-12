@@ -1,23 +1,42 @@
-// 1. sınıf Hayat Bilgisi — trafik ışığı (temel trafik kuralları). Renk + konum birlikte bilgidir.
-// Not: altı değişik soru üretilebilir (3 ışık × 2 bakış); daha fazlası için yeni şablon gerekir.
+// 1. sınıf Hayat Bilgisi — trafik ışığı. Yeniden tasarım (hb123_v2): soru davranış değil şekildeki yanan lambayı okutur
+// (renk, konum, sıra, üstündeki/altındaki lamba sayısı). Kök yanan lambayı söylemez; şıklar şekle bağlı değerlerdir.
+// 3 yanan lamba × (5 soru biçimi, ikisi 2 kök sözlü) = 21 farklı soru.
+// Not: paket.test.mjs 'eksik üretim' testi trafik kazanımında toplam 46 farklı soru bekler (trafik 21 + kavşak 25); sayıyı değiştirirsen o testi güncelle.
 const MUFREDAT = 'TYMM 1-2 taslak 2026-27';
-const ISIKLAR = ['kirmizi', 'sari', 'yesil'];
-const ARAC = { kirmizi: 'Durur', sari: 'Yavaşlar ve durmaya hazırlanır', yesil: 'Etrafı kontrol ederek geçer' };
-const YAYA = { kirmizi: 'Etrafı kontrol ederek geçer', sari: 'Bekler', yesil: 'Bekler' };
-const AC = { kirmizi: 'kırmızı', sari: 'sarı', yesil: 'yeşil' };
+const ISIKLAR = ['kirmizi', 'sari', 'yesil']; // yukarıdan aşağıya sıra
+const HICBIRI = 'Hiçbir lamba yanmıyor';
+const SAYI = ['0 lamba', '1 lamba', '2 lamba', '3 lamba'];
 
-export function kur({ R, sec, ekle }) {
+// Her biçim: kokler, siklar (4 aday, sonuncusu/biri elenen), dogru(i) = yanan lambanın sıra numarası (0 üst, 1 orta, 2 alt) için doğru şık.
+const BICIMLER = [
+  { ad: 'renk', kokler: ['Yukarıdaki trafik ışığında yanan lamba hangi renktedir?', 'Şekildeki trafik ışığında hangi renkli lamba yanmaktadır?'],
+    siklar: ['Kırmızı', 'Sarı', 'Yeşil', HICBIRI], dogru: (i) => ['Kırmızı', 'Sarı', 'Yeşil'][i],
+    sebep: () => 'Şekilde yanan lamba bu renkte görünmüyor; renkli (yanan) lambaya bak.' },
+  { ad: 'konum', kokler: ['Yukarıdaki trafik ışığında yanan lamba hangi konumdadır?', 'Şekildeki ışıkta yanan lamba ışığın neresindedir?'],
+    siklar: ['Üstteki lamba', 'Ortadaki lamba', 'Alttaki lamba', HICBIRI], dogru: (i) => ['Üstteki lamba', 'Ortadaki lamba', 'Alttaki lamba'][i],
+    sebep: () => 'Şekilde yanan (renkli) lamba bu konumda değil; gri lambalar yanmayan lambalardır.' },
+  { ad: 'sira', kokler: ['Yukarıdaki trafik ışığında yanan lamba yukarıdan aşağıya doğru kaçıncı lambadır?'],
+    siklar: ['Yukarıdan 1. lamba', 'Yukarıdan 2. lamba', 'Yukarıdan 3. lamba', HICBIRI], dogru: (i) => `Yukarıdan ${i + 1}. lamba`,
+    sebep: () => 'Lambaları yukarıdan aşağıya say; yanan (renkli) lamba şekilde bu sırada değil.' },
+  { ad: 'ust', kokler: ['Yukarıdaki trafik ışığında yanan lambanın üstünde kaç lamba vardır?'],
+    siklar: SAYI, dogru: (i) => SAYI[i],
+    sebep: () => 'Yanan lambanın üstündeki lambaları şekilde say; sayı bununla uyuşmuyor.' },
+  { ad: 'alt', kokler: ['Yukarıdaki trafik ışığında yanan lambanın altında kaç lamba vardır?'],
+    siklar: SAYI, dogru: (i) => SAYI[2 - i],
+    sebep: () => 'Yanan lambanın altındaki lambaları şekilde say; sayı bununla uyuşmuyor.' },
+];
+
+export function kur({ sec, ekle }) {
   function isikSorusu() {
-    const yanan = sec(ISIKLAR), yaya = R() < 0.5, harita = yaya ? YAYA : ARAC;
-    const dogru = harita[yanan];
-    const havuz = yaya ? ['Etrafı kontrol ederek geçer', 'Bekler', 'Koşarak geçer', 'Araçların arasından geçer'] : ['Durur', 'Yavaşlar ve durmaya hazırlanır', 'Etrafı kontrol ederek geçer', 'Hızını artırarak geçer'];
-    const cel = havuz.filter((x) => x !== dogru);
-    const sebep = (x) => (x === 'Koşarak geçer' || x === 'Araçların arasından geçer' ? 'Yayanın güvenliğini tehlikeye atan bir davranıştır.' : x === 'Hızını artırarak geçer' ? 'Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir.' : `Bu davranış ${ISIKLAR.filter((k) => harita[k] === x).map((k) => AC[k]).join(' / ')} ışık için uygundur; yanan lamba ${AC[yanan]} renktedir.`);
+    const yanan = sec(ISIKLAR), i = ISIKLAR.indexOf(yanan), b = sec(BICIMLER);
+    const dogru = b.dogru(i);
+    const cel = b.siklar.filter((x) => x !== dogru);
+    const sebep = (x) => (x === HICBIRI ? 'Şekilde bir lamba renkli yanmaktadır; gri lambalar sönüktür.' : b.sebep(x));
     ekle({ kod: 'HB.1.2.3', konu: 'Güvenli Yaşam', alt_konu: 'Trafik ışıkları', zorluk: 1, spec: { tip_id: 'trafik-isigi', parametreler: { yanan } },
       dogru, celdirici: cel, gerekce: cel.map(sebep),
-      kok: yaya ? 'Yukarıdaki trafik ışığı araçlar için yanmaktadır. Karşıdan karşıya geçmek isteyen yaya ne yapmalıdır?' : 'Yukarıdaki trafik ışığı araçlar için yanmaktadır. Araç sürücüleri bu ışıkta ne yapmalıdır?',
-      ipucu: 'Yanan lambanın rengine ve yerine (üstte, ortada, altta) bak.',
-      cozum: [`Yanan lamba ${AC[yanan]} renktedir ve ${{ kirmizi: 'en üsttedir', sari: 'ortadadır', yesil: 'en alttadır' }[yanan]}.`, `${yaya ? 'Yaya' : 'Sürücü'} bu ışıkta şunu yapmalıdır: ${dogru}.`],
+      kok: sec(b.kokler),
+      ipucu: 'Üç lambadan renkli olanı bul; gri lambalar yanmıyor. Sonra sorulan şeye göre rengine, yerine ya da çevresindeki lambalara bak.',
+      cozum: ['Şekilde üç lambaya yukarıdan aşağıya bak ve renkli (yanan) lambayı bul.', 'Sorulan şeyi (renk, konum, sıra ya da lamba sayısı) şekilden oku.'],
       dogrulama: [{ yol: ['yanan'], beklenen: yanan }] });
   }
   return { isikSorusu };

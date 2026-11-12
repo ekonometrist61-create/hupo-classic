@@ -26,7 +26,6 @@ import '../widgets/ui/chunky_button.dart';
 import '../widgets/ui/hero_header.dart';
 import '../widgets/ui/responsive_page.dart';
 import '../widgets/hupo/hupo.dart';
-import '../widgets/veli_mesaji_sheet.dart';
 import '../widgets/hupo/hupo_loading.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -182,8 +181,6 @@ class ProfileScreen extends ConsumerWidget {
                           builder: (_) => const CollectionScreen()),
                     ),
                   ),
-                  const SizedBox(height: 28),
-                  const _VeliIcinSection(),
                   // Native uygulamada web sürümünü hatırlatan alt satır (web'de gösterilmez).
                   if (!kIsWeb) ...[
                     const SizedBox(height: 24),
@@ -397,86 +394,6 @@ class _WebBaglantiSatiri extends StatelessWidget {
             icon: const Icon(Icons.copy_rounded, color: AppColors.primary, size: 20),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _VeliIcinSection extends StatelessWidget {
-  const _VeliIcinSection();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text('Velim için', style: appText(size: 18, weight: FontWeight.w900)),
-        const SizedBox(height: 10),
-        // Veli raporu bilinçli olarak burada yok: çocuk raporun ailesine gittiğini
-        // görüp endişelenmesin. Rapor yalnızca veli panelinde görünür.
-        _VeliLinkSatiri(
-          ikon: Icons.star_rounded,
-          baslik: 'Premium hakkında',
-          aciklama: 'Ücretli plan hakkında bilgi (velin için)',
-          renk: AppColors.sun,
-          // Çocuk burada kart bilgisi girmez; velinle paylaşılacak mesaj ve veli panelinin bağlantısı açılır.
-          onTap: () => showVeliMesajiSheet(context),
-        ),
-      ],
-    );
-  }
-}
-
-class _VeliLinkSatiri extends StatelessWidget {
-  const _VeliLinkSatiri({
-    required this.ikon,
-    required this.baslik,
-    required this.aciklama,
-    required this.renk,
-    required this.onTap,
-  });
-
-  final IconData ikon;
-  final String baslik;
-  final String aciklama;
-  final Color renk;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.all(14),
-        decoration: BoxDecoration(
-          color: AppColors.surface,
-          borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: AppColors.line),
-        ),
-        child: Row(
-          children: [
-            Container(
-              width: 42,
-              height: 42,
-              decoration: BoxDecoration(
-                color: renk.withValues(alpha: 0.12),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Icon(ikon, color: renk, size: 22),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(baslik, style: appText(size: 14, weight: FontWeight.w800)),
-                  Text(aciklama, style: appText(size: 12, color: AppColors.muted)),
-                ],
-              ),
-            ),
-            const Icon(Icons.open_in_new_rounded, color: AppColors.muted, size: 18),
-          ],
-        ),
       ),
     );
   }

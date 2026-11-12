@@ -1,0 +1,734 @@
+{
+  "hikaye": {
+    "tur": "spor",
+    "konu": "futbol_turnuvasi",
+    "slug": "hr037-son-pasin-hikayesi",
+    "durum": "taslak",
+    "baslik": "Son Pasın Hikâyesi",
+    "tanitim": "Son dakikada kaleye tek başına koşmak mı, boştaki arkadaşa pas vermek mi? Karar saniyeler içinde.",
+    "fis_kodu": "HR-037",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D4",
+        "yardimci_deger": "D14"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 6,
+        "sayfa_sayisi": 8,
+        "simge_sayisi": 13,
+        "kelime_sayisi": 504,
+        "tahmini_sure_dk": 6,
+        "yoldas_yer_sayisi": 6,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 2,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "dostluk",
+        "dayanisma",
+        "saglikli_yasam"
+      ],
+      "ana_sinif": 4,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "pas_hr037",
+          "tur": "lexeme",
+          "yuva": "pc_pas",
+          "islev": "first_hint",
+          "etiket": "pas"
+        },
+        {
+          "id": "taktik_hr037",
+          "tur": "lexeme",
+          "yuva": "pc_taktik",
+          "islev": "application",
+          "etiket": "taktik"
+        },
+        {
+          "id": "savunma_hr037",
+          "tur": "lexeme",
+          "yuva": "pc_savunma",
+          "islev": "application",
+          "etiket": "savunma"
+        },
+        {
+          "id": "kavram_hr037",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "İş birliği ve ortak başarı"
+        },
+        {
+          "id": "atasoz_hr037",
+          "tur": "proverb",
+          "yuva": "pc_ata_birlik",
+          "islev": "application",
+          "etiket": "Birlikten kuvvet doğar"
+        }
+      ]
+    },
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D4",
+      "D14"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pc_pas",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_pas"
+          }
+        ]
+      },
+      {
+        "ad": "pc_taktik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_taktik"
+          }
+        ]
+      },
+      {
+        "ad": "pc_savunma",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_savunma"
+          }
+        ]
+      },
+      {
+        "ad": "pc_ata_birlik",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "pc_ata_birlik"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pc_pas",
+        "tur": "kelime",
+        "anlam": "Futbol gibi oyunlarda topu takım arkadaşına gönderme.",
+        "yazim": "pas",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_taktik",
+        "tur": "kelime",
+        "anlam": "Bir oyunu ya da işi kazanmak için önceden yapılan plan.",
+        "yazim": "taktik",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_savunma",
+        "tur": "kelime",
+        "anlam": "Rakibin gol atmasını engellemeye çalışan oyuncular ya da bu çaba.",
+        "yazim": "savunma",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_ata_birlik",
+        "tur": "atasozu",
+        "anlam": "Birlikte çalışan insanlar tek başına olduklarından daha güçlü olur.",
+        "yazim": "Birlikten kuvvet doğar",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "İlk yarıda çocuk hangi arkadaşını gözden kaçırmıştı?",
+      "beceri": "hatirlama",
+      "aciklama": "İlk yarıda yan tarafta boş bekleyen Emre gözden kaçmıştı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kaptanı"
+        },
+        {
+          "id": "B",
+          "metin": "Emre'yi"
+        },
+        {
+          "id": "C",
+          "metin": "Kaleciyi"
+        },
+        {
+          "id": "D",
+          "metin": "Babasını"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Çocuğun babasının sözü, tribüne bakarken neden aklına geldi?",
+      "beceri": "cikarim",
+      "aciklama": "Çocuk hem kazanmak hem de arkadaşlarının güvenini kazanmak istiyordu; bu ikisinin yalnız gol düşünerek olmayacağını anlamaya başladı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yalnızca kendi golünü düşünmenin takımın güvenini kazandırmayacağını fark etmeye başladığı için"
+        },
+        {
+          "id": "B",
+          "metin": "Babasının tribünde olmadığını görüp üzüldüğü için"
+        },
+        {
+          "id": "C",
+          "metin": "Bahçedeki şutlarını unuttuğu için"
+        },
+        {
+          "id": "D",
+          "metin": "Maçı kazanmak istemediği için"
+        }
+      ],
+      "dayanak_sayfa": 2
+    },
+    {
+      "id": "s3",
+      "dogru": "C",
+      "metin": "Metinde geçen pas sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Çocuk topu Emre'ye gönderdi; futbolda buna pas denir.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kaleye atılan şut"
+        },
+        {
+          "id": "B",
+          "metin": "Oyundan çıkma"
+        },
+        {
+          "id": "C",
+          "metin": "Topu takım arkadaşına gönderme"
+        },
+        {
+          "id": "D",
+          "metin": "Maçın bittiğini duyurma"
+        }
+      ],
+      "dayanak_sayfa": 5
+    },
+    {
+      "id": "s4",
+      "dogru": "D",
+      "metin": "Emre'nin \"Golü ben attım ama fırsatı sen hazırladın\" demesi neyi anlatır?",
+      "beceri": "yorumlama",
+      "aciklama": "Emre golü attı ama fırsatı çocuk hazırlamıştı; başarıda herkesin payı vardı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Golün aslında hiç sayılmadığını"
+        },
+        {
+          "id": "B",
+          "metin": "Kendisinin hiç çalışmadığını"
+        },
+        {
+          "id": "C",
+          "metin": "Kaptanın hata yaptığını"
+        },
+        {
+          "id": "D",
+          "metin": "Başarının tek kişiye değil, birlikte hazırlanan harekete ait olduğunu"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s5",
+      "dogru": "B",
+      "metin": "Çocuğun son dakikada golü kendisi atmak yerine pas vermesi için ne söylenebilir?",
+      "beceri": "degerlendirme",
+      "aciklama": "Emre kaleye daha yakındı ve önünde kimse yoktu; pas vermek takım için daha iyi bir fırsat yarattı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Cesaretsiz bir davranıştı"
+        },
+        {
+          "id": "B",
+          "metin": "Takımın kazanma şansını artıran, bencil olmayan bir karardı"
+        },
+        {
+          "id": "C",
+          "metin": "Kurallara aykırı bir davranıştı"
+        },
+        {
+          "id": "D",
+          "metin": "Emre'yi bilerek zor durumda bıraktı"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s6",
+      "dogru": "C",
+      "metin": "Kupa fotoğrafında Emre kenarda kalınca çocuk ne yaptı?",
+      "beceri": "hatirlama",
+      "aciklama": "Çocuk Emre'yi ortalarına çağırdı, çünkü sahadaki kimsenin görünmez olmaması gerektiğini öğrenmişti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Fotoğrafı iptal etti"
+        },
+        {
+          "id": "B",
+          "metin": "Emre'yi görmezden geldi"
+        },
+        {
+          "id": "C",
+          "metin": "Onu ortalarına çağırdı"
+        },
+        {
+          "id": "D",
+          "metin": "Kupayı Emre'den aldı"
+        }
+      ],
+      "dayanak_sayfa": 7
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okullar arası futbol"
+        },
+        {
+          "t": "ikon",
+          "v": "ball"
+        },
+        {
+          "t": "metin",
+          "v": " turnuvasının son maçı başlamadan önce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ayakkabısının bağcıklarını üçüncü kez bağladı. Bu karşılaşmada bir gol atmayı öyle çok istiyordu ki takım arkadaşlarının konuşmalarını duymuyordu bile. Kaptan "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Hep birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " oynarsak kazanabiliriz,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı ama içinden, *Kazandıran gol benim olmalı*, diye geçirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Maçtan bir gün önce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bahçede tek başına şut çalışmıştı. Her golün ardından ellerini havaya kaldırıyor, hayalinde arkadaşlarının kendisini alkışladığını görüyordu. Babası kenardan seslenmişti: \"Futbol"
+        },
+        {
+          "t": "ikon",
+          "v": "ball"
+        },
+        {
+          "t": "metin",
+          "v": " tek kişinin oynadığı bir oyun değil.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Biliyorum,\" demiş ama nedenini tam düşünmemişti. Şimdi tribüne bakarken bu konuşma"
+        },
+        {
+          "t": "ikon",
+          "v": "speech"
+        },
+        {
+          "t": "metin",
+          "v": " aklına geldi. Kazanmak istiyordu; bir yandan da arkadaşlarının kendisine güvenmesini. Fakat yalnızca kendi golünü düşünürse onların güvenini nasıl"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " kazanacaktı?"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk yarıda "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " topu iki kez kaleye taşıdı. Birinde şutunu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_savunma"
+        },
+        {
+          "t": "metin",
+          "v": " engelledi, ötekinde kalecinin üzerine vurdu. Yan tarafta boş bekleyen Emre'yi gözden kaçırmıştı. Devre arasında takım gerideydi. Öğretmenleri "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_taktik"
+        },
+        {
+          "t": "metin",
+          "v": " tahtasını açtı. \"Şut çekmek cesaret"
+        },
+        {
+          "t": "ikon",
+          "v": "courage"
+        },
+        {
+          "t": "metin",
+          "v": " ister,\" dedi, \"ama iyi bir oyuncu sahadaki arkadaşlarını da görür.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Emre bugün çok iyi koşular yapıyor,\" diye ekledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Biliyorum, ama gol atma fırsatını kaçırmaktan korkuyorum,\" dedi. \"Bazen fırsat topu paylaşınca büyür,\" diye cevap verdi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": ", tahta üzerinde üç küçük nokta çizerek topun gidebileceği yolları göstermişti. Bir çizgi doğrudan kaleye gidiyordu ama önünde iki savunmacı vardı. Diğer çizgi, boş alandaki arkadaşına uzanıyordu. \"İyi karar vermek, seçeneği görmekle başlar,\" demişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizimleri aklında tutmaya çalıştı. Sahaya dönünce seyircinin sesini değil, arkadaşlarının konumlarını dinledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ona boş alanı eliyle gösterince ilk kez ne yapacağını önceden planladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci yarıda takım daha dikkatli oynadı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " topu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " aktardı; "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez hemen şut çekmek yerine etrafına baktı. Emre'ye "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_pas"
+        },
+        {
+          "t": "metin",
+          "v": " verdi. Emre topu geri gönderince savunmanın arkasında boşluk açıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " golü attı. Skor eşitlendi. Son bir dakika"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " kalmıştı. Rakip takımın savunması "
+        },
+        {
+          "t": "kahraman",
+          "hal": "belirtme"
+        },
+        {
+          "t": "metin",
+          "v": " iki oyuncuyla karşıladı. O yine kaleye yöneldi; tribünden adını duyuyordu. Tam vuracakken Emre'yi gördü. Kaleye daha yakındı ve önünde kimse yoktu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir an içinde iki düşünce yarıştı: *Golü kendim atabilirim.* *Pas verirsem takım daha iyi bir fırsat yakalar.* "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ayağını çevirdi, topu Emre'ye gönderdi. Emre düzgün bir vuruşla golü attı. Hakemin son düdüğüyle çocuklar sevinç"
+        },
+        {
+          "t": "ikon",
+          "v": "joy"
+        },
+        {
+          "t": "metin",
+          "v": " içinde birbirlerine sarıldı. Takım kupayı alırken Emre, \"Golü ben attım ama fırsatı sen hazırladın,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. \"Ben de yalnızca topa bakarsam arkadaşlarımı gözden kaçırdığımı anladım.\" "
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rakip takımın kalecisi de maç sonunda yanlarına geldi. \"İyi oynadınız,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun elini sıktı. \"Sen de zor şutları kurtardın,\" diye karşılık verdi. Öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": ", kazanmanın rakibe saygıyı azaltmaması gerektiğini hatırlattı. Çocuklar kupayı sırayla tutarak fotoğraf çektirdiler. Emre ilk fotoğrafta kenarda kalmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu ortalarına çağırdı. Çünkü o gün en çok öğrendiği şeylerden biri, sahadaki kimsenin görünmez olmaması gerektiğiydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Soyunma odasında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ona bir fotoğraf gösterdi. Karede bütün takım aynı anda zıplıyordu. Hiç kimsenin yüzünde kimin gol attığına dair bir hesap"
+        },
+        {
+          "t": "ikon",
+          "v": "math"
+        },
+        {
+          "t": "metin",
+          "v": " yoktu. Öğretmenleri, \"İşte takım olmak bu,\" dedi. \"Bir kişinin parlaması değil, herkesin birbirinin ışığını artırması. Atalarımız boşuna söylememiş: "
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pc_ata_birlik"
+        },
+        {
+          "t": "metin",
+          "v": "\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafı çantasına koydu. Eve giderken bir şeyi daha düşündü: Arkadaşını görebilmek için bazen topa değil, bütün sahaya bakmak gerekiyordu. Bu yalnızca futbolda değil, birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " yapılan her işte önemliydi."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

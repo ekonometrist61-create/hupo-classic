@@ -9,6 +9,7 @@ import '../widgets/ui/chunky_button.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/hero_header.dart';
 import '../widgets/hupo/hupo.dart';
+import 'review_screen.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key, required this.results});
@@ -133,9 +134,32 @@ class ResultScreen extends StatelessWidget {
                   const Spacer(),
                   SafeArea(
                     top: false,
-                    child: ChunkyButton(
-                      label: 'Ana sayfaya dön',
-                      onPressed: () => Navigator.of(context).pop(),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        if (total - correct > 0) ...[
+                          // Mevcut aralıklı tekrar akışı; yeni backend yok.
+                          ChunkyButton(
+                            label: 'Tekrar bölümüne git',
+                            icon: Icons.replay_rounded,
+                            onPressed: () => Navigator.of(context).push(
+                              MaterialPageRoute(builder: (_) => const ReviewScreen()),
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          TextButton(
+                            onPressed: () => Navigator.of(context).pop(),
+                            child: Text(
+                              'Ana sayfaya dön',
+                              style: appText(size: 15, weight: FontWeight.w800, color: AppColors.primary),
+                            ),
+                          ),
+                        ] else
+                          ChunkyButton(
+                            label: 'Ana sayfaya dön',
+                            onPressed: () => Navigator.of(context).pop(),
+                          ),
+                      ],
                     ),
                   ),
                 ],
@@ -200,7 +224,7 @@ class _TipCard extends StatelessWidget {
           Expanded(
             child: Text(
               allCorrect
-                  ? 'Hepsini bildin! Serini korumak için yarın da gel.'
+                  ? 'Hepsini bildin! Yarın yeni sorular seni bekliyor.'
                   : 'Yanlış yaptığın $wrong soru yarın tekrar listende olacak. Böyle daha kalıcı öğrenirsin!',
               style: appText(size: 15, weight: FontWeight.w800, height: 1.3),
             ),

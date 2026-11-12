@@ -89,7 +89,7 @@
       "baslik": "Bilmediklerimiz",
       "ogeler": [
         "Hupolingo'ya özgü bir etki araştırması henüz yok. Bu sayfadaki araştırmalar başka öğrenme ortamlarında yapıldı.",
-        "Hupolingo pilot aşamasında. Pilot kapsamı 3–7. sınıftır; sitede genel bir sınıf veya başarı iddiası yok.",
+        "Hupolingo pilot aşamasında. Pilotun ilk odağı 4. sınıftan 5. sınıfa geçiş hazırlığıdır; sitede genel bir sınıf veya başarı iddiası yok.",
         "Kendi sonuçlarımızı bağımsız bir çalışmayla doğrulamadan 'kanıtlandı' diye sunmayacağız.",
         "Her araştırma yalnızca kendi ölçtüğünü ölçtü. Palikot ve arkadaşları hikâye tamamlamayı ölçtü, öğrenmeyi değil. Aulagnon ve arkadaşlarının Peru'daki çalışması farklı bir platformu inceledi.",
         "Etkiler çocuğun yaşına, dersine ve müdahalenin tasarımına göre değişiyor. Tek bir sonuç her çocuk için geçerli değildir."
@@ -157,12 +157,12 @@
       "description": "Hupolingo'dan ticari ileti almayı durdur."
     },
     "sifreUnuttum": {
-      "title": "Parolanı sıfırla | Hupolingo",
-      "description": "Hupolingo hesabın için parola sıfırlama bağlantısı iste."
+      "title": "Parolanızı sıfırlayın | Hupolingo",
+      "description": "Hupolingo hesabınız için parola sıfırlama bağlantısı isteyin."
     },
     "sifreYeni": {
       "title": "Yeni parola belirle | Hupolingo",
-      "description": "Hupolingo hesabın için yeni parola belirle."
+      "description": "Hupolingo hesabınız için yeni parola belirleyin."
     },
     "veliGiris": {
       "title": "Veli Paneli Girişi | Hupolingo",
@@ -273,7 +273,7 @@
     "title": "Tekrar hoş geldiniz",
     "subtitle": "Çocuğunuzun haftalık ilerlemesi burada sizi bekliyor.",
     "trustNote": "Çocuğunuzun bilgileri yalnızca sizin hesabınızda görünür.",
-    "bubble": "Merhaba! Çocuğunun bu haftasına birlikte bakalım.",
+    "bubble": "Merhaba! Çocuğunuzun bu haftasına birlikte bakalım.",
     "stepsTitle": "Nasıl çalışır?",
     "adminNotAllowed": "Bu hesap yönetim paneli için yetkili değil. Veli hesapları veli girişini kullanır.",
     "adminNotAllowedLink": "Veli girişine git",
@@ -296,22 +296,22 @@
     "hidePassword": "Parolayı gizle",
     "submit": "Giriş yap",
     "submitting": "Giriş yapılıyor…",
-    "errorInvalid": "E-posta veya parola hatalı. Bilgileri kontrol edip yeniden dene.",
-    "forgotLink": "Parolanı mı unuttun?",
-    "noAccount": "Hesabın yok mu?",
+    "errorInvalid": "E-posta veya parola hatalı. Bilgileri kontrol edip yeniden deneyin.",
+    "forgotLink": "Parolanızı mı unuttunuz?",
+    "noAccount": "Hesabınız yok mu?",
     "signupLink": "Veli hesabı oluştur",
-    "brandTitle": "Çocuğunun ilerlemesini tek yerden izle",
+    "brandTitle": "Çocuğunuzun ilerlemesini tek yerden izleyin",
     "brandBody": "Veli hesabınızla çocuğunuzun kısa soru çalışmalarını ve tekrar etmesi gereken konuları görün.",
-    "step1": "Veli hesabınla giriş yap",
-    "step2": "Çocuğunu seç",
-    "step3": "Haftalık özeti ve tekrar önerilerini gör",
-    "brandCaption": "Hupo ile öğrenmeye devam et."
+    "step1": "Veli hesabınızla giriş yapın",
+    "step2": "Çocuğunuzu seçin",
+    "step3": "Haftalık özeti ve tekrar önerilerini görün",
+    "brandCaption": "Hupo ile öğrenmeye birlikte devam edin."
   },
   "signup": {
     "title": "Veli hesabı oluştur",
-    "subtitle": "Çocuğunun ilerlemesini izlemek için birkaç bilgi yeter.",
+    "subtitle": "Çocuğunuzun ilerlemesini izlemek için birkaç bilgi yeter. Hesap açarken kart bilgisi istenmez; ücretsiz deneme sırasında otomatik ücret alınmaz.",
     "fullName": "Ad soyad",
-    "fullNamePlaceholder": "Adın ve soyadın",
+    "fullNamePlaceholder": "Adınız ve soyadınız",
     "email": "E-posta",
     "emailPlaceholder": "ornek@eposta.com",
     "password": "Parola",
@@ -322,8 +322,8 @@
     "consentPrivacy": "Gizlilik Politikası",
     "consentAnd": "ve",
     "consentTerms": "Kullanım Koşulları",
-    "consentSuffix": " metinlerini kabul etmiş olursun.",
-    "marketingTitle": "İletişim Tercihlerin",
+    "consentSuffix": " metinlerini kabul etmiş olursunuz.",
+    "marketingTitle": "İletişim Tercihleriniz",
     "marketingEposta": "E-posta ile bilgilendirilmek istiyorum.",
     "marketingSms": "SMS ile bilgilendirilmek istiyorum.",
     "marketingTelefon": "Telefonla aranmak istiyorum.",
@@ -332,41 +332,42 @@
     "consentMarketing": "Hupolingo'dan abonelik, ürün ve kampanya bilgileri için e-posta ile ticari ileti almak istiyorum. Bu onayı istediğin zaman geri alabilirsin.",
     "submit": "Hesap oluştur",
     "submitting": "Hesap oluşturuluyor…",
-    "successTitle": "Hesabın oluşturuldu",
-    "successBody": "E-posta adresine bir doğrulama bağlantısı gönderdik. Bağlantıya tıkladıktan sonra giriş yapabilirsin.",
-    "errorExists": "Bu e-posta ile zaten bir hesap var. Giriş yapmayı dene.",
-    "errorGeneric": "Hesap oluşturulamadı. Bağlantını kontrol edip yeniden dene.",
-    "errorConsent": "Devam etmek için metinleri kabul etmelisin.",
+    "successTitle": "Hesabınız oluşturuldu",
+    "successBody": "E-posta adresinize bir doğrulama bağlantısı gönderdik. Bağlantıya tıkladıktan sonra giriş yapabilirsiniz.",
+    "errorExists": "Bu e-posta ile zaten bir hesap var. Giriş yapmayı deneyin.",
+    "errorGeneric": "Hesap oluşturulamadı. Bağlantınızı kontrol edip yeniden deneyin.",
+    "errorConsent": "Devam etmek için metinleri kabul etmelisiniz.",
     "errorPassword": "Parola en az 8 karakter olmalı.",
-    "hasAccount": "Zaten hesabın var mı?",
-    "signinLink": "Giriş yap"
+    "hasAccount": "Zaten hesabınız var mı?",
+    "signinLink": "Giriş yap",
+    "nextStep": "E-postanızdaki bağlantıya tıklayın, ardından çocuğunuz için eşleştirme kodu oluşturacaksınız."
   },
   "forgot": {
-    "title": "Parolanı sıfırla",
-    "subtitle": "E-posta adresini yaz, parolanı sıfırlaman için bir bağlantı gönderelim.",
+    "title": "Parolanızı sıfırlayın",
+    "subtitle": "E-posta adresinizi yazın, parolanızı sıfırlamanız için bir bağlantı gönderelim.",
     "email": "E-posta",
     "emailPlaceholder": "ornek@eposta.com",
     "submit": "Bağlantı gönder",
     "submitting": "Gönderiliyor…",
-    "sentTitle": "E-postanı kontrol et",
-    "sentBody": "Bu adresle bir hesap varsa parola sıfırlama bağlantısı gönderildi. Gelen kutunu ve spam klasörünü kontrol et.",
-    "errorGeneric": "Bağlantı gönderilemedi. Birazdan tekrar dene.",
+    "sentTitle": "E-postanızı kontrol edin",
+    "sentBody": "Bu adresle bir hesap varsa parola sıfırlama bağlantısı gönderildi. Gelen kutunuzu ve spam klasörünüzü kontrol edin.",
+    "errorGeneric": "Bağlantı gönderilemedi. Birazdan tekrar deneyin.",
     "backToSignin": "Giriş ekranına dön"
   },
   "reset": {
     "title": "Yeni parola belirle",
-    "subtitle": "Hesabın için yeni bir parola seç.",
+    "subtitle": "Hesabınız için yeni bir parola seçin.",
     "password": "Yeni parola",
     "passwordPlaceholder": "En az 8 karakter",
     "confirm": "Yeni parola (tekrar)",
-    "confirmPlaceholder": "Parolayı tekrar yaz",
+    "confirmPlaceholder": "Parolayı tekrar yazın",
     "submit": "Parolayı kaydet",
     "submitting": "Kaydediliyor…",
-    "successTitle": "Parolan güncellendi",
-    "successBody": "Yeni parolanla giriş yapabilirsin.",
+    "successTitle": "Parolanız güncellendi",
+    "successBody": "Yeni parolanızla giriş yapabilirsiniz.",
     "mismatch": "Parolalar birbiriyle eşleşmiyor.",
     "errorPassword": "Parola en az 8 karakter olmalı.",
-    "errorGeneric": "Parola güncellenemedi. Bağlantının süresi dolmuş olabilir; yeni bir bağlantı iste.",
+    "errorGeneric": "Parola güncellenemedi. Bağlantının süresi dolmuş olabilir; yeni bir bağlantı isteyin.",
     "invalidTitle": "Bağlantı geçersiz",
     "invalidBody": "Bu bağlantı daha önce kullanılmış ya da süresi dolmuş olabilir.",
     "requestNew": "Yeni bağlantı iste",
@@ -442,7 +443,7 @@
       "studentLogin": "Öğrenci girişi",
       "studentLoginDesc": "Hupo uygulamasında kaldığın yerden devam et.",
       "parentLogin": "Veli girişi",
-      "parentLoginDesc": "Çocuğunun ilerlemesini ve raporunu gör.",
+      "parentLoginDesc": "Çocuğunuzun ilerlemesini ve raporunu görün.",
       "teacherLogin": "Öğretmen girişi",
       "teacherLoginDesc": "Sınıflarını ve öğrenci ilerlemesini yönet.",
       "signinMenu": "Giriş",
@@ -457,16 +458,16 @@
     "hero": {
       "badge": "Proje Ortaokulu Hazırlığı",
       "title": "Soru çözme alışkanlığını küçük görevlerle destekleyin",
-      "subtitle": "Çocuğunuz Hupo ile kısa soru çalışmaları yapsın; siz ilerlediği ve tekrar etmesi gereken konuları görün.",
+      "subtitle": "Çocuğunuz günde 10 soruluk kısa görevler yapsın; siz hangi konuyu tekrar etmesi gerektiğini görün.",
       "ctaPrimary": "Örnek soruları dene",
       "ctaSecondary": "Veli hesabı oluştur",
-      "note": "Örnek sorular için hesap gerekmez ve hiçbir bilgi kaydedilmez.",
-      "pilot": "Hupo pilot sürümde. İçerik ve raporları geri bildirimlerle geliştiriyoruz.",
+      "note": "Örnek sorular için hesap gerekmez. Veli hesabı açarken kart bilgisi istenmez, otomatik ücret alınmaz.",
       "mascotAlt": "Hupo: altın sarısı gövdeli, yeşil kanatlı, mavi gözlü baykuş karakter",
       "phoneAlt": "Hupolingo uygulamasında bir soru ekranı",
       "sampleLabel": "Örnek veli raporu",
       "sampleTag": "ÖRNEK RAPOR",
       "sampleWeek": "Haftalık özet",
+      "sampleReview": "Tekrar önerilir",
       "sampleAccuracy": "Genel doğru oran",
       "sampleSolved": "Çözülen soru",
       "sampleNote": "Örnek veri. Gerçek bir öğrenciye ait değildir."
@@ -565,7 +566,7 @@
       "reviewText": "Matematik · Basamak değeri: 2 soru yanlış, tekrar edilmesi öneriliyor."
     },
     "trust": {
-      "title": "Bugün söyleyebildiklerimiz",
+      "title": "Söz verdiklerimiz",
       "desc": "Yalnızca uygulamada gerçekten bulunan şeyleri yazıyoruz.",
       "items": [
         {
@@ -591,32 +592,13 @@
       "baslik": "Sadece eğlenceli değil, öğrenme araştırmalarıyla uyumlu bir yaklaşım",
       "giris": "Araştırmalar, iyi tasarlanmış oyunlaştırmanın motivasyonu; aktif soru çözümü ve aralıklı tekrarın ise öğrenmeyi destekleyebildiğini gösteriyor. Hupolingo, bu yaklaşımları çocuğun günlük çalışma deneyiminde bir araya getiriyor.",
       "hupoNot": "Bu araştırmalar Hupolingo'nun kendi öğrencileriyle yapılmadı.",
-      "kartlar": {
-        "palikot": {
-          "kaynak": "Palikot vd. (2026)",
-          "tur": "Rastgele kontrollü deney · Hindistan, 138 okul",
-          "sonuc": "Başka bir uygulamada yaklaşık 10.000 öğrenciyle yapılan deneyde, yarışma sırasında tamamlanan hikâye sayısı %45 daha fazlaydı. Ölçülen sonuç öğrenme değil, katılımdır."
-        },
-        "kurnaz": {
-          "kaynak": "Kurnaz & Koçtürk (2025)",
-          "tur": "Meta-analiz · 31 çalışma",
-          "sonuc": "Oyunlaştırmanın öğrenci motivasyonu üzerinde olumlu etkisi bulundu. Çalışmaların sonuçları birbirinden farklı."
-        },
-        "ruitenburg": {
-          "kaynak": "Ruitenburg vd. (2026)",
-          "tur": "Meta-analiz · 53 çalışma, 7.303 öğrenci",
-          "sonuc": "Aktif hatırlama ve aralıklı tekrar, gerçek okul sınıflarında öğrenmeyi destekleyebildi. Uygulama biçimi etkiyi değiştiriyor."
-        }
-      },
-      "arastirmayiIncele": "Araştırmayı incele",
-      "yeniSekme": " (yeni sekmede açılır)",
       "dipnot": "Bu bulgular Hupolingo'nun kendi sonuçları değildir.",
       "kutuphaneLink": "Araştırma kütüphanesi ve yöntemimiz →"
     },
     "plans": {
       "title": "Planlar",
-      "cardTitle": "Ücretli plan hazırlık aşamasında",
-      "cardDesc": "Fiyat ve kapsam netleştiğinde burada ve veli hesabınızda gösterilecek. Onaylanmamış fiyat veya deneme süresi yayımlamıyoruz.",
+      "cardTitle": "Planlar ve fiyatlar",
+      "cardDesc": "Plan fiyatları ve süreleri Planlar bölümünde gösterilir. Ücretsiz deneme sırasında kart bilgisi istenmez ve otomatik ücret alınmaz.",
       "bullets": [
         "Gizli ücret yok",
         "Fiyat netleşmeden ödeme istenmez",
@@ -652,7 +634,7 @@
         },
         {
           "q": "Ücret nedir?",
-          "a": "Ücretli plan hazırlık aşamasında. Güncel planlar netleştiğinde bu sayfada ve veli hesabınızda gösterilecek."
+          "a": "Güncel planlar ve fiyatlar sayfadaki Planlar bölümünde yer alır. Ücretsiz denemede kart bilgisi istenmez ve otomatik ücret alınmaz. Devam etmek isterseniz planı kendiniz seçersiniz; ödeme öncesinde tutarı ve ön bilgilendirmeyi görüp onaylarsınız."
         },
         {
           "q": "Çocuğumun verilerini nasıl yönetirim?",
@@ -701,7 +683,7 @@
     "characters": {
       "eyebrow": "Karakter Evreni",
       "title": "8 Dünya, 40 Karakter",
-      "desc": "Her doğru cevap seni yeni kahramanlara yaklaştırır. 8 farklı sınıfta toplam 40 karakter seni bekliyor. Öğren, koleksiyonunu tamamla, Hupo evreninde ilerle!",
+      "desc": "Düzenli çalıştıkça açılan 40 karakter, öğrenmeyi değil devamlılığı ödüllendirir. Çocuğunuz koleksiyonunu kendi hızında tamamlar.",
       "cta": "Veli hesabı oluştur",
       "lockedLabel": "Kilitli",
       "classes": [
@@ -817,6 +799,9 @@
       "perMonth": "/ay",
       "sureGun": "{gun} gün erişim",
       "trialDays": "{gun} gün ücretsiz deneme",
+      "trialNote": "Kart bilgisi istenmez. Otomatik ücret alınmaz.",
+      "sharedNote": "Veli paneli ve veli raporu planlardan bağımsız olarak veli hesabında açıktır. Öğrenci uygulamasında reklam varsayılan olarak kapalıdır.",
+      "pilotNote": "Hupo pilot sürümde. İçerik ve raporları geri bildirimlerle geliştiriyoruz.",
       "yearlyNote": "Yıllık planda %40 tasarruf",
       "comingSoon": "Fiyatlar yakında açıklanacak",
       "comingSoonDesc": "Plan detayları ve fiyatlar netleştiğinde burada ve veli hesabınızda gösterilecek.",
@@ -830,14 +815,13 @@
           "Temel gelişim takibi"
         ],
         "notIncluded": [
-          "Veli paneli",
           "Ligler ve etkinlikler",
           "Deneme sınavları"
         ]
       },
       "premium": {
         "name": "Premium",
-        "badge": "Veli paneli dahil",
+        "badge": "Önerilen",
         "cta": "Premium'a Geç",
         "features": [
           "Tüm derslere sınırsız erişim",
@@ -1050,7 +1034,7 @@
     "footer": {
       "rehber": "Veli rehberi: çarpım tablosu",
       "method": "Yöntem ve kaynaklar",
-      "tagline": "Öğren. Güçlen. Zirveye çık.",
+      "tagline": "Kısa görevler, görünür ilerleme.",
       "colProduct": "Hupo",
       "colParents": "Veliler",
       "colCompany": "Şirket",
@@ -1072,8 +1056,7 @@
       "privacy": "Gizlilik Politikası",
       "terms": "Kullanım Koşulları",
       "pilot": "Pilot sürüm",
-      "appStore": "App Store'dan İndir",
-      "googlePlay": "Google Play'den İndir",
+      "appSoon": "Mobil uygulama yakında.",
       "copyright": "© 2026 Hupolingo"
     },
     "hikayeler": {
@@ -1082,7 +1065,7 @@
       "sayi": "{count} yayında hikâye",
       "sinif": "{alt}–{ust}. sınıf için",
       "turler": "Türler",
-      "not": "Hikâyeler yayından önce iki bağımsız yapay zekâ denetiminden geçer; görüş ayrılığında üçüncü bir denetim yapılır. Yeni hikâyeler eklendikçe bu sayı kendiliğinden güncellenir."
+      "not": "Her hikâye yayından önce bir editör tarafından okunup onaylanır. Yapay zekâ denetim sonuçları editöre yardımcı olarak kaydedilir; yayın kararı editöründür. Yeni hikâyeler eklendikçe bu sayı kendiliğinden güncellenir."
     }
   },
   "header": {
@@ -1539,13 +1522,13 @@
   },
   "veliPaneli": {
     "title": "Veli Paneli",
-    "childLabel": "Çocuğun",
+    "childLabel": "Çocuğunuz",
     "loading": "Yükleniyor...",
-    "error": "Veriler yüklenemedi, lütfen sayfayı yenile.",
+    "error": "Veriler yüklenemedi. Sayfayı yenileyip tekrar deneyin.",
     "notParent": "Bu sayfa yalnızca velilere açıktır.",
     "noChildren": {
       "title": "Henüz bağlı öğrenci yok",
-      "text": "Çocuğunun hesabı sisteme eklendikten sonra burada görünecek."
+      "text": "Çocuğunuzun hesabı sisteme eklendikten sonra burada görünecek."
     },
     "stats": {
       "xp": "XP",
@@ -1558,7 +1541,7 @@
     },
     "review": {
       "title": "Tekrar Edilmesi Gereken Konular",
-      "desc": "Çocuğunun hata yaptığı ve tekrar önerileri olan konular.",
+      "desc": "Çocuğunuzun hata yaptığı ve tekrar önerileri olan konular.",
       "empty": "Harika! Henüz tekrar gereken konu yok.",
       "topic": "Konu",
       "subject": "Ders",
@@ -1574,7 +1557,7 @@
       "error": "Onay durumu alınamadı.",
       "give": "Onay Ver",
       "withdraw": "Onayı Geri Çek",
-      "saveError": "Kaydedilemedi, tekrar dene.",
+      "saveError": "Kaydedilemedi, tekrar deneyin.",
       "status": {
         "given": "Onaylandı",
         "withdrawn": "Geri Çekildi",

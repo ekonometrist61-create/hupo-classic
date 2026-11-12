@@ -1,0 +1,751 @@
+{
+  "hikaye": {
+    "tur": "fantastik",
+    "konu": "anka_kusu",
+    "slug": "hr039-ankanin-kaybolan-tuyu",
+    "durum": "taslak",
+    "baslik": "Anka'nın Kaybolan Tüyü",
+    "tanitim": "Orman yolunda parlayan bir tüy, sahibine ulaşmak için bir çocuktan yardım istiyor.",
+    "fis_kodu": "HR-039",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D5",
+        "yardimci_deger": "D9"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 6,
+        "sayfa_sayisi": 8,
+        "simge_sayisi": 19,
+        "kelime_sayisi": 498,
+        "tahmini_sure_dk": 6,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 2,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "doga",
+        "hayvanlar",
+        "kesif"
+      ],
+      "ana_sinif": 4,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "goc_hr039",
+          "tur": "lexeme",
+          "yuva": "pc_goc",
+          "islev": "first_hint",
+          "etiket": "göç"
+        },
+        {
+          "id": "efsanevi_hr039",
+          "tur": "lexeme",
+          "yuva": "pc_efsanevi",
+          "islev": "application",
+          "etiket": "efsanevi"
+        },
+        {
+          "id": "gozlem_hr039",
+          "tur": "lexeme",
+          "yuva": "pc_gozlem",
+          "islev": "application",
+          "etiket": "gözlem"
+        },
+        {
+          "id": "kavram_hr039",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Kuş göçü ve canlıları koruma"
+        },
+        {
+          "id": "atasoz_hr039",
+          "tur": "proverb",
+          "yuva": "pc_ata_sormak",
+          "islev": "application",
+          "etiket": "Sormakla yol bulunur"
+        }
+      ]
+    },
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "dunya_tipi": "masalsi",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D5",
+      "D9"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pc_goc",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_goc"
+          }
+        ]
+      },
+      {
+        "ad": "pc_efsanevi",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_efsanevi"
+          }
+        ]
+      },
+      {
+        "ad": "pc_gozlem",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pc_gozlem"
+          }
+        ]
+      },
+      {
+        "ad": "pc_ata_sormak",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "pc_ata_sormak"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pc_goc",
+        "tur": "kelime",
+        "anlam": "Canlıların daha uygun yaşam koşulları için bir yerden başka bir yere gitmesi.",
+        "yazim": "göç",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_efsanevi",
+        "tur": "kelime",
+        "anlam": "Efsanelerde anlatılan, gerçek olmayan ya da çok eski masallara ait olan.",
+        "yazim": "efsanevi",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_gozlem",
+        "tur": "kelime",
+        "anlam": "Bir şeyi dikkatle bakarak inceleme.",
+        "yazim": "gözlem",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pc_ata_sormak",
+        "tur": "atasozu",
+        "anlam": "Bilmediğin bir şeyi sorarsan çözümü bulabilirsin.",
+        "yazim": "Sormakla yol bulunur",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "Çocuk çalıya takılmış yuvayı görünce ne yaptı?",
+      "beceri": "hatirlama",
+      "aciklama": "Çocuk yuvaya dokunmadı ve bekçiyi çağırdı; bekçi yuvanın güvenli biçimde korunması için gerekenleri yaptı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yavruları eline aldı"
+        },
+        {
+          "id": "B",
+          "metin": "Yuvaya dokunmadı, orman bekçisini çağırdı"
+        },
+        {
+          "id": "C",
+          "metin": "Yuvayı başka bir ağaca taşıdı"
+        },
+        {
+          "id": "D",
+          "metin": "Yuvayı görmezden gelip yürümeye devam etti"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s2",
+      "dogru": "D",
+      "metin": "Bekçi ile çocuk neden kısa yolu bırakıp güvenli patikayı seçti?",
+      "beceri": "cikarim",
+      "aciklama": "Kısa yolun başında ziyaretçilerin girmemesi gereken bir koruma alanı levhası vardı; bekçi canlıların yaşam alanına saygı gerektiğini söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kısa yol çok kalabalık olduğu için"
+        },
+        {
+          "id": "B",
+          "metin": "Tüy onlara başka bir şey söylediği için"
+        },
+        {
+          "id": "C",
+          "metin": "Uzun yol daha eğlenceli olduğu için"
+        },
+        {
+          "id": "D",
+          "metin": "Kısa yoldaki levha, yaban hayatı koruma alanına girilmemesi gerektiğini gösterdiği için"
+        }
+      ],
+      "dayanak_sayfa": 2
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Metinde geçen göç sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Bekçi, kuşların uygun iklim ve besin bulmak için yılın belli zamanlarında göç ettiğini anlattı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Daha uygun iklim ve besin için bir yerden başka bir yere gitme"
+        },
+        {
+          "id": "B",
+          "metin": "Yuvada uyuma"
+        },
+        {
+          "id": "C",
+          "metin": "Tüy dökme"
+        },
+        {
+          "id": "D",
+          "metin": "Ormanda saklanma"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s4",
+      "dogru": "C",
+      "metin": "Anka'nın \"Gerçek yardım bazen birine kanat germektir\" demesi ne anlatır?",
+      "beceri": "yorumlama",
+      "aciklama": "Metinde kanat germek, birini koruyup kollamak olarak açıklanıyor.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yardım etmek için uçmayı öğrenmek gerektiğini"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnızca kanatlı hayvanlara yardım edilebileceğini"
+        },
+        {
+          "id": "C",
+          "metin": "Yardımın, bir canlıyı korumak ve kollamak anlamına da gelebileceğini"
+        },
+        {
+          "id": "D",
+          "metin": "Masallardaki kuşların gerçek olduğunu"
+        }
+      ],
+      "dayanak_sayfa": 5
+    },
+    {
+      "id": "s5",
+      "dogru": "B",
+      "metin": "Annesinin \"Bu deneyim sende hangi soruları uyandırdı?\" diye sorması neden yararlıdır?",
+      "beceri": "degerlendirme",
+      "aciklama": "Annesi inanıp inanmamak yerine soru sordu; çocuk da kuşların göç yollarını araştırmaya yöneldi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çocuğu susturduğu için"
+        },
+        {
+          "id": "B",
+          "metin": "Çocuğun merakını düşünmeye ve araştırmaya yönlendirdiği için"
+        },
+        {
+          "id": "C",
+          "metin": "Çocuğun hikâyesini yalanladığı için"
+        },
+        {
+          "id": "D",
+          "metin": "Çocuğa ödev verdiği için"
+        }
+      ],
+      "dayanak_sayfa": 8
+    },
+    {
+      "id": "s6",
+      "dogru": "D",
+      "metin": "Gerçek dünyada kuşlar göç ederken yön bulmak için nelerden yararlanabilir?",
+      "beceri": "hatirlama",
+      "aciklama": "Çocuk akşam defterine, kuşların güneşten, yıldızlardan ve Dünya'nın manyetik alanından yararlanabildiğini yazdı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yalnızca rüzgârdan"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnızca ağaçlardan"
+        },
+        {
+          "id": "C",
+          "metin": "Yalnızca insanların işaretlerinden"
+        },
+        {
+          "id": "D",
+          "metin": "Güneşten, yıldızlardan ve Dünya'nın manyetik alanından"
+        }
+      ],
+      "dayanak_sayfa": 7
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", tepelerin ardındaki ormanda altın gibi parlayan bir tüy"
+        },
+        {
+          "t": "ikon",
+          "v": "feather"
+        },
+        {
+          "t": "metin",
+          "v": " buldu. Tüy rüzgârda savrulmuyor, sanki kendi yolunu seçiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu eline alınca ince bir ses duydu: \"Beni geldiğim yere götür.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de tüye merakla baktı. Sesin nereden geldiğini anlamadılar. Tam o sırada gökyüzünde kocaman bir gölge belirdi. Yaşlı orman"
+        },
+        {
+          "t": "ikon",
+          "v": "forest"
+        },
+        {
+          "t": "ikon",
+          "v": "tree"
+        },
+        {
+          "t": "metin",
+          "v": " bekçisi gülümseyerek, \"Anka kuşunun tüyü olabilir,\" dedi. \"O, masalların uzak dağlarında yaşayan "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_efsanevi"
+        },
+        {
+          "t": "metin",
+          "v": " kuştur.\" "
+        },
+        {
+          "t": "isaret",
+          "kod": "kus"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şaşırdı. \"Masaldaki kuş"
+        },
+        {
+          "t": "ikon",
+          "v": "bird"
+        },
+        {
+          "t": "metin",
+          "v": " neden burada?\" Bekçi, \"Belki birine yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " ediyordur,\" diye cevap verdi. Patika ikiye ayrıldığında "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " durdu. Soldaki yol kısa görünüyordu ama üzerinde \"Yaban Hayatı Koruma Alanı\" yazan bir levha vardı; ziyaretçilerin girmemesi gerekiyordu. Sağdaki işaretli yol daha uzundu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Tüy soldan gitmemizi istiyor gibi,\" dedi. Bekçi, \"Masallarda bile canlıların yaşam alanına saygı gerekir,\" diye cevap verdi. İkisi güvenli patikayı seçti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk kez bir macerada en hızlı yolun her zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " doğru yol olmadığını düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", tüyün parıltısını izleyerek yürümeye başladı. Yoldaki ağaçların arasında minik kuşlar uçuşuyordu. Bir çalıya takılmış yuvayı görünce durdu. Yuvada iki yavru vardı, anne kuş"
+        },
+        {
+          "t": "ikon",
+          "v": "bird"
+        },
+        {
+          "t": "metin",
+          "v": " ise korkuyla ötüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yuvaya dokunmadı; orman"
+        },
+        {
+          "t": "ikon",
+          "v": "forest"
+        },
+        {
+          "t": "ikon",
+          "v": "tree"
+        },
+        {
+          "t": "metin",
+          "v": " bekçisini çağırdı. Bekçi yuvanın güvenli biçimde korunması için gerekli adımları attı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " yavruları korkutmamak için sessizce geri çekildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", yavruların yeniden sakinleşmesini izledi. "
+        },
+        {
+          "t": "isaret",
+          "kod": "orman"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tüy o sırada daha parlak oldu. Sonra kuzeye doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " hafifçe uzandı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ile bekçi, ormandaki işaretli patikadan yürüdü. Büyük bir ağacın tepesinde göçmen kuşların toplandığını gördüler. \"Bu kuşlar neden"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " bu kadar kalabalık?\" diye sordu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Yılın belli zamanlarında daha uygun iklim ve besin bulmak"
+        },
+        {
+          "t": "ikon",
+          "v": "idea"
+        },
+        {
+          "t": "metin",
+          "v": " için "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_goc"
+        },
+        {
+          "t": "metin",
+          "v": " ederler,\" dedi bekçi. \"Yolculukları uzun ve zorludur.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tüyün ışığı kuşların uçacağı yöne uzanan küçük bir şerit gibi parladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun kaybolmuş olmadığını, görevinin bir kısmını yapmak için yere indiğini düşündü. Tam o sırada Anka, sislerin arasından ortaya çıktı. Kanatları gün batımı gibi kızıldı. Yere konmadan "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " başının üstünde dönerek konuştu: \"Tüyümü koruduğun için teşekkür ederim.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tüyü yukarı kaldırdı. \"Ben yalnızca geri götürmek istedim.\" \"Yolda başka canlıları da gözetmişsin,\" dedi Anka. \"Gerçek yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " bazen birine kanat germektir.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bunun bir deyim olduğunu hatırladı. Kanat germek, birini koruyup kollamak demekti. Anka tüyünü alınca göçmen kuşların önünde uçmaya başladı; kuşlar da onu izledi. Anka gitmeden önce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " son kez dönmüştü. \"Tüyümün ışığı sence herkese aynı şeyi mi anlatır?\" diye sormuştu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını sallamıştı. \"Göç eden kuşlara yol, bana yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " etmenin anlamını gösterdi.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Anka, \"Öyleyse gördüğün mucizenin bir kısmı senin düşünmende,\" demişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözleri unutmadı. Efsanelerin insanı sorular sormaya yöneltebildiğini, cevapların bir bölümünün ise doğayı gözlemleyerek bulunacağını fark etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " akşam defterine gördüklerini yazdı. Gerçek dünyada kuşların göç ederken güneşten, yıldızlardan ve Dünya"
+        },
+        {
+          "t": "ikon",
+          "v": "globe"
+        },
+        {
+          "t": "metin",
+          "v": "'nın manyetik alanından yararlanabildiğini öğrenince daha da meraklandı. Masalın büyüsü onu bilimsel bir soruya götürmüştü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O gece"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": " annesine tüyün sesini anlattı. Annesi inanıp inanmamak yerine, \"Bu deneyim sende hangi soruları uyandırdı?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Kuşların göç yollarını kim koruyor?\" dedi. Annesi gülümsedi: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pc_ata_sormak"
+        },
+        {
+          "t": "metin",
+          "v": "\" Ertesi hafta sınıflarıyla kuş"
+        },
+        {
+          "t": "ikon",
+          "v": "bird"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pc_gozlem"
+        },
+        {
+          "t": "metin",
+          "v": " etkinliğine katılmak için öğretmenine danıştı. Ertesi gün pencerenin önüne bir kuş gözlem çizelgesi astı. Artık gökyüzüne her baktığında yalnızca Anka'yı değil, yolculuğa çıkan gerçek kuşları da düşünüyordu."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

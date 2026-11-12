@@ -1,0 +1,657 @@
+{
+  "hikaye": {
+    "tur": "tarih_kultur",
+    "konu": "pazar_terazisi",
+    "slug": "hr032-keloglan-ve-akilli-terazi",
+    "durum": "taslak",
+    "baslik": "Pazardaki Akıllı Terazi",
+    "tanitim": "Pazarda terazinin bir kefesi neden aşağıda kalıyor? Kimseyi küçük düşürmeden doğrusu nasıl bulunur?",
+    "fis_kodu": "HR-032",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D1",
+        "yardimci_deger": "D6"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 6,
+        "sayfa_sayisi": 9,
+        "simge_sayisi": 13,
+        "kelime_sayisi": 461,
+        "tahmini_sure_dk": 6,
+        "yoldas_yer_sayisi": 4,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 2,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "kultur_miras",
+        "dayanisma",
+        "guvenlik"
+      ],
+      "ana_sinif": 4,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk_terazi_hr032",
+          "tur": "lexeme",
+          "yuva": "pb_terazi",
+          "islev": "first_hint",
+          "etiket": "terazi"
+        },
+        {
+          "id": "sozcuk_denetim_hr032",
+          "tur": "lexeme",
+          "yuva": "pb_denetim",
+          "islev": "application",
+          "etiket": "denetim"
+        },
+        {
+          "id": "sozcuk_olcu_hr032",
+          "tur": "lexeme",
+          "yuva": "pb_olcu",
+          "islev": "application",
+          "etiket": "ölçü"
+        },
+        {
+          "id": "kavram_hr032",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Adil ölçme, doğru tartı ve onarıcı sorumluluk"
+        }
+      ]
+    },
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "dunya_tipi": "masalsi",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "baska_biri"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D1",
+      "D6"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pb_terazi",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pb_terazi"
+          }
+        ]
+      },
+      {
+        "ad": "pb_denetim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pb_denetim"
+          }
+        ]
+      },
+      {
+        "ad": "pb_olcu",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pb_olcu"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pb_terazi",
+        "tur": "kelime",
+        "anlam": "Bir şeyin ağırlığını ölçmek için kullanılan, iki kefeli ya da dijital alet.",
+        "yazim": "terazi",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pb_denetim",
+        "tur": "kelime",
+        "anlam": "Bir şeyin doğru ve kurallara uygun olup olmadığına bakma.",
+        "yazim": "denetim",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pb_olcu",
+        "tur": "kelime",
+        "anlam": "Bir şeyin ağırlığını, boyunu ya da miktarını belirleyen değer.",
+        "yazim": "ölçü",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "İlk terazinin ayarının bozuk olduğu nasıl ortaya çıktı?",
+      "beceri": "hatirlama",
+      "aciklama": "Pazar görevlisi önce zemini kontrol etti, sonra standart ağırlıkla deneme yaptı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Satıcı kendisi itiraf etti"
+        },
+        {
+          "id": "B",
+          "metin": "Görevli dengeli zeminde standart ağırlıkla bir deneme yaptı"
+        },
+        {
+          "id": "C",
+          "metin": "Teraziyi çocuklar söküp inceledi"
+        },
+        {
+          "id": "D",
+          "metin": "Annesi pazara gelip kontrol etti"
+        }
+      ],
+      "dayanak_sayfa": 2
+    },
+    {
+      "id": "s2",
+      "dogru": "C",
+      "metin": "Satıcı ‘Kasten yapmadım, ama yine de sorun var’ derken neyi kabul etmiş olur?",
+      "beceri": "cikarim",
+      "aciklama": "Satıcı, bilerek yapmasa da eksik tartı olasılığının bir sorun olduğunu kabul etti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Müşterileri kandırmak istediğini"
+        },
+        {
+          "id": "B",
+          "metin": "Teraziyi hiç kullanmadığını"
+        },
+        {
+          "id": "C",
+          "metin": "Niyeti kötü olmasa da eksik tartmanın müşterilere zarar vermiş olabileceğini"
+        },
+        {
+          "id": "D",
+          "metin": "Pazarın kapatılması gerektiğini"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s3",
+      "dogru": "B",
+      "metin": "‘Güven, söylenen güzel sözlerle değil, yapılan doğru işlerle yeniden kuruluyordu’ cümlesi ne anlatır?",
+      "beceri": "yorumlama",
+      "aciklama": "Satıcı özür dilemiş, müşterilere duyuru yapmayı ve düzeltmeyi kabul etmişti; güven bu davranışlarla geri geliyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Güzel söz söylemek yasaktır"
+        },
+        {
+          "id": "B",
+          "metin": "Hata yapıldığında özür ve düzeltme, güveni geri getiren asıl şeydir"
+        },
+        {
+          "id": "C",
+          "metin": "Satıcı yeni bir terazi almak zorundaydı"
+        },
+        {
+          "id": "D",
+          "metin": "Güven yalnızca zengin satıcılarda olur"
+        }
+      ],
+      "dayanak_sayfa": 7
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "‘Denetim işlemi’ ifadesindeki denetim sözcüğü ne demektir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Görevli, terazinin doğru çalışıp çalışmadığını kontrol ediyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir şeyin doğru ve kurallara uygun olup olmadığını kontrol etme"
+        },
+        {
+          "id": "B",
+          "metin": "Pazarda ürün satma"
+        },
+        {
+          "id": "C",
+          "metin": "Bir hediyeyi paketleme"
+        },
+        {
+          "id": "D",
+          "metin": "Yüksek sesle tartışma"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s5",
+      "dogru": "C",
+      "metin": "Çocuğun pazarda araya girip ‘Önce sorunu anlayalım’ demesi neden iyi bir davranıştır?",
+      "beceri": "degerlendirme",
+      "aciklama": "Çocuk sert çıkışmak yerine sakin kalıp sorunu anlamaya çalıştı; böylece kimse küçük düşürülmedi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çünkü satıcıdan intikam alır"
+        },
+        {
+          "id": "B",
+          "metin": "Çünkü sorun kendiliğinden kaybolur"
+        },
+        {
+          "id": "C",
+          "metin": "Çünkü bağırmak yerine sorunun çözülmesine ve doğrunun bulunmasına yardım eder"
+        },
+        {
+          "id": "D",
+          "metin": "Çünkü pazarda kimse konuşmaz"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s6",
+      "dogru": "D",
+      "metin": "Çocuk iki bulgur torbasının hangisinin ağır olduğuna neden bakarak karar veremedi?",
+      "beceri": "cikarim",
+      "aciklama": "Tanelerin boyutu torbanın ağırlığını tek başına göstermiyordu; bu yüzden teraziye ihtiyaç vardı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Torbalar birbirinin aynısıydı"
+        },
+        {
+          "id": "B",
+          "metin": "Taneler iriyse torba kesin hafiftir"
+        },
+        {
+          "id": "C",
+          "metin": "Torbalar çok uzaktaydı"
+        },
+        {
+          "id": "D",
+          "metin": "Görünüş ağırlığı tek başına göstermez; tartmak gerekir"
+        }
+      ],
+      "dayanak_sayfa": 6
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kasabanın pazarına annesi için bulgur almaya gitti. Sepetinde birkaç bakır para ve düzgünce katlanmış bir alışveriş listesi vardı. İlk tezgâhta satıcı, bir kese bulguru teraziye koydu. Terazinin bir kefesi aşağı indi, öteki hafifçe havada kaldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " keseye, sonra satıcının kullandığı ağırlığa baktı. “Usta, bunun tam bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_olcu"
+        },
+        {
+          "t": "metin",
+          "v": " olduğundan emin miyiz?” diye sordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Satıcı kaşlarını kaldırdı. “Bunca yıldır tartıyorum. Sen mi öğreteceksin?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tartışmak istemedi. “Ben de öğrenmeye çalışıyorum,” dedi. “Aynı ağırlığı başka terazide ölçebilir miyiz?” Yan tezgâhta çalışan "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", herkesin kullanabildiği denetim ağırlıklarını gösterdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", pazardaki belediye görevlisinden de yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " istedi. Görevli önce terazinin dengeli bir zemine oturup oturmadığını kontrol etti. Ardından standart ağırlıkla bir deneme yaptı. İlk terazinin ayarının bozulduğu ortaya çıktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Satıcının yüzü kızardı. “Demek müşterilere eksik vermiş olabilirim,” dedi. “Kasten yapmadım, ama yine de sorun var.” Pazar görevlisi, ölçme aracının bakım için ayrılması gerektiğini anlattı. Satıcı, o gün satış yaptığı müşterilere durumu duyurmayı ve gerekli düzeltmeleri yapmayı kabul etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " da kimseyi küçük düşürmeden sorunu çözebildikleri için sevindi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_denetim"
+        },
+        {
+          "t": "metin",
+          "v": " işlemini dikkatle izlerken pazara iki müşteri daha geldi. Biri satıcıya sertçe çıkışmak istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " araya girip, “Önce sorunu anlayalım; yanlış teraziyi kullanmayı durdurmak herkes için iyi,” dedi. Satıcı da özür dileyerek terazisini düzelttireceğini yineledi. Pazarda yüksek sesle tartışmak yerine açık konuşmanın daha çok işe yaradığını gördüler. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Görevli, doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " tartımın yalnız alıcıya değil satıcıya da güven"
+        },
+        {
+          "t": "ikon",
+          "v": "shield"
+        },
+        {
+          "t": "metin",
+          "v": " sağladığını açıkladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine ağırlık birimlerini yazdı. Bir kilogramın bin gram ettiğini hatırladı; ancak bir torbanın ağır mı hafif mi olduğunu görünüşüne bakıp söyleyemiyordu. İçindeki tanelerin boyutu, torbanın ağırlığını tek başına göstermiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ona iki torba gösterdi. Birinde iri taneli, diğerinde ince taneli bulgur vardı. “İkisi de aynı ağırlıkta olabilir mi?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " torbaları elinde tartar gibi yaptı, sonra vazgeçti. “Görünüşe bakıp karar veremem. Teraziye ihtiyacım var.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “İşte buna ölçüp biçmek derler,” diye gülümsedi. “Bir işe girişmeden önce düşünmek, kontrol etmek.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir müşteri, “Benim aldığım ürünler için de aynı kontrol yapılacak mı?” diye sordu. Satıcı adlarını ve alışveriş saatlerini not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " ederek geri dönenlerin ölçümünü yeniden yapacağını söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " işin burasında kendi payını düşündü: “Bir yanlışlığı görmek yetmez; düzeltilmesine de yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " etmek gerekir.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " onayladı. Güven"
+        },
+        {
+          "t": "ikon",
+          "v": "shield"
+        },
+        {
+          "t": "metin",
+          "v": ", söylenen güzel sözlerle değil, yapılan doğru işlerle yeniden kuruluyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " ayarlanmış terazide ihtiyacı kadar bulguru aldı. Eve döndüğünde annesi keseyi açıp sordu: “Pazarda neden"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " bu kadar geç kaldın?” “Bulgur aldım, bir de akıl,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “İkisini de ölçerek aldım.” Annesi gülerek, “Akıl terazide tartılır mı hiç?” diye karşılık verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sepetini bıraktı. “Tartılmaz ama doğru ölçüyle iş yapmak akıllıca olur.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi pazar satıcı, tezgâhına yeni denetlenmiş bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_terazi"
+        },
+        {
+          "t": "metin",
+          "v": " koymuştu. Yanına da küçük bir yazı asmıştı: Ölçüde doğruluk, alışverişte güven"
+        },
+        {
+          "t": "ikon",
+          "v": "shield"
+        },
+        {
+          "t": "metin",
+          "v": ". "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu yazıyı görünce başıyla selam verdi. Satıcı da ona teşekkür etti. Kasabada o gün belki büyük bir hazine"
+        },
+        {
+          "t": "ikon",
+          "v": "chest"
+        },
+        {
+          "t": "metin",
+          "v": " bulunmamıştı; ama herkesin hakkını koruyan küçük bir adım"
+        },
+        {
+          "t": "ikon",
+          "v": "footprint"
+        },
+        {
+          "t": "metin",
+          "v": " atılmıştı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

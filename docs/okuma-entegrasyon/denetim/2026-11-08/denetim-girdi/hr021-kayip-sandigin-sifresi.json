@@ -1,0 +1,633 @@
+{
+  "hikaye": {
+    "tur": "macera",
+    "konu": "kutuphane",
+    "slug": "hr021-kayip-sandigin-sifresi",
+    "durum": "taslak",
+    "baslik": "Kayıp Sandığın Şifresi",
+    "tanitim": "Dört boş yuva, dört gizemli cümle: Tozlu sandığı zorlamadan açmanın bir yolu var mı?",
+    "fis_kodu": "HR-021",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D4",
+        "yardimci_deger": "D16"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 6,
+        "sayfa_sayisi": 9,
+        "simge_sayisi": 22,
+        "kelime_sayisi": 463,
+        "tahmini_sure_dk": 6,
+        "yoldas_yer_sayisi": 4,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 2
+        }
+      },
+      "temalar": [
+        "gizem",
+        "dostluk",
+        "okul",
+        "kultur_miras"
+      ],
+      "ana_sinif": 4,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "sifre_hr021",
+          "tur": "lexeme",
+          "yuva": "pa_sifre",
+          "islev": "first_hint",
+          "etiket": "şifre"
+        },
+        {
+          "id": "hatira_hr021",
+          "tur": "lexeme",
+          "yuva": "pa_hatira",
+          "islev": "application",
+          "etiket": "hatıra"
+        },
+        {
+          "id": "kavram_hr021",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Mantıksal sıralama ve ortak hafıza"
+        }
+      ]
+    },
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D4",
+      "D16"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pa_sifre",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pa_sifre"
+          }
+        ]
+      },
+      {
+        "ad": "pa_hatira",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pa_hatira"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pa_sifre",
+        "tur": "kelime",
+        "anlam": "Çözülünce bir şeyi açan gizli işaret ya da söz.",
+        "yazim": "şifre",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pa_hatira",
+        "tur": "kelime",
+        "anlam": "Geçmişten akılda kalan, unutulmak istenmeyen anı.",
+        "yazim": "hatıra",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "C",
+      "metin": "Sandığın içinden ne çıktı?",
+      "beceri": "hatirlama",
+      "aciklama": "İçeriden altın çıkmadı; dört küçük defter, fotoğraflar ve kuru tohum paketi çıktı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Altın sikkeler"
+        },
+        {
+          "id": "B",
+          "metin": "Eski haritalar"
+        },
+        {
+          "id": "C",
+          "metin": "Defterler, fotoğraflar ve bir paket kuru tohum"
+        },
+        {
+          "id": "D",
+          "metin": "Gizli bir kulübün üyelik kartları"
+        }
+      ],
+      "dayanak_sayfa": 8
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Çocuklar şekilleri hangi sıraya göre yerleştireceklerini nereden anladı?",
+      "beceri": "cikarim",
+      "aciklama": "Son sayfadaki şiir, dört etkinliği sırayla hatırlatıyordu; şekilleri bu sıraya göre yerleştirdiler.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Albümün son sayfasındaki şiirden"
+        },
+        {
+          "id": "B",
+          "metin": "Görevlinin söylediği sıradan"
+        },
+        {
+          "id": "C",
+          "metin": "Sandığın kilidinin üzerindeki numaralardan"
+        },
+        {
+          "id": "D",
+          "metin": "Notun ilk cümlesinden"
+        }
+      ],
+      "dayanak_sayfa": 7
+    },
+    {
+      "id": "s3",
+      "dogru": "B",
+      "metin": "Albümdeki \"Birlikte ısındık\", \"Birlikte büyüttük\" gibi yazılar sınıfın neyi önemsediğini gösterir?",
+      "beceri": "yorumlama",
+      "aciklama": "Her yazıda \"Birlikte\" sözcüğü vardı; sınıf yaptıklarını birlikte yapmayı önemsiyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yarışmayı kazanmayı"
+        },
+        {
+          "id": "B",
+          "metin": "Ortak yaşantıları ve iş birliğini"
+        },
+        {
+          "id": "C",
+          "metin": "Tek başına çalışmayı"
+        },
+        {
+          "id": "D",
+          "metin": "Hediye almayı"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s4",
+      "dogru": "D",
+      "metin": "Metinde geçen şifre sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Şifre, doğru çözülünce sandığı açan gizli düzendir; çocuklar bunu şiirdeki sıra olarak buldu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Eski bir fotoğraf"
+        },
+        {
+          "id": "B",
+          "metin": "Sandığın kilidi"
+        },
+        {
+          "id": "C",
+          "metin": "Okulun adı"
+        },
+        {
+          "id": "D",
+          "metin": "Çözülünce bir şeyi açan gizli işaret ya da söz"
+        }
+      ],
+      "dayanak_sayfa": 7
+    },
+    {
+      "id": "s5",
+      "dogru": "A",
+      "metin": "Metinde geçen hatıra sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Hatıra projesi, sınıfın unutmak istemediği anıları saklamak içindi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Geçmişten akılda kalan, unutulmak istenmeyen anı"
+        },
+        {
+          "id": "B",
+          "metin": "Yeni alınan bir eşya"
+        },
+        {
+          "id": "C",
+          "metin": "Okulun kapısı"
+        },
+        {
+          "id": "D",
+          "metin": "Bir tür bilmece"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s6",
+      "dogru": "C",
+      "metin": "Çocukların şekilleri sandığa zorlamak yerine önce kâğıt üzerinde denemesi hakkında ne söylenebilir?",
+      "beceri": "degerlendirme",
+      "aciklama": "Zorlamak eski kartonları kırabilirdi; çocuklar nesneye zarar vermeden denedi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Gereksiz bir zaman kaybıydı."
+        },
+        {
+          "id": "B",
+          "metin": "Görevliyi memnun etmek için yapıldı."
+        },
+        {
+          "id": "C",
+          "metin": "Eşyaya zarar vermeden çözüm aramanın akıllıca bir yoluydu."
+        },
+        {
+          "id": "D",
+          "metin": "Sandık zaten açık olduğu için yapıldı."
+        }
+      ],
+      "dayanak_sayfa": 5
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kütüphanenin taşınacağı gün, dört arkadaş tozlu bir sandık buldu. Üzerinde güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": ", yaprak, dalga"
+        },
+        {
+          "t": "ikon",
+          "v": "wave"
+        },
+        {
+          "t": "metin",
+          "v": " ve yıldız"
+        },
+        {
+          "t": "ikon",
+          "v": "star"
+        },
+        {
+          "t": "metin",
+          "v": " şekilleri vardı. Fakat şekillerin bulunduğu dört küçük yuva boştu. Sandığın yanında, yıllar önce hazırlanmış bir not duruyordu: \"Bu sandık, bir sınıfın unutmadığı şeylerle açılır.\" \"İçinde ne olabilir?\" diye fısıldadı Ömer. \"Eski haritalar!\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Belki de gizli bir kulübün defteri.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kütüphane görevlisi sandığın okula ait olduğunu, önce içindekileri kayıt altına almaları gerektiğini söyledi. Kilidi zorlamamalarını da hatırlattı. Çocuklar notu dikkatle inceledi. Altında dört cümle daha vardı: \"Bizi ısıtan; büyümemizi sağlayan; temiz suyu koruyan; gece"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": " yol gösteren.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk cümleyi okuyunca güneşi düşündü. Ancak güneşin yerine hangi şeklin konacağını bilmiyorlardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okulun eski fotoğraf albümünde aynı dört simgenin bulunduğu bir sayfa"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " keşfettiler. Sayfanın altında \"Dördüncü Sınıf "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_hatira"
+        },
+        {
+          "t": "metin",
+          "v": " Projesi\" yazıyordu. Albümde, öğrencilerin güneşli bir günde fidan diktiği, dere kıyısında temizlik yaptığı, geceleri yıldızları gözlediği fotoğraflar vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Albümün kenarında ayrıca dört farklı el yazısı vardı. Güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafının yanına \"Birlikte ısındık\", fidanların altına \"Birlikte büyüttük\", dere temizliğine \"Birlikte koruduk\", yıldız"
+        },
+        {
+          "t": "ikon",
+          "v": "star"
+        },
+        {
+          "t": "metin",
+          "v": " gözlemine \"Birlikte merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " ettik\" yazılmıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bu cümleleri yüksek sesle okuduğunda "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sandığın notuyla aynı sözcüklerin tekrarlandığını fark etti. \"Sanki biri hatırlamamızı istemiş,\" dedi. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ömer sandığı açmak için sabırsızlanıyordu. \"Bir denesek ne olur? Belki doğru şekil kendiliğinden oturur.\" Görevli, parçaları zorlamanın eski kartonları kırabileceğini hatırlattı. Dört arkadaş"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " masanın üzerinde kâğıttan bir sandık"
+        },
+        {
+          "t": "ikon",
+          "v": "chest"
+        },
+        {
+          "t": "metin",
+          "v": " resmi çizdi, şekilleri önce oraya yerleştirdi. Bir şeyin cevabını bulmak için her zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " asıl nesneyi kurcalamak gerekmediğini keşfettiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kerem, dört cümleyi fotoğraflarla eşleştirmek istedi. \"Bizi ısıtan güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": ". Büyümemizi sağlayan yaprak"
+        },
+        {
+          "t": "ikon",
+          "v": "leaf"
+        },
+        {
+          "t": "metin",
+          "v": ",\" dedi. Ömer sözünü kesti: \"Peki 'temiz suyu koruyan' neden dalga"
+        },
+        {
+          "t": "ikon",
+          "v": "wave"
+        },
+        {
+          "t": "metin",
+          "v": " olsun?\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bir fotoğrafı gösterdi. Dere temizliğinin fotoğrafında, köşeye çizilmiş küçük bir dalga simgesi vardı. \"Su dalgayla gösterilmiş,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Demek ki temiz suyu koruyan, dalga.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Her ipucunu fotoğraflarla sınadık, şimdi sıra bunları sıraya koymakta,\" diye düşündü. Yeniden albüme döndüler ve son sayfaya baktılar."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Son sayfada küçük bir şiir vardı: \"Güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " bizi ısıtır, yaprak bizi büyütür, dalga"
+        },
+        {
+          "t": "ikon",
+          "v": "wave"
+        },
+        {
+          "t": "metin",
+          "v": " temiz suyu korur, yıldız"
+        },
+        {
+          "t": "ikon",
+          "v": "star"
+        },
+        {
+          "t": "metin",
+          "v": " geceye yol gösterir.\" Çocuklar bunun yalnızca bir şiir olmadığını, dört etkinliği sıralayan gizli düzen, yani "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_sifre"
+        },
+        {
+          "t": "metin",
+          "v": " olduğunu anladılar. Sandığın yanındaki çekmecede kartondan yapılmış dört şekil bulundu. Şekilleri şiirdeki sıraya göre yerleştirdiklerinde sandığın mekanik mandalı tık etti. Görevli kapağı kendisi açtı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İçeriden altın çıkmadı. Dört küçük defter"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": ", öğrencilerin çekilmiş fotoğrafları ve bir paket kuru tohum"
+        },
+        {
+          "t": "ikon",
+          "v": "seed"
+        },
+        {
+          "t": "metin",
+          "v": " çıktı. Defterlerin birinde şu cümle yazılıydı: \"Yıllar sonra açacak olanlara: Biz bu okulu yalnızca derslerimizle değil, birlikte yaptıklarımızla hatırlıyoruz.\" Ömer önce biraz hayal kırıklığına uğradı. Sonra tohum paketini eline aldı. \"Bunları dikebilir miyiz?\" diye sordu. Görevli, tohumların eski olduğu için filizlenmeyebileceğini, yine de denemelerini önerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar sandığın içindekileri düzenleyip okul"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " arşivine teslim etti. Çekmecedeki dört şeklin kopyalarını da yeni hatıra panosuna yerleştirdiler. Bir hafta sonra sınıflarına ait bir fotoğraf çektiler. Fotoğrafın arkasına herkes bir cümle yazdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " cümlesi şuydu: \"Bir sandığın en değerli şifresi, insanların birlikte biriktirdiği anılardır.\""
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

@@ -6,13 +6,12 @@ import '../utils/format.dart';
 import '../utils/motion.dart';
 import 'hupo/hupo.dart';
 import 'ui/game_card.dart';
-import 'veli_mesaji_sheet.dart';
 
 /// Profilde "Üyelik" kartı.
 ///
 /// Çocuk uygulamasında bilerek satın alma düğmesi/bağlantısı YOKTUR
-/// (mağaza kuralları ve çocuk güvenliği); yalnızca durum gösterilir ve
-/// ücretsiz üyelikte veliye mesaj hazırlatan "Velime mesaj hazırla" düğmesi yer alır.
+/// (mağaza kuralları ve çocuk güvenliği); yalnızca durum gösterilir.
+/// Çocuğa veliye mesaj/satın alma yönlendirmesi yapılmaz (FK-006 denetimi).
 /// [MembershipStatus.known] false ise hiçbir şey çizilmez.
 class MembershipCard extends StatelessWidget {
   const MembershipCard({super.key, required this.status});
@@ -35,7 +34,7 @@ class _Active extends StatelessWidget {
   Widget build(BuildContext context) {
     final ends = status.endsAt;
     final left = status.remainingDays;
-    final name = status.planName ?? 'Premium';
+    final name = status.planName ?? 'Ücretli plan';
 
     return GameCard(
       padding: const EdgeInsets.all(20),
@@ -129,18 +128,6 @@ class _Free extends StatelessWidget {
                   Text(quota,
                       style: appText(size: 14, weight: FontWeight.w800, color: AppColors.primary)),
                 ],
-                const SizedBox(height: 4),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: TextButton.icon(
-                    onPressed: () => showVeliMesajiSheet(context),
-                    icon: const Icon(Icons.chat_bubble_rounded, size: 18),
-                    label: Text(
-                      'Velime mesaj hazırla',
-                      style: appText(size: 14, weight: FontWeight.w800, color: AppColors.primary),
-                    ),
-                  ),
-                ),
               ],
             ),
           ),

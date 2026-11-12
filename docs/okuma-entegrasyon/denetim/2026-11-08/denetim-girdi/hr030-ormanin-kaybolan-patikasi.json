@@ -1,0 +1,682 @@
+{
+  "hikaye": {
+    "tur": "macera",
+    "konu": "orman_yuruyusu",
+    "slug": "hr030-ormanin-kaybolan-patikasi",
+    "durum": "taslak",
+    "baslik": "Ormanın Kaybolan Patikası",
+    "tanitim": "Patika kapalı, levhalar eksik. Üç arkadaş haritayla güvenli bir yol arıyor.",
+    "fis_kodu": "HR-030",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D16",
+        "yardimci_deger": "D5"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 6,
+        "sayfa_sayisi": 9,
+        "simge_sayisi": 21,
+        "kelime_sayisi": 471,
+        "tahmini_sure_dk": 6,
+        "yoldas_yer_sayisi": 5,
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 2,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "degerlendirme": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "kesif",
+        "doga",
+        "guvenlik"
+      ],
+      "ana_sinif": 4,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozcuk_kroki_hr030",
+          "tur": "lexeme",
+          "yuva": "pb_kroki",
+          "islev": "first_hint",
+          "etiket": "kroki"
+        },
+        {
+          "id": "sozcuk_olcek_hr030",
+          "tur": "lexeme",
+          "yuva": "pb_olcek",
+          "islev": "application",
+          "etiket": "ölçek"
+        },
+        {
+          "id": "sozcuk_guzergah_hr030",
+          "tur": "lexeme",
+          "yuva": "pb_guzergah",
+          "islev": "application",
+          "etiket": "güzergâh"
+        },
+        {
+          "id": "kavram_hr030",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Harita okuma: kroki, ölçek ve güvenli güzergâh"
+        }
+      ]
+    },
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 3,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "baska_biri"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D16",
+      "D5"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "pb_kroki",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pb_kroki"
+          }
+        ]
+      },
+      {
+        "ad": "pb_olcek",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pb_olcek"
+          }
+        ]
+      },
+      {
+        "ad": "pb_guzergah",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "pb_guzergah"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "pb_kroki",
+        "tur": "kelime",
+        "anlam": "Bir yerin yolunu göstermek için elle çizilen basit harita.",
+        "yazim": "kroki",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pb_olcek",
+        "tur": "kelime",
+        "anlam": "Haritadaki yerlerin gerçekte ne kadar küçültülerek çizildiğini gösteren oran.",
+        "yazim": "ölçek",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      },
+      {
+        "id": "pb_guzergah",
+        "tur": "kelime",
+        "anlam": "Bir yere giderken izlenen yol.",
+        "yazim": "güzergâh",
+        "sinif_alt": 4,
+        "sinif_ust": 4
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "B",
+      "metin": "Eski patika neden geçici olarak kapatılmıştı?",
+      "beceri": "hatirlama",
+      "aciklama": "Geceki şiddetli yağmur yüzünden bazı yerlerde toprak kaymıştı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yeni levhalar yapılacağı için"
+        },
+        {
+          "id": "B",
+          "metin": "Geceki şiddetli yağmur toprağı kaydırdığı için"
+        },
+        {
+          "id": "C",
+          "metin": "Göletin suyu taştığı için"
+        },
+        {
+          "id": "D",
+          "metin": "Park tatil olduğu için"
+        }
+      ],
+      "dayanak_sayfa": 1
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Çocuklardan biri neden kuş sesine değil haritadaki oklara güvendi?",
+      "beceri": "cikarim",
+      "aciklama": "Çocuk, kuş sesinin yönü göstermediğini; terasa gitmek için haritaya göre sola dönmeleri gerektiğini söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Harita gidilecek yönü gösterir, kuş sesi yön göstermez"
+        },
+        {
+          "id": "B",
+          "metin": "Kuşlar o bölgede hiç yaşamaz"
+        },
+        {
+          "id": "C",
+          "metin": "Harita kuş sesinden daha eskidir"
+        },
+        {
+          "id": "D",
+          "metin": "Kuş sesi çocukları korkuttuğu için"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s3",
+      "dogru": "C",
+      "metin": "‘Kısa yol her zaman güvenli yol değildir’ sözü bu hikâyede ne anlatır?",
+      "beceri": "yorumlama",
+      "aciklama": "Eski patika kısaydı ama kapalıydı; güncel levha ve görevli güvenli yolu bildiriyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Uzun yollar her zaman daha güzeldir"
+        },
+        {
+          "id": "B",
+          "metin": "Haritalar çoğu zaman yanlıştır"
+        },
+        {
+          "id": "C",
+          "metin": "Yolu seçerken yalnız kısalığa değil, güvenli olup olmadığına da bakılmalıdır"
+        },
+        {
+          "id": "D",
+          "metin": "Yürüyüşlere hiç çıkılmamalıdır"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen ölçek sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Harita gerçek yerleri küçülterek gösterir; bu küçültme oranına ölçek denir.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Haritadaki yerlerin gerçekte ne kadar küçültülerek gösterildiğini belirten oran"
+        },
+        {
+          "id": "B",
+          "metin": "Haritayı süsleyen çizgiler"
+        },
+        {
+          "id": "C",
+          "metin": "Yön gösteren bir levha"
+        },
+        {
+          "id": "D",
+          "metin": "Bir kuş türü"
+        }
+      ],
+      "dayanak_sayfa": 5
+    },
+    {
+      "id": "s5",
+      "dogru": "B",
+      "metin": "Levhalara yalnız renk koymak yerine ok, kısa yazı ve simge de koymak neden daha iyi bir karardır?",
+      "beceri": "degerlendirme",
+      "aciklama": "Çocuk, bazı renkleri ayırt etmekte zorlanan kişiler olabileceğini düşündü; ok, yazı ve simge birlikte daha açık bir işaret oluşturur.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çünkü levha daha renkli görünür"
+        },
+        {
+          "id": "B",
+          "metin": "Çünkü bazı kişiler renkleri ayırt etmekte zorlanabilir; birden fazla ipucu herkesin anlamasını sağlar"
+        },
+        {
+          "id": "C",
+          "metin": "Çünkü yazı olmadan levha yapılamaz"
+        },
+        {
+          "id": "D",
+          "metin": "Çünkü simgeler eskiden beri kullanılır"
+        }
+      ],
+      "dayanak_sayfa": 7
+    },
+    {
+      "id": "s6",
+      "dogru": "D",
+      "metin": "Düşmüş levhaya dokunmadan yürümelerinin nedeni hangisidir?",
+      "beceri": "cikarim",
+      "aciklama": "Öğretmen önce çevreye bakmalarını söyledi; zemin kaygandı ve levhanın yeri haritada işaretlendi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Levha çok ağırdı"
+        },
+        {
+          "id": "B",
+          "metin": "Levha onlara ait değildi"
+        },
+        {
+          "id": "C",
+          "metin": "Levhada yazı yoktu"
+        },
+        {
+          "id": "D",
+          "metin": "Yağmurdan sonra zemin kaygandı; konumunu işaretleyip görevliye bildirmek daha güvenliydi"
+        }
+      ],
+      "dayanak_sayfa": 4
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Orman parkındaki yürüyüşe hazırlanırken öğretmenleri, haritadaki ince yeşil çizgiyi gösterdi. “Bu, gölete ulaşan eski patikamız,” dedi. Ancak park girişindeki görevli onları durdurdu. Geceki şiddetli yağmur yüzünden bazı yerlerde toprak kaymış, patika geçici olarak kapatılmıştı. “Bütün gezi iptal mi?” diye sordu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Görevli, güvenli ve açık bir başka yol olduğunu, yeni yön"
+        },
+        {
+          "t": "ikon",
+          "v": "compass"
+        },
+        {
+          "t": "metin",
+          "v": " levhalarının henüz yerleştirilmediğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", arkadaşları "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " ve Nisa ile görevliden alternatif yol için bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_kroki"
+        },
+        {
+          "t": "metin",
+          "v": " aldı. Öğretmenleri çocukların bir keşif görevi yapmasına izin verdi: Yürüyüş boyunca yalnızca açık "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_guzergah"
+        },
+        {
+          "t": "metin",
+          "v": " üzerinden gidecek, eksik levhaları not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " edeceklerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk kavşakta iki yol ayrılıyordu. Haritada sağ taraftaki yolun sonunda piknik alanı, soldaki yolun sonunda gözlem terası görünüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " sağa dönmek istedi, çünkü oradan kuş"
+        },
+        {
+          "t": "ikon",
+          "v": "bird"
+        },
+        {
+          "t": "metin",
+          "v": " sesi geliyordu. Nisa ise haritadaki okları işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " etti. “Kuş sesi yönümüzü göstermiyor. Terasa gitmek için önce sola dönmeliyiz.” "
+        },
+        {
+          "t": "isaret",
+          "kod": "orman"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Biraz ileride yerde düşmüş bir levha gördüler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " levhayı kaldırmak istedi, fakat öğretmeni önce çevreye bakmalarını söyledi. Yağmurdan sonra zemin kaygandı. Görevlinin not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " alması için levhanın yerini haritada işaretlediler; ona dokunmadan yürüdüler. Gözlem terasına vardıklarında gölet uzaktan görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Eski patika haritada daha kısa. Neden orayı kullanmıyoruz?” diye sordu. “Çünkü kısa yol her zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " güvenli yol değildir,” dedi öğretmeni. “Harita"
+        },
+        {
+          "t": "ikon",
+          "v": "map"
+        },
+        {
+          "t": "metin",
+          "v": ", yolun nerede olduğunu gösterir; güncel levhalar ve görevliler ise hangi yolu kullanabileceğimizi bildirir.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gözlem terasında beklerken Nisa, krokideki küçük karelerin ne işe yaradığını merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " etti. Öğretmenleri bunların harita"
+        },
+        {
+          "t": "ikon",
+          "v": "map"
+        },
+        {
+          "t": "metin",
+          "v": " üzerindeki belirli yerleri gösterdiğini anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Kâğıtta iki parmak uzaklıkta olan yerler gerçek hayatta niçin bu kadar uzak?” diye sordu. Öğretmen, haritaların gerçek yerleri küçülterek gösterdiğini söyledi; bu küçültme oranına "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_olcek"
+        },
+        {
+          "t": "metin",
+          "v": " dendiğini ekledi. Çocuklar adımlarını sayarak kısa bir mesafeyi karşılaştırdı ama yaklaşık sonuçları kesin ölçüm sanmamaları gerektiğini de öğrendiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yeni levhaların yalnız doğru yeri göstermesini değil, herkesçe anlaşılmasını istiyordu. Okuma güçlüğü yaşayan küçük çocukların da işaretleri anlayabilmesi için renk ve şeklin yazıyla birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " kullanılmasını önerdi. Öğretmen öneriyi not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " etti. Dönüşte park ofisinde görevli, çocukların işaretlediği noktaları inceledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bazı levhalara hayvan resimleri konmasını önerdi. Nisa ise hem simge hem yazı bulunmasının daha anlaşılır olacağını söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bir de kavşaktan önce levha koyarsanız insanlar son anda yön"
+        },
+        {
+          "t": "ikon",
+          "v": "compass"
+        },
+        {
+          "t": "metin",
+          "v": " değiştirmek zorunda kalmaz,” diye ekledi. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Park görevlisi önerileri dinlerken Nisa küçük bir ayrıntı daha ekledi. Bazı renkleri ayırt etmekte zorlanan kişiler olabilirdi; bu yüzden yalnız renge güvenmemek gerektiğini söyledi. Levhalara ok, kısa sözcük ve kolay tanınan simgeler koymayı kararlaştırdılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " da çizdiği kuş"
+        },
+        {
+          "t": "ikon",
+          "v": "bird"
+        },
+        {
+          "t": "metin",
+          "v": " resmini yol işaretinden ayırdı: “Güzel bir resim, her zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " açık bir işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " olmayabilir.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir hafta sonra sınıf yeniden parka geldi. Kapatılmış patikanın girişinde hâlâ uyarı"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " vardı, fakat açık yola yeni levhalar yerleştirilmişti. Levhalarda yön"
+        },
+        {
+          "t": "ikon",
+          "v": "compass"
+        },
+        {
+          "t": "metin",
+          "v": " oklarının yanında küçük yaprak"
+        },
+        {
+          "t": "ikon",
+          "v": "leaf"
+        },
+        {
+          "t": "metin",
+          "v": " simgeleri bulunuyordu. Park görevlisi çocuklara teşekkür etti: “Gözlemleriniz, yürüyüşçülerin işini kolaylaştırdı.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eve gidince iki haritayı yan yana koydu: Biri eski patikayı, diğeri güncel ve güvenli güzergâhı gösteriyordu. Aralarındaki farkı renklendirerek çizdi. Defterinin altına şu cümleyi yazdı: İyi bir yol bulmak"
+        },
+        {
+          "t": "ikon",
+          "v": "idea"
+        },
+        {
+          "t": "metin",
+          "v": ", yalnızca hedefe varmak değil, oraya güvenle ulaşmaktır."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

@@ -304,7 +304,7 @@ test.describe("Saf yardımcılar (tarayıcı gerektirmez)", () => {
     expect(authHataAnahtari({ code: "user_already_exists" })).toBe("kayitNotr");
     expect(authHataAnahtari({ message: "User already registered" })).toBe("kayitNotr");
     expect(authMetni("kayitNotr", "tr")).toBe(
-      "Kayıt isteğin alındı; e-postanı kontrol et. Hesabın varsa giriş yapabilir veya şifreni sıfırlayabilirsin",
+      "Kayıt isteğiniz alındı; e-postanızı kontrol edin. Hesabınız varsa giriş yapabilir veya parolanızı sıfırlayabilirsiniz.",
     );
   });
 });
