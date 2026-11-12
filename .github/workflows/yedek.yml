@@ -20,7 +20,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Kodu al
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Veritabanını dök ve şifrele
         env:
