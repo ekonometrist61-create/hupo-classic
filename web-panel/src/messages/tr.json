@@ -453,16 +453,18 @@
     "demo": {
       "eyebrow": "Örnek soru",
       "title": "Önce siz deneyin",
-      "desc": "Beş örnek soruyla Hupo'nun nasıl çalıştığını görün. Hesap açmak gerekmez, cevaplarınız hiçbir yere kaydedilmez.",
-      "cta": "5 soruluk örneği başlat",
+      "desc": "Önce çocuğunuzun sınıfını seçin (3–7. sınıf); o sınıfa uygun beş örnek soru gelsin. Bazıları şekillidir. Yanlış cevapta açıklama görünür, sonunda size kısa bir özet gösterilir. Hesap açmak gerekmez, cevaplar kaydedilmez.",
+      "sinifEtiket": "Sınıfını seç",
+      "sinifBaglanti": "{sinif}. sınıf örnek sorularını başlat",
+      "cta": "Sınıfı seç, soruları dene",
       "badge": "Örnek",
-      "subject": "Türkçe",
-      "question": "“Bu güzel haberi duyunca çok <b>sevindi</b>.” cümlesindeki koyu yazılı sözcüğün eş anlamlısı hangisidir?",
+      "subject": "Türkçe · 3. sınıf",
+      "question": "“Sabah hava çok <b>soğuktu</b>.” cümlesinde altı çizili sözcüğün zıt anlamlısı hangisidir?",
       "options": [
-        "üzüldü",
-        "mutlu oldu",
-        "kızdı",
-        "korktu"
+        "serindi",
+        "sıcaktı",
+        "yağmurluydu",
+        "karanlıktı"
       ],
       "note": "Örnek sorular Hupo için hazırlanmıştır; resmî okul sınav soruları olarak sunulmaz."
     },
@@ -1038,9 +1040,54 @@
       "googlePlay": "Google Play'den İndir",
       "copyright": "© 2026 Hupolingo"
     },
+    "kesfet": {
+      "eyebrow": "Çalışmanın içindeki keşifler",
+      "title": "Soru çözmenin yanında merak uyandıran küçük dünyalar",
+      "desc": "Çocuk bunları kendi isteğiyle açar. Ölçüt yine öğrenmedir; ödül baskısı, süre dayatması ve çocuğa satış yoktur.",
+      "rozetErken": "Erken erişim",
+      "rozetYakinda": "Yakında",
+      "veliIcin": "Veli için:",
+      "durumNotu": "Erken erişim: uygulamanın test sürümünde var, kapsam ve görünüm değişebilir. Yakında: henüz açılmadı.",
+      "carpim": {
+        "ad": "Çarpım Şifreleri",
+        "desc": "Çarpım tablosunu ezberlemek yerine her çarpan için bir şifre, yani kısa bir kural çözülür. Örneğin “İkiler Şifresi”: sayıyı kendisiyle topla. Ardından o şifreyle küçük sorular gelir.",
+        "veli": "Tablodaki ayrı ayrı bilgileri birkaç kurala indirir; çocuğunuz ezber yerine yol bulmayı dener."
+      },
+      "kelime": {
+        "ad": "Kelime Evreni",
+        "desc": "Eş anlamlı, zıt anlamlı ve eş sesli sözcükler için üç oyun türü. Yanlış cevaplanan sözcük, sonra tekrar bakılmak üzere kaydedilebilir.",
+        "veli": "Sözcük dağarcığı ayrı bir başlıkta çalışılır. İçerik incelemesi sürüyor; tamamlandıkça açılacak."
+      },
+      "arena": {
+        "ad": "Arena",
+        "desc": "Ay Ligi’nde ilerleme ve günün meydan okuması. Sıralamada başka çocukların adı görünmez. Arkadaşla yarışma henüz yok, yakında.",
+        "veli": "Rekabet öğrenmenin ölçütü değildir. Raporda çözülen konulara ve tekrar ihtiyacına bakarsınız; sıraya ya da XP’ye değil."
+      }
+    },
     "hikayeler": {
-      "title": "Okurken eğlenen, hikâyenin kahramanı olan çocuk",
-      "desc": "Çocuk hikâyede kendisi ya da bir arkadaşı olarak yol alır; keşfeder, güler, merak eder. Sonunda birkaç küçük soruyla anladığını dener.",
+      "marka": "Senin Hikâyen",
+      "rozetErken": "Erken erişim",
+      "rozetYakinda": "Yakında",
+      "title": "Çocuğunuz okurken hikâyenin kahramanı olur",
+      "desc": "Çocuk hikâyeye kendisi ya da bir yoldaş olarak girer; keşfeder, güler, merak eder. Sonunda birkaç küçük soruyla anladığını dener. Okuma, görev listesi gibi değil bir macera gibi başlar.",
+      "adimlar": [
+        {
+          "baslik": "Kahramanı seçer",
+          "aciklama": "Hikâyede kendisi ya da bir yoldaş olur. Yazdığı ad hikâye sürerken cihazda durur; kaydedilmez."
+        },
+        {
+          "baslik": "Hikâyeyi okur",
+          "aciklama": "Sınıf düzeyine göre seçilmiş hikâyeler, günlük okuma kotası içinde açılır."
+        },
+        {
+          "baslik": "Küçük sorularla dener",
+          "aciklama": "Sonunda birkaç soru: anladığını görür, tekrar edilecek yer varsa fark eder."
+        }
+      ],
+      "kart": "Hikâye bitince küçük bir deneme: anladın mı, neresine dönelim?",
+      "cta": "Veli hesabı oluştur",
+      "durumNotu": "Uygulama şu an erken erişimde; kapsam ve görünüm değişebilir. Hikâyeler Hupo için hazırlanmıştır; resmî okul içeriği olarak sunulmaz.",
+      "notHazirlik": "Hikâyeler hazırlanıyor. Her hikâye yayından önce bir editör tarafından okunup onaylanır; yayına çıktıkça bu bölüm güncellenir.",
       "sayi": "{count} yayında hikâye",
       "sinif": "{alt}–{ust}. sınıf için",
       "turler": "Türler",
@@ -2474,7 +2521,62 @@
   },
   "demo": {
     "metaTitle": "Örnek sorular — Hupolingo",
-    "metaDescription": "Hupo'nun nasıl çalıştığını beş örnek soruyla görün. Hesap gerekmez, cevaplar kaydedilmez.",
+    "metaDescription": "Sınıfını seç (3–7. sınıf), o sınıfa uygun beş örnek soruyla Hupo'nun nasıl çalıştığını gör. Hesap gerekmez, cevaplar kaydedilmez.",
+    "sinifBaslik": "Çocuğunuz kaçıncı sınıfta?",
+    "sinifAciklama": "Sınıfı seçin; o sınıfa uygun beş örnek soru gelsin. Bazı sorular şekillidir. Sorudaki altı çizili sözcük ya da ifade, çözümün anahtarıdır.",
+    "sinifGrup": "Sınıf seçimi",
+    "sinifSoyadi": "sınıf",
+    "sinifRozet": "{sinif}. sınıf",
+    "sinifDegistir": "Sınıfı değiştir",
+    "sinifNot": "Hesap gerekmez. Cevaplar hiçbir yere kaydedilmez. Sonunda veliye kısa bir özet gösterilir.",
+    "sekilli": "Şekilli soru",
+    "readyFigure": "Şekle dikkatle bak, bir seçenek seç; sonra kontrol edelim.",
+    "tuzakBaslik": "Bu seçenek neden cazip görünür?",
+    "cesaret": "Yanlış cevap, öğrenmenin bir parçasıdır. Çözüme bir kez bakıp sonraki soruya geçebilirsin.",
+    "doneIntro": "Sonuç ekranı, veliye nasıl bir özet gösterdiğimizi anlatır.",
+    "ozet": {
+      "baslik": "Veliye özet",
+      "rozet": "Örnek özet",
+      "skor": "{score} / {total} soru ilk denemede doğru.",
+      "beceriBaslik": "Beceri beceri bakış",
+      "beceriSatir": "{dogru} / {toplam} doğru",
+      "guclu": "İlk denemede doğru",
+      "kismen": "Kısmen doğru",
+      "tekrar": "Tekrar edilebilir",
+      "destekBaslik": "Evde nasıl destek olabilirsiniz?",
+      "hepsiDogru": "Bu örnekte tekrar gerektiren bir beceri görünmedi. Çocuğunuzdan bir soruyu kendi cümleleriyle anlatmasını isteyin; çözümü açıklayabilmek, yalnızca doğru işaretlemekten daha çok şey gösterir.",
+      "uyari": "Beş soru küçük bir örnektir. Çocuğunuzun seviyesini ölçmez, kesin bir değerlendirme değildir. Veli panelindeki rapor gerçek çözümlere dayanır; burada yalnızca nasıl göründüğünü görüyorsunuz."
+    },
+    "beceri": {
+      "sozcuk": {
+        "ad": "Sözcük ve anlam",
+        "destek": "Günlük konuşmada bir sözcüğün yerine kullanılabilecek başka sözcükleri ya da zıttını birlikte bulun (“sevindi yerine ne diyebiliriz?”). Okuduğu metinde takıldığı sözcüğü birlikte not edip sözlükten bakın."
+      },
+      "dilbilgisi": {
+        "ad": "Dil bilgisi ve yazım",
+        "destek": "Okuduğu bir paragraftan iki cümle seçin; sözcüklerin cümledeki görevini (özellik bildirme, iş bildirme gibi) sesli konuşun. Yazımından emin olmadığı sözcüğe birlikte sözlükten bakın."
+      },
+      "sayilar": {
+        "ad": "Sayılar ve işlemler",
+        "destek": "Çözümü yalnız sonuçla değil, adımlarla anlatmasını isteyin: “Önce ne yaptın, neden?” Alışveriş ya da paylaştırma gibi günlük küçük problemler işlemi anlamlı kılar."
+      },
+      "geometri": {
+        "ad": "Geometri ve ölçme",
+        "destek": "Evde bir kitabın ya da masanın kenarlarını birlikte ölçüp çevresini hesaplayın. Şekli elle çizmek, kavramı gözünde canlandırmasına yardım eder."
+      },
+      "veri": {
+        "ad": "Veri okuma",
+        "destek": "Market fişi, hava durumu ya da bir tablo bulun; “en çok, en az, aradaki fark” sorularını birlikte cevaplayın."
+      },
+      "fen": {
+        "ad": "Fen bilimleri",
+        "destek": "Evde basit bir gözlem yapın (buzun erimesi, ışığın gölgesi gibi) ve “Ne gördük? Neden oldu?” diye konuşun. Terimi kendi cümlesiyle açıklamasını isteyin."
+      },
+      "sosyal": {
+        "ad": "Sosyal bilgiler",
+        "destek": "Bir haritaya ya da güncel bir olaya birlikte bakın; “Bu nerede? Neden önemli?” sorularını konuşun. Cevabı hemen söylemeyip düşünmesine zaman tanıyın."
+      }
+    },
     "back": "Ana sayfaya dön",
     "badge": "Örnek",
     "notSaved": "Cevapların kaydedilmez.",
@@ -2489,10 +2591,9 @@
     "yourAnswer": "Senin cevabın",
     "steps": "Adım adım çözüm",
     "optionLabel": "Seçenek {letter}",
-    "doneTitle": "Örnek çalışmayı tamamladın.",
-    "doneScore": "{score} / {total} soruyu ilk denemede doğru çözdün.",
+    "doneTitle": "{sinif}. sınıf örnek çalışması tamamlandı.",
     "doneNote": "Bu sonuç yalnızca bu beş soruyu anlatır; hiçbir bilgi kaydedilmedi.",
-    "again": "Baştan dene",
+    "again": "Aynı sınıfla baştan dene",
     "signup": "Veli hesabı oluştur",
     "sourceNote": "Örnek sorular Hupo için hazırlanmıştır; resmî okul sınav soruları olarak sunulmaz.",
     "poseAlt": {

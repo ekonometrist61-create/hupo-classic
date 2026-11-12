@@ -4966,3 +4966,16 @@ Paketler:
   5. Mevcut 3 veli hesabı (deneme kaydı yok): gating açıldığı için günlük 20 soru sınırında; deneme sınavlarına erişim kapalı (kabul edildi). Deneme kaydı hiç açılmadığı için deneme almazlar; istenirse ayrı karar.
   6. Kart metinleri ve sınır değerleri başlangıç hipotezi; baseline yok. İlk ölçüm: 14 gün sonra sınıf × özellik sınır-dolma oranı (sınıf başına 30 hane altında gösterilmez).
 - **İlgili:** `docs/growth-crm/DENEME_SINIR_KURALI.md` (kural, metinler, durum); `docs/SURUMLEME.md` (1.4.0+6, panel 0.4.0); K-0194; K-0195; `supabase/migrations/20261125000000_kartsiz_deneme_kayitta.sql`, `20261126000000_deneme_yonetim_ve_gorunurluk.sql`, `20261127000000_deneme_sinav_kapisi.sql`.
+
+### K-0259 · 2026-11-12 · PAZ · Sosyal medya hesapları: hazırlık paketi ve kullanıcı kararları (GÖR-115)
+- **Tür:** Plan
+- **Konu:** PAZ
+- **Bağlam:** Kullanıcı Hupolingo için sosyal medya hesaplarını açmamı ve Claude tarafından yönetilecek şekilde ayarlamamı istedi. Hesap açılışı kullanıcı kimliği, telefon/e-posta doğrulaması ve platform şartlarının kabulünü gerektirdiği için ajan hesap açmadı; hazırlık paketi çıkarıldı.
+- **Karar:** Kanal sırası önerisi: Dalga 1 Instagram + YouTube (Shorts) + LinkedIn sayfası (ayda 2); Dalga 2 TikTok (4. hafta verisinden sonra); Dalga 3 WhatsApp Kanalı (hukuk/İYS onayına kadar kapalı) ve Facebook (yalnız Business Suite çifte yayın). Yetki modeli önerisi: şimdi yetkisiz paket + Meta Business Suite ve YouTube Studio'nun kendi zamanlayıcısı; yazma yetkili API önerilmiyor; şifre paylaşılmaz. ÖNERİ, kullanıcı onayı bekliyor.
+- **Durum:** BEKLİYOR
+- **Doğrulama:** — (hesap açılmadı; platform karakter sınırları ve görsel ölçüleri güncel belgeden doğrulanmadı, D etiketli)
+- **Sahip:** Kullanıcı (hesap açılışı, doğrulama, kararlar), Ajan (paket, gönderi taslakları, işleyiş)
+- **Önem:** Orta
+- **Açıklama:** Paket `mar-oto-ai` ajanı tarafından hazırlandı. İçerik: kullanıcı adı stratejisi (`hupolingo` → `hupolingo.tr` → `hupolingoapp`), platform bazlı görünen ad, biyografi, UTM'li link, görsel şartnamesi, sabit gönderi, 11 adımlık kullanıcı kontrol listesi, yönetim yetkisi yolları, 12 gönderilik 30 günlük takvim, yorum/DM ve yükseltme kuralları, kriz protokolü, KPI/UTM/CRM bağlantısı. Çelişkiler dosyanın §0 bölümünde: önceki kararlar TikTok/Facebook'u erteliyor ve API/OAuth bağlamayı önermiyor. Site footer'ındaki YouTube ve LinkedIn adresleri daha önce 404 vermişti. Destek e-postası yer tutucu. Maskot YouTube "çocuklara yönelik" ölçütüne girebilir (doğrulanmadı). Çocuk verisi, foto veya gerçek ad içerik olarak kullanılmaz.
+- **Kanıt:** `docs/hupo-design-growth/sosyal-medya-kurulum-2026-11-12.md`
+- **İlgili:** GÖR-115, FK-006, K-0258

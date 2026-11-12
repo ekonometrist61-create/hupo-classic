@@ -26,7 +26,7 @@ PostHog ayarı: `autocapture: false`, `person_profiles: identified_only`, oturum
 | Olay | Tetikleyici | Özellikler | PII | Onay | Durum |
 |---|---|---|---|---|---|
 | `hero_cta_tiklandi` | CTA tıklaması: `HeroSection.tsx`, `FinalCtaSection.tsx` (`TrackedLink`) | `konum` (yalnız son CTA: `"son"`) | Yok | granted | Var |
-| `demo_tamamlandi` | Demo quiz bitişi (`DemoQuiz.tsx`) | `puan`, `toplam` | Yok | granted | Var |
+| `demo_tamamlandi` | Demo quiz bitişi (`DemoQuiz.tsx`) | `puan`, `toplam`, `sinif` (3–7; 2026-11-12) | Yok | granted | Var |
 | `veli_kayit_baslatildi` | Veli kayıt bağlantısı: `HeroSection.tsx`, `CharacterUniverseSection.tsx`, `ParentPanelSection.tsx` (`TrackedLink`) | yok | Yok | granted | Var |
 | `fiyat_tiklandi` | Fiyat bağlantısı: `PricingSection.tsx` (`TrackedLink`) | yok | Yok | granted | Var |
 | `lead_magnet_goruntulendi` | Rehber sayfası açılışı: `CarpimRehberi.tsx` (bayrak `NEXT_PUBLIC_LEAD_MAGNET_ACIK` kapalıyken sayfa yok) | `icerik` (slug) | Yok | granted | Kodlandı, bayrak kapalı |

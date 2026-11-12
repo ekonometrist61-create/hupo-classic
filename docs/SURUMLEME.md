@@ -38,6 +38,17 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.8.0 · 2026-11-12
+
+Yeni kullanıcı yüzeyi (MINOR: demo yeniden kuruldu, tanıtım bölümleri, RPC sınıf bandı).
+- Örnek soru demosu: önce sınıf seçimi (3–7), her sınıf için 5 özgün soru (10 şekilli), altı çizili anahtar, yanlış cevapta öğretici ve cesaretlendirici açıklama, sonunda veliye beceri bazlı özet. demo_tamamlandi olayına sinif özelliği eklendi.
+- Landing: "Senin Hikâyen" tanıtımı genişletildi (sınıf aralığı sabit 3–7); yeni "Keşfet" bölümü (Çarpım Şifreleri, Kelime Evreni, Arena; dürüst durum rozetleri).
+- Sorular ayrı ajanla kör çözüldü (25/25 anahtarla uyumlu, 3 düzeltme). Kazanım kodu yazılmadı.
+- Commit: 8738022'den cherry-pick (feature dalının tamamı alınmadı).
+
+**Migration:** 20261219000000 (okuma_site_ozeti yalnız 3–7. sınıf hikâyelerini sayar; uzak veritabanında 2026-11-12'de uygulandı, db query --linked ile; geçmiş migration repair ile işlendi).
+
+**Uyumluluk:** Panel 0.8.0 migration olmadan da çalışır; yalnız hikâye sayısı 2. ve 8. sınıf hikâyelerini de içerir.
 ### panel 0.7.2 · 2026-11-10
 
 Düzeltme (PATCH: yayın kapısı arayüzü; veri sözleşmesi değişmez, migration bu sürümde yok).

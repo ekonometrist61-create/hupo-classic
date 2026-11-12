@@ -1,4 +1,4 @@
-﻿# MEB soru-sözcük uzmanı: öğrenme günlüğü
+# MEB soru-sözcük uzmanı: öğrenme günlüğü
 
 Her girişte: tarih | sınıf | konu | öğrenilen | kanıt | durum (ONAYLI / ÖNERİ / KARAR BEKLİYOR).
 Kural değişikliği yalnızca kullanıcı onayıyla ONAYLI olur. Ajan ve model önerileri ÖNERİ olarak girer.
@@ -240,3 +240,36 @@ Kaynak: `~/.claude/projects/c--Dev-hupo/*.jsonl` kullanıcı mesajları (anahtar
 - **tr6-dk-015, tr6-dk-035 (ikna):** ikna kazanımı resmî programda yalnız 7–8. sınıfta; 6. sınıfta yok. Yanlış kod bırakmak yerine kazanim_kodu/metni boşaltıldı (canlı DB + paket); sorular beklemede, kazanımsız listesine düşer. Gelecek sürümde 7. sınıf ikna kazanımıyla (T.D.7.17 / T.K.7.x) sınıf değiştirilerek yeniden kullanılabilir.
 - **tr4-016, tr4-030:** canlı DB'deki eski program kodları (T.4.3.12, T.4.3.11) içerikle uyuşuyor; DB değişmedi. Paket dosyası DB'ye eşitlendi (T.Y.4.2/T.K.4.2 yanlıştı).
 - **sos4-e1-06:** SB.4.1.3 ("Toplumsal birliği sürdürmeye yönelik fikir üretebilme"; öğretme notları toplumdaki roller ve rollere ilişkin sorumluluklar) atandı. Aynı kodlu sos4-e1-04 ve sos4-s-003 satırlarının bozuk kazanım metni (başka kazanımların bileşenleri karışmıştı) PDF'teki a–c bileşenleriyle değiştirildi. Canlı DB 3 satır.
+- **sos4-e1-06:** SB.4.1.3 ("Toplumsal birliği sürdürmeye yönelik fikir üretebilme"; öğretme notları toplumdaki roller ve rollere ilişkin sorumluluklar) atandı. Aynı kodlu sos4-e1-04 ve sos4-s-003 satırlarının bozuk kazanım metni (başka kazanımların bileşenleri karışmıştı) PDF'teki a–c bileşenleriyle değiştirildi. Canlı DB 3 satır.
+## 2026-11-10 · Hikâye ve sözlük yazım taraması · DOSYALARDA UYGULANDI, DB'ye gitmedi
+- **Kapsam:** icerik/okuma/{hikaye 104, sozluk 92, paket 94, anotasyon 92} düzyazı alanları + docs/okuma-entegrasyon/paket-2026-11-10 + Kelime Evreni/Okuma migration dizgileri (salt okuma).
+- **Yöntem:** (1) ASCII'ye düşmüş sözcük: diyakritikli ikizi derlemde bulunan ASCII sözcükler (dogru/doğru türü), (2) kök eşleştirme, (3) ünlü uyumu ihlali, (4) sık yanlış yazım listesi, (5) mojibake. Sonuç: ASCII'ye düşmüş gerçek hata yok; kalan adaylar kimlik/slug/geçerli sözcük.
+- **Düzeltilen (91 satır, 57 dosya):** sıfat -î (tarihî yapı/sokak/bilim merkezi, resmî belge/plan/rota/güvenlik/tahmin, hayalî kanıt/senaryo, temsilî kart/çizim, tahminî süre/konum/varış/yer/zaman/bağlantı/olarak), tezgâh, kâse (hr066), hâle gel/get/ol, hâlde, hâlinde.
+- **Kural:** aynı yüzey biçimi ad hâlinde değişmez ("resmi çizdi", "tarihi yazdı", "tahmini not etti" doğru). Sıfat mı ad mı bağlamla belirlenir; otomatik toplu değişim yapılmaz.
+- **Dokunulmadı:** icerik/okuma/kaynak/*.md (kaynak metin kuralı). Uzak DB eski metinde kalır; migration ile eşitleme ayrıca onay ister.
+
+## 2026-11-10 · Okuma paketleri: kardes / baska_biri izinli tür ekleme (etiket denetimi) · DOSYALARDA UYGULANDI, DB'ye gitmedi
+- **Kapsam:** icerik/okuma/paket 77 paket. kardes +74, baska_biri +72 (kardes 3 ve baska_biri 5 hikâyede zaten vardı). hr027, kahraman adı sabit 16 hikâye ve kahramansız hr025 dokunulmadı. anne / baba eklenmedi.
+- **Kanıt:** etiket denetimi raporu Tablo 1 hedef planı; yalnız izinli_turler dizisi metin düzeyinde değişti (girinti, satır sonu ve BOM korundu). Doğrulama: 77 dosya dışındaki paket aynı; tekrar yok; supabase/tests/okuma_dunyasi/kos.mjs (OKUMA_PAKET_DIZINI ile 94 paket + kayip-defter fixture) 189/189 ve export 7/7.
+- **Migrasyon:** supabase/migrations/20261213000000_okuma_izinli_tur_guncelle.sql hazır, uygulanmadı. Yerel PGlite'ta 77/77 yeni TASLAK sürüm yazıldı, en yeni sürümlerde kardes/baska_biri tutarlı. 20261212 dosyası zaten vardığı için 20261213 kullanıldı.
+- **Açık karar:** 18 paketin (hr040, hr042, hr066, hr074, hr079, hr082, hr086, hr088, hr091, hr099, hr102–105, hr111–114) çalışma ağacında commit'lenmemiş, izinli dışı farkları var; migrasyon bunları da taslak sürüme alır. Uygulamadan önce içerikleri onaylanmalı.
+- **Hikâye .md front matter:** izinli_turler alanı değiştirilmedi. 69 dosya eski paket listesiyle aynı; 6 dosya (hr026, hr028–hr032) önceden sapmıştı. Paket ile .md eşitlenmesi ayrı karar.
+
+## 2026-11-10 · HR-141–166 editöryel düzeltme (başlık, doğru şık, dayanak ölçümü) · DOSYALARDA UYGULANDI, COMMIT EDİLDİ
+- **Başlık:** HR-157 başlığındaki "Sessiz" kaldırıldı ("Bulutların Altındaki Uçuş"). Dosya adı ve slug korundu; yeniden adlandırma uzak referansları kırabilir.
+- **Doğru şık:** 104 soruda doğru şık en uzun değil (karakter ölçümü; önceki 53/56 sorunun çeldirici uzatmasıyla düzeltildiği doğrulandı). Ölçüm scratchpad betiğiyle yapıldı.
+- **Dayanak:** 104/104 birebir (soru_kontrol.mjs). Hepsi/hiçbiri ve olumsuz kök yok.
+- **Kelime:** 250–667. Pilot bant (3:330 … 7:950) altında; commit edilmiş HR-121–126 (191–346) ile aynı aralıkta. Bant kararı kullanıcıda.
+- **Kanıt:** kazanım kodu yok; C ve source_pending. soru_kontrol kapsam sonucu bu yüzden anlamsız ("kod kapsamda yok"). Ajan A/B pending.
+- **Öğrenilen:** kazanım kodu olmayan hikâyede soru_kontrol kapsam satırını boş üretir; hikâye için dayanak birebirliği ve doğru şık uzunluğu asıl kontroldür.
+- **Açık (insan editörü):** TDK onayı yok (pervane, hatıra); HR-160 s2/s4 dayanakları zayıf; HR-153 s3 ve HR-159 çeldiricileri yapay; HR-144 güneşte kurutma ve HR-145 gönüllü ayrıntıları onay bekliyor. Uzak DB ve paket dönüşümü onay bekliyor.
+
+## 2026-11-11 · HR-141–166 paket dönüşümü ve yerel doğrulama · YEREL TAMAM, UZAK DB BEKLİYOR
+- **Kapsam:** 26 hikâye (anne 141–146, baba 147–152, araç 153–158, hayvan 159–166); commit 5051ef3.
+- **Öğrenilen:** derleyici hikâye .md'sinden önce ön yüz şemasını ister (okuma_bandi, dunya_tipi, izinli_turler, etiketler.ogrenme_hedefleri); ChatGPT çıktısı doğrudan .hikaye.md olduğunda donustur.mjs uret kullanılmaz, derle + sözlük yeter. Yol arkadaşı kuralı (en az 2 yer) anonim bir kişiye ad verilerek, olay örgüsü değiştirilmeden karşılanabiliyor.
+- **Kanıt:** derle 26/26 hatasız (sözlük ile); paket 26 üretildi. Migrasyon PGlite zincirinde (20261214) hatasız uygulandı: 26 hikâye, 26 taslak sürüm, 104 hedef bağlantısı. Denetim aracı (tools/okuma-hikaye-denetim.mjs): sorusuz 0, karşılıksız ad 0, tekrar 0.
+- **Açık:** uzak DB'de 20261213 (önceki oturum) ile birlikte bekliyor; sözlük adayları TDK onayı; yol arkadaşı editör okuması; kazanım kodu yok (C, source_pending).
+
+## 2026-11-12 | 3-7 | Landing demo soruları (25) bağımsız denetim | ÖNERİ
+- Öğrenilen: Kör çözümde 25/25 soru anahtarla uyuştu (şekilli 10 soruda veri DemoFigure çizim koduna göre okundu). Bulgular: D4-04 doğru şık belirgin en uzundu (çeldiriciler uzatıldı); D6-04 "temiz kan" terimi eskimiş/yanıltıcı (akciğer atardamarı) -> "kalpten uzaklaştırıp organlara taşıyan" diye yeniden yazıldı; D4-04 çözüm adımında "piline" ek hatası ve alt metin düzeltildi; D3-05 son adım netleştirildi.
+- Kanıt: web-panel/src/components/demo/demoQuestions.ts; kazanım kodu yok (kaynak teyidi yok); tsc --noEmit temiz. Denetçi Sonnet ailesi; insan örneklemesi hâlâ gerekir.

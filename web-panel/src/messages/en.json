@@ -453,16 +453,18 @@
     "demo": {
       "eyebrow": "Sample question",
       "title": "Try it yourself first",
-      "desc": "See how Hupo works with five sample questions. No account is needed and your answers are not saved anywhere.",
-      "cta": "Start the 5-question sample",
+      "desc": "First pick your child's grade (3–7); you get five sample questions for it. Some have a figure. A wrong answer shows an explanation, and at the end you see a short summary. No account is needed and your answers are not saved anywhere.",
+      "sinifEtiket": "Pick a grade",
+      "sinifBaglanti": "Start the grade {sinif} sample questions",
+      "cta": "Pick a grade and try the questions",
       "badge": "Sample",
-      "subject": "Turkish",
-      "question": "“Bu güzel haberi duyunca çok <b>sevindi</b>.” — which option is a synonym of the bold word?",
+      "subject": "Turkish · grade 3",
+      "question": "“Sabah hava çok <b>soğuktu</b>.” — which option is the antonym of the underlined word?",
       "options": [
-        "üzüldü",
-        "mutlu oldu",
-        "kızdı",
-        "korktu"
+        "serindi",
+        "sıcaktı",
+        "yağmurluydu",
+        "karanlıktı"
       ],
       "note": "Sample questions are written for Hupo and are not presented as official school exam questions.",
       "langNote": "The sample questions are in Turkish."
@@ -1039,9 +1041,54 @@
       "googlePlay": "Get from Google Play",
       "copyright": "© 2026 Hupolingo"
     },
+    "kesfet": {
+      "eyebrow": "Discoveries inside the practice",
+      "title": "Small worlds that spark curiosity next to solving questions",
+      "desc": "Children open these when they want to. The measure is still learning; there is no reward pressure, no time pressure and no selling to the child.",
+      "rozetErken": "Early access",
+      "rozetYakinda": "Coming soon",
+      "veliIcin": "For parents:",
+      "durumNotu": "Early access: available in the app's test version; scope and look may change. Coming soon: not open yet. Learning content is in Turkish.",
+      "carpim": {
+        "ad": "Multiplication Codes (Çarpım Şifreleri)",
+        "desc": "Instead of memorising the times table, children crack a code for each factor, which is a short rule. For example the \"Twos Code\": add the number to itself. Then small questions follow with that code.",
+        "veli": "It turns many separate facts into a few rules; your child tries to find a way instead of memorising."
+      },
+      "kelime": {
+        "ad": "Word Universe (Kelime Evreni)",
+        "desc": "Three game types for synonyms, antonyms and homophones. A word answered wrongly can be saved to look at again later.",
+        "veli": "Vocabulary is practised under its own heading. Content review is still in progress; it will open as it is completed."
+      },
+      "arena": {
+        "ad": "Arena",
+        "desc": "Progress in the Moon League and the challenge of the day. Other children's names are not shown in rankings. Playing against a friend is not available yet; it is coming soon.",
+        "veli": "Competition is not the measure of learning. In the report you look at topics solved and what needs review, not at rank or XP."
+      }
+    },
     "hikayeler": {
-      "title": "Reading that is fun, with the child as the hero",
-      "desc": "Children step into the story as themselves or a friend: they explore, laugh and wonder. A few short questions at the end let them check what they understood.",
+      "marka": "Senin Hikâyen (Your Story)",
+      "rozetErken": "Early access",
+      "rozetYakinda": "Coming soon",
+      "title": "Your child becomes the hero of the story while reading",
+      "desc": "Children step into the story as themselves or a companion: they explore, laugh and wonder. A few short questions at the end let them check what they understood. Reading starts like an adventure, not like a to-do list.",
+      "adimlar": [
+        {
+          "baslik": "Picks the hero",
+          "aciklama": "They become themselves or a companion in the story. The name they type stays on the device while the story runs; it is not saved."
+        },
+        {
+          "baslik": "Reads the story",
+          "aciklama": "Stories chosen by grade level open within the daily reading allowance."
+        },
+        {
+          "baslik": "Checks with small questions",
+          "aciklama": "A few questions at the end: they see what they understood and notice what to revisit."
+        }
+      ],
+      "kart": "A small check when the story ends: did it make sense, where should we go back?",
+      "cta": "Create parent account",
+      "durumNotu": "The app is in early access for now; scope and look may change. Stories are written for Hupo and are not presented as official school content. The stories are in Turkish.",
+      "notHazirlik": "Stories are being prepared. Every story is read and approved by an editor before publishing; this section updates as they go live.",
       "sayi": "{count} stories available",
       "sinif": "For grades {alt}–{ust}",
       "turler": "Genres",
@@ -2475,7 +2522,62 @@
   },
   "demo": {
     "metaTitle": "Sample questions — Hupolingo",
-    "metaDescription": "See how Hupo works with five sample questions. No account needed, answers are not saved.",
+    "metaDescription": "Pick your grade (3–7) and see how Hupo works with five sample questions. No account needed, answers are not saved.",
+    "sinifBaslik": "Which grade is your child in?",
+    "sinifAciklama": "Pick a grade and you get five sample questions for it. Some questions have a figure. The underlined word or phrase in each question is the key to solving it. The questions are in Turkish.",
+    "sinifGrup": "Grade selection",
+    "sinifSoyadi": "grade",
+    "sinifRozet": "Grade {sinif}",
+    "sinifDegistir": "Change grade",
+    "sinifNot": "No account needed. Answers are not saved anywhere. At the end, a short summary for the parent is shown.",
+    "sekilli": "Figure question",
+    "readyFigure": "Look at the figure carefully, pick an option, then let's check.",
+    "tuzakBaslik": "Why does this option look tempting?",
+    "cesaret": "A wrong answer is part of learning. Look at the solution once, then move on to the next question.",
+    "doneIntro": "This result screen shows the kind of summary a parent gets.",
+    "ozet": {
+      "baslik": "Summary for the parent",
+      "rozet": "Sample summary",
+      "skor": "{score} of {total} questions correct on the first try.",
+      "beceriBaslik": "Skill by skill",
+      "beceriSatir": "{dogru} of {toplam} correct",
+      "guclu": "Correct on the first try",
+      "kismen": "Partly correct",
+      "tekrar": "Worth reviewing",
+      "destekBaslik": "How can you help at home?",
+      "hepsiDogru": "No skill needing review showed up in this sample. Ask your child to explain one question in their own words; being able to explain a solution says more than marking the right option.",
+      "uyari": "Five questions are a small sample. They do not measure your child's level and are not a definitive assessment. The report in the parent panel is based on real answers; here you only see how it looks."
+    },
+    "beceri": {
+      "sozcuk": {
+        "ad": "Words and meaning",
+        "destek": "Find other words that could replace a word in everyday speech, or its opposite, together. Note words that tripped them up in a text and look them up in a dictionary."
+      },
+      "dilbilgisi": {
+        "ad": "Grammar and spelling",
+        "destek": "Pick two sentences from a paragraph they read and talk about each word's job in the sentence. Look up words they are unsure how to spell together in a dictionary."
+      },
+      "sayilar": {
+        "ad": "Numbers and operations",
+        "destek": "Ask them to explain the solution in steps, not just the result: \"What did you do first, and why?\" Small everyday problems such as shopping or sharing make the operation meaningful."
+      },
+      "geometri": {
+        "ad": "Geometry and measurement",
+        "destek": "Measure the sides of a book or a table together and work out its perimeter. Drawing the shape by hand helps them picture the idea."
+      },
+      "veri": {
+        "ad": "Reading data",
+        "destek": "Find a shopping receipt, a weather table or any chart and answer \"most, least, difference\" questions together."
+      },
+      "fen": {
+        "ad": "Science",
+        "destek": "Do a simple observation at home (ice melting, the shadow of a light) and talk about \"What did we see? Why did it happen?\" Ask them to explain the term in their own words."
+      },
+      "sosyal": {
+        "ad": "Social studies",
+        "destek": "Look at a map or a current event together and talk about \"Where is this? Why does it matter?\" Give them time to think instead of answering right away."
+      }
+    },
     "back": "Back to home",
     "badge": "Sample",
     "notSaved": "Your answers are not saved.",
@@ -2490,10 +2592,9 @@
     "yourAnswer": "Your answer",
     "steps": "Step-by-step solution",
     "optionLabel": "Option {letter}",
-    "doneTitle": "You finished the sample practice.",
-    "doneScore": "You answered {score} of {total} questions correctly on the first try.",
+    "doneTitle": "You finished the grade {sinif} sample practice.",
     "doneNote": "This result only describes these five questions; nothing was saved.",
-    "again": "Try again from the start",
+    "again": "Try again with the same grade",
     "signup": "Create parent account",
     "sourceNote": "Sample questions are written for Hupo and are not presented as official school exam questions.",
     "poseAlt": {

@@ -10,6 +10,7 @@ import { FinalCtaSection } from "@/components/landing/sections/FinalCtaSection";
 import { HeroSection } from "@/components/landing/sections/HeroSection";
 import { HikayelerSection } from "@/components/landing/sections/HikayelerSection";
 import { HowItWorksSection } from "@/components/landing/sections/HowItWorksSection";
+import { KesfetSection } from "@/components/landing/sections/KesfetSection";
 import { OgrenmeBilimiSection } from "@/components/landing/sections/OgrenmeBilimiSection";
 import { ParentPanelSection } from "@/components/landing/sections/ParentPanelSection";
 import { PricingSection } from "@/components/landing/sections/PricingSection";
@@ -55,6 +56,8 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
           <DemoSection />
           <HowItWorksSection />
           <HikayelerSection />
+          {/* Çarpım Şifreleri, Kelime Evreni, Arena: dürüst durum rozetli keşif alanları. */}
+          <KesfetSection />
           <ParentPanelSection />
           <CharacterUniverseSection />
           <TrustSection />

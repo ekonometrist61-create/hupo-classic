@@ -23,7 +23,23 @@ export async function DemoSection() {
           <p className="mt-4 max-w-lg text-lg leading-relaxed text-navy-muted dark:text-gray-300">
             {t("demo.desc")}
           </p>
-          <div className="mt-8">
+          <p className="mt-6 text-sm font-extrabold uppercase tracking-wider text-navy-muted dark:text-gray-300">
+            {t("demo.sinifEtiket")}
+          </p>
+          <ul className="mt-2 flex flex-wrap gap-2" aria-label={t("demo.sinifEtiket")}>
+            {[3, 4, 5, 6, 7].map((n) => (
+              <li key={n}>
+                <Link
+                  href={`/demo?sinif=${n}`}
+                  aria-label={t("demo.sinifBaglanti", { sinif: n })}
+                  className="inline-flex h-12 min-w-12 items-center justify-center rounded-xl border-2 border-navy/15 bg-white px-4 text-lg font-extrabold text-navy transition-colors hover:border-brand-500 hover:text-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 motion-reduce:transition-none dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
+                >
+                  {n}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-6">
             <Link href="/demo" className={landingPrimaryBtn}>
               {t("demo.cta")}
               <IconArrowRight className="h-5 w-5" />
