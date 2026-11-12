@@ -1,0 +1,23 @@
+# Haftalık bağımlılık güncellemeleri (K-0257, GÖR-105). Güvenlik güncellemeleri için
+# GitHub depo ayarlarında "Dependabot security updates" da açılmalıdır (GÖR-112, kullanıcı).
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /web-panel
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      next:
+        patterns: ["next", "eslint-config-next", "@next/*"]
+
+  - package-ecosystem: pub
+    directory: /mobile-app
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

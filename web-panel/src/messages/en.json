@@ -172,6 +172,10 @@
       "title": "Admin Panel Sign-in | Hupolingo",
       "description": "Hupolingo admin panel. Authorized accounts only."
     },
+    "yonetimDogrulama": {
+      "title": "Two-Step Verification | Hupolingo Admin",
+      "description": "Two-step verification for admin accounts."
+    },
     "bakim": {
       "title": "Maintenance | Hupolingo",
       "description": "Hupolingo is temporarily unavailable due to maintenance."
@@ -229,6 +233,36 @@
     "area5Body": "Usage and conversion reports",
     "footerNote": "Sign-in and admin actions are logged.",
     "supportNote": "For access problems, contact your system administrator."
+  },
+  "yonetimMfa": {
+    "eyebrow": "Account security",
+    "dogrulaBaslik": "Two-step verification",
+    "dogrulaAciklama": "Enter the 6-digit code from your authenticator app.",
+    "kayitBaslik": "Turn on two-step verification",
+    "kayitAciklamaOneri": "Recommended for admin accounts. Setup takes about a minute.",
+    "kayitAciklamaZorunlu": "Two-step verification is required to enter the admin panel.",
+    "adim1": "Scan the QR code with Google Authenticator, Microsoft Authenticator or a similar app.",
+    "qrAlt": "Two-step verification setup QR code",
+    "anahtarEtiket": "If you cannot scan the QR code, enter this key in the app manually:",
+    "kopyala": "Copy key",
+    "kopyalandi": "Key copied.",
+    "adim2": "Enter the 6-digit code shown in the app.",
+    "kodEtiket": "Verification code",
+    "kodIpucu": "The code changes every 30 seconds. Digits only.",
+    "dogrula": "Verify",
+    "kayitTamamla": "Verify and turn on",
+    "dogrulaniyor": "Verifying...",
+    "hazirlaniyor": "Preparing setup...",
+    "sonraYap": "Skip for now",
+    "sonraNot": "If you skip, you will be asked again at your next sign-in.",
+    "baskaHesap": "Sign in with a different account",
+    "yeniden": "Try again",
+    "hataKod": "The code could not be verified. Enter the current code from the app and try again.",
+    "hataKodBicim": "The code must be 6 digits.",
+    "hataCokDeneme": "Too many attempts. Wait a few minutes and try again.",
+    "hataKurulum": "Setup could not be started. Try again; if the problem continues, tell your system administrator.",
+    "hataDurum": "Session status could not be read. Refresh the page or sign in again.",
+    "hataGenel": "Something went wrong. Please try again shortly."
   },
   "signin": {
     "eyebrow": "Parent panel",

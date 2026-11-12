@@ -1,0 +1,36 @@
+# Bağımlılık güvenlik denetimi (K-0257, GÖR-105): web-panel üretim bağımlılıklarında
+# yüksek veya kritik açık varsa iş kırılır. Kilit dosyası yeterlidir; kurulum yapılmaz.
+name: Güvenlik denetimi
+
+on:
+  push:
+    paths:
+      - "web-panel/package.json"
+      - "web-panel/package-lock.json"
+  pull_request:
+    paths:
+      - "web-panel/package.json"
+      - "web-panel/package-lock.json"
+  schedule:
+    - cron: "0 5 * * 1"   # her pazartesi 08:00 Türkiye saati (UTC+3)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  npm-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Kodu al
+        uses: actions/checkout@v4
+
+      - name: Node kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: npm audit (web-panel, üretim bağımlılıkları)
+        working-directory: web-panel
+        run: npm audit --omit=dev --audit-level=high

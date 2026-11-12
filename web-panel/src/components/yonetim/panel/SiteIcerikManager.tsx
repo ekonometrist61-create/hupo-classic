@@ -29,7 +29,7 @@ const GORSEL_TIPLERI: Record<string, string> = {
   "image/webp": "webp",
   "image/png": "png",
   "image/jpeg": "jpg",
-  "image/svg+xml": "svg",
+  // SVG bilerek yok: betik taşıyabilir ve görüntü optimizasyonu açıklarını tetikler (K-0257).
 };
 
 const textareaClass =
@@ -133,7 +133,7 @@ function Editor({ dil, varsayilanlar }: { dil: Dil; varsayilanlar: MetinYaprak[]
   const gorselYukle = async (y: MetinYaprak, dosya: File, damga: number) => {
     const uzanti = GORSEL_TIPLERI[dosya.type];
     if (!uzanti) {
-      setBildirim({ tip: "hata", metin: "Yalnızca WebP, PNG, JPG veya SVG yükleyebilirsiniz." });
+      setBildirim({ tip: "hata", metin: "Yalnızca WebP, PNG veya JPG yükleyebilirsiniz." });
       return;
     }
     if (dosya.size > GORSEL_MAKS_BAYT) {
@@ -347,7 +347,7 @@ function Editor({ dil, varsayilanlar }: { dil: Dil; varsayilanlar: MetinYaprak[]
                       Görsel yükle
                       <input
                         type="file"
-                        accept="image/webp,image/png,image/jpeg,image/svg+xml"
+                        accept="image/webp,image/png,image/jpeg"
                         className="sr-only"
                         disabled={mesgulMu}
                         onChange={(e) => {
