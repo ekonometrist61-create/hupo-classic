@@ -1082,33 +1082,45 @@
       }
     },
     "hikayeler": {
-      "marka": "Senin Hikâyen",
+      "marka": "Onlarca Hikâye",
       "rozetErken": "Erken erişim",
       "rozetYakinda": "Yakında",
-      "title": "Çocuğunuz okurken hikâyenin kahramanı olur",
-      "desc": "Çocuk hikâyeye kendisi ya da bir yoldaş olarak girer; keşfeder, güler, merak eder. Sonunda birkaç küçük soruyla anladığını dener. Okuma, görev listesi gibi değil bir macera gibi başlar.",
-      "adimlar": [
-        {
-          "baslik": "Kahramanı seçer",
-          "aciklama": "Hikâyede kendisi ya da bir yoldaş olur. Yazdığı ad hikâye sürerken cihazda durur; kaydedilmez."
-        },
-        {
-          "baslik": "Hikâyeyi okur",
-          "aciklama": "Sınıf düzeyine göre seçilmiş hikâyeler, günlük okuma kotası içinde açılır."
-        },
-        {
-          "baslik": "Küçük sorularla dener",
-          "aciklama": "Sonunda birkaç soru: anladığını görür, tekrar edilecek yer varsa fark eder."
-        }
-      ],
-      "kart": "Hikâye bitince küçük bir deneme: anladın mı, neresine dönelim?",
-      "cta": "Veli hesabı oluştur",
-      "durumNotu": "Uygulama şu an erken erişimde; kapsam ve görünüm değişebilir. Hikâyeler Hupo için hazırlanmıştır; resmî okul içeriği olarak sunulmaz.",
-      "notHazirlik": "Hikâyeler hazırlanıyor. Her hikâye yayından önce bir editör tarafından okunup onaylanır; yayına çıktıkça bu bölüm güncellenir.",
+      "title": "Sınıfına uygun hikâyeler, türüne göre",
+      "desc": "Macera, gizem, bilim kurgu, mizah ve tarih gibi türlerde, sınıf düzeyinize göre hazırlanmış hikâyeler. Her birinde sözcük ve okuma soruları var, birçoğunda bir deyim.",
       "sayi": "{count} yayında hikâye",
       "sinif": "{alt}–{ust}. sınıf için",
       "turler": "Türler",
-      "not": "Her hikâye yayından önce bir editör tarafından okunup onaylanır. Yapay zekâ denetim sonuçları editöre yardımcı olarak kaydedilir; yayın kararı editöründür. Yeni hikâyeler eklendikçe bu sayı kendiliğinden güncellenir."
+      "notHazirlik": "Hikâyeler hazırlanıyor. Her hikâye yayından önce bir editör tarafından okunup onaylanır; yayına çıktıkça bu bölüm güncellenir.",
+      "not": "Hikâyeleri Hupo hazırlar; yayına çıkan her hikâye bir editörün onayından geçer.",
+      "cta": "Veli hesabı oluştur"
+    },
+    "seninHikayen": {
+      "marka": "Senin Hikâyen",
+      "rozetErken": "Erken erişim",
+      "rozetYakinda": "Yakında",
+      "title": "Kahramanı çocuğunuz seçer",
+      "desc": "Çocuğunuz kendisini ya da bir yol arkadaşını hikâyeye koyar, kahramana bir ad verir ve bir tür seçer. Hikâyelerin çoğunda bu ad metnin içinde geçer.",
+      "adimlar": [
+        {
+          "baslik": "Kahramanını seçer",
+          "aciklama": "Kendisi ya da bir yol arkadaşı olur. Adını kendisi yazar."
+        },
+        {
+          "baslik": "Türünü seçer",
+          "aciklama": "Macera, gizem ya da bilim kurgu gibi bir türden hikâyeyi açar. Sınıfına uygun hikâyeler açılır."
+        },
+        {
+          "baslik": "Deyimi ve değeri fark eder",
+          "aciklama": "Hikâyede bir maarif değeri, sözcükler ve çoğu zaman bir deyim vardır. Sonunda birkaç soruyla anladığını görür."
+        }
+      ],
+      "not": "Adı yalnızca bu cihazda tutulur. Hikâye bitince küçük bir soru turu: anladın mı, neresine dönelim?",
+      "sinifEtiket": "Her sınıf için bir hikâye",
+      "sinifBaglanti": "{sinif}. sınıf hikâye deneyimi",
+      "demoCta": "Hikâye deneyimini dene",
+      "cta": "Veli hesabı oluştur",
+      "gorselAlt": "Hupolingo uygulamasının Öğren sekmesi: sınıfa uygun hikâyeler ve kaldığın yerden devam et düğmesi.",
+      "gorselAltyazi": "Öğren sekmesi: sınıfına uygun hikâyeler ve kaldığın yerden devam et."
     }
   },
   "sidebar": {
@@ -1241,6 +1253,24 @@
     "widget": {
       "version": "Hupo Yönetim Paneli"
     }
+  },
+  "hikayeDemo": {
+    "metaTitle": "Hikâye deneyimi · Hupolingo",
+    "metaDescription": "Her sınıf için bir hikâye: kahramanınıza ad verin, deyimi ve anlamını görün, anlayıp anlamadığınızı kontrol edin.",
+    "back": "Ana sayfaya dön",
+    "sinifEtiket": "Sınıfını seç",
+    "ad": "Kahramanın adı",
+    "yol": "Yol arkadaşının adı",
+    "istege": "İsteğe bağlı",
+    "deyim": "Deyim",
+    "anaDeger": "Ana değer",
+    "soru": "Anladın mı?",
+    "dogru": "Doğru.",
+    "yanlis": "Bu kez olmadı. Parçaya bir daha bakalım.",
+    "adYok": "Bu hikâyede kahraman adı geçmiyor; parça olduğu gibi gösterilir.",
+    "parcaNot": "Yayındaki bir hikâyeden alınmış bölüm. Tam hikâye uygulamada.",
+    "gizlilik": "Girdiğiniz adlar yalnızca bu sayfada kullanılır, hiçbir yere kaydedilmez.",
+    "cta": "Veli hesabı oluştur"
   },
   "header": {
     "searchPlaceholder": "Aramak için yazın...",

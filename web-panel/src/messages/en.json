@@ -1083,33 +1083,45 @@
       }
     },
     "hikayeler": {
-      "marka": "Senin Hikâyen (Your Story)",
+      "marka": "Dozens of stories",
       "rozetErken": "Early access",
       "rozetYakinda": "Coming soon",
-      "title": "Your child becomes the hero of the story while reading",
-      "desc": "Children step into the story as themselves or a companion: they explore, laugh and wonder. A few short questions at the end let them check what they understood. Reading starts like an adventure, not like a to-do list.",
+      "title": "Stories matched to the grade, sorted by genre",
+      "desc": "Adventure, mystery, science fiction, humor and history stories written for each grade level. Each one has vocabulary and reading questions, and many include an idiom.",
+      "sayi": "{count} published stories",
+      "sinif": "for grades {alt}–{ust}",
+      "turler": "Genres",
+      "notHazirlik": "Stories are being prepared. Every story is read and approved by an editor before it is published; this section updates as stories go live.",
+      "not": "Hupo prepares the stories; every story is approved by an editor before it is published.",
+      "cta": "Create a parent account"
+    },
+    "seninHikayen": {
+      "marka": "Your Story",
+      "rozetErken": "Early access",
+      "rozetYakinda": "Coming soon",
+      "title": "Your child chooses the hero",
+      "desc": "Your child places themselves or a reading buddy in the story, names the hero and chooses a genre. In many stories, that name appears in the text.",
       "adimlar": [
         {
-          "baslik": "Picks the hero",
-          "aciklama": "They become themselves or a companion in the story. The name they type stays on the device while the story runs; it is not saved."
+          "baslik": "Chooses the hero",
+          "aciklama": "They become the hero or a buddy, and type the name themselves."
         },
         {
-          "baslik": "Reads the story",
-          "aciklama": "Stories chosen by grade level open within the daily reading allowance."
+          "baslik": "Chooses a genre",
+          "aciklama": "Opens a story from an adventure, mystery or science-fiction genre. Stories matched to the grade open."
         },
         {
-          "baslik": "Checks with small questions",
-          "aciklama": "A few questions at the end: they see what they understood and notice what to revisit."
+          "baslik": "Notices the idiom and the value",
+          "aciklama": "Each story carries a Maarif value, vocabulary and often an idiom. A few questions show what they understood."
         }
       ],
-      "kart": "A small check when the story ends: did it make sense, where should we go back?",
-      "cta": "Create parent account",
-      "durumNotu": "The app is in early access for now; scope and look may change. Stories are written for Hupo and are not presented as official school content. The stories are in Turkish.",
-      "notHazirlik": "Stories are being prepared. Every story is read and approved by an editor before publishing; this section updates as they go live.",
-      "sayi": "{count} stories available",
-      "sinif": "For grades {alt}–{ust}",
-      "turler": "Genres",
-      "not": "Every story is read and approved by an editor before publishing. AI review results are recorded to assist the editor; the publishing decision is the editor's. This number updates automatically as new stories are added."
+      "not": "The name is kept only on this device. When the story ends, a short question round shows what they understood and what to revisit.",
+      "sinifEtiket": "A story for every grade",
+      "sinifBaglanti": "Grade {sinif} story experience",
+      "demoCta": "Try the story experience",
+      "cta": "Create a parent account",
+      "gorselAlt": "Hupolingo app, Learn tab: stories matched to the grade and a continue-where-you-left-off button.",
+      "gorselAltyazi": "Learn tab: stories matched to the grade and continue where you left off."
     }
   },
   "sidebar": {
@@ -1242,6 +1254,24 @@
     "widget": {
       "version": "Hupo Admin Panel"
     }
+  },
+  "hikayeDemo": {
+    "metaTitle": "Story experience · Hupolingo",
+    "metaDescription": "One story for each grade: name the hero, see an idiom and its meaning, and check what you understood.",
+    "back": "Back to home",
+    "sinifEtiket": "Choose a grade",
+    "ad": "Hero's name",
+    "yol": "Reading buddy's name",
+    "istege": "Optional",
+    "deyim": "Idiom",
+    "anaDeger": "Main value",
+    "soru": "Did you understand?",
+    "dogru": "Correct.",
+    "yanlis": "Not this time. Let's look at the passage again.",
+    "adYok": "No hero name appears in this story; the passage is shown as written.",
+    "parcaNot": "A passage from a published story. The full story is in the app.",
+    "gizlilik": "Names you type are used only on this page and are not saved anywhere.",
+    "cta": "Create a parent account"
   },
   "header": {
     "searchPlaceholder": "Search or type command...",

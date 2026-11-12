@@ -14,6 +14,7 @@ import { KesfetSection } from "@/components/landing/sections/KesfetSection";
 import { OgrenmeBilimiSection } from "@/components/landing/sections/OgrenmeBilimiSection";
 import { ParentPanelSection } from "@/components/landing/sections/ParentPanelSection";
 import { PricingSection } from "@/components/landing/sections/PricingSection";
+import { SeninHikayenSection } from "@/components/landing/sections/SeninHikayenSection";
 import { RehberBandi } from "@/components/landing/sections/RehberBandi";
 import { TrustSection } from "@/components/landing/sections/TrustSection";
 import { marketingFont } from "@/components/landing/marketingFont";
@@ -58,6 +59,8 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
           <ParentPanelSection />
           {/* Okuma dünyası: veli raporundan sonra, karakter bölümünden önce (FK-006). */}
           <HikayelerSection />
+          {/* Senin Hikâyen: kişisel kahraman ve sınıf başına hikâye deneyimi; gerçek uygulama ekranıyla. */}
+          <SeninHikayenSection />
           {/* Çarpım Şifreleri, Kelime Evreni, Arena: dürüst durum rozetli keşif alanları. */}
           <KesfetSection />
           <CharacterUniverseSection />
