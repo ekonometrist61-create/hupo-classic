@@ -5893,6 +5893,19 @@ Paketler:
 - **Önem:** Orta
 - **İlgili:** FK-006, K-0237, K-0239, docs/marketing/06_WEB_CRO_SEO_AUDIT.md
 
+### K-0261 · 2026-11-12 · PAZ/WEB/YAY · Web landing ve veli giriş/kayıt metinleri canlıya alındı (K-0258 web kısmı; panel 0.8.1)
+- **Tür:** Yayın
+- **Konu:** WEB
+- **Bağlam:** K-0258 web değişiklikleri `b33735e` içindeydi ama master'a alınmamıştı ("commit/deploy yok"). Feature dalı master'ın 90 commit önünde olduğundan dal birleştirilmedi (K-0259 ile aynı yöntem). Kullanıcı "değişiklikleri canlıya al" dedi.
+- **Yapılan:** `release/landing-2026-11-12` temiz worktree'de `origin/master` (5dd70fe) üzerine `b33735e`'nin web kısmı üç yönlü birleştirildi: landing (hero, fiyat, footer, Öğrenme Bilimi, bölüm sırası), veli giriş/kayıt/parola metinleri ve tr/en mesajları, `AbonelikKarti`. Çakışmalar: footer ve fiyat/hikâye metinlerinde K-0258 seçildi; Keşfet bölümü master'da tutuldu. `docs/SURUMLEME.md` 0.8.1 notu, `package.json` ve lock 0.8.1. Commit `49b9e0c`, `origin/master`'a fast-forward push, etiket `panel-v0.8.1`.
+- **Kapsam dışı (bilerek):** mobil uygulama kısmı (app sürümü gerekir); migration `20261218000000_premium_ozellik_dogrulugu.sql` (uzakta uygulanmadı); kayıt formundaki UTM takibi (`SignUpForm`, master'da 66a78e1 ile kapalı); hukuk paketi ve diğer `b33735e` içerikleri.
+- **Durum:** TAMAMLANDI (canlı). Vercel `web-panel-546f198nt` production, Ready, commit `49b9e0c`, alias hupolingo.com.
+- **Doğrulama:** KISMİ. `tsc --noEmit` 0 hata; eslint (değişen dosyalar) 0 hata; `next build` başarılı. Yerel `next start`: yeni metinler HTML'de; sunucu logunda MISSING_MESSAGE yok; 390 ve 1440 px'te `/tr`, `/tr/veli-paneli/giris`, `/tr/veli-paneli/kayit` yatay taşma 0. Canlı `hupolingo.com/tr`: yeni metinler var; App Store/Google Play rozeti, "Hakkında" bağlantısı, "En Çok Tercih Edilen" yok. Veli girişi ve gerçek kayıt akışı tarayıcıda denenmedi.
+- **Açık:** (1) Masaüstü `/tr/veli-paneli/kayit` 4 konsol mesajı (`font-size:0;color:transparent NaN`); uygulama kodunda kaynağı yok, üçüncü taraf olasılığı yüksek; bu işten önce de var mı doğrulanmadı. (2) Keşfet bölümü: feature dalı ana sayfadan kaldırmıştı, yayında tutuldu; kaldırılması istenirse tek satır karar. (3) GitHub, varsayılan dalda 2 açık bildirdi (1 orta, 1 düşük); GÖR-112 kapsamında.
+- **Sahip:** Ajan (birleştirme, build, yayın), Kullanıcı (Keşfet kararı, mobil kısım için app sürümü)
+- **Önem:** Orta
+- **İlgili:** K-0258, K-0259, FK-006, docs/SURUMLEME.md
+
 
 ### K-0260 · 2026-11-12 · VT/WEB/DEN · Açık işler: 20261220 doğrulandı, 3–7 içerik temizliği yazılamadı, koyu mod kontrolü
 - **Tür:** Operasyon + Doğrulama
