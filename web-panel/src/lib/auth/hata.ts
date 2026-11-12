@@ -21,45 +21,45 @@ export type AuthHataGirdisi = { code?: string | null; message?: string | null } 
 
 const METINLER: Record<AuthMetinAnahtari, Record<AuthDil, string>> = {
   invalid_credentials: {
-    tr: "E-posta veya parola hatalı. Bilgileri kontrol edip yeniden dene.",
+    tr: "E-posta veya parola hatalı. Bilgileri kontrol edip yeniden deneyin.",
     en: "Email or password is incorrect. Check your details and try again.",
   },
   email_not_confirmed: {
-    tr: "E-posta adresin henüz doğrulanmamış. Gelen kutundaki bağlantıya tıkla, sonra tekrar dene.",
+    tr: "E-posta adresiniz henüz doğrulanmamış. Gelen kutunuzdaki bağlantıya tıklayın, sonra tekrar deneyin.",
     en: "Your email address is not verified yet. Open the link in your inbox, then try again.",
   },
   over_request_rate_limit: {
-    tr: "Çok fazla deneme yapıldı. Birkaç dakika bekleyip tekrar dene.",
+    tr: "Çok fazla deneme yapıldı. Birkaç dakika bekleyip tekrar deneyin.",
     en: "Too many attempts. Wait a few minutes and try again.",
   },
   weak_password: {
-    tr: "Bu parola yeterince güçlü değil. Daha uzun ve tahmin edilmesi zor bir parola seç.",
+    tr: "Bu parola yeterince güçlü değil. Daha uzun ve tahmin edilmesi zor bir parola seçin.",
     en: "This password is not strong enough. Choose a longer, harder-to-guess password.",
   },
   same_password: {
-    tr: "Yeni parolan eskisiyle aynı olamaz.",
+    tr: "Yeni parolanız eskisiyle aynı olamaz.",
     en: "Your new password must be different from the old one.",
   },
   otp_expired: {
-    tr: "Bağlantının süresi dolmuş ya da daha önce kullanılmış. Yeni bir bağlantı iste.",
+    tr: "Bağlantının süresi dolmuş ya da daha önce kullanılmış. Yeni bir bağlantı isteyin.",
     en: "This link has expired or was already used. Request a new one.",
   },
   // Hesap var ya da yok: aynı metin, aynı ekran.
   kayitNotr: {
-    tr: "Kayıt isteğin alındı; e-postanı kontrol et. Hesabın varsa giriş yapabilir veya şifreni sıfırlayabilirsin",
+    tr: "Kayıt isteğiniz alındı; e-postanızı kontrol edin. Hesabınız varsa giriş yapabilir veya parolanızı sıfırlayabilirsiniz.",
     en: "We received your sign-up request. Check your email. If you already have an account, you can sign in or reset your password.",
   },
   kayitBaslik: {
-    tr: "Kayıt isteğin alındı",
+    tr: "Kayıt isteğiniz alındı",
     en: "Sign-up request received",
   },
   // Rol uyuşmazlığında hesabın hangi role ait olduğu söylenmez.
   rolUyusmazlik: {
-    tr: "Bu hesapla bu giriş ekranından devam edilemiyor. Doğru giriş ekranını kullanmayı dene.",
+    tr: "Bu hesapla bu giriş ekranından devam edilemiyor. Doğru giriş ekranını kullanmayı deneyin.",
     en: "This account cannot continue from this sign-in page. Try the correct sign-in page.",
   },
   genel: {
-    tr: "İşlem tamamlanamadı. Birazdan tekrar dene.",
+    tr: "İşlem tamamlanamadı. Birazdan tekrar deneyin.",
     en: "Something went wrong. Please try again shortly.",
   },
 };

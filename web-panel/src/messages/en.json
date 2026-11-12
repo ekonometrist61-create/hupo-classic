@@ -89,7 +89,7 @@
       "baslik": "What we don't know yet",
       "ogeler": [
         "There is not yet an impact study specific to Hupolingo. The studies on this site were conducted in other learning settings.",
-        "Hupolingo is in a pilot phase. The pilot covers grades 3–7; the site makes no general grade-level or achievement claims.",
+        "Hupolingo is in a pilot phase. The pilot's first focus is preparation for the move from 4th to 5th grade; the site makes no general grade-level or achievement claims.",
         "We will not present our own results as 'proven' before they are confirmed by an independent study.",
         "Each study measured only what it measured. Palikot et al. measured story completion, not learning. Aulagnon et al.'s study in Peru examined a different platform.",
         "Effects vary with age, subject and how the intervention is designed. No single result applies to every child."
@@ -305,7 +305,7 @@
   },
   "signup": {
     "title": "Create a parent account",
-    "subtitle": "A few details are all it takes to follow your child's progress.",
+    "subtitle": "A few details are all it takes to follow your child's progress. We do not ask for card details when you sign up, and the free trial makes no automatic charge.",
     "fullName": "Full name",
     "fullNamePlaceholder": "Your full name",
     "email": "Email",
@@ -335,7 +335,8 @@
     "errorConsent": "Please accept the policies to continue.",
     "errorPassword": "Password must be at least 8 characters.",
     "hasAccount": "Already have an account?",
-    "signinLink": "Sign in"
+    "signinLink": "Sign in",
+    "nextStep": "Click the link in your email, then you will create a pairing code for your child."
   },
   "forgot": {
     "title": "Reset your password",
@@ -453,16 +454,16 @@
     "hero": {
       "badge": "Grades 3–7 · Project Middle School Prep",
       "title": "Support the habit of practice with small daily tasks",
-      "subtitle": "Your child practices with Hupo in short question sessions; you see their progress and which topics need another look.",
+      "subtitle": "Your child does short 10-question daily tasks; you see which topic needs another look.",
       "ctaPrimary": "Try sample questions",
       "ctaSecondary": "Create parent account",
-      "note": "No account needed for the sample questions, and nothing is saved.",
-      "pilot": "Hupo is in pilot. We are improving content and reports with your feedback.",
+      "note": "No account needed for the sample questions. Creating a parent account does not ask for card details, and no automatic charge is made.",
       "mascotAlt": "Hupo: an owl character with a golden yellow body, green wings and blue eyes",
       "phoneAlt": "A question screen in the Hupolingo app",
       "sampleLabel": "Sample parent report",
       "sampleTag": "SAMPLE REPORT",
       "sampleWeek": "Weekly summary",
+      "sampleReview": "Review recommended",
       "sampleAccuracy": "Overall accuracy",
       "sampleSolved": "Questions solved",
       "sampleNote": "Sample data. It does not belong to a real student."
@@ -564,7 +565,7 @@
       "reviewText": "Mathematics · Place value: 2 questions wrong, review recommended."
     },
     "trust": {
-      "title": "What we can say today",
+      "title": "What we promise",
       "desc": "We only write things that really exist in the app.",
       "items": [
         {
@@ -590,32 +591,13 @@
       "baslik": "Not just fun: an approach aligned with learning research",
       "giris": "Research suggests that well-designed gamification can support motivation, and that active question solving and spaced review can support learning. Hupolingo brings these approaches together in a child's everyday study experience.",
       "hupoNot": "These studies were not conducted with Hupolingo's own students.",
-      "kartlar": {
-        "palikot": {
-          "kaynak": "Palikot et al. (2026)",
-          "tur": "Randomized controlled trial · India, 138 schools",
-          "sonuc": "In a study of about 10,000 students on a different app, students completed 45% more stories during the contest. The measured outcome is participation, not learning."
-        },
-        "kurnaz": {
-          "kaynak": "Kurnaz & Koçtürk (2025)",
-          "tur": "Meta-analysis · 31 studies",
-          "sonuc": "Gamification had a positive effect on student motivation. Results differ across studies."
-        },
-        "ruitenburg": {
-          "kaynak": "Ruitenburg et al. (2026)",
-          "tur": "Meta-analysis · 53 studies, 7,303 students",
-          "sonuc": "Retrieval practice and spaced practice supported learning in authentic school classrooms. How the practice is implemented changes the effect."
-        }
-      },
-      "arastirmayiIncele": "Read the study",
-      "yeniSekme": " (opens in a new tab)",
       "dipnot": "These findings are not Hupolingo's own results.",
       "kutuphaneLink": "Research library and our method →"
     },
     "plans": {
       "title": "Plans",
-      "cardTitle": "Paid plan is being prepared",
-      "cardDesc": "When price and scope are settled they will appear here and in your parent account. We do not publish unconfirmed prices or trial periods.",
+      "cardTitle": "Plans and pricing",
+      "cardDesc": "Plan prices and durations are shown in the Plans section. The free trial does not ask for card details and makes no automatic charge.",
       "bullets": [
         "No hidden fees",
         "No payment requested before the price is final",
@@ -651,7 +633,7 @@
         },
         {
           "q": "What does it cost?",
-          "a": "The paid plan is being prepared. When plans are settled they will be shown on this page and in your parent account."
+          "a": "Current plans and prices are in the Plans section on this page. The free trial does not ask for card details and makes no automatic charge. If you want to continue, you choose the plan yourself and see the amount and pre-contract information before paying."
         },
         {
           "q": "How do I manage my child's data?",
@@ -700,8 +682,8 @@
     "characters": {
       "eyebrow": "Character Universe",
       "title": "8 Worlds, 40 Characters",
-      "desc": "Every correct answer brings you closer to new heroes. 40 characters across 8 different classes are waiting for you. Learn, complete your collection, progress in the Hupo universe!",
-      "cta": "Start Collection",
+      "desc": "The 40 characters that unlock with regular study reward consistency, not just speed. Your child completes the collection at their own pace.",
+      "cta": "Create parent account",
       "lockedLabel": "Locked",
       "classes": [
         {
@@ -816,6 +798,9 @@
       "perMonth": "/month",
       "sureGun": "{gun} days access",
       "trialDays": "{gun} days free trial",
+      "trialNote": "No card details needed. No automatic charge.",
+      "sharedNote": "The parent panel and parent report are available in the parent account regardless of plan. Ads are off by default in the student app.",
+      "pilotNote": "Hupo is in pilot. We are improving content and reports with your feedback.",
       "yearlyNote": "Save 40% on yearly plan",
       "comingSoon": "Pricing coming soon",
       "comingSoonDesc": "When plan details and pricing are finalized, they will be shown here and in your parent account.",
@@ -829,14 +814,13 @@
           "Basic progress tracking"
         ],
         "notIncluded": [
-          "Parent dashboard",
           "Leagues and events",
           "Practice exams"
         ]
       },
       "premium": {
         "name": "Premium",
-        "badge": "Most Popular",
+        "badge": "Recommended",
         "cta": "Upgrade to Premium",
         "features": [
           "Unlimited access to all courses",
@@ -1049,7 +1033,7 @@
     "footer": {
       "rehber": "Parent guide: multiplication table",
       "method": "Method and sources",
-      "tagline": "Learn. Grow. Reach the top.",
+      "tagline": "Short tasks, visible progress.",
       "colProduct": "Hupo",
       "colParents": "Parents",
       "colCompany": "Company",
@@ -1071,8 +1055,7 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "pilot": "Pilot version",
-      "appStore": "Download from App Store",
-      "googlePlay": "Get from Google Play",
+      "appSoon": "Mobile app coming soon.",
       "copyright": "© 2026 Hupolingo"
     },
     "kesfet": {
@@ -1126,7 +1109,7 @@
       "sayi": "{count} stories available",
       "sinif": "For grades {alt}–{ust}",
       "turler": "Genres",
-      "not": "Stories go through three review steps before publishing. This number updates automatically as new stories are added."
+      "not": "Every story is read and approved by an editor before publishing. AI review results are recorded to assist the editor; the publishing decision is the editor's. This number updates automatically as new stories are added."
     }
   },
   "sidebar": {

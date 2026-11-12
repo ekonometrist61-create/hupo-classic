@@ -281,9 +281,12 @@
     "abonelik": {
       "loading": "Loading...",
       "bilinmiyor": "unknown",
+      "hata": "Subscription details could not be loaded right now. Refresh the page and try again.",
       "saglayici": "Payment provider",
       "yenilemeBaslik": "Renewal and cancellation",
       "yenileme": "Renewal",
+      "yenilenmez": "Does not renew automatically",
+      "iptalNotWeb": "This plan ends on its end date; no further payment is taken. For anything else, contact our support team.",
       "iptalNot": "To cancel, contact our support team."
     },
     "odeme": {

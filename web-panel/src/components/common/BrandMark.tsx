@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-/** Onaylı Hupo maskotu + "hupolingo" yazısı. Repoda resmi logo dosyası bulunana kadar
+/** Onaylı Hupo maskotu + "Hupolingo" yazısı (ana sayfayla aynı yazım). Repoda resmi logo dosyası bulunana kadar
  *  TailAdmin logolarının yerine geçer. `onDark`: lacivert zemin için açık yazı rengi. */
 export default function BrandMark({
   onDark = false,
@@ -29,7 +29,7 @@ export default function BrandMark({
             onDark ? "text-white" : "text-navy dark:text-white"
           }`}
         >
-          hupolingo
+          Hupolingo
         </span>
       )}
     </span>

@@ -1,4 +1,5 @@
 import BrandMark from "@/components/common/BrandMark";
+import { marketingFont } from "@/components/landing/marketingFont";
 import { Link } from "@/i18n/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
@@ -21,7 +22,7 @@ export default async function AuthLayout({
   const steps = [t("step1"), t("step2"), t("step3")];
 
   return (
-    <div className="min-h-dvh bg-cream text-navy">
+    <div className={`${marketingFont.className} min-h-dvh bg-cream text-navy`}>
       <div className="mx-auto flex min-h-dvh w-full max-w-6xl flex-col lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-10 lg:px-10 lg:py-10">
         <div className="flex flex-1 flex-col px-4 pb-10 pt-6 sm:px-6 lg:justify-center lg:px-0 lg:py-0">
           <div className="flex items-center justify-between gap-4 lg:hidden">

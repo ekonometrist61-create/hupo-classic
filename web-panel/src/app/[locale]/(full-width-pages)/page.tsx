@@ -55,10 +55,11 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
           <BenefitsSection />
           <DemoSection />
           <HowItWorksSection />
+          <ParentPanelSection />
+          {/* Okuma dünyası: veli raporundan sonra, karakter bölümünden önce (FK-006). */}
           <HikayelerSection />
           {/* Çarpım Şifreleri, Kelime Evreni, Arena: dürüst durum rozetli keşif alanları. */}
           <KesfetSection />
-          <ParentPanelSection />
           <CharacterUniverseSection />
           <TrustSection />
           {/* Öğrenme Bilimi: kanıt paketi §3 uyarlaması; akademik bulgular ürün şemasına konmaz. */}

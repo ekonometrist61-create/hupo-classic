@@ -38,6 +38,20 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.8.1 · 2026-11-12
+
+Düzeltme (PATCH: metin ve görünüm; veri ve migration değişmedi). Satış temas noktaları (FK-006, K-0258, yalnız web kısmı).
+- Landing hero: rozet "3–7. Sınıf · Proje Ortaokulu Hazırlığı"; pilot kutusu kaldırıldı; düşük oranlı derste kırmızı damga yerine nötr "Tekrar önerilir" notu.
+- Fiyat bölümü: rozet "Önerilen"; deneme notu; planlar arası kapsam ve pilot notları fiyat bölümüne taşındı.
+- Footer: tıklanamayan mağaza rozetleri ve yer tutucu bağlantılar kaldırıldı; "Mobil uygulama yakında." notu.
+- Öğrenme Bilimi: kısa blok (kanıt kartları kaldırıldı; kaynaklar /yontem sayfasında). Ana sayfa sırası: veli raporu → okuma dünyası → karakterler. Keşfet bölümü yerinde kaldı.
+- Veli giriş, kayıt ve parola ekranları: "siz" hitabı, "Hupolingo" yazımı, Nunito yazı tipi; kayıt sonrası "sonraki adım" metni. Veli paneli abonelik kartı ham hata yerine kullanıcı dostu metin gösterir.
+- Kapsam dışı: mobil uygulama kısmı (ayrı app sürümü), premium özellik migration'ı (20261218), kayıt formundaki UTM takibi (master'da bilerek kapalı).
+
+**Migration:** yok.
+
+**Uyumluluk:** Veri sözleşmesi değişmedi; mevcut app sürümleriyle uyumlu.
+
 ### panel 0.8.0 · 2026-11-12
 
 Yeni kullanıcı yüzeyi (MINOR: demo yeniden kuruldu, tanıtım bölümleri, RPC sınıf bandı).
