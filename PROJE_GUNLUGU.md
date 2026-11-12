@@ -5873,3 +5873,19 @@ Paketler:
 - **Sahip:** Kullanıcı (kanıt/kimlik kararları)
 - **Önem:** Orta
 - **İlgili:** FK-006, K-0237, K-0239, docs/marketing/06_WEB_CRO_SEO_AUDIT.md
+
+
+### K-0259 · 2026-11-12 · WEB/TSR/BYM · Demo: sınıf seçimi (3–7), şekilli sorular, veli özeti; Senin Hikâyen ve keşif tanıtımı (commit + push; deploy yok)
+- **Tür:** Uygulama + Karar önerisi
+- **Konu:** Landing `/` ve `/demo`
+- **Bağlam:** Kullanıcı: örnek sorularda sınıf belli değildi; önce sınıf seçilsin, sorular o sınıfa uygun, altı çizili, bazıları şekilli olsun; sonunda veliye anlamlı geri bildirim. Ayrıca Senin Hikâyen, Çarpma, Kelime Evreni ve Arena tanıtılsın, hazır olmayan yayında gibi sunulmasın.
+- **Yapılan:** `DemoQuiz` yeniden yazıldı (sınıf seçici, `?sinif=N`, odak yönetimi, yanlış seçenek için "neden cazip" notu, beceri bazlı veli özeti); `demoQuestions.ts` 5 sınıf × 5 özgün soru (10 şekilli); `DemoFigure.tsx` 8 şekil tipi (inline SVG); `DemoSection` sınıf düğmeleri; `HikayelerSection` "Senin Hikâyen" tanıtımına dönüştü (veri yoksa gizlenmez, "Yakında"); yeni `KesfetSection` (Çarpım Şifreleri, Kelime Evreni, Arena, durum rozetli); tr+en mesajları. `demo_tamamlandi` olayına `sinif` özelliği eklendi.
+- **Karar:** Rozetler gerçek duruma bağlandı (Senin Hikâyen ve Çarpım Şifreleri/Arena: Erken erişim; Kelime Evreni: Yakında, GÖR-091 nedeniyle). Çıpa/havuç konumlandırması ajan önerisi: `ONAY BEKLİYOR`. Plan ve kabul kriterleri: `docs/hupo-design-growth/demo-sinif-secimi-ve-kesif-tanitimi-2026-11-12.md`.
+- **Durum:** DEVAM (kod hazır, commit/deploy yok; kullanıcı onayı ve içerik incelemesi bekliyor)
+- **Doğrulama:** KISMİ. `tsc --noEmit` 0 hata, `eslint` (değişen dosyalar) 0 hata, `next build` başarılı. Dev sunucuda Playwright: 5 sınıfın tamamı uçtan uca çözüldü (25 soru, doğru/yanlış geri bildirimi, özet ekranı), şekilli soruların ekran görüntüleri incelendi (masaüstü ve 390 px), landing bölümleri 1280 ve 390 px'te görüldü, yatay taşma yok. DOĞRULANMADI: `meb-soru-sozcuk-uzmani` pedagoji incelemesi ve bağımsız kör çözüm (cevap anahtarını yazan ve doğrulayan aynı ajan); koyu mod ve /en ekran görüntüsü; ekran okuyucu ve elle klavye turu; küçük ekranda eksen yazı boyutu (~10 px) okunaklılığı; canlı dağıtım.
+- **Sahip:** Kullanıcı (rozet/konumlandırma onayı, aralık kararı), Ajan (içerik incelemesi)
+- **Önem:** Orta
+- **Kullanıcı kararları (2026-11-12):** (a) Tüm site, hikâye ve soru içeriği 3–7. sınıf aralığında olacak; `HikayelerSection` aralığı sabit 3–7 gösterir, `okuma_site_ozeti` RPC'si yalnız 3–7'ye denk gelen yayındaki hikâyeleri sayar (`20261219000000_okuma_site_ozeti_3_7.sql`, **uzağa uygulanmadı; deploy bekliyor**, o zamana dek sayı 2. ve 8. sınıf hikâyelerini de içerir). (b) Rozet durumlarını asistan inceleyip onayladı: Arena alt çubuk sekmesi, Çarpım Şifreleri ana ekrandan açılıyor, mağaza sürümü yok → Erken erişim; Kelime Evreni → Yakında. (c) Commit + push yetkisi verildi (deploy hariç).
+- **İçerik denetimi (2026-11-12, ayrı ajan):** 25 sorunun hepsi kör çözümde anahtarla uyuştu; D4-04 (uzun doğru şık), D6-04 (yanıltıcı atardamar ifadesi), D3-05 (çözüm adımı) düzeltildi. Kalan risk: kazanım kodu/resmî metin teyidi yok (D7-04 hız-yol-zaman, D6-04 dolaşım sınıf yerleşimi), farklı aileden model ve insan örneklemesi yapılmadı, `soru_kontrol.mjs` çalıştırılmadı.
+- **Açık:** (1) Kelime Evreni seed'i ve hikâye katalogu 2 ve 8. sınıf içeriği taşıyor; 3–7 kararına göre içerik tarafı ayrıca temizlenecek/işaretlenecek. (2) Çıpa/havuç konumlandırması kullanıcı onayı. (3) Migration 20261219 deploy. (4) Soruların insan örneklemesi.
+- **İlgili:** FK-006, K-0239, K-0244, K-0255, K-0258, GÖR-091

@@ -321,3 +321,7 @@ Kaynak: `~/.claude/projects/c--Dev-hupo/*.jsonl` kullanıcı mesajları (anahtar
 - **Öğrenilen:** derleyici hikâye .md'sinden önce ön yüz şemasını ister (okuma_bandi, dunya_tipi, izinli_turler, etiketler.ogrenme_hedefleri); ChatGPT çıktısı doğrudan .hikaye.md olduğunda donustur.mjs uret kullanılmaz, derle + sözlük yeter. Yol arkadaşı kuralı (en az 2 yer) anonim bir kişiye ad verilerek, olay örgüsü değiştirilmeden karşılanabiliyor.
 - **Kanıt:** derle 26/26 hatasız (sözlük ile); paket 26 üretildi. Migrasyon PGlite zincirinde (20261214) hatasız uygulandı: 26 hikâye, 26 taslak sürüm, 104 hedef bağlantısı. Denetim aracı (tools/okuma-hikaye-denetim.mjs): sorusuz 0, karşılıksız ad 0, tekrar 0.
 - **Açık:** uzak DB'de 20261213 (önceki oturum) ile birlikte bekliyor; sözlük adayları TDK onayı; yol arkadaşı editör okuması; kazanım kodu yok (C, source_pending).
+
+## 2026-11-12 | 3-7 | Landing demo soruları (25) bağımsız denetim | ÖNERİ
+- Öğrenilen: Kör çözümde 25/25 soru anahtarla uyuştu (şekilli 10 soruda veri DemoFigure çizim koduna göre okundu). Bulgular: D4-04 doğru şık belirgin en uzundu (çeldiriciler uzatıldı); D6-04 "temiz kan" terimi eskimiş/yanıltıcı (akciğer atardamarı) -> "kalpten uzaklaştırıp organlara taşıyan" diye yeniden yazıldı; D4-04 çözüm adımında "piline" ek hatası ve alt metin düzeltildi; D3-05 son adım netleştirildi.
+- Kanıt: web-panel/src/components/demo/demoQuestions.ts; kazanım kodu yok (kaynak teyidi yok); tsc --noEmit temiz. Denetçi Sonnet ailesi; insan örneklemesi hâlâ gerekir.
