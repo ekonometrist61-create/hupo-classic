@@ -12,6 +12,15 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 // Geliştirme (HMR) dışında 'unsafe-eval' açılmaz (TASKS.md §11.3).
 const isDev = process.env.NODE_ENV === "development";
 
+// Görsel optimizasyonu yalnızca kendi Supabase projemizin alan adını kabul eder.
+const supabaseHost = (() => {
+  try {
+    return new URL(process.env.NEXT_PUBLIC_SUPABASE_URL ?? "").hostname;
+  } catch {
+    return "ccozfrpnvyrnktpffkwo.supabase.co";
+  }
+})();
+
 const securityHeaders = [
   {
     key: "X-Frame-Options",
@@ -92,7 +101,9 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "*.supabase.co",
+        // Joker (*.supabase.co) kullanılmaz: başka bir Supabase projesindeki aynı adlı kova da
+        // görüntü optimizasyonundan geçerdi (K-0257).
+        hostname: supabaseHost,
         pathname: "/storage/v1/object/public/site-gorselleri/**",
       },
     ],

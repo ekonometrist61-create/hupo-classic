@@ -6,6 +6,7 @@ import { haneKaynagiYaz } from "@/lib/analytics/kaynak";
 import { girisKaydiYaz } from "@/lib/auth/girisKaydi";
 import { TurnstileWidget } from "@/components/guvenlik/TurnstileWidget";
 import { guvenliYonlendirme } from "@/lib/auth/yonlendirme";
+import { mfaDurumuCoz, YONETIM_DOGRULAMA } from "@/lib/auth/mfa";
 import { Link, useRouter } from "@/i18n/navigation";
 import { EyeCloseIcon } from "@/icons";
 import { createClient } from "@/utils/supabase/client";
@@ -38,7 +39,8 @@ const fieldClass =
 
 // Yönetim girişinde daha sakin kenarlık ve lacivert odak halkası (kurumsal yüzey).
 // Yönetim ve öğretmen girişi: mobilde 16 px (iOS odak yakınlaştırması olmaz).
-const adminFieldClass =
+// İki adımlı doğrulama ekranı (YonetimMfaForm) da aynı alan sınıfını kullanır.
+export const adminFieldClass =
   "mt-1.5 block h-11 w-full rounded-lg border border-gray-300 bg-white px-3.5 text-base text-navy placeholder:text-gray-400 focus:border-navy focus:outline-none focus-visible:ring-3 focus-visible:ring-navy/20 md:text-sm";
 
 const linkClass =
@@ -96,7 +98,20 @@ export default function SignInForm({ variant = "veli" }: { variant?: Kapi }) {
       void girisKaydiYaz("web");
       // Kayıtta metadata'ya konan ilk temas UTM'si hane kartına yazılır (yalnız veli girişi).
       if (variant === "veli") await haneKaynagiYaz(supabase, data.user);
-      router.replace(guvenliYonlendirme(next, KAPI_ALANI[variant], HEDEF[variant]));
+      const hedef = guvenliYonlendirme(next, KAPI_ALANI[variant], HEDEF[variant]);
+
+      // Yönetim: iki adımlı doğrulama (GÖR-106). Faktörü olan hesap kod girer; faktörü olmayana
+      // kayıt ekranı önerilir (zorunluluk bayrağı kapalıyken atlanabilir). AAL okunamazsa da
+      // doğrulama sayfasına gidilir; durum orada sunucuda yeniden okunur.
+      if (yonetim) {
+        const { data: aal } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
+        if (mfaDurumuCoz(aal, true) !== "tamam") {
+          router.replace(`${YONETIM_DOGRULAMA}?next=${encodeURIComponent(hedef)}`);
+          return;
+        }
+      }
+
+      router.replace(hedef);
       return;
     }
 

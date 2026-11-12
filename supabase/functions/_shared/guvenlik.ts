@@ -13,12 +13,15 @@ declare const Deno: {
   env: { get(k: string): string | undefined };
 };
 
+// Sıra önemli: cf-connecting-ip'i Cloudflare kendisi yazar; x-forwarded-for'un ilk değeri ise
+// istemcinin gönderdiği başlıktan gelebilir (taklit edilip hız sınırı aşılabilirdi, K-0257).
 export function istemciIp(req: Request): string {
   const xff = req.headers.get("x-forwarded-for") ?? "";
   const ip =
-    xff.split(",")[0]?.trim() ||
     req.headers.get("cf-connecting-ip")?.trim() ||
     req.headers.get("x-real-ip")?.trim() ||
+    // İlk değer: başlık yoksa proxy adresine düşüp tüm kullanıcıları tek kovaya toplamasın.
+    xff.split(",")[0]?.trim() ||
     "";
   return ip.slice(0, 64) || "bilinmiyor";
 }
@@ -72,10 +75,12 @@ export async function hizIzinliMi(
     p_limit: limit,
     p_pencere_sn: pencereSn,
   });
-  // Sayaç hatasında isteği reddetmeyiz (kullanıcı kaybı olmasın); hata loglanır.
+  // Sayaç hatasında istek reddedilir (fail-closed): sayaç çalışmıyorsa sınır da yoktur ve
+  // açık uçlar sınırsız kalırdı. Sayaç hatası çoğunlukla veritabanı hatasıdır; asıl yazma da
+  // zaten başarısız olurdu (K-0257).
   if (error) {
     console.error("rate_limit_kontrol hatası:", error.message);
-    return true;
+    return false;
   }
   return data === true;
 }

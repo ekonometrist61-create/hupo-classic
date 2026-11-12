@@ -176,6 +176,10 @@
       "title": "Yönetim Paneli Girişi | Hupolingo",
       "description": "Hupolingo yönetim paneli. Yalnızca yetkili hesaplar."
     },
+    "yonetimDogrulama": {
+      "title": "İki Adımlı Doğrulama | Hupolingo Yönetim",
+      "description": "Yönetim hesabı için iki adımlı doğrulama."
+    },
     "bakim": {
       "title": "Bakım | Hupolingo",
       "description": "Hupolingo şu an bakım çalışması nedeniyle kullanılamıyor."
@@ -233,6 +237,36 @@
     "area5Body": "Kullanım ve dönüşüm raporları",
     "footerNote": "Oturum açma ve yönetim işlemleri kayıt altına alınır.",
     "supportNote": "Erişim sorunlarında sistem yöneticinizle iletişime geçin."
+  },
+  "yonetimMfa": {
+    "eyebrow": "Hesap güvenliği",
+    "dogrulaBaslik": "İki adımlı doğrulama",
+    "dogrulaAciklama": "Kimlik doğrulayıcı uygulamanızdaki 6 haneli kodu girin.",
+    "kayitBaslik": "İki adımlı doğrulamayı açın",
+    "kayitAciklamaOneri": "Yönetim hesapları için önerilir. Kurulum yaklaşık bir dakika sürer.",
+    "kayitAciklamaZorunlu": "Yönetim paneline girmek için iki adımlı doğrulama gereklidir.",
+    "adim1": "Google Authenticator, Microsoft Authenticator veya benzeri bir uygulamayla QR kodu tarayın.",
+    "qrAlt": "İki adımlı doğrulama kurulum QR kodu",
+    "anahtarEtiket": "QR kod taranamıyorsa bu anahtarı uygulamaya elle girin:",
+    "kopyala": "Anahtarı kopyala",
+    "kopyalandi": "Anahtar kopyalandı.",
+    "adim2": "Uygulamanın gösterdiği 6 haneli kodu girin.",
+    "kodEtiket": "Doğrulama kodu",
+    "kodIpucu": "Kod her 30 saniyede yenilenir. Yalnızca rakam girin.",
+    "dogrula": "Doğrula",
+    "kayitTamamla": "Doğrula ve aç",
+    "dogrulaniyor": "Doğrulanıyor...",
+    "hazirlaniyor": "Kurulum hazırlanıyor...",
+    "sonraYap": "Şimdilik atla",
+    "sonraNot": "Atlarsanız bir sonraki girişinizde yeniden sorulur.",
+    "baskaHesap": "Farklı hesapla oturum aç",
+    "yeniden": "Tekrar dene",
+    "hataKod": "Kod doğrulanamadı. Uygulamadaki güncel kodu girip yeniden deneyin.",
+    "hataKodBicim": "Kod 6 rakamdan oluşmalı.",
+    "hataCokDeneme": "Çok fazla deneme yapıldı. Birkaç dakika bekleyip tekrar deneyin.",
+    "hataKurulum": "Kurulum başlatılamadı. Tekrar deneyin; sorun sürerse sistem yöneticinize bildirin.",
+    "hataDurum": "Oturum durumu okunamadı. Sayfayı yenileyin ya da yeniden oturum açın.",
+    "hataGenel": "İşlem tamamlanamadı. Birazdan tekrar deneyin."
   },
   "signin": {
     "eyebrow": "Veli paneli",

@@ -22,7 +22,8 @@ let onbellek: { zaman: number; deger: BakimDurumu | null } | null = null;
 /** Yoldan yüzeyi bulur. null: bakım kapısı uygulanmaz. */
 export function yuzeyBul(pathname: string): BakimYuzeyi | null {
   // Yönetici giriş sayfası her zaman açık: yönetici bakımı kapatabilsin.
-  if (pathname === "/yonetim-giris") return null;
+  // İki adımlı doğrulama sayfası girişin parçasıdır; site bakımındayken de açık kalır.
+  if (pathname === "/yonetim-giris" || pathname === "/yonetim-dogrulama") return null;
   if (pathname === "/bakim" || pathname.startsWith("/bakim/")) return null;
   if (pathname === "/yonetim" || pathname.startsWith("/yonetim/")) return "yonetim";
   if (pathname === "/veli-paneli" || pathname.startsWith("/veli-paneli/")) return "veli";
