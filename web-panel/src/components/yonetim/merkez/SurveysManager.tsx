@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import Badge from "@/components/ui/badge/Badge";
 import { Modal } from "@/components/ui/modal";
+import { downloadCsv, toCsv } from "@/utils/csv";
 import { formatDateTime } from "@/utils/format";
+import ModalShell from "../panel/ModalShell";
 import { cardClass, inputClass, labelClass, outlineBtn, primaryBtn } from "../panel/styles";
 import Feedback from "../ui/Feedback";
 import RpcBoundary from "../ui/RpcBoundary";
@@ -13,7 +15,7 @@ import { dokunmaHedefi } from "../ui/responsive";
 import { adminCall, useAdminRpc } from "../useAdminRpc";
 import { DEMO_SURVEY_RESULT, DEMO_SURVEYS, DEMO_TASKS } from "./demoData";
 import SurfacePicker from "./SurfacePicker";
-import { ANKET_SURFACES, isAnketSurface, type AnketSurface, type QuestionType, type Survey, type SurveyQuestion, type SurveyResult, type SupportTask } from "./types";
+import { ANKET_SURFACES, isAnketSurface, type AnketSurface, type QuestionType, type Survey, type SurveyChecklist, type SurveyExport, type SurveyLibraryItem, type SurveyQuestion, type SurveyResult, type SurveyVersion, type SupportTask } from "./types";
 
 const TYPES: QuestionType[] = ["kisa_metin", "uzun_metin", "tek_secim", "nps", "csat", "onay"];
 const STATUS_COLOR = { taslak: "light", yayinda: "success", kapali: "warning" } as const;
@@ -31,13 +33,44 @@ export default function SurveysManager() {
 
   const [editing, setEditing] = useState<Survey | "new" | null>(null);
   const [resultFor, setResultFor] = useState<Survey | null>(null);
+  const [publishing, setPublishing] = useState<Survey | null>(null);
+  const [versionsFor, setVersionsFor] = useState<Survey | null>(null);
   const [fb, setFb] = useState<{ kind: "ok" | "error"; msg: string } | null>(null);
 
-  const setStatus = async (s: Survey, durum: "yayinda" | "kapali") => {
-    const r = await adminCall("admin_anket_durum", { p_id: s.id, p_durum: durum });
+  // Yayına alma admin_anket_yayinla ile (PublishDialog). Burada yalnız kapatma var.
+  const closeSurvey = async (s: Survey) => {
+    const r = await adminCall("admin_anket_durum", { p_id: s.id, p_durum: "kapali" });
     if (r.error) return setFb({ kind: "error", msg: r.error === "DEMO" ? t("demo") : r.error });
-    setFb({ kind: "ok", msg: t(durum === "yayinda" ? "published" : "closed") });
+    setFb({ kind: "ok", msg: t("closed") });
     list.reload();
+  };
+
+  // Kopya: arşivden, kapalıdan veya yayındaki anketten yeni TASLAK (sorular ve yüzeyler kopyalanır).
+  const copySurvey = async (s: Survey) => {
+    const r = await adminCall("admin_anket_kopyala", { p_id: s.id });
+    if (r.error) return setFb({ kind: "error", msg: r.error === "DEMO" ? t("demo") : r.error });
+    setFb({ kind: "ok", msg: t("copied") });
+    setArsiv(false);
+    list.reload();
+  };
+
+  // Dışa aktarım: kimliksiz satırlar; yanıt sayısı 5'in altındaysa sunucu gizler (n<5).
+  const exportSurvey = async (s: Survey) => {
+    const r = await adminCall<SurveyExport>("admin_anket_disa_aktar", { p_id: s.id });
+    if (r.error) return setFb({ kind: "error", msg: r.error === "DEMO" ? t("demo") : r.error });
+    const d = r.data;
+    if (!d) return;
+    if (d.gizli) return setFb({ kind: "error", msg: t("exportHidden", { n: d.yanit_sayisi }) });
+    const header = [t("exportCols.date"), t("exportCols.version"), t("exportCols.surface"), t("exportCols.nps"), ...d.sorular.map((q) => q.baslik)];
+    const rows = d.satirlar.map((x) => [
+      x.tarih,
+      x.surum,
+      x.yuzey,
+      x.nps,
+      ...d.sorular.map((q) => (x.yanitlar[q.id] === undefined ? "" : String(x.yanitlar[q.id]))),
+    ]);
+    downloadCsv(`hupo-anket-${s.id.slice(0, 8)}-${new Date().toISOString().slice(0, 10)}.csv`, toCsv([header, ...rows]));
+    setFb({ kind: "ok", msg: t(d.kesildi ? "exportCut" : "exported") });
   };
 
   const setArchived = async (s: Survey, arsivle: boolean) => {
@@ -136,11 +169,14 @@ export default function SurveysManager() {
                         <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setEditing(s)}>{t("edit")}</button>
                       )}
                       <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setResultFor(s)}>{t("results")}</button>
+                      <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setVersionsFor(s)}>{t("versions")}</button>
+                      <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => copySurvey(s)}>{t("copy")}</button>
+                      <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => exportSurvey(s)}>{t("export")}</button>
                       {!arsiv && s.durum === "taslak" && (
-                        <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setStatus(s, "yayinda")}>{t("publish")}</button>
+                        <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setPublishing(s)}>{t("publish")}</button>
                       )}
                       {!arsiv && s.durum === "yayinda" && (
-                        <button type="button" className={`${dokunmaHedefi} text-error-600 hover:text-error-700`} onClick={() => setStatus(s, "kapali")}>{t("close")}</button>
+                        <button type="button" className={`${dokunmaHedefi} text-error-600 hover:text-error-700`} onClick={() => closeSurvey(s)}>{t("close")}</button>
                       )}
                       {/* Yayındaki anket arşivlenmez: önce kapatılır. Silme yok (yanıtlar korunur). */}
                       {!arsiv && s.durum !== "yayinda" && (
@@ -188,6 +224,182 @@ export default function SurveysManager() {
         />
       )}
       {resultFor && <Results survey={resultFor} onClose={() => setResultFor(null)} />}
+      {versionsFor && <Versions survey={versionsFor} onClose={() => setVersionsFor(null)} />}
+      {publishing && (
+        <PublishDialog
+          survey={publishing}
+          onClose={() => setPublishing(null)}
+          onDone={(msg) => {
+            setPublishing(null);
+            setFb({ kind: "ok", msg });
+            list.reload();
+          }}
+        />
+      )}
+    </div>
+  );
+}
+
+/** Yayın kontrol listesi + yayınla. Önceki yayındaki anket varsayılan olarak arşive alınır (D1 trigger). */
+function PublishDialog({
+  survey,
+  onClose,
+  onDone,
+}: {
+  survey: Survey;
+  onClose: () => void;
+  onDone: (msg: string) => void;
+}) {
+  const t = useTranslations("yonetim.merkez.surveys");
+  const [kontrol, setKontrol] = useState<SurveyChecklist | null>(null);
+  const [yukleniyor, setYukleniyor] = useState(true);
+  const [arsivle, setArsivle] = useState(true);
+  const [busy, setBusy] = useState(false);
+  const [hata, setHata] = useState<string | null>(null);
+
+  // Hata ham metin olarak tutulur; çeviri render'da yapılır (efekt bağımlılığı yalnız anket kimliği).
+  useEffect(() => {
+    let iptal = false;
+    adminCall<SurveyChecklist>("admin_anket_yayin_kontrol", { p_id: survey.id }).then((r) => {
+      if (iptal) return;
+      setYukleniyor(false);
+      if (r.error) setHata(r.error);
+      else setKontrol(r.data);
+    });
+    return () => {
+      iptal = true;
+    };
+  }, [survey.id]);
+
+  const yayinla = async () => {
+    setBusy(true);
+    setHata(null);
+    const r = await adminCall<{ kapanan_anket_id: string | null }>("admin_anket_yayinla", {
+      p_id: survey.id,
+      p_onceki_arsivle: arsivle,
+    });
+    setBusy(false);
+    if (r.error) return setHata(r.error);
+    const kapandi = !!r.data?.kapanan_anket_id;
+    onDone(kapandi ? t(arsivle ? "publishedArchivedPrev" : "publishedClosedPrev") : t("published"));
+  };
+
+  return (
+    <ModalShell isOpen onClose={onClose} title={t("publishTitle")}>
+      <p className="mb-4 text-theme-sm font-semibold text-gray-800 dark:text-white/90">{survey.ad}</p>
+      {yukleniyor && <p className="text-theme-sm text-gray-500">{t("publishChecking")}</p>}
+      {kontrol && (
+        <>
+          <ul className="space-y-2 text-theme-sm">
+            {kontrol.maddeler.map((m) => (
+              <li key={m.kod} className="flex items-start gap-2">
+                <span className="w-20 shrink-0 text-theme-xs font-semibold text-gray-500">
+                  {m.tamam === true ? t("checkOk") : m.tamam === false ? t("checkNeeds") : t("checkPending")}
+                </span>
+                <span>
+                  {m.mesaj}
+                  {!m.zorunlu && <span className="ms-1 text-theme-xs text-gray-500">({t("optional")})</span>}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <label className="mt-5 flex min-h-11 items-start gap-2 text-theme-sm">
+            <input
+              type="checkbox"
+              className="mt-0.5 size-4 accent-brand-500"
+              checked={arsivle}
+              onChange={(e) => setArsivle(e.target.checked)}
+            />
+            <span>
+              <b>{t("publishArchivePrev")}</b>
+              <span className="block text-theme-xs text-gray-500 dark:text-gray-400">{t("publishArchiveHelp")}</span>
+            </span>
+          </label>
+        </>
+      )}
+      <div className="mt-4">
+        <Feedback kind="error" message={hata === null ? null : hata === "DEMO" ? t("demo") : hata} />
+      </div>
+      <div className="mt-5 flex justify-end gap-3">
+        <button type="button" className={outlineBtn} onClick={onClose}>{t("form.close")}</button>
+        <button type="button" className={primaryBtn} disabled={busy || !kontrol?.hazir} onClick={yayinla}>
+          {t("publishConfirm")}
+        </button>
+      </div>
+    </ModalShell>
+  );
+}
+
+/** Sürüm geçmişi: her sürüm için yayın tarihi ve bir önceki sürüme göre fark. */
+function Versions({ survey, onClose }: { survey: Survey; onClose: () => void }) {
+  const t = useTranslations("yonetim.merkez.surveys");
+  const state = useAdminRpc<SurveyVersion[]>("admin_anket_surum_gecmisi", { p_id: survey.id }, { demo: [] });
+
+  return (
+    <Modal isOpen onClose={onClose} className="m-4 max-w-2xl p-6 sm:p-8">
+      <h3 className="mb-1 pe-12 text-lg font-semibold text-gray-800 dark:text-white/90">{t("versionsTitle")}</h3>
+      <p className="mb-4 text-theme-xs text-gray-500 dark:text-gray-400">{survey.ad}</p>
+      <RpcBoundary state={state}>
+        {(rows) =>
+          rows.length === 0 ? (
+            <p className="py-8 text-center text-sm text-gray-500">{t("versionsEmpty")}</p>
+          ) : (
+            <ul className="divide-y divide-gray-100 dark:divide-gray-800">
+              {rows.map((v) => (
+                <li key={v.surum} className="py-3 text-theme-sm">
+                  <b className="block">{t("versionRow", { v: v.surum, q: v.soru_sayisi })}</b>
+                  <span className="block text-theme-xs text-gray-500 dark:text-gray-400">
+                    {v.yayinlandi_at ? formatDateTime(v.yayinlandi_at) : "—"}
+                  </span>
+                  <span className="block text-theme-xs text-gray-500 dark:text-gray-400">
+                    {t("versionDiff", { a: v.eklenen.length, r: v.kaldirilan.length, c: v.degisen.length })}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+      </RpcBoundary>
+    </Modal>
+  );
+}
+
+/** Yayımlanmış sorular (kaynak anket ve sürümle). Seçilen soru yeni kimlikle kopyalanır; koşul düşer. */
+function QuestionLibrary({ onPick }: { onPick: (q: SurveyQuestion) => void }) {
+  const t = useTranslations("yonetim.merkez.surveys");
+  const state = useAdminRpc<SurveyLibraryItem[]>("admin_anket_soru_kutuphanesi", undefined, { demo: [] });
+
+  return (
+    <div className="mt-4 rounded-xl border border-dashed border-gray-300 p-4 dark:border-gray-700">
+      <h4 className="text-theme-sm font-semibold">{t("library")}</h4>
+      <p className="mb-3 text-theme-xs text-gray-500 dark:text-gray-400">{t("libraryNote")}</p>
+      <RpcBoundary state={state}>
+        {(rows) =>
+          rows.length === 0 ? (
+            <p className="text-theme-xs text-gray-500">{t("libraryEmpty")}</p>
+          ) : (
+            <ul className="max-h-64 divide-y divide-gray-100 overflow-y-auto dark:divide-gray-800">
+              {rows.map((r, i) => (
+                <li key={`${r.anket_id}-${r.soru.id}-${i}`} className="flex flex-wrap items-center justify-between gap-2 py-2">
+                  <span className="min-w-0">
+                    <b className="block truncate text-theme-sm">{r.soru.baslik}</b>
+                    <span className="text-theme-xs text-gray-500 dark:text-gray-400">
+                      {t("libraryFrom", { ad: r.anket_ad, v: r.surum })} · {t(`types.${r.soru.tur}`)}
+                    </span>
+                  </span>
+                  <button
+                    type="button"
+                    className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`}
+                    onClick={() => onPick(r.soru)}
+                  >
+                    {t("libraryAdd")}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+      </RpcBoundary>
     </div>
   );
 }
@@ -236,6 +448,7 @@ function Editor({
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [preview, setPreview] = useState(false);
+  const [libOpen, setLibOpen] = useState(false);
   const [npsPick, setNpsPick] = useState<Record<string, number | null>>({});
   // Yeni anket: veli paneli varsayılan. Mevcut anket: web_sitesi değeri süzülür (ANKET_SURFACES).
   const [yuzeyler, setYuzeyler] = useState<AnketSurface[]>(
@@ -443,6 +656,20 @@ function Editor({
           </button>
         ))}
       </div>
+
+      <div className="mt-3">
+        <button
+          type="button"
+          aria-expanded={libOpen}
+          className={`${outlineBtn} px-3! py-1.5! text-theme-xs!`}
+          onClick={() => setLibOpen((v) => !v)}
+        >
+          {libOpen ? t("libraryHide") : t("library")}
+        </button>
+      </div>
+      {libOpen && (
+        <QuestionLibrary onPick={(q) => setSorular((s) => [...s, { ...q, id: newId(), kosul: null }])} />
+      )}
 
       <p className="mt-4 rounded-xl bg-[#eef5f2] px-4 py-3 text-theme-xs text-[#3d6654] dark:bg-brand-500/10 dark:text-brand-300">
         {t("form.rules")}

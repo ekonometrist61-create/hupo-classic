@@ -1,7 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ogrenci_hazirlik/models/survey_models.dart';
 import 'package:ogrenci_hazirlik/services/survey_repository.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 Map<String, dynamic> _anketJson({bool anonim = false, List<Object?>? sorular}) => {
       'id': 'a1',
@@ -166,37 +165,11 @@ void main() {
     });
   });
 
-  group('SurveyDeferral', () {
-    setUp(() {
-      TestWidgetsFlutterBinding.ensureInitialized();
-      SharedPreferences.setMockInitialValues({});
-    });
-
-    test('ertelenen anket 1 gün gizli kalır, sonra yeniden görünür', () async {
-      final prefs = await SharedPreferences.getInstance();
-      var simdi = DateTime(2026, 10, 13, 9);
-      final erteleme = SurveyDeferral(prefs, simdi: () => simdi);
-      final anket = Anket.fromJson(_anketJson())!;
-
-      expect(erteleme.erteleniyorMu(anket), isFalse);
-      await erteleme.ertele(anket);
-      expect(erteleme.erteleniyorMu(anket), isTrue);
-
-      simdi = DateTime(2026, 10, 13, 20);
-      expect(erteleme.erteleniyorMu(anket), isTrue);
-
-      simdi = DateTime(2026, 10, 14, 9, 1);
-      expect(erteleme.erteleniyorMu(anket), isFalse);
-    });
-
-    test('yeni sürüm ertelemeyi sıfırlar', () async {
-      final prefs = await SharedPreferences.getInstance();
-      final erteleme = SurveyDeferral(prefs, simdi: () => DateTime(2026, 10, 13));
-      final anket = Anket.fromJson(_anketJson())!;
-      await erteleme.ertele(anket);
-
-      final yeniSurum = Anket.fromJson(_anketJson()..['surum'] = 3)!;
-      expect(erteleme.erteleniyorMu(yeniSurum), isFalse);
+  group('yerelSaatMetni (sunucu time biçimi)', () {
+    test('saat, dakika ve saniye iki haneli yazılır', () {
+      expect(yerelSaatMetni(DateTime(2026, 11, 12, 9, 5, 7)), '09:05:07');
+      expect(yerelSaatMetni(DateTime(2026, 11, 12, 22)), '22:00:00');
+      expect(yerelSaatMetni(DateTime(2026, 11, 12)), '00:00:00');
     });
   });
 }

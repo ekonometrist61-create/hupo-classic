@@ -1,7 +1,7 @@
-// Veli anketleri: Supabase RPC katmanı (`anket_aktif_listem`, `anket_yanit_gonder`)
-// ve "Şimdi değil" ertelemesi. Sunucu hataları burada Türkçe kullanıcı mesajına çevrilir.
+// Veli anketleri: Supabase RPC katmanı (`anket_siradaki_kart`, `anket_kart_atla`,
+// `anket_yanit_gonder`). Sessiz saat, günlük bütçe ve atlama takvimi sunucudadır; burada
+// yerel bir erteleme kuralı tutulmaz. Sunucu hataları Türkçe kullanıcı mesajına çevrilir.
 
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../models/survey_models.dart';
@@ -57,14 +57,33 @@ class SurveyRepository {
 
   final SupabaseClient _client;
 
-  /// Yalnızca veli hesabında çağrılmalıdır; öğrenci hesabında sunucu 42501 döner.
-  Future<List<Anket>> aktifAnketler({String? yuzey}) async {
+  /// Veliye gösterilecek en fazla tek kart, yoksa null (sessiz saat, bütçe ve atlama
+  /// beklemesi dahil sunucu karar verir). Yalnızca veli hesabında çağrılmalıdır;
+  /// öğrenci hesabında sunucu 42501 döner.
+  Future<Anket?> siradakiKart({String? yuzey, DateTime? yerelSaat}) async {
     try {
       final veri = await _client.rpc(
-        'anket_aktif_listem',
-        params: {'p_yuzey': yuzey ?? anketYuzeyi()},
+        'anket_siradaki_kart',
+        params: {
+          'p_yuzey': yuzey ?? anketYuzeyi(),
+          'p_yerel_saat': yerelSaatMetni(yerelSaat ?? DateTime.now()),
+        },
       );
-      return anketListesiFromJson(veri);
+      return Anket.fromJson(veri);
+    } on PostgrestException catch (e) {
+      throw _hataCevir(e);
+    } on Exception {
+      throw const AnketException(AnketHatasi.baglanti, _mesajBaglanti);
+    }
+  }
+
+  /// Kartı kapatma = atlama (kart başına bir kez). Sonraki gösterim sunucu takvimine göredir.
+  Future<void> atla({required String anketId, String? yuzey}) async {
+    try {
+      await _client.rpc('anket_kart_atla', params: {
+        'p_anket_id': anketId,
+        'p_yuzey': yuzey ?? anketYuzeyi(),
+      });
     } on PostgrestException catch (e) {
       throw _hataCevir(e);
     } on Exception {
@@ -92,34 +111,9 @@ class SurveyRepository {
   }
 }
 
-/// "Şimdi değil": anket kimliği + sürümü başına 1 gün gösterilmez.
-///
-/// Kayıt SharedPreferences'a yazılır; yazılamazsa oturum boyunca bellekte tutulur,
-/// böylece kart hemen geri gelmez. Yazma hatası çağıranda raporlanır.
-class SurveyDeferral {
-  SurveyDeferral(this._prefs, {DateTime Function()? simdi}) : _simdi = simdi ?? DateTime.now;
-
-  static const String _onek = 'anket_ertele_';
-  static const Duration _sure = Duration(days: 1);
-
-  final SharedPreferences _prefs;
-  final DateTime Function() _simdi;
-  final Map<String, DateTime> _bellek = {};
-
-  String _anahtar(Anket anket) => '$_onek${anket.ertelemeAnahtari}';
-
-  bool erteleniyorMu(Anket anket) {
-    final an = _simdi();
-    final bellekte = _bellek[_anahtar(anket)];
-    if (bellekte != null && an.isBefore(bellekte)) return true;
-    final kayitli = _prefs.getInt(_anahtar(anket));
-    if (kayitli == null) return false;
-    return an.isBefore(DateTime.fromMillisecondsSinceEpoch(kayitli));
-  }
-
-  Future<void> ertele(Anket anket) async {
-    final hedef = _simdi().add(_sure);
-    _bellek[_anahtar(anket)] = hedef;
-    await _prefs.setInt(_anahtar(anket), hedef.millisecondsSinceEpoch);
-  }
+/// Sunucunun beklediği `time` biçimi ("HH:mm:ss"): cihazın yerel saati.
+/// Sessiz saat kararını sunucu verir; istemci yalnızca saati bildirir.
+String yerelSaatMetni(DateTime zaman) {
+  String iki(int n) => n.toString().padLeft(2, '0');
+  return '${iki(zaman.hour)}:${iki(zaman.minute)}:${iki(zaman.second)}';
 }

@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../models/survey_models.dart';
 import '../../providers/app_providers.dart';
-import '../../services/error_reporting.dart';
+import '../../services/survey_repository.dart';
 import '../../theme/app_theme.dart';
 import '../ui/chunky_button.dart';
 import 'survey_sheet.dart';
@@ -40,12 +40,13 @@ class _AnketKarti extends ConsumerWidget {
 
   final Anket anket;
 
-  Future<void> _sonra(WidgetRef ref) async {
+  /// "Şimdi değil" = atlama. Bekleme takvimi (3 gün, 14 gün, 90 gün) sunucudadır.
+  Future<void> _sonra(BuildContext context, WidgetRef ref) async {
+    final messenger = ScaffoldMessenger.maybeOf(context);
     try {
-      await ref.read(surveyDeferralProvider).ertele(anket);
-    } on Exception catch (e, s) {
-      // Kayıt yazılamadıysa anket bu oturumda yine de bellekten ertelenmiş kalır.
-      reportError(e, s);
+      await ref.read(surveyRepositoryProvider).atla(anketId: anket.id);
+    } on AnketException catch (e) {
+      messenger?.showSnackBar(SnackBar(content: Text(e.mesaj)));
     }
     ref.invalidate(aktifAnketlerProvider);
   }
@@ -120,7 +121,7 @@ class _AnketKarti extends ConsumerWidget {
             const SizedBox(height: 8),
             ChunkyButton.light(
               label: _ertele,
-              onPressed: () => _sonra(ref),
+              onPressed: () => _sonra(context, ref),
             ),
           ],
         ),

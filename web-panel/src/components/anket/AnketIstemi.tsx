@@ -5,24 +5,17 @@ import { useTranslations } from "next-intl";
 import { createClient } from "@/utils/supabase/client";
 import { Modal } from "@/components/ui/modal";
 import AnketDiyalog from "./AnketDiyalog";
-import {
-  anketGecerliMi,
-  ertele,
-  ertelenmisMi,
-  type Anket,
-  type Yuzey,
-} from "./anketMantik";
+import { anketGecerliMi, yerelSaatMetni, type Anket, type Yuzey } from "./anketMantik";
 
 interface AnketIstemiProps {
   yuzey: Yuzey;
-  /** Kart gerçekten çizildiğinde bir kez çağrılır (ana sayfa sıklık sınırı için). Stabil olmalı. */
-  onGosterildi?: () => void;
 }
 
-// Giriş yapmış velinin, bu mecrada yayınlanan ve henüz yanıtlamadığı anketi gösteren kart.
-// Oturum yoksa (ziyaretçi) ya da hesap veli değilse hiçbir şey çizmez ve sunucuya istek atmaz/
-// hata göstermez: anket yardımcı bir özelliktir, sayfanın geri kalanı bundan etkilenmemeli.
-export default function AnketIstemi({ yuzey, onGosterildi }: AnketIstemiProps) {
+// Giriş yapmış velinin, bu mecrada gösterilecek tek anket kartı. Kartı sunucu seçer
+// (anket_siradaki_kart: sessiz saat, günlük bütçe, atlama takvimi). Oturum yoksa (ziyaretçi)
+// ya da hesap veli değilse hiçbir şey çizmez: anket yardımcı bir özelliktir, sayfanın geri
+// kalanı bundan etkilenmemeli.
+export default function AnketIstemi({ yuzey }: AnketIstemiProps) {
   const t = useTranslations("anket");
   const [anketler, setAnketler] = useState<Anket[]>([]);
   const [modalAcik, setModalAcik] = useState(false);
@@ -41,14 +34,14 @@ export default function AnketIstemi({ yuzey, onGosterildi }: AnketIstemiProps) {
         } = await supabase.auth.getSession();
         if (!session) return;
 
-        const { data, error } = await supabase.rpc("anket_aktif_listem", {
+        const { data, error } = await supabase.rpc("anket_siradaki_kart", {
           p_yuzey: yuzey,
+          p_yerel_saat: yerelSaatMetni(),
         });
-        if (iptal || error || !Array.isArray(data)) return;
+        // Sunucu kart yoksa null döner (sessiz saat, bütçe, atlama beklemesi dahil).
+        if (iptal || error || !anketGecerliMi(data)) return;
 
-        setAnketler(
-          (data as unknown[]).filter(anketGecerliMi).filter((a) => !ertelenmisMi(a))
-        );
+        setAnketler([data]);
       } catch {
         // Anket yüklenemezse sayfa anketsiz çizilir; kullanıcıya hata gösterilmez.
       }
@@ -66,12 +59,6 @@ export default function AnketIstemi({ yuzey, onGosterildi }: AnketIstemiProps) {
   }, [mesaj]);
 
   const aktif = anketler[0];
-  const aktifId = aktif?.id;
-
-  // Kart ilk kez çizildiğinde bildir (yalnız kart kimliği değişince).
-  useEffect(() => {
-    if (aktifId && onGosterildi) onGosterildi();
-  }, [aktifId, onGosterildi]);
 
   function vazgec() {
     setModalAcik(false);
@@ -79,10 +66,20 @@ export default function AnketIstemi({ yuzey, onGosterildi }: AnketIstemiProps) {
     requestAnimationFrame(() => tetikRef.current?.focus());
   }
 
-  function sonraYap() {
+  // Kartı kapatma = atlama (sunucu takvimi: 3 gün, 14 gün, sonra 90 gün). Hata gösterilmez:
+  // kart bu oturumda kapanır, atlama kaydedilemediyse bir sonraki yüklemede yeniden gelir.
+  async function sonraYap() {
     if (!aktif) return;
-    ertele(aktif);
-    setAnketler((onceki) => onceki.filter((a) => a.id !== aktif.id));
+    const atlanan = aktif.id;
+    setAnketler((onceki) => onceki.filter((a) => a.id !== atlanan));
+    try {
+      await createClient().rpc("anket_kart_atla", {
+        p_anket_id: atlanan,
+        p_yuzey: yuzey,
+      });
+    } catch {
+      // Ağ hatasında atlama kaydı yok; kart sonraki yüklemede yeniden görünebilir.
+    }
   }
 
   function bitti(durum: "tesekkur" | "zaten") {

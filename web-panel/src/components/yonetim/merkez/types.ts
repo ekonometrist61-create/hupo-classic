@@ -155,6 +155,58 @@ export interface SurveyResult {
   metinler: { soru_id: string; metin: string; tarih: string }[];
 }
 
+// Yayın kontrol listesi (admin_anket_yayin_kontrol). tamam: true | false | null (bilgi maddesi, hukuk bekliyor).
+export interface SurveyChecklistItem {
+  kod: string;
+  zorunlu: boolean;
+  tamam: boolean | null;
+  mesaj: string;
+  sure_dk?: number;
+}
+
+export interface SurveyChecklist {
+  anket_id: string;
+  hazir: boolean;
+  soru_sayisi: number;
+  maddeler: SurveyChecklistItem[];
+}
+
+// Sürüm geçmişi (admin_anket_surum_gecmisi): bir önceki sürüme göre fark.
+export interface SurveyVersion {
+  surum: number;
+  ad: string;
+  yayinlandi_at: string | null;
+  soru_sayisi: number;
+  eklenen: string[];
+  kaldirilan: string[];
+  degisen: string[];
+}
+
+// Soru kütüphanesi satırı (admin_anket_soru_kutuphanesi): yayımlanmış bir sorunun kaynağıyla birlikte.
+export interface SurveyLibraryItem {
+  anket_id: string;
+  anket_ad: string;
+  surum: number;
+  soru: SurveyQuestion;
+}
+
+// Dışa aktarım (admin_anket_disa_aktar): n<5 ise gizli, satır yok. Kimlik alanı yok.
+export interface SurveyExport {
+  anket_id: string;
+  ad: string;
+  yanit_sayisi: number;
+  gizli: boolean;
+  kesildi?: boolean;
+  sorular: { id: string; baslik: string; tur: QuestionType }[];
+  satirlar: {
+    tarih: string;
+    surum: number;
+    yuzey: string;
+    nps: number | null;
+    yanitlar: Record<string, string | number | boolean>;
+  }[];
+}
+
 export interface SupportTask {
   id: string;
   veli_id: string;

@@ -1,5 +1,6 @@
 // Anket veri modeli ve saf yardımcılar. Sunucu sözleşmesi:
-// supabase/migrations/20261029000000_anket_yuzeyler.sql (anket_aktif_listem, anket_yanit_gonder).
+// supabase/migrations/20261161000000_anket_d2_tuketim.sql (anket_siradaki_kart, anket_kart_atla),
+// 20261029000000_anket_yuzeyler.sql (anket_yanit_gonder).
 
 export type Yuzey = "veli_paneli" | "web_sitesi";
 
@@ -122,31 +123,9 @@ export function yanitlariHazirla(sorular: Soru[], cevaplar: Cevaplar): Cevaplar 
   return cikti;
 }
 
-// Ertelenen anket: aynı anket (id + sürüm) 1 gün boyunca gösterilmez.
-const ERTELEME_ON_ANAHTAR = "hupo.anket.ertele.";
-const ERTELEME_SURE_MS = 24 * 60 * 60 * 1000;
-
-function ertelemeAnahtari(anket: Anket): string {
-  return `${ERTELEME_ON_ANAHTAR}${anket.id}.${anket.surum}`;
-}
-
-export function ertelenmisMi(anket: Anket): boolean {
-  try {
-    const deger = window.localStorage.getItem(ertelemeAnahtari(anket));
-    return deger !== null && Number(deger) > Date.now();
-  } catch {
-    // Depolama erişilemiyorsa (gizli pencere, engelli site verisi) erteleme yok sayılır.
-    return false;
-  }
-}
-
-export function ertele(anket: Anket): void {
-  try {
-    window.localStorage.setItem(
-      ertelemeAnahtari(anket),
-      String(Date.now() + ERTELEME_SURE_MS)
-    );
-  } catch {
-    // Kayıt yapılamazsa anket bu oturumda yine de kapanır; bir sonraki sayfa yüklemesinde tekrar görünebilir.
-  }
+// Sessiz saat, atlama takvimi ve günlük bütçe sunucudadır (anket_siradaki_kart, anket_kart_atla).
+// İstemci yalnızca cihazın yerel saatini bildirir; "şimdi değil" kararını yerelde tutmaz.
+export function yerelSaatMetni(simdi: Date = new Date()): string {
+  const iki = (n: number) => String(n).padStart(2, "0");
+  return `${iki(simdi.getHours())}:${iki(simdi.getMinutes())}:${iki(simdi.getSeconds())}`;
 }

@@ -110,20 +110,16 @@ final currentUserIdProvider = Provider<String?>(
 final surveyRepositoryProvider =
     Provider<SurveyRepository>((ref) => SurveyRepository(ref.watch(supabaseProvider)));
 
-final surveyDeferralProvider = Provider<SurveyDeferral>(
-    (ref) => SurveyDeferral(ref.watch(sharedPreferencesProvider)));
-
-/// Bu mecrada gösterilecek, ertelenmemiş anketler. Veli değilse boş liste (sessiz).
+/// Bu mecrada gösterilecek kart (0 ya da 1 anket). Sunucu sıklık kararını verir.
+/// Veli değilse boş liste (sessiz).
 final aktifAnketlerProvider = FutureProvider.autoDispose<List<Anket>>((ref) async {
-  final List<Anket> anketler;
   try {
-    anketler = await ref.watch(surveyRepositoryProvider).aktifAnketler();
+    final kart = await ref.watch(surveyRepositoryProvider).siradakiKart();
+    return kart == null ? const [] : [kart];
   } on AnketException catch (e) {
     if (e.hata == AnketHatasi.yetkisiz) return const [];
     rethrow;
   }
-  final erteleme = ref.watch(surveyDeferralProvider);
-  return [for (final a in anketler) if (!erteleme.erteleniyorMu(a)) a];
 });
 
 // Duyuru: aktif duyuru (hata/yoksa null) ve "Kapat" kaydı. Kapatılan duyuru bir daha gelmez.

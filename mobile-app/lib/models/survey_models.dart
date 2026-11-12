@@ -1,4 +1,4 @@
-// Veli anketleri: `anket_aktif_listem` yanıtının modeli ve yanıt kuralları.
+// Veli anketleri: `anket_siradaki_kart` yanıtının modeli ve yanıt kuralları.
 //
 // Yetkili kurallar sunucudadır: 20261007000030 (_anket_sorulari_hatasi, anket_yanit_gonder)
 // ve 20261029000000_anket_yuzeyler.sql. Buradaki kontroller yalnızca arayüzü yönlendirir:
@@ -189,7 +189,7 @@ class Anket {
   }
 }
 
-/// `anket_aktif_listem` dizisini ayrıştırır; bozuk öğeler atlanır.
+/// Anket listesi JSON'unu ayrıştırır; bozuk öğeler atlanır.
 List<Anket> anketListesiFromJson(Object? ham) {
   if (ham is! List) return const [];
   final liste = <Anket>[];
