@@ -38,9 +38,6 @@ export async function HakkimizdaSection() {
         <aside className="rounded-3xl border border-cream-dark bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
           <h3 className="text-xl font-extrabold leading-snug">{t("hakkimizda.hupoTitle")}</h3>
           <p className="mt-2 leading-relaxed text-navy-muted dark:text-gray-300">{t("hakkimizda.hupoText")}</p>
-          <p className="mt-4 border-t border-cream-dark pt-4 text-sm leading-relaxed text-navy-muted dark:border-gray-700 dark:text-gray-400">
-            {t("hakkimizda.pilotNote")}
-          </p>
         </aside>
       </Reveal>
     </section>

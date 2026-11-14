@@ -75,10 +75,6 @@ export async function HikayelerSection() {
             ))}
           </ul>
 
-          <p className="mt-6 max-w-xl text-sm leading-relaxed text-navy/70 dark:text-gray-400">
-            {erken ? t("not") : t("notHazirlik")}
-          </p>
-
           <div className="mt-6">
             <Link href="/veli-paneli/kayit" className={landingPrimaryBtn}>
               {t("cta")}
@@ -159,9 +155,6 @@ export async function HikayelerSection() {
                 </div>
               </div>
             </div>
-            <figcaption className="mt-5 text-center text-sm font-semibold text-navy-muted dark:text-gray-400">
-              {t("mockNot")}
-            </figcaption>
           </figure>
         </Reveal>
       </div>

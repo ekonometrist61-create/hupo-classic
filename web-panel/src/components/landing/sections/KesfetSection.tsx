@@ -159,10 +159,6 @@ export async function KesfetSection() {
             </li>
           ))}
         </RevealGroup>
-
-        <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-relaxed text-navy-muted dark:text-gray-400">
-          {t("durumNotu")}
-        </p>
       </div>
     </section>
   );

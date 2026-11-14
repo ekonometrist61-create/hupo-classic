@@ -1,4 +1,4 @@
-﻿import { landingPrimaryBtn } from "@/components/landing/buttons";
+import { landingPrimaryBtn } from "@/components/landing/buttons";
 import { IconArrowRight } from "@/components/landing/Icons";
 import { Reveal } from "@/components/landing/motion/Reveal";
 import { getTranslations } from "next-intl/server";
@@ -45,7 +45,6 @@ export async function DemoSection() {
               <IconArrowRight className="h-5 w-5" />
             </Link>
           </div>
-          <p className="mt-4 text-sm text-navy-muted dark:text-gray-400">{t("demo.note")}</p>
         </div>
 
         <Reveal className="relative">

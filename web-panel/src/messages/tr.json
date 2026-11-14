@@ -503,8 +503,7 @@
         "sıcaktı",
         "yağmurluydu",
         "karanlıktı"
-      ],
-      "note": "Örnek sorular Hupo için hazırlanmıştır; resmî okul sınav soruları olarak sunulmaz."
+      ]
     },
     "appScreens": {
       "eyebrow": "Uygulama içinden",
@@ -566,32 +565,10 @@
       "reviewTitle": "Tekrar önerisi",
       "reviewText": "Matematik · Basamak değeri: 2 soru yanlış, tekrar edilmesi öneriliyor."
     },
-    "trust": {
-      "title": "Söz verdiklerimiz",
-      "desc": "Yalnızca uygulamada gerçekten bulunan şeyleri yazıyoruz.",
-      "items": [
-        {
-          "title": "Varsayılan olarak reklamsız",
-          "desc": "Öğrenci uygulamasında reklam varsayılan olarak kapalıdır ve uygulama konum izni istemez."
-        },
-        {
-          "title": "Veli onayı olmadan veli paneline veri düşmez",
-          "desc": "Çocuğun çalışma verisinin veli panelinde görünmesi için onayı veli verir ve istediği zaman geri çekebilir."
-        },
-        {
-          "title": "Cevap anahtarı çocuğun cihazında durmaz",
-          "desc": "Doğru cevap, soru kontrol edilene kadar sunucuda tutulur."
-        },
-        {
-          "title": "Dürüst kapsam",
-          "desc": "Sınav kazanma veya puan artışı vaadi vermiyoruz. Hupo düzenli pratiği ve tekrar ihtiyacını görünür kılmak için tasarlandı."
-        }
-      ]
-    },
     "ogrenmeBilimi": {
-      "etiket": "ÖĞRENME BİLİMİ",
-      "baslik": "Hupo neden böyle çalışıyor?",
-      "giris": "Çalışma düzenimizin her parçası basit bir öğrenme ilkesine dayanıyor. Her ilke için Hupo'da ne olduğunu ve araştırmaların ne dediğini ayrı ayrı yazdık.",
+      "etiket": "ÖĞRETME TARZI",
+      "baslik": "Hupo nasıl çalışıyor?",
+      "giris": "Çalışma düzenimiz çeşitli öğrenme ilkelerine dayanıyor.",
       "etiketHupoda": "Hupo'da",
       "etiketArastirma": "Araştırmalar ne diyor?",
       "etiketTasarim": "Tasarım tercihimiz",
@@ -646,7 +623,7 @@
       "items": [
         {
           "q": "Hangi sınıflar için?",
-          "a": "Şu anda 3–7. sınıf içerikleri yer alıyor; Proje Ortaokullarına hazırlık öncelikli odağımız. Uygulamadaki sınıf ve ders kapsamı pilot sürüm boyunca genişliyor."
+          "a": "Şu anda 3–7. sınıf içerikleri yer alıyor; Proje Ortaokullarına hazırlık öncelikli odağımız. Uygulamadaki sınıf ve ders kapsamı zamanla genişliyor."
         },
         {
           "q": "Örnek sorular için hesap gerekir mi?",
@@ -720,7 +697,6 @@
       "eyebrow": "Karakter Evreni",
       "title": "8 Dünya, 40 Karakter",
       "desc": "Düzenli çalıştıkça açılan 40 karakter, öğrenmeyi değil devamlılığı ödüllendirir. Çocuğunuz koleksiyonunu kendi hızında tamamlar.",
-      "cta": "Veli hesabı oluştur",
       "lockedLabel": "Kilitli",
       "classes": [
         {
@@ -837,7 +813,6 @@
       "trialDays": "{gun} gün ücretsiz deneme",
       "trialNote": "Kart bilgisi istenmez. Otomatik ücret alınmaz.",
       "sharedNote": "Veli paneli ve veli raporu planlardan bağımsız olarak veli hesabında açıktır. Öğrenci uygulamasında reklam varsayılan olarak kapalıdır.",
-      "pilotNote": "Hupo pilot sürümde. İçerik ve raporları geri bildirimlerle geliştiriyoruz.",
       "yearlyNote": "Yıllık planda %40 tasarruf",
       "comingSoon": "Fiyatlar yakında açıklanacak",
       "comingSoonDesc": "Plan detayları ve fiyatlar netleştiğinde burada ve veli hesabınızda gösterilecek.",
@@ -1091,7 +1066,6 @@
       "contact": "İletişim",
       "privacy": "Gizlilik Politikası",
       "terms": "Kullanım Koşulları",
-      "pilot": "Pilot sürüm",
       "appSoon": "Mobil uygulama yakında.",
       "copyright": "© 2026 Hupolingo"
     },
@@ -1101,7 +1075,6 @@
       "desc": "Çocuk bunları kendi isteğiyle açar. Ölçüt yine öğrenmedir; ödül baskısı, süre dayatması ve çocuğa satış yoktur.",
       "rozetErken": "Erken erişim",
       "rozetYakinda": "Yakında",
-      "durumNotu": "Erken erişim: uygulamanın test sürümünde var, kapsam ve görünüm değişebilir. Yakında: henüz açılmadı.",
       "carpim": {
         "ad": "Çarpım Şifreleri",
         "desc": "Çarpım tablosunu ezberlemek yerine her çarpan için bir şifre, yani kısa bir kural çözülür. Örneğin “İkiler Şifresi”: sayıyı kendisiyle topla. Ardından o şifreyle küçük sorular gelir.",
@@ -1135,11 +1108,11 @@
       "adimlar": [
         {
           "baslik": "Türünü seçer",
-          "aciklama": "Merak ettiği dünyadan başlar: gizem, macera, bilim kurgu ve diğer türler."
+          "aciklama": "Merak ettiği dünyadan başlar: gizem, macera, bilim kurgu, tarih, gezi gibi en popüler türler."
         },
         {
           "baslik": "Hikâyeyi okur",
-          "aciklama": "Sınıf düzeyine göre seçilmiş hikâyeler, günlük okuma kotası içinde açılır."
+          "aciklama": "Sınıf düzeyine göre seçilmiş, yeni kelimeler ve deyimler-atasözleriyle zenginleştirilmiş hikâyeler, günlük okuma kotası içinde açılır."
         },
         {
           "baslik": "Küçük sorularla dener",
@@ -1147,10 +1120,7 @@
         }
       ],
       "cta": "Veli hesabı oluştur",
-      "notHazirlik": "Hikâyeler hazırlanıyor. Her hikâye yayından önce bir editör tarafından okunup onaylanır; yayına çıktıkça bu bölüm güncellenir.",
-      "not": "Her hikâye yayından önce bir editör tarafından okunup onaylanır. Yapay zekâ denetim sonuçları editöre yardımcı olarak kaydedilir; yayın kararı editöründür.",
       "mockAlt": "Hupolingo uygulamasından örnek hikâye ekranı: Bugünkü hikâye kartı ve Gizem, Uzay ve Bilim Kurgu, Macera, Tarih ve kültür türlerinin kapakları.",
-      "mockNot": "Örnek ekran · hikâye ve görseller değişebilir",
       "mock": {
         "baslik": "Hikâyeler",
         "bugun": "Bugünkü hikâye",
@@ -1190,13 +1160,11 @@
           "aciklama": "Kahramanın yanına bir yol arkadaşı koyabilir ve ona da bir ad verebilir."
         }
       ],
-      "not": "Adı yalnızca bu cihazda tutulur. Hikâye bitince küçük bir soru turu: anladın mı, neresine dönelim?",
       "sinifEtiket": "Her sınıf için bir hikâye",
       "sinifBaglanti": "{sinif}. sınıf hikâye deneyimi",
       "demoCta": "Hikâye deneyimini dene",
       "cta": "Veli hesabı oluştur",
       "mockAlt": "Hupolingo uygulamasındaki kahraman akışından örnek ekran: kahraman olarak Ben seçili, tür Macera, kahramanın adı Kaşif ve yol arkadaşı Pamuk. Adlar kurgudur.",
-      "mockNot": "Örnek ekran · kurgu adlar",
       "mock": {
         "baslik": "Senin Hikâyen",
         "soru": "Kahramanın kim olsun?",

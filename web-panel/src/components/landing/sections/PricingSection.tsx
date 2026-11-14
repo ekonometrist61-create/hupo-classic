@@ -157,9 +157,8 @@ export async function PricingSection() {
           ))}
         </div>
 
-        {/* Planlar arası ortak kapsam notu ve sakin pilot notu (ilk ekrandan taşındı). */}
+        {/* Planlar arası ortak kapsam notu (ilk ekrandan taşındı). */}
         <p className="mx-auto mt-6 max-w-2xl text-center text-sm text-navy-muted dark:text-gray-400">{t("sharedNote")}</p>
-        <p className="mx-auto mt-2 max-w-2xl text-center text-sm text-navy-muted dark:text-gray-400">{t("pilotNote")}</p>
       </div>
     </section>
   );

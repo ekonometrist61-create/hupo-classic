@@ -504,7 +504,6 @@
         "yağmurluydu",
         "karanlıktı"
       ],
-      "note": "Sample questions are written for Hupo and are not presented as official school exam questions.",
       "langNote": "The sample questions are in Turkish."
     },
     "appScreens": {
@@ -567,32 +566,10 @@
       "reviewTitle": "Review suggestion",
       "reviewText": "Mathematics · Place value: 2 questions wrong, review recommended."
     },
-    "trust": {
-      "title": "What we promise",
-      "desc": "We only write things that really exist in the app.",
-      "items": [
-        {
-          "title": "Ad-free by default",
-          "desc": "Ads are off by default in the student app, and the app does not ask for location permission."
-        },
-        {
-          "title": "No data reaches the parent panel without consent",
-          "desc": "The parent gives consent for the child's study data to appear in the parent panel and can withdraw it at any time."
-        },
-        {
-          "title": "The answer key is not kept on the child's device",
-          "desc": "The correct answer stays on the server until the question is checked."
-        },
-        {
-          "title": "Honest scope",
-          "desc": "We do not promise exam success or score gains. Hupo is designed to support regular practice and make review needs visible."
-        }
-      ]
-    },
     "ogrenmeBilimi": {
-      "etiket": "LEARNING SCIENCE",
-      "baslik": "Why does Hupo work this way?",
-      "giris": "Each part of our study routine rests on a simple learning principle. For each one, we describe what happens in Hupo and what research says, separately.",
+      "etiket": "TEACHING APPROACH",
+      "baslik": "How does Hupo work?",
+      "giris": "Our study routine rests on several learning principles.",
       "etiketHupoda": "In Hupo",
       "etiketArastirma": "What research says",
       "etiketTasarim": "Our design choice",
@@ -647,7 +624,7 @@
       "items": [
         {
           "q": "Which grades is it for?",
-          "a": "Our first focus is preparation for the move from 4th to 5th grade. The grade and subject coverage in the app is expanding during the pilot."
+          "a": "Our first focus is preparation for the move from 4th to 5th grade. The grade and subject coverage in the app is expanding over time."
         },
         {
           "q": "Do I need an account for the sample questions?",
@@ -721,7 +698,6 @@
       "eyebrow": "Character Universe",
       "title": "8 Worlds, 40 Characters",
       "desc": "The 40 characters that unlock with regular study reward consistency, not just speed. Your child completes the collection at their own pace.",
-      "cta": "Create parent account",
       "lockedLabel": "Locked",
       "classes": [
         {
@@ -838,7 +814,6 @@
       "trialDays": "{gun} days free trial",
       "trialNote": "No card details needed. No automatic charge.",
       "sharedNote": "The parent panel and parent report are available in the parent account regardless of plan. Ads are off by default in the student app.",
-      "pilotNote": "Hupo is in pilot. We are improving content and reports with your feedback.",
       "yearlyNote": "Save 40% on yearly plan",
       "comingSoon": "Pricing coming soon",
       "comingSoonDesc": "When plan details and pricing are finalized, they will be shown here and in your parent account.",
@@ -1092,7 +1067,6 @@
       "contact": "Contact",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
-      "pilot": "Pilot version",
       "appSoon": "Mobile app coming soon.",
       "copyright": "© 2026 Hupolingo"
     },
@@ -1102,7 +1076,6 @@
       "desc": "Children open these when they want to. The measure is still learning; there is no reward pressure, no time pressure and no selling to the child.",
       "rozetErken": "Early access",
       "rozetYakinda": "Coming soon",
-      "durumNotu": "Early access: available in the app's test version; scope and look may change. Coming soon: not open yet. Learning content is in Turkish.",
       "carpim": {
         "ad": "Multiplication Codes (Çarpım Şifreleri)",
         "desc": "Instead of memorising the times table, children crack a code for each factor, which is a short rule. For example the \"Twos Code\": add the number to itself. Then small questions follow with that code.",
@@ -1136,11 +1109,11 @@
       "adimlar": [
         {
           "baslik": "Picks a genre",
-          "aciklama": "Starts from the world they are curious about: mystery, adventure, science fiction and other genres."
+          "aciklama": "Starts from the world they are curious about: mystery, adventure, science fiction, history and travel, among the most popular genres."
         },
         {
           "baslik": "Reads the story",
-          "aciklama": "Stories chosen by grade level open within the daily reading allowance."
+          "aciklama": "Stories selected for grade level, enriched with new words and idioms (proverbs) suited to that grade, open within the daily reading allowance."
         },
         {
           "baslik": "Checks with small questions",
@@ -1148,10 +1121,7 @@
         }
       ],
       "cta": "Create parent account",
-      "notHazirlik": "Stories are being prepared. Every story is read and approved by an editor before publishing; this section updates as they go live.",
-      "not": "Every story is read and approved by an editor before publishing. AI review results are recorded to assist the editor; the publishing decision is the editor's.",
       "mockAlt": "Example story screen from the Hupolingo app: a Story of the day card and covers for the Mystery, Space and Science Fiction, Adventure and History and Culture genres.",
-      "mockNot": "Sample screen · stories and images may change",
       "mock": {
         "baslik": "Stories",
         "bugun": "Story of the day",
@@ -1191,13 +1161,11 @@
           "aciklama": "Can place a travel companion next to the hero and give them a name too."
         }
       ],
-      "not": "The name is kept only on this device. When the story ends, a short question round shows what they understood and what to revisit.",
       "sinifEtiket": "A story for every grade",
       "sinifBaglanti": "Grade {sinif} story experience",
       "demoCta": "Try the story experience",
       "cta": "Create a parent account",
       "mockAlt": "Example screen from the hero flow in the Hupolingo app: Me selected as the hero, Adventure genre, the hero named Explorer and a companion named Cotton. The names are made up.",
-      "mockNot": "Sample screen · made-up names",
       "mock": {
         "baslik": "Your Story",
         "soru": "Who is your hero?",

@@ -18,7 +18,6 @@ import { ParentPanelSection } from "@/components/landing/sections/ParentPanelSec
 import { PricingSection } from "@/components/landing/sections/PricingSection";
 import { SeninHikayenSection } from "@/components/landing/sections/SeninHikayenSection";
 import { RehberBandi } from "@/components/landing/sections/RehberBandi";
-import { TrustSection } from "@/components/landing/sections/TrustSection";
 import { marketingFont } from "@/components/landing/marketingFont";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -68,7 +67,6 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
           {/* Çarpım Şifreleri, Kelime Evreni, Arena: dürüst durum rozetli keşif alanları. */}
           <KesfetSection />
           <CharacterUniverseSection />
-          <TrustSection />
           {/* Öğrenme Bilimi: kanıt paketi §3 uyarlaması; akademik bulgular ürün şemasına konmaz. */}
           <OgrenmeBilimiSection />
           <PricingSection />

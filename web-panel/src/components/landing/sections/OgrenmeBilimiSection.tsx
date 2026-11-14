@@ -52,7 +52,6 @@ function atiflar(ids: string[]): string {
 const ETIKET_TABAN = "inline-flex rounded-full px-2.5 py-0.5 text-xs font-extrabold uppercase tracking-wider";
 const ETIKET_HUPO = `${ETIKET_TABAN} bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200`;
 const ETIKET_ARASTIRMA = `${ETIKET_TABAN} bg-gold-100 text-gold-900 dark:bg-gold-900/40 dark:text-gold-200`;
-const ETIKET_TASARIM = `${ETIKET_TABAN} bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300`;
 
 // Tekrar takvimi çizimi: aralıklar büyüyerek çizilir (2 : 3 : 5); gerçek gün oranı değildir, "örnek" olarak etiketlenir.
 async function TekrarTakvimi() {
@@ -126,19 +125,17 @@ export async function OgrenmeBilimiSection() {
       className="scroll-mt-20 bg-cream py-6 text-navy sm:py-8 lg:py-10 dark:bg-gray-950 dark:text-gray-100"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-4 lg:grid-cols-2 lg:items-end lg:gap-12">
-          <div>
-            <p className="text-sm font-extrabold uppercase tracking-wider text-brand-700 dark:text-brand-300">
-              {t("etiket")}
-            </p>
-            <h2
-              id="ogrenme-bilimi-baslik"
-              className="mt-2 text-balance text-3xl font-extrabold tracking-tight sm:text-4xl"
-            >
-              {t("baslik")}
-            </h2>
-          </div>
-          <p className="max-w-xl text-lg leading-relaxed text-navy-muted dark:text-gray-300">{t("giris")}</p>
+        <div>
+          <p className="text-sm font-extrabold uppercase tracking-wider text-brand-700 dark:text-brand-300">
+            {t("etiket")}
+          </p>
+          <h2
+            id="ogrenme-bilimi-baslik"
+            className="mt-2 text-balance text-3xl font-extrabold tracking-tight sm:text-4xl"
+          >
+            {t("baslik")}
+          </h2>
+          <p className="mt-3 max-w-xl text-lg leading-relaxed text-navy-muted dark:text-gray-300">{t("giris")}</p>
         </div>
 
         {/* Öne çıkan ilke: aralıklı tekrar + ürünün gerçek tekrar takvimi */}
@@ -170,7 +167,7 @@ export async function OgrenmeBilimiSection() {
         </Reveal>
 
         <RevealGroup as="ul" className="mt-6 grid gap-6 md:grid-cols-3">
-          {ILKELER.map(({ id, icon: Icon, kaynaklar, ton }) => (
+          {ILKELER.map(({ id, icon: Icon, ton }) => (
             <li
               key={id}
               className="flex flex-col rounded-3xl border border-cream-dark bg-white p-5 shadow-sm transition-shadow duration-300 ease-hupo-out hover:shadow-lg motion-reduce:transition-none sm:p-6 dark:border-gray-800 dark:bg-gray-900"
@@ -183,26 +180,6 @@ export async function OgrenmeBilimiSection() {
                 <div>
                   <dt className={ETIKET_HUPO}>{t("etiketHupoda")}</dt>
                   <dd className="mt-2 leading-relaxed text-navy dark:text-gray-100">{t(`ilkeler.${id}.hupoda`)}</dd>
-                </div>
-                <div className="mt-auto border-t border-cream-dark pt-4 dark:border-gray-800">
-                  {kaynaklar.length > 0 ? (
-                    <>
-                      <dt className={ETIKET_ARASTIRMA}>{t("etiketArastirma")}</dt>
-                      <dd className="mt-2 text-sm leading-relaxed text-navy-muted dark:text-gray-300">
-                        {t(`ilkeler.${id}.arastirma`)}
-                      </dd>
-                      <dd className="mt-2 text-xs leading-relaxed text-navy-muted dark:text-gray-400">
-                        {t("kaynakOnEki")}: {atiflar(kaynaklar)}
-                      </dd>
-                    </>
-                  ) : (
-                    <>
-                      <dt className={ETIKET_TASARIM}>{t("etiketTasarim")}</dt>
-                      <dd className="mt-2 text-sm leading-relaxed text-navy-muted dark:text-gray-300">
-                        {t("tasarimNot")}
-                      </dd>
-                    </>
-                  )}
                 </div>
               </dl>
             </li>

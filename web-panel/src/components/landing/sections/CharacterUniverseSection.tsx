@@ -1,8 +1,5 @@
 // Statik veri yalnızca fallback olarak kullanılır (DB boşsa)
-import { TrackedLink } from "@/components/analytics/TrackedLink";
 import { CHARACTER_CLASSES } from "@/data/characters";
-import { landingPrimaryBtn } from "@/components/landing/buttons";
-import { IconArrowRight } from "@/components/landing/Icons";
 import { RevealGroup } from "@/components/landing/motion/RevealGroup";
 import { SplitText } from "@/components/landing/motion/SplitText";
 import { createClient } from "@/utils/supabase/server";
@@ -165,18 +162,6 @@ export async function CharacterUniverseSection() {
           })}
         </RevealGroup>
 
-        {/* CTA */}
-        <div className="mt-12 flex justify-center">
-          <TrackedLink
-            href="/veli-paneli/kayit"
-            olay="veli_kayit_baslatildi"
-            ozellik={{ konum: "karakterler" }}
-            className={landingPrimaryBtn}
-          >
-            {t("characters.cta")}
-            <IconArrowRight className="h-5 w-5" />
-          </TrackedLink>
-        </div>
       </div>
     </section>
   );

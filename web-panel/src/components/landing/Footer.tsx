@@ -89,9 +89,6 @@ export async function LandingFooter() {
 
       <div className="mx-auto mt-8 flex max-w-6xl flex-wrap items-center justify-between gap-4 border-t border-cream-dark px-4 pt-6 sm:px-6 lg:px-8 dark:border-gray-800">
         <p className="text-sm text-navy-muted dark:text-gray-400">{t("footer.copyright")}</p>
-        <p className="inline-flex items-center gap-2 rounded-full bg-gold-100 px-3 py-1 text-xs font-bold text-gold-900 dark:bg-gold-900/30 dark:text-gold-200">
-          {t("footer.pilot")}
-        </p>
       </div>
     </footer>
   );
