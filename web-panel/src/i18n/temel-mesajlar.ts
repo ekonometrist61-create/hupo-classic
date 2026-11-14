@@ -13,8 +13,6 @@ const MESAJ_PARCALARI = [
   "yonetim-kullanim",
   "yonetim-deneme",
   "veli-trial",
-  "paket-kapisi",
-  "yonetim-paketler",
 ] as const;
 
 function nesneMi(value: unknown): value is MesajNesnesi {

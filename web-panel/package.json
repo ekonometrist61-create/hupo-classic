@@ -50,6 +50,9 @@
     "dompurify": "^3.4.17",
     "recharts": {
       "react-is": "^19.2.0"
+    },
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "^11.0.1"
     }
   },
   "allowScripts": {
