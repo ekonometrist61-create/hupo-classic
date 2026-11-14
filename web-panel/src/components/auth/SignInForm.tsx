@@ -2,6 +2,7 @@
 
 import { STUDENT_APP_URL } from "@/lib/app-url";
 import { authDilCevir, authHataMetni, authMetni } from "@/lib/auth/hata";
+import { haneKaynagiYaz } from "@/lib/analytics/kaynak";
 import { girisKaydiYaz } from "@/lib/auth/girisKaydi";
 import { TurnstileWidget } from "@/components/guvenlik/TurnstileWidget";
 import { guvenliYonlendirme } from "@/lib/auth/yonlendirme";
@@ -95,6 +96,8 @@ export default function SignInForm({ variant = "veli" }: { variant?: Kapi }) {
       setLoading(false);
       // Giriş kaydı yardımcıdır: hata yutulur, girişi bozmaz; yalnız rol kapısından geçen giriş yazılır.
       void girisKaydiYaz("web");
+      // Kayıtta metadata'ya konan ilk temas UTM'si hane kartına yazılır (yalnız veli girişi).
+      if (variant === "veli") await haneKaynagiYaz(supabase, data.user);
       const hedef = guvenliYonlendirme(next, KAPI_ALANI[variant], HEDEF[variant]);
 
       // Yönetim: iki adımlı doğrulama (GÖR-106). Faktörü olan hesap kod girer; faktörü olmayana

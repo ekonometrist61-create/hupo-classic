@@ -93,7 +93,7 @@ export default function UserDropdown() {
 
         <ul className="flex flex-col gap-1 border-b border-gray-200 pt-3 pb-3 dark:border-gray-800">
           {/* Dil seçici */}
-          <li className="relative" ref={subDropdownRef}>
+          <li className={cn("relative", languages.length < 2 && "hidden")} ref={subDropdownRef}>
             <button
               type="button"
               onClick={() => setIsSubDropdownOpen((prev) => !prev)}

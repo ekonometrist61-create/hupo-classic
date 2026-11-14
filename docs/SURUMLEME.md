@@ -38,6 +38,17 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.11.2 · 2026-11-14
+
+Düzeltme (PATCH). Landing metin sadeleştirmesi ve tip düzeltmesi.
+- Landing: "Söz verdiklerimiz" bölümü kaldırıldı; örnek ekran, erken erişim ve pilot notları kaldırıldı; 8 Dünya bölümündeki "Veli hesabı oluştur" butonu kaldırıldı; öğrenme ilkeleri kartlarındaki araştırma/tasarım alt blokları kaldırıldı; ana sayfa Hakkımızda bölümünden pilot notu kaldırıldı.
+- Landing: "ÖĞRETME TARZI / Hupo nasıl çalışıyor?" başlığı; hikâye adımı metinleri güncellendi.
+- Tip düzeltmesi: auth formlarında `kaynak` (UTM) çözümleme, dil seçici (İngilizce geçici kapalı), `temel-mesajlar`; `tsc --noEmit` temiz.
+
+**Migration:** yok.
+
+**Uyumluluk:** Yalnız panel; app ve veri sözleşmesi değişmedi.
+
 ### panel 0.9.0 · 2026-11-12
 
 Yeni kullanıcı yüzeyi (MINOR: yeni sayfa ve iki yeni landing bölümü).

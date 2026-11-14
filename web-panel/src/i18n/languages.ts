@@ -1,4 +1,4 @@
-import { TrFlagIcon, UsFlagIcon } from "@/icons";
+import { TrFlagIcon } from "@/icons";
 
 import type { Locale } from "./routing";
 
@@ -19,13 +19,8 @@ export const languages: Language[] = [
     dir: "ltr",
     FlagIcon: TrFlagIcon,
   },
-  {
-    id: "en",
-    name: "English",
-    shortName: "English",
-    dir: "ltr",
-    FlagIcon: UsFlagIcon,
-  },
+  // İngilizce (en) geçici olarak kapalı: dil seçeneği gizli, /en yönlendirmesi Türkçeye döner.
+  // Geri açmak için buraya { id: "en", ... } girdisini ekle; seçici otomatik görünür.
   // Add languages according to requirement
   // {
   //   id: "ar",
