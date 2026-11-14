@@ -162,8 +162,14 @@ export default function SinifOkumaAnlamaPage() {
             Örnek hikâyeyi deneyin
           </h2>
           <p className="leading-relaxed text-navy-muted dark:text-gray-300">
-            Kayıt gerekmez. Sayfaları okuyabilir, soruları çözebilirsiniz; cevaplarınız kaydedilmez.
+            Kayıt gerekmez. Uygulamadaki gibi önce kahramanı seçin ve adını yazın, sonra sayfaları okuyup soruları
+            çözün. Cevaplarınız kaydedilmez.
           </p>
+          <ol className="list-decimal space-y-1 ps-6 leading-relaxed text-navy-muted dark:text-gray-300">
+            <li>Kahramanı seçin ve bir ad yazın.</li>
+            <li>Hikâyeyi sayfa sayfa okuyun.</li>
+            <li>Soruları cevaplayın; her cevaptan sonra açıklamayı görün.</li>
+          </ol>
           <Link
             href="/okuma-demo"
             className="inline-flex min-h-12 items-center justify-center rounded-xl bg-brand-500 px-6 text-base font-extrabold text-white transition-colors hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 motion-reduce:transition-none"

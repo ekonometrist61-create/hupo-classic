@@ -17,6 +17,7 @@ export async function LandingHeader() {
     { href: "#characters", label: t("nav.characters") },
     { href: "#pricing", label: t("nav.pricing") },
     { href: "#faq", label: t("nav.faq") },
+    { href: "/hakkimizda", label: t("nav.about") },
   ];
 
   return (
@@ -40,13 +41,13 @@ export async function LandingHeader() {
           className="hidden items-center gap-1 whitespace-nowrap text-sm font-bold text-navy-muted lg:flex dark:text-gray-300"
         >
           {navItems.map(({ href, label }) => (
-            <a
+            <Link
               key={href}
               href={href}
               className="inline-flex min-h-11 min-w-11 items-center justify-center px-2 hover:text-brand-600 dark:hover:text-brand-300"
             >
               {label}
-            </a>
+            </Link>
           ))}
         </nav>
 

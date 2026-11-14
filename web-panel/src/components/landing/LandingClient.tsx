@@ -14,6 +14,7 @@ const NAV_ITEMS = [
   { href: "#characters", key: "characters" },
   { href: "#pricing", key: "pricing" },
   { href: "#faq", key: "faq" },
+  { href: "/hakkimizda", key: "about" },
 ] as const;
 
 export function MobileMenu() {
@@ -49,14 +50,14 @@ export function MobileMenu() {
         >
           <nav aria-label={t("label")} className="flex flex-col">
             {NAV_ITEMS.map((item) => (
-              <a
+              <Link
                 key={item.key}
                 href={item.href}
                 onClick={() => setOpen(false)}
                 className="flex min-h-11 items-center rounded-lg px-3 text-base font-semibold text-navy hover:bg-cream-dark dark:text-gray-100 dark:hover:bg-gray-800"
               >
                 {t(item.key)}
-              </a>
+              </Link>
             ))}
             <a
               href={STUDENT_APP_URL}

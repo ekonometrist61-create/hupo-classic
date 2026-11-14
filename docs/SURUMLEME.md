@@ -38,6 +38,16 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.11.3 · 2026-11-14
+
+Düzeltme (PATCH). Hakkımızda sayfası yeni metinle güncellendi; Hakkında menüsü eklendi; örnek hikâye denemesi uygulamadaki akışa göre yeniden kuruldu.
+- /hakkimizda: kurucu hikâyesi metni; iletişim bölümü korundu. Landing header ve mobil menüde "Hakkında" bağlantısı.
+- /okuma-demo: kahraman seçimi (ad, yol arkadaşı, uygulamadaki ad kuralları), hikâye metninde ad belirteçleri, soru ekranı (şık, Cevapla, geri bildirim, ipucu), sonuç. Kayıtsız; cevaplar sunucuya gitmez.
+- sinif-okuma-anlama: "Örnek hikâyeyi deneyin" adımları yeni akışa göre.
+
+**Migration:** yok.
+
+**Uyumluluk:** Yalnız panel; app ve veri sözleşmesi değişmedi.
 ### panel 0.11.2 · 2026-11-14
 
 Düzeltme (PATCH). Landing metin sadeleştirmesi ve tip düzeltmesi.

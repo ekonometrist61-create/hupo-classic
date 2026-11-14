@@ -1,9 +1,8 @@
 // Okuma Dünyası örnek hikâyesi (statik, kayıtsız demo).
 // Kaynak: C:\Dev\Senin Hikayen - HupoRead\icerik\pilot-2-sinif\hr014-yagmur-damlasinin-yolculugu.hikaye.md
-// Token karşılıkları: {kahraman} -> Ela, {yoldas:yalin|Hupo} -> Hupo, {kelime:...} -> düz metin,
-// {isaret:bulut} -> kaldırıldı (çizim işareti), {atasozu:ata_damla} -> "Damlaya damlaya göl olur".
-// DURUM: kaynak taslak; insan okuması ve üç göz onayı tamamlanmadı. Bu sayfa yayın kapısına kadar noindex.
+// Belirteçler uygulamadaki gibi çalışır: {kahraman} → çocuğun seçtiği ad, {yoldas} → yol arkadaşı adı ya da varsayılan Hupo.
 // Cevap anahtarı istemci paketindedir; demo kayıt tutmaz ve sunucuda doğrulama yapılmaz.
+// DURUM: kaynak taslak; insan okuması ve üç göz onayı tamamlanmadı. Bu sayfa yayın kapısına kadar noindex.
 
 export type BeceriTuru = "hatirlama" | "cikarim" | "yorumlama" | "sozcuk_baglami";
 export type SecenekId = "A" | "B" | "C";
@@ -46,12 +45,12 @@ export const DEMO_HIKAYE: DemoHikaye = {
   tur: "Bilim",
   deger: "Tasarruf",
   sayfalar: [
-    "Ela bir sabah pencereye vuran yağmur damlasını gördü. “Acaba bu damla nereden geldi?” diye sordu. Damla sanki onu duymuş gibi camdan aşağı kaydı. Hupo da yanında merakla bakıyordu.",
-    "Ela damlanın bir bulutun içinde olduğunu hayal etti. Çevrede pek çok damlacık vardı. Rüzgâr bulutu sürükleyince hepsi sallandı. Bazı damlacıklar birleşip ağırlaştı ve aşağı düşmeye başladı.",
+    "{kahraman} bir sabah pencereye vuran yağmur damlasını gördü. “Acaba bu damla nereden geldi?” diye sordu. Damla sanki onu duymuş gibi camdan aşağı kaydı. {yoldas} da yanında merakla bakıyordu.",
+    "{kahraman} damlanın bir bulutun içinde olduğunu hayal etti. Çevrede pek çok damlacık vardı. Rüzgâr bulutu sürükleyince hepsi sallandı. Bazı damlacıklar birleşip ağırlaştı ve aşağı düşmeye başladı.",
     "Damla önce bir yaprağa çarptı, sonra toprağa kaydı. Toprak suyu emdi; bir kısmı küçük bir su yoluna karıştı. Su yolu başka sularla birleşip dereye dönüştü. Dar bir yerde su daha hızlı, geniş bir yerde daha yavaş akıyordu.",
-    "Güneş çıkınca göl parladı. Damla buharlaşıp görünmez bir buhar olarak havaya yükseldi. Ela bunu öğrenince çok şaşırdı. “Demek yolculuk bitmedi,” dedi. Serin havada yeniden oluşan damlacıklar buluta karışacaktı.",
-    "Hupo defterine üç sözcük yazdı: yağış, buharlaşma, yoğunlaşma. Her birinin yanına küçük resimler çizdiler. Bulut, dere, göl ve güneş arasına oklar koydular. Öğretmen bunun su döngüsü olduğunu söyledi.",
-    "Ertesi gün öğretmen soğuk bir kabın yüzeyinde su damlaları gösterdi. Havadaki su buharı soğuk yüzeyde yoğunlaşmıştı. Ela küçük bir not kâğıdına bir damla çizdi ve ona “Yolcu” adını verdi. “Yağmur hiç bitiyor mu?” diye sordu. Öğretmen, suyun döngüde sürekli dolaştığını anlattı. Ela gülerek “Damlaya damlaya göl olur” dedi. Ela musluğu açık bırakmamaya karar verdi.",
+    "Güneş çıkınca göl parladı. Damla buharlaşıp görünmez bir buhar olarak havaya yükseldi. {kahraman} bunu öğrenince çok şaşırdı. “Demek yolculuk bitmedi,” dedi. Serin havada yeniden oluşan damlacıklar buluta karışacaktı.",
+    "{yoldas} defterine üç sözcük yazdı: yağış, buharlaşma, yoğunlaşma. Her birinin yanına küçük resimler çizdiler. Bulut, dere, göl ve güneş arasına oklar koydular. Öğretmen bunun su döngüsü olduğunu söyledi.",
+    "Ertesi gün öğretmen soğuk bir kabın yüzeyinde su damlaları gösterdi. Havadaki su buharı soğuk yüzeyde yoğunlaşmıştı. {kahraman} küçük bir not kâğıdına bir damla çizdi ve ona “Yolcu” adını verdi. “Yağmur hiç bitiyor mu?” diye sordu. Öğretmen, suyun döngüde sürekli dolaştığını anlattı. {kahraman} gülerek “Damlaya damlaya göl olur” dedi. {kahraman} musluğu açık bırakmamaya karar verdi.",
   ],
   sorular: [
     {
@@ -108,3 +107,8 @@ export const DEMO_HIKAYE: DemoHikaye = {
     },
   ],
 };
+
+/** Belirteçleri çocuğun seçtiği adlarla doldurur. Ad yoksa varsayılan Hupo kullanılır. */
+export function hikayeMetniDoldur(metin: string, ad: string, yoldas?: string): string {
+  return metin.replaceAll("{kahraman}", ad).replaceAll("{yoldas}", yoldas?.trim() || "Hupo");
+}

@@ -25,8 +25,8 @@ export default function OkumaDemoPage() {
           </p>
           <h1 className="text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">{DEMO_HIKAYE.baslik}</h1>
           <p className="leading-relaxed text-navy-muted dark:text-gray-300">
-            Hupo ile Ela’nın bir damlanın yolculuğunu takip ettiği kısa bir hikâye. Sayfaları kendi hızında oku;
-            sorular hikâyenin sonunda gelir. Maarif değeri: {DEMO_HIKAYE.deger}.
+            Önce kahramanını seç, sonra hikâyeyi kendi hızında oku. Sorular hikâyenin sonunda gelir. Maarif değeri:{" "}
+            {DEMO_HIKAYE.deger}.
           </p>
         </header>
 
