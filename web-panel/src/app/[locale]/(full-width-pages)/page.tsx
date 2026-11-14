@@ -1,12 +1,13 @@
 import { LandingFooter } from "@/components/landing/Footer";
 import { LandingHeader } from "@/components/landing/Header";
 import { LandingMotion } from "@/components/landing/motion/LandingMotion";
-import { BenefitsSection } from "@/components/landing/sections/BenefitsSection";
 import { CharacterUniverseSection } from "@/components/landing/sections/CharacterUniverseSection";
 import { DemoSection } from "@/components/landing/sections/DemoSection";
 import { DuyuruSeridi } from "@/components/landing/sections/DuyuruSeridi";
 import { FaqSection } from "@/components/landing/sections/FaqSection";
+import { FarkSection } from "@/components/landing/sections/FarkSection";
 import { FinalCtaSection } from "@/components/landing/sections/FinalCtaSection";
+import { HakkimizdaSection } from "@/components/landing/sections/HakkimizdaSection";
 import { HeroSection } from "@/components/landing/sections/HeroSection";
 import { HikayelerSection } from "@/components/landing/sections/HikayelerSection";
 import { HowItWorksSection } from "@/components/landing/sections/HowItWorksSection";
@@ -27,8 +28,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: t("metaTitle"), description: t("metaDescription") };
 }
 
-// Bölüm sırası sadeleştirildi: fayda → örnek soru → nasıl çalışır → veli raporu → karakterler →
-// güven → fiyat → SSS → tek CTA. Tek CTA kuralı için ayrı deneme sınavı ve erken erişim
+// Bölüm sırası sadeleştirildi: fayda (farkımız dahil) → örnek soru → nasıl çalışır → veli raporu →
+// karakterler → güven → fiyat → SSS → hakkımızda → tek CTA. Tek CTA kuralı için ayrı deneme sınavı ve erken erişim
 // bölümleri bu sayfadan çıkarıldı (ilgili rotalar çalışmaya devam eder).
 // LandingMotion: Lenis (yalnız bu sayfa) ve GSAP köprüsünü sarar; bölümler server component kalır.
 export default async function LandingPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -53,7 +54,9 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
 
         <main id="main">
           <HeroSection />
-          <BenefitsSection />
+          {/* Farkımız: oynayarak öğrenme, takip ve yer bilme, proje okullarına hazırlık desteği. */}
+          <FarkSection />
+          {/* Benefits (01–03 kartları) gerçek ekran görüntüleri hazır olana kadar sayfada gösterilmez. */}
           <DemoSection />
           <HowItWorksSection />
           <ParentPanelSection />
@@ -71,6 +74,8 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
           {/* İkincil, düşük vurgulu rehber bandı (NEXT_PUBLIC_LEAD_MAGNET_ACIK kapalıyken çizilmez). */}
           <RehberBandi />
           <FaqSection />
+          {/* Kısa Hakkımızda: neden varız, Hupo kim, pilot notu; /hakkimizda bağlantısı. */}
+          <HakkimizdaSection />
           <FinalCtaSection />
         </main>
 

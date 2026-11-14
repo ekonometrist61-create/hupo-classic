@@ -452,9 +452,9 @@
       "freeTrial": "Try sample questions"
     },
     "hero": {
-      "badge": "Grades 3–7 · Project Middle School Prep",
-      "title": "Support the habit of practice with small daily tasks",
-      "subtitle": "Your child does short 10-question daily tasks; you see which topic needs another look.",
+      "badge": "Grades 3–7 · Project School Prep Support",
+      "title": "Let your child learn by playing, and learn to love learning",
+      "subtitle": "Hupolingo turns short tasks into a fun game. It tracks progress and supports preparation for project middle schools.",
       "ctaPrimary": "Try sample questions",
       "ctaSecondary": "Create parent account",
       "note": "No account needed for the sample questions. Creating a parent account does not ask for card details, and no automatic charge is made.",
@@ -627,11 +627,7 @@
           "baslik": "Short, regular practice",
           "hupoda": "The daily goal is 5, 10, 15 or 20 questions; the default is 10. The aim is small regular steps, not long sessions."
         }
-      },
-      "dipnot": "These studies were done in other learning settings; the findings are not Hupolingo's own results.",
-      "kutuphaneBaslik": "Check the sources yourself",
-      "kutuphaneAciklama": "We collected the design, finding and limits of {sayi} studies on one page.",
-      "kutuphaneLink": "Method and sources"
+      }
     },
     "plans": {
       "title": "Plans",
@@ -1117,19 +1113,27 @@
       "arena": {
         "ad": "Arena",
         "desc": "Progress in the league and the challenge of the day. Other children's names are not shown in rankings. Playing against a friend is not available yet; it is coming soon.",
-        "alt": "The Arena screen in the Hupolingo app: league progress, the 5 questions of the day, practice exams and challenge a friend."
+        "alt": "Arena card: a strip with Monthly League and 5 Questions of the Day on top; a VS badge between the You and Your friend avatars; below it, Challenge a friend, coming soon.",
+        "duello": {
+          "sen": "You",
+          "arkadas": "Your friend",
+          "vs": "VS",
+          "meydan": "Challenge a friend",
+          "lig": "Monthly League",
+          "gun": "5 Questions of the Day"
+        }
       }
     },
     "hikayeler": {
-      "marka": "Senin Hikâyen (Your Story)",
+      "marka": "Stories",
       "rozetErken": "Early access",
       "rozetYakinda": "Coming soon",
-      "title": "Your child becomes the hero of the story while reading",
-      "desc": "Children step into the story as themselves or a companion: they explore, laugh and wonder. A few short questions at the end let them check what they understood. Reading starts like an adventure, not like a to-do list.",
+      "title": "Reading starts like an adventure, not like a to-do list",
+      "desc": "Mystery, adventure, science fiction and more: children browse stories suited to their grade by genre, then check what they understood with a few short questions.",
       "adimlar": [
         {
-          "baslik": "Picks the hero",
-          "aciklama": "They become themselves or a companion in the story. The name they type stays on the device while the story runs; it is not saved."
+          "baslik": "Picks a genre",
+          "aciklama": "Starts from the world they are curious about: mystery, adventure, science fiction and other genres."
         },
         {
           "baslik": "Reads the story",
@@ -1140,16 +1144,25 @@
           "aciklama": "A few questions at the end: they see what they understood and notice what to revisit."
         }
       ],
-      "kart": "A small check when the story ends: did it make sense, where should we go back?",
       "cta": "Create parent account",
-      "durumNotu": "The app is in early access for now; scope and look may change. Stories are written for Hupo and are not presented as official school content. The stories are in Turkish.",
       "notHazirlik": "Stories are being prepared. Every story is read and approved by an editor before publishing; this section updates as they go live.",
-      "turler": "Genres",
-      "gorselTurAlt": "The Hupolingo app screen showing story genres: Mystery, Space and Science Fiction, Adventure, Sports.",
-      "gorselKesfetAlt": "The Hupolingo app Learn screen showing the story of the day next to story genres.",
-      "not": "Every story is read and approved by an editor before publishing. AI review results are recorded to assist the editor; the publishing decision is the editor's. The genre list updates automatically as new stories are added.",
-      "ekranTurAlt": "Genre selection in the Hupolingo app: adventure, mystery, science fiction and other genres.",
-      "ekranKesfetAlt": "Story discovery screen in the Hupolingo app: story of the day and genre strip."
+      "not": "Every story is read and approved by an editor before publishing. AI review results are recorded to assist the editor; the publishing decision is the editor's.",
+      "mockAlt": "Example story screen from the Hupolingo app: a Story of the day card and covers for the Mystery, Space and Science Fiction, Adventure and History and Culture genres.",
+      "mockNot": "Sample screen · stories and images may change",
+      "mock": {
+        "baslik": "Stories",
+        "bugun": "Story of the day",
+        "bugunBaslik": "Kuledeki Son Işık",
+        "bugunMeta": "Adventure · Grade 5",
+        "basla": "Start the story",
+        "kesfet": "Discover stories",
+        "turler": {
+          "gizem": "Mystery",
+          "uzay": "Space and Science Fiction",
+          "macera": "Adventure",
+          "tarih": "History and Culture"
+        }
+      }
     },
     "seninHikayen": {
       "marka": "Your Story",
@@ -1160,7 +1173,7 @@
       "adimlar": [
         {
           "baslik": "Chooses the hero",
-          "aciklama": "The hero can be the child, Hupo, a family member, a friend, an animal or a vehicle."
+          "aciklama": "The hero can be the child, a family member, a friend, an animal or a vehicle."
         },
         {
           "baslik": "Chooses the genre",
@@ -1180,12 +1193,64 @@
       "sinifBaglanti": "Grade {sinif} story experience",
       "demoCta": "Try the story experience",
       "cta": "Create a parent account",
-      "gorselAltyazi": "Real screens from the app: hero, name and companion selection.",
-      "ekranAlt": [
-        "Hero selection screen: Me, Hupo, Mom and other hero cards.",
-        "Hero name screen: the child writes their own hero name.",
-        "Companion screen: an optional travel companion is added and named."
+      "mockAlt": "Example screen from the hero flow in the Hupolingo app: Me selected as the hero, Adventure genre, the hero named Explorer and a companion named Cotton. The names are made up.",
+      "mockNot": "Sample screen · made-up names",
+      "mock": {
+        "baslik": "Your Story",
+        "soru": "Who is your hero?",
+        "kahramanEtiket": "Choose your hero",
+        "kahramanlar": [
+          "Me",
+          "Mom",
+          "Dad",
+          "Sibling",
+          "Friend",
+          "Animal",
+          "Vehicle",
+          "Imaginary",
+          "Someone else"
+        ],
+        "turEtiket": "Choose a genre",
+        "turler": [
+          "Adventure",
+          "Mystery",
+          "Science fiction"
+        ],
+        "adEtiket": "Hero's name",
+        "ad": "Explorer",
+        "oneri": "Suggestion",
+        "yoldasEtiket": "Add a travel companion (optional)",
+        "yoldasAdEtiket": "Companion's name",
+        "yoldasAd": "Cotton",
+        "cta": "See the stories"
+      }
+    },
+    "farkimiz": {
+      "title": "What makes Hupolingo different",
+      "items": [
+        {
+          "title": "Learning by playing",
+          "desc": "We start practice with play. Short tasks and Hupo by your child's side make solving questions fun. Our aim is for your child to enjoy learning."
+        },
+        {
+          "title": "Tracking and knowing where you stand",
+          "desc": "Hupolingo tracks learning. Your child notices where they stand at their own grade level, and you see in the parent panel which topic needs another look. The point is not to compare, but to know where to continue."
+        },
+        {
+          "title": "Project school preparation",
+          "desc": "It supports preparation for project schools. Topics and learning goals are tracked, so gaps are easier to see and close. We do not promise exam or admission results; we make regular practice easier."
+        }
       ]
+    },
+    "hakkimizda": {
+      "eyebrow": "About us",
+      "title": "Why are we here?",
+      "p1": "In many homes, the evening starts with the same question: “What did you study today?” The answer is often vague. Your child studied, but what stuck and what needs another look stays hidden.",
+      "p2": "Hupolingo exists to shrink that uncertainty. Your child solves short tasks through play; in the parent panel you clearly see what was practiced and what needs another look.",
+      "hupoTitle": "Who is Hupo?",
+      "hupoText": "Hupo is your child's study buddy.",
+      "pilotNote": "Hupolingo is in its pilot stage. We only describe what the app really does.",
+      "link": "Go to the About page"
     }
   },
   "sidebar": {

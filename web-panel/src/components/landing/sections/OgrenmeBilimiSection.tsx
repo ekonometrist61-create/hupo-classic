@@ -1,14 +1,14 @@
-import { IconArrowRight, IconBook, IconRepeat, IconSteps, IconTimer } from "@/components/landing/Icons";
+import { IconBook, IconRepeat, IconSteps, IconTimer } from "@/components/landing/Icons";
 import { Reveal } from "@/components/landing/motion/Reveal";
 import { RevealGroup } from "@/components/landing/motion/RevealGroup";
 import { KAYNAKLAR } from "@/components/landing/yontem/kaynaklar";
-import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import type { ComponentType, SVGProps } from "react";
 
 // "Hupo neden böyle çalışıyor?" — her ilke iki ayrı satırla anlatılır:
 //   "Hupo'da" = ürünün gerçek davranışı (kodla doğrulandı), "Araştırmalar" = yalnız kaynaklar.ts'teki kaynaklar.
 // Akademik bulgu (g/d değerleri) ürün şemasına konmaz; ayrıntı ve sınırlar /yontem sayfasındadır.
+// "Kaynakları kendiniz inceleyin" şeridi (kaynak sayısı, /yontem bağlantısı, dipnot) bu bölümden kaldırıldı (2026-11-14 kararı).
 // Ürün kaynakları:
 //   - Tekrar takvimi: submit_answer SM-2 (supabase/migrations/20261009000000_gorevler.sql):
 //     yanlış → 1 gün; doğru → 1 gün, 6 gün, sonra aralık × kolaylık katsayısı.
@@ -208,24 +208,6 @@ export async function OgrenmeBilimiSection() {
             </li>
           ))}
         </RevealGroup>
-
-        <Reveal className="mt-6">
-          <div className="flex flex-col gap-4 rounded-3xl border border-navy/10 bg-white/60 p-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-6 dark:border-gray-800 dark:bg-gray-900/60">
-            <div className="max-w-2xl">
-              <p className="font-extrabold">{t("kutuphaneBaslik")}</p>
-              <p className="mt-1 text-sm leading-relaxed text-navy-muted dark:text-gray-300">
-                {t("kutuphaneAciklama", { sayi: KAYNAKLAR.length })} {t("dipnot")}
-              </p>
-            </div>
-            <Link
-              href="/yontem"
-              className="group inline-flex min-h-11 shrink-0 items-center justify-center gap-2 self-start rounded-full border-2 border-brand-500 px-5 font-bold text-brand-700 transition-colors duration-200 hover:bg-brand-500 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 motion-reduce:transition-none sm:self-auto dark:border-brand-400 dark:text-brand-200 dark:hover:bg-brand-400 dark:hover:text-gray-950"
-            >
-              {t("kutuphaneLink")}
-              <IconArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:transition-none rtl:rotate-180" />
-            </Link>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

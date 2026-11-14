@@ -452,9 +452,9 @@
       "freeTrial": "Örnek soruları dene"
     },
     "hero": {
-      "badge": "3–7. Sınıf · Proje Ortaokulu Hazırlığı",
-      "title": "Soru çözme alışkanlığını küçük görevlerle destekleyin",
-      "subtitle": "Çocuğunuz günde 10 soruluk kısa görevler yapsın; siz hangi konuyu tekrar etmesi gerektiğini görün.",
+      "badge": "3–7. Sınıf · Proje Okulu Hazırlık Desteği",
+      "title": "Çocuğunuz oynayarak öğrensin, öğrenmeyi sevsin",
+      "subtitle": "Hupolingo, kısa görevleri oyunla eğlenceli hâle getirir. İlerlemeyi takip eder, proje okullarına hazırlanmayı destekler.",
       "ctaPrimary": "Örnek soruları dene",
       "ctaSecondary": "Veli hesabı oluştur",
       "note": "Örnek sorular için hesap gerekmez. Veli hesabı açarken kart bilgisi istenmez, otomatik ücret alınmaz.",
@@ -626,11 +626,7 @@
           "baslik": "Kısa ve düzenli çalışma",
           "hupoda": "Günlük hedef 5, 10, 15 veya 20 soru olarak seçilir; varsayılan 10 sorudur. Amaç uzun oturumlar değil, düzenli küçük adımlardır."
         }
-      },
-      "dipnot": "Bu araştırmalar başka öğrenme ortamlarında yapıldı; bulgular Hupolingo'nun kendi sonuçları değildir.",
-      "kutuphaneBaslik": "Kaynakları kendiniz inceleyin",
-      "kutuphaneAciklama": "{sayi} araştırmanın tasarımını, bulgusunu ve sınırını tek sayfada topladık.",
-      "kutuphaneLink": "Yöntem ve kaynaklar"
+      }
     },
     "plans": {
       "title": "Planlar",
@@ -1116,19 +1112,27 @@
       "arena": {
         "ad": "Arena",
         "desc": "Ligde ilerleme ve günün meydan okuması. Sıralamada başka çocukların adı görünmez. Arkadaşla yarışma henüz yok, yakında.",
-        "alt": "Hupolingo uygulamasında Arena ekranı: lig ilerlemesi, günün 5 sorusu, deneme sınavları ve arkadaşa meydan okuma."
+        "alt": "Arena kartı: üstte Ay Ligi ve Günün 5 Sorusu şeridi; ortada Sen ve Arkadaşın avatarları arasında VS rozeti; altında Arkadaşına meydan oku, yakında.",
+        "duello": {
+          "sen": "Sen",
+          "arkadas": "Arkadaşın",
+          "vs": "VS",
+          "meydan": "Arkadaşına meydan oku",
+          "lig": "Ay Ligi",
+          "gun": "Günün 5 Sorusu"
+        }
       }
     },
     "hikayeler": {
-      "marka": "Senin Hikâyen",
+      "marka": "Hikâyeler",
       "rozetErken": "Erken erişim",
       "rozetYakinda": "Yakında",
-      "title": "Çocuğunuz okurken hikâyenin kahramanı olur",
-      "desc": "Çocuk hikâyeye kendisi ya da bir yoldaş olarak girer; keşfeder, güler, merak eder. Sonunda birkaç küçük soruyla anladığını dener. Okuma, görev listesi gibi değil bir macera gibi başlar.",
+      "title": "Okuma, görev listesi gibi değil bir macera gibi başlar",
+      "desc": "Gizem, macera, bilim kurgu ve daha fazlası: çocuk sınıf düzeyine uygun hikâyeleri türe göre keşfeder, sonunda birkaç küçük soruyla anladığını dener.",
       "adimlar": [
         {
-          "baslik": "Kahramanı seçer",
-          "aciklama": "Hikâyede kendisi ya da bir yoldaş olur. Yazdığı ad hikâye sürerken cihazda durur; kaydedilmez."
+          "baslik": "Türünü seçer",
+          "aciklama": "Merak ettiği dünyadan başlar: gizem, macera, bilim kurgu ve diğer türler."
         },
         {
           "baslik": "Hikâyeyi okur",
@@ -1139,16 +1143,25 @@
           "aciklama": "Sonunda birkaç soru: anladığını görür, tekrar edilecek yer varsa fark eder."
         }
       ],
-      "kart": "Hikâye bitince küçük bir deneme: anladın mı, neresine dönelim?",
       "cta": "Veli hesabı oluştur",
-      "durumNotu": "Uygulama şu an erken erişimde; kapsam ve görünüm değişebilir. Hikâyeler Hupo için hazırlanmıştır; resmî okul içeriği olarak sunulmaz.",
       "notHazirlik": "Hikâyeler hazırlanıyor. Her hikâye yayından önce bir editör tarafından okunup onaylanır; yayına çıktıkça bu bölüm güncellenir.",
-      "turler": "Türler",
-      "gorselTurAlt": "Hupolingo uygulamasında hikâye türlerinin göründüğü ekran: Gizem, Uzay ve Bilim Kurgu, Macera, Spor.",
-      "gorselKesfetAlt": "Hupolingo uygulamasında günün hikâyesi ve hikâye türlerinin yan yana göründüğü Öğren ekranı.",
-      "not": "Her hikâye yayından önce bir editör tarafından okunup onaylanır. Yapay zekâ denetim sonuçları editöre yardımcı olarak kaydedilir; yayın kararı editöründür. Yeni hikâyeler eklendikçe tür listesi kendiliğinden güncellenir.",
-      "ekranTurAlt": "Hupolingo uygulamasında hikâye türü seçimi: macera, gizem, bilim kurgu ve diğer türler.",
-      "ekranKesfetAlt": "Hupolingo uygulamasında hikâyeleri keşfetme ekranı: günün hikâyesi ve tür şeridi."
+      "not": "Her hikâye yayından önce bir editör tarafından okunup onaylanır. Yapay zekâ denetim sonuçları editöre yardımcı olarak kaydedilir; yayın kararı editöründür.",
+      "mockAlt": "Hupolingo uygulamasından örnek hikâye ekranı: Bugünkü hikâye kartı ve Gizem, Uzay ve Bilim Kurgu, Macera, Tarih ve kültür türlerinin kapakları.",
+      "mockNot": "Örnek ekran · hikâye ve görseller değişebilir",
+      "mock": {
+        "baslik": "Hikâyeler",
+        "bugun": "Bugünkü hikâye",
+        "bugunBaslik": "Kuledeki Son Işık",
+        "bugunMeta": "Macera · 5. sınıf",
+        "basla": "Hikâyeye başla",
+        "kesfet": "Hikâyeleri keşfet",
+        "turler": {
+          "gizem": "Gizem",
+          "uzay": "Uzay ve Bilim Kurgu",
+          "macera": "Macera",
+          "tarih": "Tarih ve kültür"
+        }
+      }
     },
     "seninHikayen": {
       "marka": "Senin Hikâyen",
@@ -1159,7 +1172,7 @@
       "adimlar": [
         {
           "baslik": "Kahramanını seçer",
-          "aciklama": "Kendisi, Hupo, bir aile üyesi, arkadaş, hayvan ya da araç olabilir."
+          "aciklama": "Kendisi, bir aile üyesi, arkadaş, hayvan ya da araç olabilir."
         },
         {
           "baslik": "Türünü seçer",
@@ -1179,12 +1192,64 @@
       "sinifBaglanti": "{sinif}. sınıf hikâye deneyimi",
       "demoCta": "Hikâye deneyimini dene",
       "cta": "Veli hesabı oluştur",
-      "gorselAltyazi": "Uygulamadan gerçek ekranlar: kahraman, ad ve yol arkadaşı seçimi.",
-      "ekranAlt": [
-        "Kahraman seçimi ekranı: Ben, Hupo, Annem ve diğer kahraman kartları.",
-        "Kahramanın adı ekranı: çocuk kahramanına kendi adını yazar.",
-        "Yol arkadaşı ekranı: isteğe bağlı bir yol arkadaşı eklenir ve adı verilir."
+      "mockAlt": "Hupolingo uygulamasındaki kahraman akışından örnek ekran: kahraman olarak Ben seçili, tür Macera, kahramanın adı Kaşif ve yol arkadaşı Pamuk. Adlar kurgudur.",
+      "mockNot": "Örnek ekran · kurgu adlar",
+      "mock": {
+        "baslik": "Senin Hikâyen",
+        "soru": "Kahramanın kim olsun?",
+        "kahramanEtiket": "Kahramanını seç",
+        "kahramanlar": [
+          "Ben",
+          "Annem",
+          "Babam",
+          "Kardeşim",
+          "Arkadaşım",
+          "Hayvan",
+          "Araç",
+          "Hayalî",
+          "Başka biri"
+        ],
+        "turEtiket": "Türünü seç",
+        "turler": [
+          "Macera",
+          "Gizem",
+          "Bilim kurgu"
+        ],
+        "adEtiket": "Kahramanın adı",
+        "ad": "Kaşif",
+        "oneri": "Öneri",
+        "yoldasEtiket": "Yol arkadaşı ekle (isteğe bağlı)",
+        "yoldasAdEtiket": "Yol arkadaşının adı",
+        "yoldasAd": "Pamuk",
+        "cta": "Hikâyeleri gör"
+      }
+    },
+    "farkimiz": {
+      "title": "Hupolingo'yu farklı kılan",
+      "items": [
+        {
+          "title": "Oynayarak öğrenme",
+          "desc": "Çalışmayı oyunla başlatıyoruz. Kısa görevler ve Hupo eşliğinde soru çözmek eğlenceli hâle gelir. Amacımız, çocuğun öğrenmeyi sevmesi."
+        },
+        {
+          "title": "Takip ve yerini bilme",
+          "desc": "Hupolingo öğrenmeyi takip eder. Çocuğunuz kendi sınıf düzeyindeki yerini fark eder, siz de hangi konunun tekrar istediğini veli panelinde görürsünüz. Amaç kıyaslamak değil, nereden devam edeceğini bilmek."
+        },
+        {
+          "title": "Proje okullarına hazırlık",
+          "desc": "Proje okullarına hazırlanmayı destekler. Konular ve kazanımlar takip edilir; eksikleri görmek ve kapatmak kolaylaşır. Sınav veya kabul sonucu vaat etmiyoruz, düzenli pratiği kolaylaştırıyoruz."
+        }
       ]
+    },
+    "hakkimizda": {
+      "eyebrow": "Hakkımızda",
+      "title": "Neden buradayız?",
+      "p1": "Pek çok evde akşam aynı soruyla başlar: “Bugün ne çalıştın?” Cevap çoğu zaman belirsizdir. Çocuk çalışmıştır ama neyin oturduğu, neyin tekrar istediği görünmez.",
+      "p2": "Hupolingo bu belirsizliği küçültmek için var. Çocuğunuz kısa görevleri oyunla çözer; siz veli panelinde ne çalışıldığını ve neyin tekrar istediğini net görürsünüz.",
+      "hupoTitle": "Hupo kim?",
+      "hupoText": "Hupo, çocuğunuzun çalışma arkadaşı.",
+      "pilotNote": "Hupolingo pilot aşamada. Yalnızca uygulamada gerçekten olanları anlatıyoruz.",
+      "link": "Hakkımızda sayfasına git"
     }
   },
   "sidebar": {
