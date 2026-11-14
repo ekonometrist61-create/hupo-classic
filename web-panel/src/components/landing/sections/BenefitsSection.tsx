@@ -2,18 +2,20 @@ import { RevealGroup } from "@/components/landing/motion/RevealGroup";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
-// Her fayda bir Hupo pozuyla ve kendi renk tonuyla anlatılır (düz ikon kutuları yerine).
-// Sıra: kısa çalışma → açıklama → veli özeti.
+// Her fayda uygulamanın gerçek ekranıyla ve kendi renk tonuyla anlatılır (maskot/illüstrasyon kullanılmaz).
+// Sıra: kısa çalışma (soru ekranı) → açıklama (cevap sonrası) → veli özeti (veli raporu).
+// Görseller test hesaplarıyla alınmış gerçek ekranlardır; kırpma yalnız durum çubuğu ve alt gezinmeyi dışarıda bırakır.
 const BENEFIT_ART = [
-  { image: "hupo.dusunuyor", tone: "bg-brand-50", accent: "text-brand-600" },
-  { image: "hupo.dogru", tone: "bg-gold-100", accent: "text-gold-900" },
-  { image: "hupo.tamamlandi", tone: "bg-success-50", accent: "text-success-700" },
+  { src: "/landing/ekran/soru.webp", tone: "bg-brand-50", accent: "text-brand-600" },
+  { src: "/landing/ekran/aciklama.webp", tone: "bg-gold-100", accent: "text-gold-900" },
+  { src: "/landing/ekran/veli-raporu.webp", tone: "bg-success-50", accent: "text-success-700" },
 ] as const;
+
+type BenefitItem = { title: string; desc: string; gorselAlt?: string };
 
 export async function BenefitsSection() {
   const t = await getTranslations("landing");
-  const g = await getTranslations("gorseller");
-  const benefits = t.raw("benefits.items") as { title: string; desc: string }[];
+  const benefits = t.raw("benefits.items") as BenefitItem[];
 
   return (
     <section className="bg-white py-6 sm:py-8 lg:py-10 dark:bg-gray-900">
@@ -33,14 +35,17 @@ export async function BenefitsSection() {
                 key={item.title}
                 className="group flex flex-col overflow-hidden rounded-3xl border border-cream-dark bg-white p-3 shadow-sm transition-shadow duration-300 ease-hupo-out hover:shadow-xl motion-reduce:transition-none dark:border-gray-700 dark:bg-gray-800"
               >
-                <div className={`flex h-48 items-center justify-center rounded-2xl ${art.tone} dark:bg-gray-900`}>
+                {/* Sabit yükseklikli çerçeve: ekran görüntüsü kırpılmadan, oranı bozulmadan sığar; yatay taşma olmaz. */}
+                <div
+                  className={`flex h-72 items-center justify-center overflow-hidden rounded-2xl p-4 sm:h-80 ${art.tone} dark:bg-gray-900`}
+                >
                   <Image
-                    src={g(art.image)}
-                    alt=""
-                    width={200}
-                    height={200}
-                    sizes="160px"
-                    className="h-40 w-auto object-contain transition-transform duration-300 ease-hupo-out group-hover:-translate-y-1 motion-reduce:transition-none"
+                    src={art.src}
+                    alt={item.gorselAlt ?? ""}
+                    width={540}
+                    height={900}
+                    sizes="(min-width: 768px) 200px, 220px"
+                    className="h-auto max-h-full w-auto max-w-full rounded-xl bg-white shadow-lg ring-1 ring-navy/10 transition-transform duration-300 ease-hupo-out group-hover:-translate-y-1 motion-reduce:transition-none dark:ring-white/10"
                   />
                 </div>
 

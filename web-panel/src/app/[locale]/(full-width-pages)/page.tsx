@@ -1,6 +1,7 @@
 import { LandingFooter } from "@/components/landing/Footer";
 import { LandingHeader } from "@/components/landing/Header";
 import { LandingMotion } from "@/components/landing/motion/LandingMotion";
+import { BenefitsSection } from "@/components/landing/sections/BenefitsSection";
 import { CharacterUniverseSection } from "@/components/landing/sections/CharacterUniverseSection";
 import { DemoSection } from "@/components/landing/sections/DemoSection";
 import { DuyuruSeridi } from "@/components/landing/sections/DuyuruSeridi";
@@ -56,7 +57,7 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
           <HeroSection />
           {/* Farkımız: oynayarak öğrenme, takip ve yer bilme, proje okullarına hazırlık desteği. */}
           <FarkSection />
-          {/* Benefits (01–03 kartları) gerçek ekran görüntüleri hazır olana kadar sayfada gösterilmez. */}
+          <BenefitsSection />
           <DemoSection />
           <HowItWorksSection />
           <ParentPanelSection />

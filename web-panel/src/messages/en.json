@@ -473,15 +473,18 @@
       "items": [
         {
           "title": "Short, focused sessions",
-          "desc": "A session has at most 10 questions. Your child can start and finish without getting tired, and pick up where they left off the next day."
+          "desc": "A session has at most 10 questions. Your child can start and finish without getting tired, and pick up where they left off the next day.",
+          "gorselAlt": "A question screen in the Hupolingo app: the question text and answer choices are visible on a single screen."
         },
         {
           "title": "The reasoning behind the answer",
-          "desc": "A step-by-step solution appears after every answer. A wrong answer is not an end, it is a chance to read the explanation."
+          "desc": "A step-by-step solution appears after every answer. A wrong answer is not an end, it is a chance to read the explanation.",
+          "gorselAlt": "The step-by-step explanation screen shown in the Hupolingo app after an answer."
         },
         {
           "title": "A topic summary parents can read",
-          "desc": "See how many questions were solved in each subject and which topics should be reviewed, all on one screen."
+          "desc": "See how many questions were solved in each subject and which topics should be reviewed, all on one screen.",
+          "gorselAlt": "A screen in the Hupolingo parent panel summarizing the child's practice by subject and topic."
         }
       ]
     },

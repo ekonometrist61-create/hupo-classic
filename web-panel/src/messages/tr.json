@@ -473,15 +473,18 @@
       "items": [
         {
           "title": "Kısa ve odaklı çalışmalar",
-          "desc": "Bir çalışma en fazla 10 sorudan oluşur. Çocuğunuz yorulmadan başlar, bitirir ve bir sonraki gün kaldığı yerden devam eder."
+          "desc": "Bir çalışma en fazla 10 sorudan oluşur. Çocuğunuz yorulmadan başlar, bitirir ve bir sonraki gün kaldığı yerden devam eder.",
+          "gorselAlt": "Hupolingo uygulamasında bir soru ekranı: soru metni ve cevap seçenekleri tek ekranda görünür."
         },
         {
           "title": "Cevabın arkasındaki açıklama",
-          "desc": "Her cevaptan sonra adım adım çözüm görünür. Yanlış cevap bir son değil, açıklamaya bakmak için bir fırsattır."
+          "desc": "Her cevaptan sonra adım adım çözüm görünür. Yanlış cevap bir son değil, açıklamaya bakmak için bir fırsattır.",
+          "gorselAlt": "Hupolingo uygulamasında bir cevaptan sonra görünen adım adım açıklama ekranı."
         },
         {
           "title": "Veli için anlaşılır konu özeti",
-          "desc": "Hangi derste kaç soru çözüldüğünü ve hangi konuların tekrar edilmesi gerektiğini tek ekranda görürsünüz."
+          "desc": "Hangi derste kaç soru çözüldüğünü ve hangi konuların tekrar edilmesi gerektiğini tek ekranda görürsünüz.",
+          "gorselAlt": "Hupolingo veli panelinde çocuğun derslere ve konulara göre çalışma özetini gösteren ekran."
         }
       ]
     },
