@@ -587,12 +587,51 @@
       ]
     },
     "ogrenmeBilimi": {
-      "etiket": "GET TO KNOW THE SCIENCE OF LEARNING",
-      "baslik": "Not just fun: an approach aligned with learning research",
-      "giris": "Research suggests that well-designed gamification can support motivation, and that active question solving and spaced review can support learning. Hupolingo brings these approaches together in a child's everyday study experience.",
-      "hupoNot": "These studies were not conducted with Hupolingo's own students.",
-      "dipnot": "These findings are not Hupolingo's own results.",
-      "kutuphaneLink": "Research library and our method →"
+      "etiket": "LEARNING SCIENCE",
+      "baslik": "Why does Hupo work this way?",
+      "giris": "Each part of our study routine rests on a simple learning principle. For each one, we describe what happens in Hupo and what research says, separately.",
+      "etiketHupoda": "In Hupo",
+      "etiketArastirma": "What research says",
+      "etiketTasarim": "Our design choice",
+      "kaynakOnEki": "Source",
+      "tasarimNot": "Our library has no separate study for this principle. It is Hupo's own design decision.",
+      "tekrar": {
+        "baslik": "Spaced review: ask again when the time comes",
+        "hupoda": "A question answered wrong comes back to the review list the next day. Each time it is answered correctly, the next review moves further out.",
+        "arastirma": "Reviews that combine many studies suggest that spreading practice over time can support learning.",
+        "takvim": {
+          "baslik": "One question's review schedule (example)",
+          "ozet": "Example review schedule: a question solved correctly today comes back after 1 day, then after 6 days, then after a longer gap. After a wrong answer, it comes back the next day.",
+          "bugun": "Today",
+          "tekrar1": "Review 1",
+          "tekrar2": "Review 2",
+          "tekrar3": "Review 3",
+          "aralik1": "1 day",
+          "aralik2": "6 days",
+          "aralik3": "longer",
+          "yanlis": "After a wrong answer the schedule starts over: the question comes back the next day.",
+          "not": "Not drawn to scale. Gaps change with each question's answers."
+        }
+      },
+      "ilkeler": {
+        "geriCagirma": {
+          "baslik": "Recall first, then check",
+          "hupoda": "The child gives an answer first. The correct answer and the solution open only after the answer is sent.",
+          "arastirma": "A review of 53 studies in real classrooms found that practising by recalling information from memory supports learning."
+        },
+        "aciklama": {
+          "baslik": "Learning from mistakes",
+          "hupoda": "After answering, the step-by-step solution is shown. A question answered wrong is not lost; it is added to the review list."
+        },
+        "kisa": {
+          "baslik": "Short, regular practice",
+          "hupoda": "The daily goal is 5, 10, 15 or 20 questions; the default is 10. The aim is small regular steps, not long sessions."
+        }
+      },
+      "dipnot": "These studies were done in other learning settings; the findings are not Hupolingo's own results.",
+      "kutuphaneBaslik": "Check the sources yourself",
+      "kutuphaneAciklama": "We collected the design, finding and limits of {sayi} studies on one page.",
+      "kutuphaneLink": "Method and sources"
     },
     "plans": {
       "title": "Plans",
@@ -1064,36 +1103,53 @@
       "desc": "Children open these when they want to. The measure is still learning; there is no reward pressure, no time pressure and no selling to the child.",
       "rozetErken": "Early access",
       "rozetYakinda": "Coming soon",
-      "veliIcin": "For parents:",
       "durumNotu": "Early access: available in the app's test version; scope and look may change. Coming soon: not open yet. Learning content is in Turkish.",
       "carpim": {
         "ad": "Multiplication Codes (Çarpım Şifreleri)",
         "desc": "Instead of memorising the times table, children crack a code for each factor, which is a short rule. For example the \"Twos Code\": add the number to itself. Then small questions follow with that code.",
-        "veli": "It turns many separate facts into a few rules; your child tries to find a way instead of memorising."
+        "alt": "The Multiplication Codes screen in the Hupolingo app, listing the Mirror, Twos, Add-a-Zero and Fives codes."
       },
       "kelime": {
         "ad": "Word Universe (Kelime Evreni)",
         "desc": "Three game types for synonyms, antonyms and homophones. A word answered wrongly can be saved to look at again later.",
-        "veli": "Vocabulary is practised under its own heading. Content review is still in progress; it will open as it is completed."
+        "alt": "The Word Universe screen in the Hupolingo app, listing three word games."
       },
       "arena": {
         "ad": "Arena",
-        "desc": "Progress in the Moon League and the challenge of the day. Other children's names are not shown in rankings. Playing against a friend is not available yet; it is coming soon.",
-        "veli": "Competition is not the measure of learning. In the report you look at topics solved and what needs review, not at rank or XP."
+        "desc": "Progress in the league and the challenge of the day. Other children's names are not shown in rankings. Playing against a friend is not available yet; it is coming soon.",
+        "alt": "The Arena screen in the Hupolingo app: league progress, the 5 questions of the day, practice exams and challenge a friend."
       }
     },
     "hikayeler": {
-      "marka": "Dozens of stories",
+      "marka": "Senin Hikâyen (Your Story)",
       "rozetErken": "Early access",
       "rozetYakinda": "Coming soon",
-      "title": "Stories matched to the grade, sorted by genre",
-      "desc": "Adventure, mystery, science fiction, humor and history stories written for each grade level. Each one has vocabulary and reading questions, and many include an idiom.",
-      "sayi": "{count} published stories",
-      "sinif": "for grades {alt}–{ust}",
+      "title": "Your child becomes the hero of the story while reading",
+      "desc": "Children step into the story as themselves or a companion: they explore, laugh and wonder. A few short questions at the end let them check what they understood. Reading starts like an adventure, not like a to-do list.",
+      "adimlar": [
+        {
+          "baslik": "Picks the hero",
+          "aciklama": "They become themselves or a companion in the story. The name they type stays on the device while the story runs; it is not saved."
+        },
+        {
+          "baslik": "Reads the story",
+          "aciklama": "Stories chosen by grade level open within the daily reading allowance."
+        },
+        {
+          "baslik": "Checks with small questions",
+          "aciklama": "A few questions at the end: they see what they understood and notice what to revisit."
+        }
+      ],
+      "kart": "A small check when the story ends: did it make sense, where should we go back?",
+      "cta": "Create parent account",
+      "durumNotu": "The app is in early access for now; scope and look may change. Stories are written for Hupo and are not presented as official school content. The stories are in Turkish.",
+      "notHazirlik": "Stories are being prepared. Every story is read and approved by an editor before publishing; this section updates as they go live.",
       "turler": "Genres",
-      "notHazirlik": "Stories are being prepared. Every story is read and approved by an editor before it is published; this section updates as stories go live.",
-      "not": "Hupo prepares the stories; every story is approved by an editor before it is published.",
-      "cta": "Create a parent account"
+      "gorselTurAlt": "The Hupolingo app screen showing story genres: Mystery, Space and Science Fiction, Adventure, Sports.",
+      "gorselKesfetAlt": "The Hupolingo app Learn screen showing the story of the day next to story genres.",
+      "not": "Every story is read and approved by an editor before publishing. AI review results are recorded to assist the editor; the publishing decision is the editor's. The genre list updates automatically as new stories are added.",
+      "ekranTurAlt": "Genre selection in the Hupolingo app: adventure, mystery, science fiction and other genres.",
+      "ekranKesfetAlt": "Story discovery screen in the Hupolingo app: story of the day and genre strip."
     },
     "seninHikayen": {
       "marka": "Your Story",
@@ -1104,15 +1160,19 @@
       "adimlar": [
         {
           "baslik": "Chooses the hero",
-          "aciklama": "They become the hero or a buddy, and type the name themselves."
+          "aciklama": "The hero can be the child, Hupo, a family member, a friend, an animal or a vehicle."
         },
         {
-          "baslik": "Chooses a genre",
-          "aciklama": "Opens a story from an adventure, mystery or science-fiction genre. Stories matched to the grade open."
+          "baslik": "Chooses the genre",
+          "aciklama": "Picks adventure, mystery, science fiction or another genre. Stories for their grade open up."
         },
         {
-          "baslik": "Notices the idiom and the value",
-          "aciklama": "Each story carries a Maarif value, vocabulary and often an idiom. A few questions show what they understood."
+          "baslik": "Writes the name",
+          "aciklama": "Gives the hero their own name or picks a suggested one. The story is told with that name."
+        },
+        {
+          "baslik": "Adds a companion, if they like",
+          "aciklama": "Can place a travel companion next to the hero and give them a name too."
         }
       ],
       "not": "The name is kept only on this device. When the story ends, a short question round shows what they understood and what to revisit.",
@@ -1120,8 +1180,12 @@
       "sinifBaglanti": "Grade {sinif} story experience",
       "demoCta": "Try the story experience",
       "cta": "Create a parent account",
-      "gorselAlt": "Hupolingo app, Learn tab: stories matched to the grade and a continue-where-you-left-off button.",
-      "gorselAltyazi": "Learn tab: stories matched to the grade and continue where you left off."
+      "gorselAltyazi": "Real screens from the app: hero, name and companion selection.",
+      "ekranAlt": [
+        "Hero selection screen: Me, Hupo, Mom and other hero cards.",
+        "Hero name screen: the child writes their own hero name.",
+        "Companion screen: an optional travel companion is added and named."
+      ]
     }
   },
   "sidebar": {

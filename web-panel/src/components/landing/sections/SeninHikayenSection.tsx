@@ -8,6 +8,13 @@ import Link from "next/link";
 
 const SINIFLAR = [3, 4, 5, 6, 7] as const;
 
+// Gerçek uygulama ekranları: kahraman seçimi, kahramanın adı, yol arkadaşı (sırası ekranAlt ile aynı).
+const EKRANLAR = [
+  { src: "/landing/ekran/kahraman-sec.webp" },
+  { src: "/landing/ekran/kahraman-ad.webp" },
+  { src: "/landing/ekran/yol-arkadasi.webp" },
+] as const;
+
 // "Senin Hikâyen": çocuğun kahramanını seçtiği, adını yazdığı ve hikâyeyi kendi adıyla okuduğu deneyimin tanıtımı.
 // Görsel gerçek uygulama ekranıdır (Öğren sekmesi); dekoratif maskot kullanılmaz.
 export async function SeninHikayenSection() {
@@ -16,9 +23,10 @@ export async function SeninHikayenSection() {
 
   const t = await getTranslations("landing.seninHikayen");
   const adimlar = t.raw("adimlar") as { baslik: string; aciklama: string }[];
+  const ekranAlt = t.raw("ekranAlt") as string[];
 
   return (
-    <section id="senin-hikayen" className="scroll-mt-20 bg-white py-12 dark:bg-gray-900 sm:py-16 lg:py-20">
+    <section id="senin-hikayen" className="scroll-mt-20 bg-white py-6 dark:bg-gray-900 sm:py-8 lg:py-10">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14 lg:px-8">
         <Reveal>
           <div className="flex flex-wrap items-center gap-3">
@@ -88,17 +96,21 @@ export async function SeninHikayenSection() {
         </Reveal>
 
         <Reveal className="flex justify-center">
-          <figure className="w-full max-w-[300px]">
-            <div className="rounded-[2.5rem] border-[10px] border-navy bg-navy shadow-xl dark:border-gray-700">
-              <Image
-                src="/landing/ogren-sekmesi.jpg"
-                alt={t("gorselAlt")}
-                width={945}
-                height={2048}
-                sizes="(min-width: 1024px) 300px, 80vw"
-                className="block h-auto w-full rounded-[1.9rem]"
-              />
-            </div>
+          <figure className="w-full">
+            <ul className="grid grid-cols-3 gap-3">
+              {EKRANLAR.map((e, i) => (
+                <li key={e.src}>
+                  <Image
+                    src={e.src}
+                    alt={ekranAlt[i]}
+                    width={540}
+                    height={1170}
+                    sizes="(min-width: 1024px) 150px, 30vw"
+                    className="h-auto w-full rounded-2xl border border-navy/10 shadow-md"
+                  />
+                </li>
+              ))}
+            </ul>
             <figcaption className="mt-4 text-center text-sm font-semibold text-navy-muted dark:text-gray-400">
               {t("gorselAltyazi")}
             </figcaption>

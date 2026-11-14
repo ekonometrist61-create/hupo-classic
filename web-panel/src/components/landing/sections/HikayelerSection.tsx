@@ -4,11 +4,8 @@ import { Reveal } from "@/components/landing/motion/Reveal";
 import { okumaSiteOzetiniAl } from "@/lib/okuma/site-ozeti";
 import { turEtiketi } from "@/lib/okuma/turler";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import Link from "next/link";
-
-// Hupolingo'nun hizmet verdiği sınıf aralığı (2026-11-12 kararı: tüm site ve içerik 3–7).
-const HEDEF_SINIF_ALT = 3;
-const HEDEF_SINIF_UST = 7;
 
 // "Onlarca Hikâye": yayındaki hikâyelerin kütüphane özeti. Sayılar RPC'den gelir, metne sabit sayı yazılmaz.
 // Hikâye yayın kararı editörün insan onayıdır; bölüm yalnız yayında olanı sayar.
@@ -19,7 +16,7 @@ export async function HikayelerSection() {
   const t = await getTranslations("landing.hikayeler");
 
   return (
-    <section id="hikayeler" className="scroll-mt-20 bg-cream py-12 dark:bg-gray-950 sm:py-16 lg:py-20">
+    <section id="hikayeler" className="scroll-mt-20 bg-cream py-6 dark:bg-gray-950 sm:py-8 lg:py-10">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="flex flex-wrap items-center gap-3">
@@ -37,14 +34,7 @@ export async function HikayelerSection() {
 
           {hazir && ozet ? (
             <>
-              <p className="mt-8 text-xl font-extrabold text-navy dark:text-white">
-                {t("sayi", { count: ozet.hikaye_sayisi ?? 0 })}
-                <span className="font-bold text-navy/70 dark:text-gray-300">
-                  {" · "}
-                  {t("sinif", { alt: HEDEF_SINIF_ALT, ust: HEDEF_SINIF_UST })}
-                </span>
-              </p>
-              <h3 className="sr-only">{t("turler")}</h3>
+              <h3 className="mt-8 text-xl font-extrabold text-navy dark:text-white">{t("turler")}</h3>
               <ul className="mt-3 flex flex-wrap gap-2">
                 {ozet.turler?.map((x) => (
                   <li
@@ -55,6 +45,28 @@ export async function HikayelerSection() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                <figure>
+                  <Image
+                    src="/landing/ekran/hikaye-tur.webp"
+                    alt={t("ekranTurAlt")}
+                    width={540}
+                    height={1170}
+                    sizes="(min-width: 640px) 260px, 60vw"
+                    className="h-auto w-full rounded-2xl border border-navy/10 shadow-sm"
+                  />
+                </figure>
+                <figure>
+                  <Image
+                    src="/landing/ekran/hikaye-kesfet.webp"
+                    alt={t("ekranKesfetAlt")}
+                    width={540}
+                    height={1170}
+                    sizes="(min-width: 640px) 260px, 60vw"
+                    className="h-auto w-full rounded-2xl border border-navy/10 shadow-sm"
+                  />
+                </figure>
+              </div>
             </>
           ) : (
             <p className="mt-8 max-w-2xl text-base leading-relaxed text-navy/70 dark:text-gray-400">

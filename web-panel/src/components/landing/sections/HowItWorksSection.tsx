@@ -17,7 +17,7 @@ export async function HowItWorksSection() {
   const steps = t.raw("steps") as { title: string; desc: string }[];
 
   return (
-    <section id="how-it-works" className="scroll-mt-20 py-8 sm:py-12 lg:py-14">
+    <section id="how-it-works" className="scroll-mt-20 py-6 sm:py-8 lg:py-10">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
           {t("title")}
@@ -39,6 +39,7 @@ export async function HowItWorksSection() {
                     alt=""
                     width={96}
                     height={96}
+                    sizes="80px"
                     className="h-full w-full object-contain"
                   />
                 </div>

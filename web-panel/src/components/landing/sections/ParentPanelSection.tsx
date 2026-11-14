@@ -62,7 +62,7 @@ export async function ParentPanelSection() {
   const t = await getTranslations("landing.report");
 
   return (
-    <section id="report" className="scroll-mt-20 py-8 sm:py-12 lg:py-14">
+    <section id="report" className="scroll-mt-20 py-6 sm:py-8 lg:py-10">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-[1fr_1.6fr] lg:gap-14 lg:items-start">
           {/* Sol: Açıklama */}

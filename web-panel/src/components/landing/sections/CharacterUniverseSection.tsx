@@ -69,7 +69,7 @@ export async function CharacterUniverseSection() {
   return (
     <section
       id="characters"
-      className="scroll-mt-20 overflow-hidden bg-night py-14 text-white sm:py-18 lg:py-20"
+      className="scroll-mt-20 overflow-hidden bg-night py-6 text-white sm:py-8 lg:py-10"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Başlık */}
@@ -132,6 +132,7 @@ export async function CharacterUniverseSection() {
                       alt=""
                       width={96}
                       height={96}
+                      sizes="80px"
                       className="h-20 w-20 object-contain"
                     />
                   )}
@@ -147,6 +148,7 @@ export async function CharacterUniverseSection() {
                         alt=""
                         width={40}
                         height={40}
+                        sizes="24px"
                         className="h-6 w-6 object-contain brightness-0 opacity-25"
                       />
                     ))}

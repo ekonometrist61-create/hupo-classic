@@ -11,7 +11,7 @@ export async function FaqSection() {
   return (
     <section
       id="faq"
-      className="scroll-mt-20 bg-white py-8 sm:py-12 dark:bg-gray-900"
+      className="scroll-mt-20 bg-white py-6 sm:py-8 lg:py-10 dark:bg-gray-900"
     >
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl">

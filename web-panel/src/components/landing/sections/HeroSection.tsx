@@ -17,7 +17,7 @@ export async function HeroSection() {
   const g = await getTranslations("gorseller");
 
   return (
-    <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-12 pt-10 sm:px-6 sm:pb-14 sm:pt-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-8 lg:pb-16 lg:pt-14">
+    <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-6 pt-10 sm:px-6 sm:pb-8 sm:pt-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-8 lg:pb-10 lg:pt-14">
       <div>
         <p className="mb-4 inline-flex rounded-full bg-gold-100 px-3 py-1 text-sm font-bold text-gold-900 dark:bg-gold-900/30 dark:text-gold-200">
           {t("hero.badge")}
@@ -64,7 +64,7 @@ export async function HeroSection() {
             width={720}
             height={1560}
             priority
-            sizes="256px"
+            sizes="(min-width: 640px) 256px, 240px"
             className="h-auto w-full rounded-[1.9rem]"
           />
         </div>

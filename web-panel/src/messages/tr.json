@@ -586,12 +586,51 @@
       ]
     },
     "ogrenmeBilimi": {
-      "etiket": "ÖĞRENME BİLİMİYLE TANIŞIN",
-      "baslik": "Sadece eğlenceli değil, öğrenme araştırmalarıyla uyumlu bir yaklaşım",
-      "giris": "Araştırmalar, iyi tasarlanmış oyunlaştırmanın motivasyonu; aktif soru çözümü ve aralıklı tekrarın ise öğrenmeyi destekleyebildiğini gösteriyor. Hupolingo, bu yaklaşımları çocuğun günlük çalışma deneyiminde bir araya getiriyor.",
-      "hupoNot": "Bu araştırmalar Hupolingo'nun kendi öğrencileriyle yapılmadı.",
-      "dipnot": "Bu bulgular Hupolingo'nun kendi sonuçları değildir.",
-      "kutuphaneLink": "Araştırma kütüphanesi ve yöntemimiz →"
+      "etiket": "ÖĞRENME BİLİMİ",
+      "baslik": "Hupo neden böyle çalışıyor?",
+      "giris": "Çalışma düzenimizin her parçası basit bir öğrenme ilkesine dayanıyor. Her ilke için Hupo'da ne olduğunu ve araştırmaların ne dediğini ayrı ayrı yazdık.",
+      "etiketHupoda": "Hupo'da",
+      "etiketArastirma": "Araştırmalar ne diyor?",
+      "etiketTasarim": "Tasarım tercihimiz",
+      "kaynakOnEki": "Kaynak",
+      "tasarimNot": "Bu ilke için kütüphanemizde ayrı bir araştırma yok. Bu, Hupo'nun kendi tasarım kararıdır.",
+      "tekrar": {
+        "baslik": "Aralıklı tekrar: zamanı gelince yeniden sor",
+        "hupoda": "Yanlış yapılan soru ertesi gün tekrar listesine gelir. Soru doğru cevaplandıkça bir sonraki tekrar daha ileri bir güne kayar.",
+        "arastirma": "Birçok çalışmayı bir araya getiren derlemeler, tekrarı zamana yaymanın öğrenmeyi destekleyebildiğini gösteriyor.",
+        "takvim": {
+          "baslik": "Bir sorunun tekrar takvimi (örnek)",
+          "ozet": "Örnek tekrar takvimi: bugün doğru çözülen soru 1 gün sonra, ardından 6 gün sonra, sonra daha uzun bir aralıkla yeniden gelir. Yanlış cevapta soru ertesi gün yeniden gelir.",
+          "bugun": "Bugün",
+          "tekrar1": "1. tekrar",
+          "tekrar2": "2. tekrar",
+          "tekrar3": "3. tekrar",
+          "aralik1": "1 gün",
+          "aralik2": "6 gün",
+          "aralik3": "daha uzun",
+          "yanlis": "Yanlış cevapta takvim başa döner: soru ertesi gün yeniden gelir.",
+          "not": "Çizim ölçekli değildir. Aralıklar her sorunun cevaplarına göre değişir."
+        }
+      },
+      "ilkeler": {
+        "geriCagirma": {
+          "baslik": "Önce hatırla, sonra bak",
+          "hupoda": "Çocuk önce cevabını kendisi verir. Doğru cevap ve çözüm, cevap gönderildikten sonra açılır.",
+          "arastirma": "Gerçek sınıflarda yapılan 53 çalışmanın derlemesi, bilgiyi hafızadan çağırarak çalışmanın öğrenmeyi desteklediğini buldu."
+        },
+        "aciklama": {
+          "baslik": "Yanlıştan öğrenmek",
+          "hupoda": "Cevaptan sonra sorunun adım adım çözümü gösterilir. Yanlış yapılan soru kaybolmaz, tekrar listesine eklenir."
+        },
+        "kisa": {
+          "baslik": "Kısa ve düzenli çalışma",
+          "hupoda": "Günlük hedef 5, 10, 15 veya 20 soru olarak seçilir; varsayılan 10 sorudur. Amaç uzun oturumlar değil, düzenli küçük adımlardır."
+        }
+      },
+      "dipnot": "Bu araştırmalar başka öğrenme ortamlarında yapıldı; bulgular Hupolingo'nun kendi sonuçları değildir.",
+      "kutuphaneBaslik": "Kaynakları kendiniz inceleyin",
+      "kutuphaneAciklama": "{sayi} araştırmanın tasarımını, bulgusunu ve sınırını tek sayfada topladık.",
+      "kutuphaneLink": "Yöntem ve kaynaklar"
     },
     "plans": {
       "title": "Planlar",
@@ -1063,36 +1102,53 @@
       "desc": "Çocuk bunları kendi isteğiyle açar. Ölçüt yine öğrenmedir; ödül baskısı, süre dayatması ve çocuğa satış yoktur.",
       "rozetErken": "Erken erişim",
       "rozetYakinda": "Yakında",
-      "veliIcin": "Veli için:",
       "durumNotu": "Erken erişim: uygulamanın test sürümünde var, kapsam ve görünüm değişebilir. Yakında: henüz açılmadı.",
       "carpim": {
         "ad": "Çarpım Şifreleri",
         "desc": "Çarpım tablosunu ezberlemek yerine her çarpan için bir şifre, yani kısa bir kural çözülür. Örneğin “İkiler Şifresi”: sayıyı kendisiyle topla. Ardından o şifreyle küçük sorular gelir.",
-        "veli": "Tablodaki ayrı ayrı bilgileri birkaç kurala indirir; çocuğunuz ezber yerine yol bulmayı dener."
+        "alt": "Hupolingo uygulamasında Çarpım Tablosu Şifreleri ekranı: Ayna, İkizler, Sıfır Ekleme ve Yelkovan şifreleri."
       },
       "kelime": {
         "ad": "Kelime Evreni",
         "desc": "Eş anlamlı, zıt anlamlı ve eş sesli sözcükler için üç oyun türü. Yanlış cevaplanan sözcük, sonra tekrar bakılmak üzere kaydedilebilir.",
-        "veli": "Sözcük dağarcığı ayrı bir başlıkta çalışılır. İçerik incelemesi sürüyor; tamamlandıkça açılacak."
+        "alt": "Hupolingo uygulamasında Kelime Evreni ekranı: Anlam Köprüleri, Zıtlık Vadisi ve Aynalar Ormanı oyunları."
       },
       "arena": {
         "ad": "Arena",
-        "desc": "Ay Ligi’nde ilerleme ve günün meydan okuması. Sıralamada başka çocukların adı görünmez. Arkadaşla yarışma henüz yok, yakında.",
-        "veli": "Rekabet öğrenmenin ölçütü değildir. Raporda çözülen konulara ve tekrar ihtiyacına bakarsınız; sıraya ya da XP’ye değil."
+        "desc": "Ligde ilerleme ve günün meydan okuması. Sıralamada başka çocukların adı görünmez. Arkadaşla yarışma henüz yok, yakında.",
+        "alt": "Hupolingo uygulamasında Arena ekranı: lig ilerlemesi, günün 5 sorusu, deneme sınavları ve arkadaşa meydan okuma."
       }
     },
     "hikayeler": {
-      "marka": "Onlarca Hikâye",
+      "marka": "Senin Hikâyen",
       "rozetErken": "Erken erişim",
       "rozetYakinda": "Yakında",
-      "title": "Sınıfına uygun hikâyeler, türüne göre",
-      "desc": "Macera, gizem, bilim kurgu, mizah ve tarih gibi türlerde, sınıf düzeyinize göre hazırlanmış hikâyeler. Her birinde sözcük ve okuma soruları var, birçoğunda bir deyim.",
-      "sayi": "{count} yayında hikâye",
-      "sinif": "{alt}–{ust}. sınıf için",
-      "turler": "Türler",
+      "title": "Çocuğunuz okurken hikâyenin kahramanı olur",
+      "desc": "Çocuk hikâyeye kendisi ya da bir yoldaş olarak girer; keşfeder, güler, merak eder. Sonunda birkaç küçük soruyla anladığını dener. Okuma, görev listesi gibi değil bir macera gibi başlar.",
+      "adimlar": [
+        {
+          "baslik": "Kahramanı seçer",
+          "aciklama": "Hikâyede kendisi ya da bir yoldaş olur. Yazdığı ad hikâye sürerken cihazda durur; kaydedilmez."
+        },
+        {
+          "baslik": "Hikâyeyi okur",
+          "aciklama": "Sınıf düzeyine göre seçilmiş hikâyeler, günlük okuma kotası içinde açılır."
+        },
+        {
+          "baslik": "Küçük sorularla dener",
+          "aciklama": "Sonunda birkaç soru: anladığını görür, tekrar edilecek yer varsa fark eder."
+        }
+      ],
+      "kart": "Hikâye bitince küçük bir deneme: anladın mı, neresine dönelim?",
+      "cta": "Veli hesabı oluştur",
+      "durumNotu": "Uygulama şu an erken erişimde; kapsam ve görünüm değişebilir. Hikâyeler Hupo için hazırlanmıştır; resmî okul içeriği olarak sunulmaz.",
       "notHazirlik": "Hikâyeler hazırlanıyor. Her hikâye yayından önce bir editör tarafından okunup onaylanır; yayına çıktıkça bu bölüm güncellenir.",
-      "not": "Hikâyeleri Hupo hazırlar; yayına çıkan her hikâye bir editörün onayından geçer.",
-      "cta": "Veli hesabı oluştur"
+      "turler": "Türler",
+      "gorselTurAlt": "Hupolingo uygulamasında hikâye türlerinin göründüğü ekran: Gizem, Uzay ve Bilim Kurgu, Macera, Spor.",
+      "gorselKesfetAlt": "Hupolingo uygulamasında günün hikâyesi ve hikâye türlerinin yan yana göründüğü Öğren ekranı.",
+      "not": "Her hikâye yayından önce bir editör tarafından okunup onaylanır. Yapay zekâ denetim sonuçları editöre yardımcı olarak kaydedilir; yayın kararı editöründür. Yeni hikâyeler eklendikçe tür listesi kendiliğinden güncellenir.",
+      "ekranTurAlt": "Hupolingo uygulamasında hikâye türü seçimi: macera, gizem, bilim kurgu ve diğer türler.",
+      "ekranKesfetAlt": "Hupolingo uygulamasında hikâyeleri keşfetme ekranı: günün hikâyesi ve tür şeridi."
     },
     "seninHikayen": {
       "marka": "Senin Hikâyen",
@@ -1103,15 +1159,19 @@
       "adimlar": [
         {
           "baslik": "Kahramanını seçer",
-          "aciklama": "Kendisi ya da bir yol arkadaşı olur. Adını kendisi yazar."
+          "aciklama": "Kendisi, Hupo, bir aile üyesi, arkadaş, hayvan ya da araç olabilir."
         },
         {
           "baslik": "Türünü seçer",
-          "aciklama": "Macera, gizem ya da bilim kurgu gibi bir türden hikâyeyi açar. Sınıfına uygun hikâyeler açılır."
+          "aciklama": "Macera, gizem, bilim kurgu ve diğer türlerden birini açar. Sınıfına uygun hikâyeler gelir."
         },
         {
-          "baslik": "Deyimi ve değeri fark eder",
-          "aciklama": "Hikâyede bir maarif değeri, sözcükler ve çoğu zaman bir deyim vardır. Sonunda birkaç soruyla anladığını görür."
+          "baslik": "Adını yazar",
+          "aciklama": "Kahramanına kendi adını verir ya da önerilen addan seçer. Hikâye bu adla anlatılır."
+        },
+        {
+          "baslik": "İsterse yol arkadaşı ekler",
+          "aciklama": "Kahramanın yanına bir yol arkadaşı koyabilir ve ona da bir ad verebilir."
         }
       ],
       "not": "Adı yalnızca bu cihazda tutulur. Hikâye bitince küçük bir soru turu: anladın mı, neresine dönelim?",
@@ -1119,8 +1179,12 @@
       "sinifBaglanti": "{sinif}. sınıf hikâye deneyimi",
       "demoCta": "Hikâye deneyimini dene",
       "cta": "Veli hesabı oluştur",
-      "gorselAlt": "Hupolingo uygulamasının Öğren sekmesi: sınıfa uygun hikâyeler ve kaldığın yerden devam et düğmesi.",
-      "gorselAltyazi": "Öğren sekmesi: sınıfına uygun hikâyeler ve kaldığın yerden devam et."
+      "gorselAltyazi": "Uygulamadan gerçek ekranlar: kahraman, ad ve yol arkadaşı seçimi.",
+      "ekranAlt": [
+        "Kahraman seçimi ekranı: Ben, Hupo, Annem ve diğer kahraman kartları.",
+        "Kahramanın adı ekranı: çocuk kahramanına kendi adını yazar.",
+        "Yol arkadaşı ekranı: isteğe bağlı bir yol arkadaşı eklenir ve adı verilir."
+      ]
     }
   },
   "sidebar": {

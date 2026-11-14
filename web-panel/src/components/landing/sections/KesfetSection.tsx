@@ -5,20 +5,20 @@ import Image from "next/image";
 // Çarpım Şifreleri, Kelime Evreni ve Arena: çalışmanın içindeki keşif alanları.
 // Konumlandırma (ajan önerisi, kullanıcı onayı bekliyor): "Senin Hikâyen" değer çıpasıdır (veli neyle karşılaştıracağını görür),
 // bu üç alan ise çocuğun kendi isteğiyle açtığı merak alanlarıdır. Pazarlama metninde bu terimler geçmez.
+// Görseller uygulamanın gerçek ekranlarıdır (maskot/illüstrasyon değil); kırpma yalnız durum çubuğu ve alt gezinmeyi dışarıda bırakır.
 // Durum rozetleri koddaki/belgedeki gerçek duruma bağlıdır (K-0215, GÖR-091, arena_screen.dart); hazır olmayan "Yakında" yazar.
 // Çocuğa satış, ödül baskısı, süre dayatması yok; metrik öğrenmedir (XP/sıra değil).
 const KARTLAR = [
-  { key: "carpim", image: "hupo.dogru", tone: "bg-success-50", durum: "erken" },
-  { key: "kelime", image: "hupo.dusunuyor", tone: "bg-brand-50", durum: "yakinda" },
-  { key: "arena", image: "hupo.tamamlandi", tone: "bg-gold-100", durum: "erken" },
+  { key: "carpim", image: "/landing/ekran/carpim.webp", h: 1004, durum: "erken" },
+  { key: "kelime", image: "/landing/ekran/kelime.webp", h: 498, durum: "yakinda" },
+  { key: "arena", image: "/landing/ekran/arena.webp", h: 845, durum: "erken" },
 ] as const;
 
 export async function KesfetSection() {
   const t = await getTranslations("landing.kesfet");
-  const g = await getTranslations("gorseller");
 
   return (
-    <section id="kesfet" className="scroll-mt-20 bg-white py-12 dark:bg-gray-900 sm:py-16 lg:py-20">
+    <section id="kesfet" className="scroll-mt-20 bg-white py-6 dark:bg-gray-900 sm:py-8 lg:py-10">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-extrabold uppercase tracking-wider text-brand-600 dark:text-brand-300">
@@ -34,14 +34,14 @@ export async function KesfetSection() {
               key={k.key}
               className="flex flex-col overflow-hidden rounded-3xl border border-cream-dark bg-white p-3 shadow-sm dark:border-gray-700 dark:bg-gray-800"
             >
-              <div className={`flex h-40 items-center justify-center rounded-2xl ${k.tone} dark:bg-gray-900`}>
+              <div className="relative h-72 overflow-hidden rounded-2xl border border-cream-dark bg-cream dark:border-gray-700 dark:bg-gray-900 sm:h-80">
                 <Image
-                  src={g(k.image)}
-                  alt=""
-                  width={200}
-                  height={200}
-                  sizes="130px"
-                  className="h-32 w-auto object-contain"
+                  src={k.image}
+                  alt={t(`${k.key}.alt`)}
+                  width={540}
+                  height={k.h}
+                  sizes="(min-width: 768px) 340px, 90vw"
+                  className="h-full w-full object-cover object-top"
                 />
               </div>
               <div className="flex flex-1 flex-col px-3 pb-4 pt-5">
@@ -58,9 +58,6 @@ export async function KesfetSection() {
                   </span>
                 </div>
                 <p className="mt-3 leading-relaxed text-navy-muted dark:text-gray-300">{t(`${k.key}.desc`)}</p>
-                <p className="mt-4 border-t border-cream-dark pt-4 text-sm leading-relaxed dark:border-gray-700">
-                  <span className="font-extrabold">{t("veliIcin")}</span> {t(`${k.key}.veli`)}
-                </p>
               </div>
             </li>
           ))}

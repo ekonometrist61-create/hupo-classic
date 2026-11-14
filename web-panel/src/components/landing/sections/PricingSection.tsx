@@ -67,7 +67,7 @@ export async function PricingSection() {
   const gridCols = GRID_COLS[Math.min(Math.max(tipler.length, 1), 4)];
 
   return (
-    <section id="pricing" className="scroll-mt-20 py-8 sm:py-12 lg:py-14">
+    <section id="pricing" className="scroll-mt-20 py-6 sm:py-8 lg:py-10">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-3xl font-extrabold tracking-tight sm:text-4xl">

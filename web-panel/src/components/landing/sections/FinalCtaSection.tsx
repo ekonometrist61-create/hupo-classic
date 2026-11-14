@@ -11,13 +11,14 @@ export async function FinalCtaSection() {
   const g = await getTranslations("gorseller");
 
   return (
-    <section className="bg-gold-100 py-8 sm:py-12 dark:bg-gold-900/30">
+    <section className="bg-gold-100 py-6 sm:py-8 lg:py-10 dark:bg-gold-900/30">
       <Reveal className="mx-auto flex max-w-4xl flex-col items-center gap-8 px-4 text-center sm:px-6 md:flex-row md:text-start lg:px-8">
         <Image
           src={g("hupo.tamamlandi")}
           alt=""
           width={420}
           height={404}
+          sizes="166px"
           className="h-40 w-auto shrink-0"
         />
         <div>

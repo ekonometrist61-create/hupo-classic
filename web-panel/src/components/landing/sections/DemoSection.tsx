@@ -11,7 +11,7 @@ export async function DemoSection() {
   const demoOptions = t.raw("demo.options") as string[];
 
   return (
-    <section id="demo" className="scroll-mt-20 py-8 sm:py-12">
+    <section id="demo" className="scroll-mt-20 py-6 sm:py-8 lg:py-10">
       <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:px-8">
         <div>
           <p className="text-sm font-extrabold uppercase tracking-wider text-brand-600 dark:text-brand-300">
@@ -86,6 +86,7 @@ export async function DemoSection() {
             alt=""
             width={265}
             height={360}
+            sizes="(min-width: 1024px) 118px, 94px"
             className="absolute -bottom-6 -end-2 hidden h-32 w-auto sm:block lg:-end-8 lg:h-40"
           />
         </Reveal>
